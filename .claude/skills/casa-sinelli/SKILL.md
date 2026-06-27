@@ -10,7 +10,7 @@ description: Contexto geral da Casa Sinelli — identidade, produtos, público e
 - **Nome:** Casa Sinelli
 - **Tipo:** Loja física de móveis e colchões
 - **Localização:** Ribeirão Pires, SP
-- **Contato WhatsApp:** a confirmar (número da loja não definido ainda)
+- **Contato WhatsApp:** (11) 97177-6165 → link: https://wa.me/5511971776165
 - **Objetivos do site:**
   1. Atrair clientes pela internet e gerar contato via WhatsApp
   2. Funcionar como catálogo digital interno durante atendimento na loja
