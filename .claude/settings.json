@@ -13,9 +13,9 @@
       "Bash(git reset --hard *)"
     ]
   },
-  "enabledPlugins": [
-    "frontend-design@claude-plugins-official",
-    "feature-dev@claude-plugins-official",
-    "code-review@claude-plugins-official"
-  ]
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true
+  }
 }
