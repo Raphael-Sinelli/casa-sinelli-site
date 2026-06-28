@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { isImagemDisplay } from '@/lib/produtos';
+import { isImagemDisplay, imagemUrl } from '@/lib/produtos';
 
 interface Props {
   imagens: string[];
@@ -28,11 +28,11 @@ export default function ProductGallery({ imagens, nomeProduto }: Props) {
   return (
     <div className="flex flex-col gap-3">
       {/* Imagem principal */}
-      <div className="relative aspect-square rounded-2xl overflow-hidden bg-marrom-palido/30 shadow-md">
+      <div className="relative aspect-square md:min-h-[500px] rounded-2xl overflow-hidden bg-marrom-palido/30 shadow-md">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           key={displayaveis[idx]}
-          src={`/api/catalogo${displayaveis[idx]}`}
+          src={imagemUrl(displayaveis[idx])}
           alt={`${nomeProduto} — foto ${idx + 1}`}
           className="w-full h-full object-contain"
         />
@@ -83,7 +83,7 @@ export default function ProductGallery({ imagens, nomeProduto }: Props) {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`/api/catalogo${img}`}
+                src={imagemUrl(img)}
                 alt={`Miniatura ${i + 1}`}
                 loading="lazy"
                 className="w-full h-full object-cover"

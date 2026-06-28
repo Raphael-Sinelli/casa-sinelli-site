@@ -1,7 +1,612 @@
 [
   {
     "id": "1",
-    "nome": "GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO",
+    "nome": "Poltrona",
+    "marca": "BomJesus",
+    "categoria": "Poltrona",
+    "caminho": "/BomJesus/poltrona",
+    "subpastas": [
+      "poltrona"
+    ],
+    "medidas": "Altura: 75 cm\r\nLargura: 65 cm\r\nProfundidade: 55 cm",
+    "informacoes": null,
+    "linkReferencia": null,
+    "imagens": [
+      "/BomJesus/poltrona/azul.png",
+      "/BomJesus/poltrona/cinza.png",
+      "/BomJesus/poltrona/marrom.png",
+      "/BomJesus/poltrona/preta.png"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/BomJesus/poltrona/azul.png",
+      "/BomJesus/poltrona/cinza.png",
+      "/BomJesus/poltrona/marrom.png",
+      "/BomJesus/poltrona/preta.png"
+    ],
+    "coresEstruturadas": [
+      "azul",
+      "cinza",
+      "marrom",
+      "preta"
+    ]
+  },
+  {
+    "id": "2",
+    "nome": "Cabeceira",
+    "marca": "Cambel",
+    "categoria": "Cama",
+    "caminho": "/Cambel/cabeceira",
+    "subpastas": [
+      "cabeceira"
+    ],
+    "medidas": "Altura: 123 cm | Largura: 145 cm | Profundidade: 30 cm",
+    "informacoes": null,
+    "linkReferencia": "https://incasamoveis.com.br/cambel?srsltid=AfmBOoqiezoq-E-OWW6DiLV_u6MRgBSUQFUzMVmy0n-jcuagBENV0aX2\r\nhttps://www.opcaomoveis.com.br/produtos/cama-sofia-casal-138x188-branco-cambel-vj?srsltid=AfmBOoqMX0gx99cvgTGQMtH36l8ZCW66emco6g5CfhId-ehNtxsMn-xJ\r\nhttps://www.madeiramadeira.com.br/cama-de-solteiro-com-auxiliar-isa-nature-de-mdf-com-duas-gavetas-bau-e-nichos-371040268.html?origem=pla-371040268&utm_source=google&utm_medium=cpc&utm_content=camas-5081&utm_term=&utm_id=18022911328&gad_source=1&gad_campaignid=18021492945&gbraid=0AAAAADr4g_Elv66L022gUFpjC3e7MqgIB&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD0cW6TiQwLMfnz43LEk5k_5YtYOyukVfDhcehYAcXSTlaZiqisSZZgaAlfcEALw_wcB",
+    "imagens": [
+      "/Cambel/cabeceira/branca.webp",
+      "/Cambel/cabeceira/JessicaNatureOff.jpg"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/Cambel/cabeceira/branca.webp",
+      "/Cambel/cabeceira/JessicaNatureOff.jpg"
+    ],
+    "coresEstruturadas": [
+      "nature/off",
+      "branca"
+    ]
+  },
+  {
+    "id": "3",
+    "nome": "Cama Casal",
+    "marca": "Cambel",
+    "categoria": "Cama",
+    "caminho": "/Cambel/CamaCasal",
+    "subpastas": [
+      "CamaCasal"
+    ],
+    "medidas": "Altura: 103 cm | Largura: 144 cm | Comprimento: 195 cm",
+    "informacoes": "Minimalista e elegante, a Cama de Casal Cambel Sofia é ideal para você! Não perca a oportunidade de adquirir a sua!\nDimensões:\nCaracterísticas:\nTamanho do colchão indicado: 138cm x 188cm (NÃO ACOMPANHA COLCHÃO)\nEstrutura 100 MDF de 6, 15 e 20 mm\nAcabamento/Pintura UV Brilhante\nEstrado em madeira\nPés 1000 X 80 X 25MM\nPossui sapata\nSuporte de peso 180 kg\nGarantia 03 meses\n**Imagens ilustrativas. Objetos não acompanham o produto.\nAVISO: Esclarecemos que a Opção Móveis se responsabilizará pela entrega dos produtos adquiridos até a porta de entrada ou portaria do endereço indicado, ou seja: é de total responsabilidade do cliente a montagem, desmontagem e instalação do produto adquirido. Para evitar futuros desagrados ou imprevistos com a entrega, também é necessário que o cliente confira as dimensões do produto escolhido, antes de finalizar a compra, devendo certificar-se de que a mercadoria passará normalmente por elevador, porta, escada e corredor.",
+    "linkReferencia": "https://incasamoveis.com.br/cambel?srsltid=AfmBOoqiezoq-E-OWW6DiLV_u6MRgBSUQFUzMVmy0n-jcuagBENV0aX2\r\nhttps://www.opcaomoveis.com.br/produtos/cama-sofia-casal-138x188-branco-cambel-vj?srsltid=AfmBOoqMX0gx99cvgTGQMtH36l8ZCW66emco6g5CfhId-ehNtxsMn-xJ\r\nhttps://www.madeiramadeira.com.br/cama-de-solteiro-com-auxiliar-isa-nature-de-mdf-com-duas-gavetas-bau-e-nichos-371040268.html?origem=pla-371040268&utm_source=google&utm_medium=cpc&utm_content=camas-5081&utm_term=&utm_id=18022911328&gad_source=1&gad_campaignid=18021492945&gbraid=0AAAAADr4g_Elv66L022gUFpjC3e7MqgIB&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD0cW6TiQwLMfnz43LEk5k_5YtYOyukVfDhcehYAcXSTlaZiqisSZZgaAlfcEALw_wcB",
+    "imagens": [
+      "/Cambel/CamaCasal/CasalNatureOFF.png"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/Cambel/CamaCasal/CasalNatureOFF.png"
+    ],
+    "coresEstruturadas": [
+      "nature/off"
+    ]
+  },
+  {
+    "id": "4",
+    "nome": "Cama Solteiro",
+    "marca": "Cambel",
+    "categoria": "Cama",
+    "caminho": "/Cambel/CamaSolteiro",
+    "subpastas": [
+      "CamaSolteiro"
+    ],
+    "medidas": "altura 103cm\r\nlargura 94cm\r\ncomprimento 195",
+    "informacoes": null,
+    "linkReferencia": "https://incasamoveis.com.br/cambel?srsltid=AfmBOoqiezoq-E-OWW6DiLV_u6MRgBSUQFUzMVmy0n-jcuagBENV0aX2\r\nhttps://www.opcaomoveis.com.br/produtos/cama-sofia-casal-138x188-branco-cambel-vj?srsltid=AfmBOoqMX0gx99cvgTGQMtH36l8ZCW66emco6g5CfhId-ehNtxsMn-xJ\r\nhttps://www.madeiramadeira.com.br/cama-de-solteiro-com-auxiliar-isa-nature-de-mdf-com-duas-gavetas-bau-e-nichos-371040268.html?origem=pla-371040268&utm_source=google&utm_medium=cpc&utm_content=camas-5081&utm_term=&utm_id=18022911328&gad_source=1&gad_campaignid=18021492945&gbraid=0AAAAADr4g_Elv66L022gUFpjC3e7MqgIB&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD0cW6TiQwLMfnz43LEk5k_5YtYOyukVfDhcehYAcXSTlaZiqisSZZgaAlfcEALw_wcB",
+    "imagens": [
+      "/Cambel/CamaSolteiro/medidasSolteiro.png",
+      "/Cambel/CamaSolteiro/SolteiroBranca.png",
+      "/Cambel/CamaSolteiro/SolteiroInformaçoes.png",
+      "/Cambel/CamaSolteiro/SolteiroNatureOff.png"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/Cambel/CamaSolteiro/medidasSolteiro.png",
+      "/Cambel/CamaSolteiro/SolteiroBranca.png",
+      "/Cambel/CamaSolteiro/SolteiroInformaçoes.png",
+      "/Cambel/CamaSolteiro/SolteiroNatureOff.png"
+    ],
+    "medidasRodape": "Alt: 103cm  Larg: 94cm  Prof: 195cm",
+    "coresEstruturadas": [
+      "branco",
+      "nature/off"
+    ]
+  },
+  {
+    "id": "5",
+    "nome": "Cama Solteiro Bibox",
+    "marca": "Cambel",
+    "categoria": "Cama",
+    "caminho": "/Cambel/CamaSolteiroBibox",
+    "subpastas": [
+      "CamaSolteiroBibox"
+    ],
+    "medidas": "Dimensões do Produto Montado:\r\nAltura: 107 cm\r\nLargura: 123 cm\r\nProfundidade: 216 cm\r\nDetalhes do Produto:\r\n- Peso: 41,5 kg\r\n- Ideal para colchão de 88x188 cm (COLCHÃO NÃO INCLUSO)\r\nDetalhes da Auxiliar:\r\n- Altura: 22 cm\r\n- Largura: 189 cm\r\n- Profundidade: 191 cm\r\n- Peso: 16,40 kg\r\n- A cama tem baú e gaveta\r\n- Ideal para: colchões de 88x188x12 cm (COLCHÃO NÃO INCLUSO)",
+    "informacoes": "Dimensões do Produto Montado:\nDetalhes do Produto:\n- Peso: 41,5 kg\n- Ideal para colchão de 88x188 cm (COLCHÃO NÃO INCLUSO)\nDetalhes da Auxiliar:\n- Altura: 22 cm\n- Largura: 189 cm\n- Profundidade: 191 cm\n- Peso: 16,40 kg\n- A cama tem baú e gaveta\n- Ideal para: colchões de 88x188x12 cm (COLCHÃO NÃO INCLUSO)",
+    "linkReferencia": "https://incasamoveis.com.br/cambel?srsltid=AfmBOoqiezoq-E-OWW6DiLV_u6MRgBSUQFUzMVmy0n-jcuagBENV0aX2\r\nhttps://www.opcaomoveis.com.br/produtos/cama-sofia-casal-138x188-branco-cambel-vj?srsltid=AfmBOoqMX0gx99cvgTGQMtH36l8ZCW66emco6g5CfhId-ehNtxsMn-xJ\r\nhttps://www.madeiramadeira.com.br/cama-de-solteiro-com-auxiliar-isa-nature-de-mdf-com-duas-gavetas-bau-e-nichos-371040268.html?origem=pla-371040268&utm_source=google&utm_medium=cpc&utm_content=camas-5081&utm_term=&utm_id=18022911328&gad_source=1&gad_campaignid=18021492945&gbraid=0AAAAADr4g_Elv66L022gUFpjC3e7MqgIB&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD0cW6TiQwLMfnz43LEk5k_5YtYOyukVfDhcehYAcXSTlaZiqisSZZgaAlfcEALw_wcB",
+    "imagens": [
+      "/Cambel/CamaSolteiroBibox/branca.png",
+      "/Cambel/CamaSolteiroBibox/nature.png"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/Cambel/CamaSolteiroBibox/branca.png",
+      "/Cambel/CamaSolteiroBibox/nature.png"
+    ],
+    "coresEstruturadas": [
+      "branca",
+      "nature"
+    ]
+  },
+  {
+    "id": "6",
+    "nome": "Penteadeira",
+    "marca": "Demobile",
+    "categoria": "Cômoda",
+    "caminho": "/Demobile/penteadeira",
+    "subpastas": [
+      "penteadeira"
+    ],
+    "medidas": "Altura\r\n1,340M\r\nLargura\r\n1,080M\r\nProfundidade\r\n0,410M",
+    "informacoes": null,
+    "linkReferencia": "https://demobile.com.br/produtos/penteadeira-camarim-carisma/",
+    "imagens": [
+      "/Demobile/penteadeira/camarimCarismaBranca.jpg"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/Demobile/penteadeira/camarimCarismaBranca.jpg"
+    ],
+    "medidasRodape": "Alt: 134cm  Larg: 108cm  Prof: 41cm",
+    "coresEstruturadas": [
+      "branca"
+    ]
+  },
+  {
+    "id": "7",
+    "nome": "Cooktop",
+    "marca": "Itatiaia",
+    "categoria": "Cozinha",
+    "caminho": "/Itatiaia/cooktop",
+    "subpastas": [
+      "cooktop"
+    ],
+    "medidas": "Altura 16 cm\r\nLargura 73 cm\r\nProfundidade 45 cm\r\nPeso 9.52 kg",
+    "informacoes": null,
+    "linkReferencia": "https://www.minhaitatiaia.com.br/?gad_source=1&gad_campaignid=1694592857&gbraid=0AAAAAC2g6tyCcVBYMVxaj09iWiIIt0hWf&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD3_rsxnRbx0MqWXJAXMJlGaHxt6Dp4OntrNZU4z3_36ydnOk80-y0UaAsQVEALw_wcB",
+    "imagens": [
+      "/Itatiaia/cooktop/cooktop5bocas (2).png",
+      "/Itatiaia/cooktop/cooktop5bocas.png"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/Itatiaia/cooktop/cooktop5bocas (2).png",
+      "/Itatiaia/cooktop/cooktop5bocas.png"
+    ],
+    "coresEstruturadas": [
+      "preto"
+    ]
+  },
+  {
+    "id": "8",
+    "nome": "Fogão",
+    "marca": "Itatiaia",
+    "categoria": "Cozinha",
+    "caminho": "/Itatiaia/fogão",
+    "subpastas": [
+      "fogão"
+    ],
+    "medidas": "4 bocas\nAltura 86cm\nLargura 48cm\nProfundidade 55cm\nPeso 18.4 kg",
+    "informacoes": null,
+    "linkReferencia": "https://www.minhaitatiaia.com.br/?gad_source=1&gad_campaignid=1694592857&gbraid=0AAAAAC2g6tyCcVBYMVxaj09iWiIIt0hWf&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD3_rsxnRbx0MqWXJAXMJlGaHxt6Dp4OntrNZU4z3_36ydnOk80-y0UaAsQVEALw_wcB",
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "4Bocas",
+        "imagens": [
+          "/Itatiaia/fogão/4Bocas/preto.png"
+        ]
+      }
+    ],
+    "todasImagens": [
+      "/Itatiaia/fogão/4Bocas/preto.png"
+    ],
+    "coresEstruturadas": [
+      "preto"
+    ]
+  },
+  {
+    "id": "9",
+    "nome": "Cantinho do Café",
+    "marca": "Lukaliam",
+    "categoria": "Armário",
+    "caminho": "/Lukaliam/CantinhoDoCafé",
+    "subpastas": [
+      "CantinhoDoCafé"
+    ],
+    "medidas": "altura 150cm\r\nlargura 79,5cm\r\nprofundidade 41cm",
+    "informacoes": null,
+    "linkReferencia": "https://lukaliam.com.br/",
+    "imagens": [
+      "/Lukaliam/CantinhoDoCafé/jequitiba.png",
+      "/Lukaliam/CantinhoDoCafé/Lukaliam-Cantinho-do-Cafe-Menta-e-Tauri-Ripado-Ambiente-scaled.jpg",
+      "/Lukaliam/CantinhoDoCafé/medidas.png",
+      "/Lukaliam/CantinhoDoCafé/offWhite.png"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/Lukaliam/CantinhoDoCafé/jequitiba.png",
+      "/Lukaliam/CantinhoDoCafé/Lukaliam-Cantinho-do-Cafe-Menta-e-Tauri-Ripado-Ambiente-scaled.jpg",
+      "/Lukaliam/CantinhoDoCafé/medidas.png",
+      "/Lukaliam/CantinhoDoCafé/offWhite.png"
+    ],
+    "medidasRodape": "Alt: 150cm  Larg: 80cm  Prof: 41cm",
+    "coresEstruturadas": [
+      "menta",
+      "jequitibá",
+      "off-white"
+    ]
+  },
+  {
+    "id": "10",
+    "nome": "Armário",
+    "marca": "Lukaliam",
+    "categoria": "Armário",
+    "caminho": "/Lukaliam/vicenza",
+    "subpastas": [
+      "vicenza"
+    ],
+    "medidas": "Diferenciais do produto\n- Rodízios\n- Tampo em MDP de 25mm\n- Corrediças Metálicas\nEspecificações\nLargura: 980mm\nAltura: 800mm\nComprimento: 450mm\nPeso: 24,3kg\nVolume: 1cx/0,054m³",
+    "informacoes": "Diferenciais do produto\r\n- Rodízios\r\n- Tampo em MDP de 25mm\r\n- Corrediças Metálicas\r\nEspecificações\r\nLargura: 980mm\r\nAltura: 800mm\r\nComprimento: 450mm\r\nPeso: 24,3kg\r\nVolume: 1cx/0,054m³",
+    "linkReferencia": "https://lukaliam.com.br/",
+    "imagens": [
+      "/Lukaliam/vicenza/vicenza.png"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/Lukaliam/vicenza/vicenza.png"
+    ]
+  },
+  {
+    "id": "11",
+    "nome": "Cômoda",
+    "marca": "SantosAndira",
+    "categoria": "Cômoda",
+    "caminho": "/SantosAndira/Comodas",
+    "subpastas": [
+      "Comodas"
+    ],
+    "medidas": "imagem aberta\nMedidas\nAltura: 1007 mm\nLargura: 900 mm\nProfundidade: 392 mm",
+    "informacoes": null,
+    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "fit",
+        "imagens": [
+          "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Branca.jpg",
+          "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_JequitibaOff_Amb.jpg",
+          "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Jequitiba_FI_Aberto.jpg",
+          "/SantosAndira/Comodas/fit/Comoda_Fit_jequitiba.jpg"
+        ]
+      },
+      {
+        "cor": "ivai",
+        "imagens": [
+          "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaAreia_FI_site.jpg",
+          "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaGrafite_Amb_site.jpg",
+          "/SantosAndira/Comodas/ivai/Comoda_Ivai_Jatoba_FI_site.jpg"
+        ]
+      },
+      {
+        "cor": "pinhais",
+        "imagens": [
+          "/SantosAndira/Comodas/pinhais/310443-Comoda_Pinhais24_JatobaAreia-scaled.jpg",
+          "/SantosAndira/Comodas/pinhais/310444-Comoda_Pinhais24_Jatoba-scaled.jpg",
+          "/SantosAndira/Comodas/pinhais/310448-Comoda_Pinhais24_JatobaGrafite-scaled.jpg",
+          "/SantosAndira/Comodas/pinhais/aberta.jpg",
+          "/SantosAndira/Comodas/pinhais/medidas.png"
+        ]
+      }
+    ],
+    "todasImagens": [
+      "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Branca.jpg",
+      "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_JequitibaOff_Amb.jpg",
+      "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Jequitiba_FI_Aberto.jpg",
+      "/SantosAndira/Comodas/fit/Comoda_Fit_jequitiba.jpg",
+      "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaAreia_FI_site.jpg",
+      "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaGrafite_Amb_site.jpg",
+      "/SantosAndira/Comodas/ivai/Comoda_Ivai_Jatoba_FI_site.jpg",
+      "/SantosAndira/Comodas/pinhais/310443-Comoda_Pinhais24_JatobaAreia-scaled.jpg",
+      "/SantosAndira/Comodas/pinhais/310444-Comoda_Pinhais24_Jatoba-scaled.jpg",
+      "/SantosAndira/Comodas/pinhais/310448-Comoda_Pinhais24_JatobaGrafite-scaled.jpg",
+      "/SantosAndira/Comodas/pinhais/aberta.jpg",
+      "/SantosAndira/Comodas/pinhais/medidas.png"
+    ],
+    "medidasRodape": "Alt: 105cm  Larg: 130cm  Prof: 40cm",
+    "coresEstruturadas": [
+      "branca",
+      "jequitibá",
+      "jequitibá/off",
+      "jatobá/areia",
+      "jatobá/grafite",
+      "jatobá"
+    ]
+  },
+  {
+    "id": "12",
+    "nome": "Guarda-Roupa",
+    "marca": "SantosAndira",
+    "categoria": "Guarda-Roupa",
+    "caminho": "/SantosAndira/GR",
+    "subpastas": [
+      "GR"
+    ],
+    "medidas": "6 portas; imagem interna\nMedidas\nAltura - 2190 mm\nLargura - 2320 mm\nProfundidade - 463 mm",
+    "informacoes": null,
+    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "buriti4pts",
+        "imagens": [
+          "/SantosAndira/GR/buriti4pts/162443-GR-Buriti-4-Portas-JTB-ARE-Interno.jpg",
+          "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_Jatoba.jpg",
+          "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaAreia.jpg",
+          "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaGrafite.jpg"
+        ]
+      },
+      {
+        "cor": "buriti6pts",
+        "imagens": [
+          "/SantosAndira/GR/buriti6pts/162343-GR-Buriti-6-Portas-JTB-ARE-Interno.jpg",
+          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_Jatoba.jpg",
+          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaAreia.jpg",
+          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaGrafite.jpg"
+        ]
+      },
+      {
+        "cor": "fit3pts",
+        "imagens": [
+          "/SantosAndira/GR/fit3pts/COLOQUE ESSA.png",
+          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_BRanco_FI_frontal-Amb.jpg",
+          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_JequitibaOff_Amb-150x150.jpg",
+          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_Amb.jpg",
+          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_FI_Aberto.jpg",
+          "/SantosAndira/GR/fit3pts/medidas.png"
+        ]
+      },
+      {
+        "cor": "fit4pts",
+        "imagens": [
+          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_BRanco_FI-Amb.jpg",
+          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_JequitibaOff_Amb.jpg",
+          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_Amb.jpg",
+          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_FI_Aberto.jpg"
+        ]
+      },
+      {
+        "cor": "fit6pts",
+        "imagens": [
+          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_JequitibaOff_Amb.jpg",
+          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_Amb.jpg",
+          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_FI_aberto.jpg"
+        ]
+      },
+      {
+        "cor": "fitPortaDeCorrer",
+        "imagens": [
+          "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_BRanco_Amb.jpg",
+          "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_JequitibaOff_Amb.jpg",
+          "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_Jequitiba_Amb.jpg"
+        ]
+      },
+      {
+        "cor": "frança",
+        "imagens": [
+          "/SantosAndira/GR/frança/grFrançaBranco.jpg",
+          "/SantosAndira/GR/frança/grFrançaJequitiba.png",
+          "/SantosAndira/GR/frança/grFrançaJequitibaOff.png",
+          "/SantosAndira/GR/frança/GR_Franca_BR_aberto.jpg"
+        ]
+      },
+      {
+        "cor": "master",
+        "imagens": [
+          "/SantosAndira/GR/master/163243-GR_MasterVip84New_JatobaAreia-1.jpg",
+          "/SantosAndira/GR/master/163248-GR_MasterVip84New_JatobaGrafite-1.jpg",
+          "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba.jpg",
+          "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba_Interno.jpg"
+        ]
+      },
+      {
+        "cor": "paranavai",
+        "imagens": [
+          "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaAreia_Ambiente_site.jpg",
+          "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaGrafite_Ambiente_site.jpg",
+          "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_aberto_site.jpg",
+          "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_Ambiente_site.jpg"
+        ]
+      }
+    ],
+    "todasImagens": [
+      "/SantosAndira/GR/buriti4pts/162443-GR-Buriti-4-Portas-JTB-ARE-Interno.jpg",
+      "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_Jatoba.jpg",
+      "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaAreia.jpg",
+      "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaGrafite.jpg",
+      "/SantosAndira/GR/buriti6pts/162343-GR-Buriti-6-Portas-JTB-ARE-Interno.jpg",
+      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_Jatoba.jpg",
+      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaAreia.jpg",
+      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaGrafite.jpg",
+      "/SantosAndira/GR/fit3pts/COLOQUE ESSA.png",
+      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_BRanco_FI_frontal-Amb.jpg",
+      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_JequitibaOff_Amb-150x150.jpg",
+      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_Amb.jpg",
+      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_FI_Aberto.jpg",
+      "/SantosAndira/GR/fit3pts/medidas.png",
+      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_BRanco_FI-Amb.jpg",
+      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_JequitibaOff_Amb.jpg",
+      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_Amb.jpg",
+      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_FI_Aberto.jpg",
+      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_JequitibaOff_Amb.jpg",
+      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_Amb.jpg",
+      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_FI_aberto.jpg",
+      "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_BRanco_Amb.jpg",
+      "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_JequitibaOff_Amb.jpg",
+      "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_Jequitiba_Amb.jpg",
+      "/SantosAndira/GR/frança/grFrançaBranco.jpg",
+      "/SantosAndira/GR/frança/grFrançaJequitiba.png",
+      "/SantosAndira/GR/frança/grFrançaJequitibaOff.png",
+      "/SantosAndira/GR/frança/GR_Franca_BR_aberto.jpg",
+      "/SantosAndira/GR/master/163243-GR_MasterVip84New_JatobaAreia-1.jpg",
+      "/SantosAndira/GR/master/163248-GR_MasterVip84New_JatobaGrafite-1.jpg",
+      "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba.jpg",
+      "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba_Interno.jpg",
+      "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaAreia_Ambiente_site.jpg",
+      "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaGrafite_Ambiente_site.jpg",
+      "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_aberto_site.jpg",
+      "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_Ambiente_site.jpg"
+    ],
+    "medidasRodape": "Alt: 191cm  Larg: 107cm  Prof: 46cm",
+    "coresEstruturadas": [
+      "jatobá",
+      "jatobá/areia",
+      "jatobá/grafite",
+      "branco",
+      "jequitibá",
+      "jequitibá/off"
+    ]
+  },
+  {
+    "id": "13",
+    "nome": "Criado-Mudo",
+    "marca": "SantosAndira",
+    "categoria": "Criado-Mudo",
+    "caminho": "/SantosAndira/mesaDeCabeceira",
+    "subpastas": [
+      "mesaDeCabeceira"
+    ],
+    "medidas": "Medidas\r\nAltura - 580 mm\r\nLargura - 448 mm\r\nProfundidade - 430 mm",
+    "informacoes": null,
+    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
+    "imagens": [
+      "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_JatobaAreia_Ambiente-SITE.jpg",
+      "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_Jatoba_Ambiente-SITE.jpg"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_JatobaAreia_Ambiente-SITE.jpg",
+      "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_Jatoba_Ambiente-SITE.jpg"
+    ],
+    "coresEstruturadas": [
+      "jatobá/areia",
+      "jatobá"
+    ]
+  },
+  {
+    "id": "14",
+    "nome": "Armário",
+    "marca": "SantosAndira",
+    "categoria": "Armário",
+    "caminho": "/SantosAndira/multiuso",
+    "subpastas": [
+      "multiuso"
+    ],
+    "medidas": "Altura: 1655 mm\r\nLargura: 600 mm\r\nProfundidade: 312 mm",
+    "informacoes": null,
+    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
+    "imagens": [
+      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_BR_FI_Frontal-Amb.jpg",
+      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_JequitibaOff_Amb.jpg",
+      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_Amb.jpg",
+      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_FI_Aberto.jpg"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_BR_FI_Frontal-Amb.jpg",
+      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_JequitibaOff_Amb.jpg",
+      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_Amb.jpg",
+      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_FI_Aberto.jpg"
+    ],
+    "coresEstruturadas": [
+      "branco",
+      "jequitibá",
+      "jequitibá/off"
+    ]
+  },
+  {
+    "id": "15",
+    "nome": "Buffet",
+    "marca": "Viero",
+    "categoria": "Armário",
+    "caminho": "/Viero/buffet",
+    "subpastas": [
+      "buffet"
+    ],
+    "medidas": "largura 155,5cm\r\naltura 77cm\r\nprofundidade 41,5cm",
+    "informacoes": null,
+    "linkReferencia": "https://www.vieromoveis.com.br/\r\nhttps://www.lojasedmil.com.br/poltrona-decorativa-linho-flower-viero-mel-e-caqui/p?srsltid=AfmBOoom25P5orf8O8giLd3TmxRW4znKQO63tTZO9rlXS4tsXFVAAf78\r\nhttps://www.opcaomoveis.com.br/produtos/poltrona-glamour-linho-bronze-viero?srsltid=AfmBOooG8MlIdq6jvG5BE9pV06kJATHANmuwHI9xiWfXL5Rv_7GnlHgq",
+    "imagens": [
+      "/Viero/buffet/imbuia-off.png",
+      "/Viero/buffet/imbuia.png",
+      "/Viero/buffet/MEDIDAS.png",
+      "/Viero/buffet/mel.png"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/Viero/buffet/imbuia-off.png",
+      "/Viero/buffet/imbuia.png",
+      "/Viero/buffet/MEDIDAS.png",
+      "/Viero/buffet/mel.png"
+    ],
+    "medidasRodape": "Alt: 77cm  Larg: 156cm  Prof: 42cm",
+    "coresEstruturadas": [
+      "imbuia/off",
+      "imbuia",
+      "mel"
+    ]
+  },
+  {
+    "id": "16",
+    "nome": "Poltrona",
+    "marca": "Viero",
+    "categoria": "Poltrona",
+    "caminho": "/Viero/poltrona",
+    "subpastas": [
+      "poltrona"
+    ],
+    "medidas": "Altura: 90 cm | Largura: 70 cm | Profundidade: 90 cm",
+    "informacoes": "Dimensões (A x L x P) cm\t95 x 65 x 100 cm\nAltura do Encosto\t56 cm\nAssento Retrátil\tNão\nTipo de Encosto\tFixo\nAcompanha Manual de montagem\t Visualizar PDF\nPossui Braço\tSim\nTipo\tPoltrona\nPossui Percintas Elásticas\tSim\nObservação\tImagens meramente ilustrativas. Os objetos decorativos que ambientam as fotos não são vendidos e não acompanham o produto. A tonalidade do produto pode variar entre a imagem de exibição e o item físico. Em virtude de constantes aperfeiçoamentos em sua linha de produtos,a empresa reserva-se no direito de proceder,sem prévio aviso,às modificações técnicas que julgar conveniente. Todos os direitos reservados.\nAcompanha Almofadas\tNão\nComplexidade da Montagem\tSimples\nNúmero de Estágios do Encosto Reclinável\tNão possui encosto reclinável.\nEnchimento do Braço\tEspuma D12 (Lateral)\nEnchimento do Assento\tEspuma D20\nGarantia\t3 meses\nTempo Estimado de Montagem\t15 min.\nModelo\tFlower\nPés possuem Rodízios\tNão\nEnchimento do Encosto\tEspuma D20\nTipo de Almofada\tNão possuí almofadas\nRecomendações de Uso, Manutenção e Limpeza\tDescrito no manual de montagem e conservação do produto.\nCor\tMel e Caqui\nTipo de pés\tCurvos\nMaterial dos Pés\tMDF 25mm\nAssento possui molas\tNão\nQuantidade de Lugares\t1 lugar",
+    "linkReferencia": "https://www.vieromoveis.com.br/\r\nhttps://www.lojasedmil.com.br/poltrona-decorativa-linho-flower-viero-mel-e-caqui/p?srsltid=AfmBOoom25P5orf8O8giLd3TmxRW4znKQO63tTZO9rlXS4tsXFVAAf78\r\nhttps://www.opcaomoveis.com.br/produtos/poltrona-glamour-linho-bronze-viero?srsltid=AfmBOooG8MlIdq6jvG5BE9pV06kJATHANmuwHI9xiWfXL5Rv_7GnlHgq",
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "flower",
+        "imagens": [
+          "/Viero/poltrona/flower/linhoBronze.jpg",
+          "/Viero/poltrona/flower/linhoInox.png"
+        ]
+      },
+      {
+        "cor": "Glamour",
+        "imagens": [
+          "/Viero/poltrona/Glamour/linhoBronze.jpg"
+        ]
+      }
+    ],
+    "todasImagens": [
+      "/Viero/poltrona/flower/linhoBronze.jpg",
+      "/Viero/poltrona/flower/linhoInox.png",
+      "/Viero/poltrona/Glamour/linhoBronze.jpg"
+    ],
+    "medidasRodape": "Alt: 95cm  Larg: 65cm  Prof: 100cm",
+    "coresEstruturadas": [
+      "linho bronze",
+      "linho inox"
+    ]
+  },
+  {
+    "id": "17",
+    "nome": "Guarda-Roupa",
     "marca": "albatroz",
     "categoria": "Guarda-Roupa",
     "caminho": "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO",
@@ -31,13 +636,18 @@
       "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO/CINAMOMO-OFF/aberto (2).png",
       "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO/CINAMOMO-OFF/CINAMOMO-OFF.png",
       "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO/NOGUEIRA-CAPPUCCINO/NOGUEIRA-CAPPUCCINO.png"
+    ],
+    "medidasRodape": "Alt: 217cm  Larg: 136cm  Prof: 53cm",
+    "coresEstruturadas": [
+      "cinamomo/off",
+      "nogueira/cappuccino"
     ]
   },
   {
-    "id": "2",
-    "nome": "Rebeca",
+    "id": "18",
+    "nome": "Poltrona",
     "marca": "alpoim",
-    "categoria": "Cadeira",
+    "categoria": "Poltrona",
     "caminho": "/alpoim/POLTRONAS/Rebeca",
     "subpastas": [
       "POLTRONAS",
@@ -73,18 +683,34 @@
         "cor": "Bordo",
         "imagens": [
           "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7354.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7354.jpg",
           "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7355.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7355.jpg",
           "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7356.HEIC",
-          "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7357.HEIC"
+          "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7356.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7357.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7357.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Bordo/convertidas/IMG_7354.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Bordo/convertidas/IMG_7355.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Bordo/convertidas/IMG_7356.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Bordo/convertidas/IMG_7357.jpg"
         ]
       },
       {
         "cor": "Caramelo",
         "imagens": [
           "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7359.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7359.jpg",
           "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7360.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7360.jpg",
           "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7361.HEIC",
-          "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7363.HEIC"
+          "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7361.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7363.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7363.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Caramelo/convertidas/IMG_7359.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Caramelo/convertidas/IMG_7360.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Caramelo/convertidas/IMG_7361.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Caramelo/convertidas/IMG_7363.jpg"
         ]
       },
       {
@@ -104,18 +730,44 @@
         "cor": "Fotos Diversas",
         "imagens": [
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6722.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6722.jpg",
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6746.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6746.jpg",
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6787.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6787.jpg",
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6789.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6789.jpg",
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6806.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6806.jpg",
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6807.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6807.jpg",
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6823.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6823.jpg",
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6827.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6827.jpg",
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7353.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7353.jpg",
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7386.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7386.jpg",
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7392.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7392.jpg",
           "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7394.HEIC",
-          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7396.HEIC"
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7394.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7396.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7396.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6722.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6746.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6787.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6789.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6806.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6807.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6823.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6827.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_7353.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_7386.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_7392.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_7394.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_7396.jpg"
         ]
       },
       {
@@ -152,17 +804,31 @@
           "/alpoim/POLTRONAS/Rebeca/Rose/Imagem do WhatsApp de 2025-12-06 à(s) 17.19.35_166b6ad5.jpg",
           "/alpoim/POLTRONAS/Rebeca/Rose/Imagem do WhatsApp de 2025-12-06 à(s) 17.19.35_94e13f74.jpg",
           "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7366.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7366.jpg",
           "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7367.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7367.jpg",
           "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7370.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7370.jpg",
           "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7371.HEIC",
-          "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7375.HEIC"
+          "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7371.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7375.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7375.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Rose/convertidas/IMG_7366.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Rose/convertidas/IMG_7367.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Rose/convertidas/IMG_7370.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Rose/convertidas/IMG_7371.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Rose/convertidas/IMG_7375.jpg"
         ]
       },
       {
         "cor": "Verde",
         "imagens": [
           "/alpoim/POLTRONAS/Rebeca/Verde/IMG_7377.HEIC",
-          "/alpoim/POLTRONAS/Rebeca/Verde/IMG_7383.HEIC"
+          "/alpoim/POLTRONAS/Rebeca/Verde/IMG_7377.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Verde/IMG_7383.HEIC",
+          "/alpoim/POLTRONAS/Rebeca/Verde/IMG_7383.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Verde/convertidas/IMG_7377.jpg",
+          "/alpoim/POLTRONAS/Rebeca/Verde/convertidas/IMG_7383.jpg"
         ]
       },
       {
@@ -191,13 +857,29 @@
       "/alpoim/POLTRONAS/Rebeca/Bege/WhatsApp Image 2025-08-01 at 11.39.56 (4).jpeg",
       "/alpoim/POLTRONAS/Rebeca/Bege/WhatsApp Image 2025-08-01 at 11.39.56 (5).jpeg",
       "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7354.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7354.jpg",
       "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7355.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7355.jpg",
       "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7356.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7356.jpg",
       "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7357.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Bordo/IMG_7357.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Bordo/convertidas/IMG_7354.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Bordo/convertidas/IMG_7355.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Bordo/convertidas/IMG_7356.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Bordo/convertidas/IMG_7357.jpg",
       "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7359.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7359.jpg",
       "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7360.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7360.jpg",
       "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7361.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7361.jpg",
       "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7363.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Caramelo/IMG_7363.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Caramelo/convertidas/IMG_7359.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Caramelo/convertidas/IMG_7360.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Caramelo/convertidas/IMG_7361.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Caramelo/convertidas/IMG_7363.jpg",
       "/alpoim/POLTRONAS/Rebeca/Cinza/WhatsApp Image 2025-08-01 at 11.47.13.jpeg",
       "/alpoim/POLTRONAS/Rebeca/Cinza/WhatsApp Image 2025-08-01 at 11.47.15 (1).jpeg",
       "/alpoim/POLTRONAS/Rebeca/Cinza/WhatsApp Image 2025-08-01 at 11.47.15.jpeg",
@@ -207,18 +889,44 @@
       "/alpoim/POLTRONAS/Rebeca/Cinza/WhatsApp Image 2025-08-01 at 11.47.25.jpeg",
       "/alpoim/POLTRONAS/Rebeca/Cinza/WhatsApp Image 2025-08-01 at 11.47.43.jpeg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6722.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6722.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6746.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6746.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6787.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6787.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6789.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6789.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6806.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6806.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6807.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6807.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6823.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6823.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6827.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_6827.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7353.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7353.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7386.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7386.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7392.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7392.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7394.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7394.jpg",
       "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7396.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/IMG_7396.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6722.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6746.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6787.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6789.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6806.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6807.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6823.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_6827.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_7353.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_7386.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_7392.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_7394.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Fotos Diversas/convertidas/IMG_7396.jpg",
       "/alpoim/POLTRONAS/Rebeca/Marrom/WhatsApp Image 2025-08-01 at 11.44.14 (1).jpeg",
       "/alpoim/POLTRONAS/Rebeca/Marrom/WhatsApp Image 2025-08-01 at 11.44.14.jpeg",
       "/alpoim/POLTRONAS/Rebeca/Marrom/WhatsApp Image 2025-08-01 at 11.44.18 (1).jpeg",
@@ -240,12 +948,26 @@
       "/alpoim/POLTRONAS/Rebeca/Rose/Imagem do WhatsApp de 2025-12-06 à(s) 17.19.35_166b6ad5.jpg",
       "/alpoim/POLTRONAS/Rebeca/Rose/Imagem do WhatsApp de 2025-12-06 à(s) 17.19.35_94e13f74.jpg",
       "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7366.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7366.jpg",
       "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7367.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7367.jpg",
       "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7370.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7370.jpg",
       "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7371.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7371.jpg",
       "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7375.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Rose/IMG_7375.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Rose/convertidas/IMG_7366.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Rose/convertidas/IMG_7367.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Rose/convertidas/IMG_7370.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Rose/convertidas/IMG_7371.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Rose/convertidas/IMG_7375.jpg",
       "/alpoim/POLTRONAS/Rebeca/Verde/IMG_7377.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Verde/IMG_7377.jpg",
       "/alpoim/POLTRONAS/Rebeca/Verde/IMG_7383.HEIC",
+      "/alpoim/POLTRONAS/Rebeca/Verde/IMG_7383.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Verde/convertidas/IMG_7377.jpg",
+      "/alpoim/POLTRONAS/Rebeca/Verde/convertidas/IMG_7383.jpg",
       "/alpoim/POLTRONAS/Rebeca/Vermelha/Imagem do WhatsApp de 2025-12-06 à(s) 17.19.14_786a321a.jpg",
       "/alpoim/POLTRONAS/Rebeca/Vermelha/Imagem do WhatsApp de 2025-12-06 à(s) 17.19.14_c0375a6c.jpg",
       "/alpoim/POLTRONAS/Rebeca/Vermelha/Imagem do WhatsApp de 2025-12-06 à(s) 17.19.15_0176a906.jpg",
@@ -253,11 +975,24 @@
       "/alpoim/POLTRONAS/Rebeca/Vermelha/Imagem do WhatsApp de 2025-12-06 à(s) 17.19.15_1ca786f5.jpg",
       "/alpoim/POLTRONAS/Rebeca/Vermelha/Imagem do WhatsApp de 2025-12-06 à(s) 17.19.15_902da9f9.jpg",
       "/alpoim/POLTRONAS/Rebeca/Vermelha/Imagem do WhatsApp de 2025-12-06 à(s) 17.19.16_d054730b.jpg"
+    ],
+    "medidasRodape": "Alt: 90cm  Larg: 78cm  Prof: 60cm",
+    "coresEstruturadas": [
+      "azul",
+      "bege",
+      "bordô",
+      "caramelo",
+      "cinza",
+      "marrom",
+      "preta",
+      "rosê",
+      "verde",
+      "vermelha"
     ]
   },
   {
-    "id": "3",
-    "nome": "Sofá Agar",
+    "id": "19",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá Agar",
@@ -265,7 +1000,7 @@
       "sofa",
       "sofa"
     ],
-    "medidas": null,
+    "medidas": "1,80 m; 2,00 m; 2,10 m; 2,30 m; 2,50 m; 2,70 m; 2,90 m\nAltura: 1.02 m\nLargura: 1,80M 2,00M 2,10M 2,30M 2,50M 2,70M 2,90M",
     "informacoes": "Nosso Sofá Retrátil Reclinável Agar é um produto original, com design elegante com detalhes de madeira no assento, que combina com qualquer ambiente e deixa sua sala ainda mais linda, aconchegante e moderna.\r\n\r\nTEMOS TODAS AS CORES EM TODAS AS MEDIDAS disponiveis\r\nMEDIDAS DO SOFÁ:\r\nAltura: 1.02 m\r\nLargura: 1,80M 2,00M 2,10M 2,30M 2,50M 2,70M 2,90M\r\nProfundidade Sofá fechado: 89 cm\r\nSofá aberto Reclinável da ponta da almofada até o encosto: 1.70 m\r\n\r\nAssento:\r\nO assento retrátil contem espuma AG 45 Fibra de silicone, molas ensacadas, percinta elástica, que proporcionam uma acomodação extremamente confortável.\r\n\r\nEncosto:\r\nO encosto reclinável é feito com espuma 100% fibra de silicone. Além disso, as catracas são de ferro blindado com várias posições de inclinação, trazendo mais conforto para você na hora do descanso.\r\n\r\nEstrutura:\r\nSua estrutura é com madeira de eucalipto, 100% reflorestada e seca em estufa, e os pés são produzidos em madeira e rodízio de silicone\r\n\r\nRevestimento:\r\nO revestimento é em tecido veludão, deixando a superfície do sofá muito mais macia.\r\n\r\nBraços:\r\nBraços com Fibra de silicone.\r\n\r\n \r\n\r\n* As imagens dos produtos são meramente ilustrativas. As cores podem sofrer variações dependendo da luminosidade, tipo de câmera ou mesmo da visualização das imagens em computadores, notebooks com telas LCD ou LED, tablets ou smartphones, dependendo da quantidade de pixels, podendo deixar as imagens com cores mais opacas ou cores mais vibrantes.",
     "linkReferencia": "https://www.alpoimdistribuidorasp.com.br/",
     "imagens": [],
@@ -338,11 +1073,24 @@
       "/alpoim/sofa/Sofá Agar/2,50M/verde.webp",
       "/alpoim/sofa/Sofá Agar/2,70/vermelho.webp",
       "/alpoim/sofa/Sofá Agar/2,90/prata.webp"
+    ],
+    "medidasRodape": "Larg: 1,80/2,00/2,10/2,30/2,50/2,70/2,90m · Alt: 1,02m · Prof. fechado: 89cm · Prof. aberto: 1,70m",
+    "coresEstruturadas": [
+      "vinho",
+      "preto",
+      "terracota",
+      "azul",
+      "bege",
+      "cinza",
+      "marrom",
+      "verde",
+      "vermelho",
+      "prata"
     ]
   },
   {
-    "id": "4",
-    "nome": "2,30M",
+    "id": "20",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá Agar/2,30M",
@@ -513,8 +1261,8 @@
     ]
   },
   {
-    "id": "5",
-    "nome": "Sofá Aline",
+    "id": "21",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá Aline",
@@ -523,7 +1271,7 @@
       "sofa"
     ],
     "medidas": "Nosso Sofá 3 lugares é um produto moderno, com design elegante que deixa sua sala ainda mais linda e aconchegante. Bem como seu Chaise com amplo espaço, ideal para esticar as pernas e descansar. Ainda mais com o revestimento em Linho com textura macia, considerada confortável e sofisticada para o revestimento de estofados. Além do detalhe em madeira ideal para repousar copos, controle remotos e outros objetos. Então, compre agora seu sofá Chaise Aline.\r\n\r\n \r\ncores disponiveis: Bege, cinza e marrom\r\nMEDIDAS DO SOFÁ:\r\n\r\nComprimento: 2.50 m\r\n\r\nProfundidade: 90 cm\r\n\r\nProfundidade do Chaise: 1.50 m\r\n\r\nAltura: 75 cm\r\n\r\nAltura com almofadas: 95 cm \r\n\r\n \r\n\r\nAssento:\r\n\r\nO assento contem espuma 28, molas espirais o que proporcionam uma acomodação extremamente confortável.\r\n\r\n \r\n\r\nEncosto:\r\n\r\nO encosto fixo com almofadas soltas feitas com fibra de silicone, trazendo mais conforto para você na hora do descanso.\r\n\r\n \r\n\r\nEstrutura:\r\n\r\nSua estrutura é com madeira de eucalipto, 100% reflorestada e seca em estufa, e os pés são produzidos em madeira e braços com Espuma 26.\r\n\r\n \r\n\r\nRevestimento:\r\n\r\nO revestimento é em tecido Linho, deixando a superfície do sofá muito mais macia.\r\n\r\n \r\n\r\n \r\n\r\n* As imagens dos produtos são meramente ilustrativas. As cores podem sofrer variações dependendo da luminosidade, tipo de câmera ou mesmo da visualização das imagens em computadores, notebooks com telas LCD ou LED, tablets ou smartphones, dependendo da quantidade de pixels, podendo deixar as imagens com cores mais opacas ou cores mais vibrantes.* As imagens dos produtos são meramente ilustrativas.",
-    "informacoes": null,
+    "informacoes": "Nosso Sofá 3 lugares é um produto moderno, com design elegante que deixa sua sala ainda mais linda e aconchegante. Bem como seu Chaise com amplo espaço, ideal para esticar as pernas e descansar. Ainda mais com o revestimento em Linho com textura macia, considerada confortável e sofisticada para o revestimento de estofados. Além do detalhe em madeira ideal para repousar copos, controle remotos e outros objetos. Então, compre agora seu sofá Chaise Aline.\ncores disponiveis: Bege, cinza e marrom\nMEDIDAS DO SOFÁ:\nProfundidade do Chaise: 1.50 m\nAltura com almofadas: 95 cm\nAssento:\nO assento contem espuma 28, molas espirais o que proporcionam uma acomodação extremamente confortável.\nEncosto:\nO encosto fixo com almofadas soltas feitas com fibra de silicone, trazendo mais conforto para você na hora do descanso.\nEstrutura:\nSua estrutura é com madeira de eucalipto, 100% reflorestada e seca em estufa, e os pés são produzidos em madeira e braços com Espuma 26.\nRevestimento:\nO revestimento é em tecido Linho, deixando a superfície do sofá muito mais macia.\n* As imagens dos produtos são meramente ilustrativas. As cores podem sofrer variações dependendo da luminosidade, tipo de câmera ou mesmo da visualização das imagens em computadores, notebooks com telas LCD ou LED, tablets ou smartphones, dependendo da quantidade de pixels, podendo deixar as imagens com cores mais opacas ou cores mais vibrantes.* As imagens dos produtos são meramente ilustrativas.",
     "linkReferencia": "https://www.alpoimdistribuidorasp.com.br/",
     "imagens": [],
     "variacoes": [
@@ -632,11 +1380,17 @@
       "/alpoim/sofa/Sofá Aline/Marrom/WhatsApp Image 2025-10-28 at 14.44.23 (2).jpeg",
       "/alpoim/sofa/Sofá Aline/Marrom/WhatsApp Image 2025-10-28 at 14.44.23 (3).jpeg",
       "/alpoim/sofa/Sofá Aline/Marrom/WhatsApp Image 2025-10-28 at 14.44.23.jpeg"
+    ],
+    "medidasRodape": "Larg: 2,50m · Prof. Chaise: 1,50m · Prof: 90cm · Alt: 95cm",
+    "coresEstruturadas": [
+      "bege",
+      "cinza",
+      "marrom"
     ]
   },
   {
-    "id": "6",
-    "nome": "2Modulos",
+    "id": "22",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá Athenas/2Modulos",
@@ -645,8 +1399,8 @@
       "sofa",
       "Sofá Athenas"
     ],
-    "medidas": null,
-    "informacoes": null,
+    "medidas": "2 módulos: 1,60/1,80/2,00/2,30/2,50m",
+    "informacoes": "Nosso Sofá Retrátil Reclinável Athenas é um produto moderno, com design elegante que combina com qualquer ambiente e deixa sua sala ainda mais linda e aconchegante.\nTEMOS TODAS AS CORES EM TODAS AS MEDIDAS disponiveis\nMEDIDAS DO SOFÁ:\nLargura:\nProfundidade fechado: 90 cm\nProfundidade aberto: 1.65 m\nAssento:\nO assento retrátil contem espuma om pilow top de 13 cm de altura, percinta elástica, que proporcionam uma acomodação extremamente confortável.\nEncosto:\nO encosto reclinável é feito com espuma 100% fibra de silicone. Além disso, as catracas são de ferro blindado com várias posições de inclinação, trazendo mais conforto para você na hora do descanso.\nEstrutura:\nSua estrutura é com madeira de eucalipto, 100% reflorestada e seca em estufa, e os pés são produzidos em madeira e rodízio de silicone\nRevestimento:\nO revestimento é em tecido veludinho, deixando a superfície do sofá muito mais macia.\nBraços:\nBraços com Fibra de silicone.",
     "linkReferencia": "https://www.alpoimdistribuidorasp.com.br/",
     "imagens": [],
     "variacoes": [
@@ -699,11 +1453,25 @@
       "/alpoim/sofa/Sofá Athenas/2Modulos/2,30m/vermelho.jpg",
       "/alpoim/sofa/Sofá Athenas/2Modulos/2,50M/bege.webp",
       "/alpoim/sofa/Sofá Athenas/2Modulos/2,50M/marrom.webp"
+    ],
+    "medidasRodape": "2 módulos · Larg: 1,60m / 1,80m / 2,00m / 2,30m / 2,50m · Alt: 1,10m · Prof. fechado: 90cm · Prof. aberto: 1,65m",
+    "coresEstruturadas": [
+      "azul",
+      "bege",
+      "cinza",
+      "prata",
+      "marrom",
+      "preto",
+      "rosa claro/rosê",
+      "terracota",
+      "verde",
+      "vermelho",
+      "vinho"
     ]
   },
   {
-    "id": "7",
-    "nome": "3modulos",
+    "id": "23",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá Athenas/3modulos",
@@ -712,7 +1480,7 @@
       "sofa",
       "Sofá Athenas"
     ],
-    "medidas": null,
+    "medidas": "3 módulos: 2,70/2,90/3,20m",
     "informacoes": null,
     "linkReferencia": "https://www.alpoimdistribuidorasp.com.br/",
     "imagens": [],
@@ -756,11 +1524,25 @@
       "/alpoim/sofa/Sofá Athenas/3modulos/3,20m/verde.png",
       "/alpoim/sofa/Sofá Athenas/3modulos/3,20m/vermelho.png",
       "/alpoim/sofa/Sofá Athenas/3modulos/3,20m/vinho.png"
+    ],
+    "medidasRodape": "3 módulos · Larg: 2,70m / 2,90m / 3,20m · Alt: 1,10m · Prof. fechado: 90cm · Prof. aberto: 1,65m",
+    "coresEstruturadas": [
+      "azul",
+      "bege",
+      "cinza",
+      "marrom",
+      "prata",
+      "preto",
+      "rosa claro",
+      "terracota",
+      "verde",
+      "vermelho",
+      "vinho"
     ]
   },
   {
-    "id": "8",
-    "nome": "Sofá Fortaleza",
+    "id": "24",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá Fortaleza",
@@ -768,7 +1550,7 @@
       "sofa",
       "sofa"
     ],
-    "medidas": null,
+    "medidas": "Altura: 1.12 m\nLargura: 2,10m 2,30m 2,50m",
     "informacoes": "Nosso Sofá Retrátil Reclinável Fortaleza é um produto original, com design elegante que combina com qualquer ambiente e deixa sua sala ainda mais linda, aconchegante e moderna.\r\n\r\n \r\ncores disponiveis: Bege, cinza e marrom\r\nMEDIDAS DO SOFÁ:\r\n\r\nAltura: 1.12 m\r\n\r\nLargura: 2,10m 2,30m 2,50m\r\n\r\nProfundidade Sofá fechado: 1.20 m\r\n\r\nSofá aberto Reclinável da ponta da almofada até o encosto: 1.80 m\r\n\r\n \r\n\r\nAssento:\r\n\r\nO assento retrátil contem espuma D28 Fibra de silicone e percinta elástica, Molas ensacadas Pillow de 30 cm que proporcionam uma acomodação extremamente confortável.\r\n\r\n \r\n\r\nEncosto:\r\n\r\nO encosto reclinável é feito com espuma 100% fibra de silicone. Além disso, as catracas são de ferro blindado com várias posições de inclinação, trazendo mais conforto para você na hora do descanso.\r\n\r\n \r\n\r\nEstrutura:\r\n\r\nSua estrutura é com madeira de eucalipto, 100% reflorestada e seca em estufa, e os pés são produzidos em madeira e rodízio de silicone\r\n\r\n \r\n\r\nRevestimento:\r\n\r\nO revestimento é em tecido Linho, deixando a superfície do sofá muito mais macia.\r\n\r\n \r\n\r\nBraços:\r\n\r\nBraços com Fibra de silicone.",
     "linkReferencia": "https://www.alpoimdistribuidorasp.com.br/",
     "imagens": [],
@@ -906,11 +1688,17 @@
       "/alpoim/sofa/Sofá Fortaleza/Marrom/WhatsApp Image 2026-04-04 at 09.42.40.jpeg",
       "/alpoim/sofa/Sofá Fortaleza/Marrom/WhatsApp Image 2026-04-04 at 09.42.41 (1).jpeg",
       "/alpoim/sofa/Sofá Fortaleza/Marrom/WhatsApp Image 2026-04-04 at 09.42.41.jpeg"
+    ],
+    "medidasRodape": "Larg: 2,10/2,30/2,50m · Alt: 1,12m · Prof. fechado: 1,20m · Prof. aberto: 1,80m",
+    "coresEstruturadas": [
+      "bege",
+      "cinza",
+      "marrom"
     ]
   },
   {
-    "id": "9",
-    "nome": "Sofá ISA",
+    "id": "25",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá ISA",
@@ -918,7 +1706,7 @@
       "sofa",
       "sofa"
     ],
-    "medidas": null,
+    "medidas": "1,60 m; 1,80 m; 2,00 m; 2,10 m; 2,30 m; 2,50 m; 2,70 m; 2,90 m\nAltura: 1.02 m\n1,80m\n2,00m\n2,10m\n2,30m\n2,50m\n2,70m\n2,90 m",
     "informacoes": "Nosso Sofá Retrátil Reclinável Isa é um produto original, com design elegante que combina com qualquer ambiente e deixa sua sala ainda mais linda, aconchegante e moderna.\r\n\r\nTEMOS TODAS AS CORES EM TODAS AS MEDIDAS disponiveis\r\nMEDIDAS DO SOFÁ:\r\nAltura: 1.02 m\r\nLargura: \r\n1,80m\r\n2,00m\r\n2,10m\r\n2,30m\r\n2,50m\r\n2,70m\r\n2,90 m\r\nProfundidade Sofá fechado: 89 cm\r\nSofá aberto Reclinável da ponta da almofada até o encosto: 1.70 m\r\n\r\nAssento:\r\nO assento retrátil contem espuma AG 45 Fibra de silicone, molas ensacadas, percinta elástica, que proporcionam uma acomodação extremamente confortável.\r\n\r\nEncosto:\r\nO encosto reclinável é feito com espuma 100% fibra de silicone. Além disso, as catracas são de ferro blindado com várias posições de inclinação, trazendo mais conforto para você na hora do descanso.\r\n\r\nEstrutura:\r\nSua estrutura é com madeira de eucalipto, 100% reflorestada e seca em estufa, e os pés são produzidos em madeira e rodízio de silicone\r\n\r\nRevestimento:\r\nO revestimento é em tecido veludão, deixando a superfície do sofá muito mais macia.\r\n\r\nBraços:\r\nBraços com Fibra de silicone.",
     "linkReferencia": "https://www.alpoimdistribuidorasp.com.br/",
     "imagens": [],
@@ -944,7 +1732,19 @@
       {
         "cor": "2,30M",
         "imagens": [
-          "/alpoim/sofa/Sofá ISA/2,30M/cinza.webp"
+          "/alpoim/sofa/Sofá ISA/2,30M/cinza.webp",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.41 (1).jpeg",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.42 (1).jpeg",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.42.jpeg",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.43.jpeg",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.44 (1).jpeg",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.44.jpeg",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.45.jpeg",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.46.jpeg",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.47 (1).jpeg",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.47.jpeg",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.48 (1).jpeg",
+          "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.48.jpeg"
         ]
       },
       {
@@ -965,13 +1765,38 @@
       "/alpoim/sofa/Sofá ISA/1,80/terracota.webp",
       "/alpoim/sofa/Sofá ISA/2,00m/vermelho.webp",
       "/alpoim/sofa/Sofá ISA/2,30M/cinza.webp",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.41 (1).jpeg",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.42 (1).jpeg",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.42.jpeg",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.43.jpeg",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.44 (1).jpeg",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.44.jpeg",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.45.jpeg",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.46.jpeg",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.47 (1).jpeg",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.47.jpeg",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.48 (1).jpeg",
+      "/alpoim/sofa/Sofá ISA/2,30M/PRATA/WhatsApp Image 2025-06-25 at 12.08.48.jpeg",
       "/alpoim/sofa/Sofá ISA/2,70m/vinho.webp",
       "/alpoim/sofa/Sofá ISA/2,90M/verde.webp"
+    ],
+    "medidasRodape": "Larg: 1,80/2,00/2,10/2,30/2,50/2,70/2,90m · Alt: 1,02m · Prof. fechado: 89cm · Prof. aberto: 1,70m",
+    "coresEstruturadas": [
+      "preto",
+      "terracota",
+      "vermelho",
+      "azul",
+      "bege",
+      "cinza",
+      "prata",
+      "marrom",
+      "vinho",
+      "verde"
     ]
   },
   {
-    "id": "10",
-    "nome": "2,10M",
+    "id": "26",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá ISA/2,10M",
@@ -1010,22 +1835,56 @@
         "cor": "Bege",
         "imagens": [
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2609.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2609.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2611.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2611.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2612.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2612.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2615.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2615.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2617.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2617.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2620.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2620.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2621.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2621.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2622.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2622.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2625.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2625.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2629.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2629.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2631.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2631.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2632.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2632.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2634.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2634.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2638.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2638.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2643.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2643.jpg",
           "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2644.HEIC",
-          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2645.HEIC"
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2644.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2645.HEIC",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2645.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2609.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2611.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2612.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2615.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2617.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2620.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2621.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2622.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2625.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2629.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2631.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2632.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2634.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2638.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2643.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2644.jpg",
+          "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2645.jpg"
         ]
       }
     ],
@@ -1047,27 +1906,61 @@
       "/alpoim/sofa/Sofá ISA/2,10M/Azul/isa8.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Azul/isa9.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2609.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2609.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2611.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2611.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2612.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2612.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2615.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2615.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2617.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2617.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2620.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2620.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2621.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2621.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2622.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2622.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2625.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2625.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2629.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2629.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2631.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2631.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2632.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2632.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2634.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2634.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2638.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2638.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2643.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2643.jpg",
       "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2644.HEIC",
-      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2645.HEIC"
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2644.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2645.HEIC",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/IMG_2645.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2609.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2611.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2612.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2615.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2617.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2620.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2621.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2622.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2625.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2629.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2631.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2632.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2634.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2638.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2643.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2644.jpg",
+      "/alpoim/sofa/Sofá ISA/2,10M/Bege/convertidas/IMG_2645.jpg"
     ]
   },
   {
-    "id": "11",
-    "nome": "2,50M",
+    "id": "27",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá ISA/2,50M",
@@ -1127,8 +2020,8 @@
     ]
   },
   {
-    "id": "12",
-    "nome": "Sofá Manuela",
+    "id": "28",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá Manuela",
@@ -1136,7 +2029,7 @@
       "sofa",
       "sofa"
     ],
-    "medidas": null,
+    "medidas": "2,10 m; 2,30 m; 2,50 m; 2,70 m; 2,90 m\nAltura: 1.10 m\n2,10 m\n2,30 m\n2,50 m\n2,70 m\n2,90 m",
     "informacoes": "Nosso Sofá Retrátil Reclinável Manuela é um produto original, com design elegante que combina com qualquer ambiente e deixa sua sala ainda mais linda, aconchegante e moderna.\r\n\r\nTEMOS TODAS AS CORES EM TODOS OS TAMANHOS DISPONIVEIS \r\nMEDIDAS DO SOFÁ:\r\nAltura: 1.10 m\r\nLargura: \r\n2,10 m\r\n2,30 m\r\n2,50 m\r\n2,70 m\r\n2,90 m\r\nProfundidade Sofá fechado: 1.20 m\r\nSofá aberto Reclinável da ponta da almofada até o encosto: 1.90 m\r\nPillow: 30 cm\r\n\r\nAssento:\r\nO assento retrátil contem espuma AG 40 Fibra de silicone, molas ensacadas, percinta elástica, que proporcionam uma acomodação extremamente confortável.\r\n\r\nEncosto:\r\nO encosto reclinável é feito com espuma 100% fibra de silicone. Além disso, as catracas são de ferro blindado com várias posições de inclinação, trazendo mais conforto para você na hora do descanso.\r\n\r\nEstrutura:\r\nSua estrutura é com madeira de eucalipto, 100% reflorestada e seca em estufa, e os pés são produzidos em madeira e rodízio de silicone\r\n\r\nRevestimento:\r\nO revestimento é em tecido veludão, deixando a superfície do sofá muito mais macia.\r\n\r\nBraços:\r\nBraços com Fibra de silicone.",
     "linkReferencia": "https://www.alpoimdistribuidorasp.com.br/",
     "imagens": [],
@@ -1163,7 +2056,15 @@
       {
         "cor": "2,90m",
         "imagens": [
-          "/alpoim/sofa/Sofá Manuela/2,90m/terracota.png"
+          "/alpoim/sofa/Sofá Manuela/2,90m/terracota.png",
+          "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.14.jpeg",
+          "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.15 (1).jpeg",
+          "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.15.jpeg",
+          "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.16 (1).jpeg",
+          "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.16 (3).jpeg",
+          "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.16.jpeg",
+          "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.17 (1).jpeg",
+          "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.17.jpeg"
         ]
       }
     ],
@@ -1172,12 +2073,34 @@
       "/alpoim/sofa/Sofá Manuela/2,10M/vermelho.png",
       "/alpoim/sofa/Sofá Manuela/2,50M/vinho.png",
       "/alpoim/sofa/Sofá Manuela/2,70m/bege.png",
-      "/alpoim/sofa/Sofá Manuela/2,90m/terracota.png"
+      "/alpoim/sofa/Sofá Manuela/2,90m/terracota.png",
+      "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.14.jpeg",
+      "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.15 (1).jpeg",
+      "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.15.jpeg",
+      "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.16 (1).jpeg",
+      "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.16 (3).jpeg",
+      "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.16.jpeg",
+      "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.17 (1).jpeg",
+      "/alpoim/sofa/Sofá Manuela/2,90m/Verde/WhatsApp Image 2025-04-02 at 18.55.17.jpeg"
+    ],
+    "medidasRodape": "Larg: 2,10/2,30/2,50/2,70/2,90m · Alt: 1,10m · Prof. fechado: 1,20m · Prof. aberto: 1,90m",
+    "coresEstruturadas": [
+      "rosa claro",
+      "vermelho",
+      "azul",
+      "cinza",
+      "prata",
+      "preto",
+      "vinho",
+      "bege",
+      "terracota",
+      "verde",
+      "marrom"
     ]
   },
   {
-    "id": "13",
-    "nome": "2,30m",
+    "id": "29",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá Manuela/2,30m",
@@ -1351,8 +2274,8 @@
     ]
   },
   {
-    "id": "14",
-    "nome": "Sofá Recife",
+    "id": "30",
+    "nome": "Sofá",
     "marca": "alpoim",
     "categoria": "Sofá",
     "caminho": "/alpoim/sofa/Sofá Recife",
@@ -1360,7 +2283,7 @@
       "sofa",
       "sofa"
     ],
-    "medidas": null,
+    "medidas": "Altura: 1.12 m\nLargura: 2.10 - 2.30m - 2.50 m",
     "informacoes": "Nosso Sofá Retrátil Reclinável Recife é um produto original, com design elegante que combina com qualquer ambiente e deixa sua sala ainda mais linda, aconchegante e moderna.\r\n\r\n \r\ncores disponiveis: Bege, cinza e marrom\r\nMEDIDAS DO SOFÁ:\r\n\r\nAltura: 1.12 m\r\n\r\nLargura: 2.10 - 2.30m - 2.50 m\r\n\r\nProfundidade Sofá fechado: 1.20 m\r\n\r\nSofá aberto Reclinável da ponta da almofada até o encosto: 1.80 m\r\n\r\n \r\n\r\nAssento:\r\n\r\nO assento retrátil contem espuma D28, Fibra de silicone e percinta elástica, Molas ensacadas Pillow de 30 cm que proporcionam uma acomodação extremamente confortável.\r\n\r\n \r\n\r\nEncosto:\r\n\r\nO encosto reclinável é feito com espuma 100% fibra de silicone. Além disso, as catracas são de ferro blindado com várias posições de inclinação, trazendo mais conforto para você na hora do descanso.\r\n\r\n \r\n\r\nEstrutura:\r\n\r\nSua estrutura é com madeira de eucalipto, 100% reflorestada e seca em estufa, e os pés são produzidos em madeira e rodízio de silicone\r\n\r\n \r\n\r\nRevestimento:\r\n\r\nO revestimento é em tecido Linho, deixando a superfície do sofá muito mais macia.\r\n\r\n \r\n\r\nBraços:\r\n\r\nBraços com Fibra de silicone.",
     "linkReferencia": "https://www.alpoimdistribuidorasp.com.br/",
     "imagens": [],
@@ -1369,38 +2292,104 @@
         "cor": "Bege",
         "imagens": [
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2193.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2193.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2194.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2194.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2195.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2195.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2196.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2196.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2197.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2197.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2198.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2198.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2199.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2199.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2200.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2200.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2201.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2201.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2202.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2202.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2203.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2203.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2204.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2204.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2205.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2205.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2206.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2206.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2207.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2207.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2208.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2208.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2209.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2209.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2210.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2210.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2211.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2211.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2212.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2212.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2213.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2213.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2214.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2214.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2215.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2215.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2216.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2216.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2217.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2217.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2218.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2218.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2219.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2219.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2220.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2220.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2238.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2238.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2239.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2239.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2240.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2240.jpg",
           "/alpoim/sofa/Sofá Recife/Bege/IMG_2247.heic",
-          "/alpoim/sofa/Sofá Recife/Bege/IMG_2248.heic"
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2247.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2248.heic",
+          "/alpoim/sofa/Sofá Recife/Bege/IMG_2248.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2193.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2194.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2195.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2196.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2197.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2198.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2199.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2200.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2201.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2202.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2203.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2204.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2205.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2206.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2207.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2208.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2209.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2210.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2211.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2212.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2213.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2214.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2215.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2216.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2217.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2218.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2219.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2220.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2238.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2239.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2240.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2247.jpg",
+          "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2248.jpg"
         ]
       },
       {
@@ -1442,83 +2431,231 @@
         "cor": "Marrom",
         "imagens": [
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2250.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2250.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2251.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2251.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2252.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2252.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2253.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2253.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2254.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2254.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2255.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2255.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2256.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2256.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2257.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2257.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2258.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2258.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2259.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2259.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2260.HEIC",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2260.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2261.HEIC",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2261.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2262.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2262.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2263.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2263.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2264.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2264.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2265.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2265.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2266.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2266.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2267.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2267.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2268.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2268.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2269.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2269.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2270.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2270.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2271.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2271.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2272.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2272.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2273.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2273.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2274.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2274.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2275.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2275.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2276.HEIC",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2276.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2277.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2277.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2278.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2278.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2294.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2294.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2295.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2295.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2296.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2296.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2297.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2297.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2298.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2298.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2299.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2299.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2300.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2300.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2301.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2301.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2302.HEIC",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2302.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2303.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2303.jpg",
           "/alpoim/sofa/Sofá Recife/Marrom/IMG_2304.heic",
-          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2305.heic"
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2304.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2305.heic",
+          "/alpoim/sofa/Sofá Recife/Marrom/IMG_2305.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2250.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2251.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2252.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2253.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2254.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2255.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2256.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2257.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2258.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2259.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2260.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2261.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2262.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2263.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2264.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2265.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2266.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2267.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2268.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2269.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2270.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2271.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2272.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2273.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2274.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2275.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2276.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2277.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2278.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2294.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2295.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2296.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2297.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2298.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2299.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2300.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2301.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2302.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2303.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2304.jpg",
+          "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2305.jpg"
         ]
       }
     ],
     "todasImagens": [
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2193.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2193.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2194.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2194.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2195.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2195.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2196.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2196.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2197.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2197.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2198.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2198.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2199.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2199.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2200.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2200.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2201.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2201.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2202.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2202.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2203.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2203.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2204.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2204.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2205.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2205.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2206.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2206.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2207.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2207.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2208.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2208.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2209.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2209.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2210.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2210.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2211.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2211.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2212.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2212.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2213.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2213.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2214.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2214.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2215.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2215.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2216.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2216.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2217.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2217.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2218.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2218.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2219.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2219.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2220.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2220.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2238.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2238.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2239.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2239.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2240.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2240.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2247.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2247.jpg",
       "/alpoim/sofa/Sofá Recife/Bege/IMG_2248.heic",
+      "/alpoim/sofa/Sofá Recife/Bege/IMG_2248.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2193.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2194.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2195.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2196.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2197.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2198.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2199.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2200.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2201.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2202.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2203.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2204.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2205.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2206.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2207.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2208.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2209.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2210.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2211.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2212.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2213.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2214.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2215.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2216.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2217.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2218.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2219.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2220.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2238.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2239.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2240.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2247.jpg",
+      "/alpoim/sofa/Sofá Recife/Bege/convertidas/IMG_2248.jpg",
       "/alpoim/sofa/Sofá Recife/Cinza/1 (8).jpg",
       "/alpoim/sofa/Sofá Recife/Cinza/2 (8).jpg",
       "/alpoim/sofa/Sofá Recife/Cinza/3 (8).jpg",
@@ -1550,53 +2687,141 @@
       "/alpoim/sofa/Sofá Recife/Cinza/WhatsApp Image 2026-04-04 at 09.20.52.jpeg",
       "/alpoim/sofa/Sofá Recife/Cinza/WhatsApp Image 2026-04-04 at 09.24.55.jpeg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2250.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2250.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2251.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2251.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2252.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2252.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2253.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2253.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2254.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2254.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2255.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2255.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2256.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2256.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2257.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2257.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2258.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2258.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2259.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2259.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2260.HEIC",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2260.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2261.HEIC",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2261.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2262.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2262.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2263.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2263.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2264.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2264.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2265.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2265.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2266.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2266.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2267.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2267.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2268.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2268.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2269.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2269.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2270.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2270.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2271.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2271.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2272.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2272.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2273.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2273.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2274.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2274.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2275.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2275.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2276.HEIC",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2276.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2277.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2277.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2278.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2278.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2294.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2294.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2295.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2295.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2296.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2296.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2297.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2297.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2298.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2298.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2299.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2299.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2300.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2300.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2301.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2301.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2302.HEIC",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2302.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2303.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2303.jpg",
       "/alpoim/sofa/Sofá Recife/Marrom/IMG_2304.heic",
-      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2305.heic"
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2304.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2305.heic",
+      "/alpoim/sofa/Sofá Recife/Marrom/IMG_2305.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2250.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2251.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2252.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2253.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2254.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2255.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2256.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2257.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2258.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2259.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2260.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2261.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2262.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2263.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2264.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2265.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2266.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2267.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2268.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2269.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2270.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2271.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2272.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2273.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2274.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2275.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2276.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2277.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2278.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2294.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2295.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2296.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2297.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2298.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2299.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2300.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2301.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2302.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2303.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2304.jpg",
+      "/alpoim/sofa/Sofá Recife/Marrom/convertidas/IMG_2305.jpg"
+    ],
+    "medidasRodape": "Larg: 2,10/2,30/2,50m · Alt: 1,12m · Prof. fechado: 1,20m · Prof. aberto: 1,80m",
+    "coresEstruturadas": [
+      "bege",
+      "cinza",
+      "marrom"
     ]
   },
   {
-    "id": "15",
-    "nome": "cadeira",
+    "id": "31",
+    "nome": "Cadeira",
     "marca": "açoNobre",
-    "categoria": "Cadeira",
+    "categoria": "Outros",
     "caminho": "/açoNobre/cadeira",
     "subpastas": [
       "cadeira"
@@ -1610,11 +2835,15 @@
     "variacoes": [],
     "todasImagens": [
       "/açoNobre/cadeira/max.png"
+    ],
+    "medidasRodape": "Alt: 110cm  Larg: 40cm  Prof: 57cm",
+    "coresEstruturadas": [
+      "preto"
     ]
   },
   {
-    "id": "16",
-    "nome": "mesaComCadeiras",
+    "id": "32",
+    "nome": "Mesa com Cadeiras",
     "marca": "açoNobre",
     "categoria": "Mesa",
     "caminho": "/açoNobre/mesaComCadeiras",
@@ -1632,13 +2861,17 @@
     "todasImagens": [
       "/açoNobre/mesaComCadeiras/cadeiraMaxEmedidas.png",
       "/açoNobre/mesaComCadeiras/granito.jpg"
+    ],
+    "coresEstruturadas": [
+      "cadeira Max",
+      "tampo granito"
     ]
   },
   {
-    "id": "17",
-    "nome": "berço",
+    "id": "33",
+    "nome": "Berço",
     "marca": "batrol",
-    "categoria": "Outros",
+    "categoria": "Cama",
     "caminho": "/batrol/berço",
     "subpastas": [
       "berço"
@@ -1652,11 +2885,14 @@
     "variacoes": [],
     "todasImagens": [
       "/batrol/berço/berco-simples-magia-branco (1).jpg"
+    ],
+    "coresEstruturadas": [
+      "branco"
     ]
   },
   {
-    "id": "18",
-    "nome": "comoda",
+    "id": "34",
+    "nome": "Cômoda",
     "marca": "batrol",
     "categoria": "Cômoda",
     "caminho": "/batrol/comoda",
@@ -1674,13 +2910,16 @@
     "todasImagens": [
       "/batrol/comoda/aberta.png",
       "/batrol/comoda/comoda-infantil-magia-1p-3g-branco.jpg"
+    ],
+    "coresEstruturadas": [
+      "branco"
     ]
   },
   {
-    "id": "19",
-    "nome": "conjunto",
+    "id": "35",
+    "nome": "Conjunto de Quarto",
     "marca": "batrol",
-    "categoria": "Outros",
+    "categoria": "Cama",
     "caminho": "/batrol/conjunto",
     "subpastas": [
       "conjunto"
@@ -1697,10 +2936,10 @@
     ]
   },
   {
-    "id": "20",
-    "nome": "gr",
+    "id": "36",
+    "nome": "Guarda-Roupa",
     "marca": "batrol",
-    "categoria": "Outros",
+    "categoria": "Guarda-Roupa",
     "caminho": "/batrol/gr",
     "subpastas": [
       "gr"
@@ -1716,18 +2955,21 @@
     "todasImagens": [
       "/batrol/gr/aberto.png",
       "/batrol/gr/guarda-roupa-infantil-magia-2p-2g-branco (3).jpg"
+    ],
+    "coresEstruturadas": [
+      "branco"
     ]
   },
   {
-    "id": "21",
-    "nome": "aparador",
+    "id": "37",
+    "nome": "Aparador",
     "marca": "bechara",
-    "categoria": "Aparador",
+    "categoria": "Armário",
     "caminho": "/bechara/aparador",
     "subpastas": [
       "aparador"
     ],
-    "medidas": null,
+    "medidas": "altura: 93cm\nlargura: 160cm\nprofundidade 36cm",
     "informacoes": null,
     "linkReferencia": "https://www.moveisbechara.com.br/",
     "imagens": [],
@@ -1741,18 +2983,21 @@
     ],
     "todasImagens": [
       "/bechara/aparador/tamisa/offNaturalle.png"
+    ],
+    "coresEstruturadas": [
+      "off/naturalle"
     ]
   },
   {
-    "id": "22",
-    "nome": "cadeira",
+    "id": "38",
+    "nome": "Cadeira",
     "marca": "bechara",
-    "categoria": "Cadeira",
+    "categoria": "Outros",
     "caminho": "/bechara/cadeira",
     "subpastas": [
       "cadeira"
     ],
-    "medidas": null,
+    "medidas": "imagem de medidas presente",
     "informacoes": null,
     "linkReferencia": "https://www.moveisbechara.com.br/",
     "imagens": [],
@@ -1776,18 +3021,23 @@
       "/bechara/cadeira/cantiga/CANTIGA (4).png",
       "/bechara/cadeira/cantiga/CANTIGA (5).png",
       "/bechara/cadeira/cantiga/CANTIGA.png"
+    ],
+    "medidasRodape": "Alt: 90cm  Larg: 46cm  Prof: 50cm",
+    "coresEstruturadas": [
+      "bouclé bege",
+      "madeira maciça"
     ]
   },
   {
-    "id": "23",
-    "nome": "cristaleira",
+    "id": "39",
+    "nome": "Cristaleira",
     "marca": "bechara",
-    "categoria": "Cristaleira",
+    "categoria": "Armário",
     "caminho": "/bechara/cristaleira",
     "subpastas": [
       "cristaleira"
     ],
-    "medidas": null,
+    "medidas": "imagem de medidas presente",
     "informacoes": null,
     "linkReferencia": "https://www.moveisbechara.com.br/",
     "imagens": [],
@@ -1812,18 +3062,24 @@
       "/bechara/cristaleira/Elba/naturalle.png",
       "/bechara/cristaleira/Elba/offNaturale.png",
       "/bechara/cristaleira/madri/NaturaleOff.png"
+    ],
+    "medidasRodape": "Alt: 180cm  Larg: 90cm  Prof: 36cm",
+    "coresEstruturadas": [
+      "naturalle",
+      "off-white",
+      "naturale/off"
     ]
   },
   {
-    "id": "24",
-    "nome": "home",
+    "id": "40",
+    "nome": "Home Rack",
     "marca": "bechara",
-    "categoria": "Home / Rack",
+    "categoria": "Rack / Painel",
     "caminho": "/bechara/home",
     "subpastas": [
       "home"
     ],
-    "medidas": null,
+    "medidas": "imagem de medidas presente",
     "informacoes": null,
     "linkReferencia": "https://www.moveisbechara.com.br/",
     "imagens": [],
@@ -1839,18 +3095,22 @@
     "todasImagens": [
       "/bechara/home/dallas/medidas.png",
       "/bechara/home/dallas/naturalle-off.png"
+    ],
+    "medidasRodape": "Alt: 186cm  Larg: 210cm  Prof: 40cm",
+    "coresEstruturadas": [
+      "naturalle/off"
     ]
   },
   {
-    "id": "25",
-    "nome": "painel",
+    "id": "41",
+    "nome": "Painel TV",
     "marca": "bechara",
     "categoria": "Rack / Painel",
     "caminho": "/bechara/painel",
     "subpastas": [
       "painel"
     ],
-    "medidas": null,
+    "medidas": "imagem de medidas presente",
     "informacoes": null,
     "linkReferencia": "https://www.moveisbechara.com.br/",
     "imagens": [],
@@ -1877,18 +3137,23 @@
       "/bechara/painel/navi/branco-ripado.png",
       "/bechara/painel/navi/brancoRipado.png",
       "/bechara/painel/navi/medidas.png"
+    ],
+    "medidasRodape": "Alt: 136cm  Larg: 180cm  Prof: 21cm",
+    "coresEstruturadas": [
+      "off/naturalle",
+      "branco ripado"
     ]
   },
   {
-    "id": "26",
-    "nome": "rack",
+    "id": "42",
+    "nome": "Rack",
     "marca": "bechara",
     "categoria": "Rack / Painel",
     "caminho": "/bechara/rack",
     "subpastas": [
       "rack"
     ],
-    "medidas": null,
+    "medidas": "imagem de medidas presente",
     "informacoes": null,
     "linkReferencia": "https://www.moveisbechara.com.br/",
     "imagens": [],
@@ -1928,129 +3193,20 @@
       "/bechara/rack/turim/medidas (2).png",
       "/bechara/rack/turim/pretoFosco-Naturalle (2).png",
       "/bechara/rack/turim/pretoFosco-Naturalle.png"
+    ],
+    "medidasRodape": "Alt: 57cm  Larg: 180cm  Prof: 38cm",
+    "coresEstruturadas": [
+      "off/naturalle",
+      "cinamomo/off ripado",
+      "naturalle/off ripado",
+      "preto fosco/naturalle"
     ]
   },
   {
-    "id": "27",
-    "nome": "poltrona",
-    "marca": "BomJesus",
-    "categoria": "Cadeira",
-    "caminho": "/BomJesus/poltrona",
-    "subpastas": [
-      "poltrona"
-    ],
-    "medidas": "Altura: 75 cm\r\nLargura: 65 cm\r\nProfundidade: 55 cm",
-    "informacoes": null,
-    "linkReferencia": null,
-    "imagens": [
-      "/BomJesus/poltrona/azul.png",
-      "/BomJesus/poltrona/cinza.png",
-      "/BomJesus/poltrona/marrom.png",
-      "/BomJesus/poltrona/preta.png"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/BomJesus/poltrona/azul.png",
-      "/BomJesus/poltrona/cinza.png",
-      "/BomJesus/poltrona/marrom.png",
-      "/BomJesus/poltrona/preta.png"
-    ]
-  },
-  {
-    "id": "28",
-    "nome": "cabeceira",
-    "marca": "Cambel",
-    "categoria": "Criado-Mudo",
-    "caminho": "/Cambel/cabeceira",
-    "subpastas": [
-      "cabeceira"
-    ],
-    "medidas": "Altura: 123 cm | Largura: 145 cm | Profundidade: 30 cm",
-    "informacoes": null,
-    "linkReferencia": "https://incasamoveis.com.br/cambel?srsltid=AfmBOoqiezoq-E-OWW6DiLV_u6MRgBSUQFUzMVmy0n-jcuagBENV0aX2\r\nhttps://www.opcaomoveis.com.br/produtos/cama-sofia-casal-138x188-branco-cambel-vj?srsltid=AfmBOoqMX0gx99cvgTGQMtH36l8ZCW66emco6g5CfhId-ehNtxsMn-xJ\r\nhttps://www.madeiramadeira.com.br/cama-de-solteiro-com-auxiliar-isa-nature-de-mdf-com-duas-gavetas-bau-e-nichos-371040268.html?origem=pla-371040268&utm_source=google&utm_medium=cpc&utm_content=camas-5081&utm_term=&utm_id=18022911328&gad_source=1&gad_campaignid=18021492945&gbraid=0AAAAADr4g_Elv66L022gUFpjC3e7MqgIB&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD0cW6TiQwLMfnz43LEk5k_5YtYOyukVfDhcehYAcXSTlaZiqisSZZgaAlfcEALw_wcB",
-    "imagens": [
-      "/Cambel/cabeceira/branca.webp",
-      "/Cambel/cabeceira/JessicaNatureOff.jpg"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/Cambel/cabeceira/branca.webp",
-      "/Cambel/cabeceira/JessicaNatureOff.jpg"
-    ]
-  },
-  {
-    "id": "29",
-    "nome": "CamaCasal",
-    "marca": "Cambel",
-    "categoria": "Outros",
-    "caminho": "/Cambel/CamaCasal",
-    "subpastas": [
-      "CamaCasal"
-    ],
-    "medidas": "Altura: 103 cm | Largura: 144 cm | Comprimento: 195 cm",
-    "informacoes": null,
-    "linkReferencia": "https://incasamoveis.com.br/cambel?srsltid=AfmBOoqiezoq-E-OWW6DiLV_u6MRgBSUQFUzMVmy0n-jcuagBENV0aX2\r\nhttps://www.opcaomoveis.com.br/produtos/cama-sofia-casal-138x188-branco-cambel-vj?srsltid=AfmBOoqMX0gx99cvgTGQMtH36l8ZCW66emco6g5CfhId-ehNtxsMn-xJ\r\nhttps://www.madeiramadeira.com.br/cama-de-solteiro-com-auxiliar-isa-nature-de-mdf-com-duas-gavetas-bau-e-nichos-371040268.html?origem=pla-371040268&utm_source=google&utm_medium=cpc&utm_content=camas-5081&utm_term=&utm_id=18022911328&gad_source=1&gad_campaignid=18021492945&gbraid=0AAAAADr4g_Elv66L022gUFpjC3e7MqgIB&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD0cW6TiQwLMfnz43LEk5k_5YtYOyukVfDhcehYAcXSTlaZiqisSZZgaAlfcEALw_wcB",
-    "imagens": [
-      "/Cambel/CamaCasal/CasalNatureOFF.png"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/Cambel/CamaCasal/CasalNatureOFF.png"
-    ]
-  },
-  {
-    "id": "30",
-    "nome": "CamaSolteiro",
-    "marca": "Cambel",
-    "categoria": "Outros",
-    "caminho": "/Cambel/CamaSolteiro",
-    "subpastas": [
-      "CamaSolteiro"
-    ],
-    "medidas": "altura 103cm\r\nlargura 94cm\r\ncomprimento 195",
-    "informacoes": null,
-    "linkReferencia": "https://incasamoveis.com.br/cambel?srsltid=AfmBOoqiezoq-E-OWW6DiLV_u6MRgBSUQFUzMVmy0n-jcuagBENV0aX2\r\nhttps://www.opcaomoveis.com.br/produtos/cama-sofia-casal-138x188-branco-cambel-vj?srsltid=AfmBOoqMX0gx99cvgTGQMtH36l8ZCW66emco6g5CfhId-ehNtxsMn-xJ\r\nhttps://www.madeiramadeira.com.br/cama-de-solteiro-com-auxiliar-isa-nature-de-mdf-com-duas-gavetas-bau-e-nichos-371040268.html?origem=pla-371040268&utm_source=google&utm_medium=cpc&utm_content=camas-5081&utm_term=&utm_id=18022911328&gad_source=1&gad_campaignid=18021492945&gbraid=0AAAAADr4g_Elv66L022gUFpjC3e7MqgIB&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD0cW6TiQwLMfnz43LEk5k_5YtYOyukVfDhcehYAcXSTlaZiqisSZZgaAlfcEALw_wcB",
-    "imagens": [
-      "/Cambel/CamaSolteiro/medidasSolteiro.png",
-      "/Cambel/CamaSolteiro/SolteiroBranca.png",
-      "/Cambel/CamaSolteiro/SolteiroInformaçoes.png",
-      "/Cambel/CamaSolteiro/SolteiroNatureOff.png"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/Cambel/CamaSolteiro/medidasSolteiro.png",
-      "/Cambel/CamaSolteiro/SolteiroBranca.png",
-      "/Cambel/CamaSolteiro/SolteiroInformaçoes.png",
-      "/Cambel/CamaSolteiro/SolteiroNatureOff.png"
-    ]
-  },
-  {
-    "id": "31",
-    "nome": "CamaSolteiroBibox",
-    "marca": "Cambel",
-    "categoria": "Outros",
-    "caminho": "/Cambel/CamaSolteiroBibox",
-    "subpastas": [
-      "CamaSolteiroBibox"
-    ],
-    "medidas": "Dimensões do Produto Montado:\r\nAltura: 107 cm\r\nLargura: 123 cm\r\nProfundidade: 216 cm\r\nDetalhes do Produto:\r\n- Peso: 41,5 kg\r\n- Ideal para colchão de 88x188 cm (COLCHÃO NÃO INCLUSO)\r\nDetalhes da Auxiliar:\r\n- Altura: 22 cm\r\n- Largura: 189 cm\r\n- Profundidade: 191 cm\r\n- Peso: 16,40 kg\r\n- A cama tem baú e gaveta\r\n- Ideal para: colchões de 88x188x12 cm (COLCHÃO NÃO INCLUSO)",
-    "informacoes": null,
-    "linkReferencia": "https://incasamoveis.com.br/cambel?srsltid=AfmBOoqiezoq-E-OWW6DiLV_u6MRgBSUQFUzMVmy0n-jcuagBENV0aX2\r\nhttps://www.opcaomoveis.com.br/produtos/cama-sofia-casal-138x188-branco-cambel-vj?srsltid=AfmBOoqMX0gx99cvgTGQMtH36l8ZCW66emco6g5CfhId-ehNtxsMn-xJ\r\nhttps://www.madeiramadeira.com.br/cama-de-solteiro-com-auxiliar-isa-nature-de-mdf-com-duas-gavetas-bau-e-nichos-371040268.html?origem=pla-371040268&utm_source=google&utm_medium=cpc&utm_content=camas-5081&utm_term=&utm_id=18022911328&gad_source=1&gad_campaignid=18021492945&gbraid=0AAAAADr4g_Elv66L022gUFpjC3e7MqgIB&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD0cW6TiQwLMfnz43LEk5k_5YtYOyukVfDhcehYAcXSTlaZiqisSZZgaAlfcEALw_wcB",
-    "imagens": [
-      "/Cambel/CamaSolteiroBibox/branca.png",
-      "/Cambel/CamaSolteiroBibox/nature.png"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/Cambel/CamaSolteiroBibox/branca.png",
-      "/Cambel/CamaSolteiroBibox/nature.png"
-    ]
-  },
-  {
-    "id": "32",
-    "nome": "Humaitá",
+    "id": "43",
+    "nome": "Home Rack",
     "marca": "colibri",
-    "categoria": "Home / Rack",
+    "categoria": "Rack / Painel",
     "caminho": "/colibri/HOME/Humaitá",
     "subpastas": [
       "HOME",
@@ -2081,11 +3237,16 @@
       "/colibri/HOME/Humaitá/FREIJO-CINZA/FREIJO-CINZA.png",
       "/colibri/HOME/Humaitá/OFF-WHITE-FREIJO/OFF-WHITE-FREIJO (2).png",
       "/colibri/HOME/Humaitá/OFF-WHITE-FREIJO/OFF-WHITE-FREIJO.png"
+    ],
+    "medidasRodape": "Alt: 184cm  Larg: 180cm  Prof: 42cm",
+    "coresEstruturadas": [
+      "freijó/cinza",
+      "off-white/freijó"
     ]
   },
   {
-    "id": "33",
-    "nome": "bali",
+    "id": "44",
+    "nome": "Rack / Painel",
     "marca": "colibri",
     "categoria": "Rack / Painel",
     "caminho": "/colibri/painel/bali",
@@ -2122,31 +3283,16 @@
       "/colibri/painel/bali/OFF-WHITE-FREIJO/OFF-WHITE-FREIJO (2).png",
       "/colibri/painel/bali/OFF-WHITE-FREIJO/OFF-WHITE-FREIJO (3).png",
       "/colibri/painel/bali/OFF-WHITE-FREIJO/OFF-WHITE-FREIJO.png"
+    ],
+    "medidasRodape": "Alt: 164cm  Larg: 160cm  Prof: 32cm",
+    "coresEstruturadas": [
+      "naturale",
+      "off-white/freijó"
     ]
   },
   {
-    "id": "34",
-    "nome": "penteadeira",
-    "marca": "Demobile",
-    "categoria": "Outros",
-    "caminho": "/Demobile/penteadeira",
-    "subpastas": [
-      "penteadeira"
-    ],
-    "medidas": "Altura\r\n1,340M\r\nLargura\r\n1,080M\r\nProfundidade\r\n0,410M",
-    "informacoes": null,
-    "linkReferencia": "https://demobile.com.br/produtos/penteadeira-camarim-carisma/",
-    "imagens": [
-      "/Demobile/penteadeira/camarimCarismaBranca.jpg"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/Demobile/penteadeira/camarimCarismaBranca.jpg"
-    ]
-  },
-  {
-    "id": "35",
-    "nome": "marina",
+    "id": "45",
+    "nome": "Mesa",
     "marca": "dj",
     "categoria": "Mesa",
     "caminho": "/dj/mesa/marina",
@@ -2154,7 +3300,7 @@
       "mesa",
       "mesa"
     ],
-    "medidas": null,
+    "medidas": "120 x 90; 160 x 80",
     "informacoes": null,
     "linkReferencia": "https://www.djmoveis.ind.br/pt/",
     "imagens": [],
@@ -2175,18 +3321,22 @@
     "todasImagens": [
       "/dj/mesa/marina/120x90/MESA_MARINA_1200_FREIJO_TP_OFF_WHITE.jpg",
       "/dj/mesa/marina/160x80/MESA_MARINA_FREIJO_OFF_TAMPO_1600x900x18.jpg"
+    ],
+    "medidasRodape": "120×90cm · 160×80cm · Alt. 80cm",
+    "coresEstruturadas": [
+      "freijó/off-white"
     ]
   },
   {
-    "id": "36",
-    "nome": "painel",
+    "id": "46",
+    "nome": "Painel TV",
     "marca": "dj",
     "categoria": "Rack / Painel",
     "caminho": "/dj/painel",
     "subpastas": [
       "painel"
     ],
-    "medidas": null,
+    "medidas": "imagem de medidas presente",
     "informacoes": null,
     "linkReferencia": "https://www.djmoveis.ind.br/pt/",
     "imagens": [],
@@ -2202,11 +3352,15 @@
     "todasImagens": [
       "/dj/painel/iza/BALI-CEDRO (2).png",
       "/dj/painel/iza/medidas.png"
+    ],
+    "medidasRodape": "Alt: 152cm  Larg: 176cm  Prof: 37cm",
+    "coresEstruturadas": [
+      "bali/cedro"
     ]
   },
   {
-    "id": "37",
-    "nome": "colchao",
+    "id": "47",
+    "nome": "Colchão",
     "marca": "ecoflex",
     "categoria": "Colchão",
     "caminho": "/ecoflex/colchao",
@@ -2225,8 +3379,8 @@
     ]
   },
   {
-    "id": "38",
-    "nome": "espuma",
+    "id": "48",
+    "nome": "Colchão",
     "marca": "ecoflex",
     "categoria": "Colchão",
     "caminho": "/ecoflex/colchao/espuma",
@@ -2234,7 +3388,7 @@
       "colchao",
       "colchao"
     ],
-    "medidas": null,
+    "medidas": "D33; imagem aberta",
     "informacoes": null,
     "linkReferencia": "https://www.colchoesecoflex.com.br/\r\nhttps://www.ecoflex.ind.br/colchao-ideal/",
     "imagens": [],
@@ -2250,11 +3404,15 @@
     "todasImagens": [
       "/ecoflex/colchao/espuma/bege/d33 bege.png",
       "/ecoflex/colchao/espuma/bege/d33 interno.png"
+    ],
+    "medidasRodape": "Solteiro 88×188 · Casal 138×188 · Alt. 17cm",
+    "coresEstruturadas": [
+      "bege"
     ]
   },
   {
-    "id": "39",
-    "nome": "floral",
+    "id": "49",
+    "nome": "Colchão",
     "marca": "ecoflex",
     "categoria": "Colchão",
     "caminho": "/ecoflex/colchao/espuma/floral",
@@ -2263,7 +3421,7 @@
       "colchao",
       "espuma"
     ],
-    "medidas": null,
+    "medidas": "casal e solteiro; 12 cm e 17 cm de altura",
     "informacoes": null,
     "linkReferencia": "https://www.colchoesecoflex.com.br/\r\nhttps://www.ecoflex.ind.br/colchao-ideal/",
     "imagens": [],
@@ -2271,24 +3429,44 @@
       {
         "cor": "casal",
         "imagens": [
-          "/ecoflex/colchao/espuma/floral/casal/por dentro casal.png"
+          "/ecoflex/colchao/espuma/floral/casal/por dentro casal.png",
+          "/ecoflex/colchao/espuma/floral/casal/17cmDeAltura/casal branco e cinza.png",
+          "/ecoflex/colchao/espuma/floral/casal/17cmDeAltura/casal17cmMedidas.png",
+          "/ecoflex/colchao/espuma/floral/casal/12cmDeAltura/casal12cm.png",
+          "/ecoflex/colchao/espuma/floral/casal/12cmDeAltura/casal12cmMedidas.png"
         ]
       },
       {
         "cor": "solteiro",
         "imagens": [
-          "/ecoflex/colchao/espuma/floral/solteiro/por dentro solteiro.png"
+          "/ecoflex/colchao/espuma/floral/solteiro/por dentro solteiro.png",
+          "/ecoflex/colchao/espuma/floral/solteiro/17cmDeAltura/solteiro branco e cinza.png",
+          "/ecoflex/colchao/espuma/floral/solteiro/17cmDeAltura/solteiro17cmMedidas.png",
+          "/ecoflex/colchao/espuma/floral/solteiro/12cmDeAltura/solt12cm.png",
+          "/ecoflex/colchao/espuma/floral/solteiro/12cmDeAltura/solt12cmMedidas.png"
         ]
       }
     ],
     "todasImagens": [
       "/ecoflex/colchao/espuma/floral/casal/por dentro casal.png",
-      "/ecoflex/colchao/espuma/floral/solteiro/por dentro solteiro.png"
+      "/ecoflex/colchao/espuma/floral/casal/17cmDeAltura/casal branco e cinza.png",
+      "/ecoflex/colchao/espuma/floral/casal/17cmDeAltura/casal17cmMedidas.png",
+      "/ecoflex/colchao/espuma/floral/casal/12cmDeAltura/casal12cm.png",
+      "/ecoflex/colchao/espuma/floral/casal/12cmDeAltura/casal12cmMedidas.png",
+      "/ecoflex/colchao/espuma/floral/solteiro/por dentro solteiro.png",
+      "/ecoflex/colchao/espuma/floral/solteiro/17cmDeAltura/solteiro branco e cinza.png",
+      "/ecoflex/colchao/espuma/floral/solteiro/17cmDeAltura/solteiro17cmMedidas.png",
+      "/ecoflex/colchao/espuma/floral/solteiro/12cmDeAltura/solt12cm.png",
+      "/ecoflex/colchao/espuma/floral/solteiro/12cmDeAltura/solt12cmMedidas.png"
+    ],
+    "medidasRodape": "Solteiro 88×188 · Alt. 12cm e 17cm · Casal 138×188 · Alt. 12cm e 17cm",
+    "coresEstruturadas": [
+      "branco/cinza"
     ]
   },
   {
-    "id": "40",
-    "nome": "lisboa",
+    "id": "50",
+    "nome": "Colchão Mola",
     "marca": "hellen",
     "categoria": "Colchão",
     "caminho": "/hellen/colchão/mola-ensacada/lisboa",
@@ -2297,7 +3475,7 @@
       "colchão",
       "mola-ensacada"
     ],
-    "medidas": null,
+    "medidas": "solteiro, casal, queen",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -2325,11 +3503,15 @@
       "/hellen/colchão/mola-ensacada/lisboa/casal branco/mola-ens (2).png",
       "/hellen/colchão/mola-ensacada/lisboa/queen branco/mola-ens (3).png",
       "/hellen/colchão/mola-ensacada/lisboa/solteiro branco/mola-ens.png"
+    ],
+    "medidasRodape": "Solteiro 88×188 · Casal 138×188 · Queen 158×198 · Alt. 33cm",
+    "coresEstruturadas": [
+      "branco"
     ]
   },
   {
-    "id": "41",
-    "nome": "omega",
+    "id": "51",
+    "nome": "Colchão Mola",
     "marca": "hellen",
     "categoria": "Colchão",
     "caminho": "/hellen/colchão/mola-ensacada/omega",
@@ -2338,7 +3520,7 @@
       "colchão",
       "mola-ensacada"
     ],
-    "medidas": null,
+    "medidas": "solteiro, casal, queen",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -2366,18 +3548,22 @@
       "/hellen/colchão/mola-ensacada/omega/casal preto e cinza/casal.png",
       "/hellen/colchão/mola-ensacada/omega/queen preto e cinza/queen.png",
       "/hellen/colchão/mola-ensacada/omega/solteiro preto e cinza/solteiro.png"
+    ],
+    "medidasRodape": "Solteiro 88×188 · Casal 138×188 · Queen 158×198 · Alt. 32cm",
+    "coresEstruturadas": [
+      "preto e cinza"
     ]
   },
   {
-    "id": "42",
-    "nome": "sofa",
+    "id": "52",
+    "nome": "Sofá",
     "marca": "hellen",
     "categoria": "Sofá",
     "caminho": "/hellen/sofa",
     "subpastas": [
       "sofa"
     ],
-    "medidas": null,
+    "medidas": "Sofá de 3 lugares: 215 cm de largura × 106 cm de altura × 92 cm de profundidade.\nSofá de 2 lugares: 161 cm de largura × 106 cm de altura × 92 cm de profundidade.\nAltura do assento: aproximadamente 51 cm.",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -2391,11 +3577,14 @@
     ],
     "todasImagens": [
       "/hellen/sofa/courinopremium/courino.png"
+    ],
+    "coresEstruturadas": [
+      "courino"
     ]
   },
   {
-    "id": "43",
-    "nome": "balcãoCooktop",
+    "id": "53",
+    "nome": "Balcão Cooktop",
     "marca": "indekes",
     "categoria": "Cozinha",
     "caminho": "/indekes/balcãoCooktop",
@@ -2415,11 +3604,16 @@
       "/indekes/balcãoCooktop/branco.png",
       "/indekes/balcãoCooktop/freijoOff.png",
       "/indekes/balcãoCooktop/medidas.png"
+    ],
+    "medidasRodape": "Alt: 83cm  Larg: 105cm  Prof: 53cm",
+    "coresEstruturadas": [
+      "branco",
+      "freijó/off"
     ]
   },
   {
-    "id": "44",
-    "nome": "firenze",
+    "id": "54",
+    "nome": "Cozinha",
     "marca": "indekes",
     "categoria": "Cozinha",
     "caminho": "/indekes/cozinha/firenze",
@@ -2427,7 +3621,7 @@
       "cozinha",
       "cozinha"
     ],
-    "medidas": null,
+    "medidas": "5 peças; aberta; medidas",
     "informacoes": null,
     "linkReferencia": "https://indekesmoveis.com.br/",
     "imagens": [],
@@ -2456,11 +3650,14 @@
       "/indekes/cozinha/firenze/8peças/COZINHA-FIRENZE-8-PECAS-BRANCA-1X1-RGB.webp",
       "/indekes/cozinha/firenze/8peças/FI-COZINHA-FIRENZE-8-PECAS-BRANCA-ABERTO-RGB-aberta.webp",
       "/indekes/cozinha/firenze/8peças/FI-COZINHA-FIRENZE-8-PECAS-BRANCA-MED-RGB-medidas.webp"
+    ],
+    "coresEstruturadas": [
+      "branca"
     ]
   },
   {
-    "id": "45",
-    "nome": "monza",
+    "id": "55",
+    "nome": "Cozinha",
     "marca": "indekes",
     "categoria": "Cozinha",
     "caminho": "/indekes/cozinha/monza",
@@ -2468,7 +3665,7 @@
       "cozinha",
       "cozinha"
     ],
-    "medidas": null,
+    "medidas": "8 peças; painel triplo; medidas",
     "informacoes": null,
     "linkReferencia": "https://indekesmoveis.com.br/",
     "imagens": [],
@@ -2508,18 +3705,22 @@
       "/indekes/cozinha/monza/8peças/COZINHA-MONZA-8-PCS-KIT-TRIP-FREIJO_OFFWHITE-.webp",
       "/indekes/cozinha/monza/8peças/FI-COZINHA-MONZA-8-PCS-PN-TRIPLO-FREIJO_OFFWHITE-RGB_View02-1-600x600-aberta.webp",
       "/indekes/cozinha/monza/8peças/FI-COZINHA-MONZA-8-PCS-PN-TRIPLO-MED-FREIJO_OFFWHITE-RGB_View01-600x600-medidas.webp"
+    ],
+    "coresEstruturadas": [
+      "freijó/chumbo",
+      "freijó/off-white"
     ]
   },
   {
-    "id": "46",
-    "nome": "kitDeCozinha",
+    "id": "56",
+    "nome": "Kit de Cozinha",
     "marca": "indekes",
     "categoria": "Cozinha",
     "caminho": "/indekes/kitDeCozinha",
     "subpastas": [
       "kitDeCozinha"
     ],
-    "medidas": null,
+    "medidas": "1,60 m indicado no arquivo\nKit Braga 1,60 m\n7 Portas\n1 Gavetas\nDimensões:\n– Largura: 160 cm\n– Altura: 204 cm\n– Profundidade: 46 cm",
     "informacoes": null,
     "linkReferencia": "https://indekesmoveis.com.br/",
     "imagens": [],
@@ -2559,57 +3760,16 @@
       "/indekes/kitDeCozinha/kitSintra/aberto.webp",
       "/indekes/kitDeCozinha/kitSintra/chumbo.png",
       "/indekes/kitDeCozinha/kitSintra/offwhite.webp"
+    ],
+    "coresEstruturadas": [
+      "freijó/chumbo",
+      "freijó/off-white",
+      "chumbo",
+      "off-white"
     ]
   },
   {
-    "id": "47",
-    "nome": "cooktop",
-    "marca": "Itatiaia",
-    "categoria": "Cozinha",
-    "caminho": "/Itatiaia/cooktop",
-    "subpastas": [
-      "cooktop"
-    ],
-    "medidas": "Altura 16 cm\r\nLargura 73 cm\r\nProfundidade 45 cm\r\nPeso 9.52 kg",
-    "informacoes": null,
-    "linkReferencia": "https://www.minhaitatiaia.com.br/?gad_source=1&gad_campaignid=1694592857&gbraid=0AAAAAC2g6tyCcVBYMVxaj09iWiIIt0hWf&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD3_rsxnRbx0MqWXJAXMJlGaHxt6Dp4OntrNZU4z3_36ydnOk80-y0UaAsQVEALw_wcB",
-    "imagens": [
-      "/Itatiaia/cooktop/cooktop5bocas (2).png",
-      "/Itatiaia/cooktop/cooktop5bocas.png"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/Itatiaia/cooktop/cooktop5bocas (2).png",
-      "/Itatiaia/cooktop/cooktop5bocas.png"
-    ]
-  },
-  {
-    "id": "48",
-    "nome": "fogão",
-    "marca": "Itatiaia",
-    "categoria": "Cozinha",
-    "caminho": "/Itatiaia/fogão",
-    "subpastas": [
-      "fogão"
-    ],
-    "medidas": null,
-    "informacoes": null,
-    "linkReferencia": "https://www.minhaitatiaia.com.br/?gad_source=1&gad_campaignid=1694592857&gbraid=0AAAAAC2g6tyCcVBYMVxaj09iWiIIt0hWf&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD3_rsxnRbx0MqWXJAXMJlGaHxt6Dp4OntrNZU4z3_36ydnOk80-y0UaAsQVEALw_wcB",
-    "imagens": [],
-    "variacoes": [
-      {
-        "cor": "4Bocas",
-        "imagens": [
-          "/Itatiaia/fogão/4Bocas/preto.png"
-        ]
-      }
-    ],
-    "todasImagens": [
-      "/Itatiaia/fogão/4Bocas/preto.png"
-    ]
-  },
-  {
-    "id": "49",
+    "id": "57",
     "nome": "Bicama",
     "marca": "kamabel",
     "categoria": "Cama",
@@ -2626,18 +3786,22 @@
     "variacoes": [],
     "todasImagens": [
       "/kamabel/Bicama/bicama.png"
+    ],
+    "medidasRodape": "Alt: 80cm  Larg: 100cm  Prof: 196cm",
+    "coresEstruturadas": [
+      "castanho"
     ]
   },
   {
-    "id": "50",
-    "nome": "Italia",
+    "id": "58",
+    "nome": "Beliche",
     "marca": "kamabel",
-    "categoria": "Outros",
+    "categoria": "Beliche",
     "caminho": "/kamabel/Italia",
     "subpastas": [
       "Italia"
     ],
-    "medidas": null,
+    "medidas": "solteiro; imagem de medida presente",
     "informacoes": null,
     "linkReferencia": "https://www.saimysmoveis.com.br/marca/kamabel.html",
     "imagens": [],
@@ -2680,13 +3844,17 @@
       "/kamabel/Italia/camaSolteiro/medida.png",
       "/kamabel/Italia/triliche/medida.png",
       "/kamabel/Italia/triliche/TrilicheItalia.png"
+    ],
+    "medidasRodape": "Alt: 166cm  Larg: 104cm  Prof: 204cm",
+    "coresEstruturadas": [
+      "castanho"
     ]
   },
   {
-    "id": "51",
-    "nome": "palmo",
+    "id": "59",
+    "nome": "Beliche",
     "marca": "kamabel",
-    "categoria": "Outros",
+    "categoria": "Beliche",
     "caminho": "/kamabel/palmo",
     "subpastas": [
       "palmo"
@@ -2702,18 +3870,22 @@
     "todasImagens": [
       "/kamabel/palmo/BelichePalmo.png",
       "/kamabel/palmo/medida.png"
+    ],
+    "medidasRodape": "Alt: 154cm  Larg: 96cm  Prof: 204cm",
+    "coresEstruturadas": [
+      "castanho"
     ]
   },
   {
-    "id": "52",
-    "nome": "cozinha",
+    "id": "60",
+    "nome": "Cozinha",
     "marca": "kitsParana",
     "categoria": "Cozinha",
     "caminho": "/kitsParana/cozinha",
     "subpastas": [
       "cozinha"
     ],
-    "medidas": null,
+    "medidas": "imagem aberta e medidas",
     "informacoes": null,
     "linkReferencia": "https://kitsparana.com/",
     "imagens": [],
@@ -2734,15 +3906,15 @@
     ]
   },
   {
-    "id": "53",
-    "nome": "kitDeCozinha",
+    "id": "61",
+    "nome": "Kit de Cozinha",
     "marca": "kitsParana",
     "categoria": "Cozinha",
     "caminho": "/kitsParana/kitDeCozinha",
     "subpastas": [
       "kitDeCozinha"
     ],
-    "medidas": null,
+    "medidas": "1,20 m indicado no arquivo\nAltura: 186,2\nLargura: 120,0\nProfundidade: 38,8",
     "informacoes": null,
     "linkReferencia": "https://kitsparana.com/",
     "imagens": [],
@@ -2782,11 +3954,15 @@
       "/kitsParana/kitDeCozinha/kitZen/aberto.jpg",
       "/kitsParana/kitDeCozinha/kitZen/KIT ZEN 0,90 KITS PARANA_freijo_caramelo.png",
       "/kitsParana/kitDeCozinha/kitZen/KIT ZEN 0,90 KITS PARANA_freijo_soft.png"
+    ],
+    "coresEstruturadas": [
+      "freijó/caramelo",
+      "freijó/soft"
     ]
   },
   {
-    "id": "54",
-    "nome": "casal",
+    "id": "62",
+    "nome": "Cama Casal",
     "marca": "lanza",
     "categoria": "Cama",
     "caminho": "/lanza/cama/casal",
@@ -2794,7 +3970,7 @@
       "cama",
       "cama"
     ],
-    "medidas": null,
+    "medidas": "casal\nCama Montreal Plus casal: 121 cm de altura × 155 cm de largura × 206 cm de comprimento",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -2830,11 +4006,16 @@
       "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Cedro.png",
       "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Ipe.jpg",
       "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Ipe.png"
+    ],
+    "coresEstruturadas": [
+      "branco",
+      "cedro",
+      "ipê"
     ]
   },
   {
-    "id": "55",
-    "nome": "solteiro",
+    "id": "63",
+    "nome": "Cama Solteiro",
     "marca": "lanza",
     "categoria": "Cama",
     "caminho": "/lanza/cama/solteiro",
@@ -2842,7 +4023,7 @@
       "cama",
       "cama"
     ],
-    "medidas": null,
+    "medidas": "solteiro",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -2862,18 +4043,22 @@
       "/lanza/cama/solteiro/Cama Solteiro Siena/Cama Solteiro Siena - Branco.png",
       "/lanza/cama/solteiro/Cama Solteiro Siena/Estrado Cama Solteiro Siena - Branco.jpg",
       "/lanza/cama/solteiro/Cama Solteiro Siena/Estrado Cama Solteiro Siena - Branco.png"
+    ],
+    "medidasRodape": "Larg: 105cm  Prof: 208cm",
+    "coresEstruturadas": [
+      "branco"
     ]
   },
   {
-    "id": "56",
-    "nome": "comoda",
+    "id": "64",
+    "nome": "Cômoda",
     "marca": "lanza",
     "categoria": "Cômoda",
     "caminho": "/lanza/comoda",
     "subpastas": [
       "comoda"
     ],
-    "medidas": null,
+    "medidas": "imagens frontais/internas\nCômoda Carrara, 5 gavetas: 134 cm de altura × 93 cm de largura × 45 cm de profundidade.",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -2886,7 +4071,13 @@
           "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro.jpg",
           "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro.png",
           "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - Ipe.jpg",
-          "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - Ipe.png"
+          "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - Ipe.png",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro - off.jpg",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro - off.png",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro.jpg",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro.png",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - ipe.jpg",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - ipe.png"
         ]
       },
       {
@@ -2899,7 +4090,15 @@
           "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Ipe.jpg",
           "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Cedro.jpg",
           "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Cedro_Off White.jpg",
-          "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Ipe.jpg"
+          "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Ipe.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Branco.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Branco.png",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro.png",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro_OffWhite.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro_OffWhite.png",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Ipe.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Ipe.png"
         ]
       },
       {
@@ -2912,7 +4111,15 @@
           "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro_OffWhite.jpg",
           "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro_OffWhite.png",
           "/lanza/comoda/Cômoda Messina/Cômods Messina - Ipe.jpg",
-          "/lanza/comoda/Cômoda Messina/Cômods Messina - Ipe.png"
+          "/lanza/comoda/Cômoda Messina/Cômods Messina - Ipe.png",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Branco.jpg",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Branco.png",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro.jpg",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro.png",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro_OffWhite.jpg",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro_OffWhite.png",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Ipe.jpg",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Ipe.png"
         ]
       },
       {
@@ -2925,7 +4132,19 @@
           "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro_OffWhite - certo.jpg",
           "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro_OffWhite.png",
           "/lanza/comoda/Cômoda Paris/Cômoda Paris - Ipe.jpg",
-          "/lanza/comoda/Cômoda Paris/Cômoda Paris - Ipe.png"
+          "/lanza/comoda/Cômoda Paris/Cômoda Paris - Ipe.png",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Branco.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Branco.png",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro.png",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro_OffWhite.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro_OffWhite.png",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Ipe.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Ipe.png",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce.png",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce_OffWhite.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce_OffWhite.png"
         ]
       }
     ],
@@ -2936,6 +4155,12 @@
       "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro.png",
       "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - Ipe.jpg",
       "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - Ipe.png",
+      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro - off.jpg",
+      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro - off.png",
+      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro.jpg",
+      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro.png",
+      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - ipe.jpg",
+      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - ipe.png",
       "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - branca.jpg",
       "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Branco.jpg",
       "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Cedro.jpg",
@@ -2944,6 +4169,14 @@
       "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Cedro.jpg",
       "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Cedro_Off White.jpg",
       "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Ipe.jpg",
+      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Branco.jpg",
+      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Branco.png",
+      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro.jpg",
+      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro.png",
+      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro_OffWhite.jpg",
+      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro_OffWhite.png",
+      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Ipe.jpg",
+      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Ipe.png",
       "/lanza/comoda/Cômoda Messina/Comoda Messina Branco.png",
       "/lanza/comoda/Cômoda Messina/Cômoda Messina - Branco.jpg",
       "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro.jpg",
@@ -2952,6 +4185,14 @@
       "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro_OffWhite.png",
       "/lanza/comoda/Cômoda Messina/Cômods Messina - Ipe.jpg",
       "/lanza/comoda/Cômoda Messina/Cômods Messina - Ipe.png",
+      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Branco.jpg",
+      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Branco.png",
+      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro.jpg",
+      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro.png",
+      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro_OffWhite.jpg",
+      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro_OffWhite.png",
+      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Ipe.jpg",
+      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Ipe.png",
       "/lanza/comoda/Cômoda Paris/Comoda Paris - Branco.jpg",
       "/lanza/comoda/Cômoda Paris/Comoda Paris - Branco.png",
       "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro.jpg",
@@ -2959,19 +4200,39 @@
       "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro_OffWhite - certo.jpg",
       "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro_OffWhite.png",
       "/lanza/comoda/Cômoda Paris/Cômoda Paris - Ipe.jpg",
-      "/lanza/comoda/Cômoda Paris/Cômoda Paris - Ipe.png"
+      "/lanza/comoda/Cômoda Paris/Cômoda Paris - Ipe.png",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Branco.jpg",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Branco.png",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro.jpg",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro.png",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro_OffWhite.jpg",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro_OffWhite.png",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Ipe.jpg",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Ipe.png",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce.jpg",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce.png",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce_OffWhite.jpg",
+      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce_OffWhite.png"
+    ],
+    "medidasRodape": "Alt: 101cm  Larg: 118cm  Prof: 45cm",
+    "coresEstruturadas": [
+      "cedro",
+      "cedro/off",
+      "ipê",
+      "branco",
+      "cedro/off-white"
     ]
   },
   {
-    "id": "57",
-    "nome": "guarda roupa",
+    "id": "65",
+    "nome": "Guarda-Roupa",
     "marca": "lanza",
     "categoria": "Guarda-Roupa",
     "caminho": "/lanza/guarda roupa",
     "subpastas": [
       "guarda roupa"
     ],
-    "medidas": null,
+    "medidas": "imagens frontais/internas\nMedidas Alt 2,49 m | Larg 2,75 m | Prof 0,60 m. TEMOS DISPONIVEIS CEDRO E CEDRO/OFF WHITE.",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -2984,7 +4245,17 @@
           "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro_OffWhite.jpg",
           "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro_OffWhite.png",
           "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Ipe.jpg",
-          "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Ipe.png"
+          "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Ipe.png",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro.png",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro_OffWhite.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro_OffWhite.png",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Ipe.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Ipe.png",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interna - Roupeiro Duba - Ipe.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interna - Roupeiro Duba - Ipe.png",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interno - Roupeiro Duba - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interno - Roupeiro Duba - Cedro.png"
         ]
       },
       {
@@ -2993,7 +4264,11 @@
           "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Cedro.jpg",
           "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Cedro.png",
           "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Ipe.jpg",
-          "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Ipe.png"
+          "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Ipe.png",
+          "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Cedro.png",
+          "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Ipe.jpg",
+          "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Ipe.png"
         ]
       },
       {
@@ -3004,7 +4279,11 @@
           "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro.jpg",
           "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro.png",
           "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro_OffWhite.jpg",
-          "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro_OffWhite.png"
+          "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro_OffWhite.png",
+          "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Branco.jpg",
+          "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Branco.png",
+          "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Cedro.png"
         ]
       },
       {
@@ -3015,7 +4294,11 @@
           "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro.jpg",
           "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro.png",
           "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro_OffWhite.jpg",
-          "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro_OffWhite.png"
+          "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro_OffWhite.png",
+          "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Branco.jpg",
+          "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Branco.png",
+          "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Cedro.png"
         ]
       },
       {
@@ -3024,7 +4307,11 @@
           "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Cedro.jpg",
           "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Cedro.png",
           "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Ipe.jpg",
-          "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Ipe.png"
+          "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Ipe.png",
+          "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Cedro.png",
+          "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Ipe.jpg",
+          "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Ipe.png"
         ]
       }
     ],
@@ -3035,38 +4322,71 @@
       "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro_OffWhite.png",
       "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Ipe.jpg",
       "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Ipe.png",
+      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro.jpg",
+      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro.png",
+      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro_OffWhite.jpg",
+      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro_OffWhite.png",
+      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Ipe.jpg",
+      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Ipe.png",
+      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interna - Roupeiro Duba - Ipe.jpg",
+      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interna - Roupeiro Duba - Ipe.png",
+      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interno - Roupeiro Duba - Cedro.jpg",
+      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interno - Roupeiro Duba - Cedro.png",
       "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Cedro.jpg",
       "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Cedro.png",
       "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Ipe.jpg",
       "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Ipe.png",
+      "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Cedro.jpg",
+      "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Cedro.png",
+      "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Ipe.jpg",
+      "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Ipe.png",
       "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Branco.jpg",
       "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Branco.png",
       "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro.jpg",
       "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro.png",
       "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro_OffWhite.jpg",
       "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro_OffWhite.png",
+      "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Branco.jpg",
+      "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Branco.png",
+      "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Cedro.jpg",
+      "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Cedro.png",
       "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Branco.jpg",
       "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Branco.png",
       "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro.jpg",
       "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro.png",
       "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro_OffWhite.jpg",
       "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro_OffWhite.png",
+      "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Branco.jpg",
+      "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Branco.png",
+      "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Cedro.jpg",
+      "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Cedro.png",
       "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Cedro.jpg",
       "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Cedro.png",
       "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Ipe.jpg",
-      "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Ipe.png"
+      "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Ipe.png",
+      "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Cedro.jpg",
+      "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Cedro.png",
+      "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Ipe.jpg",
+      "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Ipe.png"
+    ],
+    "medidasRodape": "Alt: 234cm  Larg: 244cm  Prof: 56cm",
+    "coresEstruturadas": [
+      "cedro",
+      "cedro/off-white",
+      "ipê",
+      "branco"
     ]
   },
   {
-    "id": "58",
-    "nome": "mesa de cabeceira",
+    "id": "66",
+    "nome": "Criado-Mudo",
     "marca": "lanza",
-    "categoria": "Mesa",
+    "categoria": "Criado-Mudo",
     "caminho": "/lanza/mesa de cabeceira",
     "subpastas": [
       "mesa de cabeceira"
     ],
-    "medidas": null,
+    "medidas": "imagens frontais/internas",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -3081,7 +4401,15 @@
           "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro_Off White.jpg",
           "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro_Off White.png",
           "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Ipe.jpg",
-          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa de Cabeceira Roma - Ipe.png"
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa de Cabeceira Roma - Ipe.png",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Branco.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Branco.png",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro.png",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro_OffWhite.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro_OffWhite.png",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Ipe.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Ipe.png"
         ]
       }
     ],
@@ -3093,19 +4421,34 @@
       "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro_Off White.jpg",
       "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro_Off White.png",
       "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Ipe.jpg",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa de Cabeceira Roma - Ipe.png"
+      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa de Cabeceira Roma - Ipe.png",
+      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Branco.jpg",
+      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Branco.png",
+      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro.jpg",
+      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro.png",
+      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro_OffWhite.jpg",
+      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro_OffWhite.png",
+      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Ipe.jpg",
+      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Ipe.png"
+    ],
+    "medidasRodape": "Alt: 70cm  Larg: 50cm  Prof: 40cm",
+    "coresEstruturadas": [
+      "branco",
+      "cedro",
+      "cedro/off-white",
+      "ipê"
     ]
   },
   {
-    "id": "59",
-    "nome": "mesa de computador",
+    "id": "67",
+    "nome": "Mesa",
     "marca": "lanza",
     "categoria": "Mesa",
     "caminho": "/lanza/mesa de computador",
     "subpastas": [
       "mesa de computador"
     ],
-    "medidas": null,
+    "medidas": "escrivaninha/mesa de computador\nMesa de Computador Potenza: 75 cm de altura × 107 cm de largura × 55 cm de profundidade.",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -3129,18 +4472,23 @@
       "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Cedro.png",
       "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Ipe.jpg",
       "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Ipe.png"
+    ],
+    "coresEstruturadas": [
+      "branco",
+      "cedro",
+      "ipê"
     ]
   },
   {
-    "id": "60",
-    "nome": "multiuso",
+    "id": "68",
+    "nome": "Armário",
     "marca": "lanza",
     "categoria": "Armário",
     "caminho": "/lanza/multiuso",
     "subpastas": [
       "multiuso"
     ],
-    "medidas": null,
+    "medidas": "imagens internas\nMultiuso Torino: 188 cm de altura × 70 cm de largura × 45 cm de profundidade.",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -3155,7 +4503,11 @@
           "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro_OffWhite.jpg",
           "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro_OffWhite.png",
           "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.jpg",
-          "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.png"
+          "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.png",
+          "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Cedro.jpg",
+          "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Cedro.png",
+          "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Ipe.jpg",
+          "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Ipe.png"
         ]
       }
     ],
@@ -3167,12 +4519,22 @@
       "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro_OffWhite.jpg",
       "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro_OffWhite.png",
       "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.jpg",
-      "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.png"
+      "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.png",
+      "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Cedro.jpg",
+      "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Cedro.png",
+      "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Ipe.jpg",
+      "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Ipe.png"
+    ],
+    "coresEstruturadas": [
+      "branco",
+      "cedro",
+      "cedro/off-white",
+      "ipê"
     ]
   },
   {
-    "id": "61",
-    "nome": "TANQUINHO BRANCO SUPERSTAR",
+    "id": "69",
+    "nome": "Tanquinho",
     "marca": "laveMais",
     "categoria": "Outros",
     "caminho": "/laveMais/TANQUINHO BRANCO SUPERSTAR",
@@ -3188,13 +4550,17 @@
     "variacoes": [],
     "todasImagens": [
       "/laveMais/TANQUINHO BRANCO SUPERSTAR/branco.png"
+    ],
+    "medidasRodape": "Alt: 85cm  Larg: 54cm  Prof: 59cm",
+    "coresEstruturadas": [
+      "branco"
     ]
   },
   {
-    "id": "62",
-    "nome": "SAPATEIRA ESTELA GIRATORIA CVDO",
+    "id": "70",
+    "nome": "Sapateira",
     "marca": "lopas",
-    "categoria": "Outros",
+    "categoria": "Armário",
     "caminho": "/lopas/SAPATEIRA ESTELA GIRATORIA CVDO",
     "subpastas": [
       "SAPATEIRA ESTELA GIRATORIA CVDO"
@@ -3210,18 +4576,22 @@
     "todasImagens": [
       "/lopas/SAPATEIRA ESTELA GIRATORIA CVDO/amendoa.png",
       "/lopas/SAPATEIRA ESTELA GIRATORIA CVDO/branco.png"
+    ],
+    "coresEstruturadas": [
+      "amêndoa",
+      "branco"
     ]
   },
   {
-    "id": "63",
-    "nome": "guarda roupa modulado",
+    "id": "71",
+    "nome": "Guarda-Roupa",
     "marca": "luciane",
     "categoria": "Guarda-Roupa",
     "caminho": "/luciane/guarda roupa modulado",
     "subpastas": [
       "guarda roupa modulado"
     ],
-    "medidas": null,
+    "medidas": "guarda-roupa modulado",
     "informacoes": null,
     "linkReferencia": "https://www.lucianecozinhas.com.br/",
     "imagens": [
@@ -3232,64 +4602,22 @@
     "todasImagens": [
       "/luciane/guarda roupa modulado/dormitorio-veneza01-arenas.jpg",
       "/luciane/guarda roupa modulado/dormitorio-veneza04-cinza.jpg"
+    ],
+    "coresEstruturadas": [
+      "arenas",
+      "cinza"
     ]
   },
   {
-    "id": "64",
-    "nome": "CantinhoDoCafé",
-    "marca": "Lukaliam",
-    "categoria": "Outros",
-    "caminho": "/Lukaliam/CantinhoDoCafé",
-    "subpastas": [
-      "CantinhoDoCafé"
-    ],
-    "medidas": "altura 150cm\r\nlargura 79,5cm\r\nprofundidade 41cm",
-    "informacoes": null,
-    "linkReferencia": "https://lukaliam.com.br/",
-    "imagens": [
-      "/Lukaliam/CantinhoDoCafé/jequitiba.png",
-      "/Lukaliam/CantinhoDoCafé/Lukaliam-Cantinho-do-Cafe-Menta-e-Tauri-Ripado-Ambiente-scaled.jpg",
-      "/Lukaliam/CantinhoDoCafé/medidas.png",
-      "/Lukaliam/CantinhoDoCafé/offWhite.png"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/Lukaliam/CantinhoDoCafé/jequitiba.png",
-      "/Lukaliam/CantinhoDoCafé/Lukaliam-Cantinho-do-Cafe-Menta-e-Tauri-Ripado-Ambiente-scaled.jpg",
-      "/Lukaliam/CantinhoDoCafé/medidas.png",
-      "/Lukaliam/CantinhoDoCafé/offWhite.png"
-    ]
-  },
-  {
-    "id": "65",
-    "nome": "vicenza",
-    "marca": "Lukaliam",
-    "categoria": "Outros",
-    "caminho": "/Lukaliam/vicenza",
-    "subpastas": [
-      "vicenza"
-    ],
-    "medidas": null,
-    "informacoes": "Diferenciais do produto\r\n- Rodízios\r\n- Tampo em MDP de 25mm\r\n- Corrediças Metálicas\r\nEspecificações\r\nLargura: 980mm\r\nAltura: 800mm\r\nComprimento: 450mm\r\nPeso: 24,3kg\r\nVolume: 1cx/0,054m³",
-    "linkReferencia": "https://lukaliam.com.br/",
-    "imagens": [
-      "/Lukaliam/vicenza/vicenza.png"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/Lukaliam/vicenza/vicenza.png"
-    ]
-  },
-  {
-    "id": "66",
-    "nome": "mesaEcadeira",
+    "id": "72",
+    "nome": "Mesa com Cadeiras",
     "marca": "modelar",
     "categoria": "Mesa",
     "caminho": "/modelar/mesaEcadeira",
     "subpastas": [
       "mesaEcadeira"
     ],
-    "medidas": null,
+    "medidas": "120 x 088; 160 x 088\n120 cm de comprimento × 88 cm de largura × 81 cm de altura.",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -3310,18 +4638,19 @@
     "todasImagens": [
       "/modelar/mesaEcadeira/120x088/120x088.png",
       "/modelar/mesaEcadeira/160x088/160x088.png"
-    ]
+    ],
+    "medidasRodape": "120×88cm · 160×88cm · Alt. 81cm"
   },
   {
-    "id": "67",
-    "nome": "comoda",
+    "id": "73",
+    "nome": "Cômoda",
     "marca": "moval",
     "categoria": "Cômoda",
     "caminho": "/moval/comoda",
     "subpastas": [
       "comoda"
     ],
-    "medidas": null,
+    "medidas": "imagem aberta\nMedidas\nAltura: 1,05m\nLargura: 1,47m\nProfundidade: 0,47m\nVolume: 2\nCubagem: 0,110m³\nPeso: 60,11 kg",
     "informacoes": null,
     "linkReferencia": "https://moval.com.vc/",
     "imagens": [],
@@ -3344,18 +4673,21 @@
       "/moval/comoda/ms913/Moval-Comoda-MS-913-Freijo-e-Off-White-Ambiente-Reaproveitamentos-02-Ecommerce.jpg",
       "/moval/comoda/texas/aberto.jpg",
       "/moval/comoda/texas/Moval-Comoda-Texas-Freijo-e-Off-White-Ambiente-E-Commerce.jpg"
+    ],
+    "coresEstruturadas": [
+      "freijó/off-white"
     ]
   },
   {
-    "id": "68",
-    "nome": "gr",
+    "id": "74",
+    "nome": "Guarda-Roupa",
     "marca": "moval",
-    "categoria": "Outros",
+    "categoria": "Guarda-Roupa",
     "caminho": "/moval/gr",
     "subpastas": [
       "gr"
     ],
-    "medidas": null,
+    "medidas": "imagem aberta\nAltura: 2,04m\nLargura: 1,65m\nProfundidade: 0,47m\nCubagem: 0,172m³ Com Espelho\nPeso: 95,98 kg Com Espelho",
     "informacoes": null,
     "linkReferencia": "https://moval.com.vc/",
     "imagens": [],
@@ -3402,11 +4734,17 @@
       "/moval/gr/diplomata/aberto.jpg",
       "/moval/gr/diplomata/Moval-GR-Diplomata-Freijo-e-Cinza-Sem-Espelho-Com-Frisos-Ambiente-E-Commerce-Copia-Copia.jpg",
       "/moval/gr/diplomata/Moval-GR-Diplomata-Freijo-e-Off-White-Sem-Espelho-Com-Frisos-Ambiente-E-Commerce.jpg"
+    ],
+    "medidasRodape": "Alt: 204cm  Larg: 165cm  Prof: 48cm",
+    "coresEstruturadas": [
+      "freijó/off-white com espelho",
+      "freijó/off-white",
+      "freijó/cinza"
     ]
   },
   {
-    "id": "69",
-    "nome": "multiuso",
+    "id": "75",
+    "nome": "Armário",
     "marca": "moval",
     "categoria": "Armário",
     "caminho": "/moval/multiuso",
@@ -3426,13 +4764,17 @@
       "/moval/multiuso/aberto.jpg",
       "/moval/multiuso/medidas.png",
       "/moval/multiuso/Moval-Multiuso-Jade-Branco-Ambiente-Ecommerce.jpg"
+    ],
+    "medidasRodape": "Alt: 170cm  Larg: 70cm  Prof: 41cm",
+    "coresEstruturadas": [
+      "branco"
     ]
   },
   {
-    "id": "70",
-    "nome": "penteadeira",
+    "id": "76",
+    "nome": "Penteadeira",
     "marca": "moval",
-    "categoria": "Outros",
+    "categoria": "Cômoda",
     "caminho": "/moval/penteadeira",
     "subpastas": [
       "penteadeira"
@@ -3448,13 +4790,16 @@
     "todasImagens": [
       "/moval/penteadeira/aberta.jpg",
       "/moval/penteadeira/Moval-Comoda-Camarim-Bella-Branco-Ambiente-Ecommerce.jpg"
+    ],
+    "coresEstruturadas": [
+      "branco"
     ]
   },
   {
-    "id": "71",
-    "nome": "cadeira juliana",
+    "id": "77",
+    "nome": "Cadeira",
     "marca": "mundial",
-    "categoria": "Cadeira",
+    "categoria": "Outros",
     "caminho": "/mundial/cadeira juliana",
     "subpastas": [
       "cadeira juliana"
@@ -3474,10 +4819,16 @@
       "/mundial/cadeira juliana/cinza.png",
       "/mundial/cadeira juliana/marrom.png",
       "/mundial/cadeira juliana/preto.png"
+    ],
+    "coresEstruturadas": [
+      "bege",
+      "cinza",
+      "marrom",
+      "preto"
     ]
   },
   {
-    "id": "72",
+    "id": "78",
     "nome": "Mesa",
     "marca": "mundial",
     "categoria": "Mesa",
@@ -3506,11 +4857,12 @@
     "todasImagens": [
       "/mundial/Mesa/Lisy120x080/3810040-1200-auto.webp",
       "/mundial/Mesa/Lisy160x090/160x090.webp"
-    ]
+    ],
+    "medidasRodape": "120×90cm · 160×90cm · Alt. 78cm"
   },
   {
-    "id": "73",
-    "nome": "colchao",
+    "id": "79",
+    "nome": "Colchão",
     "marca": "paropas",
     "categoria": "Colchão",
     "caminho": "/paropas/colchao",
@@ -3538,11 +4890,15 @@
     "todasImagens": [
       "/paropas/colchao/eco linho/linho.png",
       "/paropas/colchao/legacy/legacy.png"
+    ],
+    "medidasRodape": "Alt: 32cm  Larg: 138cm  Prof: 188cm",
+    "coresEstruturadas": [
+      "linho"
     ]
   },
   {
-    "id": "74",
-    "nome": "sofa2e3Lugares",
+    "id": "80",
+    "nome": "Sofá",
     "marca": "paropas",
     "categoria": "Sofá",
     "caminho": "/paropas/sofa2e3Lugares",
@@ -3550,7 +4906,7 @@
       "sofa2e3Lugares"
     ],
     "medidas": "Estrutura\tMadeira de Eucalipto 100% tratada e reflorestada.\r\nLinha\tEstofados Paropas\r\nDimensão - 2 lugares\r\nDimensão - 3 lugares\r\nLargura 1,50 e 2,00m\r\n\r\nProfundidade 95 cm \r\n\r\nAltura 95 cm\r\n\r\nBraços 25 cm\r\n\r\nPeso 3 lugares (Kg)\r\nPeso 2 lugares (Kg)\r\n44,000 kg\r\n36,000 kg",
-    "informacoes": null,
+    "informacoes": "Situação do produto enviado\tNovo e desmontado na caixa\nEstrutura\tMadeira de Eucalipto 100% tratada e reflorestada.\nLinha\tEstofados Paropas\nDimensão - 3 lugares\nDimensão - 2 lugares\nProfundidade\nAltura\nBraços\nNecessita de montagem\tSim\nMontagem e Montador\tNão incluídos\nAcompanha manual de instalação\tSim\nPeso 3 lugares (Kg)\nPeso 2 lugares (Kg)",
     "linkReferencia": "https://paropas.com.br/produto/classic",
     "imagens": [
       "/paropas/sofa2e3Lugares/cinza.png",
@@ -3560,13 +4916,18 @@
     "todasImagens": [
       "/paropas/sofa2e3Lugares/cinza.png",
       "/paropas/sofa2e3Lugares/marrom.png"
+    ],
+    "medidasRodape": "Alt: 95cm  Larg: 150–200cm  Prof: 95cm",
+    "coresEstruturadas": [
+      "cinza",
+      "marrom"
     ]
   },
   {
-    "id": "75",
-    "nome": "beliche",
+    "id": "81",
+    "nome": "Beliche",
     "marca": "piner",
-    "categoria": "Cama",
+    "categoria": "Beliche",
     "caminho": "/piner/beliche",
     "subpastas": [
       "beliche"
@@ -3584,11 +4945,15 @@
       "/piner/beliche/belichePeder (2).png",
       "/piner/beliche/belichePeder.png",
       "/piner/beliche/medidas.png"
+    ],
+    "medidasRodape": "Alt: 160cm  Larg: 92cm  Prof: 200cm",
+    "coresEstruturadas": [
+      "castanho"
     ]
   },
   {
-    "id": "76",
-    "nome": "cozinha",
+    "id": "82",
+    "nome": "Cozinha",
     "marca": "poliman",
     "categoria": "Cozinha",
     "caminho": "/poliman/cozinha",
@@ -3612,18 +4977,24 @@
       "/poliman/cozinha/MALTA-FREIJORIPADO.jpg",
       "/poliman/cozinha/MALTA-OFFACETINado.jpg",
       "/poliman/cozinha/medidas.png"
+    ],
+    "medidasRodape": "Alt: 218cm  Larg: 258cm  Prof: 50cm",
+    "coresEstruturadas": [
+      "freijó ripado",
+      "off acetinado",
+      "chumbo"
     ]
   },
   {
-    "id": "77",
-    "nome": "mesaEcadeires",
+    "id": "83",
+    "nome": "Mesa com Cadeiras",
     "marca": "poliman",
     "categoria": "Mesa",
     "caminho": "/poliman/mesaEcadeires",
     "subpastas": [
       "mesaEcadeires"
     ],
-    "medidas": null,
+    "medidas": "110 cm",
     "informacoes": null,
     "linkReferencia": "https://poliman.ind.br/",
     "imagens": [],
@@ -3652,19 +5023,24 @@
       "/poliman/mesaEcadeires/155cm/medidas.png",
       "/poliman/mesaEcadeires/155cm/Poliman-MesaBellagio6CadeiraClara-FreijoFreijo.jpg",
       "/poliman/mesaEcadeires/155cm/Poliman-MesaBellagio6CadeiraClara-FreijoFreijooff.jpg"
+    ],
+    "medidasRodape": "Alt: 80cm  Larg: 106cm  Prof: 66cm",
+    "coresEstruturadas": [
+      "freijó",
+      "freijó/off"
     ]
   },
   {
-    "id": "78",
-    "nome": "buffet",
+    "id": "84",
+    "nome": "Buffet",
     "marca": "primus",
-    "categoria": "Outros",
+    "categoria": "Armário",
     "caminho": "/primus/buffet",
     "subpastas": [
       "buffet"
     ],
-    "medidas": null,
-    "informacoes": null,
+    "medidas": "4 portas; imagem de medidas presente",
+    "informacoes": "FICHA TÉCNICA\nAltura - 81 cm\nLargura - 110 cm\nProfundidade - 37,2 cm\nLinha/Modelo: Gold\nCor do produto: Pérola com Mel\nMaterial: Buffet em MDP de 15mm e porta em MDP de 12mm\nPeso do produto: 23,4 kg\nPeso suportado: 30 kg distribuídos uniformemente e sem impacto\nQuantidade de volumes: 1 (UN)\nGarantia: 03 meses",
     "linkReferencia": "https://www.saimysmoveis.com.br/buscar?q=cordoba\r\nhttps://incasamoveis.com.br/buffet-gold-3-portas-perola-com-mel-primus-23171-i?srsltid=AfmBOor930RKusLh6hIbS4ZlX1UHfFCZgnGmDvVsbfapQXx7hbpc2qbE\r\nhttps://incasamoveis.com.br/buffet-gold-3-portas-perola-com-mel-primus-23171-i?srsltid=AfmBOop27XaR28N3m8BDFwCgfGqwn7xQtDexWAN_EBXVLV6TriBghoRM",
     "imagens": [],
     "variacoes": [
@@ -3688,18 +5064,23 @@
       "/primus/buffet/real/medidas.jpg",
       "/primus/buffet/real/real 4 portas perola-mel.png",
       "/primus/buffet/real/real 4 portas preto-mel.png"
+    ],
+    "medidasRodape": "Alt: 81cm  Larg: 110cm  Prof: 37cm",
+    "coresEstruturadas": [
+      "pérola/mel",
+      "preto/mel"
     ]
   },
   {
-    "id": "79",
-    "nome": "multiuso",
+    "id": "85",
+    "nome": "Armário",
     "marca": "primus",
     "categoria": "Armário",
     "caminho": "/primus/multiuso",
     "subpastas": [
       "multiuso"
     ],
-    "medidas": null,
+    "medidas": "imagem aberta",
     "informacoes": null,
     "linkReferencia": "https://www.saimysmoveis.com.br/buscar?q=cordoba\r\nhttps://incasamoveis.com.br/buffet-gold-3-portas-perola-com-mel-primus-23171-i?srsltid=AfmBOor930RKusLh6hIbS4ZlX1UHfFCZgnGmDvVsbfapQXx7hbpc2qbE\r\nhttps://incasamoveis.com.br/buffet-gold-3-portas-perola-com-mel-primus-23171-i?srsltid=AfmBOop27XaR28N3m8BDFwCgfGqwn7xQtDexWAN_EBXVLV6TriBghoRM",
     "imagens": [],
@@ -3717,11 +5098,18 @@
       "/primus/multiuso/cordoba/aberto.png",
       "/primus/multiuso/cordoba/coresMelPerola-freijo-branco-melLuxo.png",
       "/primus/multiuso/cordoba/medidas.png"
+    ],
+    "medidasRodape": "Alt: 189cm  Larg: 61cm  Prof: 40cm",
+    "coresEstruturadas": [
+      "mel/pérola",
+      "amêndoa wood",
+      "branco",
+      "freijó"
     ]
   },
   {
-    "id": "80",
-    "nome": "turquesa",
+    "id": "86",
+    "nome": "Colchão",
     "marca": "prorelax",
     "categoria": "Colchão",
     "caminho": "/prorelax/colchao/espuma/turquesa",
@@ -3730,7 +5118,7 @@
       "colchao",
       "espuma"
     ],
-    "medidas": null,
+    "medidas": "casal; solteiro; D33",
     "informacoes": null,
     "linkReferencia": "https://www.prorelaxstore.com.br/",
     "imagens": [],
@@ -3753,18 +5141,22 @@
       "/prorelax/colchao/espuma/turquesa/casal marrom/D33 (2).png",
       "/prorelax/colchao/espuma/turquesa/casal marrom/D33.png",
       "/prorelax/colchao/espuma/turquesa/solteiro marrom/d33 (3).png"
+    ],
+    "medidasRodape": "Solteiro 88×188 · Casal 138×188 · Alt. 17cm",
+    "coresEstruturadas": [
+      "marrom"
     ]
   },
   {
-    "id": "81",
-    "nome": "fruteira",
+    "id": "87",
+    "nome": "Fruteira",
     "marca": "quartaDivisão",
-    "categoria": "Outros",
+    "categoria": "Armário",
     "caminho": "/quartaDivisão/fruteira",
     "subpastas": [
       "fruteira"
     ],
-    "medidas": null,
+    "medidas": "Altura: 1000mm\nLargura: 680mm\nProfundidade: 370mm\nPeso: 21kg",
     "informacoes": null,
     "linkReferencia": "https://quartadivisaomoveis.com.br/",
     "imagens": [],
@@ -3789,18 +5181,23 @@
       "/quartaDivisão/fruteira/natasha/teka_onix.png",
       "/quartaDivisão/fruteira/talita/TALITA-FRUTEIRA-BRanco-PTO-2016-.jpg",
       "/quartaDivisão/fruteira/talita/teka_onix.png"
+    ],
+    "coresEstruturadas": [
+      "branco",
+      "teka/ônix",
+      "branco/preto"
     ]
   },
   {
-    "id": "82",
-    "nome": "sapateira",
+    "id": "88",
+    "nome": "Sapateira",
     "marca": "quartaDivisão",
-    "categoria": "Outros",
+    "categoria": "Armário",
     "caminho": "/quartaDivisão/sapateira",
     "subpastas": [
       "sapateira"
     ],
-    "medidas": null,
+    "medidas": "4 basculantes/4 portas\nAltura:\n1440mm\nLargura:\n545mm\nProfundidade:\n385mm\nPeso:\n28kg",
     "informacoes": null,
     "linkReferencia": "https://quartadivisaomoveis.com.br/",
     "imagens": [],
@@ -3818,259 +5215,23 @@
       "/quartaDivisão/sapateira/safira/SAFIRA-4-BASCULANTES-ABERTA-BRANCO.jpg",
       "/quartaDivisão/sapateira/safira/SAFIRA-4-BASCULANTES-TEKA-ABERTO-1200x1200-1.jpg",
       "/quartaDivisão/sapateira/safira/SAFIRA-4PTAS-2018-BRANCO.jpg"
+    ],
+    "coresEstruturadas": [
+      "branco",
+      "teka"
     ]
   },
   {
-    "id": "83",
-    "nome": "Comodas",
-    "marca": "SantosAndira",
-    "categoria": "Cômoda",
-    "caminho": "/SantosAndira/Comodas",
-    "subpastas": [
-      "Comodas"
-    ],
-    "medidas": null,
-    "informacoes": null,
-    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
-    "imagens": [],
-    "variacoes": [
-      {
-        "cor": "fit",
-        "imagens": [
-          "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Branca.jpg",
-          "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_JequitibaOff_Amb.jpg",
-          "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Jequitiba_FI_Aberto.jpg",
-          "/SantosAndira/Comodas/fit/Comoda_Fit_jequitiba.jpg"
-        ]
-      },
-      {
-        "cor": "ivai",
-        "imagens": [
-          "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaAreia_FI_site.jpg",
-          "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaGrafite_Amb_site.jpg",
-          "/SantosAndira/Comodas/ivai/Comoda_Ivai_Jatoba_FI_site.jpg"
-        ]
-      },
-      {
-        "cor": "pinhais",
-        "imagens": [
-          "/SantosAndira/Comodas/pinhais/310443-Comoda_Pinhais24_JatobaAreia-scaled.jpg",
-          "/SantosAndira/Comodas/pinhais/310444-Comoda_Pinhais24_Jatoba-scaled.jpg",
-          "/SantosAndira/Comodas/pinhais/310448-Comoda_Pinhais24_JatobaGrafite-scaled.jpg",
-          "/SantosAndira/Comodas/pinhais/aberta.jpg",
-          "/SantosAndira/Comodas/pinhais/medidas.png"
-        ]
-      }
-    ],
-    "todasImagens": [
-      "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Branca.jpg",
-      "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_JequitibaOff_Amb.jpg",
-      "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Jequitiba_FI_Aberto.jpg",
-      "/SantosAndira/Comodas/fit/Comoda_Fit_jequitiba.jpg",
-      "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaAreia_FI_site.jpg",
-      "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaGrafite_Amb_site.jpg",
-      "/SantosAndira/Comodas/ivai/Comoda_Ivai_Jatoba_FI_site.jpg",
-      "/SantosAndira/Comodas/pinhais/310443-Comoda_Pinhais24_JatobaAreia-scaled.jpg",
-      "/SantosAndira/Comodas/pinhais/310444-Comoda_Pinhais24_Jatoba-scaled.jpg",
-      "/SantosAndira/Comodas/pinhais/310448-Comoda_Pinhais24_JatobaGrafite-scaled.jpg",
-      "/SantosAndira/Comodas/pinhais/aberta.jpg",
-      "/SantosAndira/Comodas/pinhais/medidas.png"
-    ]
-  },
-  {
-    "id": "84",
-    "nome": "GR",
-    "marca": "SantosAndira",
-    "categoria": "Outros",
-    "caminho": "/SantosAndira/GR",
-    "subpastas": [
-      "GR"
-    ],
-    "medidas": null,
-    "informacoes": null,
-    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
-    "imagens": [],
-    "variacoes": [
-      {
-        "cor": "buriti4pts",
-        "imagens": [
-          "/SantosAndira/GR/buriti4pts/162443-GR-Buriti-4-Portas-JTB-ARE-Interno.jpg",
-          "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_Jatoba.jpg",
-          "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaAreia.jpg",
-          "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaGrafite.jpg"
-        ]
-      },
-      {
-        "cor": "buriti6pts",
-        "imagens": [
-          "/SantosAndira/GR/buriti6pts/162343-GR-Buriti-6-Portas-JTB-ARE-Interno.jpg",
-          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_Jatoba.jpg",
-          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaAreia.jpg",
-          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaGrafite.jpg"
-        ]
-      },
-      {
-        "cor": "fit3pts",
-        "imagens": [
-          "/SantosAndira/GR/fit3pts/COLOQUE ESSA.png",
-          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_BRanco_FI_frontal-Amb.jpg",
-          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_JequitibaOff_Amb-150x150.jpg",
-          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_Amb.jpg",
-          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_FI_Aberto.jpg",
-          "/SantosAndira/GR/fit3pts/medidas.png"
-        ]
-      },
-      {
-        "cor": "fit4pts",
-        "imagens": [
-          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_BRanco_FI-Amb.jpg",
-          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_JequitibaOff_Amb.jpg",
-          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_Amb.jpg",
-          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_FI_Aberto.jpg"
-        ]
-      },
-      {
-        "cor": "fit6pts",
-        "imagens": [
-          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_JequitibaOff_Amb.jpg",
-          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_Amb.jpg",
-          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_FI_aberto.jpg"
-        ]
-      },
-      {
-        "cor": "fitPortaDeCorrer",
-        "imagens": [
-          "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_BRanco_Amb.jpg",
-          "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_JequitibaOff_Amb.jpg",
-          "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_Jequitiba_Amb.jpg"
-        ]
-      },
-      {
-        "cor": "frança",
-        "imagens": [
-          "/SantosAndira/GR/frança/grFrançaBranco.jpg",
-          "/SantosAndira/GR/frança/grFrançaJequitiba.png",
-          "/SantosAndira/GR/frança/grFrançaJequitibaOff.png",
-          "/SantosAndira/GR/frança/GR_Franca_BR_aberto.jpg"
-        ]
-      },
-      {
-        "cor": "master",
-        "imagens": [
-          "/SantosAndira/GR/master/163243-GR_MasterVip84New_JatobaAreia-1.jpg",
-          "/SantosAndira/GR/master/163248-GR_MasterVip84New_JatobaGrafite-1.jpg",
-          "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba.jpg",
-          "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba_Interno.jpg"
-        ]
-      },
-      {
-        "cor": "paranavai",
-        "imagens": [
-          "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaAreia_Ambiente_site.jpg",
-          "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaGrafite_Ambiente_site.jpg",
-          "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_aberto_site.jpg",
-          "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_Ambiente_site.jpg"
-        ]
-      }
-    ],
-    "todasImagens": [
-      "/SantosAndira/GR/buriti4pts/162443-GR-Buriti-4-Portas-JTB-ARE-Interno.jpg",
-      "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_Jatoba.jpg",
-      "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaAreia.jpg",
-      "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaGrafite.jpg",
-      "/SantosAndira/GR/buriti6pts/162343-GR-Buriti-6-Portas-JTB-ARE-Interno.jpg",
-      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_Jatoba.jpg",
-      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaAreia.jpg",
-      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaGrafite.jpg",
-      "/SantosAndira/GR/fit3pts/COLOQUE ESSA.png",
-      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_BRanco_FI_frontal-Amb.jpg",
-      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_JequitibaOff_Amb-150x150.jpg",
-      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_Amb.jpg",
-      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_FI_Aberto.jpg",
-      "/SantosAndira/GR/fit3pts/medidas.png",
-      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_BRanco_FI-Amb.jpg",
-      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_JequitibaOff_Amb.jpg",
-      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_Amb.jpg",
-      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_FI_Aberto.jpg",
-      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_JequitibaOff_Amb.jpg",
-      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_Amb.jpg",
-      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_FI_aberto.jpg",
-      "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_BRanco_Amb.jpg",
-      "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_JequitibaOff_Amb.jpg",
-      "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_Jequitiba_Amb.jpg",
-      "/SantosAndira/GR/frança/grFrançaBranco.jpg",
-      "/SantosAndira/GR/frança/grFrançaJequitiba.png",
-      "/SantosAndira/GR/frança/grFrançaJequitibaOff.png",
-      "/SantosAndira/GR/frança/GR_Franca_BR_aberto.jpg",
-      "/SantosAndira/GR/master/163243-GR_MasterVip84New_JatobaAreia-1.jpg",
-      "/SantosAndira/GR/master/163248-GR_MasterVip84New_JatobaGrafite-1.jpg",
-      "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba.jpg",
-      "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba_Interno.jpg",
-      "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaAreia_Ambiente_site.jpg",
-      "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaGrafite_Ambiente_site.jpg",
-      "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_aberto_site.jpg",
-      "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_Ambiente_site.jpg"
-    ]
-  },
-  {
-    "id": "85",
-    "nome": "mesaDeCabeceira",
-    "marca": "SantosAndira",
-    "categoria": "Mesa",
-    "caminho": "/SantosAndira/mesaDeCabeceira",
-    "subpastas": [
-      "mesaDeCabeceira"
-    ],
-    "medidas": "Medidas\r\nAltura - 580 mm\r\nLargura - 448 mm\r\nProfundidade - 430 mm",
-    "informacoes": null,
-    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
-    "imagens": [
-      "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_JatobaAreia_Ambiente-SITE.jpg",
-      "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_Jatoba_Ambiente-SITE.jpg"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_JatobaAreia_Ambiente-SITE.jpg",
-      "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_Jatoba_Ambiente-SITE.jpg"
-    ]
-  },
-  {
-    "id": "86",
-    "nome": "multiuso",
-    "marca": "SantosAndira",
-    "categoria": "Armário",
-    "caminho": "/SantosAndira/multiuso",
-    "subpastas": [
-      "multiuso"
-    ],
-    "medidas": "Altura: 1655 mm\r\nLargura: 600 mm\r\nProfundidade: 312 mm",
-    "informacoes": null,
-    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
-    "imagens": [
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_BR_FI_Frontal-Amb.jpg",
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_JequitibaOff_Amb.jpg",
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_Amb.jpg",
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_FI_Aberto.jpg"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_BR_FI_Frontal-Amb.jpg",
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_JequitibaOff_Amb.jpg",
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_Amb.jpg",
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_FI_Aberto.jpg"
-    ]
-  },
-  {
-    "id": "87",
-    "nome": "2e3Lugares",
+    "id": "89",
+    "nome": "Sofá",
     "marca": "sofa",
     "categoria": "Sofá",
     "caminho": "/sofa/2e3Lugares",
     "subpastas": [
       "2e3Lugares"
     ],
-    "medidas": null,
-    "informacoes": null,
+    "medidas": "2 e 3 lugares",
+    "informacoes": "Jogo de Sofá 2 e 3 Lugares Corolla Amílcar\nSofá de 2 lugares: 1,40 m de largura\nSofá de 3 lugares: 1,90 m de largura\nCores disponíveis: cinza e marrom\nConjunto composto por: 1 sofá de 2 lugares + 1 sofá de 3 lugares\nCaracterísticas visíveis:\nEncosto fixo e acolchoado\nAssentos amplos\nBraços arredondados e estofados\nPés baixos com acabamento metálico\nModelo tradicional para sala de estar",
     "linkReferencia": null,
     "imagens": [],
     "variacoes": [
@@ -4085,18 +5246,23 @@
     "todasImagens": [
       "/sofa/2e3Lugares/corolla/cinza.png",
       "/sofa/2e3Lugares/corolla/marrom.png"
+    ],
+    "medidasRodape": "Alt: 100cm  Larg: 163–199cm  Prof: 83cm",
+    "coresEstruturadas": [
+      "cinza",
+      "marrom"
     ]
   },
   {
-    "id": "88",
-    "nome": "retratil",
+    "id": "90",
+    "nome": "Sofá",
     "marca": "sofa",
     "categoria": "Sofá",
     "caminho": "/sofa/retratil",
     "subpastas": [
       "retratil"
     ],
-    "medidas": null,
+    "medidas": "retrátil\nLargura total: 2,50 mProfundidade (fechado): Entre 1,22 m e 1,23 mProfundidade (aberto): 1,80 mAltura total: 1,05 m a 1,12 mAltura do assento: 0,50 mLargura dos braços: Geralmente 0,25 m cada",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -4112,11 +5278,16 @@
     "todasImagens": [
       "/sofa/retratil/mexico/cinza.png",
       "/sofa/retratil/mexico/marrom.png"
+    ],
+    "medidasRodape": "Larg: 2,50m · Alt: 1,05–1,12m · Prof. fechado: 1,22m · Prof. aberto: 1,80m",
+    "coresEstruturadas": [
+      "cinza",
+      "marrom"
     ]
   },
   {
-    "id": "89",
-    "nome": "zara",
+    "id": "91",
+    "nome": "Sofá",
     "marca": "sofa",
     "categoria": "Sofá",
     "caminho": "/sofa/retratil/zara",
@@ -4124,7 +5295,7 @@
       "retratil",
       "retratil"
     ],
-    "medidas": null,
+    "medidas": "retrátil\nMedidas Altura: 110 cm Largura: 230 cm Profundidade: 125 cm Profundidade aberto: 180 cm",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -4142,18 +5313,24 @@
       "/sofa/retratil/zara/afrodite/bege.png",
       "/sofa/retratil/zara/afrodite/cinza.png",
       "/sofa/retratil/zara/afrodite/marrom.png"
+    ],
+    "medidasRodape": "Larg: 2,30m · Alt: 1,10m · Prof. fechado: 1,25m · Prof. aberto: 1,80m",
+    "coresEstruturadas": [
+      "bege",
+      "cinza",
+      "marrom"
     ]
   },
   {
-    "id": "90",
-    "nome": "sofaCama",
+    "id": "92",
+    "nome": "Sofá-Cama",
     "marca": "sofa",
     "categoria": "Sofá",
     "caminho": "/sofa/sofaCama",
     "subpastas": [
       "sofaCama"
     ],
-    "medidas": null,
+    "medidas": "sofá-cama\nFechada\nAltura: 0,92m\nProfundidade: 1,15m\nComprimento: 1,90m\n• Aberta\nAltura: 0,42m\nProfundidade: 1,30m\nComprimento: 1,90m",
     "informacoes": null,
     "linkReferencia": "https://bonanmoveis.com.br/product/bankgkok/",
     "imagens": [],
@@ -4169,13 +5346,18 @@
     "todasImagens": [
       "/sofa/sofaCama/bonan/cinza.png",
       "/sofa/sofaCama/bonan/marrom.png"
+    ],
+    "medidasRodape": "Fechado: Alt. 92cm · Prof. 115cm · Comp. 190cm | Aberto: Alt. 42cm · Prof. 130cm · Comp. 190cm",
+    "coresEstruturadas": [
+      "cinza",
+      "marrom"
     ]
   },
   {
-    "id": "91",
-    "nome": "box",
+    "id": "93",
+    "nome": "Box Baú",
     "marca": "songes",
-    "categoria": "Outros",
+    "categoria": "Cama",
     "caminho": "/songes/box",
     "subpastas": [
       "box"
@@ -4197,10 +5379,10 @@
     ]
   },
   {
-    "id": "92",
-    "nome": "casal",
+    "id": "94",
+    "nome": "Cama Casal",
     "marca": "songes",
-    "categoria": "Outros",
+    "categoria": "Cama",
     "caminho": "/songes/box/casal",
     "subpastas": [
       "box",
@@ -4230,16 +5412,16 @@
     ]
   },
   {
-    "id": "93",
-    "nome": "solteiro",
+    "id": "95",
+    "nome": "Cama Solteiro",
     "marca": "songes",
-    "categoria": "Outros",
+    "categoria": "Cama",
     "caminho": "/songes/box/solteiro",
     "subpastas": [
       "box",
       "box"
     ],
-    "medidas": null,
+    "medidas": "solteiro, casal, queen",
     "informacoes": null,
     "linkReferencia": null,
     "imagens": [],
@@ -4260,13 +5442,17 @@
     "todasImagens": [
       "/songes/box/solteiro/bau/solteiroBau.png",
       "/songes/box/solteiro/normal/solteiroNormal.png"
+    ],
+    "medidasRodape": "Solteiro 88×188 · Casal 138×188 · Queen 158×198 · Alt. 30cm",
+    "coresEstruturadas": [
+      "preto"
     ]
   },
   {
-    "id": "94",
-    "nome": "cabeceira",
+    "id": "96",
+    "nome": "Cabeceira",
     "marca": "songes",
-    "categoria": "Criado-Mudo",
+    "categoria": "Cama",
     "caminho": "/songes/cabeceira",
     "subpastas": [
       "cabeceira"
@@ -4313,11 +5499,17 @@
       "/songes/cabeceira/solteiro/marrom.png",
       "/songes/cabeceira/solteiro/preta.png",
       "/songes/cabeceira/solteiro/vermelha.png"
+    ],
+    "coresEstruturadas": [
+      "cinza",
+      "marrom",
+      "preta",
+      "vermelha"
     ]
   },
   {
-    "id": "95",
-    "nome": "joãoPessoa",
+    "id": "97",
+    "nome": "Conjunto",
     "marca": "valdemoveis",
     "categoria": "Outros",
     "caminho": "/valdemoveis/joãoPessoa",
@@ -4336,8 +5528,8 @@
     ]
   },
   {
-    "id": "96",
-    "nome": "livreitoMultiuso",
+    "id": "98",
+    "nome": "Armário",
     "marca": "valdemoveis",
     "categoria": "Armário",
     "caminho": "/valdemoveis/livreitoMultiuso",
@@ -4355,66 +5547,10 @@
     "todasImagens": [
       "/valdemoveis/livreitoMultiuso/branco.png",
       "/valdemoveis/livreitoMultiuso/cinamomo.png"
-    ]
-  },
-  {
-    "id": "97",
-    "nome": "buffet",
-    "marca": "Viero",
-    "categoria": "Outros",
-    "caminho": "/Viero/buffet",
-    "subpastas": [
-      "buffet"
     ],
-    "medidas": "largura 155,5cm\r\naltura 77cm\r\nprofundidade 41,5cm",
-    "informacoes": null,
-    "linkReferencia": "https://www.vieromoveis.com.br/\r\nhttps://www.lojasedmil.com.br/poltrona-decorativa-linho-flower-viero-mel-e-caqui/p?srsltid=AfmBOoom25P5orf8O8giLd3TmxRW4znKQO63tTZO9rlXS4tsXFVAAf78\r\nhttps://www.opcaomoveis.com.br/produtos/poltrona-glamour-linho-bronze-viero?srsltid=AfmBOooG8MlIdq6jvG5BE9pV06kJATHANmuwHI9xiWfXL5Rv_7GnlHgq",
-    "imagens": [
-      "/Viero/buffet/imbuia-off.png",
-      "/Viero/buffet/imbuia.png",
-      "/Viero/buffet/MEDIDAS.png",
-      "/Viero/buffet/mel.png"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/Viero/buffet/imbuia-off.png",
-      "/Viero/buffet/imbuia.png",
-      "/Viero/buffet/MEDIDAS.png",
-      "/Viero/buffet/mel.png"
-    ]
-  },
-  {
-    "id": "98",
-    "nome": "poltrona",
-    "marca": "Viero",
-    "categoria": "Cadeira",
-    "caminho": "/Viero/poltrona",
-    "subpastas": [
-      "poltrona"
-    ],
-    "medidas": null,
-    "informacoes": null,
-    "linkReferencia": "https://www.vieromoveis.com.br/\r\nhttps://www.lojasedmil.com.br/poltrona-decorativa-linho-flower-viero-mel-e-caqui/p?srsltid=AfmBOoom25P5orf8O8giLd3TmxRW4znKQO63tTZO9rlXS4tsXFVAAf78\r\nhttps://www.opcaomoveis.com.br/produtos/poltrona-glamour-linho-bronze-viero?srsltid=AfmBOooG8MlIdq6jvG5BE9pV06kJATHANmuwHI9xiWfXL5Rv_7GnlHgq",
-    "imagens": [],
-    "variacoes": [
-      {
-        "cor": "flower",
-        "imagens": [
-          "/Viero/poltrona/flower/linhoBronze.jpg",
-          "/Viero/poltrona/flower/linhoInox.png"
-        ]
-      },
-      {
-        "cor": "Glamour",
-        "imagens": [
-          "/Viero/poltrona/Glamour/linhoBronze.jpg"
-        ]
-      }
-    ],
-    "todasImagens": [
-      "/Viero/poltrona/flower/linhoBronze.jpg",
-      "/Viero/poltrona/flower/linhoInox.png",
-      "/Viero/poltrona/Glamour/linhoBronze.jpg"
+    "coresEstruturadas": [
+      "branco",
+      "cinamomo"
     ]
   }
 ]

@@ -1,0 +1,108 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Casa Sinelli Móveis & Colchões" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: Casa Sinelli
+        - generic [ref=e7]: Móveis & Colchões
+      - button "Abrir menu" [ref=e8]:
+        - img [ref=e9]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - navigation "Breadcrumb" [ref=e13]:
+        - link "Início" [ref=e14] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e15]: /
+        - link "Catálogo" [ref=e16] [cursor=pointer]:
+          - /url: /catalogo
+        - generic [ref=e17]: /
+        - link "Sofá" [ref=e18] [cursor=pointer]:
+          - /url: /categoria/sofa
+        - generic [ref=e19]: /
+        - generic [ref=e20]: Sofá Agar
+      - generic [ref=e21]:
+        - generic [ref=e23]:
+          - generic [ref=e25]:
+            - img "Sofá Agar — foto 1" [ref=e26]
+            - generic [ref=e27]: 1/1
+          - generic [ref=e28]:
+            - 'heading "Variação: 1,80m" [level=3] [ref=e29]'
+            - generic [ref=e30]:
+              - button "1,80m" [pressed] [ref=e31]
+              - button "2,00m" [ref=e32]
+              - button "2,10M" [ref=e33]
+              - button "2,50M" [ref=e34]
+              - button "2,70" [ref=e35]
+              - button "2,90" [ref=e36]
+          - link "Enviar pelo WhatsApp" [ref=e37] [cursor=pointer]:
+            - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Sof%C3%A1%20Agar%20da%20Casa%20Sinelli.
+            - img [ref=e38]
+            - text: Enviar pelo WhatsApp
+          - paragraph [ref=e40]: Clique para enviar uma mensagem sobre este produto diretamente
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - paragraph [ref=e43]: alpoim
+            - heading "Sofá Agar" [level=1] [ref=e44]
+            - paragraph [ref=e45]: Sofá
+          - generic [ref=e46]: 6 variações disponíveis
+          - generic [ref=e48]:
+            - heading "Informações Técnicas" [level=2] [ref=e49]:
+              - img [ref=e50]
+              - text: Informações Técnicas
+            - generic [ref=e52]: "Nosso Sofá Retrátil Reclinável Agar é um produto original, com design elegante com detalhes de madeira no assento, que combina com qualquer ambiente e deixa sua sala ainda mais linda, aconchegante e moderna. TEMOS TODAS AS CORES EM TODAS AS MEDIDAS disponiveis MEDIDAS DO SOFÁ: Altura: 1.02 m Largura: 1,80M 2,00M 2,10M 2,30M 2,50M 2,70M 2,90M Profundidade Sofá fechado: 89 cm Sofá aberto Reclinável da ponta da almofada até o encosto: 1.70 m Assento: O assento retrátil contem espuma AG 45 Fibra de silicone, molas ensacadas, percinta elástica, que proporcionam uma acomodação extremamente confortável. Encosto: O encosto reclinável é feito com espuma 100% fibra de silicone. Além disso, as catracas são de ferro blindado com várias posições de inclinação, trazendo mais conforto para você na hora do descanso. Estrutura: Sua estrutura é com madeira de eucalipto, 100% reflorestada e seca em estufa, e os pés são produzidos em madeira e rodízio de silicone Revestimento: O revestimento é em tecido veludão, deixando a superfície do sofá muito mais macia. Braços: Braços com Fibra de silicone. * As imagens dos produtos são meramente ilustrativas. As cores podem sofrer variações dependendo da luminosidade, tipo de câmera ou mesmo da visualização das imagens em computadores, notebooks com telas LCD ou LED, tablets ou smartphones, dependendo da quantidade de pixels, podendo deixar as imagens com cores mais opacas ou cores mais vibrantes."
+          - paragraph [ref=e53]:
+            - text: "Fabricante:"
+            - link "alpoimdistribuidorasp.com.br" [ref=e54] [cursor=pointer]:
+              - /url: https://www.alpoimdistribuidorasp.com.br/
+  - contentinfo [ref=e55]:
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]: Casa Sinelli
+          - generic [ref=e60]: Móveis & Colchões
+          - paragraph [ref=e61]: Transformando ambientes com móveis de qualidade e atendimento personalizado em Ribeirão Pires.
+        - generic [ref=e62]:
+          - heading "Catálogo" [level=3] [ref=e63]
+          - list [ref=e64]:
+            - listitem [ref=e65]:
+              - link "Sofás" [ref=e66] [cursor=pointer]:
+                - /url: /categoria/sofa
+            - listitem [ref=e67]:
+              - link "Camas" [ref=e68] [cursor=pointer]:
+                - /url: /categoria/cama
+            - listitem [ref=e69]:
+              - link "Guarda-Roupas" [ref=e70] [cursor=pointer]:
+                - /url: /categoria/guarda-roupa
+            - listitem [ref=e71]:
+              - link "Colchões" [ref=e72] [cursor=pointer]:
+                - /url: /categoria/colchao
+            - listitem [ref=e73]:
+              - link "Mesas" [ref=e74] [cursor=pointer]:
+                - /url: /categoria/mesa
+            - listitem [ref=e75]:
+              - link "Ver Tudo" [ref=e76] [cursor=pointer]:
+                - /url: /catalogo
+        - generic [ref=e77]:
+          - heading "Contato" [level=3] [ref=e78]
+          - list [ref=e79]:
+            - listitem [ref=e80]:
+              - generic [ref=e81]: 📍
+              - generic [ref=e82]: Av. Francisco Monteiro, 1320 — Vila Fiorentino, Ribeirão Pires - SP
+            - listitem [ref=e83]:
+              - generic [ref=e84]: 📱
+              - link "(11) 97177-6165" [ref=e85] [cursor=pointer]:
+                - /url: https://wa.me/5511971776165
+            - listitem [ref=e86]:
+              - generic [ref=e87]: ✉️
+              - link "contato@casasinelli.com.br" [ref=e88] [cursor=pointer]:
+                - /url: mailto:contato@casasinelli.com.br
+            - listitem [ref=e89]:
+              - generic [ref=e90]: 🕐
+              - generic [ref=e91]: "Seg–Sex: 09h às 18h | Sáb: 09h às 17h"
+      - generic [ref=e92]: © 2026Casa Sinelli — Móveis & Colchões. Todos os direitos reservados.
+  - link "Fale conosco pelo WhatsApp" [ref=e93] [cursor=pointer]:
+    - /url: https://wa.me/5511971776165
+    - img [ref=e94]
+  - button "Open Next.js Dev Tools" [ref=e101] [cursor=pointer]:
+    - img [ref=e102]
+  - alert [ref=e105]

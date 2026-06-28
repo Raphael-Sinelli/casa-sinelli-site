@@ -95,7 +95,7 @@ export default function HomePage() {
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 key={p.id}
-                src={`/api/catalogo${img}`}
+                src={encodeURI(`/api/catalogo${img}`)}
                 alt=""
                 aria-hidden="true"
                 className="w-full h-full object-cover"

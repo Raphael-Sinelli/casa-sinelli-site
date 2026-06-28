@@ -25,9 +25,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: produto.nome,
-    description: descricao || `${produto.nome} da marca ${produto.marca}. Consulte disponibilidade e cores pelo WhatsApp.`,
+    description: descricao || `${produto.nome} — Casa Sinelli. Consulte disponibilidade e opções pelo WhatsApp.`,
     openGraph: {
-      title: produto.nome,
+      title: `${produto.nome} — Casa Sinelli`,
       description: descricao,
       type: 'website',
     },
@@ -45,7 +45,6 @@ export default async function ProdutoPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: produto.nome,
-    brand: { '@type': 'Brand', name: produto.marca },
     category: produto.categoria,
     offers: {
       '@type': 'Offer',
@@ -86,30 +85,19 @@ export default async function ProdutoPage({ params }: Props) {
           <span className="text-marrom font-medium line-clamp-1">{produto.nome}</span>
         </nav>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Coluna esquerda: galeria + seletor de cor */}
-          <div className="lg:sticky lg:top-24">
+          <div className="md:sticky md:top-24">
             <ProductDetailClient produto={produto} />
           </div>
 
           {/* Coluna direita: informações */}
           <div className="flex flex-col gap-6">
             <div>
-              <p className="text-sm text-marrom-claro font-semibold uppercase tracking-wider mb-1">
-                {produto.marca}
-              </p>
               <h1 className="font-serif text-3xl sm:text-4xl font-bold text-marrom leading-tight">
                 {produto.nome}
               </h1>
-              <p className="mt-2 text-marrom/60 font-medium">{produto.categoria}</p>
             </div>
-
-            {produto.variacoes.length > 1 && (
-              <div className="flex items-center gap-2 text-sm text-gray-600">
-                <span className="w-2 h-2 rounded-full bg-oliva inline-block" />
-                {produto.variacoes.length} variações disponíveis
-              </div>
-            )}
 
             {/* Medidas */}
             {produto.medidas && (

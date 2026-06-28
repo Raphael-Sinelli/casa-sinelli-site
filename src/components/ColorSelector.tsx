@@ -1,6 +1,7 @@
 'use client';
 
 import type { Variacao } from '@/lib/tipos';
+import { ehTamanho } from '@/lib/produtos';
 
 interface Props {
   variacoes: Variacao[];
@@ -11,10 +12,12 @@ interface Props {
 export default function ColorSelector({ variacoes, corSelecionada, onSelect }: Props) {
   if (variacoes.length <= 1) return null;
 
+  const rotulo = variacoes.length > 0 && ehTamanho(variacoes[0].cor) ? 'Tamanho' : 'Cor';
+
   return (
     <div>
       <h3 className="text-sm font-semibold text-gray-700 mb-2">
-        Variação:{' '}
+        {rotulo}:{' '}
         <span className="text-marrom font-bold">{corSelecionada}</span>
       </h3>
       <div className="flex flex-wrap gap-2">

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import type { Produto } from '@/lib/tipos';
-import { imagensDisplayDaVariacao, mensagemWhatsApp } from '@/lib/produtos';
+import { imagensDisplayDaVariacao, mensagemWhatsApp, variacoesDisplay } from '@/lib/produtos';
 import ProductGallery from './ProductGallery';
 import ColorSelector from './ColorSelector';
 
@@ -11,7 +11,8 @@ interface Props {
 }
 
 export default function ProductDetailClient({ produto }: Props) {
-  const primeiraVariacao = produto.variacoes[0]?.cor ?? '';
+  const variacoesFiltradas = variacoesDisplay(produto);
+  const primeiraVariacao = variacoesFiltradas[0]?.cor ?? '';
   const [corAtiva, setCorAtiva] = useState(primeiraVariacao);
 
   const imagens = corAtiva
@@ -25,9 +26,9 @@ export default function ProductDetailClient({ produto }: Props) {
       {/* Galeria */}
       <ProductGallery imagens={imagens} nomeProduto={produto.nome} />
 
-      {/* Seletor de cores */}
+      {/* Seletor de cores/tamanhos */}
       <ColorSelector
-        variacoes={produto.variacoes}
+        variacoes={variacoesFiltradas}
         corSelecionada={corAtiva}
         onSelect={setCorAtiva}
       />

@@ -1,0 +1,104 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Casa Sinelli Móveis & Colchões" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: Casa Sinelli
+        - generic [ref=e7]: Móveis & Colchões
+      - button "Abrir menu" [ref=e8]:
+        - img [ref=e9]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - navigation "Breadcrumb" [ref=e13]:
+        - link "Início" [ref=e14] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e15]: /
+        - link "Catálogo" [ref=e16] [cursor=pointer]:
+          - /url: /catalogo
+        - generic [ref=e17]: /
+        - link "Sofá" [ref=e18] [cursor=pointer]:
+          - /url: /categoria/sofa
+        - generic [ref=e19]: /
+        - generic [ref=e20]: Sofá Recife
+      - generic [ref=e21]:
+        - generic [ref=e23]:
+          - generic [ref=e25]:
+            - generic [ref=e26]: 🛋️
+            - paragraph [ref=e27]: Sofá Recife
+          - generic [ref=e28]:
+            - 'heading "Variação: Bege" [level=3] [ref=e29]'
+            - generic [ref=e30]:
+              - button "Bege" [pressed] [ref=e31]
+              - button "Cinza" [ref=e32]
+              - button "Marrom" [ref=e33]
+          - link "Enviar pelo WhatsApp" [ref=e34] [cursor=pointer]:
+            - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Sof%C3%A1%20Recife%20da%20Casa%20Sinelli.
+            - img [ref=e35]
+            - text: Enviar pelo WhatsApp
+          - paragraph [ref=e37]: Clique para enviar uma mensagem sobre este produto diretamente
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - paragraph [ref=e40]: alpoim
+            - heading "Sofá Recife" [level=1] [ref=e41]
+            - paragraph [ref=e42]: Sofá
+          - generic [ref=e43]: 3 variações disponíveis
+          - generic [ref=e45]:
+            - heading "Informações Técnicas" [level=2] [ref=e46]:
+              - img [ref=e47]
+              - text: Informações Técnicas
+            - generic [ref=e49]: "Nosso Sofá Retrátil Reclinável Recife é um produto original, com design elegante que combina com qualquer ambiente e deixa sua sala ainda mais linda, aconchegante e moderna. cores disponiveis: Bege, cinza e marrom MEDIDAS DO SOFÁ: Altura: 1.12 m Largura: 2.10 - 2.30m - 2.50 m Profundidade Sofá fechado: 1.20 m Sofá aberto Reclinável da ponta da almofada até o encosto: 1.80 m Assento: O assento retrátil contem espuma D28, Fibra de silicone e percinta elástica, Molas ensacadas Pillow de 30 cm que proporcionam uma acomodação extremamente confortável. Encosto: O encosto reclinável é feito com espuma 100% fibra de silicone. Além disso, as catracas são de ferro blindado com várias posições de inclinação, trazendo mais conforto para você na hora do descanso. Estrutura: Sua estrutura é com madeira de eucalipto, 100% reflorestada e seca em estufa, e os pés são produzidos em madeira e rodízio de silicone Revestimento: O revestimento é em tecido Linho, deixando a superfície do sofá muito mais macia. Braços: Braços com Fibra de silicone."
+          - paragraph [ref=e50]:
+            - text: "Fabricante:"
+            - link "alpoimdistribuidorasp.com.br" [ref=e51] [cursor=pointer]:
+              - /url: https://www.alpoimdistribuidorasp.com.br/
+  - contentinfo [ref=e52]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56]: Casa Sinelli
+          - generic [ref=e57]: Móveis & Colchões
+          - paragraph [ref=e58]: Transformando ambientes com móveis de qualidade e atendimento personalizado em Ribeirão Pires.
+        - generic [ref=e59]:
+          - heading "Catálogo" [level=3] [ref=e60]
+          - list [ref=e61]:
+            - listitem [ref=e62]:
+              - link "Sofás" [ref=e63] [cursor=pointer]:
+                - /url: /categoria/sofa
+            - listitem [ref=e64]:
+              - link "Camas" [ref=e65] [cursor=pointer]:
+                - /url: /categoria/cama
+            - listitem [ref=e66]:
+              - link "Guarda-Roupas" [ref=e67] [cursor=pointer]:
+                - /url: /categoria/guarda-roupa
+            - listitem [ref=e68]:
+              - link "Colchões" [ref=e69] [cursor=pointer]:
+                - /url: /categoria/colchao
+            - listitem [ref=e70]:
+              - link "Mesas" [ref=e71] [cursor=pointer]:
+                - /url: /categoria/mesa
+            - listitem [ref=e72]:
+              - link "Ver Tudo" [ref=e73] [cursor=pointer]:
+                - /url: /catalogo
+        - generic [ref=e74]:
+          - heading "Contato" [level=3] [ref=e75]
+          - list [ref=e76]:
+            - listitem [ref=e77]:
+              - generic [ref=e78]: 📍
+              - generic [ref=e79]: Av. Francisco Monteiro, 1320 — Vila Fiorentino, Ribeirão Pires - SP
+            - listitem [ref=e80]:
+              - generic [ref=e81]: 📱
+              - link "(11) 97177-6165" [ref=e82] [cursor=pointer]:
+                - /url: https://wa.me/5511971776165
+            - listitem [ref=e83]:
+              - generic [ref=e84]: ✉️
+              - link "contato@casasinelli.com.br" [ref=e85] [cursor=pointer]:
+                - /url: mailto:contato@casasinelli.com.br
+            - listitem [ref=e86]:
+              - generic [ref=e87]: 🕐
+              - generic [ref=e88]: "Seg–Sex: 09h às 18h | Sáb: 09h às 17h"
+      - generic [ref=e89]: © 2026Casa Sinelli — Móveis & Colchões. Todos os direitos reservados.
+  - link "Fale conosco pelo WhatsApp" [ref=e90] [cursor=pointer]:
+    - /url: https://wa.me/5511971776165
+    - img [ref=e91]
+  - button "Open Next.js Dev Tools" [ref=e98] [cursor=pointer]:
+    - img [ref=e99]

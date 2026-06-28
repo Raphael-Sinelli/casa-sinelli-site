@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Produto } from '@/lib/tipos';
-import { primeiraImagemDisplay, mensagemWhatsApp } from '@/lib/produtos';
+import { primeiraImagemDisplay, mensagemWhatsApp, imagemUrl } from '@/lib/produtos';
 
 interface Props {
   produto: Produto;
@@ -20,7 +20,7 @@ function ImagemProduto({ src, alt }: { src: string | null; alt: string }) {
   // eslint-disable-next-line @next/next/no-img-element
   return (
     <img
-      src={`/api/catalogo${src}`}
+      src={imagemUrl(src)}
       alt={alt}
       loading="lazy"
       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -31,7 +31,6 @@ function ImagemProduto({ src, alt }: { src: string | null; alt: string }) {
 export default function ProductCard({ produto }: Props) {
   const imagem = primeiraImagemDisplay(produto);
   const whatsappUrl = mensagemWhatsApp(produto.nome);
-  const totalCores = produto.variacoes.length;
 
   return (
     <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-gray-100 flex flex-col group">
@@ -47,15 +46,11 @@ export default function ProductCard({ produto }: Props) {
       {/* Conteúdo */}
       <div className="flex flex-col flex-1 p-4 gap-3">
         <div className="flex-1">
-          <p className="text-xs text-marrom-claro font-medium uppercase tracking-wide mb-1">{produto.marca}</p>
           <Link href={`/produto/${produto.id}`}>
             <h3 className="font-serif text-marrom font-semibold text-base leading-snug hover:text-marrom-escuro transition-colors line-clamp-2">
               {produto.nome}
             </h3>
           </Link>
-          {totalCores > 1 && (
-            <p className="text-xs text-gray-500 mt-1">{totalCores} cores disponíveis</p>
-          )}
         </div>
 
         {/* Botões */}

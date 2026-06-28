@@ -5,207 +5,156 @@ const CATALOGO_ROOT = path.resolve('C:\\Imagens\\Catalogo');
 const OUTPUT_FILE = path.resolve(__dirname, '../src/data/produtos.json');
 
 const PASTAS_IGNORAR = new Set([
-  '_catalogo',
-  '_SiteCasaSinelli',
-  '_lixeira_duplicatas',
-  '.claude',
-  '.agents',
+  '_catalogo', '_SiteCasaSinelli', '_lixeira_duplicatas',
+  '.claude', '.agents', 'node_modules', '.git',
 ]);
 
 const EXTENSOES_IMAGEM = new Set(['.jpg', '.jpeg', '.png', '.webp', '.heic']);
 
-// Mapeamento de palavras-chave para categoria
-const CATEGORIAS_KEYWORDS = [
-  { cat: 'Guarda-Roupa', palavras: ['guarda roupa', 'guardaroupa', 'roupeiro', 'closet', 'modulado'] },
-  { cat: 'Cama', palavras: ['cama casal', 'cama solteiro', 'cama queen', 'cama king', 'beliche', 'triliche', 'bicama', 'cama box'] },
-  { cat: 'Colchão', palavras: ['colchao', 'colchão'] },
-  { cat: 'Sofá', palavras: ['sofa', 'sofá', 'retratil', 'retrátil', 'loveseat', '2 lugares', '3 lugares', '2e3lugares', 'sofacama', 'sofa cama'] },
-  { cat: 'Mesa', palavras: ['mesa', 'mesa de jantar', 'mesa de centro', 'mesa lateral', 'mesa cabeceira', 'mesa computador'] },
-  { cat: 'Cadeira', palavras: ['cadeira', 'banqueta', 'poltrona'] },
-  { cat: 'Aparador', palavras: ['aparador'] },
-  { cat: 'Rack / Painel', palavras: ['rack', 'painel', 'painel tv'] },
-  { cat: 'Cômoda', palavras: ['comoda', 'cômoda', 'comodo'] },
-  { cat: 'Criado-Mudo', palavras: ['criado', 'mesa de cabeceira', 'cabeceira'] },
-  { cat: 'Armário', palavras: ['armario', 'armário', 'roupeiro', 'multiuso'] },
-  { cat: 'Estante', palavras: ['estante', 'livreiro', 'biblioteca'] },
-  { cat: 'Cristaleira', palavras: ['cristaleira', 'vitrine'] },
-  { cat: 'Home / Rack', palavras: ['home', 'home office'] },
-  { cat: 'Cozinha', palavras: ['cozinha', 'fogao', 'fogão', 'cooktop', 'kit cozinha', 'kit de cozinha'] },
-  { cat: 'Fogão', palavras: ['fogao', 'fogão', 'cooktop'] },
-  { cat: 'Colchonete', palavras: ['colchonete'] },
-  { cat: 'Lavanderia', palavras: ['lava', 'tanque', 'lavanderia'] },
-];
-
-function detectarCategoria(marca, subpastas, nomeModelo) {
-  const textoCompleto = `${marca} ${subpastas.join(' ')} ${nomeModelo}`.toLowerCase();
-
-  for (const { cat, palavras } of CATEGORIAS_KEYWORDS) {
-    if (palavras.some(p => textoCompleto.includes(p))) {
-      return cat;
-    }
-  }
-  return 'Outros';
-}
-
-function isImagem(filename) {
-  return EXTENSOES_IMAGEM.has(path.extname(filename).toLowerCase());
+function isImagem(f) {
+  return EXTENSOES_IMAGEM.has(path.extname(f).toLowerCase());
 }
 
 function lerArquivoTexto(filePath) {
   if (!fs.existsSync(filePath)) return null;
-  // Tenta UTF-8 primeiro; se falhar (BOM inválido), tenta latin1
-  try {
-    return fs.readFileSync(filePath, 'utf8').trim();
-  } catch {
-    return fs.readFileSync(filePath, 'latin1').trim();
-  }
+  try { return fs.readFileSync(filePath, 'utf8').trim() || null; }
+  catch { try { return fs.readFileSync(filePath, 'latin1').trim() || null; } catch { return null; } }
 }
 
-function listarImagensDiretorio(dirPath) {
+function listDirs(dir) {
   try {
-    return fs.readdirSync(dirPath)
-      .filter(f => {
-        const stat = fs.statSync(path.join(dirPath, f));
-        return stat.isFile() && isImagem(f);
-      })
-      .map(f => path.join(dirPath, f).replace(/\\/g, '/'));
-  } catch {
-    return [];
-  }
+    return fs.readdirSync(dir).filter(e => {
+      try { return fs.statSync(path.join(dir, e)).isDirectory(); } catch { return false; }
+    });
+  } catch { return []; }
 }
 
-// Converte caminho absoluto para path relativo ao Catálogo (para uso no JSON)
+// Imagens DIRETAMENTE em dir (não em subpastas)
+function listImagesDirect(dir) {
+  try {
+    return fs.readdirSync(dir)
+      .filter(f => { try { return fs.statSync(path.join(dir, f)).isFile() && isImagem(f); } catch { return false; } })
+      .map(f => path.join(dir, f).replace(/\\/g, '/'));
+  } catch { return []; }
+}
+
+// TODAS as imagens em dir e TODAS as subpastas, qualquer profundidade
+function collectImagesRecursive(dir) {
+  const result = [];
+  const stack = [dir];
+  while (stack.length) {
+    const cur = stack.pop();
+    result.push(...listImagesDirect(cur));
+    for (const sub of listDirs(cur)) stack.push(path.join(cur, sub));
+  }
+  return result;
+}
+
 function caminhoRelativo(absPath) {
   return absPath.replace(/\\/g, '/').replace(CATALOGO_ROOT.replace(/\\/g, '/'), '');
 }
 
-/**
- * Processa um diretório de "modelo" (produto).
- * Pode conter imagens diretamente, subpastas de cores, e arquivos .txt.
- * Retorna um objeto produto ou null se não tiver imagens.
- */
-function processarModelo(modeloPath, marca, subpastasAcima, nomeModelo) {
-  if (!fs.existsSync(modeloPath)) return null;
+let idCounter = 1;
 
-  const entries = fs.readdirSync(modeloPath);
-  const medidas = lerArquivoTexto(path.join(modeloPath, 'medidas.txt'));
-
-  // Tenta variações de nome para medidasEinformacoes
-  const nomesInfo = [
-    'medidasEinformacoes.txt',
-    'medidasEinformaçoes.txt',
-    'medidasEinformações.txt',
-    'informacoes.txt',
-    'informaçoes.txt',
-    'informações.txt',
-  ];
+function lerMeta(dir, linkFallback) {
+  const medidas = lerArquivoTexto(path.join(dir, 'medidas.txt'));
   let informacoes = null;
-  for (const nome of nomesInfo) {
-    informacoes = lerArquivoTexto(path.join(modeloPath, nome));
+  for (const n of ['medidasEinformacoes.txt','medidasEinformaçoes.txt','medidasEinformações.txt',
+                    'informacoes.txt','informaçoes.txt','informações.txt']) {
+    informacoes = lerArquivoTexto(path.join(dir, n));
     if (informacoes) break;
   }
+  const link = lerArquivoTexto(path.join(dir, 'LINK-DO-SITE-REFERENCIAS-E-PRODUTOS.txt')) || linkFallback;
+  return { medidas, informacoes, link };
+}
 
-  const linkFile = lerArquivoTexto(path.join(modeloPath, 'LINK-DO-SITE-REFERENCIAS-E-PRODUTOS.txt'));
+/**
+ * Cria produto em dir.
+ * imagensRaiz = imagens DIRETAS em dir.
+ * variacoes   = subpastas que têm imagens diretas → coleta RECURSIVA de cada subpasta.
+ * Subpastas sem imagens diretas NÃO entram como variação aqui (serão sub-produtos).
+ */
+function criarProduto(dir, marca, subpastasAcima, linkFallback) {
+  const meta = lerMeta(dir, linkFallback);
+  const nomeModelo = path.basename(dir);
 
-  // Imagens diretamente na pasta do modelo
-  const imagensRaiz = listarImagensDiretorio(modeloPath).map(caminhoRelativo);
-
-  // Subpastas (variações de cor ou sub-modelos)
-  const subDirs = entries.filter(e => {
-    const fullPath = path.join(modeloPath, e);
-    try {
-      return fs.statSync(fullPath).isDirectory();
-    } catch {
-      return false;
-    }
-  });
+  const imagensRaiz = listImagesDirect(dir).map(caminhoRelativo);
+  const subDirs = listDirs(dir);
 
   const variacoes = [];
-  for (const subDir of subDirs) {
-    const subPath = path.join(modeloPath, subDir);
-    const imgs = listarImagensDiretorio(subPath).map(caminhoRelativo);
-    if (imgs.length > 0) {
-      variacoes.push({ cor: subDir, imagens: imgs });
+  for (const sub of subDirs) {
+    const subPath = path.join(dir, sub);
+    // Variação só se tiver imagens DIRETAS (distingue de sub-produtos)
+    const imgsDiretas = listImagesDirect(subPath);
+    if (imgsDiretas.length > 0) {
+      // Mas coleta RECURSIVAMENTE para pegar convertidas/, FI/, sub-cores, etc.
+      const todasImgsVar = collectImagesRecursive(subPath).map(caminhoRelativo);
+      variacoes.push({ cor: sub, imagens: todasImgsVar });
     }
   }
 
-  // Todas as imagens (raiz + variações)
-  const todasImagens = [
-    ...imagensRaiz,
-    ...variacoes.flatMap(v => v.imagens),
-  ];
-
-  if (todasImagens.length === 0 && variacoes.length === 0) return null;
-
-  const categoria = detectarCategoria(marca, subpastasAcima, nomeModelo);
+  const todasImagens = [...imagensRaiz, ...variacoes.flatMap(v => v.imagens)];
+  if (todasImagens.length === 0) return null;
 
   return {
-    id: gerarId(marca, subpastasAcima, nomeModelo),
+    id: String(idCounter++),
     nome: nomeModelo,
     marca,
-    categoria,
-    caminho: caminhoRelativo(modeloPath),
+    categoria: 'Outros',
+    caminho: caminhoRelativo(dir),
     subpastas: subpastasAcima,
-    medidas: medidas || null,
-    informacoes: informacoes || null,
-    linkReferencia: linkFile || null,
+    medidas: meta.medidas,
+    informacoes: meta.informacoes,
+    linkReferencia: meta.link || null,
     imagens: imagensRaiz,
-    variacoes: variacoes.length > 0 ? variacoes : [],
+    variacoes,
     todasImagens,
   };
 }
 
-let idCounter = 1;
-function gerarId(marca, subpastas, nome) {
-  return `${idCounter++}`;
-}
-
 /**
- * Percorre recursivamente uma pasta de marca.
- * Detecta se uma pasta é um "modelo" (tem imagens diretas ou subpastas com imagens)
- * ou é uma pasta de agrupamento (ex: "cama", "rack").
+ * Percorre dir recursivamente.
+ *
+ * Regra: um dir é PRODUTO se tiver imagens diretas OU tiver subpastas com imagens diretas.
+ * (Igual à lógica original, mas agora a coleta de imagens das variações é recursiva.)
+ *
+ * Subpastas SEM imagens diretas podem ser sub-produtos → recursamos nelas.
+ * Subpastas COM imagens diretas → são variações do produto atual.
+ *
+ * Se dir não tem imagens diretas E nenhuma subpasta tem imagens diretas →
+ *   dir é agrupador, recursamos em todas as subpastas.
  */
-function processarPasta(dirPath, marca, subpastasAcima) {
+function processarDir(dir, marca, subpastasAcima, linkFallback) {
   const produtos = [];
-  if (!fs.existsSync(dirPath)) return produtos;
+  const imagensAqui = listImagesDirect(dir);
+  const subDirs = listDirs(dir);
 
-  const entries = fs.readdirSync(dirPath);
-  const subDirs = entries.filter(e => {
-    try {
-      return fs.statSync(path.join(dirPath, e)).isDirectory();
-    } catch {
-      return false;
+  // Subpastas com imagens DIRETAS (tornam-se variações)
+  const subComImgsDiretas = subDirs.filter(s => listImagesDirect(path.join(dir, s)).length > 0);
+  // Subpastas SEM imagens diretas (podem ser sub-produtos ou agrupadores)
+  const subSemImgsDiretas = subDirs.filter(s => !subComImgsDiretas.includes(s));
+
+  const ehProduto = imagensAqui.length > 0 || subComImgsDiretas.length > 0;
+
+  if (ehProduto) {
+    const p = criarProduto(dir, marca, subpastasAcima, linkFallback);
+    if (p) {
+      produtos.push(p);
+      console.log(`  [${marca}] ${p.caminho} → ${p.todasImagens.length} imgs (${p.variacoes.length} var)`);
     }
-  });
 
-  const imagensAqui = listarImagensDiretorio(dirPath);
-
-  // Se tem imagens diretas OU subpastas com imagens → é um modelo
-  const subDirsComImagens = subDirs.filter(sub => {
-    const imgs = listarImagensDiretorio(path.join(dirPath, sub));
-    return imgs.length > 0;
-  });
-
-  const ehModelo = imagensAqui.length > 0 || subDirsComImagens.length > 0;
-
-  if (ehModelo) {
-    const nomeModelo = path.basename(dirPath);
-    const produto = processarModelo(dirPath, marca, subpastasAcima, nomeModelo);
-    if (produto) produtos.push(produto);
-
-    // Sub-pastas que NÃO têm imagens próprias podem ser sub-modelos; processar recursivamente
-    const subDirsSemImagens = subDirs.filter(sub => !subDirsComImagens.includes(sub));
-    for (const sub of subDirsSemImagens) {
-      const subPath = path.join(dirPath, sub);
-      const novosSubpastas = [...subpastasAcima, path.basename(dirPath)];
-      produtos.push(...processarPasta(subPath, marca, novosSubpastas));
+    // Subpastas sem imagens diretas podem conter seus próprios sub-produtos
+    for (const sub of subSemImgsDiretas) {
+      const subPath = path.join(dir, sub);
+      const novosSubpastas = [...subpastasAcima, path.basename(dir)];
+      produtos.push(...processarDir(subPath, marca, novosSubpastas, linkFallback));
     }
   } else {
-    // Pasta de agrupamento — recursar nos filhos
+    // Agrupador: nenhuma imagem direta aqui nem em subpastas diretas → recursamos tudo
     for (const sub of subDirs) {
-      const subPath = path.join(dirPath, sub);
-      const novosSubpastas = [...subpastasAcima, path.basename(dirPath)];
-      produtos.push(...processarPasta(subPath, marca, novosSubpastas));
+      const subPath = path.join(dir, sub);
+      const novosSubpastas = [...subpastasAcima, path.basename(dir)];
+      produtos.push(...processarDir(subPath, marca, novosSubpastas, linkFallback));
     }
   }
 
@@ -215,87 +164,50 @@ function processarPasta(dirPath, marca, subpastasAcima) {
 function main() {
   const marcaDirs = fs.readdirSync(CATALOGO_ROOT).filter(nome => {
     if (PASTAS_IGNORAR.has(nome)) return false;
-    try {
-      return fs.statSync(path.join(CATALOGO_ROOT, nome)).isDirectory();
-    } catch {
-      return false;
-    }
-  });
+    try { return fs.statSync(path.join(CATALOGO_ROOT, nome)).isDirectory(); } catch { return false; }
+  }).sort();
 
   const todos = [];
+  const porMarca = {};
 
   for (const marca of marcaDirs) {
     const marcaPath = path.join(CATALOGO_ROOT, marca);
-
-    // Link de referência da marca (nível raiz)
     const linkMarca = lerArquivoTexto(path.join(marcaPath, 'LINK-DO-SITE-REFERENCIAS-E-PRODUTOS.txt'));
 
-    const subDirs = fs.readdirSync(marcaPath).filter(e => {
-      try {
-        return fs.statSync(path.join(marcaPath, e)).isDirectory();
-      } catch {
-        return false;
+    const subDirs = listDirs(marcaPath);
+    const imagensDiretos = listImagesDirect(marcaPath);
+
+    let produtosMarca = [];
+
+    if (imagensDiretos.length > 0 && subDirs.length === 0) {
+      const p = criarProduto(marcaPath, marca, [], linkMarca);
+      if (p) { produtosMarca.push(p); console.log(`  [${marca}] ${p.caminho} → ${p.todasImagens.length} imgs`); }
+    } else {
+      for (const sub of subDirs) {
+        const subPath = path.join(marcaPath, sub);
+        produtosMarca.push(...processarDir(subPath, marca, [sub], linkMarca));
       }
-    });
-
-    for (const sub of subDirs) {
-      const subPath = path.join(marcaPath, sub);
-      const produtos = processarPasta(subPath, marca, [sub]);
-
-      // Propaga link da marca para produtos que não têm link próprio
-      if (linkMarca) {
-        for (const p of produtos) {
-          if (!p.linkReferencia) p.linkReferencia = linkMarca;
-        }
-      }
-
-      todos.push(...produtos);
     }
 
-    // Verifica se a própria pasta de marca tem imagens (sem subcategorias)
-    const imagensMarca = listarImagensDiretorio(marcaPath);
-    if (imagensMarca.length > 0 && subDirs.length === 0) {
-      todos.push({
-        id: gerarId(marca, [], marca),
-        nome: marca,
-        marca,
-        categoria: detectarCategoria(marca, [], marca),
-        caminho: caminhoRelativo(marcaPath),
-        subpastas: [],
-        medidas: lerArquivoTexto(path.join(marcaPath, 'medidas.txt')),
-        informacoes: null,
-        linkReferencia: linkMarca || null,
-        imagens: imagensMarca.map(caminhoRelativo),
-        variacoes: [],
-        todasImagens: imagensMarca.map(caminhoRelativo),
-      });
+    porMarca[marca] = produtosMarca.length;
+    if (produtosMarca.length > 0) {
+      console.log(`→ ${marca}: ${produtosMarca.length} produto(s)\n`);
     }
+    todos.push(...produtosMarca);
   }
-
-  const outputDir = path.dirname(OUTPUT_FILE);
-  if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(todos, null, 2), 'utf8');
 
-  console.log(`✅ ${todos.length} produtos gerados em ${OUTPUT_FILE}`);
+  const totalImgs = todos.reduce((s, p) => s + p.todasImagens.length, 0);
+  console.log(`\n✅ TOTAL: ${todos.length} produtos | ${totalImgs} imagens`);
 
-  // Resumo por marca
-  const porMarca = {};
-  for (const p of todos) {
-    porMarca[p.marca] = (porMarca[p.marca] || 0) + 1;
-  }
-  for (const [marca, count] of Object.entries(porMarca).sort()) {
-    console.log(`   ${marca}: ${count} produto(s)`);
-  }
+  const semProdutos = Object.entries(porMarca).filter(([, n]) => n === 0).map(([m]) => m);
+  if (semProdutos.length) console.log(`⚠️  Sem produtos: ${semProdutos.join(', ')}`);
 
-  // Resumo por categoria
-  const porCat = {};
-  for (const p of todos) {
-    porCat[p.categoria] = (porCat[p.categoria] || 0) + 1;
-  }
-  console.log('\n📦 Por categoria:');
-  for (const [cat, count] of Object.entries(porCat).sort()) {
-    console.log(`   ${cat}: ${count}`);
+  // Distribuição por marca
+  console.log('\nPor marca:');
+  for (const [m, n] of Object.entries(porMarca).sort()) {
+    if (n > 0) console.log(`  ${m}: ${n}`);
   }
 }
 

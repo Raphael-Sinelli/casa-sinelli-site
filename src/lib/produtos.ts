@@ -64,12 +64,23 @@ export function buscarProdutos(produtos: Produto[], query: string): Produto[] {
   return produtos.filter(
     (p) =>
       p.nome.toLowerCase().includes(q) ||
-      p.categoria.toLowerCase().includes(q) ||
-      p.marca.toLowerCase().includes(q)
+      p.categoria.toLowerCase().includes(q)
   );
 }
 
 export function mensagemWhatsApp(nomeProduto: string): string {
   const msg = `Olá! Tenho interesse no ${nomeProduto} da Casa Sinelli.`;
   return `https://wa.me/5511971776165?text=${encodeURIComponent(msg)}`;
+}
+
+export function imagemUrl(caminho: string): string {
+  return encodeURI(`/api/catalogo${caminho}`);
+}
+
+export function ehTamanho(cor: string): boolean {
+  return /^\d[\d,.]*\s*[mMcC]/i.test(cor.trim());
+}
+
+export function variacoesDisplay(produto: Produto): import('./tipos').Variacao[] {
+  return produto.variacoes.filter((v) => v.imagens.some(isImagemDisplay));
 }

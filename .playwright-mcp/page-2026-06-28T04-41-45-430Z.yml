@@ -1,0 +1,154 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Casa Sinelli Móveis & Colchões" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: Casa Sinelli
+        - generic [ref=e7]: Móveis & Colchões
+      - button "Abrir menu" [ref=e8]:
+        - img [ref=e9]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - navigation "Breadcrumb" [ref=e13]:
+        - link "Início" [ref=e14] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e15]: /
+        - link "Catálogo" [ref=e16] [cursor=pointer]:
+          - /url: /catalogo
+        - generic [ref=e17]: /
+        - link "Sofá" [ref=e18] [cursor=pointer]:
+          - /url: /categoria/sofa
+        - generic [ref=e19]: /
+        - generic [ref=e20]: 2,30M
+      - generic [ref=e21]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]:
+              - img "2,30M — foto 1" [ref=e26]
+              - button "Foto anterior" [ref=e27]:
+                - img [ref=e28]
+              - button "Próxima foto" [ref=e30]:
+                - img [ref=e31]
+              - generic [ref=e33]: 1/24
+            - generic [ref=e34]:
+              - button "Ver foto 1" [ref=e35]:
+                - img "Miniatura 1" [ref=e36]
+              - button "Ver foto 2" [ref=e37]:
+                - img "Miniatura 2" [ref=e38]
+              - button "Ver foto 3" [ref=e39]:
+                - img "Miniatura 3" [ref=e40]
+              - button "Ver foto 4" [ref=e41]:
+                - img "Miniatura 4" [ref=e42]
+              - button "Ver foto 5" [ref=e43]:
+                - img "Miniatura 5" [ref=e44]
+              - button "Ver foto 6" [ref=e45]:
+                - img "Miniatura 6" [ref=e46]
+              - button "Ver foto 7" [ref=e47]:
+                - img "Miniatura 7" [ref=e48]
+              - button "Ver foto 8" [ref=e49]:
+                - img "Miniatura 8" [ref=e50]
+              - button "Ver foto 9" [ref=e51]:
+                - img "Miniatura 9" [ref=e52]
+              - button "Ver foto 10" [ref=e53]:
+                - img "Miniatura 10" [ref=e54]
+              - button "Ver foto 11" [ref=e55]:
+                - img "Miniatura 11" [ref=e56]
+              - button "Ver foto 12" [ref=e57]:
+                - img "Miniatura 12" [ref=e58]
+              - button "Ver foto 13" [ref=e59]:
+                - img "Miniatura 13" [ref=e60]
+              - button "Ver foto 14" [ref=e61]:
+                - img "Miniatura 14" [ref=e62]
+              - button "Ver foto 15" [ref=e63]:
+                - img "Miniatura 15" [ref=e64]
+              - button "Ver foto 16" [ref=e65]:
+                - img "Miniatura 16" [ref=e66]
+              - button "Ver foto 17" [ref=e67]:
+                - img "Miniatura 17" [ref=e68]
+              - button "Ver foto 18" [ref=e69]:
+                - img "Miniatura 18" [ref=e70]
+              - button "Ver foto 19" [ref=e71]:
+                - img "Miniatura 19" [ref=e72]
+              - button "Ver foto 20" [ref=e73]:
+                - img "Miniatura 20" [ref=e74]
+              - button "Ver foto 21" [ref=e75]:
+                - img "Miniatura 21" [ref=e76]
+              - button "Ver foto 22" [ref=e77]:
+                - img "Miniatura 22" [ref=e78]
+              - button "Ver foto 23" [ref=e79]:
+                - img "Miniatura 23" [ref=e80]
+              - button "Ver foto 24" [ref=e81]:
+                - img "Miniatura 24" [ref=e82]
+          - generic [ref=e83]:
+            - 'heading "Variação: Azul" [level=3] [ref=e84]'
+            - generic [ref=e85]:
+              - button "Azul" [pressed] [ref=e86]
+              - button "Bege" [ref=e87]
+              - button "Cinza" [ref=e88]
+              - button "Marrom" [ref=e89]
+          - link "Enviar pelo WhatsApp" [ref=e90] [cursor=pointer]:
+            - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%202%2C30M%20da%20Casa%20Sinelli.
+            - img [ref=e91]
+            - text: Enviar pelo WhatsApp
+          - paragraph [ref=e93]: Clique para enviar uma mensagem sobre este produto diretamente
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - paragraph [ref=e96]: alpoim
+            - heading "2,30M" [level=1] [ref=e97]
+            - paragraph [ref=e98]: Sofá
+          - generic [ref=e99]: 4 variações disponíveis
+          - paragraph [ref=e101]:
+            - text: "Fabricante:"
+            - link "alpoimdistribuidorasp.com.br" [ref=e102] [cursor=pointer]:
+              - /url: https://www.alpoimdistribuidorasp.com.br/
+  - contentinfo [ref=e103]:
+    - generic [ref=e104]:
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]: Casa Sinelli
+          - generic [ref=e108]: Móveis & Colchões
+          - paragraph [ref=e109]: Transformando ambientes com móveis de qualidade e atendimento personalizado em Ribeirão Pires.
+        - generic [ref=e110]:
+          - heading "Catálogo" [level=3] [ref=e111]
+          - list [ref=e112]:
+            - listitem [ref=e113]:
+              - link "Sofás" [ref=e114] [cursor=pointer]:
+                - /url: /categoria/sofa
+            - listitem [ref=e115]:
+              - link "Camas" [ref=e116] [cursor=pointer]:
+                - /url: /categoria/cama
+            - listitem [ref=e117]:
+              - link "Guarda-Roupas" [ref=e118] [cursor=pointer]:
+                - /url: /categoria/guarda-roupa
+            - listitem [ref=e119]:
+              - link "Colchões" [ref=e120] [cursor=pointer]:
+                - /url: /categoria/colchao
+            - listitem [ref=e121]:
+              - link "Mesas" [ref=e122] [cursor=pointer]:
+                - /url: /categoria/mesa
+            - listitem [ref=e123]:
+              - link "Ver Tudo" [ref=e124] [cursor=pointer]:
+                - /url: /catalogo
+        - generic [ref=e125]:
+          - heading "Contato" [level=3] [ref=e126]
+          - list [ref=e127]:
+            - listitem [ref=e128]:
+              - generic [ref=e129]: 📍
+              - generic [ref=e130]: Av. Francisco Monteiro, 1320 — Vila Fiorentino, Ribeirão Pires - SP
+            - listitem [ref=e131]:
+              - generic [ref=e132]: 📱
+              - link "(11) 97177-6165" [ref=e133] [cursor=pointer]:
+                - /url: https://wa.me/5511971776165
+            - listitem [ref=e134]:
+              - generic [ref=e135]: ✉️
+              - link "contato@casasinelli.com.br" [ref=e136] [cursor=pointer]:
+                - /url: mailto:contato@casasinelli.com.br
+            - listitem [ref=e137]:
+              - generic [ref=e138]: 🕐
+              - generic [ref=e139]: "Seg–Sex: 09h às 18h | Sáb: 09h às 17h"
+      - generic [ref=e140]: © 2026Casa Sinelli — Móveis & Colchões. Todos os direitos reservados.
+  - link "Fale conosco pelo WhatsApp" [ref=e141] [cursor=pointer]:
+    - /url: https://wa.me/5511971776165
+    - img [ref=e142]
+  - button "Open Next.js Dev Tools" [ref=e149] [cursor=pointer]:
+    - img [ref=e150]

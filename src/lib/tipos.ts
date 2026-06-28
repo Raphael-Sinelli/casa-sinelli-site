@@ -11,8 +11,10 @@ export interface Produto {
   caminho: string;
   subpastas: string[];
   medidas: string | null;
+  medidasRodape?: string;
   informacoes: string | null;
   linkReferencia: string | null;
+  coresEstruturadas?: string[];
   imagens: string[];
   variacoes: Variacao[];
   todasImagens: string[];

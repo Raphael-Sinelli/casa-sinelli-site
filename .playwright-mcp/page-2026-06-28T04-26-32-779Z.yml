@@ -1,0 +1,1797 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Casa Sinelli Móveis & Colchões" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: Casa Sinelli
+        - generic [ref=e7]: Móveis & Colchões
+      - navigation [ref=e8]:
+        - link "Início" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Catálogo" [ref=e10] [cursor=pointer]:
+          - /url: /catalogo
+        - link "Sofás" [ref=e11] [cursor=pointer]:
+          - /url: /categoria/sofa
+        - link "Camas" [ref=e12] [cursor=pointer]:
+          - /url: /categoria/cama
+        - link "Guarda-Roupas" [ref=e13] [cursor=pointer]:
+          - /url: /categoria/guarda-roupa
+        - link "Colchões" [ref=e14] [cursor=pointer]:
+          - /url: /categoria/colchao
+        - link "WhatsApp" [ref=e15] [cursor=pointer]:
+          - /url: https://wa.me/5511971776165
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e19]:
+        - heading "Catálogo Completo" [level=1] [ref=e20]
+        - paragraph [ref=e21]: 98 produtos disponíveis
+      - generic [ref=e22]:
+        - generic [ref=e24]:
+          - searchbox "Buscar produtos" [ref=e25]
+          - img [ref=e26]
+        - button "Filtrar por categoria" [ref=e28]:
+          - img [ref=e29]
+          - text: Filtrar por categoria
+        - generic [ref=e33]:
+          - article [ref=e34]:
+            - link "GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO Guarda-Roupa" [ref=e35] [cursor=pointer]:
+              - /url: /produto/1
+              - img "GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO" [ref=e36]
+              - generic [ref=e37]: Guarda-Roupa
+            - generic [ref=e38]:
+              - generic [ref=e39]:
+                - paragraph [ref=e40]: albatroz
+                - link "GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO" [ref=e41] [cursor=pointer]:
+                  - /url: /produto/1
+                  - heading "GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO" [level=3] [ref=e42]
+                - paragraph [ref=e43]: 2 cores disponíveis
+              - generic [ref=e44]:
+                - link "Ver produto" [ref=e45] [cursor=pointer]:
+                  - /url: /produto/1
+                - link "Perguntar sobre GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO no WhatsApp" [ref=e46] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20GUARDA%20ROUPA%20SOLE%202%20PORTAS%20DE%20CORRER%20CESPELHO%20da%20Casa%20Sinelli.
+                  - img [ref=e47]
+          - article [ref=e49]:
+            - link "Rebeca Cadeira" [ref=e50] [cursor=pointer]:
+              - /url: /produto/2
+              - img "Rebeca" [ref=e51]
+              - generic [ref=e52]: Cadeira
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - paragraph [ref=e55]: alpoim
+                - link "Rebeca" [ref=e56] [cursor=pointer]:
+                  - /url: /produto/2
+                  - heading "Rebeca" [level=3] [ref=e57]
+                - paragraph [ref=e58]: 11 cores disponíveis
+              - generic [ref=e59]:
+                - link "Ver produto" [ref=e60] [cursor=pointer]:
+                  - /url: /produto/2
+                - link "Perguntar sobre Rebeca no WhatsApp" [ref=e61] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Rebeca%20da%20Casa%20Sinelli.
+                  - img [ref=e62]
+          - article [ref=e64]:
+            - link "Sofá Agar Sofá" [ref=e65] [cursor=pointer]:
+              - /url: /produto/3
+              - img "Sofá Agar" [ref=e66]
+              - generic [ref=e67]: Sofá
+            - generic [ref=e68]:
+              - generic [ref=e69]:
+                - paragraph [ref=e70]: alpoim
+                - link "Sofá Agar" [ref=e71] [cursor=pointer]:
+                  - /url: /produto/3
+                  - heading "Sofá Agar" [level=3] [ref=e72]
+                - paragraph [ref=e73]: 6 cores disponíveis
+              - generic [ref=e74]:
+                - link "Ver produto" [ref=e75] [cursor=pointer]:
+                  - /url: /produto/3
+                - link "Perguntar sobre Sofá Agar no WhatsApp" [ref=e76] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Sof%C3%A1%20Agar%20da%20Casa%20Sinelli.
+                  - img [ref=e77]
+          - article [ref=e79]:
+            - link "2,30M Sofá" [ref=e80] [cursor=pointer]:
+              - /url: /produto/4
+              - img "2,30M" [ref=e81]
+              - generic [ref=e82]: Sofá
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - paragraph [ref=e85]: alpoim
+                - link "2,30M" [ref=e86] [cursor=pointer]:
+                  - /url: /produto/4
+                  - heading "2,30M" [level=3] [ref=e87]
+                - paragraph [ref=e88]: 4 cores disponíveis
+              - generic [ref=e89]:
+                - link "Ver produto" [ref=e90] [cursor=pointer]:
+                  - /url: /produto/4
+                - link "Perguntar sobre 2,30M no WhatsApp" [ref=e91] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%202%2C30M%20da%20Casa%20Sinelli.
+                  - img [ref=e92]
+          - article [ref=e94]:
+            - link "Sofá Aline Sofá" [ref=e95] [cursor=pointer]:
+              - /url: /produto/5
+              - img "Sofá Aline" [ref=e96]
+              - generic [ref=e97]: Sofá
+            - generic [ref=e98]:
+              - generic [ref=e99]:
+                - paragraph [ref=e100]: alpoim
+                - link "Sofá Aline" [ref=e101] [cursor=pointer]:
+                  - /url: /produto/5
+                  - heading "Sofá Aline" [level=3] [ref=e102]
+                - paragraph [ref=e103]: 3 cores disponíveis
+              - generic [ref=e104]:
+                - link "Ver produto" [ref=e105] [cursor=pointer]:
+                  - /url: /produto/5
+                - link "Perguntar sobre Sofá Aline no WhatsApp" [ref=e106] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Sof%C3%A1%20Aline%20da%20Casa%20Sinelli.
+                  - img [ref=e107]
+          - article [ref=e109]:
+            - link "2Modulos Sofá" [ref=e110] [cursor=pointer]:
+              - /url: /produto/6
+              - img "2Modulos" [ref=e111]
+              - generic [ref=e112]: Sofá
+            - generic [ref=e113]:
+              - generic [ref=e114]:
+                - paragraph [ref=e115]: alpoim
+                - link "2Modulos" [ref=e116] [cursor=pointer]:
+                  - /url: /produto/6
+                  - heading "2Modulos" [level=3] [ref=e117]
+                - paragraph [ref=e118]: 5 cores disponíveis
+              - generic [ref=e119]:
+                - link "Ver produto" [ref=e120] [cursor=pointer]:
+                  - /url: /produto/6
+                - link "Perguntar sobre 2Modulos no WhatsApp" [ref=e121] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%202Modulos%20da%20Casa%20Sinelli.
+                  - img [ref=e122]
+          - article [ref=e124]:
+            - link "3modulos Sofá" [ref=e125] [cursor=pointer]:
+              - /url: /produto/7
+              - img "3modulos" [ref=e126]
+              - generic [ref=e127]: Sofá
+            - generic [ref=e128]:
+              - generic [ref=e129]:
+                - paragraph [ref=e130]: alpoim
+                - link "3modulos" [ref=e131] [cursor=pointer]:
+                  - /url: /produto/7
+                  - heading "3modulos" [level=3] [ref=e132]
+                - paragraph [ref=e133]: 3 cores disponíveis
+              - generic [ref=e134]:
+                - link "Ver produto" [ref=e135] [cursor=pointer]:
+                  - /url: /produto/7
+                - link "Perguntar sobre 3modulos no WhatsApp" [ref=e136] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%203modulos%20da%20Casa%20Sinelli.
+                  - img [ref=e137]
+          - article [ref=e139]:
+            - link "Sofá Fortaleza Sofá" [ref=e140] [cursor=pointer]:
+              - /url: /produto/8
+              - img "Sofá Fortaleza" [ref=e141]
+              - generic [ref=e142]: Sofá
+            - generic [ref=e143]:
+              - generic [ref=e144]:
+                - paragraph [ref=e145]: alpoim
+                - link "Sofá Fortaleza" [ref=e146] [cursor=pointer]:
+                  - /url: /produto/8
+                  - heading "Sofá Fortaleza" [level=3] [ref=e147]
+                - paragraph [ref=e148]: 3 cores disponíveis
+              - generic [ref=e149]:
+                - link "Ver produto" [ref=e150] [cursor=pointer]:
+                  - /url: /produto/8
+                - link "Perguntar sobre Sofá Fortaleza no WhatsApp" [ref=e151] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Sof%C3%A1%20Fortaleza%20da%20Casa%20Sinelli.
+                  - img [ref=e152]
+          - article [ref=e154]:
+            - link "Sofá ISA Sofá" [ref=e155] [cursor=pointer]:
+              - /url: /produto/9
+              - img "Sofá ISA" [ref=e156]
+              - generic [ref=e157]: Sofá
+            - generic [ref=e158]:
+              - generic [ref=e159]:
+                - paragraph [ref=e160]: alpoim
+                - link "Sofá ISA" [ref=e161] [cursor=pointer]:
+                  - /url: /produto/9
+                  - heading "Sofá ISA" [level=3] [ref=e162]
+                - paragraph [ref=e163]: 6 cores disponíveis
+              - generic [ref=e164]:
+                - link "Ver produto" [ref=e165] [cursor=pointer]:
+                  - /url: /produto/9
+                - link "Perguntar sobre Sofá ISA no WhatsApp" [ref=e166] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Sof%C3%A1%20ISA%20da%20Casa%20Sinelli.
+                  - img [ref=e167]
+          - article [ref=e169]:
+            - link "2,10M Sofá" [ref=e170] [cursor=pointer]:
+              - /url: /produto/10
+              - img "2,10M" [ref=e171]
+              - generic [ref=e172]: Sofá
+            - generic [ref=e173]:
+              - generic [ref=e174]:
+                - paragraph [ref=e175]: alpoim
+                - link "2,10M" [ref=e176] [cursor=pointer]:
+                  - /url: /produto/10
+                  - heading "2,10M" [level=3] [ref=e177]
+                - paragraph [ref=e178]: 2 cores disponíveis
+              - generic [ref=e179]:
+                - link "Ver produto" [ref=e180] [cursor=pointer]:
+                  - /url: /produto/10
+                - link "Perguntar sobre 2,10M no WhatsApp" [ref=e181] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%202%2C10M%20da%20Casa%20Sinelli.
+                  - img [ref=e182]
+          - article [ref=e184]:
+            - link "2,50M Sofá" [ref=e185] [cursor=pointer]:
+              - /url: /produto/11
+              - img "2,50M" [ref=e186]
+              - generic [ref=e187]: Sofá
+            - generic [ref=e188]:
+              - generic [ref=e189]:
+                - paragraph [ref=e190]: alpoim
+                - link "2,50M" [ref=e191] [cursor=pointer]:
+                  - /url: /produto/11
+                  - heading "2,50M" [level=3] [ref=e192]
+              - generic [ref=e193]:
+                - link "Ver produto" [ref=e194] [cursor=pointer]:
+                  - /url: /produto/11
+                - link "Perguntar sobre 2,50M no WhatsApp" [ref=e195] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%202%2C50M%20da%20Casa%20Sinelli.
+                  - img [ref=e196]
+          - article [ref=e198]:
+            - link "Sofá Manuela Sofá" [ref=e199] [cursor=pointer]:
+              - /url: /produto/12
+              - img "Sofá Manuela" [ref=e200]
+              - generic [ref=e201]: Sofá
+            - generic [ref=e202]:
+              - generic [ref=e203]:
+                - paragraph [ref=e204]: alpoim
+                - link "Sofá Manuela" [ref=e205] [cursor=pointer]:
+                  - /url: /produto/12
+                  - heading "Sofá Manuela" [level=3] [ref=e206]
+                - paragraph [ref=e207]: 4 cores disponíveis
+              - generic [ref=e208]:
+                - link "Ver produto" [ref=e209] [cursor=pointer]:
+                  - /url: /produto/12
+                - link "Perguntar sobre Sofá Manuela no WhatsApp" [ref=e210] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Sof%C3%A1%20Manuela%20da%20Casa%20Sinelli.
+                  - img [ref=e211]
+          - article [ref=e213]:
+            - link "2,30m Sofá" [ref=e214] [cursor=pointer]:
+              - /url: /produto/13
+              - img "2,30m" [ref=e215]
+              - generic [ref=e216]: Sofá
+            - generic [ref=e217]:
+              - generic [ref=e218]:
+                - paragraph [ref=e219]: alpoim
+                - link "2,30m" [ref=e220] [cursor=pointer]:
+                  - /url: /produto/13
+                  - heading "2,30m" [level=3] [ref=e221]
+                - paragraph [ref=e222]: 5 cores disponíveis
+              - generic [ref=e223]:
+                - link "Ver produto" [ref=e224] [cursor=pointer]:
+                  - /url: /produto/13
+                - link "Perguntar sobre 2,30m no WhatsApp" [ref=e225] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%202%2C30m%20da%20Casa%20Sinelli.
+                  - img [ref=e226]
+          - article [ref=e228]:
+            - link "Sofá Recife Sofá" [ref=e229] [cursor=pointer]:
+              - /url: /produto/14
+              - img "Sofá Recife" [ref=e230]
+              - generic [ref=e231]: Sofá
+            - generic [ref=e232]:
+              - generic [ref=e233]:
+                - paragraph [ref=e234]: alpoim
+                - link "Sofá Recife" [ref=e235] [cursor=pointer]:
+                  - /url: /produto/14
+                  - heading "Sofá Recife" [level=3] [ref=e236]
+                - paragraph [ref=e237]: 3 cores disponíveis
+              - generic [ref=e238]:
+                - link "Ver produto" [ref=e239] [cursor=pointer]:
+                  - /url: /produto/14
+                - link "Perguntar sobre Sofá Recife no WhatsApp" [ref=e240] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Sof%C3%A1%20Recife%20da%20Casa%20Sinelli.
+                  - img [ref=e241]
+          - article [ref=e243]:
+            - link "cadeira Cadeira" [ref=e244] [cursor=pointer]:
+              - /url: /produto/15
+              - img "cadeira" [ref=e245]
+              - generic [ref=e246]: Cadeira
+            - generic [ref=e247]:
+              - generic [ref=e248]:
+                - paragraph [ref=e249]: açoNobre
+                - link "cadeira" [ref=e250] [cursor=pointer]:
+                  - /url: /produto/15
+                  - heading "cadeira" [level=3] [ref=e251]
+              - generic [ref=e252]:
+                - link "Ver produto" [ref=e253] [cursor=pointer]:
+                  - /url: /produto/15
+                - link "Perguntar sobre cadeira no WhatsApp" [ref=e254] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20cadeira%20da%20Casa%20Sinelli.
+                  - img [ref=e255]
+          - article [ref=e257]:
+            - link "mesaComCadeiras Mesa" [ref=e258] [cursor=pointer]:
+              - /url: /produto/16
+              - img "mesaComCadeiras" [ref=e259]
+              - generic [ref=e260]: Mesa
+            - generic [ref=e261]:
+              - generic [ref=e262]:
+                - paragraph [ref=e263]: açoNobre
+                - link "mesaComCadeiras" [ref=e264] [cursor=pointer]:
+                  - /url: /produto/16
+                  - heading "mesaComCadeiras" [level=3] [ref=e265]
+              - generic [ref=e266]:
+                - link "Ver produto" [ref=e267] [cursor=pointer]:
+                  - /url: /produto/16
+                - link "Perguntar sobre mesaComCadeiras no WhatsApp" [ref=e268] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20mesaComCadeiras%20da%20Casa%20Sinelli.
+                  - img [ref=e269]
+          - article [ref=e271]:
+            - link "berço Outros" [ref=e272] [cursor=pointer]:
+              - /url: /produto/17
+              - img "berço" [ref=e273]
+              - generic [ref=e274]: Outros
+            - generic [ref=e275]:
+              - generic [ref=e276]:
+                - paragraph [ref=e277]: batrol
+                - link "berço" [ref=e278] [cursor=pointer]:
+                  - /url: /produto/17
+                  - heading "berço" [level=3] [ref=e279]
+              - generic [ref=e280]:
+                - link "Ver produto" [ref=e281] [cursor=pointer]:
+                  - /url: /produto/17
+                - link "Perguntar sobre berço no WhatsApp" [ref=e282] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20ber%C3%A7o%20da%20Casa%20Sinelli.
+                  - img [ref=e283]
+          - article [ref=e285]:
+            - link "comoda Cômoda" [ref=e286] [cursor=pointer]:
+              - /url: /produto/18
+              - img "comoda" [ref=e287]
+              - generic [ref=e288]: Cômoda
+            - generic [ref=e289]:
+              - generic [ref=e290]:
+                - paragraph [ref=e291]: batrol
+                - link "comoda" [ref=e292] [cursor=pointer]:
+                  - /url: /produto/18
+                  - heading "comoda" [level=3] [ref=e293]
+              - generic [ref=e294]:
+                - link "Ver produto" [ref=e295] [cursor=pointer]:
+                  - /url: /produto/18
+                - link "Perguntar sobre comoda no WhatsApp" [ref=e296] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20comoda%20da%20Casa%20Sinelli.
+                  - img [ref=e297]
+          - article [ref=e299]:
+            - link "conjunto Outros" [ref=e300] [cursor=pointer]:
+              - /url: /produto/19
+              - img "conjunto" [ref=e301]
+              - generic [ref=e302]: Outros
+            - generic [ref=e303]:
+              - generic [ref=e304]:
+                - paragraph [ref=e305]: batrol
+                - link "conjunto" [ref=e306] [cursor=pointer]:
+                  - /url: /produto/19
+                  - heading "conjunto" [level=3] [ref=e307]
+              - generic [ref=e308]:
+                - link "Ver produto" [ref=e309] [cursor=pointer]:
+                  - /url: /produto/19
+                - link "Perguntar sobre conjunto no WhatsApp" [ref=e310] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20conjunto%20da%20Casa%20Sinelli.
+                  - img [ref=e311]
+          - article [ref=e313]:
+            - link "gr Outros" [ref=e314] [cursor=pointer]:
+              - /url: /produto/20
+              - img "gr" [ref=e315]
+              - generic [ref=e316]: Outros
+            - generic [ref=e317]:
+              - generic [ref=e318]:
+                - paragraph [ref=e319]: batrol
+                - link "gr" [ref=e320] [cursor=pointer]:
+                  - /url: /produto/20
+                  - heading "gr" [level=3] [ref=e321]
+              - generic [ref=e322]:
+                - link "Ver produto" [ref=e323] [cursor=pointer]:
+                  - /url: /produto/20
+                - link "Perguntar sobre gr no WhatsApp" [ref=e324] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20gr%20da%20Casa%20Sinelli.
+                  - img [ref=e325]
+          - article [ref=e327]:
+            - link "aparador Aparador" [ref=e328] [cursor=pointer]:
+              - /url: /produto/21
+              - img "aparador" [ref=e329]
+              - generic [ref=e330]: Aparador
+            - generic [ref=e331]:
+              - generic [ref=e332]:
+                - paragraph [ref=e333]: bechara
+                - link "aparador" [ref=e334] [cursor=pointer]:
+                  - /url: /produto/21
+                  - heading "aparador" [level=3] [ref=e335]
+              - generic [ref=e336]:
+                - link "Ver produto" [ref=e337] [cursor=pointer]:
+                  - /url: /produto/21
+                - link "Perguntar sobre aparador no WhatsApp" [ref=e338] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20aparador%20da%20Casa%20Sinelli.
+                  - img [ref=e339]
+          - article [ref=e341]:
+            - link "cadeira Cadeira" [ref=e342] [cursor=pointer]:
+              - /url: /produto/22
+              - img "cadeira" [ref=e343]
+              - generic [ref=e344]: Cadeira
+            - generic [ref=e345]:
+              - generic [ref=e346]:
+                - paragraph [ref=e347]: bechara
+                - link "cadeira" [ref=e348] [cursor=pointer]:
+                  - /url: /produto/22
+                  - heading "cadeira" [level=3] [ref=e349]
+              - generic [ref=e350]:
+                - link "Ver produto" [ref=e351] [cursor=pointer]:
+                  - /url: /produto/22
+                - link "Perguntar sobre cadeira no WhatsApp" [ref=e352] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20cadeira%20da%20Casa%20Sinelli.
+                  - img [ref=e353]
+          - article [ref=e355]:
+            - link "cristaleira Cristaleira" [ref=e356] [cursor=pointer]:
+              - /url: /produto/23
+              - img "cristaleira" [ref=e357]
+              - generic [ref=e358]: Cristaleira
+            - generic [ref=e359]:
+              - generic [ref=e360]:
+                - paragraph [ref=e361]: bechara
+                - link "cristaleira" [ref=e362] [cursor=pointer]:
+                  - /url: /produto/23
+                  - heading "cristaleira" [level=3] [ref=e363]
+                - paragraph [ref=e364]: 2 cores disponíveis
+              - generic [ref=e365]:
+                - link "Ver produto" [ref=e366] [cursor=pointer]:
+                  - /url: /produto/23
+                - link "Perguntar sobre cristaleira no WhatsApp" [ref=e367] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20cristaleira%20da%20Casa%20Sinelli.
+                  - img [ref=e368]
+          - article [ref=e370]:
+            - link "home Home / Rack" [ref=e371] [cursor=pointer]:
+              - /url: /produto/24
+              - img "home" [ref=e372]
+              - generic [ref=e373]: Home / Rack
+            - generic [ref=e374]:
+              - generic [ref=e375]:
+                - paragraph [ref=e376]: bechara
+                - link "home" [ref=e377] [cursor=pointer]:
+                  - /url: /produto/24
+                  - heading "home" [level=3] [ref=e378]
+              - generic [ref=e379]:
+                - link "Ver produto" [ref=e380] [cursor=pointer]:
+                  - /url: /produto/24
+                - link "Perguntar sobre home no WhatsApp" [ref=e381] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20home%20da%20Casa%20Sinelli.
+                  - img [ref=e382]
+          - article [ref=e384]:
+            - link "painel Rack / Painel" [ref=e385] [cursor=pointer]:
+              - /url: /produto/25
+              - img "painel" [ref=e386]
+              - generic [ref=e387]: Rack / Painel
+            - generic [ref=e388]:
+              - generic [ref=e389]:
+                - paragraph [ref=e390]: bechara
+                - link "painel" [ref=e391] [cursor=pointer]:
+                  - /url: /produto/25
+                  - heading "painel" [level=3] [ref=e392]
+                - paragraph [ref=e393]: 2 cores disponíveis
+              - generic [ref=e394]:
+                - link "Ver produto" [ref=e395] [cursor=pointer]:
+                  - /url: /produto/25
+                - link "Perguntar sobre painel no WhatsApp" [ref=e396] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20painel%20da%20Casa%20Sinelli.
+                  - img [ref=e397]
+          - article [ref=e399]:
+            - link "rack Rack / Painel" [ref=e400] [cursor=pointer]:
+              - /url: /produto/26
+              - img "rack" [ref=e401]
+              - generic [ref=e402]: Rack / Painel
+            - generic [ref=e403]:
+              - generic [ref=e404]:
+                - paragraph [ref=e405]: bechara
+                - link "rack" [ref=e406] [cursor=pointer]:
+                  - /url: /produto/26
+                  - heading "rack" [level=3] [ref=e407]
+                - paragraph [ref=e408]: 3 cores disponíveis
+              - generic [ref=e409]:
+                - link "Ver produto" [ref=e410] [cursor=pointer]:
+                  - /url: /produto/26
+                - link "Perguntar sobre rack no WhatsApp" [ref=e411] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20rack%20da%20Casa%20Sinelli.
+                  - img [ref=e412]
+          - article [ref=e414]:
+            - link "poltrona Cadeira" [ref=e415] [cursor=pointer]:
+              - /url: /produto/27
+              - img "poltrona" [ref=e416]
+              - generic [ref=e417]: Cadeira
+            - generic [ref=e418]:
+              - generic [ref=e419]:
+                - paragraph [ref=e420]: BomJesus
+                - link "poltrona" [ref=e421] [cursor=pointer]:
+                  - /url: /produto/27
+                  - heading "poltrona" [level=3] [ref=e422]
+              - generic [ref=e423]:
+                - link "Ver produto" [ref=e424] [cursor=pointer]:
+                  - /url: /produto/27
+                - link "Perguntar sobre poltrona no WhatsApp" [ref=e425] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20poltrona%20da%20Casa%20Sinelli.
+                  - img [ref=e426]
+          - article [ref=e428]:
+            - link "cabeceira Criado-Mudo" [ref=e429] [cursor=pointer]:
+              - /url: /produto/28
+              - img "cabeceira" [ref=e430]
+              - generic [ref=e431]: Criado-Mudo
+            - generic [ref=e432]:
+              - generic [ref=e433]:
+                - paragraph [ref=e434]: Cambel
+                - link "cabeceira" [ref=e435] [cursor=pointer]:
+                  - /url: /produto/28
+                  - heading "cabeceira" [level=3] [ref=e436]
+              - generic [ref=e437]:
+                - link "Ver produto" [ref=e438] [cursor=pointer]:
+                  - /url: /produto/28
+                - link "Perguntar sobre cabeceira no WhatsApp" [ref=e439] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20cabeceira%20da%20Casa%20Sinelli.
+                  - img [ref=e440]
+          - article [ref=e442]:
+            - link "CamaCasal Outros" [ref=e443] [cursor=pointer]:
+              - /url: /produto/29
+              - img "CamaCasal" [ref=e444]
+              - generic [ref=e445]: Outros
+            - generic [ref=e446]:
+              - generic [ref=e447]:
+                - paragraph [ref=e448]: Cambel
+                - link "CamaCasal" [ref=e449] [cursor=pointer]:
+                  - /url: /produto/29
+                  - heading "CamaCasal" [level=3] [ref=e450]
+              - generic [ref=e451]:
+                - link "Ver produto" [ref=e452] [cursor=pointer]:
+                  - /url: /produto/29
+                - link "Perguntar sobre CamaCasal no WhatsApp" [ref=e453] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20CamaCasal%20da%20Casa%20Sinelli.
+                  - img [ref=e454]
+          - article [ref=e456]:
+            - link "CamaSolteiro Outros" [ref=e457] [cursor=pointer]:
+              - /url: /produto/30
+              - img "CamaSolteiro" [ref=e458]
+              - generic [ref=e459]: Outros
+            - generic [ref=e460]:
+              - generic [ref=e461]:
+                - paragraph [ref=e462]: Cambel
+                - link "CamaSolteiro" [ref=e463] [cursor=pointer]:
+                  - /url: /produto/30
+                  - heading "CamaSolteiro" [level=3] [ref=e464]
+              - generic [ref=e465]:
+                - link "Ver produto" [ref=e466] [cursor=pointer]:
+                  - /url: /produto/30
+                - link "Perguntar sobre CamaSolteiro no WhatsApp" [ref=e467] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20CamaSolteiro%20da%20Casa%20Sinelli.
+                  - img [ref=e468]
+          - article [ref=e470]:
+            - link "CamaSolteiroBibox Outros" [ref=e471] [cursor=pointer]:
+              - /url: /produto/31
+              - img "CamaSolteiroBibox" [ref=e472]
+              - generic [ref=e473]: Outros
+            - generic [ref=e474]:
+              - generic [ref=e475]:
+                - paragraph [ref=e476]: Cambel
+                - link "CamaSolteiroBibox" [ref=e477] [cursor=pointer]:
+                  - /url: /produto/31
+                  - heading "CamaSolteiroBibox" [level=3] [ref=e478]
+              - generic [ref=e479]:
+                - link "Ver produto" [ref=e480] [cursor=pointer]:
+                  - /url: /produto/31
+                - link "Perguntar sobre CamaSolteiroBibox no WhatsApp" [ref=e481] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20CamaSolteiroBibox%20da%20Casa%20Sinelli.
+                  - img [ref=e482]
+          - article [ref=e484]:
+            - link "Humaitá Home / Rack" [ref=e485] [cursor=pointer]:
+              - /url: /produto/32
+              - img "Humaitá" [ref=e486]
+              - generic [ref=e487]: Home / Rack
+            - generic [ref=e488]:
+              - generic [ref=e489]:
+                - paragraph [ref=e490]: colibri
+                - link "Humaitá" [ref=e491] [cursor=pointer]:
+                  - /url: /produto/32
+                  - heading "Humaitá" [level=3] [ref=e492]
+                - paragraph [ref=e493]: 2 cores disponíveis
+              - generic [ref=e494]:
+                - link "Ver produto" [ref=e495] [cursor=pointer]:
+                  - /url: /produto/32
+                - link "Perguntar sobre Humaitá no WhatsApp" [ref=e496] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Humait%C3%A1%20da%20Casa%20Sinelli.
+                  - img [ref=e497]
+          - article [ref=e499]:
+            - link "bali Rack / Painel" [ref=e500] [cursor=pointer]:
+              - /url: /produto/33
+              - img "bali" [ref=e501]
+              - generic [ref=e502]: Rack / Painel
+            - generic [ref=e503]:
+              - generic [ref=e504]:
+                - paragraph [ref=e505]: colibri
+                - link "bali" [ref=e506] [cursor=pointer]:
+                  - /url: /produto/33
+                  - heading "bali" [level=3] [ref=e507]
+                - paragraph [ref=e508]: 2 cores disponíveis
+              - generic [ref=e509]:
+                - link "Ver produto" [ref=e510] [cursor=pointer]:
+                  - /url: /produto/33
+                - link "Perguntar sobre bali no WhatsApp" [ref=e511] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20bali%20da%20Casa%20Sinelli.
+                  - img [ref=e512]
+          - article [ref=e514]:
+            - link "penteadeira Outros" [ref=e515] [cursor=pointer]:
+              - /url: /produto/34
+              - img "penteadeira" [ref=e516]
+              - generic [ref=e517]: Outros
+            - generic [ref=e518]:
+              - generic [ref=e519]:
+                - paragraph [ref=e520]: Demobile
+                - link "penteadeira" [ref=e521] [cursor=pointer]:
+                  - /url: /produto/34
+                  - heading "penteadeira" [level=3] [ref=e522]
+              - generic [ref=e523]:
+                - link "Ver produto" [ref=e524] [cursor=pointer]:
+                  - /url: /produto/34
+                - link "Perguntar sobre penteadeira no WhatsApp" [ref=e525] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20penteadeira%20da%20Casa%20Sinelli.
+                  - img [ref=e526]
+          - article [ref=e528]:
+            - link "marina Mesa" [ref=e529] [cursor=pointer]:
+              - /url: /produto/35
+              - img "marina" [ref=e530]
+              - generic [ref=e531]: Mesa
+            - generic [ref=e532]:
+              - generic [ref=e533]:
+                - paragraph [ref=e534]: dj
+                - link "marina" [ref=e535] [cursor=pointer]:
+                  - /url: /produto/35
+                  - heading "marina" [level=3] [ref=e536]
+                - paragraph [ref=e537]: 2 cores disponíveis
+              - generic [ref=e538]:
+                - link "Ver produto" [ref=e539] [cursor=pointer]:
+                  - /url: /produto/35
+                - link "Perguntar sobre marina no WhatsApp" [ref=e540] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20marina%20da%20Casa%20Sinelli.
+                  - img [ref=e541]
+          - article [ref=e543]:
+            - link "painel Rack / Painel" [ref=e544] [cursor=pointer]:
+              - /url: /produto/36
+              - img "painel" [ref=e545]
+              - generic [ref=e546]: Rack / Painel
+            - generic [ref=e547]:
+              - generic [ref=e548]:
+                - paragraph [ref=e549]: dj
+                - link "painel" [ref=e550] [cursor=pointer]:
+                  - /url: /produto/36
+                  - heading "painel" [level=3] [ref=e551]
+              - generic [ref=e552]:
+                - link "Ver produto" [ref=e553] [cursor=pointer]:
+                  - /url: /produto/36
+                - link "Perguntar sobre painel no WhatsApp" [ref=e554] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20painel%20da%20Casa%20Sinelli.
+                  - img [ref=e555]
+          - article [ref=e557]:
+            - link "colchao Colchão" [ref=e558] [cursor=pointer]:
+              - /url: /produto/37
+              - img "colchao" [ref=e559]
+              - generic [ref=e560]: Colchão
+            - generic [ref=e561]:
+              - generic [ref=e562]:
+                - paragraph [ref=e563]: ecoflex
+                - link "colchao" [ref=e564] [cursor=pointer]:
+                  - /url: /produto/37
+                  - heading "colchao" [level=3] [ref=e565]
+              - generic [ref=e566]:
+                - link "Ver produto" [ref=e567] [cursor=pointer]:
+                  - /url: /produto/37
+                - link "Perguntar sobre colchao no WhatsApp" [ref=e568] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20colchao%20da%20Casa%20Sinelli.
+                  - img [ref=e569]
+          - article [ref=e571]:
+            - link "espuma Colchão" [ref=e572] [cursor=pointer]:
+              - /url: /produto/38
+              - img "espuma" [ref=e573]
+              - generic [ref=e574]: Colchão
+            - generic [ref=e575]:
+              - generic [ref=e576]:
+                - paragraph [ref=e577]: ecoflex
+                - link "espuma" [ref=e578] [cursor=pointer]:
+                  - /url: /produto/38
+                  - heading "espuma" [level=3] [ref=e579]
+              - generic [ref=e580]:
+                - link "Ver produto" [ref=e581] [cursor=pointer]:
+                  - /url: /produto/38
+                - link "Perguntar sobre espuma no WhatsApp" [ref=e582] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20espuma%20da%20Casa%20Sinelli.
+                  - img [ref=e583]
+          - article [ref=e585]:
+            - link "floral Colchão" [ref=e586] [cursor=pointer]:
+              - /url: /produto/39
+              - img "floral" [ref=e587]
+              - generic [ref=e588]: Colchão
+            - generic [ref=e589]:
+              - generic [ref=e590]:
+                - paragraph [ref=e591]: ecoflex
+                - link "floral" [ref=e592] [cursor=pointer]:
+                  - /url: /produto/39
+                  - heading "floral" [level=3] [ref=e593]
+                - paragraph [ref=e594]: 2 cores disponíveis
+              - generic [ref=e595]:
+                - link "Ver produto" [ref=e596] [cursor=pointer]:
+                  - /url: /produto/39
+                - link "Perguntar sobre floral no WhatsApp" [ref=e597] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20floral%20da%20Casa%20Sinelli.
+                  - img [ref=e598]
+          - article [ref=e600]:
+            - link "lisboa Colchão" [ref=e601] [cursor=pointer]:
+              - /url: /produto/40
+              - img "lisboa" [ref=e602]
+              - generic [ref=e603]: Colchão
+            - generic [ref=e604]:
+              - generic [ref=e605]:
+                - paragraph [ref=e606]: hellen
+                - link "lisboa" [ref=e607] [cursor=pointer]:
+                  - /url: /produto/40
+                  - heading "lisboa" [level=3] [ref=e608]
+                - paragraph [ref=e609]: 3 cores disponíveis
+              - generic [ref=e610]:
+                - link "Ver produto" [ref=e611] [cursor=pointer]:
+                  - /url: /produto/40
+                - link "Perguntar sobre lisboa no WhatsApp" [ref=e612] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20lisboa%20da%20Casa%20Sinelli.
+                  - img [ref=e613]
+          - article [ref=e615]:
+            - link "omega Colchão" [ref=e616] [cursor=pointer]:
+              - /url: /produto/41
+              - img "omega" [ref=e617]
+              - generic [ref=e618]: Colchão
+            - generic [ref=e619]:
+              - generic [ref=e620]:
+                - paragraph [ref=e621]: hellen
+                - link "omega" [ref=e622] [cursor=pointer]:
+                  - /url: /produto/41
+                  - heading "omega" [level=3] [ref=e623]
+                - paragraph [ref=e624]: 3 cores disponíveis
+              - generic [ref=e625]:
+                - link "Ver produto" [ref=e626] [cursor=pointer]:
+                  - /url: /produto/41
+                - link "Perguntar sobre omega no WhatsApp" [ref=e627] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20omega%20da%20Casa%20Sinelli.
+                  - img [ref=e628]
+          - article [ref=e630]:
+            - link "sofa Sofá" [ref=e631] [cursor=pointer]:
+              - /url: /produto/42
+              - img "sofa" [ref=e632]
+              - generic [ref=e633]: Sofá
+            - generic [ref=e634]:
+              - generic [ref=e635]:
+                - paragraph [ref=e636]: hellen
+                - link "sofa" [ref=e637] [cursor=pointer]:
+                  - /url: /produto/42
+                  - heading "sofa" [level=3] [ref=e638]
+              - generic [ref=e639]:
+                - link "Ver produto" [ref=e640] [cursor=pointer]:
+                  - /url: /produto/42
+                - link "Perguntar sobre sofa no WhatsApp" [ref=e641] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20sofa%20da%20Casa%20Sinelli.
+                  - img [ref=e642]
+          - article [ref=e644]:
+            - link "balcãoCooktop Cozinha" [ref=e645] [cursor=pointer]:
+              - /url: /produto/43
+              - img "balcãoCooktop" [ref=e646]
+              - generic [ref=e647]: Cozinha
+            - generic [ref=e648]:
+              - generic [ref=e649]:
+                - paragraph [ref=e650]: indekes
+                - link "balcãoCooktop" [ref=e651] [cursor=pointer]:
+                  - /url: /produto/43
+                  - heading "balcãoCooktop" [level=3] [ref=e652]
+              - generic [ref=e653]:
+                - link "Ver produto" [ref=e654] [cursor=pointer]:
+                  - /url: /produto/43
+                - link "Perguntar sobre balcãoCooktop no WhatsApp" [ref=e655] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20balc%C3%A3oCooktop%20da%20Casa%20Sinelli.
+                  - img [ref=e656]
+          - article [ref=e658]:
+            - link "firenze Cozinha" [ref=e659] [cursor=pointer]:
+              - /url: /produto/44
+              - img "firenze" [ref=e660]
+              - generic [ref=e661]: Cozinha
+            - generic [ref=e662]:
+              - generic [ref=e663]:
+                - paragraph [ref=e664]: indekes
+                - link "firenze" [ref=e665] [cursor=pointer]:
+                  - /url: /produto/44
+                  - heading "firenze" [level=3] [ref=e666]
+                - paragraph [ref=e667]: 2 cores disponíveis
+              - generic [ref=e668]:
+                - link "Ver produto" [ref=e669] [cursor=pointer]:
+                  - /url: /produto/44
+                - link "Perguntar sobre firenze no WhatsApp" [ref=e670] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20firenze%20da%20Casa%20Sinelli.
+                  - img [ref=e671]
+          - article [ref=e673]:
+            - link "monza Cozinha" [ref=e674] [cursor=pointer]:
+              - /url: /produto/45
+              - img "monza" [ref=e675]
+              - generic [ref=e676]: Cozinha
+            - generic [ref=e677]:
+              - generic [ref=e678]:
+                - paragraph [ref=e679]: indekes
+                - link "monza" [ref=e680] [cursor=pointer]:
+                  - /url: /produto/45
+                  - heading "monza" [level=3] [ref=e681]
+                - paragraph [ref=e682]: 3 cores disponíveis
+              - generic [ref=e683]:
+                - link "Ver produto" [ref=e684] [cursor=pointer]:
+                  - /url: /produto/45
+                - link "Perguntar sobre monza no WhatsApp" [ref=e685] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20monza%20da%20Casa%20Sinelli.
+                  - img [ref=e686]
+          - article [ref=e688]:
+            - link "kitDeCozinha Cozinha" [ref=e689] [cursor=pointer]:
+              - /url: /produto/46
+              - img "kitDeCozinha" [ref=e690]
+              - generic [ref=e691]: Cozinha
+            - generic [ref=e692]:
+              - generic [ref=e693]:
+                - paragraph [ref=e694]: indekes
+                - link "kitDeCozinha" [ref=e695] [cursor=pointer]:
+                  - /url: /produto/46
+                  - heading "kitDeCozinha" [level=3] [ref=e696]
+                - paragraph [ref=e697]: 3 cores disponíveis
+              - generic [ref=e698]:
+                - link "Ver produto" [ref=e699] [cursor=pointer]:
+                  - /url: /produto/46
+                - link "Perguntar sobre kitDeCozinha no WhatsApp" [ref=e700] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20kitDeCozinha%20da%20Casa%20Sinelli.
+                  - img [ref=e701]
+          - article [ref=e703]:
+            - link "cooktop Cozinha" [ref=e704] [cursor=pointer]:
+              - /url: /produto/47
+              - img "cooktop" [ref=e705]
+              - generic [ref=e706]: Cozinha
+            - generic [ref=e707]:
+              - generic [ref=e708]:
+                - paragraph [ref=e709]: Itatiaia
+                - link "cooktop" [ref=e710] [cursor=pointer]:
+                  - /url: /produto/47
+                  - heading "cooktop" [level=3] [ref=e711]
+              - generic [ref=e712]:
+                - link "Ver produto" [ref=e713] [cursor=pointer]:
+                  - /url: /produto/47
+                - link "Perguntar sobre cooktop no WhatsApp" [ref=e714] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20cooktop%20da%20Casa%20Sinelli.
+                  - img [ref=e715]
+          - article [ref=e717]:
+            - link "fogão Cozinha" [ref=e718] [cursor=pointer]:
+              - /url: /produto/48
+              - img "fogão" [ref=e719]
+              - generic [ref=e720]: Cozinha
+            - generic [ref=e721]:
+              - generic [ref=e722]:
+                - paragraph [ref=e723]: Itatiaia
+                - link "fogão" [ref=e724] [cursor=pointer]:
+                  - /url: /produto/48
+                  - heading "fogão" [level=3] [ref=e725]
+              - generic [ref=e726]:
+                - link "Ver produto" [ref=e727] [cursor=pointer]:
+                  - /url: /produto/48
+                - link "Perguntar sobre fogão no WhatsApp" [ref=e728] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20fog%C3%A3o%20da%20Casa%20Sinelli.
+                  - img [ref=e729]
+          - article [ref=e731]:
+            - link "Bicama Cama" [ref=e732] [cursor=pointer]:
+              - /url: /produto/49
+              - img "Bicama" [ref=e733]
+              - generic [ref=e734]: Cama
+            - generic [ref=e735]:
+              - generic [ref=e736]:
+                - paragraph [ref=e737]: kamabel
+                - link "Bicama" [ref=e738] [cursor=pointer]:
+                  - /url: /produto/49
+                  - heading "Bicama" [level=3] [ref=e739]
+              - generic [ref=e740]:
+                - link "Ver produto" [ref=e741] [cursor=pointer]:
+                  - /url: /produto/49
+                - link "Perguntar sobre Bicama no WhatsApp" [ref=e742] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Bicama%20da%20Casa%20Sinelli.
+                  - img [ref=e743]
+          - article [ref=e745]:
+            - link "Italia Outros" [ref=e746] [cursor=pointer]:
+              - /url: /produto/50
+              - img "Italia" [ref=e747]
+              - generic [ref=e748]: Outros
+            - generic [ref=e749]:
+              - generic [ref=e750]:
+                - paragraph [ref=e751]: kamabel
+                - link "Italia" [ref=e752] [cursor=pointer]:
+                  - /url: /produto/50
+                  - heading "Italia" [level=3] [ref=e753]
+                - paragraph [ref=e754]: 4 cores disponíveis
+              - generic [ref=e755]:
+                - link "Ver produto" [ref=e756] [cursor=pointer]:
+                  - /url: /produto/50
+                - link "Perguntar sobre Italia no WhatsApp" [ref=e757] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Italia%20da%20Casa%20Sinelli.
+                  - img [ref=e758]
+          - article [ref=e760]:
+            - link "palmo Outros" [ref=e761] [cursor=pointer]:
+              - /url: /produto/51
+              - img "palmo" [ref=e762]
+              - generic [ref=e763]: Outros
+            - generic [ref=e764]:
+              - generic [ref=e765]:
+                - paragraph [ref=e766]: kamabel
+                - link "palmo" [ref=e767] [cursor=pointer]:
+                  - /url: /produto/51
+                  - heading "palmo" [level=3] [ref=e768]
+              - generic [ref=e769]:
+                - link "Ver produto" [ref=e770] [cursor=pointer]:
+                  - /url: /produto/51
+                - link "Perguntar sobre palmo no WhatsApp" [ref=e771] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20palmo%20da%20Casa%20Sinelli.
+                  - img [ref=e772]
+          - article [ref=e774]:
+            - link "cozinha Cozinha" [ref=e775] [cursor=pointer]:
+              - /url: /produto/52
+              - img "cozinha" [ref=e776]
+              - generic [ref=e777]: Cozinha
+            - generic [ref=e778]:
+              - generic [ref=e779]:
+                - paragraph [ref=e780]: kitsParana
+                - link "cozinha" [ref=e781] [cursor=pointer]:
+                  - /url: /produto/52
+                  - heading "cozinha" [level=3] [ref=e782]
+              - generic [ref=e783]:
+                - link "Ver produto" [ref=e784] [cursor=pointer]:
+                  - /url: /produto/52
+                - link "Perguntar sobre cozinha no WhatsApp" [ref=e785] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20cozinha%20da%20Casa%20Sinelli.
+                  - img [ref=e786]
+          - article [ref=e788]:
+            - link "kitDeCozinha Cozinha" [ref=e789] [cursor=pointer]:
+              - /url: /produto/53
+              - img "kitDeCozinha" [ref=e790]
+              - generic [ref=e791]: Cozinha
+            - generic [ref=e792]:
+              - generic [ref=e793]:
+                - paragraph [ref=e794]: kitsParana
+                - link "kitDeCozinha" [ref=e795] [cursor=pointer]:
+                  - /url: /produto/53
+                  - heading "kitDeCozinha" [level=3] [ref=e796]
+                - paragraph [ref=e797]: 3 cores disponíveis
+              - generic [ref=e798]:
+                - link "Ver produto" [ref=e799] [cursor=pointer]:
+                  - /url: /produto/53
+                - link "Perguntar sobre kitDeCozinha no WhatsApp" [ref=e800] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20kitDeCozinha%20da%20Casa%20Sinelli.
+                  - img [ref=e801]
+          - article [ref=e803]:
+            - link "casal Cama" [ref=e804] [cursor=pointer]:
+              - /url: /produto/54
+              - img "casal" [ref=e805]
+              - generic [ref=e806]: Cama
+            - generic [ref=e807]:
+              - generic [ref=e808]:
+                - paragraph [ref=e809]: lanza
+                - link "casal" [ref=e810] [cursor=pointer]:
+                  - /url: /produto/54
+                  - heading "casal" [level=3] [ref=e811]
+              - generic [ref=e812]:
+                - link "Ver produto" [ref=e813] [cursor=pointer]:
+                  - /url: /produto/54
+                - link "Perguntar sobre casal no WhatsApp" [ref=e814] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20casal%20da%20Casa%20Sinelli.
+                  - img [ref=e815]
+          - article [ref=e817]:
+            - link "solteiro Cama" [ref=e818] [cursor=pointer]:
+              - /url: /produto/55
+              - img "solteiro" [ref=e819]
+              - generic [ref=e820]: Cama
+            - generic [ref=e821]:
+              - generic [ref=e822]:
+                - paragraph [ref=e823]: lanza
+                - link "solteiro" [ref=e824] [cursor=pointer]:
+                  - /url: /produto/55
+                  - heading "solteiro" [level=3] [ref=e825]
+              - generic [ref=e826]:
+                - link "Ver produto" [ref=e827] [cursor=pointer]:
+                  - /url: /produto/55
+                - link "Perguntar sobre solteiro no WhatsApp" [ref=e828] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20solteiro%20da%20Casa%20Sinelli.
+                  - img [ref=e829]
+          - article [ref=e831]:
+            - link "comoda Cômoda" [ref=e832] [cursor=pointer]:
+              - /url: /produto/56
+              - img "comoda" [ref=e833]
+              - generic [ref=e834]: Cômoda
+            - generic [ref=e835]:
+              - generic [ref=e836]:
+                - paragraph [ref=e837]: lanza
+                - link "comoda" [ref=e838] [cursor=pointer]:
+                  - /url: /produto/56
+                  - heading "comoda" [level=3] [ref=e839]
+                - paragraph [ref=e840]: 4 cores disponíveis
+              - generic [ref=e841]:
+                - link "Ver produto" [ref=e842] [cursor=pointer]:
+                  - /url: /produto/56
+                - link "Perguntar sobre comoda no WhatsApp" [ref=e843] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20comoda%20da%20Casa%20Sinelli.
+                  - img [ref=e844]
+          - article [ref=e846]:
+            - link "guarda roupa Guarda-Roupa" [ref=e847] [cursor=pointer]:
+              - /url: /produto/57
+              - img "guarda roupa" [ref=e848]
+              - generic [ref=e849]: Guarda-Roupa
+            - generic [ref=e850]:
+              - generic [ref=e851]:
+                - paragraph [ref=e852]: lanza
+                - link "guarda roupa" [ref=e853] [cursor=pointer]:
+                  - /url: /produto/57
+                  - heading "guarda roupa" [level=3] [ref=e854]
+                - paragraph [ref=e855]: 5 cores disponíveis
+              - generic [ref=e856]:
+                - link "Ver produto" [ref=e857] [cursor=pointer]:
+                  - /url: /produto/57
+                - link "Perguntar sobre guarda roupa no WhatsApp" [ref=e858] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20guarda%20roupa%20da%20Casa%20Sinelli.
+                  - img [ref=e859]
+          - article [ref=e861]:
+            - link "mesa de cabeceira Mesa" [ref=e862] [cursor=pointer]:
+              - /url: /produto/58
+              - img "mesa de cabeceira" [ref=e863]
+              - generic [ref=e864]: Mesa
+            - generic [ref=e865]:
+              - generic [ref=e866]:
+                - paragraph [ref=e867]: lanza
+                - link "mesa de cabeceira" [ref=e868] [cursor=pointer]:
+                  - /url: /produto/58
+                  - heading "mesa de cabeceira" [level=3] [ref=e869]
+              - generic [ref=e870]:
+                - link "Ver produto" [ref=e871] [cursor=pointer]:
+                  - /url: /produto/58
+                - link "Perguntar sobre mesa de cabeceira no WhatsApp" [ref=e872] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20mesa%20de%20cabeceira%20da%20Casa%20Sinelli.
+                  - img [ref=e873]
+          - article [ref=e875]:
+            - link "mesa de computador Mesa" [ref=e876] [cursor=pointer]:
+              - /url: /produto/59
+              - img "mesa de computador" [ref=e877]
+              - generic [ref=e878]: Mesa
+            - generic [ref=e879]:
+              - generic [ref=e880]:
+                - paragraph [ref=e881]: lanza
+                - link "mesa de computador" [ref=e882] [cursor=pointer]:
+                  - /url: /produto/59
+                  - heading "mesa de computador" [level=3] [ref=e883]
+              - generic [ref=e884]:
+                - link "Ver produto" [ref=e885] [cursor=pointer]:
+                  - /url: /produto/59
+                - link "Perguntar sobre mesa de computador no WhatsApp" [ref=e886] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20mesa%20de%20computador%20da%20Casa%20Sinelli.
+                  - img [ref=e887]
+          - article [ref=e889]:
+            - link "multiuso Armário" [ref=e890] [cursor=pointer]:
+              - /url: /produto/60
+              - img "multiuso" [ref=e891]
+              - generic [ref=e892]: Armário
+            - generic [ref=e893]:
+              - generic [ref=e894]:
+                - paragraph [ref=e895]: lanza
+                - link "multiuso" [ref=e896] [cursor=pointer]:
+                  - /url: /produto/60
+                  - heading "multiuso" [level=3] [ref=e897]
+              - generic [ref=e898]:
+                - link "Ver produto" [ref=e899] [cursor=pointer]:
+                  - /url: /produto/60
+                - link "Perguntar sobre multiuso no WhatsApp" [ref=e900] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20multiuso%20da%20Casa%20Sinelli.
+                  - img [ref=e901]
+          - article [ref=e903]:
+            - link "TANQUINHO BRANCO SUPERSTAR Outros" [ref=e904] [cursor=pointer]:
+              - /url: /produto/61
+              - img "TANQUINHO BRANCO SUPERSTAR" [ref=e905]
+              - generic [ref=e906]: Outros
+            - generic [ref=e907]:
+              - generic [ref=e908]:
+                - paragraph [ref=e909]: laveMais
+                - link "TANQUINHO BRANCO SUPERSTAR" [ref=e910] [cursor=pointer]:
+                  - /url: /produto/61
+                  - heading "TANQUINHO BRANCO SUPERSTAR" [level=3] [ref=e911]
+              - generic [ref=e912]:
+                - link "Ver produto" [ref=e913] [cursor=pointer]:
+                  - /url: /produto/61
+                - link "Perguntar sobre TANQUINHO BRANCO SUPERSTAR no WhatsApp" [ref=e914] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20TANQUINHO%20BRANCO%20SUPERSTAR%20da%20Casa%20Sinelli.
+                  - img [ref=e915]
+          - article [ref=e917]:
+            - link "SAPATEIRA ESTELA GIRATORIA CVDO Outros" [ref=e918] [cursor=pointer]:
+              - /url: /produto/62
+              - img "SAPATEIRA ESTELA GIRATORIA CVDO" [ref=e919]
+              - generic [ref=e920]: Outros
+            - generic [ref=e921]:
+              - generic [ref=e922]:
+                - paragraph [ref=e923]: lopas
+                - link "SAPATEIRA ESTELA GIRATORIA CVDO" [ref=e924] [cursor=pointer]:
+                  - /url: /produto/62
+                  - heading "SAPATEIRA ESTELA GIRATORIA CVDO" [level=3] [ref=e925]
+              - generic [ref=e926]:
+                - link "Ver produto" [ref=e927] [cursor=pointer]:
+                  - /url: /produto/62
+                - link "Perguntar sobre SAPATEIRA ESTELA GIRATORIA CVDO no WhatsApp" [ref=e928] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20SAPATEIRA%20ESTELA%20GIRATORIA%20CVDO%20da%20Casa%20Sinelli.
+                  - img [ref=e929]
+          - article [ref=e931]:
+            - link "guarda roupa modulado Guarda-Roupa" [ref=e932] [cursor=pointer]:
+              - /url: /produto/63
+              - img "guarda roupa modulado" [ref=e933]
+              - generic [ref=e934]: Guarda-Roupa
+            - generic [ref=e935]:
+              - generic [ref=e936]:
+                - paragraph [ref=e937]: luciane
+                - link "guarda roupa modulado" [ref=e938] [cursor=pointer]:
+                  - /url: /produto/63
+                  - heading "guarda roupa modulado" [level=3] [ref=e939]
+              - generic [ref=e940]:
+                - link "Ver produto" [ref=e941] [cursor=pointer]:
+                  - /url: /produto/63
+                - link "Perguntar sobre guarda roupa modulado no WhatsApp" [ref=e942] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20guarda%20roupa%20modulado%20da%20Casa%20Sinelli.
+                  - img [ref=e943]
+          - article [ref=e945]:
+            - link "CantinhoDoCafé Outros" [ref=e946] [cursor=pointer]:
+              - /url: /produto/64
+              - img "CantinhoDoCafé" [ref=e947]
+              - generic [ref=e948]: Outros
+            - generic [ref=e949]:
+              - generic [ref=e950]:
+                - paragraph [ref=e951]: Lukaliam
+                - link "CantinhoDoCafé" [ref=e952] [cursor=pointer]:
+                  - /url: /produto/64
+                  - heading "CantinhoDoCafé" [level=3] [ref=e953]
+              - generic [ref=e954]:
+                - link "Ver produto" [ref=e955] [cursor=pointer]:
+                  - /url: /produto/64
+                - link "Perguntar sobre CantinhoDoCafé no WhatsApp" [ref=e956] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20CantinhoDoCaf%C3%A9%20da%20Casa%20Sinelli.
+                  - img [ref=e957]
+          - article [ref=e959]:
+            - link "vicenza Outros" [ref=e960] [cursor=pointer]:
+              - /url: /produto/65
+              - img "vicenza" [ref=e961]
+              - generic [ref=e962]: Outros
+            - generic [ref=e963]:
+              - generic [ref=e964]:
+                - paragraph [ref=e965]: Lukaliam
+                - link "vicenza" [ref=e966] [cursor=pointer]:
+                  - /url: /produto/65
+                  - heading "vicenza" [level=3] [ref=e967]
+              - generic [ref=e968]:
+                - link "Ver produto" [ref=e969] [cursor=pointer]:
+                  - /url: /produto/65
+                - link "Perguntar sobre vicenza no WhatsApp" [ref=e970] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20vicenza%20da%20Casa%20Sinelli.
+                  - img [ref=e971]
+          - article [ref=e973]:
+            - link "mesaEcadeira Mesa" [ref=e974] [cursor=pointer]:
+              - /url: /produto/66
+              - img "mesaEcadeira" [ref=e975]
+              - generic [ref=e976]: Mesa
+            - generic [ref=e977]:
+              - generic [ref=e978]:
+                - paragraph [ref=e979]: modelar
+                - link "mesaEcadeira" [ref=e980] [cursor=pointer]:
+                  - /url: /produto/66
+                  - heading "mesaEcadeira" [level=3] [ref=e981]
+                - paragraph [ref=e982]: 2 cores disponíveis
+              - generic [ref=e983]:
+                - link "Ver produto" [ref=e984] [cursor=pointer]:
+                  - /url: /produto/66
+                - link "Perguntar sobre mesaEcadeira no WhatsApp" [ref=e985] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20mesaEcadeira%20da%20Casa%20Sinelli.
+                  - img [ref=e986]
+          - article [ref=e988]:
+            - link "comoda Cômoda" [ref=e989] [cursor=pointer]:
+              - /url: /produto/67
+              - img "comoda" [ref=e990]
+              - generic [ref=e991]: Cômoda
+            - generic [ref=e992]:
+              - generic [ref=e993]:
+                - paragraph [ref=e994]: moval
+                - link "comoda" [ref=e995] [cursor=pointer]:
+                  - /url: /produto/67
+                  - heading "comoda" [level=3] [ref=e996]
+                - paragraph [ref=e997]: 2 cores disponíveis
+              - generic [ref=e998]:
+                - link "Ver produto" [ref=e999] [cursor=pointer]:
+                  - /url: /produto/67
+                - link "Perguntar sobre comoda no WhatsApp" [ref=e1000] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20comoda%20da%20Casa%20Sinelli.
+                  - img [ref=e1001]
+          - article [ref=e1003]:
+            - link "gr Outros" [ref=e1004] [cursor=pointer]:
+              - /url: /produto/68
+              - img "gr" [ref=e1005]
+              - generic [ref=e1006]: Outros
+            - generic [ref=e1007]:
+              - generic [ref=e1008]:
+                - paragraph [ref=e1009]: moval
+                - link "gr" [ref=e1010] [cursor=pointer]:
+                  - /url: /produto/68
+                  - heading "gr" [level=3] [ref=e1011]
+                - paragraph [ref=e1012]: 4 cores disponíveis
+              - generic [ref=e1013]:
+                - link "Ver produto" [ref=e1014] [cursor=pointer]:
+                  - /url: /produto/68
+                - link "Perguntar sobre gr no WhatsApp" [ref=e1015] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20gr%20da%20Casa%20Sinelli.
+                  - img [ref=e1016]
+          - article [ref=e1018]:
+            - link "multiuso Armário" [ref=e1019] [cursor=pointer]:
+              - /url: /produto/69
+              - img "multiuso" [ref=e1020]
+              - generic [ref=e1021]: Armário
+            - generic [ref=e1022]:
+              - generic [ref=e1023]:
+                - paragraph [ref=e1024]: moval
+                - link "multiuso" [ref=e1025] [cursor=pointer]:
+                  - /url: /produto/69
+                  - heading "multiuso" [level=3] [ref=e1026]
+              - generic [ref=e1027]:
+                - link "Ver produto" [ref=e1028] [cursor=pointer]:
+                  - /url: /produto/69
+                - link "Perguntar sobre multiuso no WhatsApp" [ref=e1029] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20multiuso%20da%20Casa%20Sinelli.
+                  - img [ref=e1030]
+          - article [ref=e1032]:
+            - link "penteadeira Outros" [ref=e1033] [cursor=pointer]:
+              - /url: /produto/70
+              - img "penteadeira" [ref=e1034]
+              - generic [ref=e1035]: Outros
+            - generic [ref=e1036]:
+              - generic [ref=e1037]:
+                - paragraph [ref=e1038]: moval
+                - link "penteadeira" [ref=e1039] [cursor=pointer]:
+                  - /url: /produto/70
+                  - heading "penteadeira" [level=3] [ref=e1040]
+              - generic [ref=e1041]:
+                - link "Ver produto" [ref=e1042] [cursor=pointer]:
+                  - /url: /produto/70
+                - link "Perguntar sobre penteadeira no WhatsApp" [ref=e1043] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20penteadeira%20da%20Casa%20Sinelli.
+                  - img [ref=e1044]
+          - article [ref=e1046]:
+            - link "cadeira juliana Cadeira" [ref=e1047] [cursor=pointer]:
+              - /url: /produto/71
+              - img "cadeira juliana" [ref=e1048]
+              - generic [ref=e1049]: Cadeira
+            - generic [ref=e1050]:
+              - generic [ref=e1051]:
+                - paragraph [ref=e1052]: mundial
+                - link "cadeira juliana" [ref=e1053] [cursor=pointer]:
+                  - /url: /produto/71
+                  - heading "cadeira juliana" [level=3] [ref=e1054]
+              - generic [ref=e1055]:
+                - link "Ver produto" [ref=e1056] [cursor=pointer]:
+                  - /url: /produto/71
+                - link "Perguntar sobre cadeira juliana no WhatsApp" [ref=e1057] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20cadeira%20juliana%20da%20Casa%20Sinelli.
+                  - img [ref=e1058]
+          - article [ref=e1060]:
+            - link "Mesa Mesa" [ref=e1061] [cursor=pointer]:
+              - /url: /produto/72
+              - img "Mesa" [ref=e1062]
+              - generic [ref=e1063]: Mesa
+            - generic [ref=e1064]:
+              - generic [ref=e1065]:
+                - paragraph [ref=e1066]: mundial
+                - link "Mesa" [ref=e1067] [cursor=pointer]:
+                  - /url: /produto/72
+                  - heading "Mesa" [level=3] [ref=e1068]
+                - paragraph [ref=e1069]: 2 cores disponíveis
+              - generic [ref=e1070]:
+                - link "Ver produto" [ref=e1071] [cursor=pointer]:
+                  - /url: /produto/72
+                - link "Perguntar sobre Mesa no WhatsApp" [ref=e1072] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Mesa%20da%20Casa%20Sinelli.
+                  - img [ref=e1073]
+          - article [ref=e1075]:
+            - link "colchao Colchão" [ref=e1076] [cursor=pointer]:
+              - /url: /produto/73
+              - img "colchao" [ref=e1077]
+              - generic [ref=e1078]: Colchão
+            - generic [ref=e1079]:
+              - generic [ref=e1080]:
+                - paragraph [ref=e1081]: paropas
+                - link "colchao" [ref=e1082] [cursor=pointer]:
+                  - /url: /produto/73
+                  - heading "colchao" [level=3] [ref=e1083]
+                - paragraph [ref=e1084]: 2 cores disponíveis
+              - generic [ref=e1085]:
+                - link "Ver produto" [ref=e1086] [cursor=pointer]:
+                  - /url: /produto/73
+                - link "Perguntar sobre colchao no WhatsApp" [ref=e1087] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20colchao%20da%20Casa%20Sinelli.
+                  - img [ref=e1088]
+          - article [ref=e1090]:
+            - link "sofa2e3Lugares Sofá" [ref=e1091] [cursor=pointer]:
+              - /url: /produto/74
+              - img "sofa2e3Lugares" [ref=e1092]
+              - generic [ref=e1093]: Sofá
+            - generic [ref=e1094]:
+              - generic [ref=e1095]:
+                - paragraph [ref=e1096]: paropas
+                - link "sofa2e3Lugares" [ref=e1097] [cursor=pointer]:
+                  - /url: /produto/74
+                  - heading "sofa2e3Lugares" [level=3] [ref=e1098]
+              - generic [ref=e1099]:
+                - link "Ver produto" [ref=e1100] [cursor=pointer]:
+                  - /url: /produto/74
+                - link "Perguntar sobre sofa2e3Lugares no WhatsApp" [ref=e1101] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20sofa2e3Lugares%20da%20Casa%20Sinelli.
+                  - img [ref=e1102]
+          - article [ref=e1104]:
+            - link "beliche Cama" [ref=e1105] [cursor=pointer]:
+              - /url: /produto/75
+              - img "beliche" [ref=e1106]
+              - generic [ref=e1107]: Cama
+            - generic [ref=e1108]:
+              - generic [ref=e1109]:
+                - paragraph [ref=e1110]: piner
+                - link "beliche" [ref=e1111] [cursor=pointer]:
+                  - /url: /produto/75
+                  - heading "beliche" [level=3] [ref=e1112]
+              - generic [ref=e1113]:
+                - link "Ver produto" [ref=e1114] [cursor=pointer]:
+                  - /url: /produto/75
+                - link "Perguntar sobre beliche no WhatsApp" [ref=e1115] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20beliche%20da%20Casa%20Sinelli.
+                  - img [ref=e1116]
+          - article [ref=e1118]:
+            - link "cozinha Cozinha" [ref=e1119] [cursor=pointer]:
+              - /url: /produto/76
+              - img "cozinha" [ref=e1120]
+              - generic [ref=e1121]: Cozinha
+            - generic [ref=e1122]:
+              - generic [ref=e1123]:
+                - paragraph [ref=e1124]: poliman
+                - link "cozinha" [ref=e1125] [cursor=pointer]:
+                  - /url: /produto/76
+                  - heading "cozinha" [level=3] [ref=e1126]
+              - generic [ref=e1127]:
+                - link "Ver produto" [ref=e1128] [cursor=pointer]:
+                  - /url: /produto/76
+                - link "Perguntar sobre cozinha no WhatsApp" [ref=e1129] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20cozinha%20da%20Casa%20Sinelli.
+                  - img [ref=e1130]
+          - article [ref=e1132]:
+            - link "mesaEcadeires Mesa" [ref=e1133] [cursor=pointer]:
+              - /url: /produto/77
+              - img "mesaEcadeires" [ref=e1134]
+              - generic [ref=e1135]: Mesa
+            - generic [ref=e1136]:
+              - generic [ref=e1137]:
+                - paragraph [ref=e1138]: poliman
+                - link "mesaEcadeires" [ref=e1139] [cursor=pointer]:
+                  - /url: /produto/77
+                  - heading "mesaEcadeires" [level=3] [ref=e1140]
+                - paragraph [ref=e1141]: 2 cores disponíveis
+              - generic [ref=e1142]:
+                - link "Ver produto" [ref=e1143] [cursor=pointer]:
+                  - /url: /produto/77
+                - link "Perguntar sobre mesaEcadeires no WhatsApp" [ref=e1144] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20mesaEcadeires%20da%20Casa%20Sinelli.
+                  - img [ref=e1145]
+          - article [ref=e1147]:
+            - link "buffet Outros" [ref=e1148] [cursor=pointer]:
+              - /url: /produto/78
+              - img "buffet" [ref=e1149]
+              - generic [ref=e1150]: Outros
+            - generic [ref=e1151]:
+              - generic [ref=e1152]:
+                - paragraph [ref=e1153]: primus
+                - link "buffet" [ref=e1154] [cursor=pointer]:
+                  - /url: /produto/78
+                  - heading "buffet" [level=3] [ref=e1155]
+                - paragraph [ref=e1156]: 2 cores disponíveis
+              - generic [ref=e1157]:
+                - link "Ver produto" [ref=e1158] [cursor=pointer]:
+                  - /url: /produto/78
+                - link "Perguntar sobre buffet no WhatsApp" [ref=e1159] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20buffet%20da%20Casa%20Sinelli.
+                  - img [ref=e1160]
+          - article [ref=e1162]:
+            - link "multiuso Armário" [ref=e1163] [cursor=pointer]:
+              - /url: /produto/79
+              - img "multiuso" [ref=e1164]
+              - generic [ref=e1165]: Armário
+            - generic [ref=e1166]:
+              - generic [ref=e1167]:
+                - paragraph [ref=e1168]: primus
+                - link "multiuso" [ref=e1169] [cursor=pointer]:
+                  - /url: /produto/79
+                  - heading "multiuso" [level=3] [ref=e1170]
+              - generic [ref=e1171]:
+                - link "Ver produto" [ref=e1172] [cursor=pointer]:
+                  - /url: /produto/79
+                - link "Perguntar sobre multiuso no WhatsApp" [ref=e1173] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20multiuso%20da%20Casa%20Sinelli.
+                  - img [ref=e1174]
+          - article [ref=e1176]:
+            - link "turquesa Colchão" [ref=e1177] [cursor=pointer]:
+              - /url: /produto/80
+              - img "turquesa" [ref=e1178]
+              - generic [ref=e1179]: Colchão
+            - generic [ref=e1180]:
+              - generic [ref=e1181]:
+                - paragraph [ref=e1182]: prorelax
+                - link "turquesa" [ref=e1183] [cursor=pointer]:
+                  - /url: /produto/80
+                  - heading "turquesa" [level=3] [ref=e1184]
+                - paragraph [ref=e1185]: 2 cores disponíveis
+              - generic [ref=e1186]:
+                - link "Ver produto" [ref=e1187] [cursor=pointer]:
+                  - /url: /produto/80
+                - link "Perguntar sobre turquesa no WhatsApp" [ref=e1188] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20turquesa%20da%20Casa%20Sinelli.
+                  - img [ref=e1189]
+          - article [ref=e1191]:
+            - link "fruteira Outros" [ref=e1192] [cursor=pointer]:
+              - /url: /produto/81
+              - img "fruteira" [ref=e1193]
+              - generic [ref=e1194]: Outros
+            - generic [ref=e1195]:
+              - generic [ref=e1196]:
+                - paragraph [ref=e1197]: quartaDivisão
+                - link "fruteira" [ref=e1198] [cursor=pointer]:
+                  - /url: /produto/81
+                  - heading "fruteira" [level=3] [ref=e1199]
+                - paragraph [ref=e1200]: 2 cores disponíveis
+              - generic [ref=e1201]:
+                - link "Ver produto" [ref=e1202] [cursor=pointer]:
+                  - /url: /produto/81
+                - link "Perguntar sobre fruteira no WhatsApp" [ref=e1203] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20fruteira%20da%20Casa%20Sinelli.
+                  - img [ref=e1204]
+          - article [ref=e1206]:
+            - link "sapateira Outros" [ref=e1207] [cursor=pointer]:
+              - /url: /produto/82
+              - img "sapateira" [ref=e1208]
+              - generic [ref=e1209]: Outros
+            - generic [ref=e1210]:
+              - generic [ref=e1211]:
+                - paragraph [ref=e1212]: quartaDivisão
+                - link "sapateira" [ref=e1213] [cursor=pointer]:
+                  - /url: /produto/82
+                  - heading "sapateira" [level=3] [ref=e1214]
+              - generic [ref=e1215]:
+                - link "Ver produto" [ref=e1216] [cursor=pointer]:
+                  - /url: /produto/82
+                - link "Perguntar sobre sapateira no WhatsApp" [ref=e1217] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20sapateira%20da%20Casa%20Sinelli.
+                  - img [ref=e1218]
+          - article [ref=e1220]:
+            - link "Comodas Cômoda" [ref=e1221] [cursor=pointer]:
+              - /url: /produto/83
+              - img "Comodas" [ref=e1222]
+              - generic [ref=e1223]: Cômoda
+            - generic [ref=e1224]:
+              - generic [ref=e1225]:
+                - paragraph [ref=e1226]: SantosAndira
+                - link "Comodas" [ref=e1227] [cursor=pointer]:
+                  - /url: /produto/83
+                  - heading "Comodas" [level=3] [ref=e1228]
+                - paragraph [ref=e1229]: 3 cores disponíveis
+              - generic [ref=e1230]:
+                - link "Ver produto" [ref=e1231] [cursor=pointer]:
+                  - /url: /produto/83
+                - link "Perguntar sobre Comodas no WhatsApp" [ref=e1232] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Comodas%20da%20Casa%20Sinelli.
+                  - img [ref=e1233]
+          - article [ref=e1235]:
+            - link "GR Outros" [ref=e1236] [cursor=pointer]:
+              - /url: /produto/84
+              - img "GR" [ref=e1237]
+              - generic [ref=e1238]: Outros
+            - generic [ref=e1239]:
+              - generic [ref=e1240]:
+                - paragraph [ref=e1241]: SantosAndira
+                - link "GR" [ref=e1242] [cursor=pointer]:
+                  - /url: /produto/84
+                  - heading "GR" [level=3] [ref=e1243]
+                - paragraph [ref=e1244]: 9 cores disponíveis
+              - generic [ref=e1245]:
+                - link "Ver produto" [ref=e1246] [cursor=pointer]:
+                  - /url: /produto/84
+                - link "Perguntar sobre GR no WhatsApp" [ref=e1247] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20GR%20da%20Casa%20Sinelli.
+                  - img [ref=e1248]
+          - article [ref=e1250]:
+            - link "mesaDeCabeceira Mesa" [ref=e1251] [cursor=pointer]:
+              - /url: /produto/85
+              - img "mesaDeCabeceira" [ref=e1252]
+              - generic [ref=e1253]: Mesa
+            - generic [ref=e1254]:
+              - generic [ref=e1255]:
+                - paragraph [ref=e1256]: SantosAndira
+                - link "mesaDeCabeceira" [ref=e1257] [cursor=pointer]:
+                  - /url: /produto/85
+                  - heading "mesaDeCabeceira" [level=3] [ref=e1258]
+              - generic [ref=e1259]:
+                - link "Ver produto" [ref=e1260] [cursor=pointer]:
+                  - /url: /produto/85
+                - link "Perguntar sobre mesaDeCabeceira no WhatsApp" [ref=e1261] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20mesaDeCabeceira%20da%20Casa%20Sinelli.
+                  - img [ref=e1262]
+          - article [ref=e1264]:
+            - link "multiuso Armário" [ref=e1265] [cursor=pointer]:
+              - /url: /produto/86
+              - img "multiuso" [ref=e1266]
+              - generic [ref=e1267]: Armário
+            - generic [ref=e1268]:
+              - generic [ref=e1269]:
+                - paragraph [ref=e1270]: SantosAndira
+                - link "multiuso" [ref=e1271] [cursor=pointer]:
+                  - /url: /produto/86
+                  - heading "multiuso" [level=3] [ref=e1272]
+              - generic [ref=e1273]:
+                - link "Ver produto" [ref=e1274] [cursor=pointer]:
+                  - /url: /produto/86
+                - link "Perguntar sobre multiuso no WhatsApp" [ref=e1275] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20multiuso%20da%20Casa%20Sinelli.
+                  - img [ref=e1276]
+          - article [ref=e1278]:
+            - link "2e3Lugares Sofá" [ref=e1279] [cursor=pointer]:
+              - /url: /produto/87
+              - img "2e3Lugares" [ref=e1280]
+              - generic [ref=e1281]: Sofá
+            - generic [ref=e1282]:
+              - generic [ref=e1283]:
+                - paragraph [ref=e1284]: sofa
+                - link "2e3Lugares" [ref=e1285] [cursor=pointer]:
+                  - /url: /produto/87
+                  - heading "2e3Lugares" [level=3] [ref=e1286]
+              - generic [ref=e1287]:
+                - link "Ver produto" [ref=e1288] [cursor=pointer]:
+                  - /url: /produto/87
+                - link "Perguntar sobre 2e3Lugares no WhatsApp" [ref=e1289] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%202e3Lugares%20da%20Casa%20Sinelli.
+                  - img [ref=e1290]
+          - article [ref=e1292]:
+            - link "retratil Sofá" [ref=e1293] [cursor=pointer]:
+              - /url: /produto/88
+              - img "retratil" [ref=e1294]
+              - generic [ref=e1295]: Sofá
+            - generic [ref=e1296]:
+              - generic [ref=e1297]:
+                - paragraph [ref=e1298]: sofa
+                - link "retratil" [ref=e1299] [cursor=pointer]:
+                  - /url: /produto/88
+                  - heading "retratil" [level=3] [ref=e1300]
+              - generic [ref=e1301]:
+                - link "Ver produto" [ref=e1302] [cursor=pointer]:
+                  - /url: /produto/88
+                - link "Perguntar sobre retratil no WhatsApp" [ref=e1303] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20retratil%20da%20Casa%20Sinelli.
+                  - img [ref=e1304]
+          - article [ref=e1306]:
+            - link "zara Sofá" [ref=e1307] [cursor=pointer]:
+              - /url: /produto/89
+              - img "zara" [ref=e1308]
+              - generic [ref=e1309]: Sofá
+            - generic [ref=e1310]:
+              - generic [ref=e1311]:
+                - paragraph [ref=e1312]: sofa
+                - link "zara" [ref=e1313] [cursor=pointer]:
+                  - /url: /produto/89
+                  - heading "zara" [level=3] [ref=e1314]
+              - generic [ref=e1315]:
+                - link "Ver produto" [ref=e1316] [cursor=pointer]:
+                  - /url: /produto/89
+                - link "Perguntar sobre zara no WhatsApp" [ref=e1317] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20zara%20da%20Casa%20Sinelli.
+                  - img [ref=e1318]
+          - article [ref=e1320]:
+            - link "sofaCama Sofá" [ref=e1321] [cursor=pointer]:
+              - /url: /produto/90
+              - img "sofaCama" [ref=e1322]
+              - generic [ref=e1323]: Sofá
+            - generic [ref=e1324]:
+              - generic [ref=e1325]:
+                - paragraph [ref=e1326]: sofa
+                - link "sofaCama" [ref=e1327] [cursor=pointer]:
+                  - /url: /produto/90
+                  - heading "sofaCama" [level=3] [ref=e1328]
+              - generic [ref=e1329]:
+                - link "Ver produto" [ref=e1330] [cursor=pointer]:
+                  - /url: /produto/90
+                - link "Perguntar sobre sofaCama no WhatsApp" [ref=e1331] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20sofaCama%20da%20Casa%20Sinelli.
+                  - img [ref=e1332]
+          - article [ref=e1334]:
+            - link "box Outros" [ref=e1335] [cursor=pointer]:
+              - /url: /produto/91
+              - img "box" [ref=e1336]
+              - generic [ref=e1337]: Outros
+            - generic [ref=e1338]:
+              - generic [ref=e1339]:
+                - paragraph [ref=e1340]: songes
+                - link "box" [ref=e1341] [cursor=pointer]:
+                  - /url: /produto/91
+                  - heading "box" [level=3] [ref=e1342]
+              - generic [ref=e1343]:
+                - link "Ver produto" [ref=e1344] [cursor=pointer]:
+                  - /url: /produto/91
+                - link "Perguntar sobre box no WhatsApp" [ref=e1345] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20box%20da%20Casa%20Sinelli.
+                  - img [ref=e1346]
+          - article [ref=e1348]:
+            - link "casal Outros" [ref=e1349] [cursor=pointer]:
+              - /url: /produto/92
+              - img "casal" [ref=e1350]
+              - generic [ref=e1351]: Outros
+            - generic [ref=e1352]:
+              - generic [ref=e1353]:
+                - paragraph [ref=e1354]: songes
+                - link "casal" [ref=e1355] [cursor=pointer]:
+                  - /url: /produto/92
+                  - heading "casal" [level=3] [ref=e1356]
+                - paragraph [ref=e1357]: 2 cores disponíveis
+              - generic [ref=e1358]:
+                - link "Ver produto" [ref=e1359] [cursor=pointer]:
+                  - /url: /produto/92
+                - link "Perguntar sobre casal no WhatsApp" [ref=e1360] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20casal%20da%20Casa%20Sinelli.
+                  - img [ref=e1361]
+          - article [ref=e1363]:
+            - link "solteiro Outros" [ref=e1364] [cursor=pointer]:
+              - /url: /produto/93
+              - img "solteiro" [ref=e1365]
+              - generic [ref=e1366]: Outros
+            - generic [ref=e1367]:
+              - generic [ref=e1368]:
+                - paragraph [ref=e1369]: songes
+                - link "solteiro" [ref=e1370] [cursor=pointer]:
+                  - /url: /produto/93
+                  - heading "solteiro" [level=3] [ref=e1371]
+                - paragraph [ref=e1372]: 2 cores disponíveis
+              - generic [ref=e1373]:
+                - link "Ver produto" [ref=e1374] [cursor=pointer]:
+                  - /url: /produto/93
+                - link "Perguntar sobre solteiro no WhatsApp" [ref=e1375] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20solteiro%20da%20Casa%20Sinelli.
+                  - img [ref=e1376]
+          - article [ref=e1378]:
+            - link "cabeceira Criado-Mudo" [ref=e1379] [cursor=pointer]:
+              - /url: /produto/94
+              - img "cabeceira" [ref=e1380]
+              - generic [ref=e1381]: Criado-Mudo
+            - generic [ref=e1382]:
+              - generic [ref=e1383]:
+                - paragraph [ref=e1384]: songes
+                - link "cabeceira" [ref=e1385] [cursor=pointer]:
+                  - /url: /produto/94
+                  - heading "cabeceira" [level=3] [ref=e1386]
+                - paragraph [ref=e1387]: 3 cores disponíveis
+              - generic [ref=e1388]:
+                - link "Ver produto" [ref=e1389] [cursor=pointer]:
+                  - /url: /produto/94
+                - link "Perguntar sobre cabeceira no WhatsApp" [ref=e1390] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20cabeceira%20da%20Casa%20Sinelli.
+                  - img [ref=e1391]
+          - article [ref=e1393]:
+            - link "joãoPessoa Outros" [ref=e1394] [cursor=pointer]:
+              - /url: /produto/95
+              - img "joãoPessoa" [ref=e1395]
+              - generic [ref=e1396]: Outros
+            - generic [ref=e1397]:
+              - generic [ref=e1398]:
+                - paragraph [ref=e1399]: valdemoveis
+                - link "joãoPessoa" [ref=e1400] [cursor=pointer]:
+                  - /url: /produto/95
+                  - heading "joãoPessoa" [level=3] [ref=e1401]
+              - generic [ref=e1402]:
+                - link "Ver produto" [ref=e1403] [cursor=pointer]:
+                  - /url: /produto/95
+                - link "Perguntar sobre joãoPessoa no WhatsApp" [ref=e1404] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20jo%C3%A3oPessoa%20da%20Casa%20Sinelli.
+                  - img [ref=e1405]
+          - article [ref=e1407]:
+            - link "livreitoMultiuso Armário" [ref=e1408] [cursor=pointer]:
+              - /url: /produto/96
+              - img "livreitoMultiuso" [ref=e1409]
+              - generic [ref=e1410]: Armário
+            - generic [ref=e1411]:
+              - generic [ref=e1412]:
+                - paragraph [ref=e1413]: valdemoveis
+                - link "livreitoMultiuso" [ref=e1414] [cursor=pointer]:
+                  - /url: /produto/96
+                  - heading "livreitoMultiuso" [level=3] [ref=e1415]
+              - generic [ref=e1416]:
+                - link "Ver produto" [ref=e1417] [cursor=pointer]:
+                  - /url: /produto/96
+                - link "Perguntar sobre livreitoMultiuso no WhatsApp" [ref=e1418] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20livreitoMultiuso%20da%20Casa%20Sinelli.
+                  - img [ref=e1419]
+          - article [ref=e1421]:
+            - link "buffet Outros" [ref=e1422] [cursor=pointer]:
+              - /url: /produto/97
+              - img "buffet" [ref=e1423]
+              - generic [ref=e1424]: Outros
+            - generic [ref=e1425]:
+              - generic [ref=e1426]:
+                - paragraph [ref=e1427]: Viero
+                - link "buffet" [ref=e1428] [cursor=pointer]:
+                  - /url: /produto/97
+                  - heading "buffet" [level=3] [ref=e1429]
+              - generic [ref=e1430]:
+                - link "Ver produto" [ref=e1431] [cursor=pointer]:
+                  - /url: /produto/97
+                - link "Perguntar sobre buffet no WhatsApp" [ref=e1432] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20buffet%20da%20Casa%20Sinelli.
+                  - img [ref=e1433]
+          - article [ref=e1435]:
+            - link "poltrona Cadeira" [ref=e1436] [cursor=pointer]:
+              - /url: /produto/98
+              - img "poltrona" [ref=e1437]
+              - generic [ref=e1438]: Cadeira
+            - generic [ref=e1439]:
+              - generic [ref=e1440]:
+                - paragraph [ref=e1441]: Viero
+                - link "poltrona" [ref=e1442] [cursor=pointer]:
+                  - /url: /produto/98
+                  - heading "poltrona" [level=3] [ref=e1443]
+                - paragraph [ref=e1444]: 2 cores disponíveis
+              - generic [ref=e1445]:
+                - link "Ver produto" [ref=e1446] [cursor=pointer]:
+                  - /url: /produto/98
+                - link "Perguntar sobre poltrona no WhatsApp" [ref=e1447] [cursor=pointer]:
+                  - /url: https://wa.me/5511971776165?text=Ol%C3%A1!%20Tenho%20interesse%20no%20poltrona%20da%20Casa%20Sinelli.
+                  - img [ref=e1448]
+  - contentinfo [ref=e1450]:
+    - generic [ref=e1451]:
+      - generic [ref=e1452]:
+        - generic [ref=e1453]:
+          - generic [ref=e1454]: Casa Sinelli
+          - generic [ref=e1455]: Móveis & Colchões
+          - paragraph [ref=e1456]: Transformando ambientes com móveis de qualidade e atendimento personalizado em Ribeirão Pires.
+        - generic [ref=e1457]:
+          - heading "Catálogo" [level=3] [ref=e1458]
+          - list [ref=e1459]:
+            - listitem [ref=e1460]:
+              - link "Sofás" [ref=e1461] [cursor=pointer]:
+                - /url: /categoria/sofa
+            - listitem [ref=e1462]:
+              - link "Camas" [ref=e1463] [cursor=pointer]:
+                - /url: /categoria/cama
+            - listitem [ref=e1464]:
+              - link "Guarda-Roupas" [ref=e1465] [cursor=pointer]:
+                - /url: /categoria/guarda-roupa
+            - listitem [ref=e1466]:
+              - link "Colchões" [ref=e1467] [cursor=pointer]:
+                - /url: /categoria/colchao
+            - listitem [ref=e1468]:
+              - link "Mesas" [ref=e1469] [cursor=pointer]:
+                - /url: /categoria/mesa
+            - listitem [ref=e1470]:
+              - link "Ver Tudo" [ref=e1471] [cursor=pointer]:
+                - /url: /catalogo
+        - generic [ref=e1472]:
+          - heading "Contato" [level=3] [ref=e1473]
+          - list [ref=e1474]:
+            - listitem [ref=e1475]:
+              - generic [ref=e1476]: 📍
+              - generic [ref=e1477]: Av. Francisco Monteiro, 1320 — Vila Fiorentino, Ribeirão Pires - SP
+            - listitem [ref=e1478]:
+              - generic [ref=e1479]: 📱
+              - link "(11) 97177-6165" [ref=e1480] [cursor=pointer]:
+                - /url: https://wa.me/5511971776165
+            - listitem [ref=e1481]:
+              - generic [ref=e1482]: ✉️
+              - link "contato@casasinelli.com.br" [ref=e1483] [cursor=pointer]:
+                - /url: mailto:contato@casasinelli.com.br
+            - listitem [ref=e1484]:
+              - generic [ref=e1485]: 🕐
+              - generic [ref=e1486]: "Seg–Sex: 09h às 18h | Sáb: 09h às 17h"
+      - generic [ref=e1487]: © 2026Casa Sinelli — Móveis & Colchões. Todos os direitos reservados.
+  - link "Fale conosco pelo WhatsApp" [ref=e1488] [cursor=pointer]:
+    - /url: https://wa.me/5511971776165
+    - img [ref=e1489]
+    - generic [ref=e1491]: Falar no WhatsApp
+  - button "Open Next.js Dev Tools" [ref=e1497] [cursor=pointer]:
+    - img [ref=e1498]
