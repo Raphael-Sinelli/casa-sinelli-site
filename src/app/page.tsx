@@ -1,65 +1,317 @@
-import Image from "next/image";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { todosOsProdutos, todasCategorias, primeiraImagemDisplay } from '@/lib/produtos';
+import ProductCard from '@/components/ProductCard';
+import Map from '@/components/Map';
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: 'Casa Sinelli — Móveis & Colchões em Ribeirão Pires',
+  description: 'Móveis e colchões com qualidade e elegância. Guarda-roupas, sofás, camas, colchões e muito mais. Visite nossa loja em Ribeirão Pires - SP ou fale pelo WhatsApp.',
+};
+
+const ICONES_CATEGORIA: Record<string, string> = {
+  'Sofá': '🛋️',
+  'Cama': '🛏️',
+  'Guarda-Roupa': '🪞',
+  'Colchão': '😴',
+  'Mesa': '🪑',
+  'Cadeira': '💺',
+  'Armário': '📦',
+  'Cômoda': '🗄️',
+  'Rack / Painel': '📺',
+  'Aparador': '🏮',
+  'Criado-Mudo': '💡',
+  'Estante': '📚',
+  'Cristaleira': '✨',
+  'Cozinha': '🍳',
+  'Home / Rack': '🏠',
+  'Outros': '🛒',
+};
+
+const DIFERENCIAIS = [
+  {
+    icone: '🚚',
+    titulo: 'Entrega na Região',
+    descricao: 'Entregamos em Ribeirão Pires e toda a região do Grande ABC com agilidade e cuidado.',
+  },
+  {
+    icone: '🔧',
+    titulo: 'Montagem Inclusa',
+    descricao: 'Nossos profissionais montam os móveis no seu ambiente sem custo adicional.',
+  },
+  {
+    icone: '💬',
+    titulo: 'Atendimento Personalizado',
+    descricao: 'Time especializado pronto para ajudar você a escolher o móvel ideal pelo WhatsApp.',
+  },
+  {
+    icone: '✅',
+    titulo: 'Qualidade Garantida',
+    descricao: 'Trabalhamos com marcas reconhecidas e produtos com garantia de fábrica.',
+  },
+];
+
+export default function HomePage() {
+  const produtos = todosOsProdutos();
+  const categorias = todasCategorias();
+  const produtosDestaque = produtos.slice(0, 8);
+
+  const localBusinessJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FurnitureStore',
+    name: 'Casa Sinelli — Móveis & Colchões',
+    url: 'https://casasinelli.com.br',
+    telephone: '+55-11-97177-6165',
+    email: 'contato@casasinelli.com.br',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Av. Francisco Monteiro, 1320',
+      addressLocality: 'Ribeirão Pires',
+      addressRegion: 'SP',
+      postalCode: '09400-000',
+      addressCountry: 'BR',
+    },
+    openingHoursSpecification: [
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '09:00', closes: '18:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday'], opens: '09:00', closes: '17:00' },
+    ],
+    geo: { '@type': 'GeoCoordinates', latitude: -23.7152, longitude: -46.4131 },
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+
+      {/* ─── HERO ─── */}
+      <section className="relative bg-marrom overflow-hidden">
+        {/* Grade de imagens ao fundo */}
+        <div className="absolute inset-0 grid grid-cols-4 gap-0.5 opacity-15 pointer-events-none">
+          {produtos.slice(0, 8).map((p) => {
+            const img = primeiraImagemDisplay(p);
+            return img ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={p.id}
+                src={`/api/catalogo${img}`}
+                alt=""
+                aria-hidden="true"
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div key={p.id} className="bg-marrom-escuro" />
+            );
+          })}
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 flex flex-col items-center text-center">
+          <p className="text-oliva-claro text-sm font-semibold uppercase tracking-widest mb-3">
+            Móveis &amp; Colchões
           </p>
+          <h1 className="font-serif text-4xl sm:text-6xl font-bold text-white leading-tight max-w-3xl">
+            Transforme sua <span className="text-marrom-palido">casa</span> com elegância
+          </h1>
+          <p className="mt-6 text-white/70 text-lg max-w-xl leading-relaxed">
+            Mais de {produtos.length} produtos de qualidade para todos os ambientes. Atendemos em Ribeirão Pires e toda a região.
+          </p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center">
+            <Link
+              href="/catalogo"
+              className="bg-oliva hover:bg-oliva-escuro text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
+            >
+              Ver Catálogo
+            </Link>
+            <a
+              href="https://wa.me/5511971776165"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 flex items-center gap-2"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Falar no WhatsApp
+            </a>
+          </div>
+
+          {/* Info rápida */}
+          <div className="mt-10 flex flex-wrap justify-center gap-6 text-white/60 text-sm">
+            <span>📍 Ribeirão Pires - SP</span>
+            <span>🕐 Seg–Sex 9h–18h | Sáb 9h–17h</span>
+            <span>📱 (11) 97177-6165</span>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* ─── CATEGORIAS ─── */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="font-serif text-3xl font-bold text-marrom">Navegue por Categoria</h2>
+            <p className="text-gray-500 mt-2">Encontre exatamente o que você precisa</p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+            {categorias.map((cat) => (
+              <Link
+                key={cat.slug}
+                href={`/categoria/${cat.slug}`}
+                className="group flex flex-col items-center gap-2 bg-marrom-palido/50 hover:bg-marrom-palido rounded-2xl p-4 transition-all hover:shadow-md hover:-translate-y-0.5 border border-transparent hover:border-marrom/20"
+              >
+                <span className="text-3xl" aria-hidden="true">
+                  {ICONES_CATEGORIA[cat.nome] ?? '🪑'}
+                </span>
+                <span className="text-sm font-semibold text-marrom text-center leading-tight group-hover:text-marrom-escuro">
+                  {cat.nome}
+                </span>
+                <span className="text-xs text-gray-400">{cat.total} itens</span>
+              </Link>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* ─── PRODUTOS EM DESTAQUE ─── */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <h2 className="font-serif text-3xl font-bold text-marrom">Produtos em Destaque</h2>
+              <p className="text-gray-500 mt-1">Seleção especial do nosso catálogo</p>
+            </div>
+            <Link
+              href="/catalogo"
+              className="hidden sm:flex items-center gap-1 text-sm font-semibold text-marrom hover:text-marrom-escuro transition-colors"
+            >
+              Ver todos
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            {produtosDestaque.map((p) => (
+              <ProductCard key={p.id} produto={p} />
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/catalogo"
+              className="inline-block bg-marrom hover:bg-marrom-escuro text-white font-bold px-8 py-3 rounded-full transition-all hover:scale-105 shadow"
+            >
+              Ver catálogo completo — {produtos.length} produtos
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── DIFERENCIAIS ─── */}
+      <section className="py-16 bg-marrom">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="font-serif text-3xl font-bold text-white">Por que escolher a Casa Sinelli?</h2>
+            <p className="text-white/60 mt-2">Comprometidos com a sua satisfação</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {DIFERENCIAIS.map((d) => (
+              <div key={d.titulo} className="bg-marrom-escuro/50 rounded-2xl p-6 border border-white/10">
+                <div className="text-4xl mb-3">{d.icone}</div>
+                <h3 className="font-serif text-lg font-bold text-white mb-2">{d.titulo}</h3>
+                <p className="text-white/60 text-sm leading-relaxed">{d.descricao}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── LOCALIZAÇÃO ─── */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <h2 className="font-serif text-3xl font-bold text-marrom mb-6">Venha nos Visitar</h2>
+              <ul className="space-y-4">
+                <li className="flex gap-3 items-start">
+                  <span className="text-2xl">📍</span>
+                  <div>
+                    <p className="font-semibold text-marrom">Endereço</p>
+                    <p className="text-gray-600 text-sm mt-0.5">Av. Francisco Monteiro, 1320 — Vila Fiorentino<br />Ribeirão Pires - SP</p>
+                  </div>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-2xl">🕐</span>
+                  <div>
+                    <p className="font-semibold text-marrom">Horário de Funcionamento</p>
+                    <p className="text-gray-600 text-sm mt-0.5">Segunda à Sexta: 09h às 18h<br />Sábado: 09h às 17h</p>
+                  </div>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-2xl">📱</span>
+                  <div>
+                    <p className="font-semibold text-marrom">WhatsApp</p>
+                    <a href="https://wa.me/5511971776165" className="text-oliva hover:text-oliva-escuro text-sm font-medium transition-colors">
+                      (11) 97177-6165
+                    </a>
+                  </div>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-2xl">✉️</span>
+                  <div>
+                    <p className="font-semibold text-marrom">E-mail</p>
+                    <a href="mailto:contato@casasinelli.com.br" className="text-oliva hover:text-oliva-escuro text-sm font-medium transition-colors">
+                      contato@casasinelli.com.br
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/5511971776165?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos%20da%20Casa%20Sinelli."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-6 py-3 rounded-full transition-all hover:scale-105 shadow-md"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                Falar com Vendedor
+              </a>
+            </div>
+            <Map />
+          </div>
+        </div>
+      </section>
+
+      {/* ─── CTA FINAL ─── */}
+      <section className="py-16 bg-oliva">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
+            Pronto para renovar sua casa?
+          </h2>
+          <p className="text-white/80 text-lg mb-8">
+            Fale com um de nossos especialistas agora mesmo e tire todas as suas dúvidas.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://wa.me/5511971776165?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20produtos%20da%20Casa%20Sinelli."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Chamar no WhatsApp
+            </a>
+            <Link
+              href="/catalogo"
+              className="flex items-center justify-center bg-white hover:bg-marrom-palido text-oliva-escuro font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:shadow-xl transition-all hover:scale-105"
+            >
+              Ver Catálogo
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
