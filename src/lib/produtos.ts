@@ -53,6 +53,11 @@ export function primeiraImagemDisplay(produto: Produto): string | null {
   return null;
 }
 
+// capa do card: usa capa pre-selecionada no script (P1), fallback 1a imagem display
+export function capaProduto(produto: Produto): string | null {
+  return produto.capa ?? primeiraImagemDisplay(produto);
+}
+
 export function imagensDisplayDaVariacao(produto: Produto, cor: string): string[] {
   const variacao = produto.variacoes.find((v) => v.cor === cor);
   return (variacao?.imagens ?? []).filter(isImagemDisplay);

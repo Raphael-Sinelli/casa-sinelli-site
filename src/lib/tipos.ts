@@ -15,6 +15,7 @@ export interface Produto {
   informacoes: string | null;
   linkReferencia: string | null;
   coresEstruturadas?: string[];
+  capa?: string | null;
   imagens: string[];
   variacoes: Variacao[];
   todasImagens: string[];

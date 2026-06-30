@@ -1,31 +1,40 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { todosOsProdutos, todasCategorias, primeiraImagemDisplay } from '@/lib/produtos';
+import { todosOsProdutos, todasCategorias, capaProduto } from '@/lib/produtos';
 import ProductCard from '@/components/ProductCard';
 import Map from '@/components/Map';
+import {
+  DoorClosed, Sofa, Archive, Inbox, ChefHat, Tv, BedDouble, UtensilsCrossed,
+  LayoutGrid, Bed, Armchair, PanelTop, Sparkles, Plug, PenTool, Baby, Box,
+  type LucideIcon,
+} from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Casa Sinelli — Móveis & Colchões em Ribeirão Pires',
   description: 'Móveis e colchões com qualidade e elegância. Guarda-roupas, sofás, camas, colchões e muito mais. Visite nossa loja em Ribeirão Pires - SP ou fale pelo WhatsApp.',
 };
 
-const ICONES_CATEGORIA: Record<string, string> = {
-  'Sofá': '🛋️',
-  'Cama': '🛏️',
-  'Guarda-Roupa': '🪞',
-  'Colchão': '😴',
-  'Mesa': '🪑',
-  'Cadeira': '💺',
-  'Armário': '📦',
-  'Cômoda': '🗄️',
-  'Rack / Painel': '📺',
-  'Aparador': '🏮',
-  'Criado-Mudo': '💡',
-  'Estante': '📚',
-  'Cristaleira': '✨',
-  'Cozinha': '🍳',
-  'Home / Rack': '🏠',
-  'Outros': '🛒',
+const ICONES_CATEGORIA: Record<string, LucideIcon> = {
+  'Guarda-Roupa': DoorClosed,
+  'Sofá': Sofa,
+  'Armário': Archive,
+  'Cômoda': Inbox,
+  'Cozinha': ChefHat,
+  'Rack/Painel': Tv,
+  'Colchão': BedDouble,
+  'Mesa': UtensilsCrossed,
+  'Multiuso': LayoutGrid,
+  'Cama': Bed,
+  'Poltrona': Armchair,
+  'Beliche': Bed,
+  'Cadeira': Armchair,
+  'Cabeceira': PanelTop,
+  'Penteadeira': Sparkles,
+  'Eletrodoméstico': Plug,
+  'Escrivaninha': PenTool,
+  'Berço': Baby,
+  'Balcão': Box,
+  'Bicama': Bed,
 };
 
 const DIFERENCIAIS = [
@@ -90,7 +99,7 @@ export default function HomePage() {
         {/* Grade de imagens ao fundo */}
         <div className="absolute inset-0 grid grid-cols-4 gap-0.5 opacity-15 pointer-events-none">
           {produtos.slice(0, 8).map((p) => {
-            const img = primeiraImagemDisplay(p);
+            const img = capaProduto(p);
             return img ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
@@ -159,9 +168,10 @@ export default function HomePage() {
                 href={`/categoria/${cat.slug}`}
                 className="group flex flex-col items-center gap-2 bg-marrom-palido/50 hover:bg-marrom-palido rounded-2xl p-4 transition-all hover:shadow-md hover:-translate-y-0.5 border border-transparent hover:border-marrom/20"
               >
-                <span className="text-3xl" aria-hidden="true">
-                  {ICONES_CATEGORIA[cat.nome] ?? '🪑'}
-                </span>
+                {(() => {
+                  const Icone = ICONES_CATEGORIA[cat.nome] ?? Armchair;
+                  return <Icone className="w-8 h-8 text-marrom" strokeWidth={1.5} aria-hidden="true" />;
+                })()}
                 <span className="text-sm font-semibold text-marrom text-center leading-tight group-hover:text-marrom-escuro">
                   {cat.nome}
                 </span>

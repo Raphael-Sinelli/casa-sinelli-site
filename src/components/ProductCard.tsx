@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Produto } from '@/lib/tipos';
-import { primeiraImagemDisplay, mensagemWhatsApp, imagemUrl } from '@/lib/produtos';
+import { capaProduto, mensagemWhatsApp, imagemUrl } from '@/lib/produtos';
 
 interface Props {
   produto: Produto;
@@ -23,19 +23,19 @@ function ImagemProduto({ src, alt }: { src: string | null; alt: string }) {
       src={imagemUrl(src)}
       alt={alt}
       loading="lazy"
-      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-500"
     />
   );
 }
 
 export default function ProductCard({ produto }: Props) {
-  const imagem = primeiraImagemDisplay(produto);
+  const imagem = capaProduto(produto);
   const whatsappUrl = mensagemWhatsApp(produto.nome);
 
   return (
     <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-gray-100 flex flex-col group">
       {/* Imagem */}
-      <Link href={`/produto/${produto.id}`} className="block relative overflow-hidden aspect-[4/3] bg-marrom-palido/30">
+      <Link href={`/produto/${produto.id}`} className="block relative overflow-hidden aspect-[4/3] bg-marrom-palido">
         <ImagemProduto src={imagem} alt={produto.nome} />
         {/* Badge categoria */}
         <span className="absolute top-2 left-2 bg-marrom/80 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full">
@@ -51,6 +51,7 @@ export default function ProductCard({ produto }: Props) {
               {produto.nome}
             </h3>
           </Link>
+          <p className="text-sm text-marrom/60 mt-1 font-medium">Consulte o preço</p>
         </div>
 
         {/* Botões */}
