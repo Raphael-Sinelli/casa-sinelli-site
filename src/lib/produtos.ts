@@ -68,7 +68,7 @@ export function buscarProdutos(produtos: Produto[], query: string): Produto[] {
   if (!q) return produtos;
   return produtos.filter(
     (p) =>
-      p.nomePasta.toLowerCase().includes(q) ||
+      p.nome.toLowerCase().includes(q) ||
       p.categoria.toLowerCase().includes(q)
   );
 }

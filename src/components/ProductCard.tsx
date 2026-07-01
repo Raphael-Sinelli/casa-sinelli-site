@@ -30,13 +30,13 @@ function ImagemProduto({ src, alt }: { src: string | null; alt: string }) {
 
 export default function ProductCard({ produto }: Props) {
   const imagem = capaProduto(produto);
-  const whatsappUrl = mensagemWhatsApp(produto.nomePasta);
+  const whatsappUrl = mensagemWhatsApp(produto.nome);
 
   return (
     <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-gray-100 flex flex-col group">
       {/* Imagem */}
       <Link href={`/produto/${produto.id}`} className="block relative overflow-hidden aspect-[4/3] bg-marrom-palido">
-        <ImagemProduto src={imagem} alt={produto.nomePasta} />
+        <ImagemProduto src={imagem} alt={produto.nome} />
         {/* Badge categoria */}
         <span className="absolute top-2 left-2 bg-marrom/80 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full">
           {produto.categoria}
@@ -48,7 +48,7 @@ export default function ProductCard({ produto }: Props) {
         <div className="flex-1">
           <Link href={`/produto/${produto.id}`}>
             <h3 className="font-serif text-marrom font-semibold text-base leading-snug hover:text-marrom-escuro transition-colors line-clamp-2">
-              {produto.nomePasta}
+              {produto.nome}
             </h3>
           </Link>
           <p className="text-sm text-marrom/60 mt-1 font-medium">Consulte o preço</p>
@@ -66,7 +66,7 @@ export default function ProductCard({ produto }: Props) {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Perguntar sobre ${produto.nomePasta} no WhatsApp`}
+            aria-label={`Perguntar sobre ${produto.nome} no WhatsApp`}
             className="flex items-center justify-center w-10 h-10 bg-[#25D366] hover:bg-[#1ebe5d] text-white rounded-lg transition-colors shrink-0"
           >
             <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden="true">

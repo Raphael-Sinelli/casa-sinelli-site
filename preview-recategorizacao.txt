@@ -1,0 +1,162 @@
+PREVIEW — RENOMEAÇÃO / RECATEGORIZAÇÃO (itens 3, 4, 5, 7)
+Data: 2026-07-01
+NADA foi alterado no código ainda. Aguardando aprovação.
+
+================================================================
+ITEM 3 — CATEGORIA "ARMÁRIO" (11 produtos, TODOS mal categorizados)
+================================================================
+Evidência usada: nome literal da subpasta física de cada produto (ex:
+/bechara/cristaleira/Elba, /quartaDivisão/fruteira/natasha, etc.) — não é
+suposição, é o nome que já está no caminho de arquivos.
+
+id=9   | atual: "Armário Cantinho do Café" / categoria "Armário"
+       | pasta: /Lukaliam/CantinhoDoCafé
+       | ACHADO: NÃO é cristaleira (sem portas de vidro). É um móvel aberto tipo
+       | bar/cantinho de café, com nichos, gancheiras e pegboard (foto conferida:
+       | "Lukaliam-Cantinho-do-Cafe-Menta-e-Tauri-Ripado-Ambiente-scaled.jpg").
+       | PROPOSTA: manter nome "Cantinho do Café", categoria própria
+       | "Cantinho do Café" (não existe categoria melhor pronta pra isso).
+       | *** PRECISA SUA CONFIRMAÇÃO — diverge do que você sugeriu (cristaleira) ***
+
+id=21  | atual: "Buffet Benicio" / categoria "Armário"
+       | pasta: /Viero/buffet
+       | PROPOSTA: categoria → "Buffet" (nome já está certo, só a categoria
+       | estava errada)
+
+id=39  | atual: "Armário Tamisa" / categoria "Armário"
+       | pasta: /bechara/aparador/tamisa
+       | PROPOSTA: nome → "Aparador Tamisa", categoria → "Aparador"
+
+id=41  | atual: "Armário Elba" / categoria "Armário"
+       | pasta: /bechara/cristaleira/Elba
+       | PROPOSTA: nome → "Cristaleira Elba", categoria → "Cristaleira"
+
+id=42  | atual: "Armário Madri" / categoria "Armário"
+       | pasta: /bechara/cristaleira/madri
+       | PROPOSTA: nome → "Cristaleira Madri", categoria → "Cristaleira"
+
+id=88  | atual: "Armário Sapateira Estela Giratória" / categoria "Armário"
+       | pasta: /lopas/SAPATEIRA ESTELA GIRATORIA CVDO
+       | PROPOSTA: nome → "Sapateira Estela Giratória", categoria → "Sapateira"
+
+id=106 | atual: "Buffet Gold" / categoria "Armário"
+       | pasta: /primus/buffet/gold
+       | PROPOSTA: categoria → "Buffet" (nome já está certo)
+
+id=107 | atual: "Armário Real" / categoria "Armário"
+       | pasta: /primus/buffet/real (arquivos "real 4 portas perola-mel.png" etc.)
+       | PROPOSTA: nome → "Buffet Real", categoria → "Buffet"
+
+id=110 | atual: "Armário Natasha" / categoria "Armário"
+       | pasta: /quartaDivisão/fruteira/natasha (arquivo
+       | "NATASHA-FRUTEIRA-BRANCO-1200x1200-1.jpg")
+       | PROPOSTA: nome → "Fruteira Natasha", categoria → "Fruteira"
+
+id=111 | atual: "Armário Talita" / categoria "Armário"
+       | pasta: /quartaDivisão/fruteira/talita (arquivo
+       | "TALITA-FRUTEIRA-BRanco-PTO-2016-.jpg")
+       | PROPOSTA: nome → "Fruteira Talita", categoria → "Fruteira"
+
+id=112 | atual: "Armário Safira" / categoria "Armário"
+       | pasta: /quartaDivisão/sapateira/safira (arquivo
+       | "SAFIRA-4-BASCULANTES-ABERTA-BRANCO.jpg" — isso É a "última foto
+       | mencionada como sapateira" que você lembrou; encontrada e corrigida aqui)
+       | PROPOSTA: nome → "Sapateira Safira", categoria → "Sapateira"
+
+>>> IMPACTO ESTRUTURAL: a categoria "Armário" ficaria com ZERO produtos e
+>>> desapareceria do menu lateral/categorias. Ela vira 5 categorias novas:
+>>> Buffet (3), Cristaleira (2), Fruteira (2), Sapateira (2), Aparador (1),
+>>> + Cantinho do Café (1, pendente de confirmação).
+
+================================================================
+ITEM 4 — CATEGORIA "RACK/PAINEL" (9 produtos)
+================================================================
+Evidência: nome da subpasta (rack / painel / home) + conferência visual de 3
+fotos-amostra (Dallas, Maresias, Juquehy) que confirmou o padrão: pasta "home"
+= conjunto rack+painel montado na mesma foto; pasta "rack" = só o rack baixo,
+TV sem painel de fundo; pasta "painel" = só o painel de parede, sem rack embaixo.
+
+id=43 | atual: "Rack/Painel Dallas"  | pasta: /bechara/home/dallas
+      | Foto confirma CONJUNTO (rack + painel na mesma peça)
+      | PROPOSTA: nome → "Rack e Painel Dallas", categoria → "Rack e Painel"
+
+id=44 | atual: "Rack/Painel Maresias" | pasta: /bechara/painel/maresias
+      | Foto confirma: só painel de parede (sem rack embaixo)
+      | PROPOSTA: nome → "Painel Maresias", categoria → "Painel"
+
+id=45 | atual: "Rack/Painel Navi" | pasta: /bechara/painel/navi
+      | PROPOSTA: nome → "Painel Navi", categoria → "Painel"
+
+id=46 | atual: "Rack/Painel Juquehy" | pasta: /bechara/rack/Juquehy
+      | Foto confirma: só rack baixo (TV direto na parede, sem painel)
+      | PROPOSTA: nome → "Rack Juquehy", categoria → "Rack"
+
+id=47 | atual: "Rack/Painel Topazio" | pasta: /bechara/rack/topazio
+      | PROPOSTA: nome → "Rack Topazio", categoria → "Rack"
+
+id=48 | atual: "Rack/Painel Turim" | pasta: /bechara/rack/turim
+      | PROPOSTA: nome → "Rack Turim", categoria → "Rack"
+
+id=49 | atual: "Rack/Painel Humaitá" | pasta: /colibri/HOME/Humaitá
+      | Foto confirma CONJUNTO (rack + painel)
+      | PROPOSTA: nome → "Rack e Painel Humaitá", categoria → "Rack e Painel"
+
+id=50 | atual: "Rack/Painel Bali" | pasta: /colibri/painel/bali
+      | PROPOSTA: nome → "Painel Bali", categoria → "Painel"
+
+id=52 | atual: "Rack/Painel Iza" | pasta: /dj/painel/iza
+      | PROPOSTA: nome → "Painel Iza", categoria → "Painel"
+
+>>> IMPACTO ESTRUTURAL: categoria "Rack/Painel" (9) vira 3 categorias:
+>>> "Painel" (4), "Rack" (3), "Rack e Painel" (2).
+
+================================================================
+ITEM 5 — "MESA DE CABECEIRA" (id=19, id=85)
+================================================================
+id=19 | "Mesa de Cabeceira Bari" (SantosAndira) | categoria atual: "Mesa"
+id=85 | "Mesa de Cabeceira Roma" (lanza)        | categoria atual: "Mesa"
+
+PROPOSTA: manter os nomes como estão (já corretos), criar categoria própria
+"Mesa de Cabeceira" pra esses 2, tirando do agrupamento genérico "Mesa"
+(que passa de 8 para 6 produtos).
+
+Obs.: NÃO uso a categoria "Cabeceira" já existente pra isso, porque
+"Cabeceira" no site hoje significa cabeceira de cama (ids 2 e 118, produtos
+bem diferentes — uma é peça de encosto de cama, outra é mesinha de criado-
+mudo). Misturar os dois na mesma categoria confundiria o cliente na navegação.
+
+================================================================
+ITEM 7 — BICAMA (id=65) VIRA CATEGORIA "CAMA"
+================================================================
+id=65 | "Bicama Conforte" (kamabel) | categoria atual: "Bicama" (categoria
+      | isolada, só esse 1 produto)
+PROPOSTA: categoria → "Cama" (nome do produto continua "Bicama Conforte",
+sem mudança de nome, só de categoria/filtro).
+
+Verificação de rotas: não há nenhum link fixo no código apontando pra
+/categoria/bicama, /categoria/armario ou /categoria/rack-painel (Header.tsx e
+Footer.tsx só fixam links pra Sofá/Cama/Guarda-Roupa/Colchão). As páginas de
+categoria são geradas dinamicamente a partir dos produtos, então remover uma
+categoria não quebra nenhuma rota — ela só deixa de existir no próximo build,
+sem 404 em lugar nenhum que aponte pra ela.
+
+================================================================
+FOLLOW-UP DE CÓDIGO NECESSÁRIO (se você aprovar o preview acima)
+================================================================
+Em src/app/page.tsx existe um mapa de ícone por categoria (ICONES_CATEGORIA)
+com chaves fixas: 'Armário', 'Rack/Painel', 'Bicama'. Se essas categorias
+deixarem de existir, essas chaves ficam órfãs (sem quebrar nada — o código já
+tem fallback pra ícone genérico Armchair) e as categorias NOVAS (Buffet,
+Cristaleira, Fruteira, Sapateira, Aparador, Cantinho do Café, Rack, Painel,
+"Rack e Painel", "Mesa de Cabeceira") vão aparecer com ícone genérico até eu
+adicionar entradas específicas pra elas. Vou fazer isso junto quando aplicar,
+pra não deixar ícone errado no menu.
+
+================================================================
+PONTO QUE PRECISA SUA DECISÃO ANTES DE EU APLICAR
+================================================================
+1. id=9 "Cantinho do Café" — confirma categoria própria "Cantinho do Café"
+   (não é cristaleira de verdade) ou prefere outro nome/categoria pra esse
+   item?
+Todo o restante do preview (itens 3, 4, 5, 7) pode ser aplicado como está,
+exceto esse ponto.

@@ -27,7 +27,7 @@
   },
   {
     "id": "2",
-    "nome": "Cabeceira",
+    "nome": "Cabeceira Jessica",
     "nomePasta": "cabeceira",
     "marca": "Cambel",
     "categoria": "Cabeceira",
@@ -49,7 +49,7 @@
   },
   {
     "id": "3",
-    "nome": "Cama",
+    "nome": "Cama Casal",
     "nomePasta": "CamaCasal",
     "marca": "Cambel",
     "categoria": "Cama",
@@ -69,7 +69,7 @@
   },
   {
     "id": "4",
-    "nome": "Cama",
+    "nome": "Cama Solteiro",
     "nomePasta": "CamaSolteiro",
     "marca": "Cambel",
     "categoria": "Cama",
@@ -95,7 +95,7 @@
   },
   {
     "id": "5",
-    "nome": "Cama",
+    "nome": "Cama Solteiro Bibox",
     "nomePasta": "CamaSolteiroBibox",
     "marca": "Cambel",
     "categoria": "Cama",
@@ -117,7 +117,7 @@
   },
   {
     "id": "6",
-    "nome": "Penteadeira",
+    "nome": "Penteadeira Carisma",
     "nomePasta": "penteadeira",
     "marca": "Demobile",
     "categoria": "Penteadeira",
@@ -137,7 +137,7 @@
   },
   {
     "id": "7",
-    "nome": "Eletrodoméstico",
+    "nome": "Eletrodoméstico Cooktop",
     "nomePasta": "cooktop",
     "marca": "Itatiaia",
     "categoria": "Eletrodoméstico",
@@ -159,7 +159,7 @@
   },
   {
     "id": "8",
-    "nome": "Eletrodoméstico",
+    "nome": "Eletrodoméstico Fogão",
     "nomePasta": "fogão",
     "marca": "Itatiaia",
     "categoria": "Eletrodoméstico",
@@ -184,10 +184,10 @@
   },
   {
     "id": "9",
-    "nome": "Armário",
+    "nome": "Cantinho do Café",
     "nomePasta": "CantinhoDoCafé",
     "marca": "Lukaliam",
-    "categoria": "Armário",
+    "categoria": "Buffet",
     "caminho": "/Lukaliam/CantinhoDoCafé",
     "subpastas": [],
     "medidas": "altura 150cm\r\nlargura 79,5cm\r\nprofundidade 41cm",
@@ -210,7 +210,7 @@
   },
   {
     "id": "10",
-    "nome": "Escrivaninha",
+    "nome": "Escrivaninha Vicenza",
     "nomePasta": "vicenza",
     "marca": "Lukaliam",
     "categoria": "Escrivaninha",
@@ -230,7 +230,7 @@
   },
   {
     "id": "11",
-    "nome": "Cômoda",
+    "nome": "Cômoda Fit",
     "nomePasta": "fit",
     "marca": "SantosAndira",
     "categoria": "Cômoda",
@@ -258,7 +258,7 @@
   },
   {
     "id": "12",
-    "nome": "Cômoda",
+    "nome": "Cômoda Ivai",
     "nomePasta": "ivai",
     "marca": "SantosAndira",
     "categoria": "Cômoda",
@@ -284,7 +284,7 @@
   },
   {
     "id": "13",
-    "nome": "Cômoda",
+    "nome": "Cômoda Pinhais",
     "nomePasta": "pinhais",
     "marca": "SantosAndira",
     "categoria": "Cômoda",
@@ -314,92 +314,48 @@
   },
   {
     "id": "14",
-    "nome": "Guarda-Roupa",
-    "nomePasta": "GR",
+    "nome": "Guarda-Roupa Buriti 4 Portas",
+    "nomePasta": "buriti4pts",
     "marca": "SantosAndira",
     "categoria": "Guarda-Roupa",
-    "caminho": "/SantosAndira/GR",
+    "caminho": "/SantosAndira/GR/buriti4pts",
     "subpastas": [],
     "medidas": null,
     "informacoes": null,
     "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
-    "capa": "/SantosAndira/GR/fit3pts/COLOQUE ESSA.png",
+    "capa": "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaAreia.jpg",
     "imagens": [],
     "variacoes": [
       {
-        "cor": "buriti4pts",
+        "cor": "Jatoba",
         "imagens": [
-          "/SantosAndira/GR/buriti4pts/162443-GR-Buriti-4-Portas-JTB-ARE-Interno.jpg",
-          "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_Jatoba.jpg",
+          "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_Jatoba.jpg"
+        ]
+      },
+      {
+        "cor": "JatobaAreia",
+        "imagens": [
           "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaAreia.jpg",
+          "/SantosAndira/GR/buriti4pts/162443-GR-Buriti-4-Portas-JTB-ARE-Interno.jpg"
+        ]
+      },
+      {
+        "cor": "JatobaGrafite",
+        "imagens": [
           "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaGrafite.jpg"
-        ]
-      },
-      {
-        "cor": "buriti6pts",
-        "imagens": [
-          "/SantosAndira/GR/buriti6pts/162343-GR-Buriti-6-Portas-JTB-ARE-Interno.jpg",
-          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_Jatoba.jpg",
-          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaAreia.jpg",
-          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaGrafite.jpg"
-        ]
-      },
-      {
-        "cor": "fit3pts",
-        "imagens": [
-          "/SantosAndira/GR/fit3pts/COLOQUE ESSA.png",
-          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_BRanco_FI_frontal-Amb.jpg",
-          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_JequitibaOff_Amb-150x150.jpg",
-          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_Amb.jpg",
-          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_FI_Aberto.jpg",
-          "/SantosAndira/GR/fit3pts/medidas.png"
-        ]
-      },
-      {
-        "cor": "fit4pts",
-        "imagens": [
-          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_BRanco_FI-Amb.jpg",
-          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_JequitibaOff_Amb.jpg",
-          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_Amb.jpg",
-          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_FI_Aberto.jpg"
-        ]
-      },
-      {
-        "cor": "fit6pts",
-        "imagens": [
-          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_JequitibaOff_Amb.jpg",
-          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_Amb.jpg",
-          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_FI_aberto.jpg"
         ]
       }
     ],
     "todasImagens": [
-      "/SantosAndira/GR/buriti4pts/162443-GR-Buriti-4-Portas-JTB-ARE-Interno.jpg",
       "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_Jatoba.jpg",
       "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaAreia.jpg",
-      "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaGrafite.jpg",
-      "/SantosAndira/GR/buriti6pts/162343-GR-Buriti-6-Portas-JTB-ARE-Interno.jpg",
-      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_Jatoba.jpg",
-      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaAreia.jpg",
-      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaGrafite.jpg",
-      "/SantosAndira/GR/fit3pts/COLOQUE ESSA.png",
-      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_BRanco_FI_frontal-Amb.jpg",
-      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_JequitibaOff_Amb-150x150.jpg",
-      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_Amb.jpg",
-      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_FI_Aberto.jpg",
-      "/SantosAndira/GR/fit3pts/medidas.png",
-      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_BRanco_FI-Amb.jpg",
-      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_JequitibaOff_Amb.jpg",
-      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_Amb.jpg",
-      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_FI_Aberto.jpg",
-      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_JequitibaOff_Amb.jpg",
-      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_Amb.jpg",
-      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_FI_aberto.jpg"
+      "/SantosAndira/GR/buriti4pts/162443-GR-Buriti-4-Portas-JTB-ARE-Interno.jpg",
+      "/SantosAndira/GR/buriti4pts/GR_Buriti04Portas_JatobaGrafite.jpg"
     ]
   },
   {
     "id": "15",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Fit Porta de Correr",
     "nomePasta": "fitPortaDeCorrer",
     "marca": "SantosAndira",
     "categoria": "Guarda-Roupa",
@@ -425,7 +381,7 @@
   },
   {
     "id": "16",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa França",
     "nomePasta": "frança",
     "marca": "SantosAndira",
     "categoria": "Guarda-Roupa",
@@ -453,7 +409,7 @@
   },
   {
     "id": "17",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Master",
     "nomePasta": "master",
     "marca": "SantosAndira",
     "categoria": "Guarda-Roupa",
@@ -481,7 +437,7 @@
   },
   {
     "id": "18",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Paranavai",
     "nomePasta": "paranavai",
     "marca": "SantosAndira",
     "categoria": "Guarda-Roupa",
@@ -509,10 +465,10 @@
   },
   {
     "id": "19",
-    "nome": "Mesa",
+    "nome": "Mesa de Cabeceira Bari",
     "nomePasta": "mesaDeCabeceira",
     "marca": "SantosAndira",
-    "categoria": "Mesa",
+    "categoria": "Mesa de Cabeceira",
     "caminho": "/SantosAndira/mesaDeCabeceira",
     "subpastas": [],
     "medidas": "Medidas\r\nAltura - 580 mm\r\nLargura - 448 mm\r\nProfundidade - 430 mm",
@@ -557,10 +513,10 @@
   },
   {
     "id": "21",
-    "nome": "Armário",
+    "nome": "Buffet Benicio",
     "nomePasta": "buffet",
     "marca": "Viero",
-    "categoria": "Armário",
+    "categoria": "Buffet",
     "caminho": "/Viero/buffet",
     "subpastas": [],
     "medidas": "largura 155,5cm\r\naltura 77cm\r\nprofundidade 41,5cm",
@@ -583,7 +539,7 @@
   },
   {
     "id": "22",
-    "nome": "Poltrona",
+    "nome": "Poltrona Flower",
     "nomePasta": "flower",
     "marca": "Viero",
     "categoria": "Poltrona",
@@ -607,7 +563,7 @@
   },
   {
     "id": "23",
-    "nome": "Poltrona",
+    "nome": "Poltrona Glamour",
     "nomePasta": "Glamour",
     "marca": "Viero",
     "categoria": "Poltrona",
@@ -629,7 +585,7 @@
   },
   {
     "id": "24",
-    "nome": "Poltrona",
+    "nome": "Poltrona Rebeca",
     "nomePasta": "Rebeca",
     "marca": "alpoim",
     "categoria": "Poltrona",
@@ -640,7 +596,7 @@
     "medidas": "Altura: 90 m\r\nLargura: 78 m\r\nProfundidade: 60 cm",
     "informacoes": null,
     "linkReferencia": "https://www.alpoimdistribuidorasp.com.br/",
-    "capa": "/alpoim/POLTRONAS/Rebeca/Caramelo/convertidas/IMG_7363.jpg",
+    "capa": "/alpoim/POLTRONAS/Rebeca/Azul/WhatsApp Image 2025-08-01 at 11.06.09.jpeg",
     "imagens": [],
     "variacoes": [
       {
@@ -908,7 +864,7 @@
   },
   {
     "id": "25",
-    "nome": "Sofá",
+    "nome": "Sofá Agar",
     "nomePasta": "Sofá Agar",
     "marca": "alpoim",
     "categoria": "Sofá",
@@ -1131,7 +1087,7 @@
   },
   {
     "id": "26",
-    "nome": "Sofá",
+    "nome": "Sofá Aline",
     "nomePasta": "Sofá Aline",
     "marca": "alpoim",
     "categoria": "Sofá",
@@ -1254,7 +1210,7 @@
   },
   {
     "id": "27",
-    "nome": "Sofá",
+    "nome": "Sofá Athenas",
     "nomePasta": "2Modulos",
     "marca": "alpoim",
     "categoria": "Sofá",
@@ -1322,7 +1278,7 @@
   },
   {
     "id": "28",
-    "nome": "Sofá",
+    "nome": "Sofá Athenas",
     "nomePasta": "3modulos",
     "marca": "alpoim",
     "categoria": "Sofá",
@@ -1380,7 +1336,7 @@
   },
   {
     "id": "29",
-    "nome": "Sofá",
+    "nome": "Sofá Fortaleza",
     "nomePasta": "Sofá Fortaleza",
     "marca": "alpoim",
     "categoria": "Sofá",
@@ -1531,7 +1487,7 @@
   },
   {
     "id": "30",
-    "nome": "Sofá",
+    "nome": "Sofá Isa",
     "nomePasta": "Sofá ISA",
     "marca": "alpoim",
     "categoria": "Sofá",
@@ -1763,7 +1719,7 @@
   },
   {
     "id": "31",
-    "nome": "Sofá",
+    "nome": "Sofá Manuela",
     "nomePasta": "Sofá Manuela",
     "marca": "alpoim",
     "categoria": "Sofá",
@@ -1964,7 +1920,7 @@
   },
   {
     "id": "32",
-    "nome": "Sofá",
+    "nome": "Sofá Recife",
     "nomePasta": "Sofá Recife",
     "marca": "alpoim",
     "categoria": "Sofá",
@@ -2355,7 +2311,7 @@
   },
   {
     "id": "33",
-    "nome": "Cadeira",
+    "nome": "Cadeira Max",
     "nomePasta": "cadeira",
     "marca": "açoNobre",
     "categoria": "Cadeira",
@@ -2397,7 +2353,7 @@
   },
   {
     "id": "35",
-    "nome": "Berço",
+    "nome": "Berço Magia",
     "nomePasta": "berço",
     "marca": "batrol",
     "categoria": "Berço",
@@ -2408,16 +2364,18 @@
     "linkReferencia": "https://batrol.com.br/catalogos/?gad_source=1&gad_campaignid=23170231352&gbraid=0AAAAAC133PddnG6fdIwRxOkUWf8EAUy0B&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pa41GFYSx_7LPA9TwljSLKiUwbcxWFDvqCHu4dogudr0xOhgiteec8aAraCEALw_wcB",
     "capa": "/batrol/berço/berco-simples-magia-branco (1).jpg",
     "imagens": [
-      "/batrol/berço/berco-simples-magia-branco (1).jpg"
+      "/batrol/berço/berco-simples-magia-branco (1).jpg",
+      "/batrol/conjunto/conjunto.png"
     ],
     "variacoes": [],
     "todasImagens": [
-      "/batrol/berço/berco-simples-magia-branco (1).jpg"
+      "/batrol/berço/berco-simples-magia-branco (1).jpg",
+      "/batrol/conjunto/conjunto.png"
     ]
   },
   {
     "id": "36",
-    "nome": "Cômoda",
+    "nome": "Cômoda Magia",
     "nomePasta": "comoda",
     "marca": "batrol",
     "categoria": "Cômoda",
@@ -2429,37 +2387,19 @@
     "capa": "/batrol/comoda/comoda-infantil-magia-1p-3g-branco.jpg",
     "imagens": [
       "/batrol/comoda/aberta.png",
-      "/batrol/comoda/comoda-infantil-magia-1p-3g-branco.jpg"
-    ],
-    "variacoes": [],
-    "todasImagens": [
-      "/batrol/comoda/aberta.png",
-      "/batrol/comoda/comoda-infantil-magia-1p-3g-branco.jpg"
-    ]
-  },
-  {
-    "id": "37",
-    "nome": "Multiuso",
-    "nomePasta": "conjunto",
-    "marca": "batrol",
-    "categoria": "Multiuso",
-    "caminho": "/batrol/conjunto",
-    "subpastas": [],
-    "medidas": null,
-    "informacoes": null,
-    "linkReferencia": "https://batrol.com.br/catalogos/?gad_source=1&gad_campaignid=23170231352&gbraid=0AAAAAC133PddnG6fdIwRxOkUWf8EAUy0B&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pa41GFYSx_7LPA9TwljSLKiUwbcxWFDvqCHu4dogudr0xOhgiteec8aAraCEALw_wcB",
-    "capa": "/batrol/conjunto/conjunto.png",
-    "imagens": [
+      "/batrol/comoda/comoda-infantil-magia-1p-3g-branco.jpg",
       "/batrol/conjunto/conjunto.png"
     ],
     "variacoes": [],
     "todasImagens": [
+      "/batrol/comoda/aberta.png",
+      "/batrol/comoda/comoda-infantil-magia-1p-3g-branco.jpg",
       "/batrol/conjunto/conjunto.png"
     ]
   },
   {
     "id": "38",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Magia",
     "nomePasta": "gr",
     "marca": "batrol",
     "categoria": "Guarda-Roupa",
@@ -2471,20 +2411,22 @@
     "capa": "/batrol/gr/guarda-roupa-infantil-magia-2p-2g-branco (3).jpg",
     "imagens": [
       "/batrol/gr/aberto.png",
-      "/batrol/gr/guarda-roupa-infantil-magia-2p-2g-branco (3).jpg"
+      "/batrol/gr/guarda-roupa-infantil-magia-2p-2g-branco (3).jpg",
+      "/batrol/conjunto/conjunto.png"
     ],
     "variacoes": [],
     "todasImagens": [
       "/batrol/gr/aberto.png",
-      "/batrol/gr/guarda-roupa-infantil-magia-2p-2g-branco (3).jpg"
+      "/batrol/gr/guarda-roupa-infantil-magia-2p-2g-branco (3).jpg",
+      "/batrol/conjunto/conjunto.png"
     ]
   },
   {
     "id": "39",
-    "nome": "Armário",
+    "nome": "Buffet Tamisa",
     "nomePasta": "tamisa",
     "marca": "bechara",
-    "categoria": "Armário",
+    "categoria": "Buffet",
     "caminho": "/bechara/aparador/tamisa",
     "subpastas": [
       "aparador"
@@ -2503,7 +2445,7 @@
   },
   {
     "id": "40",
-    "nome": "Cadeira",
+    "nome": "Cadeira Cantiga",
     "nomePasta": "cantiga",
     "marca": "bechara",
     "categoria": "Cadeira",
@@ -2535,10 +2477,10 @@
   },
   {
     "id": "41",
-    "nome": "Armário",
+    "nome": "Cristaleira Elba",
     "nomePasta": "Elba",
     "marca": "bechara",
-    "categoria": "Armário",
+    "categoria": "Cristaleira",
     "caminho": "/bechara/cristaleira/Elba",
     "subpastas": [
       "cristaleira"
@@ -2561,10 +2503,10 @@
   },
   {
     "id": "42",
-    "nome": "Armário",
+    "nome": "Cristaleira Madri",
     "nomePasta": "madri",
     "marca": "bechara",
-    "categoria": "Armário",
+    "categoria": "Cristaleira",
     "caminho": "/bechara/cristaleira/madri",
     "subpastas": [
       "cristaleira"
@@ -2583,10 +2525,10 @@
   },
   {
     "id": "43",
-    "nome": "Rack/Painel",
+    "nome": "Home Dallas",
     "nomePasta": "dallas",
     "marca": "bechara",
-    "categoria": "Rack/Painel",
+    "categoria": "Home",
     "caminho": "/bechara/home/dallas",
     "subpastas": [
       "home"
@@ -2607,10 +2549,10 @@
   },
   {
     "id": "44",
-    "nome": "Rack/Painel",
+    "nome": "Painel Maresias",
     "nomePasta": "maresias",
     "marca": "bechara",
-    "categoria": "Rack/Painel",
+    "categoria": "Painel",
     "caminho": "/bechara/painel/maresias",
     "subpastas": [
       "painel"
@@ -2631,10 +2573,10 @@
   },
   {
     "id": "45",
-    "nome": "Rack/Painel",
+    "nome": "Painel Navi",
     "nomePasta": "navi",
     "marca": "bechara",
-    "categoria": "Rack/Painel",
+    "categoria": "Painel",
     "caminho": "/bechara/painel/navi",
     "subpastas": [
       "painel"
@@ -2657,10 +2599,10 @@
   },
   {
     "id": "46",
-    "nome": "Rack/Painel",
+    "nome": "Rack Juquehy",
     "nomePasta": "Juquehy",
     "marca": "bechara",
-    "categoria": "Rack/Painel",
+    "categoria": "Rack",
     "caminho": "/bechara/rack/Juquehy",
     "subpastas": [
       "rack"
@@ -2683,10 +2625,10 @@
   },
   {
     "id": "47",
-    "nome": "Rack/Painel",
+    "nome": "Rack Topazio",
     "nomePasta": "topazio",
     "marca": "bechara",
-    "categoria": "Rack/Painel",
+    "categoria": "Rack",
     "caminho": "/bechara/rack/topazio",
     "subpastas": [
       "rack"
@@ -2709,10 +2651,10 @@
   },
   {
     "id": "48",
-    "nome": "Rack/Painel",
+    "nome": "Rack Turim",
     "nomePasta": "turim",
     "marca": "bechara",
-    "categoria": "Rack/Painel",
+    "categoria": "Rack",
     "caminho": "/bechara/rack/turim",
     "subpastas": [
       "rack"
@@ -2735,10 +2677,10 @@
   },
   {
     "id": "49",
-    "nome": "Rack/Painel",
+    "nome": "Home Humaitá",
     "nomePasta": "Humaitá",
     "marca": "colibri",
-    "categoria": "Rack/Painel",
+    "categoria": "Home",
     "caminho": "/colibri/HOME/Humaitá",
     "subpastas": [
       "HOME"
@@ -2773,10 +2715,10 @@
   },
   {
     "id": "50",
-    "nome": "Rack/Painel",
+    "nome": "Painel Bali",
     "nomePasta": "bali",
     "marca": "colibri",
-    "categoria": "Rack/Painel",
+    "categoria": "Painel",
     "caminho": "/colibri/painel/bali",
     "subpastas": [
       "painel"
@@ -2815,7 +2757,7 @@
   },
   {
     "id": "51",
-    "nome": "Mesa",
+    "nome": "Mesa Marina",
     "nomePasta": "marina",
     "marca": "dj",
     "categoria": "Mesa",
@@ -2849,10 +2791,10 @@
   },
   {
     "id": "52",
-    "nome": "Rack/Painel",
+    "nome": "Painel Iza",
     "nomePasta": "iza",
     "marca": "dj",
-    "categoria": "Rack/Painel",
+    "categoria": "Painel",
     "caminho": "/dj/painel/iza",
     "subpastas": [
       "painel"
@@ -2872,24 +2814,8 @@
     ]
   },
   {
-    "id": "53",
-    "nome": "Colchão",
-    "nomePasta": "colchao",
-    "marca": "ecoflex",
-    "categoria": "Colchão",
-    "caminho": "/ecoflex/colchao",
-    "subpastas": [],
-    "medidas": null,
-    "informacoes": null,
-    "linkReferencia": "https://www.colchoesecoflex.com.br/\r\nhttps://www.ecoflex.ind.br/colchao-ideal/",
-    "capa": null,
-    "imagens": [],
-    "variacoes": [],
-    "todasImagens": []
-  },
-  {
     "id": "54",
-    "nome": "Colchão",
+    "nome": "Colchão Espuma",
     "nomePasta": "espuma",
     "marca": "ecoflex",
     "categoria": "Colchão",
@@ -2918,7 +2844,7 @@
   },
   {
     "id": "55",
-    "nome": "Colchão",
+    "nome": "Colchão Floral",
     "nomePasta": "floral",
     "marca": "ecoflex",
     "categoria": "Colchão",
@@ -2969,7 +2895,7 @@
   },
   {
     "id": "56",
-    "nome": "Colchão",
+    "nome": "Colchão Lisboa",
     "nomePasta": "lisboa",
     "marca": "hellen",
     "categoria": "Colchão",
@@ -3011,7 +2937,7 @@
   },
   {
     "id": "57",
-    "nome": "Colchão",
+    "nome": "Colchão Omega",
     "nomePasta": "omega",
     "marca": "hellen",
     "categoria": "Colchão",
@@ -3062,23 +2988,27 @@
     "medidas": null,
     "informacoes": null,
     "linkReferencia": null,
-    "capa": "/hellen/sofa/courinopremium/courino.png",
+    "capa": "/hellen/sofa/courinopremium/sofas_ambiente.png",
     "imagens": [],
     "variacoes": [
       {
         "cor": "courinopremium",
         "imagens": [
+          "/hellen/sofa/courinopremium/sofas_ambiente.png",
+          "/hellen/sofa/courinopremium/sofas_fundo_branco.png",
           "/hellen/sofa/courinopremium/courino.png"
         ]
       }
     ],
     "todasImagens": [
+      "/hellen/sofa/courinopremium/sofas_ambiente.png",
+      "/hellen/sofa/courinopremium/sofas_fundo_branco.png",
       "/hellen/sofa/courinopremium/courino.png"
     ]
   },
   {
     "id": "59",
-    "nome": "Balcão",
+    "nome": "Balcão Cooktop",
     "nomePasta": "balcãoCooktop",
     "marca": "indekes",
     "categoria": "Balcão",
@@ -3102,7 +3032,7 @@
   },
   {
     "id": "60",
-    "nome": "Cozinha",
+    "nome": "Cozinha Firenze",
     "nomePasta": "firenze",
     "marca": "indekes",
     "categoria": "Cozinha",
@@ -3144,7 +3074,7 @@
   },
   {
     "id": "61",
-    "nome": "Cozinha",
+    "nome": "Cozinha Monza",
     "nomePasta": "monza",
     "marca": "indekes",
     "categoria": "Cozinha",
@@ -3197,7 +3127,7 @@
   },
   {
     "id": "62",
-    "nome": "Cozinha",
+    "nome": "Cozinha Kit Braga",
     "nomePasta": "KitBraga",
     "marca": "indekes",
     "categoria": "Cozinha",
@@ -3223,7 +3153,7 @@
   },
   {
     "id": "63",
-    "nome": "Cozinha",
+    "nome": "Cozinha Kit Porto",
     "nomePasta": "kitPorto",
     "marca": "indekes",
     "categoria": "Cozinha",
@@ -3249,7 +3179,7 @@
   },
   {
     "id": "64",
-    "nome": "Cozinha",
+    "nome": "Cozinha Kit Sintra",
     "nomePasta": "kitSintra",
     "marca": "indekes",
     "categoria": "Cozinha",
@@ -3275,27 +3205,27 @@
   },
   {
     "id": "65",
-    "nome": "Bicama",
-    "nomePasta": "Bicama",
+    "nome": "Bicama Conforte",
+    "nomePasta": "Bicama Conforte",
     "marca": "kamabel",
-    "categoria": "Bicama",
-    "caminho": "/kamabel/Bicama",
+    "categoria": "Cama",
+    "caminho": "/kamabel/Bicama Conforte",
     "subpastas": [],
     "medidas": "Largura: 100 cm; - Comprimento: 196 cm; - Altura: 80 cm;",
     "informacoes": "Prazos de entrega rápido, qualidade, conforto, segurança, atendendo seu estilo e espaço disponível !!\r\nCaracterísticas\r\n- Para Colchão 0.88 x 1.88;\r\n- Produto fabricado em 100% Madeira Maciça Pinus;\r\n- Espessuras dos pês 0.8 x 0.8 cm;\r\n- Grade Lateral maciça reforçada;\r\n- Possui Estrado Reforçado;\r\n- Exclusiva Grade de Proteção na parte lateral;\r\n- Suporta no Máximo 150kg;\r\n- Possui um Fino Acabamento;\r\n- Rodízios na cama auxiliar;\r\n- Ripas e sarrafos do estrado em madeira maciça;\r\n- Indica-se na cama auxiliar colchões com máximo 14cm de altura;\r\n- Produto versátil encaixa em vários ambientes;\r\n- Lindo design;\r\n- Largura: 100 cm; - Comprimento: 196 cm; - Altura: 80 cm; - Cor: Castanho.",
     "linkReferencia": "https://www.saimysmoveis.com.br/marca/kamabel.html",
-    "capa": "/kamabel/Bicama/bicama.png",
+    "capa": "/kamabel/Bicama Conforte/bicama.png",
     "imagens": [
-      "/kamabel/Bicama/bicama.png"
+      "/kamabel/Bicama Conforte/bicama.png"
     ],
     "variacoes": [],
     "todasImagens": [
-      "/kamabel/Bicama/bicama.png"
+      "/kamabel/Bicama Conforte/bicama.png"
     ]
   },
   {
     "id": "66",
-    "nome": "Beliche",
+    "nome": "Beliche Italia",
     "nomePasta": "beliche",
     "marca": "kamabel",
     "categoria": "Beliche",
@@ -3319,7 +3249,7 @@
   },
   {
     "id": "67",
-    "nome": "Cama",
+    "nome": "Cama Casal Italia",
     "nomePasta": "camaCasal",
     "marca": "kamabel",
     "categoria": "Cama",
@@ -3343,7 +3273,7 @@
   },
   {
     "id": "68",
-    "nome": "Cama",
+    "nome": "Cama Solteiro Italia",
     "nomePasta": "camaSolteiro",
     "marca": "kamabel",
     "categoria": "Cama",
@@ -3367,7 +3297,7 @@
   },
   {
     "id": "69",
-    "nome": "Beliche",
+    "nome": "Triliche Italia",
     "nomePasta": "triliche",
     "marca": "kamabel",
     "categoria": "Beliche",
@@ -3391,7 +3321,7 @@
   },
   {
     "id": "70",
-    "nome": "Beliche",
+    "nome": "Beliche Palmo",
     "nomePasta": "palmo",
     "marca": "kamabel",
     "categoria": "Beliche",
@@ -3413,7 +3343,7 @@
   },
   {
     "id": "71",
-    "nome": "Cozinha",
+    "nome": "Cozinha Colors",
     "nomePasta": "cozinha",
     "marca": "kitsParana",
     "categoria": "Cozinha",
@@ -3442,7 +3372,7 @@
   },
   {
     "id": "72",
-    "nome": "Cozinha",
+    "nome": "Cozinha Kit Liv",
     "nomePasta": "KitLiv",
     "marca": "kitsParana",
     "categoria": "Cozinha",
@@ -3468,7 +3398,7 @@
   },
   {
     "id": "73",
-    "nome": "Cozinha",
+    "nome": "Cozinha Kit Nature",
     "nomePasta": "kitNature",
     "marca": "kitsParana",
     "categoria": "Cozinha",
@@ -3494,7 +3424,7 @@
   },
   {
     "id": "74",
-    "nome": "Cozinha",
+    "nome": "Cozinha Kit Zen",
     "nomePasta": "kitZen",
     "marca": "kitsParana",
     "categoria": "Cozinha",
@@ -3520,11 +3450,11 @@
   },
   {
     "id": "75",
-    "nome": "Cama",
-    "nomePasta": "cama",
+    "nome": "Cama Montreal",
+    "nomePasta": "Cama Montreal",
     "marca": "lanza",
     "categoria": "Cama",
-    "caminho": "/lanza/cama",
+    "caminho": "/lanza/cama/casal/Cama Montreal",
     "subpastas": [],
     "medidas": null,
     "informacoes": null,
@@ -3533,54 +3463,51 @@
     "imagens": [],
     "variacoes": [
       {
-        "cor": "casal",
+        "cor": "Branco",
         "imagens": [
-          "/lanza/cama/casal/Cama Montreal/Cama Montreal - Branco-tif.png",
           "/lanza/cama/casal/Cama Montreal/Cama Montreal - Branco.jpg",
-          "/lanza/cama/casal/Cama Montreal/Cama Montreal - Cedro.jpg",
-          "/lanza/cama/casal/Cama Montreal/Cama Montreal - Cedro.png",
-          "/lanza/cama/casal/Cama Montreal/Cama Montreal - Ipe.jpg",
-          "/lanza/cama/casal/Cama Montreal/Cama Montreal - Ipe.png",
+          "/lanza/cama/casal/Cama Montreal/Cama Montreal - Branco-tif.png",
           "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Branco.jpg",
-          "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Branco.png",
-          "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Cedro.jpg",
-          "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Cedro.png",
-          "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Ipe.jpg",
-          "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Ipe.png"
+          "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Branco.png"
         ]
       },
       {
-        "cor": "solteiro",
+        "cor": "Cedro",
         "imagens": [
-          "/lanza/cama/solteiro/Cama Solteiro Siena/Cama Solteiro Siena - Branco.jpg",
-          "/lanza/cama/solteiro/Cama Solteiro Siena/Cama Solteiro Siena - Branco.png",
-          "/lanza/cama/solteiro/Cama Solteiro Siena/Estrado Cama Solteiro Siena - Branco.jpg",
-          "/lanza/cama/solteiro/Cama Solteiro Siena/Estrado Cama Solteiro Siena - Branco.png"
+          "/lanza/cama/casal/Cama Montreal/Cama Montreal - Cedro.jpg",
+          "/lanza/cama/casal/Cama Montreal/Cama Montreal - Cedro.png",
+          "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Cedro.jpg",
+          "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Ipe",
+        "imagens": [
+          "/lanza/cama/casal/Cama Montreal/Cama Montreal - Ipe.jpg",
+          "/lanza/cama/casal/Cama Montreal/Cama Montreal - Ipe.png",
+          "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Ipe.jpg",
+          "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Ipe.png"
         ]
       }
     ],
     "todasImagens": [
-      "/lanza/cama/casal/Cama Montreal/Cama Montreal - Branco-tif.png",
       "/lanza/cama/casal/Cama Montreal/Cama Montreal - Branco.jpg",
-      "/lanza/cama/casal/Cama Montreal/Cama Montreal - Cedro.jpg",
-      "/lanza/cama/casal/Cama Montreal/Cama Montreal - Cedro.png",
-      "/lanza/cama/casal/Cama Montreal/Cama Montreal - Ipe.jpg",
-      "/lanza/cama/casal/Cama Montreal/Cama Montreal - Ipe.png",
+      "/lanza/cama/casal/Cama Montreal/Cama Montreal - Branco-tif.png",
       "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Branco.jpg",
       "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Branco.png",
+      "/lanza/cama/casal/Cama Montreal/Cama Montreal - Cedro.jpg",
+      "/lanza/cama/casal/Cama Montreal/Cama Montreal - Cedro.png",
       "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Cedro.jpg",
       "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Cedro.png",
+      "/lanza/cama/casal/Cama Montreal/Cama Montreal - Ipe.jpg",
+      "/lanza/cama/casal/Cama Montreal/Cama Montreal - Ipe.png",
       "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Ipe.jpg",
-      "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Ipe.png",
-      "/lanza/cama/solteiro/Cama Solteiro Siena/Cama Solteiro Siena - Branco.jpg",
-      "/lanza/cama/solteiro/Cama Solteiro Siena/Cama Solteiro Siena - Branco.png",
-      "/lanza/cama/solteiro/Cama Solteiro Siena/Estrado Cama Solteiro Siena - Branco.jpg",
-      "/lanza/cama/solteiro/Cama Solteiro Siena/Estrado Cama Solteiro Siena - Branco.png"
+      "/lanza/cama/casal/Cama Montreal/Cama Montreal sem colchão - Ipe.png"
     ]
   },
   {
     "id": "76",
-    "nome": "Cômoda",
+    "nome": "Cômoda Carrara",
     "nomePasta": "Cômoda Carrara",
     "marca": "lanza",
     "categoria": "Cômoda",
@@ -3624,7 +3551,7 @@
   },
   {
     "id": "77",
-    "nome": "Cômoda",
+    "nome": "Cômoda Ibiza",
     "nomePasta": "Cômoda Ibiza",
     "marca": "lanza",
     "categoria": "Cômoda",
@@ -3676,7 +3603,7 @@
   },
   {
     "id": "78",
-    "nome": "Cômoda",
+    "nome": "Cômoda Messina",
     "nomePasta": "Cômoda Messina",
     "marca": "lanza",
     "categoria": "Cômoda",
@@ -3728,7 +3655,7 @@
   },
   {
     "id": "79",
-    "nome": "Cômoda",
+    "nome": "Cômoda Paris",
     "nomePasta": "Cômoda Paris",
     "marca": "lanza",
     "categoria": "Cômoda",
@@ -3788,7 +3715,7 @@
   },
   {
     "id": "80",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Dubai",
     "nomePasta": "Roupeiro Dubai",
     "marca": "lanza",
     "categoria": "Guarda-Roupa",
@@ -3840,7 +3767,7 @@
   },
   {
     "id": "81",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Genova",
     "nomePasta": "Roupeiro Genova",
     "marca": "lanza",
     "categoria": "Guarda-Roupa",
@@ -3876,7 +3803,7 @@
   },
   {
     "id": "82",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Lion",
     "nomePasta": "Roupeiro Lion",
     "marca": "lanza",
     "categoria": "Guarda-Roupa",
@@ -3916,7 +3843,7 @@
   },
   {
     "id": "83",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Padua",
     "nomePasta": "Roupeiro Padua",
     "marca": "lanza",
     "categoria": "Guarda-Roupa",
@@ -3956,7 +3883,7 @@
   },
   {
     "id": "84",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Veneto",
     "nomePasta": "Roupeiro Veneto",
     "marca": "lanza",
     "categoria": "Guarda-Roupa",
@@ -3992,10 +3919,10 @@
   },
   {
     "id": "85",
-    "nome": "Mesa",
+    "nome": "Mesa de Cabeceira Roma",
     "nomePasta": "Mesa de Cabeceira Roma",
     "marca": "lanza",
-    "categoria": "Mesa",
+    "categoria": "Mesa de Cabeceira",
     "caminho": "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma",
     "subpastas": [
       "mesa de cabeceira"
@@ -4003,7 +3930,7 @@
     "medidas": "altura 70cm\r\nlargura 50cm\r\nprofundidade 40cm",
     "informacoes": null,
     "linkReferencia": null,
-    "capa": "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro.png",
+    "capa": "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Ipe.jpg",
     "imagens": [
       "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Branco.jpg",
       "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Branco.png",
@@ -4044,10 +3971,10 @@
   },
   {
     "id": "86",
-    "nome": "Mesa",
+    "nome": "Escrivaninha Potenza Plus",
     "nomePasta": "Mesa Potenza Plus",
     "marca": "lanza",
-    "categoria": "Mesa",
+    "categoria": "Escrivaninha",
     "caminho": "/lanza/mesa de computador/Mesa Potenza Plus",
     "subpastas": [
       "mesa de computador"
@@ -4076,7 +4003,7 @@
   },
   {
     "id": "87",
-    "nome": "Multiuso",
+    "nome": "Multiuso Torino",
     "nomePasta": "Multiuso Torino",
     "marca": "lanza",
     "categoria": "Multiuso",
@@ -4087,7 +4014,7 @@
     "medidas": "Multiuso Torino: 188 cm de altura × 70 cm de largura × 45 cm de profundidade.",
     "informacoes": null,
     "linkReferencia": null,
-    "capa": "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.png",
+    "capa": "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.jpg",
     "imagens": [
       "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Branco.jpg",
       "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Branco.png",
@@ -4120,10 +4047,10 @@
   },
   {
     "id": "88",
-    "nome": "Armário",
+    "nome": "Sapateira Estela Giratória",
     "nomePasta": "SAPATEIRA ESTELA GIRATORIA CVDO",
     "marca": "lopas",
-    "categoria": "Armário",
+    "categoria": "Sapateira",
     "caminho": "/lopas/SAPATEIRA ESTELA GIRATORIA CVDO",
     "subpastas": [],
     "medidas": "Altura: 187cm\r\nLargura: 65cm\r\nProfundidade: 65cm",
@@ -4142,7 +4069,7 @@
   },
   {
     "id": "89",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Veneza",
     "nomePasta": "guarda roupa modulado",
     "marca": "luciane",
     "categoria": "Guarda-Roupa",
@@ -4164,7 +4091,7 @@
   },
   {
     "id": "90",
-    "nome": "Mesa",
+    "nome": "Mesa Modelar",
     "nomePasta": "mesaEcadeira",
     "marca": "modelar",
     "categoria": "Mesa",
@@ -4196,7 +4123,7 @@
   },
   {
     "id": "91",
-    "nome": "Cômoda",
+    "nome": "Cômoda MS913",
     "nomePasta": "ms913",
     "marca": "moval",
     "categoria": "Cômoda",
@@ -4218,7 +4145,7 @@
   },
   {
     "id": "92",
-    "nome": "Cômoda",
+    "nome": "Cômoda Texas",
     "nomePasta": "texas",
     "marca": "moval",
     "categoria": "Cômoda",
@@ -4242,7 +4169,7 @@
   },
   {
     "id": "93",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Araguaia",
     "nomePasta": "araguaia",
     "marca": "moval",
     "categoria": "Guarda-Roupa",
@@ -4266,7 +4193,7 @@
   },
   {
     "id": "94",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Aruba",
     "nomePasta": "aruba",
     "marca": "moval",
     "categoria": "Guarda-Roupa",
@@ -4290,7 +4217,7 @@
   },
   {
     "id": "95",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Atena",
     "nomePasta": "atena",
     "marca": "moval",
     "categoria": "Guarda-Roupa",
@@ -4316,7 +4243,7 @@
   },
   {
     "id": "96",
-    "nome": "Guarda-Roupa",
+    "nome": "Guarda-Roupa Diplomata",
     "nomePasta": "diplomata",
     "marca": "moval",
     "categoria": "Guarda-Roupa",
@@ -4342,7 +4269,7 @@
   },
   {
     "id": "97",
-    "nome": "Multiuso",
+    "nome": "Multiuso Jade",
     "nomePasta": "multiuso",
     "marca": "moval",
     "categoria": "Multiuso",
@@ -4366,7 +4293,7 @@
   },
   {
     "id": "98",
-    "nome": "Penteadeira",
+    "nome": "Penteadeira Bella",
     "nomePasta": "penteadeira",
     "marca": "moval",
     "categoria": "Penteadeira",
@@ -4388,7 +4315,7 @@
   },
   {
     "id": "99",
-    "nome": "Cadeira",
+    "nome": "Cadeira Juliana",
     "nomePasta": "cadeira juliana",
     "marca": "mundial",
     "categoria": "Cadeira",
@@ -4414,39 +4341,39 @@
   },
   {
     "id": "100",
-    "nome": "Mesa",
-    "nomePasta": "Mesa",
+    "nome": "Mesa Lisy",
+    "nomePasta": "Mesa Lisy",
     "marca": "mundial",
     "categoria": "Mesa",
-    "caminho": "/mundial/Mesa",
+    "caminho": "/mundial/Mesa Lisy",
     "subpastas": [],
     "medidas": "Alt. 780mm / Larg. 1600mm / Prof. 900mm",
     "informacoes": null,
     "linkReferencia": "https://www.moveismundial.com.br/",
-    "capa": "/mundial/Mesa/Lisy120x080/3810040-1200-auto.webp",
+    "capa": "/mundial/Mesa Lisy/Lisy120x080/3810040-1200-auto.webp",
     "imagens": [],
     "variacoes": [
       {
         "cor": "Lisy120x080",
         "imagens": [
-          "/mundial/Mesa/Lisy120x080/3810040-1200-auto.webp"
+          "/mundial/Mesa Lisy/Lisy120x080/3810040-1200-auto.webp"
         ]
       },
       {
         "cor": "Lisy160x090",
         "imagens": [
-          "/mundial/Mesa/Lisy160x090/160x090.webp"
+          "/mundial/Mesa Lisy/Lisy160x090/160x090.webp"
         ]
       }
     ],
     "todasImagens": [
-      "/mundial/Mesa/Lisy120x080/3810040-1200-auto.webp",
-      "/mundial/Mesa/Lisy160x090/160x090.webp"
+      "/mundial/Mesa Lisy/Lisy120x080/3810040-1200-auto.webp",
+      "/mundial/Mesa Lisy/Lisy160x090/160x090.webp"
     ]
   },
   {
     "id": "101",
-    "nome": "Colchão",
+    "nome": "Colchão Eco Linho",
     "nomePasta": "colchao",
     "marca": "paropas",
     "categoria": "Colchão",
@@ -4471,7 +4398,7 @@
   },
   {
     "id": "102",
-    "nome": "Colchão",
+    "nome": "Colchão Legacy",
     "nomePasta": "legacy",
     "marca": "paropas",
     "categoria": "Colchão",
@@ -4493,7 +4420,7 @@
   },
   {
     "id": "103",
-    "nome": "Beliche",
+    "nome": "Beliche Peder",
     "nomePasta": "beliche",
     "marca": "piner",
     "categoria": "Beliche",
@@ -4517,7 +4444,7 @@
   },
   {
     "id": "104",
-    "nome": "Cozinha",
+    "nome": "Cozinha Malta",
     "nomePasta": "cozinha",
     "marca": "poliman",
     "categoria": "Cozinha",
@@ -4527,25 +4454,33 @@
     "informacoes": null,
     "linkReferencia": "https://poliman.ind.br/",
     "capa": "/poliman/cozinha/MALTA-OFFACETINado.jpg",
-    "imagens": [
-      "/poliman/cozinha/barcelona-chumbo.png",
-      "/poliman/cozinha/barcelona-offacetinado.png",
-      "/poliman/cozinha/MALTA-FREIJORIPADO.jpg",
-      "/poliman/cozinha/MALTA-OFFACETINado.jpg",
-      "/poliman/cozinha/medidas.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Malta",
+        "imagens": [
+          "/poliman/cozinha/MALTA-OFFACETINado.jpg",
+          "/poliman/cozinha/MALTA-FREIJORIPADO.jpg"
+        ]
+      },
+      {
+        "cor": "Barcelona",
+        "imagens": [
+          "/poliman/cozinha/barcelona-chumbo.png",
+          "/poliman/cozinha/barcelona-offacetinado.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
-      "/poliman/cozinha/barcelona-chumbo.png",
-      "/poliman/cozinha/barcelona-offacetinado.png",
-      "/poliman/cozinha/MALTA-FREIJORIPADO.jpg",
       "/poliman/cozinha/MALTA-OFFACETINado.jpg",
-      "/poliman/cozinha/medidas.png"
+      "/poliman/cozinha/MALTA-FREIJORIPADO.jpg",
+      "/poliman/cozinha/barcelona-chumbo.png",
+      "/poliman/cozinha/barcelona-offacetinado.png"
     ]
   },
   {
     "id": "105",
-    "nome": "Mesa",
+    "nome": "Mesa e Cadeiras Bellagio",
     "nomePasta": "mesaEcadeires",
     "marca": "poliman",
     "categoria": "Mesa",
@@ -4585,10 +4520,10 @@
   },
   {
     "id": "106",
-    "nome": "Armário",
+    "nome": "Buffet Gold",
     "nomePasta": "buffet",
     "marca": "primus",
-    "categoria": "Armário",
+    "categoria": "Buffet",
     "caminho": "/primus/buffet",
     "subpastas": [],
     "medidas": null,
@@ -4610,10 +4545,10 @@
   },
   {
     "id": "107",
-    "nome": "Armário",
+    "nome": "Buffet Real",
     "nomePasta": "real",
     "marca": "primus",
-    "categoria": "Armário",
+    "categoria": "Buffet",
     "caminho": "/primus/buffet/real",
     "subpastas": [
       "buffet"
@@ -4636,7 +4571,7 @@
   },
   {
     "id": "108",
-    "nome": "Multiuso",
+    "nome": "Multiuso Cordoba",
     "nomePasta": "cordoba",
     "marca": "primus",
     "categoria": "Multiuso",
@@ -4647,22 +4582,30 @@
     "medidas": "altura 189cm\r\nlargura 61cm\r\nprofundidade 40cm",
     "informacoes": null,
     "linkReferencia": "https://www.saimysmoveis.com.br/buscar?q=cordoba\r\nhttps://incasamoveis.com.br/buffet-gold-3-portas-perola-com-mel-primus-23171-i?srsltid=AfmBOor930RKusLh6hIbS4ZlX1UHfFCZgnGmDvVsbfapQXx7hbpc2qbE\r\nhttps://incasamoveis.com.br/buffet-gold-3-portas-perola-com-mel-primus-23171-i?srsltid=AfmBOop27XaR28N3m8BDFwCgfGqwn7xQtDexWAN_EBXVLV6TriBghoRM",
-    "capa": "/primus/multiuso/cordoba/coresMelPerola-freijo-branco-melLuxo.png",
+    "capa": "/primus/multiuso/cordoba/armario_superior.png",
     "imagens": [
       "/primus/multiuso/cordoba/aberto.png",
+      "/primus/multiuso/cordoba/armario_superior.png",
+      "/primus/multiuso/cordoba/armario_inferior_direita.png",
+      "/primus/multiuso/cordoba/armario_inferior_esquerda.png",
+      "/primus/multiuso/cordoba/armario_inferior_centro.png",
       "/primus/multiuso/cordoba/coresMelPerola-freijo-branco-melLuxo.png",
       "/primus/multiuso/cordoba/medidas.png"
     ],
     "variacoes": [],
     "todasImagens": [
       "/primus/multiuso/cordoba/aberto.png",
+      "/primus/multiuso/cordoba/armario_superior.png",
+      "/primus/multiuso/cordoba/armario_inferior_direita.png",
+      "/primus/multiuso/cordoba/armario_inferior_esquerda.png",
+      "/primus/multiuso/cordoba/armario_inferior_centro.png",
       "/primus/multiuso/cordoba/coresMelPerola-freijo-branco-melLuxo.png",
       "/primus/multiuso/cordoba/medidas.png"
     ]
   },
   {
     "id": "109",
-    "nome": "Colchão",
+    "nome": "Colchão Turquesa",
     "nomePasta": "turquesa",
     "marca": "prorelax",
     "categoria": "Colchão",
@@ -4699,10 +4642,10 @@
   },
   {
     "id": "110",
-    "nome": "Armário",
+    "nome": "Fruteira Natasha",
     "nomePasta": "natasha",
     "marca": "quartaDivisão",
-    "categoria": "Armário",
+    "categoria": "Fruteira",
     "caminho": "/quartaDivisão/fruteira/natasha",
     "subpastas": [
       "fruteira"
@@ -4723,10 +4666,10 @@
   },
   {
     "id": "111",
-    "nome": "Armário",
+    "nome": "Fruteira Talita",
     "nomePasta": "talita",
     "marca": "quartaDivisão",
-    "categoria": "Armário",
+    "categoria": "Fruteira",
     "caminho": "/quartaDivisão/fruteira/talita",
     "subpastas": [
       "fruteira"
@@ -4747,10 +4690,10 @@
   },
   {
     "id": "112",
-    "nome": "Armário",
+    "nome": "Sapateira Safira",
     "nomePasta": "safira",
     "marca": "quartaDivisão",
-    "categoria": "Armário",
+    "categoria": "Sapateira",
     "caminho": "/quartaDivisão/sapateira/safira",
     "subpastas": [
       "sapateira"
@@ -4773,7 +4716,7 @@
   },
   {
     "id": "113",
-    "nome": "Sofá",
+    "nome": "Sofá Corolla",
     "nomePasta": "sofa",
     "marca": "sofa",
     "categoria": "Sofá",
@@ -4800,7 +4743,7 @@
   },
   {
     "id": "114",
-    "nome": "Sofá",
+    "nome": "Sofá Mexico",
     "nomePasta": "mexico",
     "marca": "sofa",
     "categoria": "Sofá",
@@ -4824,7 +4767,7 @@
   },
   {
     "id": "115",
-    "nome": "Sofá",
+    "nome": "Sofá Afrodite",
     "nomePasta": "afrodite",
     "marca": "sofa",
     "categoria": "Sofá",
@@ -4851,7 +4794,7 @@
   },
   {
     "id": "116",
-    "nome": "Sofá",
+    "nome": "Sofá Bonan",
     "nomePasta": "bonan",
     "marca": "sofa",
     "categoria": "Sofá",
@@ -4875,7 +4818,7 @@
   },
   {
     "id": "117",
-    "nome": "Colchão",
+    "nome": "Box",
     "nomePasta": "box",
     "marca": "songes",
     "categoria": "Colchão",
@@ -4971,7 +4914,7 @@
   },
   {
     "id": "119",
-    "nome": "Multiuso",
+    "nome": "Multiuso João Pessoa",
     "nomePasta": "joãoPessoa",
     "marca": "valdemoveis",
     "categoria": "Multiuso",
@@ -4991,7 +4934,7 @@
   },
   {
     "id": "120",
-    "nome": "Multiuso",
+    "nome": "Multiuso Livreiro",
     "nomePasta": "livreitoMultiuso",
     "marca": "valdemoveis",
     "categoria": "Multiuso",
@@ -5013,7 +4956,7 @@
   },
   {
     "id": "121",
-    "nome": "Sofá",
+    "nome": "Sofá Dubai",
     "nomePasta": "Sofá Dubai",
     "marca": "zarat",
     "categoria": "Sofá",
@@ -5043,6 +4986,270 @@
     "todasImagens": [
       "/zarat/sofa/Sofá Dubai/Bege/bege.png",
       "/zarat/sofa/Sofá Dubai/Cinza/cinza.png"
+    ]
+  },
+  {
+    "id": "122",
+    "nome": "Guarda-Roupa Buriti 6 Portas",
+    "nomePasta": "buriti6pts",
+    "marca": "SantosAndira",
+    "categoria": "Guarda-Roupa",
+    "caminho": "/SantosAndira/GR/buriti6pts",
+    "subpastas": [],
+    "medidas": null,
+    "informacoes": null,
+    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
+    "capa": "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaAreia.jpg",
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Jatoba",
+        "imagens": [
+          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_Jatoba.jpg"
+        ]
+      },
+      {
+        "cor": "JatobaAreia",
+        "imagens": [
+          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaAreia.jpg",
+          "/SantosAndira/GR/buriti6pts/162343-GR-Buriti-6-Portas-JTB-ARE-Interno.jpg"
+        ]
+      },
+      {
+        "cor": "JatobaGrafite",
+        "imagens": [
+          "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaGrafite.jpg"
+        ]
+      }
+    ],
+    "todasImagens": [
+      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_Jatoba.jpg",
+      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaAreia.jpg",
+      "/SantosAndira/GR/buriti6pts/162343-GR-Buriti-6-Portas-JTB-ARE-Interno.jpg",
+      "/SantosAndira/GR/buriti6pts/GR_Buriti_6P_JatobaGrafite.jpg"
+    ]
+  },
+  {
+    "id": "123",
+    "nome": "Guarda-Roupa Fit 3 Portas",
+    "nomePasta": "fit3pts",
+    "marca": "SantosAndira",
+    "categoria": "Guarda-Roupa",
+    "caminho": "/SantosAndira/GR/fit3pts",
+    "subpastas": [],
+    "medidas": null,
+    "informacoes": null,
+    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
+    "capa": "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_Amb.jpg",
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_BRanco_FI_frontal-Amb.jpg"
+        ]
+      },
+      {
+        "cor": "Jequitiba",
+        "imagens": [
+          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_Amb.jpg",
+          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_FI_Aberto.jpg"
+        ]
+      },
+      {
+        "cor": "JequitibaOff",
+        "imagens": [
+          "/SantosAndira/GR/fit3pts/GR_Fit_3.2_JequitibaOff_Amb-150x150.jpg"
+        ]
+      }
+    ],
+    "todasImagens": [
+      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_BRanco_FI_frontal-Amb.jpg",
+      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_Amb.jpg",
+      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_Jequitiba_FI_Aberto.jpg",
+      "/SantosAndira/GR/fit3pts/GR_Fit_3.2_JequitibaOff_Amb-150x150.jpg"
+    ]
+  },
+  {
+    "id": "124",
+    "nome": "Guarda-Roupa Fit 4 Portas",
+    "nomePasta": "fit4pts",
+    "marca": "SantosAndira",
+    "categoria": "Guarda-Roupa",
+    "caminho": "/SantosAndira/GR/fit4pts",
+    "subpastas": [],
+    "medidas": null,
+    "informacoes": null,
+    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
+    "capa": "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_Amb.jpg",
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_BRanco_FI-Amb.jpg"
+        ]
+      },
+      {
+        "cor": "Jequitiba",
+        "imagens": [
+          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_Amb.jpg",
+          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_FI_Aberto.jpg"
+        ]
+      },
+      {
+        "cor": "JequitibaOff",
+        "imagens": [
+          "/SantosAndira/GR/fit4pts/GR_Fit_4.2_JequitibaOff_Amb.jpg"
+        ]
+      }
+    ],
+    "todasImagens": [
+      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_BRanco_FI-Amb.jpg",
+      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_Amb.jpg",
+      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_Jequitiba_FI_Aberto.jpg",
+      "/SantosAndira/GR/fit4pts/GR_Fit_4.2_JequitibaOff_Amb.jpg"
+    ]
+  },
+  {
+    "id": "125",
+    "nome": "Guarda-Roupa Fit 6 Portas",
+    "nomePasta": "fit6pts",
+    "marca": "SantosAndira",
+    "categoria": "Guarda-Roupa",
+    "caminho": "/SantosAndira/GR/fit6pts",
+    "subpastas": [],
+    "medidas": null,
+    "informacoes": null,
+    "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
+    "capa": "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_Amb.jpg",
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Jequitiba",
+        "imagens": [
+          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_Amb.jpg",
+          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_FI_aberto.jpg"
+        ]
+      },
+      {
+        "cor": "JequitibaOff",
+        "imagens": [
+          "/SantosAndira/GR/fit6pts/GR_Fit_6.2_JequitibaOff_Amb.jpg"
+        ]
+      }
+    ],
+    "todasImagens": [
+      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_Amb.jpg",
+      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_Jequitiba_FI_aberto.jpg",
+      "/SantosAndira/GR/fit6pts/GR_Fit_6.2_JequitibaOff_Amb.jpg"
+    ]
+  },
+  {
+    "id": "126",
+    "nome": "Cama Siena",
+    "nomePasta": "Cama Solteiro Siena",
+    "marca": "lanza",
+    "categoria": "Cama",
+    "caminho": "/lanza/cama/solteiro/Cama Solteiro Siena",
+    "subpastas": [],
+    "medidas": null,
+    "informacoes": null,
+    "linkReferencia": null,
+    "capa": "/lanza/cama/solteiro/Cama Solteiro Siena/Cama Solteiro Siena - Branco.jpg",
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/lanza/cama/solteiro/Cama Solteiro Siena/Cama Solteiro Siena - Branco.jpg",
+          "/lanza/cama/solteiro/Cama Solteiro Siena/Cama Solteiro Siena - Branco.png",
+          "/lanza/cama/solteiro/Cama Solteiro Siena/Estrado Cama Solteiro Siena - Branco.jpg",
+          "/lanza/cama/solteiro/Cama Solteiro Siena/Estrado Cama Solteiro Siena - Branco.png"
+        ]
+      }
+    ],
+    "todasImagens": [
+      "/lanza/cama/solteiro/Cama Solteiro Siena/Cama Solteiro Siena - Branco.jpg",
+      "/lanza/cama/solteiro/Cama Solteiro Siena/Cama Solteiro Siena - Branco.png",
+      "/lanza/cama/solteiro/Cama Solteiro Siena/Estrado Cama Solteiro Siena - Branco.jpg",
+      "/lanza/cama/solteiro/Cama Solteiro Siena/Estrado Cama Solteiro Siena - Branco.png"
+    ]
+  },
+  {
+    "id": "127",
+    "nome": "Tanquinho Superstar",
+    "nomePasta": "TANQUINHO BRANCO SUPERSTAR",
+    "marca": "laveMais",
+    "categoria": "Eletrodoméstico",
+    "caminho": "/laveMais/TANQUINHO BRANCO SUPERSTAR",
+    "subpastas": [],
+    "medidas": "Altura: 85 cm\r\nLargura: 54 cm\r\nProfundidade: 59cm",
+    "informacoes": "Motor 1/4 cv. Eficiência Energética: Selo A. Programas de Lavagem: possui timer com desligamento automático (aproximadamente 10 minutos) e sistema de turbilhonamento horizontal. Acessórios: conta com filtro de retenção de resíduos e dispenser para sabão.",
+    "linkReferencia": "https://lavemaiseletrodomesticos.com.br/",
+    "capa": "/laveMais/TANQUINHO BRANCO SUPERSTAR/branco.png",
+    "imagens": [
+      "/laveMais/TANQUINHO BRANCO SUPERSTAR/branco.png"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/laveMais/TANQUINHO BRANCO SUPERSTAR/branco.png"
+    ]
+  },
+  {
+    "id": "128",
+    "nome": "Guarda-Roupa Sole",
+    "nomePasta": "GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO",
+    "marca": "albatroz",
+    "categoria": "Guarda-Roupa",
+    "caminho": "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO",
+    "subpastas": [],
+    "medidas": "Altura: 2,17 m\r\nLargura: 1,36 m\r\nProfundidade: 0,53 m",
+    "informacoes": "4 gavetas com puxadores cava e corrediças telescópicas. Puxadores em MDF revestidos. Cabideiros em alumínio. Pés inclusos. Moldura em 15 mm. Kit 4 espelhos, opcional - parafusados na porta. Portas de correr.",
+    "linkReferencia": "https://www.moveisalbatroz.com.br/",
+    "capa": "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO/CINAMOMO-OFF/CINAMOMO-OFF.png",
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "CINAMOMO-OFF",
+        "imagens": [
+          "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO/CINAMOMO-OFF/CINAMOMO-OFF.png",
+          "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO/CINAMOMO-OFF/aberto (2).png"
+        ]
+      },
+      {
+        "cor": "NOGUEIRA-CAPPUCCINO",
+        "imagens": [
+          "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO/NOGUEIRA-CAPPUCCINO/NOGUEIRA-CAPPUCCINO.png"
+        ]
+      }
+    ],
+    "todasImagens": [
+      "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO/CINAMOMO-OFF/CINAMOMO-OFF.png",
+      "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO/CINAMOMO-OFF/aberto (2).png",
+      "/albatroz/GUARDA ROUPA SOLE 2 PORTAS DE CORRER CESPELHO/NOGUEIRA-CAPPUCCINO/NOGUEIRA-CAPPUCCINO.png"
+    ]
+  },
+  {
+    "id": "129",
+    "nome": "Sofá Classic",
+    "nomePasta": "sofa2e3Lugares",
+    "marca": "paropas",
+    "categoria": "Sofá",
+    "caminho": "/paropas/sofa2e3Lugares",
+    "subpastas": [],
+    "medidas": "Estrutura: madeira de Eucalipto 100% tratada e reflorestada.\r\nDimensão 2 lugares - Largura 1,50m\r\nDimensão 3 lugares - Largura 2,00m\r\nProfundidade: 95 cm\r\nAltura: 95 cm\r\nBraços: 25 cm",
+    "informacoes": "Linha Estofados Paropas. Peso 3 lugares: 44,000 kg. Peso 2 lugares: 36,000 kg.",
+    "linkReferencia": "https://paropas.com.br/produto/classic",
+    "capa": "/paropas/sofa2e3Lugares/cinza.png",
+    "imagens": [
+      "/paropas/sofa2e3Lugares/cinza.png",
+      "/paropas/sofa2e3Lugares/marrom.png"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/paropas/sofa2e3Lugares/cinza.png",
+      "/paropas/sofa2e3Lugares/marrom.png"
     ]
   }
 ]

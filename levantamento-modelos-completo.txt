@@ -1,0 +1,347 @@
+LEVANTAMENTO DE MODELOS DE PRODUTOS — CATÁLOGO CASA SINELLI
+Data: 2026-07-01
+Fonte: src/data/produtos.json (121 produtos) + inspeção direta das pastas em C:\Imagens\Catalogo\<marca>\...
+
+RESUMO NUMÉRICO (total = 121)
+------------------------------------------------------------
+1. CONFIRMADO..................................  86
+2. CONFIRMADO COM GABARITO (lista dos 19*)......  18  (*a lista fornecida pelo usuário
+   continha 18 itens enumerados, apesar do
+   cabeçalho dizer "19" — todos os 18 foram
+   investigados a fundo)
+3. ENCONTRADO NA PASTA...........................  13
+4. NÃO IDENTIFICADO..............................   4
+------------------------------------------------------------
+TOTAL............................................. 121
+
+
+================================================================
+SEÇÃO 1 — CONFIRMADO (nomePasta já correto, sem mudança necessária)
+================================================================
+id=3   | CamaCasal                          | Cambel
+id=4   | CamaSolteiro                       | Cambel
+id=5   | CamaSolteiroBibox                  | Cambel
+id=7   | cooktop                            | Itatiaia
+id=8   | fogão                              | Itatiaia
+id=9   | CantinhoDoCafé                     | Lukaliam
+id=10  | vicenza                            | Lukaliam
+id=11  | fit                                | SantosAndira
+id=12  | ivai                               | SantosAndira
+id=13  | pinhais                            | SantosAndira
+id=15  | fitPortaDeCorrer                   | SantosAndira
+id=16  | frança                             | SantosAndira
+id=17  | master                             | SantosAndira
+id=18  | paranavai                          | SantosAndira
+id=22  | flower                             | Viero
+id=23  | Glamour                            | Viero
+id=24  | Rebeca                             | alpoim
+id=25  | Sofá Agar                          | alpoim
+id=26  | Sofá Aline                         | alpoim
+id=29  | Sofá Fortaleza                     | alpoim
+id=30  | Sofá ISA                           | alpoim
+id=31  | Sofá Manuela                       | alpoim
+id=32  | Sofá Recife                        | alpoim
+id=39  | tamisa                             | bechara
+id=40  | cantiga                            | bechara
+id=41  | Elba                               | bechara
+id=42  | madri                              | bechara
+id=43  | dallas                             | bechara
+id=44  | maresias                           | bechara
+id=45  | navi                               | bechara
+id=46  | Juquehy                            | bechara
+id=47  | topazio                            | bechara
+id=48  | turim                              | bechara
+id=49  | Humaitá                            | colibri
+id=50  | bali                               | colibri
+id=51  | marina                             | dj
+id=52  | iza                                | dj
+id=54  | espuma                             | ecoflex
+id=55  | floral                             | ecoflex
+id=56  | lisboa                             | hellen
+id=57  | omega                              | hellen
+id=59  | balcãoCooktop                      | indekes
+id=60  | firenze                            | indekes
+id=61  | monza                              | indekes
+id=62  | KitBraga                           | indekes
+id=63  | kitPorto                           | indekes
+id=64  | kitSintra                          | indekes
+id=65  | Bicama Conforte                    | kamabel
+id=70  | palmo                              | kamabel
+id=72  | KitLiv                             | kitsParana
+id=73  | kitNature                          | kitsParana
+id=74  | kitZen                             | kitsParana
+id=76  | Cômoda Carrara                     | lanza
+id=77  | Cômoda Ibiza                       | lanza
+id=78  | Cômoda Messina                     | lanza
+id=79  | Cômoda Paris                       | lanza
+id=80  | Roupeiro Dubai                     | lanza
+id=81  | Roupeiro Genova                    | lanza
+id=82  | Roupeiro Lion                      | lanza
+id=83  | Roupeiro Padua                     | lanza
+id=84  | Roupeiro Veneto                    | lanza
+id=85  | Mesa de Cabeceira Roma             | lanza
+id=86  | Mesa Potenza Plus                  | lanza
+id=87  | Multiuso Torino                    | lanza
+id=88  | SAPATEIRA ESTELA GIRATORIA CVDO    | lopas
+id=91  | ms913                              | moval
+id=92  | texas                              | moval
+id=93  | araguaia                           | moval
+id=94  | aruba                              | moval
+id=95  | atena                              | moval
+id=96  | diplomata                          | moval
+id=99  | cadeira juliana                    | mundial
+id=100 | Mesa Lisy                          | mundial
+id=102 | legacy                             | paropas
+id=107 | real                               | primus
+id=108 | cordoba                            | primus
+id=109 | turquesa                           | prorelax
+id=110 | natasha                            | quartaDivisão
+id=111 | talita                             | quartaDivisão
+id=112 | safira                             | quartaDivisão
+id=114 | mexico                             | sofa
+id=115 | afrodite                           | sofa
+id=116 | bonan                              | sofa
+id=119 | joãoPessoa                         | valdemoveis
+id=120 | livreitoMultiuso                   | valdemoveis
+id=121 | Sofá Dubai                         | zarat
+
+(86 produtos)
+
+
+================================================================
+SEÇÃO 2 — CONFIRMADO COM GABARITO (18 produtos investigados a fundo)
+================================================================
+
+id=2 | nomePasta atual: "cabeceira" | marca: Cambel
+  Gabarito: modelo "Jessica"
+  Achado: arquivo de imagem "JessicaNatureOff.jpg" dentro da própria pasta
+  (C:\Imagens\Catalogo\Cambel\cabeceira\). Também existe "branca.webp" (sem nome)
+  e "medidas.txt" (só medidas, sem nome de modelo).
+  Conclusão: BATEU — nome do arquivo confirma "Jessica".
+
+id=118 | nomePasta atual: "cabeceira" | marca: songes
+  Gabarito: sem modelo, manter "Cabeceira"
+  Achado: subpastas "solteiro", "casal", "quenn", cada uma só com arquivos de
+  cor (marrom.png, cinza.png, vermelha.png, preta.png). medidas.txt só traz
+  medidas das 3 versões (Solteiro/Casal/Queen). Nenhum nome de modelo em
+  lugar nenhum.
+  Conclusão: BATEU — confirma ausência de nome de modelo, manter "Cabeceira".
+
+id=33 | nomePasta atual: "cadeira" | marca: açoNobre
+  Gabarito: modelo "Max"
+  Achado: arquivo de imagem "max.png" na pasta (junto de medidas.txt).
+  Conclusão: BATEU.
+
+id=75 | nomePasta atual: "cama" | marca: lanza
+  Gabarito: casal = "Montreal", solteiro = "Siena"
+  Achado: dentro do MESMO id=75 (caminho "/lanza/cama") existem as subpastas
+  "casal\Cama Montreal" (com "Cama Montreal - Branco/Cedro/Ipe.jpg" etc.,
+  inclusive versão "sem colchão") e "solteiro\Cama Solteiro Siena" (com
+  "Cama Solteiro Siena - Branco.jpg" e "Estrado Cama Solteiro Siena -
+  Branco.jpg"). Ou seja, NÃO são dois produtos/ids diferentes — são duas
+  subpastas/variações (por tamanho) dentro de um único id=75.
+  Conclusão: BATEU — Montreal (casal) e Siena (solteiro) confirmados, ambos
+  como variações internas do mesmo produto id=75, não ids separados.
+
+id=53 | nomePasta atual: "colchao" | marca: ecoflex
+  Gabarito: sem modelo, manter "Colchão"
+  Achado: no JSON, id=53 (caminho raiz "/ecoflex/colchao") está com capa=null,
+  imagens=[] e todasImagens=[] — é um nó "pai" vazio, sem conteúdo próprio
+  (as imagens reais ficam em subpastas como espuma/floral/bege, que já
+  pertencem a outros produtos, ex.: id=54 "espuma" e id=55 "floral"). Não há
+  nenhum nome de modelo associado diretamente a este id.
+  Conclusão: BATEU perfeitamente — nada a identificar, manter "Colchão".
+
+id=101 | nomePasta atual: "colchao" | marca: paropas
+  Gabarito: sem modelo, manter "Colchão"
+  Achado: diferente do ecoflex, aqui o JSON do id=101 (capa/imagens) aponta
+  especificamente para a subpasta "eco linho" ("/paropas/colchao/eco
+  linho/linho.png"). O arquivo eco linho\informaçoes.txt diz textualmente:
+  "O Eco Linho é um colchão da linha Orthomedic e de molas ensacadas
+  individualmente...". Ou seja, HÁ um nome de linha real ("Eco Linho") que
+  não está refletido no nomePasta genérico "colchao". Também existe
+  LINK-DO-SITE-REFERENCIAS-E-PRODUTOS.txt (só com a URL https://paropas.com.br/,
+  sem nome específico).
+  Conclusão: PARCIALMENTE BATEU / investigação adicional sugerida — o
+  gabarito diz "sem modelo", mas o conteúdo real da pasta associada a este id
+  é especificamente a linha "Eco Linho" (não um colchão genérico qualquer).
+
+id=36 | nomePasta atual: "comoda" | marca: batrol
+  Gabarito: modelo "Magia"
+  Achado: arquivo "comoda-infantil-magia-1p-3g-branco.jpg".
+  Conclusão: BATEU.
+
+id=35 | nomePasta atual: "berço" | marca: batrol
+  Gabarito: modelo "Magia"
+  Achado: arquivo "berco-simples-magia-branco (1).jpg". Confirma que é a
+  MESMA linha infantil "Magia" do id=36 (cômoda) — e também aparece em outro
+  produto da mesma marca, id=38 "gr" (guarda-roupa-infantil-magia-2p-2g-
+  branco), formando um conjunto/linha "Magia" (berço + cômoda + guarda-roupa).
+  Conclusão: BATEU — mesma linha "Magia" do id=36.
+
+id=66 | nomePasta atual: "beliche" | marca: kamabel | caminho: /kamabel/Italia/beliche
+  Investigação: possível linha "Peder"?
+  Achado: arquivos "BelicheItalia.png" e "medida.png" — nenhuma menção a
+  "Peder" em lugar nenhum desta pasta. O nome de linha presente é "Italia"
+  (já refletido no caminho, mas não no nomePasta "beliche").
+  Conclusão: NÃO BATEU com a hipótese "Peder" — essa hipótese na verdade
+  corresponde a outro produto (ver id=103 abaixo, marca "piner", que tem os
+  arquivos "belichePeder.png"). O nome de linha correto para id=66 é
+  "Italia", não "Peder".
+
+id=103 | nomePasta atual: "beliche" | marca: piner
+  Sem gabarito — investigado do zero.
+  Achado: arquivos "belichePeder.png" e "belichePeder (2).png" na pasta
+  (junto de "medidas.png"/"medidas.txt").
+  Conclusão: modelo encontrado = "Peder". (Nota: é este produto — piner, não
+  kamabel/Italia — que corresponde à linha "Peder" mencionada na hipótese do
+  usuário para o id=66.)
+
+id=71 | nomePasta atual: "cozinha" | marca: kitsParana
+  Gabarito possível: "Colors" ou "Malta"
+  Achado: subpasta "colors" com arquivos "cozinhaColors.png",
+  "cozinhaColors2.png", "cozinhaColors3.png" — confirma linha "Colors".
+  Também existe um arquivo solto "line/supremo-freijo" (sem extensão, provável
+  imagem) sugerindo uma possível linha adicional "Supremo Freijó". "Malta"
+  NÃO aparece em nenhum arquivo desta pasta.
+  Conclusão: BATEU PARCIALMENTE — "Colors" confirmado; "Malta" não encontrado
+  aqui (Malta pertence ao id=104, poliman, ver abaixo).
+
+id=104 | nomePasta atual: "cozinha" | marca: poliman
+  Gabarito possível: "Colors" ou "Malta"
+  Achado: arquivos "MALTA-FREIJORIPADO.jpg" e "MALTA-OFFACETINado.jpg"
+  confirmam a linha "Malta". Porém também há "barcelona-chumbo.png" e
+  "barcelona-offacetinado.png", revelando uma SEGUNDA linha "Barcelona"
+  dentro do mesmo produto/pasta que não estava prevista no gabarito.
+  "Colors" NÃO aparece nesta pasta (pertence ao id=71, kitsParana).
+  Conclusão: BATEU (Malta confirmado) + achado extra não previsto: linha
+  "Barcelona" também presente na mesma pasta.
+
+id=20 | nomePasta atual: "multiuso" | marca: SantosAndira
+  Sem gabarito — investigado do zero.
+  Achado: arquivos "Multiuso_Fit_2Pts_BR_FI_Frontal-Amb.jpg",
+  "Multiuso_Fit_2Pts_Jequitiba_Amb.jpg", etc.
+  Conclusão: modelo encontrado = "Fit" (mesma linha "Fit" usada em outros
+  produtos SantosAndira, ex. id=11 cômoda fit, id=15 GR fitPortaDeCorrer).
+
+id=97 | nomePasta atual: "multiuso" | marca: moval
+  Sem gabarito — investigado do zero.
+  Achado: arquivo "Moval-Multiuso-Jade-Branco-Ambiente-Ecommerce.jpg".
+  Conclusão: modelo encontrado = "Jade".
+
+id=98 | nomePasta atual: "penteadeira" | marca: moval
+  Sem gabarito — investigado do zero.
+  Achado: arquivo "Moval-Comoda-Camarim-Bella-Branco-Ambiente-Ecommerce.jpg".
+  Conclusão: modelo encontrado = "Bella" (Camarim Bella).
+
+id=1 | nomePasta atual: "poltrona" | marca: BomJesus
+  Sem gabarito — investigado do zero.
+  Achado: pasta contém apenas arquivos de cor (marrom.png, preta.png,
+  azul.png, cinza.png) e medidas.txt (Altura 75cm / Largura 65cm /
+  Profundidade 55cm), sem nenhum nome de modelo, informações ou link de
+  referência que apontem um modelo específico.
+  Conclusão: NÃO IDENTIFICADO — nenhum nome de modelo encontrado em nenhum
+  arquivo/pasta/campo.
+
+id=58 | nomePasta atual: "sofa" | marca: hellen
+  Sem gabarito — investigado do zero.
+  Achado: subpasta "courinopremium" (arquivos "courino.png" e "medidas.txt").
+  "Courino Premium" descreve apenas o material de revestimento (courino =
+  courvin/material sintético), não é um nome de modelo comercial.
+  Conclusão: NÃO IDENTIFICADO — nenhum nome de modelo próprio, apenas
+  descrição de material.
+
+id=113 | nomePasta atual: "sofa" | marca: sofa (caminho raiz "/sofa")
+  Sem gabarito — investigado do zero.
+  Achado: no JSON, a capa e as imagens do próprio id=113 apontam
+  especificamente para a subpasta "/sofa/2e3Lugares/corolla/" (marrom.png,
+  cinza.png). O arquivo "informaçoes.txt" dentro dessa subpasta diz
+  textualmente: "Jogo de Sofá 2 e 3 Lugares Corolla Amílcar... Conjunto
+  composto por: 1 sofá de 2 lugares + 1 sofá de 3 lugares".
+  Conclusão: modelo encontrado = "Corolla" (Corolla Amílcar).
+
+
+================================================================
+SEÇÃO 3 — ENCONTRADO NA PASTA (nomePasta genérico, fora da lista de 19,
+modelo encontrado em arquivo/subpasta/campo)
+================================================================
+
+id=6 | nomePasta atual: "penteadeira" | marca: Demobile
+  Modelo encontrado: "Carisma" (Camarim Carisma)
+  Onde: nome de arquivo "camarimCarismaBranca.jpg" + linkReferencia
+  ("https://demobile.com.br/produtos/penteadeira-camarim-carisma/").
+
+id=14 | nomePasta atual: "GR" | marca: SantosAndira
+  Modelos encontrados: "Buriti" e "Fit" (dois modelos distintos agrupados
+  como se fossem variações de cor dentro do mesmo produto)
+  Onde: nomes de subpastas/arquivos — "buriti4pts" (GR_Buriti04Portas_...),
+  "buriti6pts" (GR_Buriti_6P_...), "fit3pts"/"fit4pts"/"fit6pts"
+  (GR_Fit_3.2_..., GR_Fit_4.2_..., GR_Fit_6.2_...).
+  Observação: este id mistura DOIS modelos comerciais diferentes (Buriti e
+  Fit) sob um único produto com nomePasta genérico "GR" — recomenda-se
+  revisão de modelagem de dados, não apenas de nome.
+
+id=19 | nomePasta atual: "mesaDeCabeceira" | marca: SantosAndira
+  Modelo encontrado: "Bari"
+  Onde: nome de arquivo "MesaCabeceira_Bari_Jatoba_Ambiente-SITE.jpg" e
+  "MesaCabeceira_Bari_JatobaAreia_Ambiente-SITE.jpg".
+
+id=27 | nomePasta atual: "2Modulos" | marca: alpoim
+  Modelo encontrado: "Athenas"
+  Onde: nome da pasta-mãe no caminho ("/alpoim/sofa/Sofá Athenas/2Modulos").
+
+id=28 | nomePasta atual: "3modulos" | marca: alpoim
+  Modelo encontrado: "Athenas"
+  Onde: nome da pasta-mãe no caminho ("/alpoim/sofa/Sofá Athenas/3modulos").
+
+id=34 | nomePasta atual: "mesaComCadeiras" | marca: açoNobre
+  Achado parcial: arquivo "cadeiraMaxEmedidas.png" indica que o conjunto usa
+  as cadeiras modelo "Max" (mesma cadeira do id=33). A mesa em si não tem
+  nome de modelo próprio encontrado — apenas "granito.jpg" (material do
+  tampo) e medidas.txt.
+  Onde: nome de arquivo "cadeiraMaxEmedidas.png".
+
+id=38 | nomePasta atual: "gr" | marca: batrol
+  Modelo encontrado: "Magia" (mesma linha infantil dos ids 35 e 36)
+  Onde: nome de arquivo "guarda-roupa-infantil-magia-2p-2g-branco (3).jpg".
+
+id=67 | nomePasta atual: "camaCasal" | marca: kamabel | caminho: /kamabel/Italia/camaCasal
+  Linha encontrada: "Italia"
+  Onde: nome da pasta-mãe no caminho ("Italia"), mesma linha dos ids 66, 68 e 69.
+
+id=68 | nomePasta atual: "camaSolteiro" | marca: kamabel | caminho: /kamabel/Italia/camaSolteiro
+  Linha encontrada: "Italia"
+  Onde: nome da pasta-mãe no caminho.
+
+id=69 | nomePasta atual: "triliche" | marca: kamabel | caminho: /kamabel/Italia/triliche
+  Linha encontrada: "Italia"
+  Onde: nome da pasta-mãe no caminho.
+
+id=89 | nomePasta atual: "guarda roupa modulado" | marca: luciane
+  Modelo encontrado: "Veneza"
+  Onde: nomes de arquivo "dormitorio-veneza04-cinza.jpg" e
+  "dormitorio-veneza01-arenas.jpg".
+
+id=105 | nomePasta atual: "mesaEcadeires" | marca: poliman
+  Modelo encontrado: "Bellagio"
+  Onde: nomes de arquivo "Poliman-Bellagioe4CadClara-FreijoFreijo.jpg" e
+  "Poliman-MesaBellagio6CadeiraClara-FreijoFreijo.jpg".
+
+id=106 | nomePasta atual: "buffet" | marca: primus
+  Modelo encontrado: "Gold"
+  Onde: nome de arquivo "BUFFET GOLD 3 PORTAS PRIMUS.png" (subpasta "gold")
+  + linkReferencia ("...buffet-gold-3-portas-perola-com-mel-primus...").
+
+
+================================================================
+SEÇÃO 4 — NÃO IDENTIFICADO (nomePasta genérico, fora da lista de 19,
+nenhuma referência de modelo encontrada)
+================================================================
+id=21  | buffet          | Viero
+id=37  | conjunto        | batrol
+id=90  | mesaEcadeira    | modelar
+id=117 | box             | songes
+
+(4 produtos — nas pastas desses itens só há arquivos de cor/tamanho/medida
+genéricos, sem nenhum nome de modelo em arquivos, subpastas, medidas,
+informações ou linkReferencia.)

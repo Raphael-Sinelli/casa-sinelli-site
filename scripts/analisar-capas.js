@@ -28,7 +28,7 @@ const ESCOLHER = process.argv.includes('--escolher');
 const WRITE = process.argv.includes('--write');
 
 const absOf = p => path.join(CATALOGO_ROOT, ...p.replace(/^\//, '').split('/'));
-const baseOf = p => (p.split('/').pop() || '');
+const baseOf = p => (p ? p.split('/').pop() || '' : '(sem imagem)');
 const fold = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
 // substrings que NUNCA podem ser capa (busca no nome inteiro, sem separadores)

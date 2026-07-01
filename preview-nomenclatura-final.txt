@@ -1,0 +1,159 @@
+PREVIEW — NOMENCLATURA FINAL "TIPO + MODELO" — TODOS OS 126 PRODUTOS
+Data: 2026-07-01
+Formato: id | nome ATUAL (produtos.json) | nome PROPOSTO | marca | nomePasta
+====================================================================================================
+
+id=1   | atual: Poltrona                      | PROPOSTO: Poltrona                           | marca: BomJesus | nomePasta: poltrona
+id=2   | atual: Cabeceira                     | PROPOSTO: Cabeceira Jessica                  | marca: Cambel | nomePasta: cabeceira
+id=3   | atual: Cama                          | PROPOSTO: Cama Casal                         | marca: Cambel | nomePasta: CamaCasal
+id=4   | atual: Cama                          | PROPOSTO: Cama Solteiro                      | marca: Cambel | nomePasta: CamaSolteiro
+id=5   | atual: Cama                          | PROPOSTO: Cama Solteiro Bibox                | marca: Cambel | nomePasta: CamaSolteiroBibox
+id=6   | atual: Penteadeira                   | PROPOSTO: Penteadeira Carisma                | marca: Demobile | nomePasta: penteadeira
+id=7   | atual: Eletrodoméstico               | PROPOSTO: Eletrodoméstico Cooktop            | marca: Itatiaia | nomePasta: cooktop
+id=8   | atual: Eletrodoméstico               | PROPOSTO: Eletrodoméstico Fogão              | marca: Itatiaia | nomePasta: fogão
+id=9   | atual: Armário                       | PROPOSTO: Armário Cantinho do Café           | marca: Lukaliam | nomePasta: CantinhoDoCafé
+id=10  | atual: Escrivaninha                  | PROPOSTO: Escrivaninha Vicenza               | marca: Lukaliam | nomePasta: vicenza
+id=11  | atual: Cômoda                        | PROPOSTO: Cômoda Fit                         | marca: SantosAndira | nomePasta: fit
+id=12  | atual: Cômoda                        | PROPOSTO: Cômoda Ivai                        | marca: SantosAndira | nomePasta: ivai
+id=13  | atual: Cômoda                        | PROPOSTO: Cômoda Pinhais                     | marca: SantosAndira | nomePasta: pinhais
+id=14  | atual: Guarda-Roupa Buriti 4 Portas  | PROPOSTO: Guarda-Roupa Buriti 4 Portas       | marca: SantosAndira | nomePasta: buriti4pts
+id=15  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Fit Porta de Correr   | marca: SantosAndira | nomePasta: fitPortaDeCorrer
+id=16  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa França                | marca: SantosAndira | nomePasta: frança
+id=17  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Master                | marca: SantosAndira | nomePasta: master
+id=18  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Paranavai             | marca: SantosAndira | nomePasta: paranavai
+id=19  | atual: Mesa                          | PROPOSTO: Mesa de Cabeceira Bari             | marca: SantosAndira | nomePasta: mesaDeCabeceira
+id=20  | atual: Multiuso                      | PROPOSTO: Multiuso                           | marca: SantosAndira | nomePasta: multiuso
+id=21  | atual: Armário                       | PROPOSTO: Buffet Benicio                     | marca: Viero | nomePasta: buffet
+id=22  | atual: Poltrona                      | PROPOSTO: Poltrona Flower                    | marca: Viero | nomePasta: flower
+id=23  | atual: Poltrona                      | PROPOSTO: Poltrona Glamour                   | marca: Viero | nomePasta: Glamour
+id=24  | atual: Poltrona                      | PROPOSTO: Poltrona Rebeca                    | marca: alpoim | nomePasta: Rebeca
+id=25  | atual: Sofá                          | PROPOSTO: Sofá Agar                          | marca: alpoim | nomePasta: Sofá Agar
+id=26  | atual: Sofá                          | PROPOSTO: Sofá Aline                         | marca: alpoim | nomePasta: Sofá Aline
+id=27  | atual: Sofá                          | PROPOSTO: Sofá Athenas                       | marca: alpoim | nomePasta: 2Modulos
+id=28  | atual: Sofá                          | PROPOSTO: Sofá Athenas                       | marca: alpoim | nomePasta: 3modulos
+id=29  | atual: Sofá                          | PROPOSTO: Sofá Fortaleza                     | marca: alpoim | nomePasta: Sofá Fortaleza
+id=30  | atual: Sofá                          | PROPOSTO: Sofá Isa                           | marca: alpoim | nomePasta: Sofá ISA
+id=31  | atual: Sofá                          | PROPOSTO: Sofá Manuela                       | marca: alpoim | nomePasta: Sofá Manuela
+id=32  | atual: Sofá                          | PROPOSTO: Sofá Recife                        | marca: alpoim | nomePasta: Sofá Recife
+id=33  | atual: Cadeira                       | PROPOSTO: Cadeira Max                        | marca: açoNobre | nomePasta: cadeira
+id=34  | atual: Mesa                          | PROPOSTO: Mesa                               | marca: açoNobre | nomePasta: mesaComCadeiras
+id=35  | atual: Berço                         | PROPOSTO: Berço Magia                        | marca: batrol | nomePasta: berço
+id=36  | atual: Cômoda                        | PROPOSTO: Cômoda Magia                       | marca: batrol | nomePasta: comoda
+id=37  | atual: Multiuso                      | PROPOSTO: Conjunto Magia                     | marca: batrol | nomePasta: conjunto
+id=38  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Magia                 | marca: batrol | nomePasta: gr
+id=39  | atual: Armário                       | PROPOSTO: Armário Tamisa                     | marca: bechara | nomePasta: tamisa
+id=40  | atual: Cadeira                       | PROPOSTO: Cadeira Cantiga                    | marca: bechara | nomePasta: cantiga
+id=41  | atual: Armário                       | PROPOSTO: Armário Elba                       | marca: bechara | nomePasta: Elba
+id=42  | atual: Armário                       | PROPOSTO: Armário Madri                      | marca: bechara | nomePasta: madri
+id=43  | atual: Rack/Painel                   | PROPOSTO: Rack/Painel Dallas                 | marca: bechara | nomePasta: dallas
+id=44  | atual: Rack/Painel                   | PROPOSTO: Rack/Painel Maresias               | marca: bechara | nomePasta: maresias
+id=45  | atual: Rack/Painel                   | PROPOSTO: Rack/Painel Navi                   | marca: bechara | nomePasta: navi
+id=46  | atual: Rack/Painel                   | PROPOSTO: Rack/Painel Juquehy                | marca: bechara | nomePasta: Juquehy
+id=47  | atual: Rack/Painel                   | PROPOSTO: Rack/Painel Topazio                | marca: bechara | nomePasta: topazio
+id=48  | atual: Rack/Painel                   | PROPOSTO: Rack/Painel Turim                  | marca: bechara | nomePasta: turim
+id=49  | atual: Rack/Painel                   | PROPOSTO: Rack/Painel Humaitá                | marca: colibri | nomePasta: Humaitá
+id=50  | atual: Rack/Painel                   | PROPOSTO: Rack/Painel Bali                   | marca: colibri | nomePasta: bali
+id=51  | atual: Mesa                          | PROPOSTO: Mesa Marina                        | marca: dj | nomePasta: marina
+id=52  | atual: Rack/Painel                   | PROPOSTO: Rack/Painel Iza                    | marca: dj | nomePasta: iza
+id=53  | atual: Colchão                       | PROPOSTO: Colchão                            | marca: ecoflex | nomePasta: colchao
+id=54  | atual: Colchão                       | PROPOSTO: Colchão Espuma                     | marca: ecoflex | nomePasta: espuma
+id=55  | atual: Colchão                       | PROPOSTO: Colchão Floral                     | marca: ecoflex | nomePasta: floral
+id=56  | atual: Colchão                       | PROPOSTO: Colchão Lisboa                     | marca: hellen | nomePasta: lisboa
+id=57  | atual: Colchão                       | PROPOSTO: Colchão Omega                      | marca: hellen | nomePasta: omega
+id=58  | atual: Sofá                          | PROPOSTO: Sofá                               | marca: hellen | nomePasta: sofa
+id=59  | atual: Balcão                        | PROPOSTO: Balcão Cooktop                     | marca: indekes | nomePasta: balcãoCooktop
+id=60  | atual: Cozinha                       | PROPOSTO: Cozinha Firenze                    | marca: indekes | nomePasta: firenze
+id=61  | atual: Cozinha                       | PROPOSTO: Cozinha Monza                      | marca: indekes | nomePasta: monza
+id=62  | atual: Cozinha                       | PROPOSTO: Cozinha Kit Braga                  | marca: indekes | nomePasta: KitBraga
+id=63  | atual: Cozinha                       | PROPOSTO: Cozinha Kit Porto                  | marca: indekes | nomePasta: kitPorto
+id=64  | atual: Cozinha                       | PROPOSTO: Cozinha Kit Sintra                 | marca: indekes | nomePasta: kitSintra
+id=65  | atual: Bicama                        | PROPOSTO: Bicama Conforte                    | marca: kamabel | nomePasta: Bicama Conforte
+id=66  | atual: Beliche                       | PROPOSTO: Beliche Italia                     | marca: kamabel | nomePasta: beliche
+id=67  | atual: Cama                          | PROPOSTO: Cama Casal Italia                  | marca: kamabel | nomePasta: camaCasal
+id=68  | atual: Cama                          | PROPOSTO: Cama Solteiro Italia               | marca: kamabel | nomePasta: camaSolteiro
+id=69  | atual: Beliche                       | PROPOSTO: Triliche Italia                    | marca: kamabel | nomePasta: triliche
+id=70  | atual: Beliche                       | PROPOSTO: Beliche Palmo                      | marca: kamabel | nomePasta: palmo
+id=71  | atual: Cozinha                       | PROPOSTO: Cozinha Colors                     | marca: kitsParana | nomePasta: cozinha
+id=72  | atual: Cozinha                       | PROPOSTO: Cozinha Kit Liv                    | marca: kitsParana | nomePasta: KitLiv
+id=73  | atual: Cozinha                       | PROPOSTO: Cozinha Kit Nature                 | marca: kitsParana | nomePasta: kitNature
+id=74  | atual: Cozinha                       | PROPOSTO: Cozinha Kit Zen                    | marca: kitsParana | nomePasta: kitZen
+id=75  | atual: Cama Montreal                 | PROPOSTO: Cama Montreal                      | marca: lanza | nomePasta: Cama Montreal
+id=76  | atual: Cômoda                        | PROPOSTO: Cômoda Carrara                     | marca: lanza | nomePasta: Cômoda Carrara
+id=77  | atual: Cômoda                        | PROPOSTO: Cômoda Ibiza                       | marca: lanza | nomePasta: Cômoda Ibiza
+id=78  | atual: Cômoda                        | PROPOSTO: Cômoda Messina                     | marca: lanza | nomePasta: Cômoda Messina
+id=79  | atual: Cômoda                        | PROPOSTO: Cômoda Paris                       | marca: lanza | nomePasta: Cômoda Paris
+id=80  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Dubai                 | marca: lanza | nomePasta: Roupeiro Dubai
+id=81  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Genova                | marca: lanza | nomePasta: Roupeiro Genova
+id=82  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Lion                  | marca: lanza | nomePasta: Roupeiro Lion
+id=83  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Padua                 | marca: lanza | nomePasta: Roupeiro Padua
+id=84  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Veneto                | marca: lanza | nomePasta: Roupeiro Veneto
+id=85  | atual: Mesa                          | PROPOSTO: Mesa de Cabeceira Roma             | marca: lanza | nomePasta: Mesa de Cabeceira Roma
+id=86  | atual: Mesa                          | PROPOSTO: Mesa Potenza Plus                  | marca: lanza | nomePasta: Mesa Potenza Plus
+id=87  | atual: Multiuso                      | PROPOSTO: Multiuso Torino                    | marca: lanza | nomePasta: Multiuso Torino
+id=88  | atual: Armário                       | PROPOSTO: Armário Sapateira Estela Giratória | marca: lopas | nomePasta: SAPATEIRA ESTELA GIRATORIA CVDO
+id=89  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Veneza                | marca: luciane | nomePasta: guarda roupa modulado
+id=90  | atual: Mesa                          | PROPOSTO: Mesa Modelar                       | marca: modelar | nomePasta: mesaEcadeira
+id=91  | atual: Cômoda                        | PROPOSTO: Cômoda MS913                       | marca: moval | nomePasta: ms913
+id=92  | atual: Cômoda                        | PROPOSTO: Cômoda Texas                       | marca: moval | nomePasta: texas
+id=93  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Araguaia              | marca: moval | nomePasta: araguaia
+id=94  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Aruba                 | marca: moval | nomePasta: aruba
+id=95  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Atena                 | marca: moval | nomePasta: atena
+id=96  | atual: Guarda-Roupa                  | PROPOSTO: Guarda-Roupa Diplomata             | marca: moval | nomePasta: diplomata
+id=97  | atual: Multiuso                      | PROPOSTO: Multiuso Jade                      | marca: moval | nomePasta: multiuso
+id=98  | atual: Penteadeira                   | PROPOSTO: Penteadeira Bella                  | marca: moval | nomePasta: penteadeira
+id=99  | atual: Cadeira                       | PROPOSTO: Cadeira Juliana                    | marca: mundial | nomePasta: cadeira juliana
+id=100 | atual: Mesa                          | PROPOSTO: Mesa Lisy                          | marca: mundial | nomePasta: Mesa Lisy
+id=101 | atual: Colchão                       | PROPOSTO: Colchão                            | marca: paropas | nomePasta: colchao
+id=102 | atual: Colchão                       | PROPOSTO: Colchão Legacy                     | marca: paropas | nomePasta: legacy
+id=103 | atual: Beliche                       | PROPOSTO: Beliche Peder                      | marca: piner | nomePasta: beliche
+id=104 | atual: Cozinha Malta                 | PROPOSTO: Cozinha Malta                      | marca: poliman | nomePasta: cozinha
+id=105 | atual: Mesa                          | PROPOSTO: Mesa e Cadeiras Bellagio           | marca: poliman | nomePasta: mesaEcadeires
+id=106 | atual: Armário                       | PROPOSTO: Buffet Gold                        | marca: primus | nomePasta: buffet
+id=107 | atual: Armário                       | PROPOSTO: Armário Real                       | marca: primus | nomePasta: real
+id=108 | atual: Multiuso                      | PROPOSTO: Multiuso Cordoba                   | marca: primus | nomePasta: cordoba
+id=109 | atual: Colchão                       | PROPOSTO: Colchão Turquesa                   | marca: prorelax | nomePasta: turquesa
+id=110 | atual: Armário                       | PROPOSTO: Armário Natasha                    | marca: quartaDivisão | nomePasta: natasha
+id=111 | atual: Armário                       | PROPOSTO: Armário Talita                     | marca: quartaDivisão | nomePasta: talita
+id=112 | atual: Armário                       | PROPOSTO: Armário Safira                     | marca: quartaDivisão | nomePasta: safira
+id=113 | atual: Sofá                          | PROPOSTO: Sofá Corolla                       | marca: sofa | nomePasta: sofa
+id=114 | atual: Sofá                          | PROPOSTO: Sofá Mexico                        | marca: sofa | nomePasta: mexico
+id=115 | atual: Sofá                          | PROPOSTO: Sofá Afrodite                      | marca: sofa | nomePasta: afrodite
+id=116 | atual: Sofá                          | PROPOSTO: Sofá Bonan                         | marca: sofa | nomePasta: bonan
+id=117 | atual: Colchão                       | PROPOSTO: Box                                | marca: songes | nomePasta: box
+id=118 | atual: Cabeceira                     | PROPOSTO: Cabeceira                          | marca: songes | nomePasta: cabeceira
+id=119 | atual: Multiuso                      | PROPOSTO: Multiuso João Pessoa               | marca: valdemoveis | nomePasta: joãoPessoa
+id=120 | atual: Multiuso                      | PROPOSTO: Multiuso Livreito                  | marca: valdemoveis | nomePasta: livreitoMultiuso
+id=121 | atual: Sofá                          | PROPOSTO: Sofá Dubai                         | marca: zarat | nomePasta: Sofá Dubai
+id=122 | atual: Guarda-Roupa Buriti 6 Portas  | PROPOSTO: Guarda-Roupa Buriti 6 Portas       | marca: SantosAndira | nomePasta: buriti6pts
+id=123 | atual: Guarda-Roupa Fit 3 Portas     | PROPOSTO: Guarda-Roupa Fit 3 Portas          | marca: SantosAndira | nomePasta: fit3pts
+id=124 | atual: Guarda-Roupa Fit 4 Portas     | PROPOSTO: Guarda-Roupa Fit 4 Portas          | marca: SantosAndira | nomePasta: fit4pts
+id=125 | atual: Guarda-Roupa Fit 6 Portas     | PROPOSTO: Guarda-Roupa Fit 6 Portas          | marca: SantosAndira | nomePasta: fit6pts
+id=126 | atual: Cama Siena                    | PROPOSTO: Cama Siena                         | marca: lanza | nomePasta: Cama Solteiro Siena
+
+====================================================================================================
+PONTOS PRA CONFIRMAR ANTES DE APLICAR:
+
+1. id=88 (Armário / SAPATEIRA ESTELA GIRATORIA CVDO, marca lopas): proponho
+   "Armário Sapateira Estela Giratória", removendo sufixo "CVDO" da pasta
+   original (parece código interno/SKU, não parte do nome comercial).
+   Confirma remover o CVDO ou mantém no nome exibido?
+
+2. id=120 (Multiuso / livreitoMultiuso, marca valdemoveis): nomePasta tem
+   grafia ambígua ("livreito" pode ser typo de "livreiro"). Proponho
+   "Multiuso Livreito" mantendo grafia original da pasta. Confirma manter
+   assim ou corrigir pra "Multiuso Livreiro"?
+
+3. id=101 (Colchão / colchao, marca paropas): regra 2 do pedido diz manter
+   so "Colchão" (sem modelo). Porém levantamento anterior desta conversa
+   achou que a pasta associada a este id é especificamente a linha real
+   "Eco Linho" (confirmado em informaçoes.txt: "O Eco Linho é um colchão
+   da linha Orthomedic..."). Mantendo REGRA 2 como pedido = "Colchão"
+   (sem "Eco Linho"). Confirma manter genérico ou usar "Colchão Eco Linho"?
+
+4. id=71 (Cozinha / cozinha, marca kitsParana): não estava na lista explícita
+   desta rodada, mas levantamento anterior confirmou linha "Colors" (subpasta
+   "colors"). Proposto "Cozinha Colors" pela regra 4 (já confirmado antes).
+
+5. Nomes com acento/grafia ajustada pra ficar apresentável (ex: "balcãoCooktop"
+   virou "Balcão Cooktop", "KitBraga" virou "Kit Braga", camelCase separado
+   em palavras) — são só formatação, sem mudança de significado.

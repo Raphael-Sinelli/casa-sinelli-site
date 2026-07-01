@@ -19,12 +19,12 @@ export default function ProductDetailClient({ produto }: Props) {
     ? imagensDisplayDaVariacao(produto, corAtiva)
     : produto.todasImagens;
 
-  const whatsappUrl = mensagemWhatsApp(produto.nomePasta);
+  const whatsappUrl = mensagemWhatsApp(produto.nome);
 
   return (
     <div className="flex flex-col gap-6">
       {/* Galeria */}
-      <ProductGallery imagens={imagens} nomeProduto={produto.nomePasta} />
+      <ProductGallery imagens={imagens} nomeProduto={produto.nome} />
 
       {/* Seletor de cores/tamanhos */}
       <ColorSelector

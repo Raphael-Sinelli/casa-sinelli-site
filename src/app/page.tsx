@@ -6,6 +6,7 @@ import Map from '@/components/Map';
 import {
   DoorClosed, Sofa, Archive, Inbox, ChefHat, Tv, BedDouble, UtensilsCrossed,
   LayoutGrid, Bed, Armchair, PanelTop, Sparkles, Plug, PenTool, Baby, Box,
+  Package2, Apple, Footprints, MonitorPlay, MonitorSmartphone, Lamp,
   type LucideIcon,
 } from 'lucide-react';
 
@@ -17,12 +18,11 @@ export const metadata: Metadata = {
 const ICONES_CATEGORIA: Record<string, LucideIcon> = {
   'Guarda-Roupa': DoorClosed,
   'Sofá': Sofa,
-  'Armário': Archive,
   'Cômoda': Inbox,
   'Cozinha': ChefHat,
-  'Rack/Painel': Tv,
   'Colchão': BedDouble,
   'Mesa': UtensilsCrossed,
+  'Mesa de Cabeceira': Lamp,
   'Multiuso': LayoutGrid,
   'Cama': Bed,
   'Poltrona': Armchair,
@@ -34,7 +34,13 @@ const ICONES_CATEGORIA: Record<string, LucideIcon> = {
   'Escrivaninha': PenTool,
   'Berço': Baby,
   'Balcão': Box,
-  'Bicama': Bed,
+  'Buffet': Archive,
+  'Cristaleira': Package2,
+  'Fruteira': Apple,
+  'Sapateira': Footprints,
+  'Rack': Tv,
+  'Painel': MonitorPlay,
+  'Home': MonitorSmartphone,
 };
 
 const DIFERENCIAIS = [
