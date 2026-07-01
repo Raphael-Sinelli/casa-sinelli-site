@@ -18,9 +18,8 @@ const sharp = require('sharp');
 
 const CATALOGO_ROOT = path.resolve('C:\\Imagens\\Catalogo');
 const PRODUTOS = path.resolve(__dirname, '../src/data/produtos.json');
-const CACHE = path.resolve(
-  'C:\\Users\\rapha\\AppData\\Local\\Temp\\claude\\C--Imagens-Catalogo--SiteCasaSinelli\\c12d802f-c75c-47ce-8f95-f8300dc79e8d\\scratchpad\\stats-cache.json'
-);
+// fixo (nao amarrado a sessao) p/ sobreviver entre sessoes de trabalho
+const CACHE = path.resolve(require('os').tmpdir(), 'casa-sinelli-capas-cache.json');
 
 // limiar de stdev de cor p/ classificar "ambientada" (calibrado abaixo)
 const THRESHOLD = Number(process.env.THRESHOLD || 62);
