@@ -24,10 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     .slice(0, 155);
 
   return {
-    title: produto.nome,
-    description: descricao || `${produto.nome} — Casa Sinelli. Consulte disponibilidade e opções pelo WhatsApp.`,
+    title: produto.nomePasta,
+    description: descricao || `${produto.nomePasta} — Casa Sinelli. Consulte disponibilidade e opções pelo WhatsApp.`,
     openGraph: {
-      title: `${produto.nome} — Casa Sinelli`,
+      title: `${produto.nomePasta} — Casa Sinelli`,
       description: descricao,
       type: 'website',
     },
@@ -39,12 +39,12 @@ export default async function ProdutoPage({ params }: Props) {
   const produto = produtoPorId(id);
   if (!produto) notFound();
 
-  const whatsappUrl = mensagemWhatsApp(produto.nome);
+  const whatsappUrl = mensagemWhatsApp(produto.nomePasta);
 
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: produto.nome,
+    name: produto.nomePasta,
     category: produto.categoria,
     offers: {
       '@type': 'Offer',
@@ -82,7 +82,7 @@ export default async function ProdutoPage({ params }: Props) {
             {produto.categoria}
           </Link>
           <span>/</span>
-          <span className="text-marrom font-medium line-clamp-1">{produto.nome}</span>
+          <span className="text-marrom font-medium line-clamp-1">{produto.nomePasta}</span>
         </nav>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -95,7 +95,7 @@ export default async function ProdutoPage({ params }: Props) {
           <div className="flex flex-col gap-6">
             <div>
               <h1 className="font-serif text-3xl sm:text-4xl font-bold text-marrom leading-tight">
-                {produto.nome}
+                {produto.nomePasta}
               </h1>
             </div>
 

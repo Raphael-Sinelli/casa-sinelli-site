@@ -6,6 +6,7 @@ export interface Variacao {
 export interface Produto {
   id: string;
   nome: string;
+  nomePasta: string;
   marca: string;
   categoria: string;
   caminho: string;
