@@ -13,6 +13,7 @@ export interface Produto {
   subpastas: string[];
   medidas: string | null;
   medidasRodape?: string;
+  descricao?: string;
   informacoes: string | null;
   linkReferencia: string | null;
   coresEstruturadas?: string[];

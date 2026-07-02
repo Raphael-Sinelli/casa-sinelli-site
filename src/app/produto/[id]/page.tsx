@@ -15,13 +15,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const produto = produtoPorId(id);
   if (!produto) return { title: 'Produto não encontrado' };
 
-  const descricao = [
-    produto.medidas,
-    produto.informacoes?.slice(0, 120),
-  ]
-    .filter(Boolean)
-    .join(' — ')
-    .slice(0, 155);
+  const descricao = (
+    produto.descricao ??
+    [produto.medidas, produto.informacoes?.slice(0, 120)]
+      .filter(Boolean)
+      .join(' — ')
+  ).slice(0, 155);
 
   return {
     title: produto.nome,
@@ -98,6 +97,13 @@ export default async function ProdutoPage({ params }: Props) {
                 {produto.nome}
               </h1>
             </div>
+
+            {/* Descrição */}
+            {produto.descricao && (
+              <p className="text-base text-gray-700 leading-relaxed">
+                {produto.descricao}
+              </p>
+            )}
 
             {/* Medidas */}
             {produto.medidas && (
