@@ -24,7 +24,7 @@ export function todasCategorias(): { nome: string; slug: string; total: number }
   }
   return Array.from(contagem.entries())
     .map(([nome, total]) => ({ nome, slug: slugify(nome), total }))
-    .sort((a, b) => b.total - a.total);
+    .sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
 }
 
 export function slugify(str: string): string {

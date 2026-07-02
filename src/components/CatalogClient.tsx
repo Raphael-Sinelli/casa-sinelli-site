@@ -51,7 +51,7 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Barra de busca */}
-        <div className="mb-6">
+        <div className="mb-6 lg:hidden">
           <SearchBar valor={busca} onChange={setBusca} />
         </div>
 
@@ -69,7 +69,10 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
         <div className="flex gap-8">
           {/* Sidebar */}
           <aside className={`w-56 shrink-0 ${sidebarAberta ? 'block' : 'hidden'} lg:block`}>
-            <div className="sticky top-24 bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
+            <div className="lg:sticky lg:top-24 bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col min-h-0 lg:max-h-[calc(100vh-7rem)]">
+              <div className="hidden lg:block mb-4 shrink-0">
+                <SearchBar valor={busca} onChange={setBusca} />
+              </div>
               <CategoryFilter
                 categorias={categorias}
                 selecionada={categoriaSelecionada}

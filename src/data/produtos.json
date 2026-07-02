@@ -4870,46 +4870,46 @@
     "medidas": "Sim. As medidas das três cabeceiras Songes eram:\r\n\r\nSolteiro: 90 × 122 cm\r\nCasal: 140 × 122 cm\r\nQueen: 160 × 122 cm\r\n\r\nA primeira medida é a largura e a segunda é a altura.",
     "informacoes": null,
     "linkReferencia": null,
-    "capa": "/songes/cabeceira/solteiro/cinza.png",
+    "capa": "/songes/cabeceira/solteiro/solteira cinza.png",
     "imagens": [],
     "variacoes": [
       {
         "cor": "casal",
         "imagens": [
-          "/songes/cabeceira/casal/cinza.png",
-          "/songes/cabeceira/casal/marrom.png",
-          "/songes/cabeceira/casal/preta.png",
-          "/songes/cabeceira/casal/vermelha.png"
+          "/songes/cabeceira/casal/casal cinza.png",
+          "/songes/cabeceira/casal/casal marrom.png",
+          "/songes/cabeceira/casal/casal preta.png",
+          "/songes/cabeceira/casal/casal vermelha.png"
         ]
       },
       {
         "cor": "quenn",
         "imagens": [
-          "/songes/cabeceira/quenn/marrom.png",
-          "/songes/cabeceira/quenn/preta.png"
+          "/songes/cabeceira/quenn/queen marrom.png",
+          "/songes/cabeceira/quenn/queen preta.png"
         ]
       },
       {
         "cor": "solteiro",
         "imagens": [
-          "/songes/cabeceira/solteiro/cinza.png",
-          "/songes/cabeceira/solteiro/marrom.png",
-          "/songes/cabeceira/solteiro/preta.png",
-          "/songes/cabeceira/solteiro/vermelha.png"
+          "/songes/cabeceira/solteiro/solteira cinza.png",
+          "/songes/cabeceira/solteiro/solteira marrom.png",
+          "/songes/cabeceira/solteiro/solteiro preto.png",
+          "/songes/cabeceira/solteiro/solteiro vermelho.png"
         ]
       }
     ],
     "todasImagens": [
-      "/songes/cabeceira/casal/cinza.png",
-      "/songes/cabeceira/casal/marrom.png",
-      "/songes/cabeceira/casal/preta.png",
-      "/songes/cabeceira/casal/vermelha.png",
-      "/songes/cabeceira/quenn/marrom.png",
-      "/songes/cabeceira/quenn/preta.png",
-      "/songes/cabeceira/solteiro/cinza.png",
-      "/songes/cabeceira/solteiro/marrom.png",
-      "/songes/cabeceira/solteiro/preta.png",
-      "/songes/cabeceira/solteiro/vermelha.png"
+      "/songes/cabeceira/casal/casal cinza.png",
+      "/songes/cabeceira/casal/casal marrom.png",
+      "/songes/cabeceira/casal/casal preta.png",
+      "/songes/cabeceira/casal/casal vermelha.png",
+      "/songes/cabeceira/quenn/queen marrom.png",
+      "/songes/cabeceira/quenn/queen preta.png",
+      "/songes/cabeceira/solteiro/solteira cinza.png",
+      "/songes/cabeceira/solteiro/solteira marrom.png",
+      "/songes/cabeceira/solteiro/solteiro preto.png",
+      "/songes/cabeceira/solteiro/solteiro vermelho.png"
     ]
   },
   {
