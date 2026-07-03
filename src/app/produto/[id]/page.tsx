@@ -135,21 +135,6 @@ export default async function ProdutoPage({ params }: Props) {
               </div>
             )}
 
-            {/* Referência do fabricante */}
-            {produto.linkReferencia && (
-              <p className="text-xs text-gray-400">
-                Fabricante:{' '}
-                <a
-                  href={produto.linkReferencia}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-marrom hover:underline"
-                >
-                  {new URL(produto.linkReferencia).hostname.replace('www.', '')}
-                </a>
-              </p>
-            )}
-
             {/* CTA WhatsApp — visível desktop */}
             <div className="hidden lg:block">
               <a
