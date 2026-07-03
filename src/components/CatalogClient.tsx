@@ -6,7 +6,6 @@ import { buscarProdutos, slugify } from '@/lib/produtos';
 import ProductCard from './ProductCard';
 import CategoryFilter from './CategoryFilter';
 import SearchBar from './SearchBar';
-import SkeletonCard from './SkeletonCard';
 
 interface CategoriaInfo {
   nome: string;

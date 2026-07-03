@@ -58,11 +58,6 @@ export function capaProduto(produto: Produto): string | null {
   return produto.capa ?? primeiraImagemDisplay(produto);
 }
 
-export function imagensDisplayDaVariacao(produto: Produto, cor: string): string[] {
-  const variacao = produto.variacoes.find((v) => v.cor === cor);
-  return (variacao?.imagens ?? []).filter(isImagemDisplay);
-}
-
 export function buscarProdutos(produtos: Produto[], query: string): Produto[] {
   const q = query.toLowerCase().trim();
   if (!q) return produtos;
@@ -74,7 +69,7 @@ export function buscarProdutos(produtos: Produto[], query: string): Produto[] {
 }
 
 export function mensagemWhatsApp(nomeProduto: string): string {
-  const msg = `Olá! Tenho interesse no ${nomeProduto} da Casa Sinelli.`;
+  const msg = `Olá! Tenho interesse no produto ${nomeProduto}. Poderia me passar mais informações, disponibilidade e condições?`;
   return `https://wa.me/5511971776165?text=${encodeURIComponent(msg)}`;
 }
 
@@ -83,9 +78,68 @@ export function imagemUrl(caminho: string): string {
 }
 
 export function ehTamanho(cor: string): boolean {
-  return /^\d[\d,.]*\s*[mMcC]/i.test(cor.trim());
+  return /^\d[\d,.]*\s*[mMcC]?$/i.test(cor.trim());
 }
 
 export function variacoesDisplay(produto: Produto): import('./tipos').Variacao[] {
   return produto.variacoes.filter((v) => v.imagens.some(isImagemDisplay));
+}
+
+// "2,10M" -> "2,10 m" | "2,70" -> "2,70 m" | "JatobaAreia" -> "Jatoba Areia"
+export function rotuloVariacao(cor: string): string {
+  const t = cor.trim();
+  const tamanho = t.match(/^(\d[\d,.]*)\s*m?$/i);
+  if (tamanho) return `${tamanho[1]} m`;
+  return t
+    .replace(/[-_]+/g, ' ')
+    .replace(/([a-zà-ú])([A-ZÀ-Ú])/g, '$1 $2')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export interface GrupoCor {
+  cor: string | null; // null = fotos soltas, sem subpasta de cor
+  imagens: string[];
+}
+
+// Dentro de uma variação (pasta de 1º nível, geralmente tamanho), agrupa as
+// imagens pela subpasta de 2º nível quando ela existir (geralmente cor).
+export function gruposDeCor(produto: Produto, corVariacao: string): GrupoCor[] {
+  const variacao = produto.variacoes.find((v) => v.cor === corVariacao);
+  const imagens = (variacao?.imagens ?? []).filter(isImagemDisplay);
+  const prefixo = `${produto.caminho}/${corVariacao}/`;
+  const grupos = new Map<string | null, string[]>();
+  for (const img of imagens) {
+    const rel = img.startsWith(prefixo) ? img.slice(prefixo.length) : '';
+    const partes = rel.split('/');
+    // subpasta só conta como cor se não for pasta técnica (ex.: "convertidas")
+    const bruta = partes.length > 1 ? partes[0] : null;
+    const chave = bruta && !/^convertidas?$/i.test(bruta) ? bruta : null;
+    grupos.set(chave, [...(grupos.get(chave) ?? []), img]);
+  }
+  return Array.from(grupos.entries()).map(([cor, imgs]) => ({ cor, imagens: imgs }));
+}
+
+// Variação que contém a capa — a página abre na mesma foto do card.
+export function variacaoInicial(produto: Produto): string {
+  const visiveis = variacoesDisplay(produto);
+  if (produto.capa) {
+    const dona = visiveis.find((v) => v.imagens.includes(produto.capa!));
+    if (dona) return dona.cor;
+  }
+  return visiveis[0]?.cor ?? '';
+}
+
+// Anterior/próximo dentro da mesma categoria, na ordem da listagem.
+export function vizinhosNaCategoria(produto: Produto): {
+  anterior: Produto | null;
+  proximo: Produto | null;
+} {
+  const lista = produtosPorCategoria(produto.categoria);
+  const i = lista.findIndex((p) => p.id === produto.id);
+  if (i === -1) return { anterior: null, proximo: null };
+  return {
+    anterior: i > 0 ? lista[i - 1] : null,
+    proximo: i < lista.length - 1 ? lista[i + 1] : null,
+  };
 }

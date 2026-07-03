@@ -1,7 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  /* Marca */
+  /* Tokens Casa Sinelli — Direção "Portal" (amostrados das fotos reais do catálogo) */
+  --color-cru: #F6F2EB;
+  --color-grafite: #332E29;
+  --color-jatoba: #72533A;
+  --color-areia: #D8C3A3;
+  --color-vinho: #722634;
+  --color-vinho-escuro: #571C27;
+  --color-wa: #25D366;
+  --color-wa-escuro: #1DA851;
+
+  /* Tokens legados — em remoção gradual (Fases 2b–2e) */
   --color-marrom: #6B4C2A;
   --color-marrom-escuro: #4A3219;
   --color-marrom-claro: #8B6340;
@@ -12,26 +22,52 @@
   --color-preto: #1A1A1A;
 
   /* Fontes */
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
-}
-
-:root {
-  --color-marrom: #6B4C2A;
-  --color-oliva: #5C7A3E;
+  --font-sans: var(--font-albert);
+  --font-serif: var(--font-newsreader);
+  --font-mono: var(--font-spline-mono);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
-  color: #1A1A1A;
-  background: #FFFFFF;
-  font-family: var(--font-inter), system-ui, sans-serif;
+  color: #332E29;
+  background: #F6F2EB;
+  font-family: var(--font-albert), system-ui, sans-serif;
 }
 
 /* Scrollbar discreta */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #f5ede3; }
-::-webkit-scrollbar-thumb { background: #6B4C2A; border-radius: 3px; }
+::-webkit-scrollbar-track { background: #F6F2EB; }
+::-webkit-scrollbar-thumb { background: #D8C3A3; border-radius: 3px; }
+
+/* Etiqueta de showroom — assinatura para dados técnicos */
+.etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 1.5px solid #332E29;
+  border-radius: 6px;
+  padding: 7px 12px 7px 9px;
+  font-family: var(--font-spline-mono), monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  box-shadow: 2.5px 2.5px 0 #332E29;
+}
+.etiqueta::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #F6F2EB;
+  border: 1.5px solid #332E29;
+  flex-shrink: 0;
+}

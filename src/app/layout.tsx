@@ -1,20 +1,28 @@
 import type { Metadata } from 'next';
-import { Playfair_Display, Inter } from 'next/font/google';
+import { Newsreader, Albert_Sans, Spline_Sans_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
-const playfair = Playfair_Display({
+const newsreader = Newsreader({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-playfair',
+  style: ['normal', 'italic'],
+  axes: ['opsz'],
+  variable: '--font-newsreader',
 });
 
-const inter = Inter({
+const albertSans = Albert_Sans({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-albert',
+});
+
+const splineSansMono = Spline_Sans_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-spline-mono',
 });
 
 export const metadata: Metadata = {
@@ -40,9 +48,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="pt-BR"
-      className={`${playfair.variable} ${inter.variable} antialiased`}
+      className={`${newsreader.variable} ${albertSans.variable} ${splineSansMono.variable} antialiased`}
     >
-      <body className="min-h-screen flex flex-col bg-white text-preto">
+      <body className="min-h-screen flex flex-col bg-cru text-grafite">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
