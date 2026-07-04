@@ -28,7 +28,7 @@ const WHATSAPP_URL =
 const DESTAQUE_IDS = ['25', '28', '14', '60', '3', '24', '101', '66'];
 
 // Produto da foto do hero — o ambiente mais forte do acervo
-const HERO_PRODUTO_ID = '28';
+const HERO_PRODUTO_ID = '80';
 
 const DIFERENCIAIS = [
   {
