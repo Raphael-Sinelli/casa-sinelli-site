@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import WhatsAppIcon from './WhatsAppIcon';
+import LogoPoltrona from './LogoPoltrona';
 
 
 interface CategoriaLink {
@@ -57,17 +58,15 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-vinho focus-visible:outline-offset-4 rounded-sm"
+            className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-4 rounded-sm"
             aria-label="Casa Sinelli — página inicial"
           >
-            <span className="flex w-10 h-10 shrink-0 items-center justify-center rounded-full rounded-bl-sm bg-jatoba text-cru font-serif italic font-semibold text-[17px] transition-colors group-hover:bg-vinho">
-              CS
-            </span>
+            <LogoPoltrona tamanho={42} className="shrink-0 transition-transform group-hover:scale-105 motion-reduce:group-hover:scale-100" />
             <span className="flex flex-col leading-none">
               <span className="font-serif text-[21px] font-semibold text-grafite tracking-tight">
                 Casa Sinelli
               </span>
-              <span className="font-mono text-[9.5px] tracking-[0.22em] uppercase text-jatoba mt-0.5">
+              <span className="font-mono text-[9.5px] tracking-[0.22em] uppercase text-marca mt-0.5">
                 Móveis &amp; Colchões
               </span>
             </span>
@@ -80,10 +79,10 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
                 key={l.href}
                 href={l.href}
                 aria-current={linkAtivo(l.href) ? 'page' : undefined}
-                className={`text-[14.5px] font-medium transition-colors underline-offset-8 decoration-2 focus-visible:outline-2 focus-visible:outline-vinho focus-visible:outline-offset-4 rounded-sm ${
+                className={`text-[14.5px] font-medium transition-colors underline-offset-8 decoration-2 focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-4 rounded-sm ${
                   linkAtivo(l.href)
-                    ? 'text-vinho underline'
-                    : 'text-grafite hover:text-vinho'
+                    ? 'text-musgo underline'
+                    : 'text-grafite hover:text-musgo'
                 }`}
               >
                 {l.label}
@@ -93,7 +92,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-1 inline-flex items-center gap-2 bg-wa hover:bg-wa-escuro text-white text-sm font-semibold px-4.5 py-2.5 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-vinho focus-visible:outline-offset-2"
+              className="ml-1 inline-flex items-center gap-2 bg-wa hover:bg-wa-escuro text-white text-sm font-semibold px-4.5 py-2.5 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2"
             >
               <WhatsAppIcon className="w-4.5 h-4.5" />
               Consultar preço
@@ -103,7 +102,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
           {/* Botão menu mobile */}
           <button
             onClick={() => setMenuAberto(!menuAberto)}
-            className="lg:hidden w-11 h-11 flex items-center justify-center text-grafite rounded-xl hover:bg-grafite/6 transition-colors focus-visible:outline-2 focus-visible:outline-vinho"
+            className="lg:hidden w-11 h-11 flex items-center justify-center text-grafite rounded-xl hover:bg-grafite/6 transition-colors focus-visible:outline-2 focus-visible:outline-musgo"
             aria-label={menuAberto ? 'Fechar menu' : 'Abrir menu'}
             aria-expanded={menuAberto}
             aria-controls="menu-mobile"
@@ -133,21 +132,21 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
               <Link
                 href="/"
                 onClick={fecharMenu}
-                className="font-serif text-2xl font-medium text-grafite py-2.5 hover:text-vinho transition-colors"
+                className="font-serif text-2xl font-medium text-grafite py-2.5 hover:text-musgo transition-colors"
               >
                 Início
               </Link>
               <Link
                 href="/catalogo"
                 onClick={fecharMenu}
-                className="font-serif text-2xl font-medium text-grafite py-2.5 hover:text-vinho transition-colors"
+                className="font-serif text-2xl font-medium text-grafite py-2.5 hover:text-musgo transition-colors"
               >
                 Catálogo completo
               </Link>
             </div>
 
             <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-jatoba mb-3">
+              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-marca mb-3">
                 Categorias
               </p>
               <div className="grid grid-cols-2 gap-x-4">
@@ -156,7 +155,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
                     key={c.slug}
                     href={`/categoria/${c.slug}`}
                     onClick={fecharMenu}
-                    className="flex items-baseline justify-between gap-2 py-2 border-b border-grafite/8 text-[15px] font-medium text-grafite hover:text-vinho transition-colors"
+                    className="flex items-baseline justify-between gap-2 py-2 border-b border-grafite/8 text-[15px] font-medium text-grafite hover:text-musgo transition-colors"
                   >
                     <span className="truncate">{c.nome}</span>
                     <span className="font-mono text-xs text-grafite/45 shrink-0">{c.total}</span>

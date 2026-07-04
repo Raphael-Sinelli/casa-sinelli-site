@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import Image from 'next/image';
 import { imagemUrl } from '@/lib/produtos';
+import LogoPoltrona from './LogoPoltrona';
 
 interface Props {
   imagens: string[];
@@ -62,9 +63,7 @@ export default function ProductGallery({ imagens, nomeProduto }: Props) {
     return (
       <div className="aspect-square rounded-t-[72px] rounded-b-2xl bg-white border border-grafite/10 flex items-center justify-center">
         <div className="text-center p-8">
-          <span className="mx-auto mb-4 flex w-14 h-14 items-center justify-center rounded-full rounded-bl-sm bg-jatoba text-cru font-serif italic font-semibold text-xl">
-            CS
-          </span>
+          <LogoPoltrona tamanho={64} className="mx-auto mb-4 opacity-70" />
           <p className="text-grafite/60 font-medium">{nomeProduto}</p>
           <p className="text-grafite/40 text-sm mt-1">Foto em breve — consulte pelo WhatsApp</p>
         </div>
@@ -86,7 +85,7 @@ export default function ProductGallery({ imagens, nomeProduto }: Props) {
       <div className="relative aspect-square rounded-t-[72px] rounded-b-2xl overflow-hidden bg-white border border-grafite/10">
         <button
           onClick={() => setLightbox(true)}
-          className="absolute inset-0 w-full h-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-vinho focus-visible:-outline-offset-4"
+          className="absolute inset-0 w-full h-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-musgo focus-visible:-outline-offset-4"
           aria-label={`Ampliar foto ${atual + 1} de ${nomeProduto}`}
         >
           <Image
@@ -105,14 +104,14 @@ export default function ProductGallery({ imagens, nomeProduto }: Props) {
           <>
             <button
               onClick={anterior}
-              className="absolute left-3 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center bg-grafite/70 hover:bg-grafite text-cru rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-vinho"
+              className="absolute left-3 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center bg-grafite/70 hover:bg-grafite text-cru rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-musgo"
               aria-label="Foto anterior"
             >
               {setaEsq}
             </button>
             <button
               onClick={proxima}
-              className="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center bg-grafite/70 hover:bg-grafite text-cru rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-vinho"
+              className="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center bg-grafite/70 hover:bg-grafite text-cru rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-musgo"
               aria-label="Próxima foto"
             >
               {setaDir}
@@ -142,7 +141,7 @@ export default function ProductGallery({ imagens, nomeProduto }: Props) {
               aria-selected={i === atual}
               aria-label={`Foto ${i + 1}`}
               className={`relative shrink-0 snap-start w-16 h-16 rounded-xl overflow-hidden bg-white border-2 transition-colors ${
-                i === atual ? 'border-vinho' : 'border-grafite/10 hover:border-grafite/40'
+                i === atual ? 'border-musgo' : 'border-grafite/10 hover:border-grafite/40'
               }`}
             >
               <Image

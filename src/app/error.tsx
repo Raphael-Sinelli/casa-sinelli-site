@@ -2,13 +2,12 @@
 
 import Link from 'next/link';
 import WhatsAppIcon from '@/components/WhatsAppIcon';
+import LogoPoltrona from '@/components/LogoPoltrona';
 
 export default function Error({ reset }: { error: Error & { digest?: string }; reset: () => void }) {
   return (
     <div className="max-w-xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center">
-      <span className="mx-auto mb-6 flex w-16 h-16 items-center justify-center rounded-full rounded-bl-sm bg-vinho text-cru font-serif italic font-semibold text-2xl">
-        CS
-      </span>
+      <LogoPoltrona tamanho={72} className="mx-auto mb-6" />
       <h1 className="font-serif text-4xl sm:text-5xl font-medium text-grafite leading-tight">
         Algo travou por aqui
       </h1>
@@ -18,7 +17,7 @@ export default function Error({ reset }: { error: Error & { digest?: string }; r
       <div className="mt-9 flex flex-col sm:flex-row gap-3.5 justify-center">
         <button
           onClick={reset}
-          className="inline-flex items-center justify-center bg-grafite hover:bg-grafite/85 text-cru font-semibold px-6 py-3.5 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-vinho focus-visible:outline-offset-2"
+          className="inline-flex items-center justify-center bg-grafite hover:bg-grafite/85 text-cru font-semibold px-6 py-3.5 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2"
         >
           Tentar de novo
         </button>
@@ -26,7 +25,7 @@ export default function Error({ reset }: { error: Error & { digest?: string }; r
           href="https://wa.me/5511971776165"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2.5 bg-wa hover:bg-wa-escuro text-white font-semibold px-6 py-3.5 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-vinho focus-visible:outline-offset-2"
+          className="inline-flex items-center justify-center gap-2.5 bg-wa hover:bg-wa-escuro text-white font-semibold px-6 py-3.5 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2"
         >
           <WhatsAppIcon className="w-5 h-5" />
           Falar com a loja
@@ -34,7 +33,7 @@ export default function Error({ reset }: { error: Error & { digest?: string }; r
       </div>
       <Link
         href="/"
-        className="inline-block mt-7 text-sm font-semibold text-vinho hover:underline underline-offset-4"
+        className="inline-block mt-7 text-sm font-semibold text-musgo hover:underline underline-offset-4"
       >
         Voltar para o início
       </Link>

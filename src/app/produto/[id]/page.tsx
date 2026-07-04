@@ -49,7 +49,7 @@ function LinhasMedidas({ medidas }: { medidas: string }) {
   const longas = linhas.filter((l) => l.length > 60);
   return (
     <div>
-      <h2 className="text-xs font-mono uppercase tracking-widest text-jatoba mb-3">Medidas</h2>
+      <h2 className="text-xs font-mono uppercase tracking-widest text-marca mb-3">Medidas</h2>
       {curtas.length > 0 && (
         <div className="flex flex-col items-start gap-2">
           {curtas.map((linha) => (
@@ -71,7 +71,7 @@ function InfoTecnica({ informacoes }: { informacoes: string }) {
     .filter(Boolean);
   return (
     <div className="bg-white rounded-2xl border border-grafite/10 p-5 sm:p-6">
-      <h2 className="text-xs font-mono uppercase tracking-widest text-jatoba mb-3">
+      <h2 className="text-xs font-mono uppercase tracking-widest text-marca mb-3">
         Informações técnicas
       </h2>
       <ul className="text-sm text-grafite/80 leading-relaxed divide-y divide-grafite/8">
@@ -126,9 +126,9 @@ export default async function ProdutoPage({ params }: Props) {
         {/* Breadcrumb + navegação entre produtos */}
         <div className="flex items-center justify-between gap-4 mb-6 lg:mb-8">
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-grafite/60 min-w-0">
-            <Link href="/" className="hover:text-vinho transition-colors shrink-0">Início</Link>
+            <Link href="/" className="hover:text-musgo transition-colors shrink-0">Início</Link>
             <span aria-hidden="true">/</span>
-            <Link href={`/categoria/${slugCategoria}`} className="hover:text-vinho transition-colors shrink-0">
+            <Link href={`/categoria/${slugCategoria}`} className="hover:text-musgo transition-colors shrink-0">
               {produto.categoria}
             </Link>
             <span aria-hidden="true">/</span>
@@ -180,7 +180,7 @@ export default async function ProdutoPage({ params }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-6">
           {/* Título — primeiro no mobile, coluna direita no desktop */}
           <header className="lg:col-start-2">
-            <p className="font-mono text-xs uppercase tracking-widest text-jatoba mb-2">
+            <p className="font-mono text-xs uppercase tracking-widest text-marca mb-2">
               {produto.categoria}
             </p>
             <h1 className="font-serif text-3xl sm:text-4xl font-medium text-grafite leading-tight">
@@ -200,7 +200,7 @@ export default async function ProdutoPage({ params }: Props) {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 bg-wa hover:bg-wa-escuro text-white font-bold text-lg py-4 px-6 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-vinho focus-visible:outline-offset-2"
+                className="flex items-center justify-center gap-3 bg-wa hover:bg-wa-escuro text-white font-bold text-lg py-4 px-6 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2"
               >
                 <WhatsAppIcon className="w-6 h-6" />
                 Consultar preço
@@ -222,7 +222,7 @@ export default async function ProdutoPage({ params }: Props) {
 
             <Link
               href={`/categoria/${slugCategoria}`}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-vinho hover:underline underline-offset-4"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-musgo hover:underline underline-offset-4"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

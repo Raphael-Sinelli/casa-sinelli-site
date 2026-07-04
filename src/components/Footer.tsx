@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { MapPin, Clock, Phone, Mail } from 'lucide-react';
 import { todasCategorias } from '@/lib/produtos';
 import WhatsAppIcon from './WhatsAppIcon';
@@ -25,18 +26,16 @@ export default function Footer() {
     <footer className="bg-grafite text-cru/75">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr_1fr] gap-10">
-          {/* Marca */}
+          {/* Marca — logo oficial num cartão cru (o contorno grafite some no fundo escuro) */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <span className="flex w-10 h-10 items-center justify-center rounded-full rounded-bl-sm bg-vinho text-cru font-serif italic font-semibold text-[17px]">
-                CS
-              </span>
-              <div className="leading-none">
-                <p className="font-serif text-[21px] font-semibold text-cru tracking-tight">Casa Sinelli</p>
-                <p className="font-mono text-[9.5px] tracking-[0.22em] uppercase text-cru/50 mt-1">
-                  Móveis &amp; Colchões
-                </p>
-              </div>
+            <div className="inline-block bg-cru rounded-2xl px-6 py-5 mb-5">
+              <Image
+                src="/logo-casa-sinelli.png"
+                alt="Casa Sinelli — Móveis & Colchões"
+                width={168}
+                height={155}
+                unoptimized
+              />
             </div>
             <p className="text-sm text-cru/60 leading-relaxed max-w-[38ch]">
               Loja de móveis e colchões em Ribeirão Pires. Sofás, guarda-roupas, cozinhas, camas e colchões com entrega e montagem em todo o ABC Paulista.

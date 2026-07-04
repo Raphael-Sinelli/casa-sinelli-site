@@ -26,7 +26,7 @@ function Chip({
     <button
       onClick={onClick}
       aria-pressed={ativo}
-      className={`px-3.5 py-2 rounded-lg text-sm font-medium border transition-colors focus-visible:outline-2 focus-visible:outline-vinho focus-visible:outline-offset-2 ${
+      className={`px-3.5 py-2 rounded-lg text-sm font-medium border transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2 ${
         ativo
           ? 'bg-grafite text-cru border-grafite'
           : 'bg-white text-grafite border-grafite/25 hover:border-grafite'
@@ -53,7 +53,7 @@ export default function VariacaoSelector({
     <div className="flex flex-col gap-4">
       {variacoes.length > 1 && (
         <div role="group" aria-label={`Escolher ${rotuloNivel1.toLowerCase()}`}>
-          <p className="text-xs font-mono uppercase tracking-widest text-jatoba mb-2">
+          <p className="text-xs font-mono uppercase tracking-widest text-marca mb-2">
             {rotuloNivel1}
             <span className="text-grafite font-sans normal-case tracking-normal text-sm font-semibold ml-2">
               {rotuloVariacao(variacaoAtiva)}
@@ -71,7 +71,7 @@ export default function VariacaoSelector({
 
       {gruposComCor.length > 1 && (
         <div role="group" aria-label="Escolher cor">
-          <p className="text-xs font-mono uppercase tracking-widest text-jatoba mb-2">
+          <p className="text-xs font-mono uppercase tracking-widest text-marca mb-2">
             Cor
             {grupoAtivo && (
               <span className="text-grafite font-sans normal-case tracking-normal text-sm font-semibold ml-2">

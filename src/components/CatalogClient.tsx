@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import type { Produto } from '@/lib/tipos';
 import { buscarProdutos, slugify } from '@/lib/produtos';
 import ProductCard from './ProductCard';
+import LogoPoltrona from './LogoPoltrona';
 import CategoryFilter from './CategoryFilter';
 import SearchBar from './SearchBar';
 import WhatsAppIcon from './WhatsAppIcon';
@@ -40,7 +41,7 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10">
         {/* Cabeçalho da listagem */}
         <header className="mb-7 lg:mb-9 pb-6 border-b border-grafite/12">
-          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-jatoba mb-1.5">
+          <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-marca mb-1.5">
             {produtosFiltrados.length} produto{produtosFiltrados.length !== 1 ? 's' : ''}
             {busca && ` para “${busca}”`}
           </p>
@@ -55,7 +56,7 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
           <button
             onClick={() => setSidebarAberta(!sidebarAberta)}
             aria-expanded={sidebarAberta}
-            className="self-start flex items-center gap-2 text-sm font-semibold text-grafite border border-grafite/25 bg-white px-4 py-2.5 rounded-xl hover:border-grafite transition-colors focus-visible:outline-2 focus-visible:outline-vinho"
+            className="self-start flex items-center gap-2 text-sm font-semibold text-grafite border border-grafite/25 bg-white px-4 py-2.5 rounded-xl hover:border-grafite transition-colors focus-visible:outline-2 focus-visible:outline-musgo"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h18M6 12h12M10 19h4" />
@@ -86,9 +87,7 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
           <div className="flex-1 min-w-0">
             {produtosFiltrados.length === 0 ? (
               <div className="max-w-md mx-auto text-center py-16 sm:py-24">
-                <span className="mx-auto mb-5 flex w-14 h-14 items-center justify-center rounded-full rounded-bl-sm bg-jatoba text-cru font-serif italic font-semibold text-xl">
-                  CS
-                </span>
+                <LogoPoltrona tamanho={64} className="mx-auto mb-5" />
                 <h2 className="font-serif text-2xl font-medium text-grafite">
                   Nenhum produto encontrado
                 </h2>
@@ -100,7 +99,7 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
                 <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
                   <button
                     onClick={() => { setBusca(''); setCategoriaSelecionada(null); }}
-                    className="px-5 py-2.5 rounded-xl border border-grafite/30 text-sm font-semibold text-grafite hover:border-grafite hover:bg-white transition-colors focus-visible:outline-2 focus-visible:outline-vinho"
+                    className="px-5 py-2.5 rounded-xl border border-grafite/30 text-sm font-semibold text-grafite hover:border-grafite hover:bg-white transition-colors focus-visible:outline-2 focus-visible:outline-musgo"
                   >
                     Limpar busca e filtros
                   </button>

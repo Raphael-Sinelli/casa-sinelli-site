@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  /* Tokens Casa Sinelli — Direção "Portal" (amostrados das fotos reais do catálogo) */
+  /* Tokens Casa Sinelli — neutros amostrados das fotos do showroom;
+     marca (marrom) e musgo (verde) extraídos do logo oficial */
   --color-cru: #F6F2EB;
   --color-grafite: #332E29;
-  --color-jatoba: #72533A;
+  --color-marca: #745C48;
   --color-areia: #D8C3A3;
-  --color-vinho: #722634;
-  --color-vinho-escuro: #571C27;
+  --color-musgo: #6A8251;
   --color-wa: #25D366;
   --color-wa-escuro: #1DA851;
 
@@ -40,7 +40,7 @@ body {
 
 /* Rede de segurança de foco — elementos sem estilo próprio de focus-visible */
 :focus-visible {
-  outline: 2px solid #722634;
+  outline: 2px solid #6A8251;
   outline-offset: 2px;
 }
 
