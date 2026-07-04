@@ -1,4 +1,5 @@
 import produtosData from '@/data/produtos.json';
+import cloudinaryMap from '@/data/cloudinary-map.json';
 import type { Produto } from './tipos';
 
 const EXTENSOES_DISPLAY = new Set(['jpg', 'jpeg', 'png', 'webp', 'gif']);
@@ -73,7 +74,14 @@ export function mensagemWhatsApp(nomeProduto: string): string {
   return `https://wa.me/5511971776165?text=${encodeURIComponent(msg)}`;
 }
 
+// Migração gradual: imagens já enviadas ao Cloudinary (src/data/cloudinary-map.json,
+// gerado por scripts/upload-cloudinary.js) servem a partir de lá; o restante
+// continua vindo do disco local via /api/catalogo até a migração completa.
+const CLOUDINARY_MAP = cloudinaryMap as Record<string, string>;
+
 export function imagemUrl(caminho: string): string {
+  const urlCloudinary = CLOUDINARY_MAP[caminho];
+  if (urlCloudinary) return urlCloudinary;
   return encodeURI(`/api/catalogo${caminho}`);
 }
 

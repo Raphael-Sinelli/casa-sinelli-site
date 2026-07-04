@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
     // fotos servidas do disco por /api/catalogo; o otimizador do Next
     // busca nessa rota, redimensiona (sharp) e cacheia em .next/cache/images
     localPatterns: [{ pathname: "/api/catalogo/**" }],
+    // imagens já migradas para o Cloudinary (ver src/data/cloudinary-map.json)
+    remotePatterns: [
+      { protocol: "https", hostname: "res.cloudinary.com", pathname: "/avach9py/**" },
+    ],
     qualities: [60, 75, 85],
     minimumCacheTTL: 2678400, // 31 dias — os arquivos do catálogo não mudam de conteúdo
   },
