@@ -1,10 +1,10 @@
 export default function Map() {
   return (
-    <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+    <div className="rounded-2xl overflow-hidden border border-grafite/12 bg-white">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.123!2d-46.4131!3d-23.7152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7ce4c4c4c4c4%3A0x0!2sAv.+Francisco+Monteiro%2C+1320+-+Vila+Fiorentino%2C+Ribeir%C3%A3o+Pires+-+SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+        src="https://www.google.com/maps?q=Av.+Francisco+Monteiro,+1320+-+Vila+Fiorentino,+Ribeir%C3%A3o+Pires+-+SP&hl=pt-BR&z=16&output=embed"
         width="100%"
-        height="350"
+        height="380"
         style={{ border: 0, display: 'block' }}
         allowFullScreen
         loading="lazy"

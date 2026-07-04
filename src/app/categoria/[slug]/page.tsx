@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const categorias = todasCategorias();
   const cat = categorias.find((c) => c.slug === slug);
-  if (!cat) return { title: 'Categoria não encontrada' };
+  if (!cat) notFound();
   return {
     title: `${cat.nome} — Catálogo`,
     description: `Veja nossa seleção de ${cat.nome.toLowerCase()} com ${cat.total} opções. Fale pelo WhatsApp para mais informações.`,

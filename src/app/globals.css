@@ -11,16 +11,6 @@
   --color-wa: #25D366;
   --color-wa-escuro: #1DA851;
 
-  /* Tokens legados — em remoção gradual (Fases 2b–2e) */
-  --color-marrom: #6B4C2A;
-  --color-marrom-escuro: #4A3219;
-  --color-marrom-claro: #8B6340;
-  --color-marrom-palido: #F5EDE3;
-  --color-oliva: #5C7A3E;
-  --color-oliva-escuro: #3D5228;
-  --color-oliva-claro: #7A9E57;
-  --color-preto: #1A1A1A;
-
   /* Fontes */
   --font-sans: var(--font-albert);
   --font-serif: var(--font-newsreader);

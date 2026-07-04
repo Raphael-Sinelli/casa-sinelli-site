@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const produto = produtoPorId(id);
-  if (!produto) return { title: 'Produto não encontrado' };
+  if (!produto) notFound();
 
   const descricao = (
     produto.descricao ??
