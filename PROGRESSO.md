@@ -3,7 +3,9 @@
 **Última sessão:** 2026-07-03
 **Fonte da verdade do job:** `prompt-design-casa-sinelli-final.md` (raiz) — trabalho em fases com **portão de aprovação do usuário ao fim de cada fase**.
 
-## ✅ PROJETO CONCLUÍDO (2026-07-04)
+## ✅ PROJETO CONCLUÍDO (2026-07-04) — + hotfix e rebrand pós-entrega
+
+Pós-entrega (2026-07-04): (a) **fix da galeria** `a9a521b` — 87 produtos com fotos soltas (variações vazias) caíam em "Foto em breve" na PDP (regressão da 2a); fallback para todasImagens restaurado, smoke 87/87 ok. (b) **Logo oficial adotado** `bbc9329` — selo "CS" e vinho eram invenção; tokens agora: **marca `#745C48`** (marrom do wordmark) e **musgo `#6A8251`** (verde da poltrona), extraídos do PDF oficial (`public/Casa_Sinelli_logo_alta_qualidade.pdf`); ícone da poltrona (`LogoPoltrona`/`public/logo-poltrona.png`) em header/404/erro/placeholders/CTA; logo completo no footer (cartão cru); favicon novo (`src/app/icon.png`). Regra: musgo nunca em botão (verde-botão é exclusivo do WhatsApp). Redimensionamento p/ produção: `C:\Imagens\Catalogo_producao_2048` (786MB, aguardando decisão de storage).
 
 Todas as fases do overhaul foram entregues e aprovadas. Relatório final de entregáveis (Seção 9 do prompt) entregue na sessão de 2026-07-04. Site na identidade "Portal" completa, build limpo, 156 rotas ok, lint zerado.
 
@@ -36,7 +38,7 @@ Próximos passos recomendados (fora do escopo do prompt, aguardando decisão do 
 
 ## Decisões congeladas / padrões a seguir
 
-- **Tokens** (globals.css `@theme`, amostrados de fotos reais): cru `#F6F2EB` (base), grafite `#332E29` (texto), jatobá `#72533A` (marca), areia `#D8C3A3` (apoio), vinho `#722634` (acento), wa `#25D366` + wa-escuro (SÓ conversão). **Sem ajustes — usuário congelou.**
+- **Tokens** (globals.css `@theme`): cru `#F6F2EB`, grafite `#332E29`, areia `#D8C3A3` (neutros das fotos) + **marca `#745C48`** e **musgo `#6A8251`** (do logo oficial), wa `#25D366` (SÓ conversão). Selo "CS" e vinho não existem mais.
 - **Fontes**: Newsreader (display/serif, `axes:['opsz']`) · Albert Sans (corpo) · Spline Sans Mono (medidas/dados). Playfair/Inter removidas.
 - **Assinatura**: arco-portal em molduras de foto (`rounded-t-[72px]`), selo circular "CS" (`rounded-full rounded-bl-sm bg-jatoba`, serif itálico), classe `.etiqueta` (globals.css) para dado técnico.
 - **CTA**: rótulo único **"Consultar preço"**, verde wa, ícone `WhatsAppIcon` (componente único — nunca colar o SVG inline). Mensagem: `mensagemWhatsApp()` em lib/produtos.
