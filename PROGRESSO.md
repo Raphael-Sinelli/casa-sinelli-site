@@ -3,16 +3,11 @@
 **Última sessão:** 2026-07-03
 **Fonte da verdade do job:** `prompt-design-casa-sinelli-final.md` (raiz) — trabalho em fases com **portão de aprovação do usuário ao fim de cada fase**.
 
-## ➡️ PRÓXIMA ETAPA: Fase 2c (catálogo/listagem de categoria)
+## ➡️ PRÓXIMA ETAPA: Fase 2d (home)
 
-Requisitos do prompt para a 2c: grid responsivo, cards consistentes, imagem valorizada, nome claro, CTA direto, estado vazio bem feito. Filtros/busca/ordenação **só** se os dados suportarem **e com aprovação prévia**. Ao terminar: build + screenshots antes/depois (desktop e mobile) + commit + **parar e pedir aprovação** antes da 2d.
+Requisitos do prompt para a 2d: hero como tese visual (abrir com a imagem/ambiente mais forte; sem a grade de fotos a 15% de opacidade), CTA principal WhatsApp + secundário catálogo, blocos de categorias principais (não 25 tiles iguais), produtos em destaque curados (hoje é slice(0,8) do JSON), diferenciais/benefícios sem emoji-ícone, prova de confiança **real** (loja física, entrega/montagem — sem inventar números; "Mais de 127" é falso, são 127 exatos), chamada final. Tokens legados marrom/oliva do globals.css morrem aqui. Ao terminar: build + screenshots antes/depois + commit + **parar e pedir aprovação** antes da 2e.
 
-Pendências da auditoria que a 2c deve resolver:
-- Cards com tokens/tipografia novos (hoje ainda marrom/Playfair-era, badge redundante de categoria em página de categoria, dois CTAs competindo por card).
-- Foto de estúdio = fundo branco puro; ambientada = preenche moldura (matar "caixa branca dentro do bege").
-- Faixa-título marrom da listagem → visual Portal.
-- 127 cards renderizados de uma vez no /catalogo — avaliar paginação/chunking.
-- Rótulo CTA: "Consultar preço" (nunca outra variação).
+Fase 2c entregue (commit `b3ea6b6`): card Portal com 1 CTA e card inteiro clicável, badge redundante removida, cabeçalho cru no lugar da faixa marrom, sidebar/busca retokenizadas, estado vazio com selo CS + "Perguntar à loja", SkeletonCard deletado. Decisão registrada: 127 cards continuam renderizando de uma vez (imagens são lazy via next/image; medir na Fase 3 antes de paginar).
 
 ---
 
@@ -24,10 +19,10 @@ Pendências da auditoria que a 2c deve resolver:
 | 1 — Design system | 2 direções mockadas; **aprovada: Direção A "Portal" + etiqueta da B** para medidas/specs. Mockups `fase1-direcao-*.jpeg` | — (sem código de produção) |
 | 2a — Página de produto + imagens | Galeria abre na variação da capa; seletor tamanho+**cor** (subpastas de 2º nível); lightbox com zoom 2.5×; anterior/próximo na categoria; título antes da galeria no mobile; CTA único; medidas em etiquetas; **next/image ligado** (capa 1,35MB→48KB webp, −97%); horário 9h–19h corrigido + CEP removido do JSON-LD (decisão do usuário) | `7fef48e` |
 | 2b — Header | Cru + blur sticky (z-60); selo CS; nav derivada dos dados (top volume + **Colchão garantido** — nome da loja); aria-current sublinhado vinho; menu mobile com as 25 categorias + contagem; CTA "Consultar preço" | `0c7c9b9` |
+| 2c — Catálogo/listagem | Card Portal (1 CTA, card clicável, foto em branco puro, badge redundante removida), cabeçalho cru, sidebar/busca retokenizadas, estado vazio com selo CS, SkeletonCard removido | `b3ea6b6` |
 
 ## Falta fazer
 
-- **2c — Catálogo/listagem** ← próxima (ver topo)
 - **2d — Home**: hero como tese visual (imagem forte, sem grade 15% opacity), copy sem clichê IA ("Mais de 127" é falso — são 127 exatos), destaque curado (hoje é slice(0,8) do JSON), bloco de categorias enxuto (25 tiles iguais hoje), diferenciais sem emoji-ícone, prova de confiança real, CTA final. Tokens legados marrom/oliva morrem aqui.
 - **2e — Footer, 404, estados, mapa**: footer completo na identidade nova (sem emojis); `not-found.tsx` (hoje 404 default do Next em inglês); estados vazio/erro/carregamento pt-BR; **corrigir Google Maps embed** — o atual é placeholder falso (renderiza em branco); usuário já aprovou embed real de Av. Francisco Monteiro 1320, Ribeirão Pires.
 - **Fase 3 — Polimento**: micro-interações discretas, acessibilidade (foco, contraste, headings, reduced-motion), performance (LCP mobile, re-render), responsividade 320→1366+, SEO local, copywriting, rodar ui-audit + build final + relatório de entregáveis (Seção 9 do prompt).
