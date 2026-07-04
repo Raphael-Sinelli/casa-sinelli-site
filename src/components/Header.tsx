@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import WhatsAppIcon from './WhatsAppIcon';
 
+
 interface CategoriaLink {
   nome: string;
   slug: string;
@@ -21,12 +22,9 @@ const WHATSAPP_URL = 'https://wa.me/5511971776165';
 export default function Header({ categoriasTop, todasCategorias }: Props) {
   const [menuAberto, setMenuAberto] = useState(false);
   const pathname = usePathname();
+  const fecharMenu = () => setMenuAberto(false);
 
-  // fecha o menu ao navegar e trava o scroll enquanto aberto
-  useEffect(() => {
-    setMenuAberto(false);
-  }, [pathname]);
-
+  // trava o scroll e liga o Esc enquanto o menu está aberto
   useEffect(() => {
     if (!menuAberto) return;
     const onKey = (e: KeyboardEvent) => {
@@ -128,18 +126,20 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
         <nav
           id="menu-mobile"
           aria-label="Menu"
-          className="lg:hidden absolute inset-x-0 top-full h-[calc(100dvh-4rem)] overflow-y-auto bg-cru border-t border-grafite/12"
+          className="menu-mobile-entrar lg:hidden absolute inset-x-0 top-full h-[calc(100dvh-4rem)] overflow-y-auto bg-cru border-t border-grafite/12"
         >
           <div className="px-4 py-5 flex flex-col gap-6">
             <div className="flex flex-col">
               <Link
                 href="/"
+                onClick={fecharMenu}
                 className="font-serif text-2xl font-medium text-grafite py-2.5 hover:text-vinho transition-colors"
               >
                 Início
               </Link>
               <Link
                 href="/catalogo"
+                onClick={fecharMenu}
                 className="font-serif text-2xl font-medium text-grafite py-2.5 hover:text-vinho transition-colors"
               >
                 Catálogo completo
@@ -155,6 +155,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
                   <Link
                     key={c.slug}
                     href={`/categoria/${c.slug}`}
+                    onClick={fecharMenu}
                     className="flex items-baseline justify-between gap-2 py-2 border-b border-grafite/8 text-[15px] font-medium text-grafite hover:text-vinho transition-colors"
                   >
                     <span className="truncate">{c.nome}</span>

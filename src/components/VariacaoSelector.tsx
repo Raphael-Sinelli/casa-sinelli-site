@@ -52,13 +52,13 @@ export default function VariacaoSelector({
   return (
     <div className="flex flex-col gap-4">
       {variacoes.length > 1 && (
-        <div>
-          <h2 className="text-xs font-mono uppercase tracking-widest text-jatoba mb-2">
+        <div role="group" aria-label={`Escolher ${rotuloNivel1.toLowerCase()}`}>
+          <p className="text-xs font-mono uppercase tracking-widest text-jatoba mb-2">
             {rotuloNivel1}
             <span className="text-grafite font-sans normal-case tracking-normal text-sm font-semibold ml-2">
               {rotuloVariacao(variacaoAtiva)}
             </span>
-          </h2>
+          </p>
           <div className="flex flex-wrap gap-2">
             {variacoes.map((v) => (
               <Chip key={v.cor} ativo={v.cor === variacaoAtiva} onClick={() => onVariacao(v.cor)}>
@@ -70,15 +70,15 @@ export default function VariacaoSelector({
       )}
 
       {gruposComCor.length > 1 && (
-        <div>
-          <h2 className="text-xs font-mono uppercase tracking-widest text-jatoba mb-2">
+        <div role="group" aria-label="Escolher cor">
+          <p className="text-xs font-mono uppercase tracking-widest text-jatoba mb-2">
             Cor
             {grupoAtivo && (
               <span className="text-grafite font-sans normal-case tracking-normal text-sm font-semibold ml-2">
                 {rotuloVariacao(grupoAtivo)}
               </span>
             )}
-          </h2>
+          </p>
           <div className="flex flex-wrap gap-2">
             {gruposComCor.map((g) => (
               <Chip key={g.cor} ativo={g.cor === grupoAtivo} onClick={() => onGrupo(g.cor)}>

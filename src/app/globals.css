@@ -38,6 +38,24 @@ body {
 ::-webkit-scrollbar-track { background: #F6F2EB; }
 ::-webkit-scrollbar-thumb { background: #D8C3A3; border-radius: 3px; }
 
+/* Rede de segurança de foco — elementos sem estilo próprio de focus-visible */
+:focus-visible {
+  outline: 2px solid #722634;
+  outline-offset: 2px;
+}
+
+/* Menu mobile: entrada suave */
+@keyframes menu-entrar {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.menu-mobile-entrar {
+  animation: menu-entrar 0.18s ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .menu-mobile-entrar { animation: none; }
+}
+
 /* Etiqueta de showroom — assinatura para dados técnicos */
 .etiqueta {
   display: inline-flex;
