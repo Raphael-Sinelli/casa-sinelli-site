@@ -3,11 +3,11 @@
 **Última sessão:** 2026-07-03
 **Fonte da verdade do job:** `prompt-design-casa-sinelli-final.md` (raiz) — trabalho em fases com **portão de aprovação do usuário ao fim de cada fase**.
 
-## ➡️ PRÓXIMA ETAPA: Fase 2e (footer, 404, estados de interface, mapa)
+## ➡️ PRÓXIMA ETAPA: Fase 3 (polimento e piso de qualidade) — a última
 
-Requisitos do prompt para a 2e: footer completo e útil na identidade nova (nome + descrição, links, categorias, WhatsApp, endereço/horário, SEO local discreto — SEM emojis, tokens novos); `not-found.tsx` elegante (hoje 404 é default do Next em inglês) com link para home/catálogo + CTA WhatsApp; estados de lista vazia/erro/carregamento em pt-BR (tom orienta, não pede desculpa); **corrigir o embed do Google Maps** (o atual é placeholder falso que renderiza em branco — usuário já aprovou embed real de Av. Francisco Monteiro 1320, Ribeirão Pires). **Remover os tokens legados marrom/oliva/preto do globals.css** — só o Footer ainda os usa. Ao terminar: build + screenshots + commit + **parar e pedir aprovação** antes da Fase 3.
+Requisitos do prompt para a Fase 3: micro-interações discretas (sem excesso); acessibilidade real (contraste, foco visível, headings, alt text, teclado, `prefers-reduced-motion`); performance com prioridade mobile (LCP, lazy, sem código morto); responsividade impecável de 320 a 1366+; SEO local (title/description, headings semânticos, alt text, termos naturais); copywriting no tom da marca; rodar ui-audit + Playwright + build final. **Entregar o relatório final** com os 10 itens da Seção 9 do prompt (resumo, arquivos, componentes, UI/UX, conversão, SEO, performance, acessibilidade, build, próximos passos).
 
-Fase 2d entregue (commit `ffd7466`): hero tese visual (Athenas vinho no arco, clicável), copy honesta (127 exato), 6 categorias com foto real, "Seleção da loja" curada (DESTAQUE_IDS em page.tsx), diferenciais lucide, altura mobile 9.5k→6.9k px.
+Fase 2e entregue (commit `cb70313`): footer grafite Portal (categorias derivadas + SEO local discreto), not-found.tsx "Essa página saiu de linha", error.tsx com reset, **status 404 correto** (notFound() no generateMetadata; SEM loading.tsx global — ativa streaming e vira soft-404 em site SSG), Google Maps com embed real (pin confirmado), tokens legados removidos do globals.css (zero usos).
 
 ---
 
@@ -21,6 +21,7 @@ Fase 2d entregue (commit `ffd7466`): hero tese visual (Athenas vinho no arco, cl
 | 2b — Header | Cru + blur sticky (z-60); selo CS; nav derivada dos dados (top volume + **Colchão garantido** — nome da loja); aria-current sublinhado vinho; menu mobile com as 25 categorias + contagem; CTA "Consultar preço" | `0c7c9b9` |
 | 2c — Catálogo/listagem | Card Portal (1 CTA, card clicável, foto em branco puro, badge redundante removida), cabeçalho cru, sidebar/busca retokenizadas, estado vazio com selo CS, SkeletonCard removido | `b3ea6b6` |
 | 2d — Home | Hero tese visual (arco + Athenas vinho, LCP eager), 6 categorias com foto, Seleção da loja curada (`DESTAQUE_IDS`), diferenciais lucide, copy honesta, CTA final grafite | `ffd7466` |
+| 2e — Footer/404/estados/mapa | Footer grafite Portal, not-found + error na identidade, status 404 correto (sem loading.tsx global — soft-404), mapa com embed real, tokens legados removidos | `cb70313` |
 
 ## Falta fazer
 
