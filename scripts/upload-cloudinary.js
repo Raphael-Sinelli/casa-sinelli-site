@@ -4,6 +4,8 @@
 // Uso:
 //   node scripts/upload-cloudinary.js --amostra=25,1,14,60,66   (só estes ids)
 //   node scripts/upload-cloudinary.js --todos                  (os 1.095 arquivos)
+//   node scripts/upload-cloudinary.js --colisoes                (só arquivos com
+//     nome-base duplicado em mais de uma extensão na mesma pasta — ver paraPublicId)
 //
 // Lê credenciais de .env.local (nunca hardcoded). Não apaga nem migra nada
 // além de subir para o Cloudinary; disco local (produção 2048 e original)
@@ -31,6 +33,15 @@ const CONCORRENCIA = 4;
 
 const produtos = require('../src/data/produtos.json');
 
+function todasAsRefs() {
+  const refs = new Set();
+  for (const p of produtos) {
+    const listas = [p.capa ? [p.capa] : [], p.imagens ?? [], p.todasImagens ?? [], ...(p.variacoes ?? []).map((v) => v.imagens ?? [])];
+    for (const l of listas) for (const img of l) refs.add(img);
+  }
+  return refs;
+}
+
 function refsDosProdutos(ids) {
   const alvo = ids ? new Set(ids) : null;
   const lista = alvo ? produtos.filter((p) => alvo.has(p.id)) : produtos;
@@ -42,11 +53,32 @@ function refsDosProdutos(ids) {
   return [...refs];
 }
 
+// Arquivos cujo nome-base (sem extensão) se repete na mesma pasta em outro
+// formato — ex.: "Roupeiro Dubai - Ipe.jpg" e "Roupeiro Dubai - Ipe.png".
+// Sem a extensão no public_id esses dois colidiriam no Cloudinary.
+function refsColididas() {
+  const refs = [...todasAsRefs()];
+  const semExt = (p) => p.replace(/\.[^./]+$/, '');
+  const grupos = new Map();
+  for (const r of refs) {
+    const base = semExt(r);
+    grupos.set(base, [...(grupos.get(base) ?? []), r]);
+  }
+  return [...grupos.values()].filter((lista) => lista.length > 1).flat();
+}
+
 // caminho relativo tipo "/alpoim/sofa/Sofá Agar/2,30M/Azul/foto.jpeg"
-// -> public_id "casa-sinelli/alpoim/sofa/Sofá Agar/2,30M/Azul/foto" (sem extensão)
+// -> public_id "casa-sinelli/alpoim/sofa/Sofá Agar/2,30M/Azul/foto__jpeg"
+//
+// A extensão vai no public_id (separada por "__", não como sufixo real de
+// extensão) porque o Cloudinary identifica o recurso só pelo public_id —
+// dois arquivos-fonte com o mesmo nome-base e extensões diferentes (comum
+// nos assets da marca lanza: .jpg ambientada + .png recorte de estúdio)
+// colidiriam no mesmo public_id e um sobrescreveria o outro (overwrite:true).
 function paraPublicId(relPath) {
+  const ext = relPath.split('.').pop().toLowerCase();
   const semExt = relPath.replace(/\.[^./]+$/, '');
-  return `${PREFIXO_PASTA}${semExt}`.replace(/\\/g, '/');
+  return `${PREFIXO_PASTA}${semExt}__${ext}`.replace(/\\/g, '/');
 }
 
 async function uploadUm(relPath) {
@@ -64,14 +96,16 @@ async function uploadUm(relPath) {
   const args = process.argv.slice(2);
   const amostraArg = args.find((a) => a.startsWith('--amostra='));
   const ids = amostraArg ? amostraArg.split('=')[1].split(',') : null;
+  const modoColisoes = args.includes('--colisoes');
 
-  if (!ids && !args.includes('--todos')) {
-    console.error('Uso: --amostra=25,1,14,60,66  ou  --todos');
+  if (!ids && !args.includes('--todos') && !modoColisoes) {
+    console.error('Uso: --amostra=25,1,14,60,66  ou  --todos  ou  --colisoes');
     process.exit(1);
   }
 
-  const refs = refsDosProdutos(ids);
-  console.log(`${ids ? `Amostra (${ids.length} produtos)` : 'TODOS os produtos'}: ${refs.length} arquivos a enviar.`);
+  const refs = modoColisoes ? refsColididas() : refsDosProdutos(ids);
+  const rotulo = modoColisoes ? 'Correção de colisões' : ids ? `Amostra (${ids.length} produtos)` : 'TODOS os produtos';
+  console.log(`${rotulo}: ${refs.length} arquivos a enviar.`);
 
   let ok = 0, falhas = [];
   const fila = [...refs];
@@ -92,7 +126,10 @@ async function uploadUm(relPath) {
   });
   await Promise.all(workers);
 
-  const destino = path.join(__dirname, ids ? 'mapa-cloudinary-amostra.json' : 'mapa-cloudinary.json');
+  const destino = path.join(
+    __dirname,
+    modoColisoes ? 'mapa-cloudinary-correcao.json' : ids ? 'mapa-cloudinary-amostra.json' : 'mapa-cloudinary.json'
+  );
   fs.writeFileSync(destino, JSON.stringify(mapa, null, 2), 'utf-8');
 
   console.log(`\nOK: ${ok} | falhas: ${falhas.length}`);
