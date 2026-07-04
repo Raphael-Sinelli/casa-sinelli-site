@@ -3,11 +3,16 @@
 **Última sessão:** 2026-07-03
 **Fonte da verdade do job:** `prompt-design-casa-sinelli-final.md` (raiz) — trabalho em fases com **portão de aprovação do usuário ao fim de cada fase**.
 
-## ➡️ PRÓXIMA ETAPA: Fase 3 (polimento e piso de qualidade) — a última
+## ✅ PROJETO CONCLUÍDO (2026-07-04)
 
-Requisitos do prompt para a Fase 3: micro-interações discretas (sem excesso); acessibilidade real (contraste, foco visível, headings, alt text, teclado, `prefers-reduced-motion`); performance com prioridade mobile (LCP, lazy, sem código morto); responsividade impecável de 320 a 1366+; SEO local (title/description, headings semânticos, alt text, termos naturais); copywriting no tom da marca; rodar ui-audit + Playwright + build final. **Entregar o relatório final** com os 10 itens da Seção 9 do prompt (resumo, arquivos, componentes, UI/UX, conversão, SEO, performance, acessibilidade, build, próximos passos).
+Todas as fases do overhaul foram entregues e aprovadas. Relatório final de entregáveis (Seção 9 do prompt) entregue na sessão de 2026-07-04. Site na identidade "Portal" completa, build limpo, 156 rotas ok, lint zerado.
 
-Fase 2e entregue (commit `cb70313`): footer grafite Portal (categorias derivadas + SEO local discreto), not-found.tsx "Essa página saiu de linha", error.tsx com reset, **status 404 correto** (notFound() no generateMetadata; SEM loading.tsx global — ativa streaming e vira soft-404 em site SSG), Google Maps com embed real (pin confirmado), tokens legados removidos do globals.css (zero usos).
+Próximos passos recomendados (fora do escopo do prompt, aguardando decisão do usuário):
+1. Deploy: definir como as imagens de C:\Imagens\Catalogo chegam à Vercel (a API lê disco local — em produção precisa de storage/objeto ou build-time copy).
+2. Contraste do verde WhatsApp #25D366 com texto branco (~2:1) fica abaixo de AA — mantido por reconhecimento da marca WhatsApp (trade-off consciente de conversão). Se quiser AA estrito, usar wa-escuro como fundo dos botões.
+3. Preencher as skills vazias (.claude/skills/casa-sinelli-design, ui-audit, catalog-ux, whatsapp-conversion) com o sistema aprovado.
+4. Warning do Turbopack no build (análise estática do readFile da API de imagens) é inofensivo; silenciável com outputFileTracingExcludes se incomodar.
+5. Cadastro dos 3 produtos fora do site (tanquinho laveMais, guarda-roupa albatroz Sole, sofá paropas) — ver relatorio-bugs-auditoria.txt.
 
 ---
 
@@ -22,6 +27,7 @@ Fase 2e entregue (commit `cb70313`): footer grafite Portal (categorias derivadas
 | 2c — Catálogo/listagem | Card Portal (1 CTA, card clicável, foto em branco puro, badge redundante removida), cabeçalho cru, sidebar/busca retokenizadas, estado vazio com selo CS, SkeletonCard removido | `b3ea6b6` |
 | 2d — Home | Hero tese visual (arco + Athenas vinho, LCP eager), 6 categorias com foto, Seleção da loja curada (`DESTAQUE_IDS`), diferenciais lucide, copy honesta, CTA final grafite | `ffd7466` |
 | 2e — Footer/404/estados/mapa | Footer grafite Portal, not-found + error na identidade, status 404 correto (sem loading.tsx global — soft-404), mapa com embed real, tokens legados removidos | `cb70313` |
+| 3 — Polimento final | Focus-visible global, headings de controle corrigidos (role=group), menu com entrada suave + fechar-no-clique (lint zerado), sitemap.xml + robots.txt dos dados, smoke 156 rotas, 320px sem overflow, tablet 768 validado | `f18f354` |
 
 ## Falta fazer
 
