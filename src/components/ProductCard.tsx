@@ -6,17 +6,18 @@ import WhatsAppIcon from './WhatsAppIcon';
 
 interface Props {
   produto: Produto;
+  mostrarCategoria?: boolean;
 }
 
-function ImagemProduto({ src, alt }: { src: string | null; alt: string }) {
+function FotoCard({ src, alt }: { src: string | null; alt: string }) {
   if (!src) {
     return (
-      <div className="w-full h-full flex items-center justify-center bg-marrom-palido">
+      <div className="w-full h-full flex items-center justify-center">
         <div className="text-center p-4">
           <span className="mx-auto mb-2 flex w-10 h-10 items-center justify-center rounded-full rounded-bl-sm bg-jatoba text-cru font-serif italic font-semibold text-sm">
             CS
           </span>
-          <p className="text-xs text-marrom/60 font-medium">{alt}</p>
+          <p className="text-xs text-grafite/50 font-medium">Foto em breve</p>
         </div>
       </div>
     );
@@ -27,55 +28,48 @@ function ImagemProduto({ src, alt }: { src: string | null; alt: string }) {
       alt={alt}
       fill
       sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
-      className="object-contain p-2 group-hover:scale-105 transition-transform duration-500 motion-reduce:transition-none"
+      className="object-contain p-3 transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]"
     />
   );
 }
 
-export default function ProductCard({ produto }: Props) {
+export default function ProductCard({ produto, mostrarCategoria = true }: Props) {
   const imagem = capaProduto(produto);
   const whatsappUrl = mensagemWhatsApp(produto.nome);
 
   return (
-    <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-gray-100 flex flex-col group">
-      {/* Imagem */}
-      <Link href={`/produto/${produto.id}`} className="block relative overflow-hidden aspect-[4/3] bg-marrom-palido">
-        <ImagemProduto src={imagem} alt={produto.nome} />
-        {/* Badge categoria */}
-        <span className="absolute top-2 left-2 bg-marrom/80 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full">
-          {produto.categoria}
-        </span>
+    <article className="group bg-white rounded-2xl overflow-hidden border border-grafite/10 flex flex-col transition-all duration-200 motion-reduce:transition-none hover:shadow-[0_12px_32px_-12px_rgba(51,46,41,0.28)] hover:-translate-y-0.5 motion-reduce:hover:translate-y-0">
+      <Link
+        href={`/produto/${produto.id}`}
+        className="flex flex-col flex-1 focus-visible:outline-2 focus-visible:outline-vinho focus-visible:-outline-offset-2"
+      >
+        <div className="relative aspect-[4/3] bg-white border-b border-grafite/8 overflow-hidden">
+          <FotoCard src={imagem} alt={produto.nome} />
+        </div>
+        <div className="flex-1 px-4 pt-3.5 pb-2">
+          {mostrarCategoria && (
+            <p className="font-mono text-[10.5px] uppercase tracking-[0.14em] text-jatoba mb-1">
+              {produto.categoria}
+            </p>
+          )}
+          <h3 className="font-serif text-[19px] font-medium text-grafite leading-snug line-clamp-2 group-hover:text-vinho transition-colors">
+            {produto.nome}
+          </h3>
+          <p className="text-sm text-grafite/55 mt-1">Consulte o preço</p>
+        </div>
       </Link>
 
-      {/* Conteúdo */}
-      <div className="flex flex-col flex-1 p-4 gap-3">
-        <div className="flex-1">
-          <Link href={`/produto/${produto.id}`}>
-            <h3 className="font-serif text-marrom font-semibold text-base leading-snug hover:text-marrom-escuro transition-colors line-clamp-2">
-              {produto.nome}
-            </h3>
-          </Link>
-          <p className="text-sm text-marrom/60 mt-1 font-medium">Consulte o preço</p>
-        </div>
-
-        {/* Botões */}
-        <div className="flex gap-2 mt-auto">
-          <Link
-            href={`/produto/${produto.id}`}
-            className="flex-1 text-center text-sm font-semibold bg-marrom-palido text-marrom hover:bg-marrom hover:text-white py-2 rounded-lg transition-colors"
-          >
-            Ver produto
-          </Link>
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Perguntar sobre ${produto.nome} no WhatsApp`}
-            className="flex items-center justify-center w-10 h-10 bg-wa hover:bg-wa-escuro text-white rounded-lg transition-colors shrink-0"
-          >
-            <WhatsAppIcon />
-          </a>
-        </div>
+      <div className="px-4 pb-4 pt-1">
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Consultar preço de ${produto.nome} no WhatsApp`}
+          className="flex items-center justify-center gap-2 bg-wa hover:bg-wa-escuro text-white text-sm font-semibold py-2.5 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-vinho focus-visible:outline-offset-2"
+        >
+          <WhatsAppIcon className="w-4.5 h-4.5" />
+          Consultar preço
+        </a>
       </div>
     </article>
   );

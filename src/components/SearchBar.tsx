@@ -15,10 +15,10 @@ export default function SearchBar({ valor, onChange, placeholder = 'Buscar produ
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
         aria-label="Buscar produtos"
-        className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-marrom/30 focus:border-marrom transition-all placeholder-gray-400"
+        className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-grafite/20 bg-white text-sm text-grafite focus:outline-none focus:ring-2 focus:ring-vinho/35 focus:border-vinho transition-all placeholder:text-grafite/40"
       />
       <svg
-        className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+        className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-grafite/40"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -30,7 +30,7 @@ export default function SearchBar({ valor, onChange, placeholder = 'Buscar produ
         <button
           onClick={() => onChange('')}
           aria-label="Limpar busca"
-          className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+          className="absolute right-3 top-1/2 -translate-y-1/2 text-grafite/40 hover:text-grafite transition-colors focus-visible:outline-2 focus-visible:outline-vinho rounded-sm"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
