@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import { todasCategorias } from '@/lib/produtos';
 
 const newsreader = Newsreader({
   subsets: ['latin'],
@@ -45,13 +46,22 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const categorias = todasCategorias();
+  // top por volume, com Colchão garantido — é metade do nome da loja
+  const porVolume = [...categorias].sort((a, b) => b.total - a.total);
+  const categoriasTop = porVolume.slice(0, 4);
+  const colchao = categorias.find((c) => c.slug === 'colchao');
+  if (colchao && !categoriasTop.some((c) => c.slug === colchao.slug)) {
+    categoriasTop.splice(3, 1, colchao);
+  }
+
   return (
     <html
       lang="pt-BR"
       className={`${newsreader.variable} ${albertSans.variable} ${splineSansMono.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-cru text-grafite">
-        <Header />
+        <Header categoriasTop={categoriasTop} todasCategorias={categorias} />
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppButton />
