@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import type { Produto } from '@/lib/tipos';
 import {
   gruposDeCor,
+  isImagemDisplay,
   variacaoInicial,
   variacoesDisplay,
 } from '@/lib/produtos';
@@ -42,11 +43,16 @@ export default function ProductDetailClient({ produto }: Props) {
 
   const temCores = grupos.filter((g) => g.cor !== null).length > 1;
   const imagens = useMemo(() => {
+    // sem nenhuma variação com foto (fotos soltas na pasta do produto):
+    // galeria usa todas as imagens exibíveis do produto
+    if (variacoes.length === 0) {
+      return capaPrimeiro(produto.todasImagens.filter(isImagemDisplay), produto.capa);
+    }
     const doGrupo = temCores
       ? grupos.find((g) => g.cor === grupoAtivo)?.imagens ?? []
       : grupos.flatMap((g) => g.imagens);
     return capaPrimeiro(doGrupo, produto.capa);
-  }, [grupos, grupoAtivo, temCores, produto.capa]);
+  }, [variacoes.length, grupos, grupoAtivo, temCores, produto.capa, produto.todasImagens]);
 
   return (
     <div className="flex flex-col gap-5">
