@@ -1,61 +1,98 @@
-# PROGRESSO — Overhaul de design (prompt-design-casa-sinelli-final.md)
+# PROGRESSO — Auditoria de front-end (jul/2026)
 
-**Última sessão:** 2026-07-03
-**Fonte da verdade do job:** `prompt-design-casa-sinelli-final.md` (raiz) — trabalho em fases com **portão de aprovação do usuário ao fim de cada fase**.
+**Última sessão:** 2026-07-05
+**Job atual:** auditoria completa de front-end (a11y, guidelines, perf, arquitetura, responsivo/motion) → implementação em bloco único com gates.
 
-## ✅ PROJETO CONCLUÍDO (2026-07-04) — + hotfix e rebrand pós-entrega
+## 1. Status geral
 
-Pós-entrega (2026-07-04): (0) **3 produtos órfãos cadastrados (aprovação retroativa)** — id=127 Tanquinho Superstar (laveMais), id=128 Guarda-Roupa Sole (albatroz), id=129 Sofá Classic (paropas) já estavam gravados em `produtos.json` desde o commit `248f616` (anterior a esta sessão de overhaul). Nome/categoria/medidas/descrição nunca tinham sido mostrados para aprovação formal antes de irem ao ar; prévia retroativa apresentada e **aprovada pelo usuário em 2026-07-04** — pendência fechada, dados confirmados corretos contra os arquivos-fonte (medidas conferidas byte a byte com `medidas.txt`/`medidasEinformações.txt` de cada pasta). (a) **fix da galeria** `a9a521b` — 87 produtos com fotos soltas (variações vazias) caíam em "Foto em breve" na PDP (regressão da 2a); fallback para todasImagens restaurado, smoke 87/87 ok. (b) **Logo oficial adotado** `bbc9329` — selo "CS" e vinho eram invenção; tokens agora: **marca `#745C48`** (marrom do wordmark) e **musgo `#6A8251`** (verde da poltrona), extraídos do PDF oficial (`public/Casa_Sinelli_logo_alta_qualidade.pdf`); ícone da poltrona (`LogoPoltrona`/`public/logo-poltrona.png`) em header/404/erro/placeholders/CTA; logo completo no footer (cartão cru); favicon novo (`src/app/icon.png`). Regra: musgo nunca em botão (verde-botão é exclusivo do WhatsApp). Redimensionamento p/ produção: `C:\Imagens\Catalogo_producao_2048` (786MB). **Migração Cloudinary concluída** (2026-07-04, commits `5476d9d` amostra + `9c215af` completo): as 1.095 imagens referenciadas em produtos.json (100% cobertura) servem de res.cloudinary.com. `imagemUrl()` consulta `src/data/cloudinary-map.json` primeiro, cai em `/api/catalogo` (disco local) se ausente — disco local intocado, mantido como fallback. Script `scripts/upload-cloudinary.js --amostra=id,id` ou `--todos`. `next.config.ts` tem `remotePatterns` para res.cloudinary.com. Build 160 rotas ok, smoke 127/127 produtos ok. **Pendente do deploy na Vercel: resolvida** — site não depende mais do disco local para servir imagens.
+Diagnóstico completo (Etapas 1-5) finalizado. Bloco B (implementação) aprovado, ainda não iniciado.
 
-Todas as fases do overhaul foram entregues e aprovadas. Relatório final de entregáveis (Seção 9 do prompt) entregue na sessão de 2026-07-04. Site na identidade "Portal" completa, build limpo, 156 rotas ok, lint zerado.
+## 2. Decisões travadas (não perguntar de novo)
 
-Próximos passos recomendados (fora do escopo do prompt, aguardando decisão do usuário):
-1. Deploy: definir como as imagens de C:\Imagens\Catalogo chegam à Vercel (a API lê disco local — em produção precisa de storage/objeto ou build-time copy).
-2. Contraste do verde WhatsApp #25D366 com texto branco (~2:1) fica abaixo de AA — mantido por reconhecimento da marca WhatsApp (trade-off consciente de conversão). Se quiser AA estrito, usar wa-escuro como fundo dos botões.
-3. Preencher as skills vazias (.claude/skills/casa-sinelli-design, ui-audit, catalog-ux, whatsapp-conversion) com o sistema aprovado.
-4. Warning do Turbopack no build (análise estática do readFile da API de imagens) é inofensivo; silenciável com outputFileTracingExcludes se incomodar.
-5. Cadastro dos 3 produtos fora do site (tanquinho laveMais, guarda-roupa albatroz Sole, sofá paropas) — ver relatorio-bugs-auditoria.txt.
+- Contraste WhatsApp: texto grafite (`#332E29`) sobre o verde atual — **já implementado** (working tree, ainda não commitado; ver §5)
+- Imagens: **Cloudinary loader custom** (`f_auto,q_auto,w_`) em vez do otimizador Vercel
+- Animação: pacote **"Micro + assinatura"** (micro-interações + 1 entrada assinatura no hero da home, stagger sutil na grade "Seleção da loja", tudo com `prefers-reduced-motion`)
+- Galeria: **swipe mobile habilitado**
+- FAB WhatsApp: **oculto na primeira dobra da home**, aparece após ~1 tela (demais páginas: sempre visível)
+- Paleta de cores da marca: **NUNCA alterar** — base é o logo Casa Sinelli (cru, grafite, marca, areia, musgo). Tokens novos derivados já aprovados: `musgo-escuro #5D7247` (texto pequeno AA) e `wa-escuro` recalibrado `#20B85A` (hover AA com texto grafite)
+
+## 3. Achados consolidados das auditorias (resumo)
+
+- **Acessibilidade:** 186→0 violações (engine @accesslint/core, 5 páginas). Corrigido no working tree — **não commitado ainda**
+- **Web Interface Guidelines:** lightbox sem focus trap/retorno de foco, URL state ausente no catálogo (`?busca=`), skip link ausente, `role=listbox` incorreto nas miniaturas — pendentes
+- **Performance:** `cloudinary-map.json` inteiro no bundle do cliente (234 KB), HTML do catálogo em 1 MB por payload RSC não-enxuto (127× Produto completo), risco de quota Vercel (1.095 imagens-fonte vs limite 1.000/mês do Hobby) — pendentes
+- **Composition patterns:** botão WhatsApp duplicado em 11 lugares (fix de contraste tocou 11 arquivos), `lib/produtos.ts` misturando server e client (causa do vazamento de bundle) — pendentes
+
+## 4. Tabela de implementação aprovada (Bloco B)
+
+| # | Item | Conteúdo | Status |
+|---|------|----------|--------|
+| 1 | Fundação | `<BotaoWhatsApp>` único (mata 11 duplicações) · split `lib/` em `catalogo-server.ts` (`server-only`) + `catalogo-utils.ts` puro · constantes WhatsApp centralizadas | pendente |
+| 2 | Imagens & bundle | Loader custom Cloudinary (`f_auto,q_auto,w_`) · `cloudinary-map` sai do cliente (−234 KB JS) · DTO enxuto no catálogo (HTML 1 MB → ~350 KB) | pendente |
+| 3 | Rendering | Preload das imagens LCP (hero, galeria) — **atenção: `priority` é deprecated no Next 16, conferir API `preload`/`fetchPriority` em `node_modules/next/dist/docs/` antes** · `React.memo(ProductCard)` + `useDeferredValue(busca)` · `content-visibility: auto` nos cards · `sizes` 25vw→33vw | pendente |
+| 4 | Galeria & Lightbox | Extração `<Lightbox>` · focus trap + retorno de foco · zoom por teclado · remove `role=listbox` das miniaturas · hook `useEscapeETravaScroll` · crossfade 150ms na troca de foto · entrada fade+scale do lightbox · swipe na galeria mobile | pendente |
+| 5 | Navegação & polish | URL state no catálogo (`?busca=`) · skip link · SearchBar (`transition-all`→específico, `focus-visible:`, `name`/`autocomplete`/`spellCheck`) · `aria-controls` no filtro mobile · `overscroll-contain` (menu + lightbox) · `themeColor` cru · `text-balance` em headings | pendente |
+| 6 | Responsivo fino | Grade "Seleção" 1 col até 420px · touch targets ≥44px nos chips (`pointer: coarse`) · FAB com `safe-area-inset-bottom` | pendente |
+| 7 | Motion pack | `active:scale-[0.98]` nos CTAs · hero da home: entrada fade/rise escalonada 1× (500ms, ease-out-quart) · stagger 40ms só na grade "Seleção da loja" · FAB aparece após 1 tela na home · tudo com `prefers-reduced-motion` | pendente |
+
+## 5. Regras de processo (obrigatório seguir ao retomar)
+
+- Executar itens 1→7 em sequência
+- Cada item passa por spartan-ai-toolkit (**typecheck → lint → build**) antes de o usuário revisar
+- Interromper e perguntar SOMENTE se: gate quebrar, surgir decisão visível nova ao usuário, ou algo fora do escopo mapeado
+- Ao final de tudo: **resumo único + diffs + screenshots Playwright (desktop+mobile)** antes de qualquer commit de código
+- **Nada de commit do código ainda** — só ao final do Bloco B completo, com aprovação do usuário. As correções de acessibilidade (10 arquivos) estão no working tree aguardando esse commit final
+- Push deste snapshot: **intencionalmente pendente por ordem do usuário** (exceção pontual à regra "sempre push" abaixo — usuário decide quando)
+
+## 6. Instrução de retomada
+
+Ao reabrir a sessão com "leia o PROGRESSO.md": ler este arquivo, confirmar com o usuário em 1 frase o estado atual, e perguntar se pode iniciar o Bloco B a partir do item 1. **Não repetir diagnóstico já feito.**
 
 ---
 
-## Concluído
-
-| Fase | Entrega | Commit |
-|---|---|---|
-| 0 — Auditoria | Diagnóstico completo (sem código). Screenshots `audit-*.jpeg` na raiz | — |
-| 1 — Design system | 2 direções mockadas; **aprovada: Direção A "Portal" + etiqueta da B** para medidas/specs. Mockups `fase1-direcao-*.jpeg` | — (sem código de produção) |
-| 2a — Página de produto + imagens | Galeria abre na variação da capa; seletor tamanho+**cor** (subpastas de 2º nível); lightbox com zoom 2.5×; anterior/próximo na categoria; título antes da galeria no mobile; CTA único; medidas em etiquetas; **next/image ligado** (capa 1,35MB→48KB webp, −97%); horário 9h–19h corrigido + CEP removido do JSON-LD (decisão do usuário) | `7fef48e` |
-| 2b — Header | Cru + blur sticky (z-60); selo CS; nav derivada dos dados (top volume + **Colchão garantido** — nome da loja); aria-current sublinhado vinho; menu mobile com as 25 categorias + contagem; CTA "Consultar preço" | `0c7c9b9` |
-| 2c — Catálogo/listagem | Card Portal (1 CTA, card clicável, foto em branco puro, badge redundante removida), cabeçalho cru, sidebar/busca retokenizadas, estado vazio com selo CS, SkeletonCard removido | `b3ea6b6` |
-| 2d — Home | Hero tese visual (arco + Athenas vinho, LCP eager), 6 categorias com foto, Seleção da loja curada (`DESTAQUE_IDS`), diferenciais lucide, copy honesta, CTA final grafite | `ffd7466` |
-| 2e — Footer/404/estados/mapa | Footer grafite Portal, not-found + error na identidade, status 404 correto (sem loading.tsx global — soft-404), mapa com embed real, tokens legados removidos | `cb70313` |
-| 3 — Polimento final | Focus-visible global, headings de controle corrigidos (role=group), menu com entrada suave + fechar-no-clique (lint zerado), sitemap.xml + robots.txt dos dados, smoke 156 rotas, 320px sem overflow, tablet 768 validado | `f18f354` |
-| Rebrand logo oficial | Tokens marca/musgo do PDF oficial, selo "CS" → ícone da poltrona, footer com logo completo, favicon novo | `bbc9329` |
-| Fix colisão Cloudinary | 14 produtos da marca lanza com capa trocada (public_id colidia .jpg/.png); esquema `__ext`, 150 arquivos re-subidos | `a62ca06` |
-| Aprovação retroativa | ids 127/128/129 (Tanquinho/GR Sole/Sofá Classic) — prévia mostrada e aprovada formalmente | — (já em `248f616`) |
+# Referência durável (job anterior — Overhaul de design, concluído 2026-07-04)
 
 ## ⚠️ REGRA DE PROCESSO — SEMPRE FAZER PUSH
 
-Toda tarefa aprovada termina com `git push origin main` **imediatamente após o commit** — nunca deixar só local. Já aconteceu 2× nesta sessão (fix `a9a521b`+rebrand `bbc9329` e depois a correção de colisão `a62ca06`) do commit ficar parado local enquanto a Vercel continuava servindo versão antiga, até o usuário perceber e pedir push manual. **Checklist de toda entrega: commit → push → confirmar `git log origin/main..HEAD` vazio antes de reportar "concluído".**
+Toda tarefa aprovada termina com `git push origin main` **imediatamente após o commit** — nunca deixar só local. Já aconteceu 2× (fix `a9a521b`+rebrand `bbc9329` e correção de colisão `a62ca06`) do commit ficar parado local enquanto a Vercel servia versão antiga. **Checklist: commit → push → confirmar `git log origin/main..HEAD` vazio antes de reportar "concluído".** (Exceção atual: ver §5 acima.)
 
 ## Decisões congeladas / padrões a seguir
 
-- **Tokens** (globals.css `@theme`): cru `#F6F2EB`, grafite `#332E29`, areia `#D8C3A3` (neutros das fotos) + **marca `#745C48`** e **musgo `#6A8251`** (do logo oficial), wa `#25D366` (SÓ conversão). Selo "CS" e vinho não existem mais.
+- **Tokens** (globals.css `@theme`): cru `#F6F2EB`, grafite `#332E29`, areia `#D8C3A3` (neutros das fotos) + **marca `#745C48`** e **musgo `#6A8251`** (do logo oficial), wa `#25D366` (SÓ conversão). Novos (jul/2026, auditoria): `musgo-escuro #5D7247` (texto pequeno), `wa-escuro #20B85A` (hover AA). Selo "CS" e vinho não existem mais.
 - **Fontes**: Newsreader (display/serif, `axes:['opsz']`) · Albert Sans (corpo) · Spline Sans Mono (medidas/dados). Playfair/Inter removidas.
-- **Assinatura**: arco-portal em molduras de foto (`rounded-t-[72px]`), ícone real da poltrona do logo oficial (`LogoPoltrona`, substituiu o selo "CS" inventado), classe `.etiqueta` (globals.css) para dado técnico.
-- **CTA**: rótulo único **"Consultar preço"**, verde wa, ícone `WhatsAppIcon` (componente único — nunca colar o SVG inline). Mensagem: `mensagemWhatsApp()` em lib/produtos.
-- **Fotos**: estúdio (fundo branco) → container branco + object-contain; ambientada → object-cover preenchendo. Sempre `next/image` com `sizes` (config: `localPatterns /api/catalogo/**`, `qualities [60,75,85]`, cache 31d).
-- Emojis como ícone = proibido (lucide-react já instalado). `ehTamanho`/`rotuloVariacao` normalizam rótulos de variação.
-- **Cloudinary — geração de public_id**: sempre incluir a extensão (`__ext` como sufixo) ao derivar `public_id`/chave de mapa a partir de caminho de arquivo. Causou bug real: marca `lanza` entrega pares `.jpg`(ambientada)+`.png`(estúdio) com nome-base idêntico; sem a extensão os dois colidiam no mesmo public_id e `overwrite:true` fazia um sobrescrever o outro (13 produtos afetados, corrigido no commit `a62ca06`). Ver `scripts/upload-cloudinary.js` (`paraPublicId`, modo `--colisoes`).
+- **Assinatura**: arco-portal em molduras de foto (`rounded-t-[72px]`), ícone real da poltrona (`LogoPoltrona`), classe `.etiqueta` (globals.css) para dado técnico.
+- **CTA**: rótulo único **"Consultar preço"**, verde wa, ícone `WhatsAppIcon` (componente único — nunca colar o SVG inline). Mensagem: `mensagemWhatsApp()` em lib/produtos. Texto dos botões WA: **grafite** (AA 6.77:1), não branco.
+- **Fotos**: estúdio (fundo branco) → container branco + object-contain; ambientada → object-cover. Sempre `next/image` com `sizes` (config: `localPatterns /api/catalogo/**`, `qualities [60,75,85]`, cache 31d).
+- Emojis como ícone = proibido (lucide-react instalado). `ehTamanho`/`rotuloVariacao` normalizam rótulos de variação.
+- **Cloudinary — public_id**: sempre incluir a extensão (`__ext` sufixo) ao derivar `public_id`/chave de mapa. Bug real: marca `lanza` tem pares `.jpg`+`.png` de nome-base igual; sem extensão colidiam e `overwrite:true` sobrescrevia (13 produtos, corrigido em `a62ca06`). Ver `scripts/upload-cloudinary.js` (`paraPublicId`, `--colisoes`).
 - **Next 16**: ler docs em `node_modules/next/dist/docs/` antes de API nova; `priority` deprecated (usar `preload`/`fetchPriority`); params são Promise.
 - **Lição**: `position: sticky` cria stacking context — overlay full-screen dentro de coluna sticky precisa de `createPortal(document.body)` (feito no lightbox).
 - Círculo escuro "N" nos screenshots = badge do Next DevTools, só em dev — ignorar.
-- Screenshots de fase: `fase<N><letra>-*.jpeg` na raiz (não commitados, não estão no .gitignore).
-- Decisões de dados do usuário (2026-07-03): e-mail contato@casasinelli.com.br é real; endereço ok; horário Seg–Sex 9h–19h, Sáb 9h–17h; sem CEP no JSON-LD.
-- Memória persistente do agente: `~/.claude/projects/.../memory/project_redesign_overhaul.md` espelha este status.
+- Decisões de dados (2026-07-03): e-mail contato@casasinelli.com.br é real; endereço ok; horário Seg–Sex 9h–19h, Sáb 9h–17h; sem CEP no JSON-LD.
+
+## Entregas do overhaul (histórico compacto)
+
+| Fase | Entrega | Commit |
+|---|---|---|
+| 0 — Auditoria | Diagnóstico (screenshots `audit-*.jpeg`) | — |
+| 1 — Design system | Direção A "Portal" + etiqueta da B aprovadas | — |
+| 2a — PDP + imagens | Galeria por variação, lightbox zoom 2.5×, etiquetas de medidas, next/image (−97% na capa) | `7fef48e` |
+| 2b — Header | Sticky cru+blur, nav por volume (Colchão garantido), menu mobile 25 categorias | `0c7c9b9` |
+| 2c — Catálogo | Card Portal, sidebar/busca, estado vazio | `b3ea6b6` |
+| 2d — Home | Hero arco, 6 categorias, Seleção curada (`DESTAQUE_IDS`), diferenciais | `ffd7466` |
+| 2e — Footer/404/mapa | Footer grafite, 404 real (soft-404 removido), embed mapa | `cb70313` |
+| 3 — Polimento | Focus-visible global, sitemap/robots, smoke 156 rotas, 320px ok | `f18f354` |
+| Rebrand logo oficial | Tokens marca/musgo do PDF, poltrona no lugar do selo "CS", favicon | `bbc9329` |
+| Fix colisão Cloudinary | Esquema `__ext`, 150 arquivos re-subidos | `a62ca06` |
+| Migração Cloudinary | 1.095 imagens (100%), `cloudinary-map.json`, fallback disco local | `5476d9d`+`9c215af` |
+| Aprovação retroativa | ids 127/128/129 aprovados formalmente | (dados em `248f616`) |
+
+Pós-entrega 2026-07-04: fix galeria fotos-soltas `a9a521b` (87 produtos); pendência de deploy resolvida (imagens 100% Cloudinary).
+
+Itens antigos ainda em aberto (baixa prioridade): preencher skills `.claude/skills/*` vazias; warning inofensivo do Turbopack (readFile da API) silenciável com `outputFileTracingExcludes`.
 
 ---
 
-## Arquivo (job anterior concluído — escolha de capas, 2026-07-01)
+## Arquivo (job de capas, 2026-07-01)
 
-Capas dos 121→127 produtos escolhidas e gravadas em `produtos.json` (script `scripts/analisar-capas.js`). Notas duráveis: imagens reais ficam em `C:\Imagens\Catalogo\` servidas por `/api/catalogo/[...slug]` (leitura direta do disco, nunca `public/`); nomes tipo `BOA.jpeg`/`COLOCA ESSA.jpeg` indicam seleção manual prévia da loja; fotos WhatsApp exigem checagem visual. Detalhes na história do git deste arquivo.
+Capas dos 121→127 produtos escolhidas e gravadas em `produtos.json` (script `scripts/analisar-capas.js`). Imagens reais em `C:\Imagens\Catalogo\` servidas por `/api/catalogo/[...slug]` (disco, nunca `public/`); nomes tipo `BOA.jpeg` = seleção manual da loja; fotos WhatsApp exigem checagem visual. Detalhes na história do git.
