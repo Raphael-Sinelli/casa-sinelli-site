@@ -8,13 +8,76 @@
   --color-marca: #745C48;
   --color-areia: #D8C3A3;
   --color-musgo: #6A8251;
+  /* musgo-escuro: variante AA do musgo para texto pequeno (4.75:1 sobre cru) —
+     musgo puro fica reservado a texto grande, ícones e bordas */
+  --color-musgo-escuro: #5D7247;
   --color-wa: #25D366;
-  --color-wa-escuro: #1DA851;
+  /* wa-escuro calibrado para manter 4.5:1+ com texto grafite no hover */
+  --color-wa-escuro: #20B85A;
 
   /* Fontes */
   --font-sans: var(--font-albert);
   --font-serif: var(--font-newsreader);
   --font-mono: var(--font-spline-mono);
+
+  /* Motion system "Assentar" — curvas da marca */
+  --ease-assentar: cubic-bezier(0.25, 1, 0.5, 1); /* quart: objeto pesado desacelerando */
+  --ease-portal: cubic-bezier(0.16, 1, 0.3, 1);   /* expo: porta abrindo */
+}
+
+:root {
+  /* Motion system "Assentar" v2 — recalibrado (jul/2026) para presença
+     perceptível: mais amplitude e cauda, interação continua rápida. */
+
+  /* Durações */
+  --dur-micro: 140ms;   /* toque, feedback imediato */
+  --dur-short: 220ms;   /* hover/acender, crossfades */
+  --dur-medium: 320ms;  /* filtros, menu, sheet */
+  --dur-long: 640ms;    /* entradas de scroll e hero */
+  --dur-portal: 700ms;  /* abertura do arco (teto — não sobe) */
+
+  /* Aliases legados (classes das fases 2–7 continuam válidas) */
+  --dur-toque: var(--dur-micro);
+  --dur-troca: var(--dur-medium);
+  --dur-entrada: var(--dur-long);
+
+  /* Easing */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* crossfades neutros */
+  --ease-enter: cubic-bezier(0.22, 1, 0.36, 1);  /* entradas: cauda longa e visível */
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);       /* saídas curtas */
+  --ease-weight: cubic-bezier(0.25, 1, 0.5, 1);  /* = ease-assentar (alias) */
+
+  /* Stagger */
+  --stagger-tight: 50ms;
+  --stagger-standard: 70ms;
+  --stagger-expressive: 110ms;
+
+  /* Amplitude */
+  --motion-distance-sm: 12px;
+  --motion-distance-md: 24px;
+  --motion-distance-lg: 40px;
+  --motion-scale-subtle: 1.04;
+  --motion-scale-active: 0.97;
+
+  /* Sequência do hero (mobile encurta via media query abaixo) */
+  --hero-d1: 160ms;
+  --hero-d2: 300ms;
+  --hero-d3: 420ms;
+  --hero-d4: 540ms;
+}
+
+/* Mobile: menos percurso, menos sobreposição, mesma linguagem */
+@media (max-width: 640px) {
+  :root {
+    --motion-distance-sm: 10px;
+    --motion-distance-md: 16px;
+    --motion-distance-lg: 24px;
+    --stagger-standard: 50ms;
+    --hero-d1: 120ms;
+    --hero-d2: 220ms;
+    --hero-d3: 320ms;
+    --hero-d4: 400ms;
+  }
 }
 
 html {
@@ -46,14 +109,142 @@ body {
 
 /* Menu mobile: entrada suave */
 @keyframes menu-entrar {
-  from { opacity: 0; transform: translateY(-6px); }
+  from { opacity: 0; transform: translateY(-16px); }
   to { opacity: 1; transform: translateY(0); }
 }
 .menu-mobile-entrar {
-  animation: menu-entrar 0.18s ease-out;
+  animation: menu-entrar var(--dur-medium) var(--ease-enter);
 }
 @media (prefers-reduced-motion: reduce) {
   .menu-mobile-entrar { animation: none; }
+}
+
+/* Entrada "assentar" — fade + rise com amplitude por papel do elemento:
+   --subir-de controla o percurso (padrão distance-md; hero usa distance-lg) */
+@keyframes subir-entrar {
+  from { opacity: 0; transform: translateY(var(--subir-de, var(--motion-distance-md))); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-entrar {
+  animation: subir-entrar var(--dur-long) var(--ease-enter) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-entrar { animation: none; }
+}
+
+/* Grades reveladas com stagger quando entram na viewport (.visivel via
+   RevelarAoEntrar). Passo = --stagger-standard (70ms desktop / 50ms mobile). */
+.selecao-grade > * { opacity: 0; }
+.selecao-grade.visivel > * {
+  animation: subir-entrar var(--dur-long) var(--ease-enter) both;
+}
+.selecao-grade.visivel > :nth-child(2) { animation-delay: var(--stagger-standard); }
+.selecao-grade.visivel > :nth-child(3) { animation-delay: calc(2 * var(--stagger-standard)); }
+.selecao-grade.visivel > :nth-child(4) { animation-delay: calc(3 * var(--stagger-standard)); }
+.selecao-grade.visivel > :nth-child(5) { animation-delay: calc(4 * var(--stagger-standard)); }
+.selecao-grade.visivel > :nth-child(6) { animation-delay: calc(5 * var(--stagger-standard)); }
+.selecao-grade.visivel > :nth-child(7) { animation-delay: calc(6 * var(--stagger-standard)); }
+.selecao-grade.visivel > :nth-child(8) { animation-delay: calc(7 * var(--stagger-standard)); }
+/* Mobile: só os 4 primeiros escalonam; o resto entra junto com o 4º */
+@media (max-width: 640px) {
+  .selecao-grade.visivel > :nth-child(n + 5) {
+    animation-delay: calc(3 * var(--stagger-standard));
+  }
+}
+/* Bloco único revelado ao entrar na viewport (sem stagger) */
+.revelar-bloco { opacity: 0; }
+.revelar-bloco.visivel {
+  animation: subir-entrar var(--dur-long) var(--ease-enter) both;
+}
+/* sem JS ou com movimento reduzido: tudo sempre visível, sem animação */
+@media (prefers-reduced-motion: reduce), (scripting: none) {
+  .selecao-grade > *, .revelar-bloco { opacity: 1; }
+  .selecao-grade.visivel > *, .revelar-bloco.visivel { animation: none; }
+}
+
+/* Portal v2: o arco abre nos dois eixos (porta + soleira) enquanto a foto
+   "assenta" de 1.06 para 1 (portal-settle na imagem interna). Opacity parte
+   de 0.35 — piso proposital para não empurrar o LCP. 1× por carregamento. */
+@keyframes portal-abrir {
+  from {
+    clip-path: inset(4% 26% 16% 26% round 999px 999px 16px 16px);
+    opacity: 0.35;
+  }
+  to {
+    clip-path: inset(0 0 0 0 round 999px 999px 16px 16px);
+    opacity: 1;
+  }
+}
+.portal-abrir {
+  animation: portal-abrir var(--dur-portal) var(--ease-portal) both;
+}
+@keyframes portal-settle {
+  from { transform: scale(1.06); }
+  to { transform: scale(1); }
+}
+.portal-settle {
+  animation: portal-settle var(--dur-portal) var(--ease-portal) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .portal-abrir,
+  .portal-settle { animation: none; }
+}
+
+/* Catálogo: troca de categoria — o conteúdo troca na hora; o assentar curto
+   (fade + 12px) dá direção à mudança. Nunca em digitação de busca. */
+@keyframes grade-trocar {
+  from { opacity: 0.3; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.grade-trocar {
+  animation: grade-trocar var(--dur-medium) var(--ease-enter);
+}
+@media (prefers-reduced-motion: reduce) {
+  .grade-trocar { animation: none; }
+}
+
+/* Bottom sheet de filtros (mobile): sobe do rodapé, backdrop em fade */
+@keyframes sheet-entrar {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+.sheet-entrar {
+  animation: sheet-entrar var(--dur-troca) var(--ease-assentar);
+}
+@keyframes backdrop-entrar {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.backdrop-entrar {
+  animation: backdrop-entrar var(--dur-short) ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sheet-entrar,
+  .backdrop-entrar { animation: none; }
+}
+
+/* Galeria: fade curto na troca de foto */
+@keyframes foto-entrar {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.foto-entrar {
+  animation: foto-entrar 0.15s ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .foto-entrar { animation: none; }
+}
+
+/* Lightbox: entrada fade + scale */
+@keyframes lightbox-entrar {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+.lightbox-entrar {
+  animation: lightbox-entrar var(--dur-medium) var(--ease-enter);
+}
+@media (prefers-reduced-motion: reduce) {
+  .lightbox-entrar { animation: none; }
 }
 
 /* Etiqueta de showroom — assinatura para dados técnicos */

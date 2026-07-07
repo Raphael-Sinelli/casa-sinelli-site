@@ -1,8 +1,8 @@
 'use client';
 
 import type { Variacao } from '@/lib/tipos';
-import type { GrupoCor } from '@/lib/produtos';
-import { ehTamanho, rotuloVariacao } from '@/lib/produtos';
+import type { GrupoCor } from '@/lib/catalogo-utils';
+import { ehTamanho, rotuloVariacao } from '@/lib/catalogo-utils';
 
 interface Props {
   variacoes: Variacao[];
@@ -26,7 +26,7 @@ function Chip({
     <button
       onClick={onClick}
       aria-pressed={ativo}
-      className={`px-3.5 py-2 rounded-lg text-sm font-medium border transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2 ${
+      className={`px-3.5 py-2 pointer-coarse:min-h-11 rounded-lg text-sm font-medium border transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2 ${
         ativo
           ? 'bg-grafite text-cru border-grafite'
           : 'bg-white text-grafite border-grafite/25 hover:border-grafite'

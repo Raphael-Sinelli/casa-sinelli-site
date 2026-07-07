@@ -1,32 +1,8 @@
-import produtosData from '@/data/produtos.json';
-import cloudinaryMap from '@/data/cloudinary-map.json';
-import type { Produto } from './tipos';
+// Funções puras do catálogo — sem import de JSON de dados, seguras para
+// client components (não arrastam produtos.json/cloudinary-map para o bundle).
+import type { Produto, Variacao } from './tipos';
 
 const EXTENSOES_DISPLAY = new Set(['jpg', 'jpeg', 'png', 'webp', 'gif']);
-
-export function todosOsProdutos(): Produto[] {
-  return produtosData as Produto[];
-}
-
-export function produtoPorId(id: string): Produto | undefined {
-  return (produtosData as Produto[]).find((p) => p.id === id);
-}
-
-export function produtosPorCategoria(categoria: string): Produto[] {
-  return (produtosData as Produto[]).filter(
-    (p) => slugify(p.categoria) === slugify(categoria)
-  );
-}
-
-export function todasCategorias(): { nome: string; slug: string; total: number }[] {
-  const contagem = new Map<string, number>();
-  for (const p of produtosData as Produto[]) {
-    contagem.set(p.categoria, (contagem.get(p.categoria) ?? 0) + 1);
-  }
-  return Array.from(contagem.entries())
-    .map(([nome, total]) => ({ nome, slug: slugify(nome), total }))
-    .sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
-}
 
 export function slugify(str: string): string {
   return str
@@ -59,37 +35,29 @@ export function capaProduto(produto: Produto): string | null {
   return produto.capa ?? primeiraImagemDisplay(produto);
 }
 
-export function buscarProdutos(produtos: Produto[], query: string): Produto[] {
-  const q = query.toLowerCase().trim();
+// minúsculas + sem acentos: "sofa" encontra "Sofá"
+function normalizarBusca(str: string): string {
+  return str.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
+
+export function buscarProdutos<T extends { nome: string; categoria: string }>(
+  produtos: T[],
+  query: string
+): T[] {
+  const q = normalizarBusca(query).trim();
   if (!q) return produtos;
   return produtos.filter(
     (p) =>
-      p.nome.toLowerCase().includes(q) ||
-      p.categoria.toLowerCase().includes(q)
+      normalizarBusca(p.nome).includes(q) ||
+      normalizarBusca(p.categoria).includes(q)
   );
-}
-
-export function mensagemWhatsApp(nomeProduto: string): string {
-  const msg = `Olá! Tenho interesse no produto ${nomeProduto}. Poderia me passar mais informações, disponibilidade e condições?`;
-  return `https://wa.me/5511971776165?text=${encodeURIComponent(msg)}`;
-}
-
-// Migração gradual: imagens já enviadas ao Cloudinary (src/data/cloudinary-map.json,
-// gerado por scripts/upload-cloudinary.js) servem a partir de lá; o restante
-// continua vindo do disco local via /api/catalogo até a migração completa.
-const CLOUDINARY_MAP = cloudinaryMap as Record<string, string>;
-
-export function imagemUrl(caminho: string): string {
-  const urlCloudinary = CLOUDINARY_MAP[caminho];
-  if (urlCloudinary) return urlCloudinary;
-  return encodeURI(`/api/catalogo${caminho}`);
 }
 
 export function ehTamanho(cor: string): boolean {
   return /^\d[\d,.]*\s*[mMcC]?$/i.test(cor.trim());
 }
 
-export function variacoesDisplay(produto: Produto): import('./tipos').Variacao[] {
+export function variacoesDisplay(produto: Produto): Variacao[] {
   return produto.variacoes.filter((v) => v.imagens.some(isImagemDisplay));
 }
 
@@ -136,18 +104,4 @@ export function variacaoInicial(produto: Produto): string {
     if (dona) return dona.cor;
   }
   return visiveis[0]?.cor ?? '';
-}
-
-// Anterior/próximo dentro da mesma categoria, na ordem da listagem.
-export function vizinhosNaCategoria(produto: Produto): {
-  anterior: Produto | null;
-  proximo: Produto | null;
-} {
-  const lista = produtosPorCategoria(produto.categoria);
-  const i = lista.findIndex((p) => p.id === produto.id);
-  if (i === -1) return { anterior: null, proximo: null };
-  return {
-    anterior: i > 0 ? lista[i - 1] : null,
-    proximo: i < lista.length - 1 ? lista[i + 1] : null,
-  };
 }

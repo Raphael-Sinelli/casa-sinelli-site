@@ -1,13 +1,14 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { createPortal } from 'react-dom';
+import { useCallback, useRef, useState } from 'react';
 import Image from 'next/image';
-import { imagemUrl } from '@/lib/produtos';
+import Lightbox from './Lightbox';
 import LogoPoltrona from './LogoPoltrona';
 
 interface Props {
   imagens: string[];
+  /** caminho da imagem → URL final, resolvido no servidor (mapaUrlsProduto). */
+  urls: Record<string, string>;
   nomeProduto: string;
 }
 
@@ -22,11 +23,14 @@ const setaDir = (
   </svg>
 );
 
-export default function ProductGallery({ imagens, nomeProduto }: Props) {
+export default function ProductGallery({ imagens, urls, nomeProduto }: Props) {
+  const urlDe = (img: string) => urls[img] ?? encodeURI(`/api/catalogo${img}`);
   const [idx, setIdx] = useState(0);
   const [lightbox, setLightbox] = useState(false);
-  const [zoom, setZoom] = useState<{ x: number; y: number } | null>(null);
+  // swipe na foto principal: distingue arrasto de clique (clique abre o lightbox)
   const toqueX = useRef<number | null>(null);
+  const arrastou = useRef(false);
+  const botaoAmpliarRef = useRef<HTMLButtonElement>(null);
 
   const total = imagens.length;
   const atual = Math.min(idx, total - 1);
@@ -39,25 +43,9 @@ export default function ProductGallery({ imagens, nomeProduto }: Props) {
 
   const fecharLightbox = useCallback(() => {
     setLightbox(false);
-    setZoom(null);
+    // retorno de foco: quem abriu o dialog recupera o foco ao fechá-lo
+    botaoAmpliarRef.current?.focus();
   }, []);
-
-  // teclado + trava de scroll enquanto o lightbox está aberto
-  useEffect(() => {
-    if (!lightbox) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') fecharLightbox();
-      if (e.key === 'ArrowLeft') { setZoom(null); anterior(); }
-      if (e.key === 'ArrowRight') { setZoom(null); proxima(); }
-    };
-    document.addEventListener('keydown', onKey);
-    const overflowAntes = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.removeEventListener('keydown', onKey);
-      document.body.style.overflow = overflowAntes;
-    };
-  }, [lightbox, anterior, proxima, fecharLightbox]);
 
   if (total === 0) {
     return (
@@ -71,31 +59,46 @@ export default function ProductGallery({ imagens, nomeProduto }: Props) {
     );
   }
 
-  const posicaoZoom = (e: React.MouseEvent<HTMLElement>) => {
-    const r = e.currentTarget.getBoundingClientRect();
-    return {
-      x: ((e.clientX - r.left) / r.width) * 100,
-      y: ((e.clientY - r.top) / r.height) * 100,
-    };
-  };
-
   return (
     <div className="flex flex-col gap-3">
       {/* Foto principal — moldura portal */}
-      <div className="relative aspect-square rounded-t-[72px] rounded-b-2xl overflow-hidden bg-white border border-grafite/10">
+      <div
+        className="relative aspect-square rounded-t-[72px] rounded-b-2xl overflow-hidden bg-white border border-grafite/10"
+        onPointerDown={(e) => {
+          toqueX.current = e.clientX;
+          arrastou.current = false;
+        }}
+        onPointerUp={(e) => {
+          if (toqueX.current === null) return;
+          const delta = e.clientX - toqueX.current;
+          toqueX.current = null;
+          if (Math.abs(delta) > 60 && total > 1) {
+            arrastou.current = true;
+            if (delta > 0) anterior();
+            else proxima();
+          }
+        }}
+      >
         <button
-          onClick={() => setLightbox(true)}
-          className="absolute inset-0 w-full h-full cursor-zoom-in focus-visible:outline-2 focus-visible:outline-musgo focus-visible:-outline-offset-4"
+          ref={botaoAmpliarRef}
+          onClick={() => {
+            if (arrastou.current) {
+              arrastou.current = false;
+              return;
+            }
+            setLightbox(true);
+          }}
+          className="absolute inset-0 w-full h-full cursor-zoom-in touch-pan-y focus-visible:outline-2 focus-visible:outline-musgo focus-visible:-outline-offset-4"
           aria-label={`Ampliar foto ${atual + 1} de ${nomeProduto}`}
         >
           <Image
             key={imagens[atual]}
-            src={imagemUrl(imagens[atual])}
+            src={urlDe(imagens[atual])}
             alt={`${nomeProduto} — foto ${atual + 1} de ${total}`}
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-contain p-6 sm:p-8"
-            loading="eager"
+            className="foto-entrar object-contain p-6 sm:p-8"
+            preload
             fetchPriority="high"
           />
         </button>
@@ -130,22 +133,21 @@ export default function ProductGallery({ imagens, nomeProduto }: Props) {
         </span>
       </div>
 
-      {/* Miniaturas */}
+      {/* Miniaturas — botões simples; a ativa é sinalizada com aria-current */}
       {total > 1 && (
-        <div className="flex gap-2 overflow-x-auto pb-1 snap-x" role="listbox" aria-label="Miniaturas das fotos">
+        <div className="flex gap-2 overflow-x-auto pb-1 snap-x" aria-label="Miniaturas das fotos">
           {imagens.map((img, i) => (
             <button
               key={img}
               onClick={() => setIdx(i)}
-              role="option"
-              aria-selected={i === atual}
+              aria-current={i === atual ? 'true' : undefined}
               aria-label={`Foto ${i + 1}`}
               className={`relative shrink-0 snap-start w-16 h-16 rounded-xl overflow-hidden bg-white border-2 transition-colors ${
                 i === atual ? 'border-musgo' : 'border-grafite/10 hover:border-grafite/40'
               }`}
             >
               <Image
-                src={imagemUrl(img)}
+                src={urlDe(img)}
                 alt=""
                 fill
                 sizes="64px"
@@ -156,85 +158,17 @@ export default function ProductGallery({ imagens, nomeProduto }: Props) {
         </div>
       )}
 
-      {/* Lightbox com zoom — portal escapa do stacking context da coluna sticky */}
-      {lightbox && createPortal(
-        <div
-          className="fixed inset-0 z-[100] bg-grafite/95 flex flex-col"
-          role="dialog"
-          aria-modal="true"
-          aria-label={`Fotos de ${nomeProduto}`}
-        >
-          <div className="flex items-center justify-between px-4 py-3 text-cru">
-            <span className="font-mono text-sm">{atual + 1}/{total} — {nomeProduto}</span>
-            <button
-              onClick={fecharLightbox}
-              className="w-11 h-11 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors focus-visible:outline-2 focus-visible:outline-areia"
-              aria-label="Fechar"
-              autoFocus
-            >
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-
-          <div
-            className="relative flex-1 overflow-hidden"
-            onPointerDown={(e) => { toqueX.current = e.clientX; }}
-            onPointerUp={(e) => {
-              if (toqueX.current === null || zoom) return;
-              const delta = e.clientX - toqueX.current;
-              if (delta > 60) { anterior(); }
-              if (delta < -60) { proxima(); }
-              toqueX.current = null;
-            }}
-          >
-            <div
-              className={`absolute inset-0 transition-transform duration-200 motion-reduce:transition-none ${zoom ? 'cursor-zoom-out' : 'cursor-zoom-in'}`}
-              style={
-                zoom
-                  ? { transform: 'scale(2.5)', transformOrigin: `${zoom.x}% ${zoom.y}%` }
-                  : undefined
-              }
-              onClick={(e) => setZoom(zoom ? null : posicaoZoom(e))}
-              onMouseMove={(e) => { if (zoom) setZoom(posicaoZoom(e)); }}
-            >
-              <Image
-                key={imagens[atual]}
-                src={imagemUrl(imagens[atual])}
-                alt={`${nomeProduto} — foto ${atual + 1} ampliada`}
-                fill
-                sizes="100vw"
-                quality={85}
-                className="object-contain"
-              />
-            </div>
-
-            {total > 1 && !zoom && (
-              <>
-                <button
-                  onClick={anterior}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/25 text-cru rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-areia"
-                  aria-label="Foto anterior"
-                >
-                  {setaEsq}
-                </button>
-                <button
-                  onClick={proxima}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/25 text-cru rounded-full transition-colors focus-visible:outline-2 focus-visible:outline-areia"
-                  aria-label="Próxima foto"
-                >
-                  {setaDir}
-                </button>
-              </>
-            )}
-          </div>
-
-          <p className="px-4 py-3 text-center text-cru/60 text-xs">
-            {zoom ? 'Mova o mouse para percorrer o detalhe — clique para reduzir' : 'Clique na foto para dar zoom no acabamento'}
-          </p>
-        </div>,
-        document.body
+      {lightbox && (
+        <Lightbox
+          fotos={imagens.map((img, i) => ({
+            url: urlDe(img),
+            alt: `${nomeProduto} — foto ${i + 1} ampliada`,
+          }))}
+          indice={atual}
+          nomeProduto={nomeProduto}
+          aoFechar={fecharLightbox}
+          aoNavegar={setIdx}
+        />
       )}
     </div>
   );

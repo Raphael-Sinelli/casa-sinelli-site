@@ -1,16 +1,24 @@
+import { memo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import type { Produto } from '@/lib/tipos';
-import { capaProduto, mensagemWhatsApp, imagemUrl } from '@/lib/produtos';
-import WhatsAppIcon from './WhatsAppIcon';
+import type { ProdutoResumo } from '@/lib/tipos';
+import { mensagemProduto } from '@/lib/whatsapp';
+import BotaoWhatsApp from './BotaoWhatsApp';
 import LogoPoltrona from './LogoPoltrona';
 
+// grade do catálogo: 1 col / sm:2 / xl:3
+const SIZES_PADRAO = '(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw';
+
 interface Props {
-  produto: Produto;
+  produto: ProdutoResumo;
   mostrarCategoria?: boolean;
+  /** Atributo sizes da capa — ajustar quando a grade do contexto for outra. */
+  sizes?: string;
 }
 
-function FotoCard({ src, alt }: { src: string | null; alt: string }) {
+// alt vazio de propósito: o nome do produto está no h3 adjacente dentro do
+// mesmo link — repetir no alt faz o leitor de tela anunciar 2×.
+function FotoCard({ src, sizes }: { src: string | null; sizes: string }) {
   if (!src) {
     return (
       <div className="w-full h-full flex items-center justify-center">
@@ -23,27 +31,24 @@ function FotoCard({ src, alt }: { src: string | null; alt: string }) {
   }
   return (
     <Image
-      src={imagemUrl(src)}
-      alt={alt}
+      src={src}
+      alt=""
       fill
-      sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
-      className="object-contain p-3 transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]"
+      sizes={sizes}
+      className="object-contain p-2 transition-transform duration-[var(--dur-short)] motion-reduce:transition-none group-hover:scale-[var(--motion-scale-subtle)]"
     />
   );
 }
 
-export default function ProductCard({ produto, mostrarCategoria = true }: Props) {
-  const imagem = capaProduto(produto);
-  const whatsappUrl = mensagemWhatsApp(produto.nome);
-
+function ProductCard({ produto, mostrarCategoria = true, sizes = SIZES_PADRAO }: Props) {
   return (
-    <article className="group bg-white rounded-2xl overflow-hidden border border-grafite/10 flex flex-col transition-all duration-200 motion-reduce:transition-none hover:shadow-[0_12px_32px_-12px_rgba(51,46,41,0.28)] hover:-translate-y-0.5 motion-reduce:hover:translate-y-0">
+    <article className="group bg-white rounded-2xl overflow-hidden border border-grafite/10 flex flex-col transition-colors duration-[var(--dur-short)] motion-reduce:transition-none hover:border-marca/70 hover:bg-areia/25 focus-within:border-marca/70 focus-within:bg-areia/25 [content-visibility:auto] [contain-intrinsic-size:auto_420px]">
       <Link
         href={`/produto/${produto.id}`}
         className="flex flex-col flex-1 focus-visible:outline-2 focus-visible:outline-musgo focus-visible:-outline-offset-2"
       >
         <div className="relative aspect-[4/3] bg-white border-b border-grafite/8 overflow-hidden">
-          <FotoCard src={imagem} alt={produto.nome} />
+          <FotoCard src={produto.capaUrl} sizes={sizes} />
         </div>
         <div className="flex-1 px-4 pt-3.5 pb-2">
           {mostrarCategoria && (
@@ -51,25 +56,23 @@ export default function ProductCard({ produto, mostrarCategoria = true }: Props)
               {produto.categoria}
             </p>
           )}
-          <h3 className="font-serif text-[19px] font-medium text-grafite leading-snug line-clamp-2 group-hover:text-musgo transition-colors">
+          <h3 className="font-serif text-[21px] font-medium text-grafite leading-snug line-clamp-2 group-hover:text-musgo-escuro transition-colors">
             {produto.nome}
           </h3>
-          <p className="text-sm text-grafite/55 mt-1">Consulte o preço</p>
         </div>
       </Link>
 
       <div className="px-4 pb-4 pt-1">
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`Consultar preço de ${produto.nome} no WhatsApp`}
-          className="flex items-center justify-center gap-2 bg-wa hover:bg-wa-escuro text-white text-sm font-semibold py-2.5 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2"
-        >
-          <WhatsAppIcon className="w-4.5 h-4.5" />
-          Consultar preço
-        </a>
+        <BotaoWhatsApp
+          mensagem={mensagemProduto(produto.nome)}
+          larguraTotal
+          rotuloAcessivel={`Consultar preço de ${produto.nome} no WhatsApp`}
+        />
       </div>
     </article>
   );
 }
+
+// memo: a lista do catálogo re-renderiza a cada tecla da busca — os cards
+// que permanecem no resultado não devem re-renderizar.
+export default memo(ProductCard);

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { todosOsProdutos, todasCategorias } from '@/lib/produtos';
+import { todosOsProdutos, todasCategorias } from '@/lib/catalogo-server';
 
 const BASE = 'https://casasinelli.com.br';
 

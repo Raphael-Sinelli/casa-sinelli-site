@@ -11,11 +11,14 @@ export default function SearchBar({ valor, onChange, placeholder = 'Buscar produ
     <div className="relative">
       <input
         type="search"
+        name="busca"
+        autoComplete="off"
+        spellCheck={false}
         value={valor}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
         aria-label="Buscar produtos"
-        className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-grafite/20 bg-white text-sm text-grafite focus:outline-none focus:ring-2 focus:ring-musgo/35 focus:border-musgo transition-all placeholder:text-grafite/40"
+        className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-grafite/20 bg-white text-sm text-grafite focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-musgo/35 focus-visible:border-musgo transition-[border-color,box-shadow] placeholder:text-grafite/40"
       />
       <svg
         className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-grafite/40"

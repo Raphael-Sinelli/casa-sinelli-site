@@ -27,7 +27,7 @@ function ItemFiltro({
     <button
       onClick={onClick}
       aria-pressed={ativo}
-      className={`text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors flex items-center justify-between gap-2 focus-visible:outline-2 focus-visible:outline-musgo ${
+      className={`text-left px-3 py-2 pointer-coarse:min-h-11 rounded-lg text-sm font-medium transition-colors flex items-center justify-between gap-2 focus-visible:outline-2 focus-visible:outline-musgo ${
         ativo
           ? 'bg-grafite text-cru'
           : 'text-grafite/85 hover:bg-cru hover:text-grafite'
@@ -44,7 +44,7 @@ function ItemFiltro({
 export default function CategoryFilter({ categorias, selecionada, onSelect }: Props) {
   return (
     <div className="flex flex-col min-h-0">
-      <h2 className="font-mono text-[10.5px] uppercase tracking-[0.18em] text-marca mb-3 shrink-0">
+      <h2 className="text-[11px] font-semibold uppercase tracking-[0.08em] text-grafite/55 mb-3 shrink-0">
         Categorias
       </h2>
       <div className="flex flex-col gap-0.5 overflow-y-auto min-h-0">

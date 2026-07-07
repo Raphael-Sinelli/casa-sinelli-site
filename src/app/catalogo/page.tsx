@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { todosOsProdutos, todasCategorias } from '@/lib/produtos';
+import { todosOsProdutos, todasCategorias, resumoProduto } from '@/lib/catalogo-server';
 import CatalogClient from '@/components/CatalogClient';
 
 export const metadata: Metadata = {
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function CatalogoPage() {
-  const produtos = todosOsProdutos();
+  const produtos = todosOsProdutos().map(resumoProduto);
   const categorias = todasCategorias();
 
   return <CatalogClient produtos={produtos} categorias={categorias} />;

@@ -5,24 +5,28 @@ import {
   todosOsProdutos,
   todasCategorias,
   produtosPorCategoria,
-  capaProduto,
-  imagemUrl,
   produtoPorId,
-} from '@/lib/produtos';
+  resumoProduto,
+} from '@/lib/catalogo-server';
+import { capaProduto } from '@/lib/catalogo-utils';
+import { imagemUrl } from '@/lib/imagens';
+import {
+  MENSAGENS_WHATSAPP,
+  WHATSAPP_TELEFONE_FORMATADO,
+  WHATSAPP_URL,
+} from '@/lib/whatsapp';
+import BotaoWhatsApp from '@/components/BotaoWhatsApp';
 import ProductCard from '@/components/ProductCard';
 import LogoPoltrona from '@/components/LogoPoltrona';
 import Map from '@/components/Map';
-import WhatsAppIcon from '@/components/WhatsAppIcon';
-import { Truck, Hammer, MessageCircle, Store, MapPin, Clock, Phone, Mail, ArrowRight } from 'lucide-react';
+import RevelarAoEntrar from '@/components/RevelarAoEntrar';
+import { Truck, Hammer, MessageCircle, Store, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Casa Sinelli — Móveis & Colchões em Ribeirão Pires',
   description:
     'Loja de móveis e colchões em Ribeirão Pires: sofás, guarda-roupas, cozinhas, camas e colchões com entrega e montagem no ABC. Atendimento pelo WhatsApp.',
 };
-
-const WHATSAPP_URL =
-  'https://wa.me/5511971776165?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20produtos%20da%20Casa%20Sinelli.';
 
 // Curadoria editorial: mix de categorias com foto forte (ordem = vitrine)
 const DESTAQUE_IDS = ['25', '28', '14', '60', '3', '24', '101', '66'];
@@ -71,7 +75,8 @@ export default function HomePage() {
 
   const destaques = DESTAQUE_IDS
     .map((id) => produtoPorId(id))
-    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+    .filter((p): p is NonNullable<typeof p> => Boolean(p))
+    .map(resumoProduto);
 
   const categoriasDestaque = CATEGORIAS_DESTAQUE_SLUGS
     .map((slug) => {
@@ -111,71 +116,53 @@ export default function HomePage() {
       />
 
       {/* ─── HERO ─── */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-14 sm:pt-14 sm:pb-16 lg:pt-16 lg:pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-14 items-center">
-          <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-marca mb-4">
-              Móveis &amp; Colchões · Ribeirão Pires
-            </p>
-            <h1 className="font-serif text-[42px] sm:text-[54px] lg:text-6xl font-medium text-grafite leading-[1.06] tracking-tight">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-14 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-12 items-end">
+          <div className="flex flex-col lg:block lg:pb-6">
+            <h1 className="hero-entrar [animation-delay:var(--hero-d1)] [--subir-de:var(--motion-distance-lg)] font-serif text-[clamp(44px,7vw,84px)] font-medium text-grafite leading-[1.02] tracking-[-0.02em] text-balance lg:relative lg:z-10 lg:-mr-24">
               Móveis que fazem da sua casa <em className="italic text-musgo">a sua casa</em>
             </h1>
-            <p className="mt-6 text-lg text-grafite/75 leading-relaxed max-w-[46ch]">
+            <p className="hero-entrar [animation-delay:var(--hero-d2)] order-3 mt-6 text-lg text-grafite/75 leading-relaxed max-w-[46ch]">
               Sofás, quartos completos, cozinhas e colchões escolhidos peça a peça — {produtos.length} produtos no catálogo. Loja física em Ribeirão Pires, entrega e montagem em todo o ABC.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-3.5">
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 bg-wa hover:bg-wa-escuro text-white font-bold text-base px-7 py-4 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2"
-              >
-                <WhatsAppIcon className="w-5 h-5" />
-                Consultar preço
-              </a>
+            <div className="hero-entrar [animation-delay:var(--hero-d3)] order-2 mt-6 lg:mt-8 flex flex-col sm:flex-row gap-3.5">
+              <BotaoWhatsApp tamanho="lg" mensagem={MENSAGENS_WHATSAPP.padrao} />
               <Link
                 href="/catalogo"
-                className="inline-flex items-center justify-center gap-2 border-[1.5px] border-grafite/30 hover:border-grafite text-grafite font-semibold text-base px-7 py-4 rounded-xl transition-colors hover:bg-white focus-visible:outline-2 focus-visible:outline-musgo"
+                className="group inline-flex items-center justify-center gap-2 border-[1.5px] border-grafite/30 hover:border-grafite text-grafite font-semibold text-base px-7 py-4 rounded-xl transition-[border-color,background-color,transform] duration-[var(--dur-short)] touch-manipulation active:scale-[var(--motion-scale-active)] motion-reduce:transition-none motion-reduce:active:scale-100 hover:bg-white focus-visible:outline-2 focus-visible:outline-musgo"
               >
                 Ver catálogo
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" aria-hidden="true" />
               </Link>
             </div>
 
-            <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2.5 text-sm text-grafite/65">
-              <li className="flex items-center gap-1.5">
-                <MapPin className="w-4 h-4 text-marca" strokeWidth={1.8} aria-hidden="true" />
-                Av. Francisco Monteiro, 1320
-              </li>
-              <li className="flex items-center gap-1.5">
-                <Clock className="w-4 h-4 text-marca" strokeWidth={1.8} aria-hidden="true" />
-                Seg–Sex 9h–19h · Sáb 9h–17h
-              </li>
-              <li className="flex items-center gap-1.5">
-                <Phone className="w-4 h-4 text-marca" strokeWidth={1.8} aria-hidden="true" />
-                (11) 97177-6165
-              </li>
-            </ul>
+            <p className="hero-entrar [animation-delay:var(--hero-d4)] etiqueta order-4 mt-8 lg:mt-10 max-w-full">
+              <span>
+                Av. Francisco Monteiro, 1320 — Ribeirão Pires
+                <br />
+                Seg–Sex 9h–19h · Sáb 9h–17h · (11) 97177-6165
+              </span>
+            </p>
           </div>
 
           {heroProduto && heroCapa && (
             <Link
               href={`/produto/${heroProduto.id}`}
-              className="relative block group focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-4 rounded-t-[999px] rounded-b-2xl"
-              aria-label={`Ver ${heroProduto.nome}`}
+              className="order-first lg:order-none relative block group focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-4 rounded-t-[999px] rounded-b-2xl"
+              aria-label={`${heroProduto.nome} — veja de perto`}
             >
-              <span className="relative block aspect-[4/5] overflow-hidden rounded-t-[999px] rounded-b-2xl bg-areia/40">
+              <span className="portal-abrir relative block aspect-[4/5] max-h-[58vh] w-full lg:max-h-none overflow-hidden rounded-t-[999px] rounded-b-2xl bg-areia/40">
                 <Image
                   src={imagemUrl(heroCapa)}
                   alt={`${heroProduto.nome} no showroom da Casa Sinelli`}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 45vw"
-                  quality={85}
-                  className="object-cover transition-transform duration-500 motion-reduce:transition-none group-hover:scale-[1.02]"
-                  loading="eager"
+                  sizes="(max-width: 1024px) 100vw, 55vw"
+                  className="portal-settle object-cover transition-transform duration-[var(--dur-long)] motion-reduce:transition-none group-hover:scale-[var(--motion-scale-subtle)]"
+                  preload
                   fetchPriority="high"
                 />
               </span>
-              <span className="etiqueta absolute bottom-4 left-4 group-hover:bg-cru transition-colors">
+              <span className="etiqueta hero-entrar [animation-delay:var(--hero-d4)] absolute bottom-4 left-4 group-hover:bg-cru transition-colors">
                 {heroProduto.nome} — veja de perto
               </span>
             </Link>
@@ -184,57 +171,60 @@ export default function HomePage() {
       </section>
 
       {/* ─── CATEGORIAS PRINCIPAIS ─── */}
-      <section className="bg-white border-y border-grafite/8 py-14 sm:py-16">
+      <section className="bg-white border-y border-grafite/8 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between gap-4 mb-8">
-            <div>
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-marca mb-1.5">
-                {categorias.length} categorias
-              </p>
-              <h2 className="font-serif text-3xl sm:text-4xl font-medium text-grafite">
-                O que sua casa precisa
-              </h2>
-            </div>
+          <div className="flex items-end justify-between gap-4 mb-9">
+            <h2 className="font-serif text-4xl sm:text-5xl font-medium text-grafite">
+              O que sua casa precisa
+            </h2>
             <Link
               href="/catalogo"
-              className="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-musgo hover:underline underline-offset-4 shrink-0"
+              className="group hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-musgo-escuro hover:underline underline-offset-4 shrink-0"
             >
               Todas as categorias
-              <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              <ArrowRight className="w-4 h-4 transition-transform duration-[var(--dur-short)] group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" aria-hidden="true" />
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-            {categoriasDestaque.map((cat) => (
-              <Link
-                key={cat.slug}
-                href={`/categoria/${cat.slug}`}
-                className="group bg-cru rounded-2xl overflow-hidden border border-grafite/10 transition-all duration-200 motion-reduce:transition-none hover:shadow-[0_12px_32px_-12px_rgba(51,46,41,0.28)] hover:-translate-y-0.5 motion-reduce:hover:translate-y-0 focus-visible:outline-2 focus-visible:outline-musgo"
-              >
-                <span className="relative block aspect-[4/3] bg-white overflow-hidden">
+          {/* Mosaico: Sofá e Guarda-roupa âncoras (span 2), demais em célula padrão */}
+          <RevelarAoEntrar className="selecao-grade grid grid-cols-2 lg:grid-cols-12 gap-4 sm:gap-5">
+            {categoriasDestaque.map((cat) => {
+              const ancora = cat.slug === 'sofa' || cat.slug === 'guarda-roupa';
+              return (
+                <Link
+                  key={cat.slug}
+                  href={`/categoria/${cat.slug}`}
+                  className={`group relative rounded-2xl overflow-hidden bg-areia/30 border border-grafite/10 transition-colors duration-[var(--dur-short)] motion-reduce:transition-none hover:border-marca/70 focus-visible:outline-2 focus-visible:outline-musgo ${
+                    ancora ? 'col-span-2 lg:col-span-6 aspect-[16/9]' : 'col-span-1 lg:col-span-3 aspect-[4/3]'
+                  }`}
+                >
                   <Image
                     src={imagemUrl(cat.capa)}
                     alt={cat.nome}
                     fill
-                    sizes="(max-width: 1024px) 50vw, 33vw"
-                    className="object-contain p-4 transition-transform duration-300 motion-reduce:transition-none group-hover:scale-[1.03]"
+                    sizes={ancora ? '(max-width: 1024px) 100vw, 50vw' : '(max-width: 1024px) 50vw, 25vw'}
+                    className="object-cover transition-transform duration-[var(--dur-long)] motion-reduce:transition-none group-hover:scale-[var(--motion-scale-subtle)]"
                   />
-                </span>
-                <span className="flex items-baseline justify-between gap-2 px-4 sm:px-5 py-3.5 border-t border-grafite/8">
-                  <span className="font-serif text-lg sm:text-xl font-medium text-grafite group-hover:text-musgo transition-colors">
-                    {cat.nome}
+                  <span
+                    aria-hidden="true"
+                    className="absolute inset-0 bg-gradient-to-t from-grafite/85 via-grafite/25 to-transparent"
+                  />
+                  <span className="absolute inset-x-0 bottom-0 flex items-baseline justify-between gap-2 px-4 sm:px-5 pb-3.5 sm:pb-4">
+                    <span className={`font-serif font-medium text-cru ${ancora ? 'text-2xl sm:text-3xl' : 'text-lg sm:text-2xl'}`}>
+                      {cat.nome}
+                    </span>
+                    <span className={`font-mono text-xs text-cru/75 shrink-0 ${ancora ? '' : 'hidden sm:inline'}`}>
+                      {cat.total} {cat.total === 1 ? 'item' : 'itens'}
+                    </span>
                   </span>
-                  <span className="font-mono text-xs text-grafite/45 shrink-0">
-                    {cat.total} {cat.total === 1 ? 'item' : 'itens'}
-                  </span>
-                </span>
-              </Link>
-            ))}
-          </div>
+                </Link>
+              );
+            })}
+          </RevelarAoEntrar>
 
           <Link
             href="/catalogo"
-            className="sm:hidden mt-5 flex items-center justify-center gap-1.5 text-sm font-semibold text-musgo"
+            className="sm:hidden mt-5 flex items-center justify-center gap-1.5 text-sm font-semibold text-musgo-escuro"
           >
             Todas as categorias
             <ArrowRight className="w-4 h-4" aria-hidden="true" />
@@ -243,50 +233,65 @@ export default function HomePage() {
       </section>
 
       {/* ─── SELEÇÃO DA LOJA ─── */}
-      <section className="py-14 sm:py-16">
+      <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
-            <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-marca mb-1.5">
-              Seleção da loja
-            </p>
-            <h2 className="font-serif text-3xl sm:text-4xl font-medium text-grafite">
+          <div className="mb-9">
+            <p className="etiqueta mb-4">Seleção da loja</p>
+            <h2 className="font-serif text-4xl sm:text-5xl font-medium text-grafite">
               Peças que contam a nossa história
             </h2>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
-            {destaques.map((p) => (
-              <ProductCard key={p.id} produto={p} />
+          {/* Mobile: vitrine horizontal com scroll-snap nativo; sm+: grade com âncora larga */}
+          <RevelarAoEntrar className="selecao-grade flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-px-4 -mx-4 px-4 pb-2 sm:pb-0 sm:mx-0 sm:px-0 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-5 sm:overflow-visible">
+            {destaques.map((p, i) => (
+              <div
+                key={p.id}
+                className={`snap-start shrink-0 w-[78%] min-[421px]:w-[58%] sm:w-auto sm:shrink ${
+                  i === 0 ? 'lg:col-span-2' : ''
+                }`}
+              >
+                <ProductCard
+                  produto={p}
+                  sizes={
+                    i === 0
+                      ? '(max-width: 640px) 78vw, (max-width: 1024px) 50vw, 66vw'
+                      : '(max-width: 640px) 78vw, (max-width: 1024px) 50vw, 33vw'
+                  }
+                />
+              </div>
             ))}
-          </div>
+          </RevelarAoEntrar>
           <div className="mt-9 text-center">
             <Link
               href="/catalogo"
-              className="inline-flex items-center gap-2 border-[1.5px] border-grafite/30 hover:border-grafite text-grafite font-semibold px-7 py-3.5 rounded-xl transition-colors hover:bg-white focus-visible:outline-2 focus-visible:outline-musgo"
+              className="group inline-flex items-center gap-2 border-[1.5px] border-grafite/30 hover:border-grafite text-grafite font-semibold px-7 py-3.5 rounded-xl transition-[border-color,background-color,transform] duration-[var(--dur-short)] touch-manipulation active:scale-[var(--motion-scale-active)] motion-reduce:transition-none motion-reduce:active:scale-100 hover:bg-white focus-visible:outline-2 focus-visible:outline-musgo"
             >
               Ver o catálogo completo — {produtos.length} produtos
-              <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              <ArrowRight className="w-4 h-4 transition-transform duration-[var(--dur-short)] group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" aria-hidden="true" />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ─── DIFERENCIAIS ─── */}
-      <section className="bg-white border-y border-grafite/8 py-14 sm:py-16">
+      {/* ─── DIFERENCIAIS — faixa de compromissos da loja ─── */}
+      <section className="bg-white border-y border-grafite/8 py-12 sm:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl sm:text-4xl font-medium text-grafite text-center mb-10">
+          <h2 className="font-serif text-3xl sm:text-4xl font-medium text-grafite text-center mb-10 text-balance">
             Comprar móvel é com quem entrega e monta
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <RevelarAoEntrar className="revelar-bloco">
+          <ul className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6 lg:gap-x-0 lg:divide-x lg:divide-grafite/10">
             {DIFERENCIAIS.map(({ Icone, titulo, descricao }) => (
-              <div key={titulo} className="bg-cru rounded-2xl border border-grafite/10 p-6">
-                <span className="flex w-11 h-11 items-center justify-center rounded-xl bg-marca/10 mb-4">
-                  <Icone className="w-5.5 h-5.5 text-marca" strokeWidth={1.8} aria-hidden="true" />
+              <li key={titulo} className="lg:px-7 first:lg:pl-0 last:lg:pr-0">
+                <span className="flex items-center gap-2.5 mb-1.5">
+                  <Icone className="w-5 h-5 text-marca shrink-0" strokeWidth={1.8} aria-hidden="true" />
+                  <h3 className="font-serif text-lg sm:text-xl font-medium text-grafite">{titulo}</h3>
                 </span>
-                <h3 className="font-serif text-xl font-medium text-grafite mb-1.5">{titulo}</h3>
                 <p className="text-sm text-grafite/70 leading-relaxed">{descricao}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
+          </RevelarAoEntrar>
         </div>
       </section>
 
@@ -295,56 +300,37 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
-              <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-marca mb-1.5">
-                Loja física
-              </p>
-              <h2 className="font-serif text-3xl sm:text-4xl font-medium text-grafite mb-7">
+              <h2 className="font-serif text-4xl sm:text-5xl font-medium text-grafite mb-8 text-balance">
                 Venha sentar no sofá antes de escolher
               </h2>
-              <ul className="space-y-5">
-                <li className="flex gap-3.5 items-start">
-                  <MapPin className="w-5 h-5 text-marca mt-0.5 shrink-0" strokeWidth={1.8} aria-hidden="true" />
-                  <div>
-                    <p className="font-semibold text-grafite">Endereço</p>
-                    <p className="text-sm text-grafite/70 mt-0.5">
-                      Av. Francisco Monteiro, 1320 — Vila Fiorentino<br />Ribeirão Pires - SP
-                    </p>
-                  </div>
-                </li>
-                <li className="flex gap-3.5 items-start">
-                  <Clock className="w-5 h-5 text-marca mt-0.5 shrink-0" strokeWidth={1.8} aria-hidden="true" />
-                  <div>
-                    <p className="font-semibold text-grafite">Horário</p>
-                    <p className="text-sm text-grafite/70 mt-0.5">
-                      Segunda a sexta: 9h às 19h<br />Sábado: 9h às 17h
-                    </p>
-                  </div>
-                </li>
-                <li className="flex gap-3.5 items-start">
-                  <Phone className="w-5 h-5 text-marca mt-0.5 shrink-0" strokeWidth={1.8} aria-hidden="true" />
-                  <div>
-                    <p className="font-semibold text-grafite">WhatsApp</p>
+              <div className="flex flex-col gap-4 items-start">
+                <p className="etiqueta">
+                  <span>
+                    Av. Francisco Monteiro, 1320 — Vila Fiorentino, Ribeirão Pires - SP
+                    <br />
+                    Seg–Sex 9h às 19h · Sáb 9h às 17h
+                  </span>
+                </p>
+                <p className="etiqueta">
+                  <span>
+                    WhatsApp{' '}
                     <a
-                      href="https://wa.me/5511971776165"
-                      className="text-sm text-musgo font-medium hover:underline underline-offset-4 mt-0.5 inline-block"
+                      href={WHATSAPP_URL}
+                      className="text-musgo-escuro font-semibold hover:underline underline-offset-4"
                     >
-                      (11) 97177-6165
+                      {WHATSAPP_TELEFONE_FORMATADO}
                     </a>
-                  </div>
-                </li>
-                <li className="flex gap-3.5 items-start">
-                  <Mail className="w-5 h-5 text-marca mt-0.5 shrink-0" strokeWidth={1.8} aria-hidden="true" />
-                  <div>
-                    <p className="font-semibold text-grafite">E-mail</p>
+                    <br />
+                    E-mail{' '}
                     <a
                       href="mailto:contato@casasinelli.com.br"
-                      className="text-sm text-musgo font-medium hover:underline underline-offset-4 mt-0.5 inline-block"
+                      className="text-musgo-escuro font-semibold hover:underline underline-offset-4"
                     >
                       contato@casasinelli.com.br
                     </a>
-                  </div>
-                </li>
-              </ul>
+                  </span>
+                </p>
+              </div>
             </div>
             <Map />
           </div>
@@ -352,28 +338,29 @@ export default function HomePage() {
       </section>
 
       {/* ─── CHAMADA FINAL ─── */}
-      <section className="bg-grafite py-16 sm:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      <section className="bg-grafite">
+        {/* Recorte curvo: transição cru → grafite em arco raso (estático) */}
+        <svg
+          viewBox="0 0 1440 72"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+          className="block w-full h-10 sm:h-[72px]"
+        >
+          <path d="M0,0 H1440 V16 C1080,72 360,72 0,16 Z" fill="#F6F2EB" />
+        </svg>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center py-16 sm:py-24">
           <LogoPoltrona tamanho={64} className="mx-auto mb-6" />
-          <h2 className="font-serif text-3xl sm:text-[40px] font-medium text-cru leading-tight mb-4">
+          <h2 className="font-serif text-[clamp(32px,4.5vw,56px)] font-medium text-cru leading-tight mb-4 text-balance">
             Achou a peça certa? A conversa é rápida.
           </h2>
           <p className="text-cru/70 text-lg mb-9 leading-relaxed">
             Chame no WhatsApp para saber preço, disponibilidade e condições — ou visite o showroom em Ribeirão Pires.
           </p>
           <div className="flex flex-col sm:flex-row gap-3.5 justify-center">
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 bg-wa hover:bg-wa-escuro text-white font-bold text-base px-7 py-4 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-areia focus-visible:outline-offset-2"
-            >
-              <WhatsAppIcon className="w-5 h-5" />
-              Consultar preço
-            </a>
+            <BotaoWhatsApp tamanho="lg" fundoEscuro mensagem={MENSAGENS_WHATSAPP.padrao} />
             <Link
               href="/catalogo"
-              className="inline-flex items-center justify-center border-[1.5px] border-cru/35 hover:border-cru text-cru font-semibold text-base px-7 py-4 rounded-xl transition-colors hover:bg-cru/5 focus-visible:outline-2 focus-visible:outline-areia"
+              className="inline-flex items-center justify-center border-[1.5px] border-cru/35 hover:border-cru text-cru font-semibold text-base px-7 py-4 rounded-xl transition-[border-color,background-color,transform] duration-[var(--dur-short)] touch-manipulation active:scale-[var(--motion-scale-active)] motion-reduce:transition-none motion-reduce:active:scale-100 hover:bg-cru/5 focus-visible:outline-2 focus-visible:outline-areia"
             >
               Ver catálogo
             </Link>

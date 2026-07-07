@@ -4,12 +4,13 @@ import Link from 'next/link';
 import {
   todosOsProdutos,
   produtoPorId,
-  mensagemWhatsApp,
-  slugify,
   vizinhosNaCategoria,
-} from '@/lib/produtos';
+} from '@/lib/catalogo-server';
+import { slugify } from '@/lib/catalogo-utils';
+import { mapaUrlsProduto } from '@/lib/imagens';
+import { mensagemProduto } from '@/lib/whatsapp';
 import ProductDetailClient from '@/components/ProductDetailClient';
-import WhatsAppIcon from '@/components/WhatsAppIcon';
+import BotaoWhatsApp from '@/components/BotaoWhatsApp';
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -88,7 +89,6 @@ export default async function ProdutoPage({ params }: Props) {
   const produto = produtoPorId(id);
   if (!produto) notFound();
 
-  const whatsappUrl = mensagemWhatsApp(produto.nome);
   const slugCategoria = slugify(produto.categoria);
   const { anterior, proximo } = vizinhosNaCategoria(produto);
 
@@ -125,10 +125,10 @@ export default async function ProdutoPage({ params }: Props) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-10">
         {/* Breadcrumb + navegação entre produtos */}
         <div className="flex items-center justify-between gap-4 mb-6 lg:mb-8">
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-grafite/60 min-w-0">
-            <Link href="/" className="hover:text-musgo transition-colors shrink-0">Início</Link>
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-grafite/70 min-w-0">
+            <Link href="/" className="hover:text-musgo-escuro transition-colors shrink-0">Início</Link>
             <span aria-hidden="true">/</span>
-            <Link href={`/categoria/${slugCategoria}`} className="hover:text-musgo transition-colors shrink-0">
+            <Link href={`/categoria/${slugCategoria}`} className="hover:text-musgo-escuro transition-colors shrink-0">
               {produto.categoria}
             </Link>
             <span aria-hidden="true">/</span>
@@ -148,7 +148,7 @@ export default async function ProdutoPage({ params }: Props) {
                 <span className="hidden sm:inline">Anterior</span>
               </Link>
             ) : (
-              <span className="px-3 py-2 text-sm text-grafite/30 flex items-center gap-1" aria-hidden="true">
+              <span className="invisible px-3 py-2 text-sm flex items-center gap-1" aria-hidden="true">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
@@ -167,7 +167,7 @@ export default async function ProdutoPage({ params }: Props) {
                 </svg>
               </Link>
             ) : (
-              <span className="px-3 py-2 text-sm text-grafite/30 flex items-center gap-1" aria-hidden="true">
+              <span className="invisible px-3 py-2 text-sm flex items-center gap-1" aria-hidden="true">
                 <span className="hidden sm:inline">Próximo</span>
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -179,33 +179,25 @@ export default async function ProdutoPage({ params }: Props) {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-6">
           {/* Título — primeiro no mobile, coluna direita no desktop */}
-          <header className="lg:col-start-2">
+          <header className="hero-entrar [animation-delay:var(--hero-d1)] lg:col-start-2">
             <p className="font-mono text-xs uppercase tracking-widest text-marca mb-2">
               {produto.categoria}
             </p>
-            <h1 className="font-serif text-3xl sm:text-4xl font-medium text-grafite leading-tight">
+            <h1 className="font-serif text-3xl sm:text-4xl font-medium text-grafite leading-tight text-balance">
               {produto.nome}
             </h1>
           </header>
 
           {/* Galeria + variações */}
-          <div className="lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:sticky lg:top-24 self-start">
-            <ProductDetailClient produto={produto} />
+          <div className="hero-entrar lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:sticky lg:top-24 self-start">
+            <ProductDetailClient produto={produto} urls={mapaUrlsProduto(produto)} />
           </div>
 
           {/* Informações + CTA */}
-          <div className="lg:col-start-2 flex flex-col gap-6">
+          <div className="hero-entrar [animation-delay:var(--hero-d2)] lg:col-start-2 flex flex-col gap-6">
             <div>
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 bg-wa hover:bg-wa-escuro text-white font-bold text-lg py-4 px-6 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2"
-              >
-                <WhatsAppIcon className="w-6 h-6" />
-                Consultar preço
-              </a>
-              <p className="text-xs text-center text-grafite/55 mt-2">
+              <BotaoWhatsApp tamanho="xl" larguraTotal mensagem={mensagemProduto(produto.nome)} />
+              <p className="text-xs text-center text-grafite/70 mt-2">
                 A mensagem já sai com o nome deste produto — fale direto com a loja.
               </p>
             </div>
@@ -222,9 +214,9 @@ export default async function ProdutoPage({ params }: Props) {
 
             <Link
               href={`/categoria/${slugCategoria}`}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-musgo hover:underline underline-offset-4"
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-musgo-escuro hover:underline underline-offset-4"
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <svg className="w-4 h-4 transition-transform duration-[var(--dur-short)] group-hover:-translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
               Ver todos em {produto.categoria}

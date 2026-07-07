@@ -7,12 +7,14 @@ import {
   isImagemDisplay,
   variacaoInicial,
   variacoesDisplay,
-} from '@/lib/produtos';
+} from '@/lib/catalogo-utils';
 import ProductGallery from './ProductGallery';
 import VariacaoSelector from './VariacaoSelector';
 
 interface Props {
   produto: Produto;
+  /** caminho da imagem → URL final, resolvido no servidor (mapaUrlsProduto). */
+  urls: Record<string, string>;
 }
 
 function capaPrimeiro(imagens: string[], capa: string | null | undefined): string[] {
@@ -20,7 +22,7 @@ function capaPrimeiro(imagens: string[], capa: string | null | undefined): strin
   return [capa, ...imagens.filter((i) => i !== capa)];
 }
 
-export default function ProductDetailClient({ produto }: Props) {
+export default function ProductDetailClient({ produto, urls }: Props) {
   const variacoes = variacoesDisplay(produto);
   const [corVariacao, setCorVariacao] = useState(() => variacaoInicial(produto));
 
@@ -59,6 +61,7 @@ export default function ProductDetailClient({ produto }: Props) {
       <ProductGallery
         key={`${corVariacao}|${grupoAtivo}`}
         imagens={imagens}
+        urls={urls}
         nomeProduto={produto.nome}
       />
       <VariacaoSelector

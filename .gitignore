@@ -42,3 +42,6 @@ next-env.d.ts
 
 # playwright mcp debug output
 .playwright-mcp/
+
+# screenshots de QA das auditorias (trabalho local, nao versionar)
+qa/

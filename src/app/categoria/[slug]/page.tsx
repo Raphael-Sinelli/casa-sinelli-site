@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { todasCategorias, produtosPorCategoria } from '@/lib/produtos';
+import { todasCategorias, produtosPorCategoria, resumoProduto } from '@/lib/catalogo-server';
 import CatalogClient from '@/components/CatalogClient';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -26,7 +26,7 @@ export default async function CategoriaPage({ params }: Props) {
   const cat = categorias.find((c) => c.slug === slug);
   if (!cat) notFound();
 
-  const produtos = produtosPorCategoria(slug);
+  const produtos = produtosPorCategoria(slug).map(resumoProduto);
 
   return (
     <CatalogClient

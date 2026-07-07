@@ -23,4 +23,13 @@ export interface Produto {
   todasImagens: string[];
 }
 
+// DTO enxuto para listagens (catálogo, categoria, seleção da home) — o client
+// recebe só o necessário para o card, com a capa já resolvida em URL.
+export interface ProdutoResumo {
+  id: string;
+  nome: string;
+  categoria: string;
+  capaUrl: string | null;
+}
+
 export type Categoria = string;

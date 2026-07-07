@@ -1,8 +1,9 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { MapPin, Clock, Phone, Mail } from 'lucide-react';
-import { todasCategorias } from '@/lib/produtos';
-import WhatsAppIcon from './WhatsAppIcon';
+import { todasCategorias } from '@/lib/catalogo-server';
+import { WHATSAPP_TELEFONE_FORMATADO, WHATSAPP_URL } from '@/lib/whatsapp';
+import BotaoWhatsApp from './BotaoWhatsApp';
+import LogoPoltrona from './LogoPoltrona';
 
 const LINKS_SITE = [
   ['Início', '/'],
@@ -26,36 +27,30 @@ export default function Footer() {
     <footer className="bg-grafite text-cru/75">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr_1fr] gap-10">
-          {/* Marca — logo oficial num cartão cru (o contorno grafite some no fundo escuro) */}
+          {/* Marca — poltrona do logo + wordmark em cru (lockup do header, versão fundo escuro) */}
           <div>
-            <div className="inline-block bg-cru rounded-2xl px-6 py-5 mb-5">
-              <Image
-                src="/logo-casa-sinelli.png"
-                alt="Casa Sinelli — Móveis & Colchões"
-                width={168}
-                height={155}
-                unoptimized
-              />
+            <div className="flex items-center gap-4 mb-5">
+              <LogoPoltrona tamanho={56} className="shrink-0" />
+              <span className="flex flex-col leading-none">
+                <span className="font-serif text-[26px] font-semibold text-cru tracking-tight">
+                  Casa Sinelli
+                </span>
+                <span className="font-mono text-[10px] tracking-[0.22em] uppercase text-cru/70 mt-1">
+                  Móveis &amp; Colchões
+                </span>
+              </span>
             </div>
             <p className="text-sm text-cru/60 leading-relaxed max-w-[38ch]">
               Loja de móveis e colchões em Ribeirão Pires. Sofás, guarda-roupas, cozinhas, camas e colchões com entrega e montagem em todo o ABC Paulista.
             </p>
-            <a
-              href="https://wa.me/5511971776165"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2.5 bg-wa hover:bg-wa-escuro text-white text-sm font-semibold px-5 py-3 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-areia focus-visible:outline-offset-2"
-            >
-              <WhatsAppIcon className="w-4.5 h-4.5" />
-              Consultar preço
-            </a>
+            <BotaoWhatsApp fundoEscuro className="mt-6" />
           </div>
 
           {/* Categorias */}
           <nav aria-label="Categorias no rodapé">
-            <h3 className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-cru/45 mb-4">
+            <h2 className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-cru/70 mb-4">
               Catálogo
-            </h3>
+            </h2>
             <ul className="space-y-2.5 text-sm">
               {LINKS_SITE.map(([label, href]) => (
                 <li key={href}>
@@ -79,9 +74,9 @@ export default function Footer() {
 
           {/* Contato */}
           <div>
-            <h3 className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-cru/45 mb-4">
+            <h2 className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-cru/70 mb-4">
               Loja física
-            </h3>
+            </h2>
             <ul className="space-y-3.5 text-sm text-cru/70">
               <li className="flex gap-2.5 items-start">
                 <MapPin className="w-4 h-4 text-areia mt-0.5 shrink-0" strokeWidth={1.8} aria-hidden="true" />
@@ -93,8 +88,8 @@ export default function Footer() {
               </li>
               <li className="flex gap-2.5 items-center">
                 <Phone className="w-4 h-4 text-areia shrink-0" strokeWidth={1.8} aria-hidden="true" />
-                <a href="https://wa.me/5511971776165" className="hover:text-cru transition-colors">
-                  (11) 97177-6165
+                <a href={WHATSAPP_URL} className="hover:text-cru transition-colors">
+                  {WHATSAPP_TELEFONE_FORMATADO}
                 </a>
               </li>
               <li className="flex gap-2.5 items-center">
@@ -107,7 +102,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-cru/12 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-cru/40">
+        <div className="mt-12 pt-6 border-t border-cru/12 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-cru/65">
           <p>© {new Date().getFullYear()} Casa Sinelli — Móveis &amp; Colchões. Todos os direitos reservados.</p>
           <p>Ribeirão Pires · Mauá · Santo André · São Bernardo e região</p>
         </div>

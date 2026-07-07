@@ -2,8 +2,9 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import WhatsAppIcon from './WhatsAppIcon';
+import { useCallback, useState } from 'react';
+import { useEscapeETravaScroll } from '@/hooks/useEscapeETravaScroll';
+import BotaoWhatsApp from './BotaoWhatsApp';
 import LogoPoltrona from './LogoPoltrona';
 
 
@@ -18,27 +19,12 @@ interface Props {
   todasCategorias: CategoriaLink[];
 }
 
-const WHATSAPP_URL = 'https://wa.me/5511971776165';
-
 export default function Header({ categoriasTop, todasCategorias }: Props) {
   const [menuAberto, setMenuAberto] = useState(false);
   const pathname = usePathname();
-  const fecharMenu = () => setMenuAberto(false);
+  const fecharMenu = useCallback(() => setMenuAberto(false), []);
 
-  // trava o scroll e liga o Esc enquanto o menu está aberto
-  useEffect(() => {
-    if (!menuAberto) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setMenuAberto(false);
-    };
-    document.addEventListener('keydown', onKey);
-    const overflowAntes = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.removeEventListener('keydown', onKey);
-      document.body.style.overflow = overflowAntes;
-    };
-  }, [menuAberto]);
+  useEscapeETravaScroll(menuAberto, fecharMenu);
 
   const linkAtivo = (href: string) =>
     href === '/' ? pathname === '/' : pathname.startsWith(href);
@@ -59,7 +45,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
           <Link
             href="/"
             className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-4 rounded-sm"
-            aria-label="Casa Sinelli — página inicial"
+            aria-label="Casa Sinelli Móveis & Colchões — página inicial"
           >
             <LogoPoltrona tamanho={42} className="shrink-0 transition-transform group-hover:scale-105 motion-reduce:group-hover:scale-100" />
             <span className="flex flex-col leading-none">
@@ -79,24 +65,16 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
                 key={l.href}
                 href={l.href}
                 aria-current={linkAtivo(l.href) ? 'page' : undefined}
-                className={`text-[14.5px] font-medium transition-colors underline-offset-8 decoration-2 focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-4 rounded-sm ${
+                className={`relative text-[14.5px] font-medium transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-4 rounded-sm after:absolute after:inset-x-0 after:-bottom-1.5 after:h-0.5 after:bg-musgo-escuro after:origin-left after:transition-transform after:duration-[var(--dur-short)] motion-reduce:after:transition-none hover:after:scale-x-100 ${
                   linkAtivo(l.href)
-                    ? 'text-musgo underline'
-                    : 'text-grafite hover:text-musgo'
+                    ? 'text-musgo-escuro after:scale-x-100'
+                    : 'text-grafite hover:text-musgo-escuro after:scale-x-0'
                 }`}
               >
                 {l.label}
               </Link>
             ))}
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1 inline-flex items-center gap-2 bg-wa hover:bg-wa-escuro text-white text-sm font-semibold px-4.5 py-2.5 rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2"
-            >
-              <WhatsAppIcon className="w-4.5 h-4.5" />
-              Consultar preço
-            </a>
+            <BotaoWhatsApp className="ml-1" />
           </nav>
 
           {/* Botão menu mobile */}
@@ -107,15 +85,24 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
             aria-expanded={menuAberto}
             aria-controls="menu-mobile"
           >
-            {menuAberto ? (
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7h16M4 12h16M4 17h16" />
-              </svg>
-            )}
+            {/* Hamburger → X com morph (3 barras, transform-only) */}
+            <span className="relative block w-6 h-6" aria-hidden="true">
+              <span
+                className={`absolute left-0 top-[5px] h-0.5 w-6 rounded-full bg-current transition-transform duration-[var(--dur-short)] motion-reduce:transition-none ${
+                  menuAberto ? 'translate-y-[6px] rotate-45' : ''
+                }`}
+              />
+              <span
+                className={`absolute left-0 top-[11px] h-0.5 w-6 rounded-full bg-current transition-opacity duration-[var(--dur-micro)] motion-reduce:transition-none ${
+                  menuAberto ? 'opacity-0' : 'opacity-100'
+                }`}
+              />
+              <span
+                className={`absolute left-0 top-[17px] h-0.5 w-6 rounded-full bg-current transition-transform duration-[var(--dur-short)] motion-reduce:transition-none ${
+                  menuAberto ? '-translate-y-[6px] -rotate-45' : ''
+                }`}
+              />
+            </span>
           </button>
         </div>
       </div>
@@ -125,7 +112,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
         <nav
           id="menu-mobile"
           aria-label="Menu"
-          className="menu-mobile-entrar lg:hidden absolute inset-x-0 top-full h-[calc(100dvh-4rem)] overflow-y-auto bg-cru border-t border-grafite/12"
+          className="menu-mobile-entrar lg:hidden absolute inset-x-0 top-full h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain bg-cru border-t border-grafite/12"
         >
           <div className="px-4 py-5 flex flex-col gap-6">
             <div className="flex flex-col">
@@ -155,7 +142,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
                     key={c.slug}
                     href={`/categoria/${c.slug}`}
                     onClick={fecharMenu}
-                    className="flex items-baseline justify-between gap-2 py-2 border-b border-grafite/8 text-[15px] font-medium text-grafite hover:text-musgo transition-colors"
+                    className="flex items-baseline justify-between gap-2 py-2 border-b border-grafite/8 text-[15px] font-medium text-grafite hover:text-musgo-escuro transition-colors"
                   >
                     <span className="truncate">{c.nome}</span>
                     <span className="font-mono text-xs text-grafite/45 shrink-0">{c.total}</span>
@@ -164,15 +151,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
               </div>
             </div>
 
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2.5 bg-wa hover:bg-wa-escuro text-white font-bold text-base py-4 rounded-xl transition-colors"
-            >
-              <WhatsAppIcon className="w-5.5 h-5.5" />
-              Consultar preço
-            </a>
+            <BotaoWhatsApp tamanho="lg" larguraTotal />
 
             <p className="text-center text-xs text-grafite/50 pb-4">
               Av. Francisco Monteiro, 1320 — Ribeirão Pires · Seg–Sex 9h–19h · Sáb 9h–17h
