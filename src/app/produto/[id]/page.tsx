@@ -191,7 +191,9 @@ export default async function ProdutoPage({ params }: Props) {
           </nav>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-6">
+        {/* rows [auto 1fr]: sem isso a linha do título estica junto com a galeria
+            e abre um vão entre o h1 e o CTA no desktop */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr] gap-x-12 gap-y-6">
           {/* Título — primeiro no mobile, coluna direita no desktop */}
           <header className="hero-entrar [animation-delay:var(--hero-d1)] lg:col-start-2">
             <p className="font-mono text-xs uppercase tracking-widest text-marca mb-2">

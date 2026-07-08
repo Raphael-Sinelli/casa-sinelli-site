@@ -14,13 +14,15 @@ interface Props {
   mostrarCategoria?: boolean;
   /** Atributo sizes da capa — ajustar quando a grade do contexto for outra. */
   sizes?: string;
-  /** Vitrine editorial (célula larga): foto em cover com faixa grafite. */
+  /** Vitrine (célula larga): ficha ampliada com faixa grafite. */
   vitrine?: boolean;
 }
 
 // alt vazio de propósito: o nome do produto está no h3 adjacente dentro do
 // mesmo link — repetir no alt faz o leitor de tela anunciar 2×.
-function FotoCard({ src, sizes, cover = false }: { src: string | null; sizes: string; cover?: boolean }) {
+// Sempre object-contain: fotos de fornecedor têm enquadramentos imprevisíveis
+// e cover decapitava móveis (decisão 2026-07-08 — produto inteiro > impacto).
+function FotoCard({ src, sizes, padding = 'p-3' }: { src: string | null; sizes: string; padding?: string }) {
   if (!src) {
     return (
       <div className="w-full h-full flex items-center justify-center">
@@ -37,7 +39,7 @@ function FotoCard({ src, sizes, cover = false }: { src: string | null; sizes: st
       alt=""
       fill
       sizes={sizes}
-      className={`${cover ? 'object-cover' : 'object-contain p-3'} transition-transform duration-[var(--dur-short)] motion-reduce:transition-none group-hover:scale-[var(--motion-scale-subtle)]`}
+      className={`object-contain ${padding} transition-transform duration-[var(--dur-short)] motion-reduce:transition-none group-hover:scale-[var(--motion-scale-subtle)]`}
     />
   );
 }
@@ -53,8 +55,15 @@ function ProductCard({ produto, mostrarCategoria = true, sizes = SIZES_PADRAO, v
           href={`/produto/${produto.id}`}
           className="flex flex-col flex-1 focus-visible:outline-2 focus-visible:outline-areia focus-visible:-outline-offset-2"
         >
-          <div className="relative flex-1 min-h-[260px] bg-gradient-to-b from-white to-areia/40 overflow-hidden">
-            <FotoCard src={produto.capaUrl} sizes={sizes} cover />
+          {/* célula 2× mais larga → padding proporcional (p-6/p-8 ≈ p-3 da ficha).
+              bg-white por baixo do degradê: o to-areia/35 é translúcido e sem a
+              base opaca compõe com o grafite do article (fundo barrento). */}
+          <div className="relative flex-1 min-h-[280px] bg-white bg-gradient-to-b from-white to-areia/35 overflow-hidden">
+            <FotoCard src={produto.capaUrl} sizes={sizes} padding="p-6 sm:p-8" />
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-2 rounded-[2px] ring-1 ring-inset ring-grafite/8"
+            />
           </div>
           <div className="flex items-baseline justify-between gap-3 px-4 sm:px-5 py-3.5 bg-grafite">
             <div className="min-w-0">

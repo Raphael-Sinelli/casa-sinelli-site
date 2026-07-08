@@ -191,24 +191,7 @@ export default function HomePage() {
                   className="pointer-events-none absolute inset-3 sm:inset-4 rounded-t-[999px] rounded-b-xl ring-1 ring-cru/60"
                 />
               </span>
-              {/* foto-detalhe sobreposta — camada editorial, moldura de foto impressa */}
-              {destaques[1]?.capaUrl && (
-                <span
-                  aria-hidden="true"
-                  className="hero-entrar [animation-delay:var(--hero-d4)] pointer-events-none hidden lg:block absolute -left-12 bottom-10 w-48 xl:w-56 border-[6px] border-white bg-white shadow-[0_14px_28px_rgba(51,46,41,0.22)]"
-                >
-                  <span className="relative block aspect-[4/3] overflow-hidden bg-areia/30">
-                    <Image
-                      src={destaques[1].capaUrl}
-                      alt=""
-                      fill
-                      sizes="224px"
-                      className="object-cover"
-                    />
-                  </span>
-                </span>
-              )}
-              <span className="etiqueta hero-entrar [animation-delay:var(--hero-d4)] absolute bottom-4 left-4 lg:left-auto lg:right-4 group-hover:bg-cru transition-colors">
+              <span className="etiqueta hero-entrar [animation-delay:var(--hero-d4)] absolute bottom-4 left-4 group-hover:bg-cru transition-colors">
                 {heroProduto.nome} — veja de perto
               </span>
             </Link>

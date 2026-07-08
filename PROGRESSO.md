@@ -17,6 +17,16 @@ Brief: usuário reportou que o site AINDA parecia genérico/template; passe excl
 
 Validação 2026-07-08 (pós-/compact, working tree re-inspecionado arquivo a arquivo antes de commitar): `tsc --noEmit` + lint + build verdes (160 rotas); Playwright contra build de produção em 1440/390 — home (hero em camadas, Seleção grafite), catálogo (vitrine + fichas), PDP 24 (10 chips de cor, sem "sob consulta"), menu mobile, footer; **overflow horizontal 0px em todas as telas**; wa.me com número único correto e mensagem por produto (15 links na home); 12 blocos `prefers-reduced-motion` no CSS buildado (keyframe `piso-desenhar` presente). Catálogo **37,0 KB gzip** (baseline 32 KB, meta ±5 KB — **NO TETO**: próxima mudança que crescer o HTML do catálogo precisa compensar em outro lugar).
 
+### Rodada de polimento final (2026-07-08, feedback do usuário sobre o passe)
+
+Dois problemas apontados + refino:
+
+1. **Sofá vermelho REMOVIDO do hero** (pedido explícito: "não voltar com aquele sofá"). A foto-detalhe sobreposta (`destaques[1]`) saiu inteira; etiqueta do produto voltou ao canto inferior ESQUERDO do arco (o deslocamento p/ direita só existia por causa do sofá). Hero final: arco do guarda-roupa + overlap do título + linha de piso — mais limpo.
+2. **Cortes do catálogo corrigidos**: os 9 produtos "cortados" (Poltrona Casa Sinelli, Guarda-Roupa Fic, Sofá Fortaleza, Painel Maresias, Balcão Cooktop, Kit Nature, Multiuso Torino, Colchão Eco Linho, Sofá Afrodite) eram exatamente as células-VITRINE (cadência 14) com `object-cover` decapitando móveis. **Decisão: `object-contain` em TODO card, sem exceção** (produto inteiro > impacto editorial, regra pedida pelo usuário). `FotoCard` perdeu o modo `cover` e ganhou `padding` (`p-3` ficha, `p-6 sm:p-8` vitrine — proporcional à célula 2×); vitrine ganhou passe-partout igual ao da ficha e `min-h-[280px]`. **Bug achado no meio**: o degradê `to-areia/35` é translúcido e na vitrine compunha com o `bg-grafite` do article → fundo barrento atrás de foto de estúdio (invisível no cover, exposto no contain). Fix: `bg-white` opaco por baixo do degradê. O editorial da vitrine agora vem do tamanho da célula + faixa grafite, não do corte.
+3. **PDP desktop**: vão entre h1 e CTA fechado com `lg:grid-rows-[auto_1fr]` (sem isso a linha do título esticava junto com a galeria sticky).
+
+Validação da rodada: tsc/lint/build verdes; Playwright 1440/390 em home/catálogo/PDP — sofá ausente, Poltrona N.º 1 e Sofá Fortaleza N.º 29 inteiros na vitrine, vão da PDP fechado, overflow 0 em tudo, 8 wa.me na PDP, 12 blocos reduced-motion (CSS de motion intocado). Gzip catálogo 37,1 KB (+21 bytes, teto mantido).
+
 ## 0a. Frente venda assistida + realce visual (2026-07-07, 2ª sessão)
 
 Brief do usuário: transformar percepção + servir a vendedora na loja (celular/tablet/balcão). Entregas:
