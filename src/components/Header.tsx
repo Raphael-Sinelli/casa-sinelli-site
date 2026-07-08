@@ -91,10 +91,21 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
             <BotaoWhatsApp className="ml-1" />
           </nav>
 
-          {/* Botão menu mobile */}
+          {/* Mobile: atalho direto ao catálogo (1 toque, sem abrir o menu —
+              fluxo da vendedora no balcão) + botão do menu */}
+          <div className="lg:hidden flex items-center gap-1">
+          <Link
+            href="/catalogo"
+            aria-current={linkAtivo('/catalogo') ? 'page' : undefined}
+            className={`h-11 px-2.5 flex items-center font-mono text-[11px] uppercase tracking-[0.16em] rounded-xl transition-colors focus-visible:outline-2 focus-visible:outline-musgo ${
+              linkAtivo('/catalogo') ? 'text-musgo-escuro' : 'text-grafite hover:text-musgo-escuro'
+            }`}
+          >
+            Catálogo
+          </Link>
           <button
             onClick={() => setMenuAberto(!menuAberto)}
-            className="lg:hidden w-11 h-11 flex items-center justify-center text-grafite rounded-xl hover:bg-grafite/6 transition-colors focus-visible:outline-2 focus-visible:outline-musgo"
+            className="w-11 h-11 flex items-center justify-center text-grafite rounded-xl hover:bg-grafite/6 transition-colors focus-visible:outline-2 focus-visible:outline-musgo"
             aria-label={menuAberto ? 'Fechar menu' : 'Abrir menu'}
             aria-expanded={menuAberto}
             aria-controls="menu-mobile"
@@ -118,6 +129,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
               />
             </span>
           </button>
+          </div>
         </div>
       </div>
 

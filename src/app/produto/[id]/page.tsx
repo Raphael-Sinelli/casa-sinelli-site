@@ -58,7 +58,7 @@ function LinhasMedidas({ medidas }: { medidas: string }) {
   const curtas = linhas.filter((l) => l.length <= 60);
   const longas = linhas.filter((l) => l.length > 60);
   return (
-    <div>
+    <div id="medidas" className="scroll-mt-24">
       <h2 className="text-xs font-mono uppercase tracking-widest text-marca mb-3">Medidas</h2>
       {curtas.length > 0 && (
         <div className="flex flex-col items-start gap-2">
@@ -104,6 +104,14 @@ export default async function ProdutoPage({ params }: Props) {
   // há escolha visível na página (chips de cor/tamanho)? senão, linguagem segura
   const temEscolhaNosDados = variacoesDisplay(produto).length > 1 || contarCores(produto) >= 2;
   const capa = capaProduto(produto);
+
+  // Mini-sumário sob o título: atalhos só para seções que existem NESTA
+  // página (nunca prometer cor/medida que o dado não tem)
+  const atalhos: ReadonlyArray<readonly [href: string, rotulo: string]> = [
+    ...(temEscolhaNosDados ? [['#cores', 'Cores'] as const] : []),
+    ...(produto.medidas ? [['#medidas', 'Medidas'] as const] : []),
+    ...(relacionados.length > 0 ? [['#parecidos', 'Parecidos'] as const] : []),
+  ];
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -202,6 +210,24 @@ export default async function ProdutoPage({ params }: Props) {
             <h1 className="font-serif text-3xl sm:text-4xl font-medium text-grafite leading-tight text-balance">
               {produto.nome}
             </h1>
+            {atalhos.length > 0 && (
+              <nav
+                aria-label="Atalhos desta página"
+                className="mt-3.5 flex flex-wrap items-center gap-y-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-grafite/60"
+              >
+                {atalhos.map(([href, rotulo], i) => (
+                  <span key={href} className="flex items-center">
+                    {i > 0 && <span aria-hidden="true" className="mx-2.5 text-grafite/30">·</span>}
+                    <a
+                      href={href}
+                      className="py-1 underline underline-offset-4 decoration-grafite/25 hover:text-musgo-escuro hover:decoration-musgo-escuro transition-colors focus-visible:outline-2 focus-visible:outline-musgo rounded-sm"
+                    >
+                      {rotulo}
+                    </a>
+                  </span>
+                ))}
+              </nav>
+            )}
           </header>
 
           {/* Galeria + variações */}
@@ -240,8 +266,9 @@ export default async function ProdutoPage({ params }: Props) {
             sem voltar ao catálogo (uso direto na venda assistida) */}
         {relacionados.length > 0 && (
           <section
+            id="parecidos"
             aria-labelledby="titulo-parecidos"
-            className="mt-14 lg:mt-20 pt-10 border-t border-grafite/12"
+            className="mt-14 lg:mt-20 pt-10 border-t border-grafite/12 scroll-mt-24"
           >
             <div className="flex items-end justify-between gap-4 mb-7">
               <h2

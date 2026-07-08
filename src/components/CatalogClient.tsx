@@ -1,6 +1,7 @@
 'use client';
 
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import type { ProdutoResumo } from '@/lib/tipos';
 import { buscarProdutos, slugify } from '@/lib/catalogo-utils';
 import { MENSAGENS_WHATSAPP } from '@/lib/whatsapp';
@@ -29,6 +30,7 @@ interface Props {
 const CADENCIA_DESTAQUE = 14;
 
 export default function CatalogClient({ produtos, categorias, categoriaInicial = null }: Props) {
+  const router = useRouter();
   const [categoriaSelecionada, setCategoriaSelecionada] = useState<string | null>(categoriaInicial);
   const [busca, setBusca] = useState('');
   const [sheetAberto, setSheetAberto] = useState(false);
@@ -38,15 +40,26 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
   // o input responde na hora; a grade (127 cards) re-filtra em prioridade baixa
   const buscaDeferida = useDeferredValue(busca);
 
-  // URL state: ?busca= é lido no mount (deep-link) e mantido via replaceState —
-  // sem useSearchParams para não derrubar o HTML estático da rota (bailout CSR).
+  // URL state: ?busca= e ?cat= são lidos no mount (deep-link e voltar do
+  // produto) e mantidos via replaceState — sem useSearchParams para não
+  // derrubar o HTML estático da rota (bailout CSR). ?cat= só na rota
+  // /catalogo: em /categoria/[slug] a categoria já vive no path.
   // O setState pós-hidratação é intencional: inicializar direto do window no
-  // useState causaria mismatch com o HTML estático (renderizado sem busca).
+  // useState causaria mismatch com o HTML estático (renderizado sem filtros).
   useEffect(() => {
-    const q = new URLSearchParams(window.location.search).get('busca');
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('busca');
     // eslint-disable-next-line react-hooks/set-state-in-effect
     if (q) setBusca(q);
-  }, []);
+    const cat = params.get('cat');
+    if (
+      cat &&
+      window.location.pathname === '/catalogo' &&
+      categorias.some((c) => c.slug === cat)
+    ) {
+      setCategoriaSelecionada(cat);
+    }
+  }, [categorias]);
 
   useEscapeETravaScroll(sheetAberto, () => setSheetAberto(false));
 
@@ -79,8 +92,21 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
   const nomeCategoria = categorias.find((c) => c.slug === categoriaSelecionada)?.nome;
 
   const selecionarCategoria = (slug: string | null) => {
-    setCategoriaSelecionada(slug);
     setSheetAberto(false);
+    // Rota /categoria/[slug] recebe SÓ os produtos da própria categoria:
+    // trocar o filtro aqui navega para a rota da nova categoria (sem isso,
+    // filtrar client-side dava sempre "nenhum produto" — bug pré-existente).
+    if (window.location.pathname !== '/catalogo') {
+      router.push(slug ? `/categoria/${slug}` : '/catalogo');
+      return;
+    }
+    setCategoriaSelecionada(slug);
+    // categoria sobrevive ao "voltar" do produto (fluxo da vendedora):
+    // Sofá → produto → voltar → continua em Sofá, não nos 127
+    const url = new URL(window.location.href);
+    if (slug) url.searchParams.set('cat', slug);
+    else url.searchParams.delete('cat');
+    window.history.replaceState(null, '', url);
   };
 
   return (
@@ -97,20 +123,23 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
           </h1>
         </header>
 
-        {/* Busca + filtro mobile */}
-        <div className="mb-6 flex flex-col gap-3 lg:hidden">
-          <SearchBar valor={busca} onChange={aoBuscar} />
+        {/* Busca + filtro mobile/tablet — sticky sob o header (top-16): a
+            vendedora rola a grade e busca/troca categoria sem voltar ao topo */}
+        <div className="lg:hidden sticky top-16 z-40 -mx-4 sm:-mx-6 px-4 sm:px-6 py-3 mb-6 bg-cru/92 backdrop-blur border-b border-grafite/10 flex items-center gap-2.5">
+          <div className="flex-1 min-w-0">
+            <SearchBar valor={busca} onChange={aoBuscar} />
+          </div>
           <button
             ref={botaoFiltroRef}
             onClick={() => setSheetAberto(true)}
             aria-expanded={sheetAberto}
             aria-controls="sheet-filtros"
-            className="self-start flex items-center gap-2 text-sm font-semibold text-grafite border border-grafite/25 bg-white px-4 py-2.5 pointer-coarse:min-h-11 rounded-xl hover:border-grafite transition-colors focus-visible:outline-2 focus-visible:outline-musgo"
+            className="shrink-0 max-w-[46%] flex items-center gap-2 text-sm font-semibold text-grafite border border-grafite/25 bg-white px-4 py-2.5 pointer-coarse:min-h-11 rounded-xl hover:border-grafite transition-colors focus-visible:outline-2 focus-visible:outline-musgo"
           >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h18M6 12h12M10 19h4" />
             </svg>
-            {categoriaSelecionada ? nomeCategoria : 'Filtrar por categoria'}
+            <span className="truncate">{categoriaSelecionada ? nomeCategoria : 'Filtrar'}</span>
           </button>
         </div>
 
@@ -145,7 +174,7 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
                 </p>
                 <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
                   <button
-                    onClick={() => { aoBuscar(''); setCategoriaSelecionada(null); }}
+                    onClick={() => { aoBuscar(''); selecionarCategoria(null); }}
                     className="px-5 py-2.5 rounded-xl border border-grafite/30 text-sm font-semibold text-grafite hover:border-grafite hover:bg-white transition-colors focus-visible:outline-2 focus-visible:outline-musgo"
                   >
                     Limpar busca e filtros

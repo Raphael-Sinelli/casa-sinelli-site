@@ -9,7 +9,9 @@ interface Props {
 
 // Pensado para a venda assistida: a vendedora abre o produto na loja e envia
 // o link ao cliente. Mobile/tablet: folha de compartilhar do sistema (com
-// WhatsApp); desktop sem Web Share: copia "nome — link" para colar na conversa.
+// WhatsApp). Desktop sem Web Share: abre o "compartilhar no WhatsApp"
+// (Web/app) já com nome + link — wa.me SEM número de propósito: o destino é
+// o cliente que a vendedora escolhe, não a loja. Pop-up bloqueado: copia.
 export default function CompartilharProduto({ nomeProduto }: Props) {
   const [copiado, setCopiado] = useState(false);
   const timerRef = useRef<number | null>(null);
@@ -31,6 +33,12 @@ export default function CompartilharProduto({ nomeProduto }: Props) {
       }
       return;
     }
+    const aba = window.open(
+      `https://wa.me/?text=${encodeURIComponent(`${texto}\n${url}`)}`,
+      '_blank',
+      'noopener,noreferrer'
+    );
+    if (aba) return;
     try {
       await navigator.clipboard.writeText(`${texto}\n${url}`);
       setCopiado(true);

@@ -64,14 +64,17 @@ export default function ProductDetailClient({ produto, urls }: Props) {
         urls={urls}
         nomeProduto={produto.nome}
       />
-      <VariacaoSelector
-        variacoes={variacoes}
-        variacaoAtiva={corVariacao}
-        onVariacao={trocarVariacao}
-        grupos={grupos}
-        grupoAtivo={grupoAtivo}
-        onGrupo={setGrupoAtivo}
-      />
+      {/* id="cores": alvo do mini-sumário da PDP (scroll-mt compensa o header sticky) */}
+      <div id="cores" className="scroll-mt-24">
+        <VariacaoSelector
+          variacoes={variacoes}
+          variacaoAtiva={corVariacao}
+          onVariacao={trocarVariacao}
+          grupos={grupos}
+          grupoAtivo={grupoAtivo}
+          onGrupo={setGrupoAtivo}
+        />
+      </div>
     </div>
   );
 }
