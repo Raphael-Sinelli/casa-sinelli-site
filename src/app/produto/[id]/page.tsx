@@ -4,13 +4,22 @@ import Link from 'next/link';
 import {
   todosOsProdutos,
   produtoPorId,
+  relacionadosDoProduto,
   vizinhosNaCategoria,
 } from '@/lib/catalogo-server';
-import { slugify } from '@/lib/catalogo-utils';
-import { mapaUrlsProduto } from '@/lib/imagens';
+import {
+  capaProduto,
+  contarCores,
+  slugify,
+  variacoesDisplay,
+} from '@/lib/catalogo-utils';
+import { imagemUrl, mapaUrlsProduto } from '@/lib/imagens';
 import { mensagemProduto } from '@/lib/whatsapp';
 import ProductDetailClient from '@/components/ProductDetailClient';
 import BotaoWhatsApp from '@/components/BotaoWhatsApp';
+import CompartilharProduto from '@/components/CompartilharProduto';
+import ProductCard from '@/components/ProductCard';
+import RevelarAoEntrar from '@/components/RevelarAoEntrar';
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -91,12 +100,17 @@ export default async function ProdutoPage({ params }: Props) {
 
   const slugCategoria = slugify(produto.categoria);
   const { anterior, proximo } = vizinhosNaCategoria(produto);
+  const relacionados = relacionadosDoProduto(produto);
+  // há escolha visível na página (chips de cor/tamanho)? senão, linguagem segura
+  const temEscolhaNosDados = variacoesDisplay(produto).length > 1 || contarCores(produto) >= 2;
+  const capa = capaProduto(produto);
 
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: produto.nome,
     category: produto.categoria,
+    ...(capa ? { image: imagemUrl(capa) } : {}),
     offers: {
       '@type': 'Offer',
       availability: 'https://schema.org/InStock',
@@ -200,6 +214,12 @@ export default async function ProdutoPage({ params }: Props) {
               <p className="text-xs text-center text-grafite/70 mt-2">
                 A mensagem já sai com o nome deste produto — fale direto com a loja.
               </p>
+              <div className="mt-3">
+                <CompartilharProduto nomeProduto={produto.nome} />
+              </div>
+              {!temEscolhaNosDados && (
+                <p className="etiqueta mt-4">Outras cores e medidas: sob consulta na loja</p>
+              )}
             </div>
 
             {produto.descricao && (
@@ -211,18 +231,58 @@ export default async function ProdutoPage({ params }: Props) {
             {produto.medidas && <LinhasMedidas medidas={produto.medidas} />}
 
             {produto.informacoes && <InfoTecnica informacoes={produto.informacoes} />}
-
-            <Link
-              href={`/categoria/${slugCategoria}`}
-              className="group inline-flex items-center gap-2 text-sm font-semibold text-musgo-escuro hover:underline underline-offset-4"
-            >
-              <svg className="w-4 h-4 transition-transform duration-[var(--dur-short)] group-hover:-translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              Ver todos em {produto.categoria}
-            </Link>
           </div>
         </div>
+
+        {/* Parecidos — alternativas da mesma categoria para comparar na hora,
+            sem voltar ao catálogo (uso direto na venda assistida) */}
+        {relacionados.length > 0 && (
+          <section
+            aria-labelledby="titulo-parecidos"
+            className="mt-14 lg:mt-20 pt-10 border-t border-grafite/12"
+          >
+            <div className="flex items-end justify-between gap-4 mb-7">
+              <h2
+                id="titulo-parecidos"
+                className="font-serif text-3xl sm:text-4xl font-medium text-grafite"
+              >
+                Parecidos com este
+              </h2>
+              <Link
+                href={`/categoria/${slugCategoria}`}
+                className="group hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-musgo-escuro hover:underline underline-offset-4 shrink-0"
+              >
+                Ver todos em {produto.categoria}
+                <svg className="w-4 h-4 transition-transform duration-[var(--dur-short)] group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+            <RevelarAoEntrar className="selecao-grade flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-px-4 -mx-4 px-4 pb-2 sm:pb-0 sm:mx-0 sm:px-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-5 sm:overflow-visible">
+              {relacionados.map((p) => (
+                <div
+                  key={p.id}
+                  className="snap-start shrink-0 w-[72%] min-[421px]:w-[52%] sm:w-auto sm:shrink"
+                >
+                  <ProductCard
+                    produto={p}
+                    mostrarCategoria={false}
+                    sizes="(max-width: 640px) 72vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+              ))}
+            </RevelarAoEntrar>
+            <Link
+              href={`/categoria/${slugCategoria}`}
+              className="sm:hidden mt-5 flex items-center justify-center gap-1.5 text-sm font-semibold text-musgo-escuro"
+            >
+              Ver todos em {produto.categoria}
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </section>
+        )}
       </div>
     </>
   );

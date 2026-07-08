@@ -30,6 +30,8 @@ export interface ProdutoResumo {
   nome: string;
   categoria: string;
   capaUrl: string | null;
+  /** Nº de cores reais nos dados (0 quando desconhecido — nunca inventar). */
+  totalCores: number;
 }
 
 export type Categoria = string;

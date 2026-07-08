@@ -115,8 +115,18 @@ body {
 .menu-mobile-entrar {
   animation: menu-entrar var(--dur-medium) var(--ease-enter);
 }
+/* Itens do menu assentam em sequência curta (não atrasa o uso: 4 passos) */
+.menu-mobile-entrar .menu-stagger > * {
+  opacity: 0;
+  animation: subir-entrar var(--dur-medium) var(--ease-enter) both;
+}
+.menu-mobile-entrar .menu-stagger > :nth-child(1) { animation-delay: 40ms; }
+.menu-mobile-entrar .menu-stagger > :nth-child(2) { animation-delay: calc(40ms + var(--stagger-tight)); }
+.menu-mobile-entrar .menu-stagger > :nth-child(3) { animation-delay: calc(40ms + 2 * var(--stagger-tight)); }
+.menu-mobile-entrar .menu-stagger > :nth-child(4) { animation-delay: calc(40ms + 3 * var(--stagger-tight)); }
 @media (prefers-reduced-motion: reduce) {
   .menu-mobile-entrar { animation: none; }
+  .menu-mobile-entrar .menu-stagger > * { opacity: 1; animation: none; }
 }
 
 /* Entrada "assentar" — fade + rise com amplitude por papel do elemento:
@@ -188,6 +198,24 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .portal-abrir,
   .portal-settle { animation: none; }
+}
+
+/* Sublinhado caligráfico do hero — o traço se desenha depois que o título
+   assenta (assinatura tipográfica da marca; 1× por carregamento) */
+@keyframes sublinhar-desenhar {
+  to { stroke-dashoffset: 0; }
+}
+.sublinhado-hero path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: sublinhar-desenhar 620ms var(--ease-enter) forwards;
+  animation-delay: calc(var(--hero-d4) + 240ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  .sublinhado-hero path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
 }
 
 /* Catálogo: troca de categoria — o conteúdo troca na hora; o assentar curto

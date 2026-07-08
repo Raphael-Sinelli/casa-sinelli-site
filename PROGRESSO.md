@@ -1,7 +1,20 @@
 # PROGRESSO — Auditoria de front-end (jul/2026)
 
-**Última sessão:** 2026-07-07
-**Job atual:** CONCLUÍDO — Bloco B (§1) + frente de elevação visual/motion (§0) commitados juntos e enviados (push) em 2026-07-07. Nada pendente no working tree além de artefatos não versionados (qa/ e .playwright-mcp/ ignorados; `prompt-design-casa-sinelli-final.md` e `scripts/mapa-cloudinary-*.json` deixados de fora do commit por não pertencerem às frentes).
+**Última sessão:** 2026-07-07 (2ª sessão do dia)
+**Job atual:** CONCLUÍDO — frente "venda assistida + realce visual" (§0a) commitada e enviada em 2026-07-07, em cima do Bloco B + design/motion (§0/§1) da 1ª sessão. Fora do commit: `prompt-design-casa-sinelli-final.md`, `scripts/mapa-cloudinary-*.json` (não pertencem às frentes) e `.claude/skills/casa-sinelli/SKILL.md` (1 linha removida por edição EXTERNA à sessão — decidir se mantém).
+
+## 0a. Frente venda assistida + realce visual (2026-07-07, 2ª sessão)
+
+Brief do usuário: transformar percepção + servir a vendedora na loja (celular/tablet/balcão). Entregas:
+
+- **PDP**: seção "Parecidos com este" (4 da mesma categoria, ordem circular via `relacionadosDoProduto`, carrossel snap no mobile, stagger); botão **"Enviar este produto"** (`CompartilharProduto`: Web Share nativo → folha do sistema com WhatsApp; fallback desktop copia "nome — link" com aria-live "Link copiado"); etiqueta **"Outras cores e medidas: sob consulta na loja"** só quando `variacoesDisplay<2 && contarCores<2` (nunca inventa variação); `image` no JSON-LD; link "Ver todos em {categoria}" movido da coluna de info para o header da seção (sem duplicar intenção).
+- **Cards (`ProductCard`)**: `ProdutoResumo.totalCores` (contagem REAL via `contarCores` em catalogo-utils — 1º nível não-tamanho ou subpastas de 2º nível, rótulo normalizado dedup); linha mono "N cores" quando ≥2; passe-partout interno na foto (`inset-2 ring-grafite/8`); `active:scale-[0.99]` de toque.
+- **Hero**: sublinhado caligráfico SVG sob "a sua casa" com draw 620ms após d4 (`.sublinhado-hero`, pathLength=1); passe-partout claro no arco (`inset-3/4 ring-cru/60`); sombra de assentamento (elipse blur sob a foto).
+- **Header**: faixa superior da loja física (endereço + horário + WhatsApp, `hidden lg:block`, NÃO sticky — some ao rolar, offsets `top-24` preservados); menu mobile com stagger `.menu-stagger` (4 grupos × 50ms).
+- **Footer**: tagline "Móveis que fazem da sua casa a sua casa." em serif itálico.
+- Motion novo 100% com `prefers-reduced-motion`; nenhuma lib nova.
+
+Validação: tsc/lint/build verdes (160 rotas SSG); catálogo **34,6 KB gzip** (32 KB antes, meta ±5 KB ok — custo do dado de cores); Playwright em 360/390/768/1440: sem overflow horizontal, wa.me todos com número certo e mensagem com nome do produto, fallback de cópia testado, produto 24 (10 cores) mostra chips e NÃO mostra "sob consulta", produto 80 (sem dado) mostra. Skills de design carregadas nesta sessão: impeccable, frontend-design, design-taste-frontend, web-interface-guidelines, ui-ux-pro-max (+4 do projeto; ui-audit/product-image-quality/casa-sinelli-design/catalog-ux/whatsapp-conversion seguem VAZIAS). Decisões de skill acatadas: sem kickers numerados 01/02/03, sem textura grain global (tells de template).
 
 ## 0. Frente design + motion (2026-07-06/07) — CONCLUÍDA, aguardando revisão
 

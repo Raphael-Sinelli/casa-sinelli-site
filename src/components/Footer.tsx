@@ -40,6 +40,9 @@ export default function Footer() {
                 </span>
               </span>
             </div>
+            <p className="font-serif italic text-lg text-cru/90 leading-snug mb-3">
+              Móveis que fazem da sua casa a sua casa.
+            </p>
             <p className="text-sm text-cru/60 leading-relaxed max-w-[38ch]">
               Loja de móveis e colchões em Ribeirão Pires. Sofás, guarda-roupas, cozinhas, camas e colchões com entrega e montagem em todo o ABC Paulista.
             </p>

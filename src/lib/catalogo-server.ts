@@ -4,7 +4,7 @@ import 'server-only';
 
 import produtosData from '@/data/produtos.json';
 import type { Produto, ProdutoResumo } from './tipos';
-import { capaProduto, slugify } from './catalogo-utils';
+import { capaProduto, contarCores, slugify } from './catalogo-utils';
 import { imagemUrl } from './imagens';
 
 export function todosOsProdutos(): Produto[] {
@@ -40,7 +40,19 @@ export function resumoProduto(p: Produto): ProdutoResumo {
     nome: p.nome,
     categoria: p.categoria,
     capaUrl: capa ? imagemUrl(capa) : null,
+    totalCores: contarCores(p),
   };
+}
+
+// Vitrine de alternativas na PDP: próximos produtos da mesma categoria em
+// ordem circular a partir do atual — cada página mostra um conjunto diferente.
+export function relacionadosDoProduto(produto: Produto, max = 4): ProdutoResumo[] {
+  const lista = produtosPorCategoria(produto.categoria).filter((p) => p.id !== produto.id);
+  if (lista.length === 0) return [];
+  const i = produtosPorCategoria(produto.categoria).findIndex((p) => p.id === produto.id);
+  const inicio = i === -1 ? 0 : i % lista.length;
+  const roda = [...lista.slice(inicio), ...lista.slice(0, inicio)];
+  return roda.slice(0, max).map(resumoProduto);
 }
 
 // Anterior/próximo dentro da mesma categoria, na ordem da listagem.

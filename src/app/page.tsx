@@ -120,7 +120,26 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-12 items-end">
           <div className="flex flex-col lg:block lg:pb-6">
             <h1 className="hero-entrar [animation-delay:var(--hero-d1)] [--subir-de:var(--motion-distance-lg)] font-serif text-[clamp(44px,7vw,84px)] font-medium text-grafite leading-[1.02] tracking-[-0.02em] text-balance lg:relative lg:z-10 lg:-mr-24">
-              Móveis que fazem da sua casa <em className="italic text-musgo">a sua casa</em>
+              Móveis que fazem da sua casa{' '}
+              <em className="italic text-musgo relative inline-block">
+                a sua casa
+                {/* traço caligráfico — desenhado depois que o título assenta */}
+                <svg
+                  viewBox="0 0 220 14"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                  className="sublinhado-hero absolute left-0 right-0 -bottom-1.5 sm:-bottom-2.5 w-full h-2 sm:h-2.5 text-marca/60"
+                >
+                  <path
+                    d="M5 10 C 60 3, 150 2, 215 8"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="5"
+                    strokeLinecap="round"
+                    pathLength="1"
+                  />
+                </svg>
+              </em>
             </h1>
             <p className="hero-entrar [animation-delay:var(--hero-d2)] order-3 mt-6 text-lg text-grafite/75 leading-relaxed max-w-[46ch]">
               Sofás, quartos completos, cozinhas e colchões escolhidos peça a peça — {produtos.length} produtos no catálogo. Loja física em Ribeirão Pires, entrega e montagem em todo o ABC.
@@ -151,6 +170,11 @@ export default function HomePage() {
               className="order-first lg:order-none relative block group focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-4 rounded-t-[999px] rounded-b-2xl"
               aria-label={`${heroProduto.nome} — veja de perto`}
             >
+              {/* sombra de assentamento — o arco pousa no chão do ambiente */}
+              <span
+                aria-hidden="true"
+                className="hero-entrar [animation-delay:var(--hero-d3)] absolute -bottom-4 left-1/2 -translate-x-1/2 w-[74%] h-7 rounded-[100%] bg-grafite/25 blur-xl"
+              />
               <span className="portal-abrir relative block aspect-[4/5] max-h-[58vh] w-full lg:max-h-none overflow-hidden rounded-t-[999px] rounded-b-2xl bg-areia/40">
                 <Image
                   src={imagemUrl(heroCapa)}
@@ -160,6 +184,11 @@ export default function HomePage() {
                   className="portal-settle object-cover transition-transform duration-[var(--dur-long)] motion-reduce:transition-none group-hover:scale-[var(--motion-scale-subtle)]"
                   preload
                   fetchPriority="high"
+                />
+                {/* passe-partout: filete claro interno, moldura de catálogo */}
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-3 sm:inset-4 rounded-t-[999px] rounded-b-xl ring-1 ring-cru/60"
                 />
               </span>
               <span className="etiqueta hero-entrar [animation-delay:var(--hero-d4)] absolute bottom-4 left-4 group-hover:bg-cru transition-colors">

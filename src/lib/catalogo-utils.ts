@@ -96,6 +96,23 @@ export function gruposDeCor(produto: Produto, corVariacao: string): GrupoCor[] {
   return Array.from(grupos.entries()).map(([cor, imgs]) => ({ cor, imagens: imgs }));
 }
 
+// Cores distintas realmente presentes nos dados (pastas de variação): nomes
+// no 1º nível quando não são tamanho, ou subpastas de 2º nível (gruposDeCor).
+// Rótulo normalizado deduplica grafias ("JatobaAreia" ≡ "Jatoba-Areia").
+export function contarCores(produto: Produto): number {
+  const cores = new Set<string>();
+  for (const v of variacoesDisplay(produto)) {
+    if (!ehTamanho(v.cor)) {
+      cores.add(rotuloVariacao(v.cor).toLowerCase());
+      continue;
+    }
+    for (const g of gruposDeCor(produto, v.cor)) {
+      if (g.cor) cores.add(rotuloVariacao(g.cor).toLowerCase());
+    }
+  }
+  return cores.size;
+}
+
 // Variação que contém a capa — a página abre na mesma foto do card.
 export function variacaoInicial(produto: Produto): string {
   const visiveis = variacoesDisplay(produto);

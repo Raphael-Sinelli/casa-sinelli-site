@@ -42,13 +42,18 @@ function FotoCard({ src, sizes }: { src: string | null; sizes: string }) {
 
 function ProductCard({ produto, mostrarCategoria = true, sizes = SIZES_PADRAO }: Props) {
   return (
-    <article className="group bg-white rounded-2xl overflow-hidden border border-grafite/10 flex flex-col transition-colors duration-[var(--dur-short)] motion-reduce:transition-none hover:border-marca/70 hover:bg-areia/25 focus-within:border-marca/70 focus-within:bg-areia/25 [content-visibility:auto] [contain-intrinsic-size:auto_420px]">
+    <article className="group bg-white rounded-2xl overflow-hidden border border-grafite/10 flex flex-col transition-[border-color,background-color,transform] duration-[var(--dur-short)] motion-reduce:transition-none hover:border-marca/70 hover:bg-areia/25 focus-within:border-marca/70 focus-within:bg-areia/25 active:scale-[0.99] motion-reduce:active:scale-100 [content-visibility:auto] [contain-intrinsic-size:auto_420px]">
       <Link
         href={`/produto/${produto.id}`}
         className="flex flex-col flex-1 focus-visible:outline-2 focus-visible:outline-musgo focus-visible:-outline-offset-2"
       >
         <div className="relative aspect-[4/3] bg-white border-b border-grafite/8 overflow-hidden">
           <FotoCard src={produto.capaUrl} sizes={sizes} />
+          {/* passe-partout: filete interno de moldura, como foto de catálogo impresso */}
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-2 rounded-lg ring-1 ring-inset ring-grafite/8"
+          />
         </div>
         <div className="flex-1 px-4 pt-3.5 pb-2">
           {mostrarCategoria && (
@@ -59,6 +64,11 @@ function ProductCard({ produto, mostrarCategoria = true, sizes = SIZES_PADRAO }:
           <h3 className="font-serif text-[21px] font-medium text-grafite leading-snug line-clamp-2 group-hover:text-musgo-escuro transition-colors">
             {produto.nome}
           </h3>
+          {produto.totalCores >= 2 && (
+            <p className="font-mono text-[11px] text-grafite/60 mt-1.5">
+              {produto.totalCores} cores
+            </p>
+          )}
         </div>
       </Link>
 

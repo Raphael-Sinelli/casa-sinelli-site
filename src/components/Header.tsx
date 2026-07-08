@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useCallback, useState } from 'react';
 import { useEscapeETravaScroll } from '@/hooks/useEscapeETravaScroll';
+import { WHATSAPP_TELEFONE_FORMATADO } from '@/lib/whatsapp';
 import BotaoWhatsApp from './BotaoWhatsApp';
 import LogoPoltrona from './LogoPoltrona';
 
@@ -38,6 +39,19 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
   ];
 
   return (
+    <>
+      {/* Faixa da loja física — endereço e horário reais, some ao rolar
+          (só o header principal é sticky). Desktop: no mobile o menu já traz. */}
+      <div className="hidden lg:block bg-grafite text-cru/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-between gap-6 font-mono text-[11px] tracking-[0.04em]">
+          <p className="truncate">
+            Av. Francisco Monteiro, 1320 — Vila Fiorentino, Ribeirão Pires - SP
+          </p>
+          <p className="shrink-0">
+            Seg–Sex 9h–19h · Sáb 9h–17h · WhatsApp {WHATSAPP_TELEFONE_FORMATADO}
+          </p>
+        </div>
+      </div>
     <header className="sticky top-0 z-[60] bg-cru/92 backdrop-blur border-b border-grafite/12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-[68px]">
@@ -114,7 +128,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
           aria-label="Menu"
           className="menu-mobile-entrar lg:hidden absolute inset-x-0 top-full h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain bg-cru border-t border-grafite/12"
         >
-          <div className="px-4 py-5 flex flex-col gap-6">
+          <div className="menu-stagger px-4 py-5 flex flex-col gap-6">
             <div className="flex flex-col">
               <Link
                 href="/"
@@ -160,5 +174,6 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
         </nav>
       )}
     </header>
+    </>
   );
 }
