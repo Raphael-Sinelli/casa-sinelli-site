@@ -4,7 +4,7 @@ export default function Map() {
     // Google (que vive DENTRO do iframe, no canto superior esquerdo) e a
     // faixa-espaçadora que resolvia isso deixava um vazio bege acima do mapa.
     // Decisão 2026-07-07: mapa é utilidade, arco fica para hero/mosaico.
-    <div className="rounded-2xl overflow-hidden border border-grafite/12 bg-white">
+    <div className="rounded-[4px] overflow-hidden border border-grafite/15 bg-white">
       <iframe
         src="https://www.google.com/maps?q=Av.+Francisco+Monteiro,+1320+-+Vila+Fiorentino,+Ribeir%C3%A3o+Pires+-+SP&hl=pt-BR&z=16&output=embed"
         width="100%"

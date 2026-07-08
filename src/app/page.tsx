@@ -115,11 +115,11 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
       />
 
-      {/* ─── HERO ─── */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-14 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-20">
+      {/* ─── HERO — composição em camadas sobre a linha de piso do showroom ─── */}
+      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-14 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-12 items-end">
           <div className="flex flex-col lg:block lg:pb-6">
-            <h1 className="hero-entrar [animation-delay:var(--hero-d1)] [--subir-de:var(--motion-distance-lg)] font-serif text-[clamp(44px,7vw,84px)] font-medium text-grafite leading-[1.02] tracking-[-0.02em] text-balance lg:relative lg:z-10 lg:-mr-24">
+            <h1 className="hero-entrar [animation-delay:var(--hero-d1)] [--subir-de:var(--motion-distance-lg)] font-serif text-[clamp(44px,7vw,84px)] font-medium text-grafite leading-[1.02] tracking-[-0.02em] text-balance lg:relative lg:z-10 lg:-mr-44">
               Móveis que fazem da sua casa{' '}
               <em className="italic text-musgo relative inline-block">
                 a sua casa
@@ -191,21 +191,42 @@ export default function HomePage() {
                   className="pointer-events-none absolute inset-3 sm:inset-4 rounded-t-[999px] rounded-b-xl ring-1 ring-cru/60"
                 />
               </span>
-              <span className="etiqueta hero-entrar [animation-delay:var(--hero-d4)] absolute bottom-4 left-4 group-hover:bg-cru transition-colors">
+              {/* foto-detalhe sobreposta — camada editorial, moldura de foto impressa */}
+              {destaques[1]?.capaUrl && (
+                <span
+                  aria-hidden="true"
+                  className="hero-entrar [animation-delay:var(--hero-d4)] pointer-events-none hidden lg:block absolute -left-12 bottom-10 w-48 xl:w-56 border-[6px] border-white bg-white shadow-[0_14px_28px_rgba(51,46,41,0.22)]"
+                >
+                  <span className="relative block aspect-[4/3] overflow-hidden bg-areia/30">
+                    <Image
+                      src={destaques[1].capaUrl}
+                      alt=""
+                      fill
+                      sizes="224px"
+                      className="object-cover"
+                    />
+                  </span>
+                </span>
+              )}
+              <span className="etiqueta hero-entrar [animation-delay:var(--hero-d4)] absolute bottom-4 left-4 lg:left-auto lg:right-4 group-hover:bg-cru transition-colors">
                 {heroProduto.nome} — veja de perto
               </span>
             </Link>
           )}
         </div>
+        {/* linha de piso: o traço em que a composição assenta, desenhado ao final */}
+        <div aria-hidden="true" className="hero-piso mt-[2px] h-px bg-grafite/20" />
       </section>
 
       {/* ─── CATEGORIAS PRINCIPAIS ─── */}
       <section className="bg-white border-y border-grafite/8 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-end justify-between gap-4 mb-9">
-            <h2 className="font-serif text-4xl sm:text-5xl font-medium text-grafite">
+          <div className="flex items-center gap-6 mb-9">
+            <h2 className="font-serif text-4xl sm:text-5xl font-medium text-grafite shrink-0">
               O que sua casa precisa
             </h2>
+            {/* régua editorial: corre do título até a ação */}
+            <span aria-hidden="true" className="hidden sm:block flex-1 h-px bg-grafite/20" />
             <Link
               href="/catalogo"
               className="group hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-musgo-escuro hover:underline underline-offset-4 shrink-0"
@@ -223,7 +244,7 @@ export default function HomePage() {
                 <Link
                   key={cat.slug}
                   href={`/categoria/${cat.slug}`}
-                  className={`group relative rounded-2xl overflow-hidden bg-areia/30 border border-grafite/10 transition-colors duration-[var(--dur-short)] motion-reduce:transition-none hover:border-marca/70 focus-visible:outline-2 focus-visible:outline-musgo ${
+                  className={`group relative rounded-[4px] overflow-hidden bg-areia/30 border border-grafite/10 transition-colors duration-[var(--dur-short)] motion-reduce:transition-none hover:border-marca/70 focus-visible:outline-2 focus-visible:outline-musgo ${
                     ancora ? 'col-span-2 lg:col-span-6 aspect-[16/9]' : 'col-span-1 lg:col-span-3 aspect-[4/3]'
                   }`}
                 >
@@ -261,13 +282,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── SELEÇÃO DA LOJA ─── */}
-      <section className="py-16 sm:py-20">
+      {/* ─── SELEÇÃO DA LOJA — bloco grafite: showroom com as peças na luz ─── */}
+      <section className="bg-grafite py-20 sm:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-9">
-            <p className="etiqueta mb-4">Seleção da loja</p>
-            <h2 className="font-serif text-4xl sm:text-5xl font-medium text-grafite">
-              Peças que contam a nossa história
+          <div className="mb-10">
+            <p className="etiqueta mb-5">Seleção da loja</p>
+            <h2 className="font-serif text-4xl sm:text-6xl font-medium text-cru text-balance max-w-[24ch]">
+              Peças que contam a <em className="italic text-areia">nossa história</em>
             </h2>
           </div>
           {/* Mobile: vitrine horizontal com scroll-snap nativo; sm+: grade com âncora larga */}
@@ -290,10 +311,10 @@ export default function HomePage() {
               </div>
             ))}
           </RevelarAoEntrar>
-          <div className="mt-9 text-center">
+          <div className="mt-10 text-center">
             <Link
               href="/catalogo"
-              className="group inline-flex items-center gap-2 border-[1.5px] border-grafite/30 hover:border-grafite text-grafite font-semibold px-7 py-3.5 rounded-xl transition-[border-color,background-color,transform] duration-[var(--dur-short)] touch-manipulation active:scale-[var(--motion-scale-active)] motion-reduce:transition-none motion-reduce:active:scale-100 hover:bg-white focus-visible:outline-2 focus-visible:outline-musgo"
+              className="group inline-flex items-center gap-2 border-[1.5px] border-cru/35 hover:border-cru text-cru font-semibold px-7 py-3.5 rounded-xl transition-[border-color,background-color,transform] duration-[var(--dur-short)] touch-manipulation active:scale-[var(--motion-scale-active)] motion-reduce:transition-none motion-reduce:active:scale-100 hover:bg-cru/5 focus-visible:outline-2 focus-visible:outline-areia"
             >
               Ver o catálogo completo — {produtos.length} produtos
               <ArrowRight className="w-4 h-4 transition-transform duration-[var(--dur-short)] group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" aria-hidden="true" />
@@ -302,21 +323,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── DIFERENCIAIS — faixa de compromissos da loja ─── */}
-      <section className="bg-white border-y border-grafite/8 py-12 sm:py-14">
+      {/* ─── DIFERENCIAIS — faixa areia: compromissos da loja ─── */}
+      <section className="bg-areia py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl sm:text-4xl font-medium text-grafite text-center mb-10 text-balance">
-            Comprar móvel é com quem entrega e monta
+          <h2 className="font-serif text-3xl sm:text-4xl font-medium text-grafite mb-9 text-balance max-w-[26ch]">
+            Comprar móvel é com quem <em className="italic">entrega e monta</em>
           </h2>
           <RevelarAoEntrar className="revelar-bloco">
-          <ul className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6 lg:gap-x-0 lg:divide-x lg:divide-grafite/10">
+          <ul className="grid grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6 lg:gap-x-0 lg:divide-x lg:divide-grafite/20 border-t border-grafite/20 pt-8">
             {DIFERENCIAIS.map(({ Icone, titulo, descricao }) => (
               <li key={titulo} className="lg:px-7 first:lg:pl-0 last:lg:pr-0">
                 <span className="flex items-center gap-2.5 mb-1.5">
-                  <Icone className="w-5 h-5 text-marca shrink-0" strokeWidth={1.8} aria-hidden="true" />
+                  <Icone className="w-5 h-5 text-grafite shrink-0" strokeWidth={1.8} aria-hidden="true" />
                   <h3 className="font-serif text-lg sm:text-xl font-medium text-grafite">{titulo}</h3>
                 </span>
-                <p className="text-sm text-grafite/70 leading-relaxed">{descricao}</p>
+                <p className="text-sm text-grafite/75 leading-relaxed">{descricao}</p>
               </li>
             ))}
           </ul>

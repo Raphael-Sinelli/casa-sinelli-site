@@ -80,7 +80,7 @@ function InfoTecnica({ informacoes }: { informacoes: string }) {
     .map((l) => l.trim())
     .filter(Boolean);
   return (
-    <div className="bg-white rounded-2xl border border-grafite/10 p-5 sm:p-6">
+    <div className="border-t border-grafite/20 pt-4">
       <h2 className="text-xs font-mono uppercase tracking-widest text-marca mb-3">
         Informações técnicas
       </h2>

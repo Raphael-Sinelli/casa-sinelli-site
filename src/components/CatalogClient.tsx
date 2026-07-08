@@ -170,6 +170,7 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
                       <ProductCard
                         produto={p}
                         mostrarCategoria={!categoriaSelecionada}
+                        vitrine={destaque}
                         sizes={
                           destaque
                             ? '(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 66vw'

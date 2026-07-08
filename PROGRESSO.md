@@ -1,7 +1,21 @@
 # PROGRESSO — Auditoria de front-end (jul/2026)
 
-**Última sessão:** 2026-07-07 (2ª sessão do dia)
-**Job atual:** CONCLUÍDO — frente "venda assistida + realce visual" (§0a) commitada e enviada em 2026-07-07, em cima do Bloco B + design/motion (§0/§1) da 1ª sessão. Fora do commit: `prompt-design-casa-sinelli-final.md`, `scripts/mapa-cloudinary-*.json` (não pertencem às frentes) e `.claude/skills/casa-sinelli/SKILL.md` (1 linha removida por edição EXTERNA à sessão — decidir se mantém).
+**Última sessão:** 2026-07-08 (3ª sessão da sequência)
+**Job atual:** CONCLUÍDO — passe anti-template (§0b) commitado e enviado em 2026-07-08, em cima da venda assistida (§0a) e do Bloco B + design/motion (§0/§1). Fora do commit: `prompt-design-casa-sinelli-final.md`, `scripts/mapa-cloudinary-*.json` (não pertencem às frentes) e `.claude/skills/casa-sinelli/SKILL.md` (1 linha removida por edição EXTERNA à sessão — decidir se mantém). **PAUSADO por ordem do usuário:** as 5 melhorias operacionais de fluxo da vendedora (categoria em `?cat=`, busca sticky mobile, atalho Catálogo no header mobile, âncoras na PDP, caminho WhatsApp Web no compartilhar) — só implementar quando ele pedir.
+
+## 0b. Passe anti-template (2026-07-07/08, 3ª sessão)
+
+Brief: usuário reportou que o site AINDA parecia genérico/template; passe exclusivo para eliminar essa percepção com mudança visual real (sem defender estado anterior, sem plano). Entregas:
+
+- **Ritmo de cor da home**: cru (hero) → branco (categorias) → **grafite** (Seleção da loja como showroom escuro: título serif cru 6xl com `<em>` areia, CTA fantasma cru) → **faixa areia sólida** (Diferenciais: título à esquerda com `<em>` itálico, `ul` com `lg:divide-x` sobre hairline, ícones grafite) → cru (visita) → grafite (footer). Mata a monotonia de superfície (tudo cru/branco) que era o maior tell de template.
+- **Ficha de showroom (`ProductCard` reescrito)**: raio de impresso `rounded-[4px]`, meta-linha mono `CATEGORIA · N.º {id}` (número REAL), nome serif 21px, linha "N cores" real, foto sobre degradê de papel com passe-partout interno, **CTA em linha** (`BotaoWhatsApp variante="linha"`: texto grafite + ícone `text-wa-escuro` + hairline superior) — **matou o mar de 127 botões verdes**; pílula verde sólida restrita a 1 por tela (regra ui-ux-pro-max). Foto flexível `flex-1 min-h-0 [aspect-ratio:4/3]`: em linhas mistas com a vitrine, a FOTO absorve a altura extra, não o vazio do texto.
+- **Vitrine editorial**: prop `vitrine` no ProductCard (foto cover `min-h-[260px]` + faixa grafite com categoria areia/nome cru/N.º) aplicada no destaque 2×1 do catálogo (`CatalogClient vitrine={destaque}`, cadência 14).
+- **Hero em camadas**: foto-detalhe do 2º destaque com moldura branca 6px + sombra, sobreposta ao canto do arco (lg+); linha de piso `hero-piso` (hairline desenhada scaleX esquerda→direita após o assentamento, keyframe `piso-desenhar` com bloco reduced-motion); overlap do título `lg:-mr-44` + `z-10`; etiqueta do produto movida para a direita no lg.
+- **Régua editorial**: hairline correndo do título "O que sua casa precisa" até o link de ação; mosaico com raio 4px.
+- **Footer**: crest da marca (poltrona do logo dentro do arco-assinatura `rounded-t-[999px]` com borda cru), colunas com `md:divide-x`, link **"Como chegar"** (Google Maps busca) em areia sublinhado.
+- **PDP**: Informações técnicas flat (`border-t` + `divide-y`, sem card branco arredondado). **Map**: raio 4px. Regra de raio consolidada: molduras/fichas impressas = 4px, arco = 999px (assinatura, só ambientes), interativos = rounded-xl.
+
+Validação 2026-07-08 (pós-/compact, working tree re-inspecionado arquivo a arquivo antes de commitar): `tsc --noEmit` + lint + build verdes (160 rotas); Playwright contra build de produção em 1440/390 — home (hero em camadas, Seleção grafite), catálogo (vitrine + fichas), PDP 24 (10 chips de cor, sem "sob consulta"), menu mobile, footer; **overflow horizontal 0px em todas as telas**; wa.me com número único correto e mensagem por produto (15 links na home); 12 blocos `prefers-reduced-motion` no CSS buildado (keyframe `piso-desenhar` presente). Catálogo **37,0 KB gzip** (baseline 32 KB, meta ±5 KB — **NO TETO**: próxima mudança que crescer o HTML do catálogo precisa compensar em outro lugar).
 
 ## 0a. Frente venda assistida + realce visual (2026-07-07, 2ª sessão)
 

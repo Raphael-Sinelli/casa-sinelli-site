@@ -218,6 +218,21 @@ body {
   }
 }
 
+/* Linha de piso do hero — o chão do showroom se estende sob a composição,
+   desenhado da esquerda para a direita depois que as peças assentam */
+@keyframes piso-desenhar {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.hero-piso {
+  transform-origin: left;
+  animation: piso-desenhar 900ms var(--ease-enter) both;
+  animation-delay: var(--hero-d3);
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-piso { animation: none; transform: scaleX(1); }
+}
+
 /* Catálogo: troca de categoria — o conteúdo troca na hora; o assentar curto
    (fade + 12px) dá direção à mudança. Nunca em digitação de busca. */
 @keyframes grade-trocar {

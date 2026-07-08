@@ -26,11 +26,13 @@ export default function Footer() {
   return (
     <footer className="bg-grafite text-cru/75">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr_1fr] gap-10">
-          {/* Marca — poltrona do logo + wordmark em cru (lockup do header, versão fundo escuro) */}
-          <div>
-            <div className="flex items-center gap-4 mb-5">
-              <LogoPoltrona tamanho={56} className="shrink-0" />
+        <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr_1fr] gap-10 md:gap-0 md:divide-x md:divide-cru/12">
+          {/* Marca — crest: a poltrona do logo dentro do arco-assinatura */}
+          <div className="md:pr-10">
+            <div className="flex items-center gap-5 mb-5">
+              <span className="shrink-0 inline-flex items-end justify-center w-[76px] h-[88px] rounded-t-[999px] border border-cru/25 pb-3">
+                <LogoPoltrona tamanho={44} />
+              </span>
               <span className="flex flex-col leading-none">
                 <span className="font-serif text-[26px] font-semibold text-cru tracking-tight">
                   Casa Sinelli
@@ -50,7 +52,7 @@ export default function Footer() {
           </div>
 
           {/* Categorias */}
-          <nav aria-label="Categorias no rodapé">
+          <nav aria-label="Categorias no rodapé" className="md:px-10">
             <h2 className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-cru/70 mb-4">
               Catálogo
             </h2>
@@ -76,14 +78,25 @@ export default function Footer() {
           </nav>
 
           {/* Contato */}
-          <div>
+          <div className="md:pl-10">
             <h2 className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-cru/70 mb-4">
               Loja física
             </h2>
             <ul className="space-y-3.5 text-sm text-cru/70">
               <li className="flex gap-2.5 items-start">
                 <MapPin className="w-4 h-4 text-areia mt-0.5 shrink-0" strokeWidth={1.8} aria-hidden="true" />
-                <span>Av. Francisco Monteiro, 1320 — Vila Fiorentino, Ribeirão Pires - SP</span>
+                <span>
+                  Av. Francisco Monteiro, 1320 — Vila Fiorentino, Ribeirão Pires - SP
+                  <br />
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Av.+Francisco+Monteiro,+1320+-+Vila+Fiorentino,+Ribeir%C3%A3o+Pires+-+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-1 text-areia font-semibold hover:text-cru underline underline-offset-4 decoration-areia/40 transition-colors"
+                  >
+                    Como chegar
+                  </a>
+                </span>
               </li>
               <li className="flex gap-2.5 items-start">
                 <Clock className="w-4 h-4 text-areia mt-0.5 shrink-0" strokeWidth={1.8} aria-hidden="true" />

@@ -17,6 +17,12 @@ interface Props {
   /** Em seções de fundo grafite o anel de foco vira areia (contraste). */
   fundoEscuro?: boolean;
   larguraTotal?: boolean;
+  /**
+   * 'solido' = pílula verde (1 por tela: hero, PDP, CTA final).
+   * 'linha'  = linha de ação da ficha de catálogo (grade de cards): texto
+   * grafite, ícone verde, hairline superior — some o mar de verde da listagem.
+   */
+  variante?: 'solido' | 'linha';
   className?: string;
   rotuloAcessivel?: string;
   children?: React.ReactNode;
@@ -27,11 +33,37 @@ export default function BotaoWhatsApp({
   tamanho = 'sm',
   fundoEscuro = false,
   larguraTotal = false,
+  variante = 'solido',
   className,
   rotuloAcessivel,
   children = 'Consultar preço',
 }: Props) {
   const t = TAMANHOS[tamanho];
+
+  if (variante === 'linha') {
+    const classesLinha = [
+      'group/wa flex w-full items-center justify-between gap-3 px-4 py-3 pointer-coarse:min-h-11',
+      'border-t border-grafite/10 text-sm font-bold text-grafite',
+      'transition-[background-color,color] duration-[var(--dur-micro)] touch-manipulation',
+      'hover:bg-wa/12 active:bg-wa/20 motion-reduce:transition-none',
+      'focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-musgo',
+      className,
+    ]
+      .filter(Boolean)
+      .join(' ');
+    return (
+      <a
+        href={linkWhatsApp(mensagem)}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={rotuloAcessivel}
+        className={classesLinha}
+      >
+        {children}
+        <WhatsAppIcon className="w-5 h-5 shrink-0 text-wa-escuro transition-transform duration-[var(--dur-micro)] group-hover/wa:scale-110 motion-reduce:transition-none motion-reduce:group-hover/wa:scale-100" />
+      </a>
+    );
+  }
   const classes = [
     larguraTotal ? 'flex w-full' : 'inline-flex',
     'items-center justify-center',
