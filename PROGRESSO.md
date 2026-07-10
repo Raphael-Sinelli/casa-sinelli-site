@@ -1,7 +1,7 @@
 # PROGRESSO — Auditoria de front-end (jul/2026)
 
 **Última sessão:** 2026-07-10 (5ª sessão da sequência)
-**Job atual:** Frente motion premium "Atravessar o Portal" (§0d) — Fases 0–2.5 APROVADAS (par hero×footer mantido em /[0.07] por decisão do usuário), Fase 3 (validação final) EXECUTADA e verde — frente pronta para commit quando o usuário pedir. Transição de rota "portal" segue ADIADA (decisão do usuário). NADA COMMITADO ainda (regra do job: commit só quando o usuário pedir). Jobs anteriores (§0c para trás) todos concluídos e enviados. Fora do escopo/commit: `prompt-design-casa-sinelli-final.md`, `scripts/mapa-cloudinary-*.json`, `META/` (referências visuais do usuário) e `.claude/skills/casa-sinelli/SKILL.md` (1 linha removida por edição EXTERNA — decidir se mantém).
+**Job atual:** Frente motion premium "Atravessar o Portal" (§0d) — CONCLUÍDA E ENVIADA (commit `5c160d6`, 2026-07-10): fases 0–2.5 aprovadas + Fase 3 verde. Pendências que o usuário decide depois: transição de rota "portal" (adiada) e job de contraste dos flags pré-existentes do axe. Fora do commit (decisão pendente/fora de escopo): `.claude/skills/casa-sinelli/SKILL.md` (edição externa), `META/`, `prompt-design-casa-sinelli-final.md`, `scripts/mapa-cloudinary-*.json`. NADA COMMITADO ainda (regra do job: commit só quando o usuário pedir). Jobs anteriores (§0c para trás) todos concluídos e enviados. Fora do escopo/commit: `prompt-design-casa-sinelli-final.md`, `scripts/mapa-cloudinary-*.json`, `META/` (referências visuais do usuário) e `.claude/skills/casa-sinelli/SKILL.md` (1 linha removida por edição EXTERNA — decidir se mantém).
 
 ## 0d. Frente motion premium "Atravessar o Portal" (2026-07-08, 4ª sessão) — EM ANDAMENTO
 
