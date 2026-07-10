@@ -50,7 +50,7 @@ function FotoCard({ src, sizes, padding = 'p-3' }: { src: string | null; sizes: 
 function ProductCard({ produto, mostrarCategoria = true, sizes = SIZES_PADRAO, vitrine = false }: Props) {
   if (vitrine) {
     return (
-      <article className="group relative rounded-[4px] overflow-hidden border border-grafite/15 bg-grafite flex flex-col transition-[border-color,transform] duration-[var(--dur-short)] motion-reduce:transition-none hover:border-marca focus-within:border-marca active:scale-[0.99] motion-reduce:active:scale-100 [content-visibility:auto] [contain-intrinsic-size:auto_420px] h-full">
+      <article data-motion-card className="group relative rounded-[4px] overflow-hidden border border-grafite/15 bg-grafite flex flex-col transition-[border-color,transform] duration-[var(--dur-short)] motion-reduce:transition-none hover:border-marca focus-within:border-marca active:scale-[0.99] motion-reduce:active:scale-100 [content-visibility:auto] [contain-intrinsic-size:auto_420px] h-full">
         <Link
           href={`/produto/${produto.id}`}
           className="flex flex-col flex-1 focus-visible:outline-2 focus-visible:outline-areia focus-visible:-outline-offset-2"
@@ -59,7 +59,12 @@ function ProductCard({ produto, mostrarCategoria = true, sizes = SIZES_PADRAO, v
               bg-white por baixo do degradê: o to-areia/35 é translúcido e sem a
               base opaca compõe com o grafite do article (fundo barrento). */}
           <div className="relative flex-1 min-h-[280px] bg-white bg-gradient-to-b from-white to-areia/35 overflow-hidden">
-            <FotoCard src={produto.capaUrl} sizes={sizes} padding="p-6 sm:p-8" />
+            {/* wrapper próprio para o parallax interno do GSAP: a foto desliza
+                dentro da folga do padding sem tocar o <Image> (que tem
+                transition-transform de hover — animar os dois brigaria) */}
+            <div data-motion-foto-vitrine className="absolute inset-0">
+              <FotoCard src={produto.capaUrl} sizes={sizes} padding="p-6 sm:p-8" />
+            </div>
             <span
               aria-hidden="true"
               className="pointer-events-none absolute inset-2 rounded-[2px] ring-1 ring-inset ring-grafite/8"
@@ -92,7 +97,7 @@ function ProductCard({ produto, mostrarCategoria = true, sizes = SIZES_PADRAO, v
   }
 
   return (
-    <article className="group bg-white rounded-[4px] overflow-hidden border border-grafite/15 flex flex-col transition-[border-color,background-color,transform] duration-[var(--dur-short)] motion-reduce:transition-none hover:border-marca focus-within:border-marca active:scale-[0.99] motion-reduce:active:scale-100 [content-visibility:auto] [contain-intrinsic-size:auto_420px] h-full">
+    <article data-motion-card className="group bg-white rounded-[4px] overflow-hidden border border-grafite/15 flex flex-col transition-[border-color,background-color,transform] duration-[var(--dur-short)] motion-reduce:transition-none hover:border-marca focus-within:border-marca active:scale-[0.99] motion-reduce:active:scale-100 [content-visibility:auto] [contain-intrinsic-size:auto_420px] h-full">
       <Link
         href={`/produto/${produto.id}`}
         className="flex flex-col flex-1 focus-visible:outline-2 focus-visible:outline-musgo focus-visible:-outline-offset-2"
@@ -108,7 +113,9 @@ function ProductCard({ produto, mostrarCategoria = true, sizes = SIZES_PADRAO, v
           />
         </div>
         <div className="px-4 pt-3 pb-3">
-          <p className="flex items-baseline justify-between gap-2 font-mono text-[10px] uppercase tracking-[0.16em] mb-1.5">
+          {/* carimbo: a linha mono pousa 60ms depois do card (GSAP) — ficha
+              de showroom sendo carimbada; sem GSAP fica visível normal */}
+          <p data-motion-carimbo className="flex items-baseline justify-between gap-2 font-mono text-[10px] uppercase tracking-[0.16em] mb-1.5">
             <span className="text-marca truncate">
               {mostrarCategoria ? produto.categoria : ' '}
             </span>
@@ -118,7 +125,7 @@ function ProductCard({ produto, mostrarCategoria = true, sizes = SIZES_PADRAO, v
             {produto.nome}
           </h3>
           {produto.totalCores >= 2 && (
-            <p className="font-mono text-[11px] text-grafite/60 mt-1.5">
+            <p data-motion-carimbo className="font-mono text-[11px] text-grafite/60 mt-1.5">
               {produto.totalCores} cores
             </p>
           )}

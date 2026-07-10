@@ -69,7 +69,9 @@ export default function BotaoWhatsApp({
     'items-center justify-center',
     t.botao,
     'bg-wa hover:bg-wa-escuro text-grafite rounded-xl',
-    'transition-[background-color,transform] duration-[var(--dur-micro)] touch-manipulation active:scale-[var(--motion-scale-active)]',
+    // scale (propriedade própria no Tailwind v4) transiciona; transform fica
+    // fora da lista — é o canal do magnético GSAP (areas/whatsapp.ts)
+    'transition-[background-color,scale] duration-[var(--dur-micro)] touch-manipulation active:scale-[var(--motion-scale-active)]',
     'motion-reduce:transition-none motion-reduce:active:scale-100',
     'focus-visible:outline-2 focus-visible:outline-offset-2',
     fundoEscuro ? 'focus-visible:outline-areia' : 'focus-visible:outline-musgo',
@@ -84,6 +86,7 @@ export default function BotaoWhatsApp({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={rotuloAcessivel}
+      data-motion-magnetico
       className={classes}
     >
       <WhatsAppIcon className={`${t.icone} shrink-0`} />

@@ -19,7 +19,6 @@ import ProductDetailClient from '@/components/ProductDetailClient';
 import BotaoWhatsApp from '@/components/BotaoWhatsApp';
 import CompartilharProduto from '@/components/CompartilharProduto';
 import ProductCard from '@/components/ProductCard';
-import RevelarAoEntrar from '@/components/RevelarAoEntrar';
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -287,7 +286,7 @@ export default async function ProdutoPage({ params }: Props) {
                 </svg>
               </Link>
             </div>
-            <RevelarAoEntrar className="selecao-grade flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-px-4 -mx-4 px-4 pb-2 sm:pb-0 sm:mx-0 sm:px-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-5 sm:overflow-visible">
+            <div data-motion-grade className="flex gap-3 overflow-x-auto snap-x snap-mandatory scroll-px-4 -mx-4 px-4 pb-2 sm:pb-0 sm:mx-0 sm:px-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-5 sm:overflow-visible">
               {relacionados.map((p) => (
                 <div
                   key={p.id}
@@ -300,7 +299,7 @@ export default async function ProdutoPage({ params }: Props) {
                   />
                 </div>
               ))}
-            </RevelarAoEntrar>
+            </div>
             <Link
               href={`/categoria/${slugCategoria}`}
               className="sm:hidden mt-5 flex items-center justify-center gap-1.5 text-sm font-semibold text-musgo-escuro"

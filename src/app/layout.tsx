@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import MotionProvider from '@/lib/motion/MotionProvider';
 import { todasCategorias } from '@/lib/catalogo-server';
 
 const newsreader = Newsreader({
@@ -76,6 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="conteudo" className="flex-1">{children}</main>
         <Footer />
         <WhatsAppButton />
+        <MotionProvider />
       </body>
     </html>
   );

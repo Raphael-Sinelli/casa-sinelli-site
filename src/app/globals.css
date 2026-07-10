@@ -124,9 +124,68 @@ body {
 .menu-mobile-entrar .menu-stagger > :nth-child(2) { animation-delay: calc(40ms + var(--stagger-tight)); }
 .menu-mobile-entrar .menu-stagger > :nth-child(3) { animation-delay: calc(40ms + 2 * var(--stagger-tight)); }
 .menu-mobile-entrar .menu-stagger > :nth-child(4) { animation-delay: calc(40ms + 3 * var(--stagger-tight)); }
+
+/* Categorias (grade 2 col): onda DIAGONAL — cada link recebe --onda-i
+   (linha + coluna, calculado no JSX) e varre do canto superior-esquerdo
+   ao inferior-direito. Passo curto (32ms): a última das 25 categorias
+   assenta em ~0,9s e todas são clicáveis desde o primeiro frame.
+   CSS puro de propósito: o menu abre por toque e pode ser usado antes
+   do chunk GSAP carregar (idle-load) — aqui animação não pode esperar. */
+.menu-mobile-entrar .menu-onda {
+  opacity: 0;
+  --subir-de: var(--motion-distance-sm);
+  animation: subir-entrar var(--dur-medium) var(--ease-enter) both;
+  animation-delay: calc(110ms + var(--onda-i, 0) * 32ms);
+}
+/* Contador mono pousa de cima 60ms depois do link — mesmo gesto de
+   carimbo das fichas de card (areas/cards.ts) */
+@keyframes carimbo-pousar {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.menu-mobile-entrar .menu-onda .menu-onda-carimbo {
+  opacity: 0;
+  animation: carimbo-pousar var(--dur-medium) var(--ease-assentar) both;
+  animation-delay: calc(170ms + var(--onda-i, 0) * 32ms);
+}
 @media (prefers-reduced-motion: reduce) {
   .menu-mobile-entrar { animation: none; }
-  .menu-mobile-entrar .menu-stagger > * { opacity: 1; animation: none; }
+  .menu-mobile-entrar .menu-stagger > *,
+  .menu-mobile-entrar .menu-onda,
+  .menu-mobile-entrar .menu-onda .menu-onda-carimbo { opacity: 1; animation: none; }
+}
+
+/* FAB WhatsApp: assenta com leve overshoot ao aparecer — sobe, passa 3px
+   do ponto e acomoda. Classe presente SÓ quando visível (removida no
+   esconder da home, senão o fill:both travaria a transition de saída).
+   Delay curto: nas páginas internas entra depois do 1º paint, sem
+   disputar com o LCP. O <a> interno fica livre pro magnético GSAP. */
+@keyframes fab-assentar {
+  from { opacity: 0; transform: translateY(18px); }
+  62% { opacity: 1; transform: translateY(-3px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fab-assentar {
+  animation: fab-assentar var(--dur-long) var(--ease-enter) 240ms both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fab-assentar { animation: none; }
+}
+
+/* Logo do header: micro-assentar — no hover a poltrona "senta" uma vez
+   (afunda 1.6px comprimindo contra o chão e volta), em vez de scale
+   genérico. Origem na base: móvel assenta no piso, não infla do centro. */
+@keyframes logo-assentar {
+  0% { transform: none; }
+  40% { transform: translateY(1.6px) scaleY(0.94); }
+  100% { transform: none; }
+}
+.logo-assentar { transform-origin: 50% 100%; }
+@media (hover: hover) {
+  .group:hover > .logo-assentar { animation: logo-assentar 420ms var(--ease-assentar); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .group:hover > .logo-assentar { animation: none; }
 }
 
 /* Entrada "assentar" — fade + rise com amplitude por papel do elemento:
@@ -142,34 +201,19 @@ body {
   .hero-entrar { animation: none; }
 }
 
-/* Grades reveladas com stagger quando entram na viewport (.visivel via
-   RevelarAoEntrar). Passo = --stagger-standard (70ms desktop / 50ms mobile). */
-.selecao-grade > * { opacity: 0; }
-.selecao-grade.visivel > * {
-  animation: subir-entrar var(--dur-long) var(--ease-enter) both;
-}
-.selecao-grade.visivel > :nth-child(2) { animation-delay: var(--stagger-standard); }
-.selecao-grade.visivel > :nth-child(3) { animation-delay: calc(2 * var(--stagger-standard)); }
-.selecao-grade.visivel > :nth-child(4) { animation-delay: calc(3 * var(--stagger-standard)); }
-.selecao-grade.visivel > :nth-child(5) { animation-delay: calc(4 * var(--stagger-standard)); }
-.selecao-grade.visivel > :nth-child(6) { animation-delay: calc(5 * var(--stagger-standard)); }
-.selecao-grade.visivel > :nth-child(7) { animation-delay: calc(6 * var(--stagger-standard)); }
-.selecao-grade.visivel > :nth-child(8) { animation-delay: calc(7 * var(--stagger-standard)); }
-/* Mobile: só os 4 primeiros escalonam; o resto entra junto com o 4º */
-@media (max-width: 640px) {
-  .selecao-grade.visivel > :nth-child(n + 5) {
-    animation-delay: calc(3 * var(--stagger-standard));
-  }
-}
-/* Bloco único revelado ao entrar na viewport (sem stagger) */
+/* Grades de cards: a onda de entrada migrou para o GSAP (areas/cards.ts,
+   marcador data-motion-grade) — sem JS/pré-GSAP os cards ficam visíveis
+   direto, nada é escondido por CSS. */
+
+/* Bloco único revelado ao entrar na viewport (sem stagger) — RevelarAoEntrar */
 .revelar-bloco { opacity: 0; }
 .revelar-bloco.visivel {
   animation: subir-entrar var(--dur-long) var(--ease-enter) both;
 }
 /* sem JS ou com movimento reduzido: tudo sempre visível, sem animação */
 @media (prefers-reduced-motion: reduce), (scripting: none) {
-  .selecao-grade > *, .revelar-bloco { opacity: 1; }
-  .selecao-grade.visivel > *, .revelar-bloco.visivel { animation: none; }
+  .revelar-bloco { opacity: 1; }
+  .revelar-bloco.visivel { animation: none; }
 }
 
 /* Portal v2: o arco abre nos dois eixos (porta + soleira) enquanto a foto
@@ -198,6 +242,46 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .portal-abrir,
   .portal-settle { animation: none; }
+}
+
+/* ── Hero v3 "Atravessar o Portal" ─────────────────────────────────────
+   Tipo fantasma monumental + máscara do título + etiquetas pousando.
+   Tudo CSS puro (roda antes do GSAP; LCP intocado). O parallax de scroll
+   fica no GSAP (src/lib/motion/areas/hero.ts). */
+
+/* Fantasma: SÓ opacity — o transform fica livre para o parallax do GSAP
+   (animation com fill both venceria o estilo inline do scrub para sempre) */
+@keyframes fantasma-entrar {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fantasma-hero {
+  animation: fantasma-entrar 1200ms var(--ease-standard) both;
+}
+
+/* Título emerge por trás da soleira: máscara de bloco (wrapper overflow
+   hidden), sem fade — o texto sobe inteiro e nítido, como porta abrindo */
+@keyframes titulo-erguer {
+  from { transform: translateY(104%); }
+  to { transform: translateY(0); }
+}
+.titulo-erguer {
+  animation: titulo-erguer 700ms var(--ease-enter) both;
+}
+
+/* Etiqueta de showroom POUSA (vem de cima e assenta) — voz de carimbo */
+@keyframes etiqueta-pousar {
+  from { opacity: 0; transform: translateY(-10px) scale(1.04); }
+  to { opacity: 1; transform: none; }
+}
+.etiqueta-pousar {
+  animation: etiqueta-pousar 480ms var(--ease-assentar) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fantasma-hero,
+  .titulo-erguer,
+  .etiqueta-pousar { animation: none; }
 }
 
 /* Sublinhado caligráfico do hero — o traço se desenha depois que o título

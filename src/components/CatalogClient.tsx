@@ -189,6 +189,7 @@ export default function CatalogClient({ produtos, categorias, categoriaInicial =
               // ação discreta de filtro — digitação continua sem animação
               <div
                 key={categoriaSelecionada ?? 'tudo'}
+                data-motion-grade
                 className="grade-trocar grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5"
               >
                 {produtosFiltrados.map((p, i) => {

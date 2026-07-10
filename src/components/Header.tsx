@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useCallback, useState } from 'react';
+import { useCallback, useState, type CSSProperties } from 'react';
 import { useEscapeETravaScroll } from '@/hooks/useEscapeETravaScroll';
 import { WHATSAPP_TELEFONE_FORMATADO } from '@/lib/whatsapp';
 import BotaoWhatsApp from './BotaoWhatsApp';
@@ -61,7 +61,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
             className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-4 rounded-sm"
             aria-label="Casa Sinelli Móveis & Colchões — página inicial"
           >
-            <LogoPoltrona tamanho={42} className="shrink-0 transition-transform group-hover:scale-105 motion-reduce:group-hover:scale-100" />
+            <LogoPoltrona tamanho={42} className="logo-assentar shrink-0" />
             <span className="flex flex-col leading-none">
               <span className="font-serif text-[21px] font-semibold text-grafite tracking-tight">
                 Casa Sinelli
@@ -79,7 +79,7 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
                 key={l.href}
                 href={l.href}
                 aria-current={linkAtivo(l.href) ? 'page' : undefined}
-                className={`relative text-[14.5px] font-medium transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-4 rounded-sm after:absolute after:inset-x-0 after:-bottom-1.5 after:h-0.5 after:bg-musgo-escuro after:origin-left after:transition-transform after:duration-[var(--dur-short)] motion-reduce:after:transition-none hover:after:scale-x-100 ${
+                className={`relative text-[14.5px] font-medium transition-colors focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-4 rounded-sm after:absolute after:inset-x-0 after:-bottom-1.5 after:h-0.5 after:bg-musgo-escuro after:origin-right hover:after:origin-left after:transition-transform after:duration-[var(--dur-short)] motion-reduce:after:transition-none hover:after:scale-x-100 ${
                   linkAtivo(l.href)
                     ? 'text-musgo-escuro after:scale-x-100'
                     : 'text-grafite hover:text-musgo-escuro after:scale-x-0'
@@ -163,15 +163,18 @@ export default function Header({ categoriasTop, todasCategorias }: Props) {
                 Categorias
               </p>
               <div className="grid grid-cols-2 gap-x-4">
-                {todasCategorias.map((c) => (
+                {todasCategorias.map((c, i) => (
                   <Link
                     key={c.slug}
                     href={`/categoria/${c.slug}`}
                     onClick={fecharMenu}
-                    className="flex items-baseline justify-between gap-2 py-2 border-b border-grafite/8 text-[15px] font-medium text-grafite hover:text-musgo-escuro transition-colors"
+                    className="menu-onda flex items-baseline justify-between gap-2 py-2 border-b border-grafite/8 text-[15px] font-medium text-grafite hover:text-musgo-escuro transition-colors"
+                    // índice diagonal (linha + coluna): itens da mesma
+                    // antidiagonal entram juntos — onda varre a grade
+                    style={{ '--onda-i': Math.floor(i / 2) + (i % 2) } as CSSProperties}
                   >
                     <span className="truncate">{c.nome}</span>
-                    <span className="font-mono text-xs text-grafite/45 shrink-0">{c.total}</span>
+                    <span className="menu-onda-carimbo font-mono text-xs text-grafite/45 shrink-0">{c.total}</span>
                   </Link>
                 ))}
               </div>

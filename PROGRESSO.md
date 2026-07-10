@@ -1,7 +1,97 @@
 # PROGRESSO — Auditoria de front-end (jul/2026)
 
-**Última sessão:** 2026-07-08 (3ª sessão da sequência)
-**Job atual:** CONCLUÍDO — 5 melhorias de fluxo da vendedora (§0c) implementadas e enviadas em 2026-07-08, em cima do passe anti-template + polimento (§0b), venda assistida (§0a) e Bloco B + design/motion (§0/§1). Visual aprovado pelo usuário ANTES do §0c — não redesenhar. Fora do commit: `prompt-design-casa-sinelli-final.md`, `scripts/mapa-cloudinary-*.json` (não pertencem às frentes) e `.claude/skills/casa-sinelli/SKILL.md` (1 linha removida por edição EXTERNA à sessão — decidir se mantém).
+**Última sessão:** 2026-07-10 (5ª sessão da sequência)
+**Job atual:** Frente motion premium "Atravessar o Portal" (§0d) — Fases 0–2.5 APROVADAS (par hero×footer mantido em /[0.07] por decisão do usuário), Fase 3 (validação final) EXECUTADA e verde — frente pronta para commit quando o usuário pedir. Transição de rota "portal" segue ADIADA (decisão do usuário). NADA COMMITADO ainda (regra do job: commit só quando o usuário pedir). Jobs anteriores (§0c para trás) todos concluídos e enviados. Fora do escopo/commit: `prompt-design-casa-sinelli-final.md`, `scripts/mapa-cloudinary-*.json`, `META/` (referências visuais do usuário) e `.claude/skills/casa-sinelli/SKILL.md` (1 linha removida por edição EXTERNA — decidir se mantém).
+
+## 0d. Frente motion premium "Atravessar o Portal" (2026-07-08, 4ª sessão) — EM ANDAMENTO
+
+Brief: site visualmente aprovado mas ESTÁTICO; elevar a patamar premium com motion que comunique a identidade Portal (GSAP instalado pelo usuário, referências visuais na pasta `META/` — 2 screenshots, 1 frame, 2 clipes analisados frame a frame via Playwright+Chrome, ffmpeg do sistema não existe e o do Playwright é build mínimo sem mp4).
+
+**Decisões do usuário (não reperguntar):**
+
+1. Paridade adaptada — desktop ganha profundidade/parallax/hover; mobile leve e rápido (vendedora nunca espera)
+2. Tipografia monumental como assinatura COMPLETA (hero com tipo fantasma atrás da foto + wordmark gigante no footer)
+3. Transição de rota "portal" (cortina grafite + crest) — **ADIADA pelo usuário**: implementar/validar as outras 5 áreas primeiro (risco App Router/popstate)
+4. Scroll livre + reveals (SEM scroll-snap/hijack)
+5. Não commitar automaticamente; aprovação explícita entre fases
+
+**Fases:** 0 auditoria ✔ aprovada · 1 fundação ✔ (abaixo) · 2 áreas nesta ordem: 2.1 hero ✔ APROVADA (fantasma mantido em /[0.07]), 2.2 cards ✔ APROVADA, 2.3 menu/header ✔ APROVADA, 2.4 CTA WhatsApp ✔ APROVADA, 2.5 SVG do arco + footer ✔ APROVADA (par hero×footer mantido em /[0.07]) (2.x = transição de rota, adiada) · 3 validação ✔ EXECUTADA (abaixo).
+
+**Fase 3 executada (validação final, 2026-07-10) — script `scratchpad/qa-fase-3.cjs` + `peso-bundle.cjs` + `axe-detalhe.cjs`, screenshots em `qa/motion/fase-3/`:**
+
+- **Smoke das 5 áreas (produção, 1440)**: hero parallax com transform inline pós-scroll ✔; 14 cards marcados ✔; FAB magnético desloca >0.5px sob cursor ✔; arco no fim da página (wordmark y=0,00, recorte cheio, crest dashoffset 0) ✔; nav desktop ✔; console limpo ✔.
+- **Navegação SPA catálogo→PDP**: motor remonta (`data-motion=on`), FAB + crest presentes na rota nova, console limpo ✔.
+- **Reduced-motion**: motor NÃO monta, chunk GSAP NÃO baixa, 27 elementos marcados todos visíveis (opacity 1) do topo ao fim da página ✔.
+- **Mobile 390**: home rolada fim a fim em passos (dispara todos os once), 0 invisíveis, overflow 0, console limpo ✔.
+- **Axe (home/catálogo/PDP)**: a frente motion NÃO introduziu violação real. Flags novos do axe: fantasma do hero (2.1) e wordmark do footer (2.5) em `color-contrast` — ambos `aria-hidden` decorativos com contraste ~1,1–1,2 DE PROPÓSITO (tipografia fantasma é o design); WCAG 1.4.3 isenta texto decorativo e logotipo (o wordmark É a marca) — falso positivo do axe, que não distingue decoração. Flags PRÉ-EXISTENTES (confirmados no HEAD via git grep, arquivos não tocados pela frente): contadores `text-grafite/40` e h2 `/55` do `CategoryFilter`, `N.º` `text-grafite/45` do `ProductCard` (commitado), âncoras `#medidas/#parecidos` da PDP (§0c), e `region` na faixa `hidden lg:block bg-grafite` do `Header` (fora de landmark). Se quiser zerar de verdade, é um job separado de contraste (fora do escopo motion — mexeria na paleta aprovada).
+- **Bundle**: JS inicial da home **194,7 KB gz em 11 chunks** — chunk do motion (43,1 KB gz) é lazy real, fora do HTML, baixa só pós-load+idle e nunca em reduced-motion. HTML home 21,5 KB gz, catálogo **36,8 KB gz** (teto ±5 KB sobre baseline 32 respeitado). Payload crítico intocado pela frente.
+
+**Fase 2.5 implementada (SVG do arco + footer) — área `areas/arco.ts`, marcadores `[data-motion-arco="..."]`:**
+
+- **Recorte pré-CTA "abre"** (home, só desktop): o markup carrega o arco CHEIO (`V16 C…72…`, estado sem-JS/reduced); o GSAP interpola o atributo `d` de uma curva RASA (`V28 C…44…`) até a cheia em scrub (trigger na section, `top bottom → top 35%`) — a porta se abre conforme a chamada final se aproxima. Paths com mesmo nº de comandos (requisito da interpolação de attr).
+- **Crest do footer se desenha**: o arco-assinatura virou SVG path (mesma geometria do `rounded-t-[999px] border` anterior: `M0.5,87.5 V38 A37.5,37.5 0 0 1 75.5,38 V87.5 Z`, `pathLength=1`) — stroke draw 1× ao entrar (dashoffset 1→0, dur portal, ease portal, `clearProps` no fim) e a **poltrona assenta** dentro (y 8→0 + fade, delay 45% do draw). Roda no mobile também (2 tweens once, barato). Anti-flash da 2.2 aplicado (`emCena` no mount pula).
+- **Tagline com máscara de linha**: `<p>` ganhou `overflow-hidden` + span block (`yPercent 110→0`, once, `top 92%`) — a frase sobe por trás da soleira. Todos os breakpoints.
+- **Wordmark monumental** (NOVO, fecha o footer): "casa sinelli" full-bleed, Newsreader itálico medium minúsculo, `tracking-[-0.03em]`, `text-cru/[0.07]`, `clamp(52px,13.8vw,204px)`, `leading-none`, descenders afundados na borda da página via `translate-y-[0.2em]` (propriedade `translate` do v4 — canal separado do transform do GSAP). Desktop+fino: rise em scrub curto até o fim do scroll. PAR do fantasma do hero: lá o CONCEITO ("casa" grafite/7 sobre cru), aqui a ASSINATURA (marca completa, cru/7 sobre grafite) — mesmo DNA tipográfico.
+- **BUG encontrado e corrigido (init.ts)**: a troca fallback→Newsreader muda métricas de linha e a ALTURA DO DOCUMENTO depois do `ScrollTrigger.refresh()` do mount — triggers no fim da página ficavam com end além do scroll alcançável (wordmark travava em progress ~0,55). Fix: `document.fonts.ready.then(() => ScrollTrigger.refresh())` no montar (se as fontes já chegaram, roda imediato e o refresh extra é barato). Pelo mesmo motivo o rise usa `y` em px derivado do font-size (yPercent dependeria do line box instável) e `end: 'max'` (= último pixel rolável; `bottom bottom` no último elemento da página fica inalcançável se o documento encolher 1px).
+- **Clip de ascenders corrigido**: leading 0.78 cortava o topo de "l"/"i" no overflow do wrapper → `leading-none` + `translate-y` maior (mesmo assentamento, glifos íntegros).
+- Tunables: opacidade do wordmark (`/[0.07]`), escala (clamp 13.8vw), profundidade do rise (0.2em), curva rasa do recorte (`V28/44`), velocidade do draw (dur portal).
+
+Validação 2.5: tsc/lint/build verdes (160 rotas); QA Playwright produção (`qa/motion/fase-2-5/`) — recorte raso no topo e interpolando (V28→V18.03→V16), crest dashoffset 1→0 + poltrona 0→1 + tagline transform→none (clearProps), wordmark em 3 pontos do range (y 39,7 → 16,1 → 0,00), overflow 0, mobile 390 crest desenha + wordmark estático visível + overflow 0, reduced-motion tudo visível com dasharray none e recorte cheio, console 0 erros. Comparativo do par + simulações de opacidade (0.05/0.07/0.09 via color-mix injetado) em `par-a/b-*.png` e `calibra-wordmark-*.png`.
+
+**Fase 2.4 implementada (CTA WhatsApp):**
+
+- **Camadas separadas no FAB** (`WhatsAppButton`): o `<aside>` virou a camada de entrada/saída (fixed + classes de visibilidade + transition de esconder) e o `<a>` interno a camada de interação (hover/active/magnético) — GSAP escreve transform inline no `<a>`, que não pode dividir elemento com keyframe de transform (regra da 2.1).
+- **Entrada com overshoot** (CSS, `fab-assentar`): translateY 18px → −3px (62%) → 0, dur-long ease-enter, delay 240ms, `fill: both`. Classe presente SÓ quando visível: na home é adicionada ao cruzar 0,9 tela (e removida ao voltar — senão o fill:both travaria a transition de saída); nas internas roda 1× no 1º paint direto do SSR (CSS não espera JS). Delay evita disputa com o LCP.
+- **Hover magnético** (`areas/whatsapp.ts`): FAB + pílulas sólidas (`BotaoWhatsApp` variante solido, marker `data-motion-magnetico`) cedem até 6px na direção do cursor via `gsap.quickTo` x/y (dur medium, ease assentar) e voltam a 0 no pointerleave. Deslocamento proporcional à distância do centro (borda = teto); `getBoundingClientRect` compensa o transform atual via `gsap.getProperty` (senão o centro foge do cursor e oscila). Só desktop+pointer-fine+motion-ok; touch fica com o `active:scale` CSS. Variante 'linha' (ficha de card) fora de propósito. SEM pulso periódico (decisão da auditoria).
+- **Tailwind v4 a favor**: `hover:scale-*`/`active:scale-*` usam a propriedade CSS `scale`, GSAP usa `transform` — canais independentes, zero briga. Só tirei `transform` das listas de transition (`transition-[background-color,box-shadow,scale]` no FAB, `transition-[background-color,scale]` na pílula) — transition em transform suavizaria cada write do quickTo (lag duplo).
+- Botões do menu mobile nunca ganham magnético: montam depois do querySelectorAll da área (menu fecha/abre) — aceito, menu é touch na prática.
+- Tunables: teto do magnético (`DESLOCAMENTO_MAX` 6px), overshoot (−3px/62%), delay de entrada (240ms).
+
+Validação 2.4: tsc/lint/build verdes (160 rotas); QA Playwright produção (`qa/motion/fase-2-4/`) — home topo FAB `aria-hidden` + opacity 0, overshoot amostrado por rAF (minY −3,00 = pico do keyframe, assenta em 0,00), esconder ao voltar ao topo ok, magnético FAB x 5,43/y −3,40 (teto 6 respeitado) e volta a 0/0 no leave, pílula sólida da PDP puxa 5,79, PDP 390 FAB visível + overflow 0, reduced-motion FAB estático `animation: none`, console 0 erros. Assert de QA: transform lido via `DOMMatrix` (regex de matrix falha com notação científica).
+
+**Fase 2.3 implementada (menu/header) — CSS puro de propósito, zero GSAP:**
+
+- **Por que sem GSAP**: menu abre por toque e pode ser usado ANTES do chunk GSAP montar (idle-load ~1,5s pós-load) — animação de evento discreto não pode esperar scroll engine; CSS keyframe garante 1º frame. Área não entra no registro `areas/` (nada a montar/reverter).
+- **Onda diagonal nas categorias** (grade 2 col do menu mobile): cada link recebe `--onda-i = linha + coluna` (calculado no map do JSX — itens da mesma antidiagonal entram juntos) e anima `subir-entrar` com `--subir-de: distance-sm`, delay `110ms + i×32ms`. 25 categorias → última assenta em ~0,9s; todas clicáveis desde o 1º frame (opacity não bloqueia pointer). Base 110ms alinha com o delay do grupo (`menu-stagger` child 2 = 90ms) — onda lê como cascata interna da entrada do bloco.
+- **Carimbo dos contadores**: keyframe novo `carimbo-pousar` (translateY -6px, ease-assentar) no span mono `.menu-onda-carimbo`, delay = link + 60ms — mesmo gesto das fichas de card (2.2). Var `--onda-i` herda do link (CSS custom property), só o link carrega style inline.
+- **Sublinhado direcional no nav desktop**: `after:origin-right hover:after:origin-left` — origem troca SEM transição (transition só em transform/scale), então entra crescendo da esquerda e sai encolhendo pela direita. Link ativo intocado (scale-x-100 fixo). Obs. Tailwind v4: `scale-x-*` usa a propriedade CSS `scale`, não `transform` — asserts de QA leem `style.scale`.
+- **Logo micro-assentar**: substituiu `group-hover:scale-105` por keyframe `logo-assentar` (420ms ease-assentar: afunda 1,6px + scaleY 0.94 aos 40%, volta) com `transform-origin: 50% 100%` — a poltrona "senta" contra o piso 1× por entrada de hover, gated por `@media (hover: hover)`. Sem shrink de header (decidido na auditoria).
+- Tunables: passo da onda (32ms), base (110ms), delay do carimbo (60ms), profundidade do logo (1,6px/0.94, 420ms).
+
+Validação 2.3: tsc/lint/build verdes (160 rotas); QA Playwright produção (`qa/motion/fase-2-3/`) — onda diagonal medida (1º link opacity 1,0 × último 0 no meio da animação; carimbo do meio 0 enquanto link 0,62), 0 links não-assentados ao fim, overflow 0 com menu aberto, reduced-motion 0 invisíveis logo após abrir, sublinhado com origem 31px→0 no hover e saída scaleX 0,14 com origem à direita, logo com matrix scaleY 0,943 no ponto fundo, console 0 erros.
+
+**Fase 2.2 implementada (cards de produto):**
+
+- **Onda por linha** (`areas/cards.ts`): `ScrollTrigger.batch` em todo `[data-motion-grade]` (catálogo/categoria via CatalogClient, home mosaico + Seleção, PDP Parecidos) — cards que entram juntos animam juntos (interval 0.12, stagger 0.08 desktop / 0.05 mobile, dist md/sm, dur long×0.8 / medium) + **carimbo mono** (`[data-motion-carimbo]`: linha categoria/N.º e "N cores") pousa de cima 60ms depois. `clearProps:'all'` no onComplete devolve transform às classes CSS (**sem isso o `active:scale` dos cards morre** — inline vence classe).
+- **Anti-flash do idle-load**: no mount, cards JÁ em cena (rect na viewport) ficam de fora da onda — GSAP chega 1–2s após o load e esconder o que o usuário vê piscaria a página.
+- **Parallax interno da vitrine**: wrapper novo `[data-motion-foto-vitrine]` (div absolute inset-0 em volta do FotoCard — animar o `<Image>` direto brigaria com o `transition-transform` de hover dele) desliza y ±10px na folga do padding p-6/p-8; scrub 0.6, desktop+pointer-fine.
+- **Migração selecao-grade → GSAP**: regras CSS `.selecao-grade` removidas do globals (`.revelar-bloco` dos Diferenciais fica); home mosaico/Seleção e PDP Parecidos trocaram `RevelarAoEntrar` por `div data-motion-grade` (RevelarAoEntrar segue vivo nos Diferenciais); células do mosaico ganharam `data-motion-card`. Sem JS/pré-GSAP/reduced: nada escondido, tudo visível direto (melhor que antes, que dependia de IO+CSS). Race aceito e documentado: rolar até a Seleção ANTES do GSAP montar (~1,5s) mostra a grade estática.
+- **ResizeObserver na grade** com refresh debounced 200ms: filtro/busca do catálogo muda altura sem trocar rota — triggers recalibram. Troca de categoria (re-key) rende cards novos SEM onda de propósito (grade-trocar cobre; regra: nunca animar durante filtro/digitação).
+
+Validação 2.2: tsc/lint/build verdes; QA Playwright produção — anti-flash 0 cards escondidos em cena no mount, parallax da vitrine variando com scroll (matrix y −1.2→3.7), pós-filtro 0 invisíveis, PDP 390 overflow 0, reduced-motion 0 invisíveis, console 0 erros; onda visível mid-animação nos screenshots (`qa/motion/fase-2-2/`): catálogo com card assentado ao lado de card subindo + carimbo fantasma, mosaico idem. Falso positivo corrigido no assert (cards entre 92–100vh aguardam gatilho legitimamente — threshold do teste é 90vh).
+
+**Fase 2.1 implementada (hero da home):**
+
+- **Fantasma monumental**: "casa" minúscula Newsreader itálico, `clamp(84px,23vw,330px)`, `text-grafite/[0.07]`, absoluto `bottom-0 left-0` no grid (baseline na linha de piso), cauda atravessa ATRÁS da foto-arco; `hidden lg:block` — no stack mobile/tablet virava mancha ilegível atrás do texto (screenshot hero-390-fantasma.png documenta), e mobile leve é regra da frente. Palavra do footer (4.6) será "Casa Sinelli" — papéis distintos (conceito lar × assinatura marca). Tunables: opacidade no `/[0.07]`, tamanho no clamp, palavra no JSX.
+- **Título com máscara de bloco**: wrapper `overflow-hidden pb-3 -mb-3` (pb compensa o sublinhado caligráfico que desenha abaixo da caixa) + keyframe `titulo-erguer` (translateY 104%→0, 700ms ease-enter, d1) — sem fade, texto emerge nítido "por trás da soleira". DESVIO do plano da auditoria: revelação POR LINHA exigiria SplitText no caminho crítico (entrada da 1ª dobra é CSS puro por decisão da Fase 1) ou quebras de linha hardcoded (quebram com o clamp) — máscara de bloco é o equivalente honesto.
+- **Etiquetas pousam**: keyframe `etiqueta-pousar` (vem de CIMA, translateY -10px + scale 1.04→1, 480ms ease-assentar, d4) nas duas etiquetas do hero — carimbo pousando.
+- **Parallax GSAP** (`areas/hero.ts`): 3 planos no scroll-out do hero — fantasma y+72 (mais fundo, atrasa mais), foto y+28, texto no fluxo; scrub 0.6, start top top/end bottom top; SÓ desktop(641+)+pointer-fine+motion-ok via mm.add. `overflow-hidden` na section segura o fantasma na moldura do hero.
+- **Armadilha evitada (regra p/ próximas áreas)**: elemento alvo de GSAP NÃO pode ter CSS animation de transform com `fill:both` (animation vence estilo inline pra sempre) — por isso `fantasma-entrar` anima SÓ opacity; keyframes de entrada e alvos de scrub nunca no mesmo elemento.
+
+Validação 2.1: tsc/lint/build verdes; overflow 0 em 390/768/1440; console 0 erros; reduced-motion = estado final estático; parallax visível (screenshots topo × scroll420); screenshots de aprovação em `qa/motion/fase-2-1/` (não versionado).
+
+**Fase 1 entregue — fundação `src/lib/motion/`:**
+
+- `tokens.ts` — lê as CSS vars do globals.css em runtime (fonte única; `lerTokens()` chamado DENTRO dos callbacks do matchMedia para acompanhar o set mobile) + mapa `EASE` com equivalências exatas CSS↔GSAP (assentar=power3.out, portal=expo.out, enter=power4.out)
+- `gsap.ts` — singleton (registerPlugin 1×) + condições `MEDIA` nomeadas (desktop 641px+, mobile, apontadorFino, movimentoOk)
+- `areas/index.ts` — registro das áreas da Fase 2 (vazio; contrato documentado: tudo dentro de `mm.add`, só transform/opacity, nunca esconder conteúdo via CSS estático)
+- `init.ts` — `montar()`/`desmontar()` com `gsap.matchMedia().revert()` (reverte estilos inline em bloco); `ScrollTrigger.config({ignoreMobileResize:true})`; gancho `html[data-motion="on"]` para QA/CSS
+- `MotionProvider.tsx` (client, montado no layout) — `import('./init')` dinâmico só após `load`+`requestIdleCallback` (timeout 4s); com `prefers-reduced-motion` o chunk NEM BAIXA; listener de mudança da preferência no meio da sessão (reverte/remonta ao vivo); remonta por rota via `usePathname` + dupla rAF
+- **Fronteira mantida:** entrada da 1ª dobra continua 100% CSS (LCP intocado); GSAP assume scroll/pointer/coreografia pós-load
+
+Validação Fase 1: tsc/lint/build verdes (160 rotas SSG); chunk GSAP **43,1 KB gzip isolado e NÃO referenciado em nenhum `<script>` de HTML** (lazy real — chunks principais idênticos ao baseline 69,3/39,5/38,7); HTML catálogo **36,1 KB gzip inalterado** (medição própria; PROGRESSO anterior citava 37,2 por outra régua); smoke Playwright em produção: monta após idle (data-motion=on), sobrevive à navegação client-side p/ /catalogo, console 0 erros, e com reduced-motion o GSAP não baixa e o motor não monta (extras observados são prefetch de rota do App Router, já existiam no baseline). Script reutilizável: `scratchpad/smoke-motion.cjs` (fora do repo).
+
+Baseline p/ Fase 3 (build 2026-07-08): 205,4 KB gzip JS total em 14 chunks (agora 248,9/15 com o lazy do GSAP) · HTML catálogo 36,1 KB gzip.
 
 ## 0c. 5 melhorias de fluxo da vendedora (2026-07-08, liberadas após aprovação do visual)
 

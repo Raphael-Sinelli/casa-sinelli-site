@@ -27,11 +27,30 @@ export default function Footer() {
     <footer className="bg-grafite text-cru/75">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr_1fr] gap-10 md:gap-0 md:divide-x md:divide-cru/12">
-          {/* Marca — crest: a poltrona do logo dentro do arco-assinatura */}
+          {/* Marca — crest: a poltrona do logo dentro do arco-assinatura.
+              O arco é SVG (mesma geometria do rounded-t-[999px] anterior)
+              para o stroke draw do GSAP; sem JS/reduced fica o contorno
+              completo, idêntico ao visual antigo. */}
           <div className="md:pr-10">
             <div className="flex items-center gap-5 mb-5">
-              <span className="shrink-0 inline-flex items-end justify-center w-[76px] h-[88px] rounded-t-[999px] border border-cru/25 pb-3">
-                <LogoPoltrona tamanho={44} />
+              <span className="relative shrink-0 inline-flex items-end justify-center w-[76px] h-[88px] pb-3">
+                <svg
+                  viewBox="0 0 76 88"
+                  fill="none"
+                  aria-hidden="true"
+                  className="absolute inset-0 w-full h-full text-cru/25"
+                >
+                  <path
+                    data-motion-arco="crest"
+                    d="M0.5,87.5 V38 A37.5,37.5 0 0 1 75.5,38 V87.5 Z"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                    pathLength="1"
+                  />
+                </svg>
+                <span data-motion-arco="poltrona" className="inline-flex">
+                  <LogoPoltrona tamanho={44} />
+                </span>
               </span>
               <span className="flex flex-col leading-none">
                 <span className="font-serif text-[26px] font-semibold text-cru tracking-tight">
@@ -42,8 +61,12 @@ export default function Footer() {
                 </span>
               </span>
             </div>
-            <p className="font-serif italic text-lg text-cru/90 leading-snug mb-3">
-              Móveis que fazem da sua casa a sua casa.
+            {/* Tagline com máscara de linha: o span sobe por trás do
+                overflow do <p> quando o footer entra (areas/arco.ts) */}
+            <p className="font-serif italic text-lg text-cru/90 leading-snug mb-3 overflow-hidden">
+              <span data-motion-arco="tagline" className="block">
+                Móveis que fazem da sua casa a sua casa.
+              </span>
             </p>
             <p className="text-sm text-cru/60 leading-relaxed max-w-[38ch]">
               Loja de móveis e colchões em Ribeirão Pires. Sofás, guarda-roupas, cozinhas, camas e colchões com entrega e montagem em todo o ABC Paulista.
@@ -122,6 +145,22 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} Casa Sinelli — Móveis &amp; Colchões. Todos os direitos reservados.</p>
           <p>Ribeirão Pires · Mauá · Santo André · São Bernardo e região</p>
         </div>
+      </div>
+
+      {/* Wordmark monumental — par do fantasma do hero (2.1): lá o CONCEITO
+          ("casa", grafite/7 sobre cru); aqui a ASSINATURA (marca completa,
+          cru/7 sobre grafite). Mesmo DNA: Newsreader itálico minúsculo,
+          tracking -0.03em, assentado no chão da página (translate-y estático
+          afunda os descenders na borda — propriedade `translate` do v4, canal
+          separado do transform que o GSAP usa no rise). Desktop: sobe em
+          scrub curto conforme o fim da página chega (areas/arco.ts). */}
+      <div aria-hidden="true" className="overflow-hidden select-none pointer-events-none px-2">
+        <p
+          data-motion-arco="wordmark"
+          className="text-center font-serif italic font-medium whitespace-nowrap leading-none tracking-[-0.03em] text-cru/[0.07] text-[clamp(52px,13.8vw,204px)] translate-y-[0.2em]"
+        >
+          casa sinelli
+        </p>
       </div>
     </footer>
   );
