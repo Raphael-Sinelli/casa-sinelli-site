@@ -5335,12 +5335,27 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-rv-moveis.jpg",
-    "imagens": [
-      "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-rv-moveis.jpg",
-      "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-grafite-rv-moveis.jpg",
-      "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-off-white-rv-moveis.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Cinamomo",
+        "imagens": [
+          "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-rv-moveis.jpg"
+        ]
+      },
+      {
+        "cor": "Cinamomo Grafite",
+        "imagens": [
+          "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-grafite-rv-moveis.jpg"
+        ]
+      },
+      {
+        "cor": "Cinamomo Off White",
+        "imagens": [
+          "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-off-white-rv-moveis.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-rv-moveis.jpg",
       "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-grafite-rv-moveis.jpg",
@@ -5360,13 +5375,33 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/RV/Comoda/Grecia/comoda-grecia-branco-rv-moveis.jpg",
-    "imagens": [
-      "/RV/Comoda/Grecia/comoda-grecia-branco-rv-moveis.jpg",
-      "/RV/Comoda/Grecia/comoda-grecia-cinamomo-rv-moveis.jpg",
-      "/RV/Comoda/Grecia/comoda-grecia-cinamomo-grafite-rv-moveis.jpg",
-      "/RV/Comoda/Grecia/comoda-grecia-cinamomo-off-white-rv-moveis.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/RV/Comoda/Grecia/comoda-grecia-branco-rv-moveis.jpg"
+        ]
+      },
+      {
+        "cor": "Cinamomo",
+        "imagens": [
+          "/RV/Comoda/Grecia/comoda-grecia-cinamomo-rv-moveis.jpg"
+        ]
+      },
+      {
+        "cor": "Cinamomo Grafite",
+        "imagens": [
+          "/RV/Comoda/Grecia/comoda-grecia-cinamomo-grafite-rv-moveis.jpg"
+        ]
+      },
+      {
+        "cor": "Cinamomo Off White",
+        "imagens": [
+          "/RV/Comoda/Grecia/comoda-grecia-cinamomo-off-white-rv-moveis.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/RV/Comoda/Grecia/comoda-grecia-branco-rv-moveis.jpg",
       "/RV/Comoda/Grecia/comoda-grecia-cinamomo-rv-moveis.jpg",
@@ -5387,14 +5422,34 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-branco.jpg",
-    "imagens": [
-      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-branco.jpg",
-      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo.jpg",
-      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo-grafite.jpg",
-      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo-off-white.jpg",
-      "/RV/Guarda Roupa/Belgica/interna.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-branco.jpg",
+          "/RV/Guarda Roupa/Belgica/interna.png"
+        ]
+      },
+      {
+        "cor": "Cinamomo",
+        "imagens": [
+          "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo.jpg"
+        ]
+      },
+      {
+        "cor": "Cinamomo Grafite",
+        "imagens": [
+          "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo-grafite.jpg"
+        ]
+      },
+      {
+        "cor": "Cinamomo Off White",
+        "imagens": [
+          "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo-off-white.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-branco.jpg",
       "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo.jpg",
@@ -5416,14 +5471,34 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/RV/Multiuso/Dubai/roupeiro-dubai-branco-rv-moveis-1.jpg",
-    "imagens": [
-      "/RV/Multiuso/Dubai/roupeiro-dubai-branco-rv-moveis-1.jpg",
-      "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-rv-moveis-1.jpg",
-      "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-grafite-rv-moveis-1.jpg",
-      "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-off-white-rv-moveis-1.jpg",
-      "/RV/Multiuso/Dubai/roupeiro-dubai-produto-interno-rv-moveis-1.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/RV/Multiuso/Dubai/roupeiro-dubai-branco-rv-moveis-1.jpg",
+          "/RV/Multiuso/Dubai/roupeiro-dubai-produto-interno-rv-moveis-1.jpg"
+        ]
+      },
+      {
+        "cor": "Cinamomo",
+        "imagens": [
+          "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-rv-moveis-1.jpg"
+        ]
+      },
+      {
+        "cor": "Cinamomo Grafite",
+        "imagens": [
+          "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-grafite-rv-moveis-1.jpg"
+        ]
+      },
+      {
+        "cor": "Cinamomo Off White",
+        "imagens": [
+          "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-off-white-rv-moveis-1.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/RV/Multiuso/Dubai/roupeiro-dubai-branco-rv-moveis-1.jpg",
       "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-rv-moveis-1.jpg",

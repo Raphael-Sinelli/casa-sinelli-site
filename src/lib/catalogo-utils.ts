@@ -78,6 +78,102 @@ export interface GrupoCor {
   imagens: string[];
 }
 
+// Swatch visual do seletor de cor — resolve o nome bruto da variação (pasta
+// de origem, ex.: "JatobaGrafite", "Cinamomo Off White", "casal preto e cinza")
+// para uma amostra real, sem depender de curadoria manual por produto.
+// Madeiras/neutros ficam nos tokens da marca (jatobá≈marca, grafite, cru);
+// tecidos (sofás/poltronas) usam a cor real — não faz sentido fingir um
+// estofado azul de verde-oliva só pra "caber na paleta".
+export type Swatch =
+  | { tipo: 'solido'; cor: string }
+  | { tipo: 'duo'; cores: [string, string] }
+  | { tipo: 'desconhecida' };
+
+const CORES_SWATCH: Record<string, string> = {
+  // neutros
+  branco: '#FFFFFF',
+  offwhite: 'var(--color-cru)',
+  creme: 'var(--color-cru)',
+  cru: 'var(--color-cru)',
+  gelo: 'var(--color-cru)',
+  // madeira "escura" — cinamomo/jatobá ≈ tom da marca
+  cinamomo: 'var(--color-marca)',
+  jatoba: 'var(--color-marca)',
+  caramelo: 'var(--color-marca)',
+  // grafite/preto
+  grafite: 'var(--color-grafite)',
+  chumbo: 'var(--color-grafite)',
+  preto: 'var(--color-grafite)',
+  preta: 'var(--color-grafite)',
+  // madeira "clara"
+  freijo: '#C9A876',
+  cedro: '#C9A876',
+  ipe: '#C9A876',
+  naturalle: '#C9A876',
+  naturale: '#C9A876',
+  nature: '#C9A876',
+  jequitiba: '#C9A876',
+  nogueira: '#8A6E52',
+  cappuccino: '#8A6E52',
+  bronze: '#8A6E52',
+  // areia/bege
+  areia: 'var(--color-areia)',
+  bege: 'var(--color-areia)',
+  linho: 'var(--color-areia)',
+  // cinza/prata
+  cinza: '#9C9C96',
+  prata: '#B7B7B0',
+  prateado: '#B7B7B0',
+  inox: '#B7B7B0',
+  // cores reais de tecido — sem restrição de paleta, são a cor real do produto
+  azul: '#3B5A7A',
+  bordo: '#6B2333',
+  vinho: '#6B2333',
+  marrom: '#6B4A34',
+  rose: '#C98FA0',
+  rosa: '#C98FA0',
+  verde: 'var(--color-musgo)',
+  vermelha: '#8C2F2F',
+  vermelho: '#8C2F2F',
+  turquesa: '#3E8E86',
+  gold: '#B8964B',
+  dourado: '#B8964B',
+};
+
+// "JatobaAreia" (já espaçado por rotuloVariacao) / "OFF-WHITE-FREIJO" /
+// "casal preto e cinza" -> tokens reconhecíveis, ignorando qualificadores
+// (tamanho de cama, conjunções) que não são cor.
+function tokensDeCor(corBruta: string): string[] {
+  const limpo = corBruta
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[-_/]+/g, ' ')
+    .trim();
+  const brutos = limpo.split(/\s+/).filter(Boolean);
+  const tokens: string[] = [];
+  for (let i = 0; i < brutos.length; i++) {
+    if (brutos[i] === 'off' && brutos[i + 1] === 'white') {
+      tokens.push('offwhite');
+      i++;
+      continue;
+    }
+    if (brutos[i] === 'e' || brutos[i] === 'de') continue; // conjunção/preposição
+    tokens.push(brutos[i]);
+  }
+  return tokens;
+}
+
+export function resolverSwatch(corBruta: string): Swatch {
+  const achadas = tokensDeCor(corBruta)
+    .map((t) => CORES_SWATCH[t])
+    .filter((c): c is string => Boolean(c));
+  const unicas = Array.from(new Set(achadas));
+  if (unicas.length === 0) return { tipo: 'desconhecida' };
+  if (unicas.length === 1) return { tipo: 'solido', cor: unicas[0] };
+  return { tipo: 'duo', cores: [unicas[0], unicas[1]] };
+}
+
 // Dentro de uma variação (pasta de 1º nível, geralmente tamanho), agrupa as
 // imagens pela subpasta de 2º nível quando ela existir (geralmente cor).
 export function gruposDeCor(produto: Produto, corVariacao: string): GrupoCor[] {

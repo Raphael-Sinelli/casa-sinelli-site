@@ -2,7 +2,7 @@
 
 import type { Variacao } from '@/lib/tipos';
 import type { GrupoCor } from '@/lib/catalogo-utils';
-import { ehTamanho, rotuloVariacao } from '@/lib/catalogo-utils';
+import { ehTamanho, resolverSwatch, rotuloVariacao } from '@/lib/catalogo-utils';
 
 interface Props {
   variacoes: Variacao[];
@@ -37,6 +37,58 @@ function Chip({
   );
 }
 
+// Padrão diagonal (sem cor real reconhecida) — nunca esconde o rótulo, só
+// avisa visualmente que a amostra é aproximada.
+const FALLBACK_STYLE: React.CSSProperties = {
+  backgroundColor: 'var(--color-cru)',
+  backgroundImage:
+    'repeating-linear-gradient(135deg, var(--color-grafite) 0, var(--color-grafite) 1px, transparent 1px, transparent 6px)',
+  opacity: 0.55,
+};
+
+function CorSwatch({
+  cor,
+  ativo,
+  onClick,
+}: {
+  cor: string;
+  ativo: boolean;
+  onClick: () => void;
+}) {
+  const swatch = resolverSwatch(cor);
+  const estiloFill: React.CSSProperties =
+    swatch.tipo === 'solido'
+      ? { backgroundColor: swatch.cor }
+      : swatch.tipo === 'duo'
+        ? { background: `linear-gradient(135deg, ${swatch.cores[0]} 50%, ${swatch.cores[1]} 50%)` }
+        : FALLBACK_STYLE;
+
+  return (
+    <button
+      onClick={onClick}
+      aria-pressed={ativo}
+      className="group/swatch flex items-center gap-2 py-1.5 pl-1.5 pr-3 pointer-coarse:min-h-11 rounded-[4px] focus-visible:outline-2 focus-visible:outline-musgo focus-visible:outline-offset-2"
+    >
+      <span
+        aria-hidden="true"
+        style={estiloFill}
+        className={`h-7 w-7 shrink-0 rounded-[4px] border transition-[transform,opacity,border-color,box-shadow] duration-[var(--dur-short)] [transition-timing-function:var(--ease-assentar)] ${
+          ativo
+            ? 'border-musgo ring-2 ring-musgo/25 ring-offset-1 ring-offset-white scale-[var(--motion-scale-subtle)] opacity-100'
+            : 'border-grafite/20 opacity-90 group-hover/swatch:border-marca group-hover/swatch:opacity-100'
+        }`}
+      />
+      <span
+        className={`text-sm transition-colors duration-[var(--dur-short)] ${
+          ativo ? 'font-semibold text-grafite' : 'font-medium text-grafite/75 group-hover/swatch:text-grafite'
+        }`}
+      >
+        {rotuloVariacao(cor)}
+      </span>
+    </button>
+  );
+}
+
 export default function VariacaoSelector({
   variacoes,
   variacaoAtiva,
@@ -59,12 +111,21 @@ export default function VariacaoSelector({
               {rotuloVariacao(variacaoAtiva)}
             </span>
           </p>
-          <div className="flex flex-wrap gap-2">
-            {variacoes.map((v) => (
-              <Chip key={v.cor} ativo={v.cor === variacaoAtiva} onClick={() => onVariacao(v.cor)}>
-                {rotuloVariacao(v.cor)}
-              </Chip>
-            ))}
+          <div className="flex flex-wrap gap-1">
+            {variacoes.map((v) =>
+              rotuloNivel1 === 'Cor' ? (
+                <CorSwatch
+                  key={v.cor}
+                  cor={v.cor}
+                  ativo={v.cor === variacaoAtiva}
+                  onClick={() => onVariacao(v.cor)}
+                />
+              ) : (
+                <Chip key={v.cor} ativo={v.cor === variacaoAtiva} onClick={() => onVariacao(v.cor)}>
+                  {rotuloVariacao(v.cor)}
+                </Chip>
+              )
+            )}
           </div>
         </div>
       )}
@@ -79,11 +140,14 @@ export default function VariacaoSelector({
               </span>
             )}
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1">
             {gruposComCor.map((g) => (
-              <Chip key={g.cor} ativo={g.cor === grupoAtivo} onClick={() => onGrupo(g.cor)}>
-                {rotuloVariacao(g.cor!)}
-              </Chip>
+              <CorSwatch
+                key={g.cor}
+                cor={g.cor!}
+                ativo={g.cor === grupoAtivo}
+                onClick={() => onGrupo(g.cor)}
+              />
             ))}
           </div>
         </div>
