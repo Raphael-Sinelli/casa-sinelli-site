@@ -15,6 +15,8 @@ import {
 } from '@/lib/catalogo-utils';
 import { imagemUrl, mapaUrlsProduto } from '@/lib/imagens';
 import { mensagemProduto } from '@/lib/whatsapp';
+import ProdutoEscolha from '@/components/ProdutoEscolha';
+import AtalhosPDP from '@/components/AtalhosPDP';
 import ProductDetailClient from '@/components/ProductDetailClient';
 import BotaoWhatsApp from '@/components/BotaoWhatsApp';
 import CompartilharProduto from '@/components/CompartilharProduto';
@@ -103,14 +105,6 @@ export default async function ProdutoPage({ params }: Props) {
   // há escolha visível na página (chips de cor/tamanho)? senão, linguagem segura
   const temEscolhaNosDados = variacoesDisplay(produto).length > 1 || contarCores(produto) >= 2;
   const capa = capaProduto(produto);
-
-  // Mini-sumário sob o título: atalhos só para seções que existem NESTA
-  // página (nunca prometer cor/medida que o dado não tem)
-  const atalhos: ReadonlyArray<readonly [href: string, rotulo: string]> = [
-    ...(temEscolhaNosDados ? [['#cores', 'Cores'] as const] : []),
-    ...(produto.medidas ? [['#medidas', 'Medidas'] as const] : []),
-    ...(relacionados.length > 0 ? [['#parecidos', 'Parecidos'] as const] : []),
-  ];
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -201,6 +195,10 @@ export default async function ProdutoPage({ params }: Props) {
         {/* rows [auto 1fr]: sem isso a linha do título estica junto com a galeria
             e abre um vão entre o h1 e o CTA no desktop */}
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-[auto_1fr] gap-x-12 gap-y-6">
+          {/* Provider não emite DOM: header/galeria/infos seguem filhos diretos
+              do grid. Ele existe porque o mini-sumário (coluna do título) e o
+              seletor (coluna da galeria) são irmãos e precisam do mesmo estado. */}
+          <ProdutoEscolha produto={produto}>
           {/* Título — primeiro no mobile, coluna direita no desktop */}
           <header className="hero-entrar [animation-delay:var(--hero-d1)] lg:col-start-2">
             <p className="font-mono text-xs uppercase tracking-widest text-marca mb-2">
@@ -209,24 +207,7 @@ export default async function ProdutoPage({ params }: Props) {
             <h1 className="font-serif text-3xl sm:text-4xl font-medium text-grafite leading-tight text-balance">
               {produto.nome}
             </h1>
-            {atalhos.length > 0 && (
-              <nav
-                aria-label="Atalhos desta página"
-                className="mt-3.5 flex flex-wrap items-center gap-y-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-grafite/60"
-              >
-                {atalhos.map(([href, rotulo], i) => (
-                  <span key={href} className="flex items-center">
-                    {i > 0 && <span aria-hidden="true" className="mx-2.5 text-grafite/30">·</span>}
-                    <a
-                      href={href}
-                      className="py-1 underline underline-offset-4 decoration-grafite/25 hover:text-musgo-escuro hover:decoration-musgo-escuro transition-colors focus-visible:outline-2 focus-visible:outline-musgo rounded-sm"
-                    >
-                      {rotulo}
-                    </a>
-                  </span>
-                ))}
-              </nav>
-            )}
+            <AtalhosPDP temMedidas={!!produto.medidas} temParecidos={relacionados.length > 0} />
           </header>
 
           {/* Galeria + variações */}
@@ -259,6 +240,7 @@ export default async function ProdutoPage({ params }: Props) {
 
             {produto.informacoes && <InfoTecnica informacoes={produto.informacoes} />}
           </div>
+          </ProdutoEscolha>
         </div>
 
         {/* Parecidos — alternativas da mesma categoria para comparar na hora,

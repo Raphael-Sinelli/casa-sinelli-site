@@ -1,13 +1,9 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import type { Produto } from '@/lib/tipos';
-import {
-  gruposDeCor,
-  isImagemDisplay,
-  variacaoInicial,
-  variacoesDisplay,
-} from '@/lib/catalogo-utils';
+import { isImagemDisplay } from '@/lib/catalogo-utils';
+import { useEscolha } from './ProdutoEscolha';
 import ProductGallery from './ProductGallery';
 import VariacaoSelector from './VariacaoSelector';
 
@@ -23,25 +19,8 @@ function capaPrimeiro(imagens: string[], capa: string | null | undefined): strin
 }
 
 export default function ProductDetailClient({ produto, urls }: Props) {
-  const variacoes = variacoesDisplay(produto);
-  const [corVariacao, setCorVariacao] = useState(() => variacaoInicial(produto));
-
-  const grupos = useMemo(
-    () => gruposDeCor(produto, corVariacao),
-    [produto, corVariacao]
-  );
-
-  const grupoInicial = (gs: typeof grupos) => {
-    const dono = produto.capa ? gs.find((g) => g.imagens.includes(produto.capa!)) : undefined;
-    return (dono ?? gs[0])?.cor ?? null;
-  };
-
-  const [grupoAtivo, setGrupoAtivo] = useState<string | null>(() => grupoInicial(grupos));
-
-  const trocarVariacao = (cor: string) => {
-    setCorVariacao(cor);
-    setGrupoAtivo(grupoInicial(gruposDeCor(produto, cor)));
-  };
+  const { variacoes, corVariacao, trocarVariacao, grupos, grupoAtivo, setGrupoAtivo } =
+    useEscolha();
 
   const temCores = grupos.filter((g) => g.cor !== null).length > 1;
   const imagens = useMemo(() => {

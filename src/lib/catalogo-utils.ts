@@ -86,6 +86,34 @@ export function variacoesDisplay(produto: Produto): Variacao[] {
   return produto.variacoes.filter((v) => v.imagens.some(isImagemDisplay));
 }
 
+/** O que os chips/swatches do 1º nível representam. */
+export function rotuloNivel1(variacoes: Variacao[]): 'Cor' | 'Tamanho' | 'Modelo' {
+  const primeira = variacoes[0]?.cor ?? '';
+  return ehTamanho(primeira) ? 'Tamanho' : ehLinha(primeira) ? 'Modelo' : 'Cor';
+}
+
+/**
+ * O que o bloco de seleção mostra para esta variação ativa, ou null quando ele
+ * não renderiza nada. Fonte única: o VariacaoSelector decide o que desenhar por
+ * aqui e o mini-sumário da PDP decide o atalho por aqui — antes eram duas
+ * condições separadas, e o sumário anunciava "Cores" em produto que só tinha
+ * chip de tamanho, ou num tamanho que só tem uma cor.
+ *
+ * Depende da variação ativa, então só o cliente sabe responder: o mesmo sofá
+ * mostra "Cores" em 2,30 m (5 cores) e "Tamanho" em 2,50 m (1 cor).
+ */
+export function rotuloSelecao(
+  variacoes: Variacao[],
+  grupos: GrupoCor[]
+): 'Cores' | 'Tamanho' | 'Modelo' | null {
+  const temNivel1 = variacoes.length > 1;
+  const temCorNivel2 = grupos.filter((g) => g.cor !== null).length > 1;
+  const rotulo = rotuloNivel1(variacoes);
+  if (temCorNivel2) return 'Cores'; // swatches de cor no 2º nível
+  if (!temNivel1) return null; // 1 variação só: o 1º nível não renderiza
+  return rotulo === 'Cor' ? 'Cores' : rotulo; // chips do 1º nível
+}
+
 // "2,10M" -> "2,10 m" | "2,70" -> "2,70 m" | "JatobaAreia" -> "Jatoba Areia"
 export function rotuloVariacao(cor: string): string {
   const t = cor.trim();

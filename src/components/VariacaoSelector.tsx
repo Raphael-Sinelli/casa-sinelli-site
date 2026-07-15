@@ -2,7 +2,7 @@
 
 import type { Variacao } from '@/lib/tipos';
 import type { GrupoCor } from '@/lib/catalogo-utils';
-import { ehLinha, ehTamanho, resolverSwatch, rotuloVariacao } from '@/lib/catalogo-utils';
+import { resolverSwatch, rotuloNivel1, rotuloVariacao } from '@/lib/catalogo-utils';
 
 interface Props {
   variacoes: Variacao[];
@@ -107,26 +107,21 @@ export default function VariacaoSelector({
   onGrupo,
 }: Props) {
   const gruposComCor = grupos.filter((g) => g.cor !== null);
-  const primeira = variacoes[0]?.cor ?? '';
-  const rotuloNivel1 = ehTamanho(primeira)
-    ? 'Tamanho'
-    : ehLinha(primeira)
-      ? 'Modelo'
-      : 'Cor';
+  const rotulo = rotuloNivel1(variacoes);
 
   return (
     <div className="flex flex-col gap-4">
       {variacoes.length > 1 && (
-        <div role="group" aria-label={`Escolher ${rotuloNivel1.toLowerCase()}`}>
+        <div role="group" aria-label={`Escolher ${rotulo.toLowerCase()}`}>
           <p className="text-xs font-mono uppercase tracking-widest text-marca mb-2">
-            {rotuloNivel1}
+            {rotulo}
             <span className="text-grafite font-sans normal-case tracking-normal text-sm font-semibold ml-2">
               {rotuloVariacao(variacaoAtiva)}
             </span>
           </p>
           <div className="flex flex-wrap gap-1">
             {variacoes.map((v) =>
-              rotuloNivel1 === 'Cor' ? (
+              rotulo === 'Cor' ? (
                 <CorSwatch
                   key={v.cor}
                   cor={v.cor}
