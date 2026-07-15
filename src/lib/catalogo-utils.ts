@@ -232,6 +232,17 @@ function ehSubpastaDeCor(bruta: string): boolean {
   return true;
 }
 
+// Subpasta com o nome do próprio produto é modelo, não cor
+// ("/sofa/2e3Lugares/corolla/cinza.png"): a cor está um nível abaixo, no
+// arquivo. Só vale quando a pasta não resolve para uma cor de verdade — um
+// produto que se chame "Sofá Verde" mantém a subpasta "Verde" como cor.
+function ehModeloNaoCor(bruta: string, produto: Produto): boolean {
+  if (resolverSwatch(bruta).tipo !== 'desconhecida') return false;
+  const alvo = normalizarBusca(bruta.trim());
+  if (normalizarBusca(produto.nomePasta ?? '') === alvo) return true;
+  return normalizarBusca(produto.nome).split(/\s+/).includes(alvo);
+}
+
 // Fallback quando não há subpasta: alguns fornecedores põem a cor no nome do
 // arquivo ("cinza.webp", "rosa claro-rose.png") em vez de agrupar em pasta.
 // Sem isso o produto inteiro cai num grupo null e perde o seletor de cor.
@@ -256,29 +267,33 @@ function corDoNomeDoArquivo(caminho: string): string | null {
   return soCor ? semExt : null;
 }
 
-// Dentro de uma variação (pasta de 1º nível, geralmente tamanho), agrupa as
-// imagens pela subpasta de 2º nível quando ela existir (geralmente cor), ou
-// pelo nome do arquivo quando não existir.
+// Um segmento de pasta carrega cor quando não é técnico/medida/tipo de base e
+// não é o nome do próprio produto. Pasta desconhecida CONTA como cor de
+// propósito: vira swatch hachurado, que é o alarme de cor faltando no
+// dicionário. Só o nome do produto é pulado — aí a cor está mais fundo.
+function segmentoEhCor(seg: string, produto: Produto): boolean {
+  return ehSubpastaDeCor(seg) && !ehModeloNaoCor(seg, produto);
+}
+
+// Agrupa as imagens de uma variação pela cor, onde quer que ela esteja: varre
+// TODOS os segmentos de pasta abaixo da variação (da mais rasa para a mais
+// funda) e usa o primeiro que carrega cor; se nenhum carregar, cai no nome do
+// arquivo. Independente de profundidade — o catálogo hoje vai até 4 níveis, mas
+// a função não depende disso.
 export function gruposDeCor(produto: Produto, corVariacao: string): GrupoCor[] {
   const variacao = produto.variacoes.find((v) => v.cor === corVariacao);
   const imagens = (variacao?.imagens ?? []).filter(isImagemDisplay);
   const prefixo = `${produto.caminho}/${corVariacao}/`;
-  // O fallback por nome de arquivo só vale quando a variação-pai é tamanho: aí
-  // a cor ainda não foi escolhida. Se o 1º nível já É a cor (ex.: "Ipe"), o
-  // nome do arquivo é só o nome da foto e viraria uma cor fantasma.
-  const paiEhTamanho = ehTamanho(corVariacao);
+  // Se o 1º nível já É a cor ("Ipe"), não há cor a procurar mais fundo: o nome
+  // do arquivo é só o nome da foto e viraria cor fantasma.
+  const paiEhCor =
+    !ehTamanho(corVariacao) && resolverSwatch(corVariacao).tipo !== 'desconhecida';
   const grupos = new Map<string | null, string[]>();
   for (const img of imagens) {
     const rel = img.startsWith(prefixo) ? img.slice(prefixo.length) : '';
-    const partes = rel.split('/');
-    const bruta = partes.length > 1 ? partes[0] : null;
-    const chave = bruta
-      ? ehSubpastaDeCor(bruta)
-        ? bruta
-        : null
-      : paiEhTamanho
-        ? corDoNomeDoArquivo(img)
-        : null;
+    const pastas = rel ? rel.split('/').slice(0, -1) : [];
+    let chave: string | null = pastas.find((s) => segmentoEhCor(s, produto)) ?? null;
+    if (chave === null && !paiEhCor) chave = corDoNomeDoArquivo(img);
     grupos.set(chave, [...(grupos.get(chave) ?? []), img]);
   }
   return Array.from(grupos.entries()).map(([cor, imgs]) => ({ cor, imagens: imgs }));
