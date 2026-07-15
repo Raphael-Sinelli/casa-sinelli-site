@@ -12,13 +12,33 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/BomJesus/poltrona/cinza.png",
-    "imagens": [
-      "/BomJesus/poltrona/azul.png",
-      "/BomJesus/poltrona/cinza.png",
-      "/BomJesus/poltrona/marrom.png",
-      "/BomJesus/poltrona/preta.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Azul",
+        "imagens": [
+          "/BomJesus/poltrona/azul.png"
+        ]
+      },
+      {
+        "cor": "Cinza",
+        "imagens": [
+          "/BomJesus/poltrona/cinza.png"
+        ]
+      },
+      {
+        "cor": "Marrom",
+        "imagens": [
+          "/BomJesus/poltrona/marrom.png"
+        ]
+      },
+      {
+        "cor": "Preto",
+        "imagens": [
+          "/BomJesus/poltrona/preta.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/BomJesus/poltrona/azul.png",
       "/BomJesus/poltrona/cinza.png",
@@ -39,11 +59,21 @@
     "informacoes": null,
     "linkReferencia": "https://incasamoveis.com.br/cambel?srsltid=AfmBOoqiezoq-E-OWW6DiLV_u6MRgBSUQFUzMVmy0n-jcuagBENV0aX2\r\nhttps://www.opcaomoveis.com.br/produtos/cama-sofia-casal-138x188-branco-cambel-vj?srsltid=AfmBOoqMX0gx99cvgTGQMtH36l8ZCW66emco6g5CfhId-ehNtxsMn-xJ\r\nhttps://www.madeiramadeira.com.br/cama-de-solteiro-com-auxiliar-isa-nature-de-mdf-com-duas-gavetas-bau-e-nichos-371040268.html?origem=pla-371040268&utm_source=google&utm_medium=cpc&utm_content=camas-5081&utm_term=&utm_id=18022911328&gad_source=1&gad_campaignid=18021492945&gbraid=0AAAAADr4g_Elv66L022gUFpjC3e7MqgIB&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD0cW6TiQwLMfnz43LEk5k_5YtYOyukVfDhcehYAcXSTlaZiqisSZZgaAlfcEALw_wcB",
     "capa": "/Cambel/cabeceira/JessicaNatureOff.jpg",
-    "imagens": [
-      "/Cambel/cabeceira/branca.webp",
-      "/Cambel/cabeceira/JessicaNatureOff.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/Cambel/cabeceira/branca.webp"
+        ]
+      },
+      {
+        "cor": "Naturalle Off White",
+        "imagens": [
+          "/Cambel/cabeceira/JessicaNatureOff.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/Cambel/cabeceira/branca.webp",
       "/Cambel/cabeceira/JessicaNatureOff.jpg"
@@ -83,13 +113,21 @@
     "informacoes": "Estrutura: 100% MDF\r\nAcabamento: pintura fosca\r\nCapacidade: até 90 kg\r\nVão livre sob o estrado: aprox. 30 cm\r\nIdeal para colchão de 88 × 188 cm (não incluso)",
     "linkReferencia": "https://incasamoveis.com.br/cambel?srsltid=AfmBOoqiezoq-E-OWW6DiLV_u6MRgBSUQFUzMVmy0n-jcuagBENV0aX2\r\nhttps://www.opcaomoveis.com.br/produtos/cama-sofia-casal-138x188-branco-cambel-vj?srsltid=AfmBOoqMX0gx99cvgTGQMtH36l8ZCW66emco6g5CfhId-ehNtxsMn-xJ\r\nhttps://www.madeiramadeira.com.br/cama-de-solteiro-com-auxiliar-isa-nature-de-mdf-com-duas-gavetas-bau-e-nichos-371040268.html?origem=pla-371040268&utm_source=google&utm_medium=cpc&utm_content=camas-5081&utm_term=&utm_id=18022911328&gad_source=1&gad_campaignid=18021492945&gbraid=0AAAAADr4g_Elv66L022gUFpjC3e7MqgIB&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD0cW6TiQwLMfnz43LEk5k_5YtYOyukVfDhcehYAcXSTlaZiqisSZZgaAlfcEALw_wcB",
     "capa": "/Cambel/CamaSolteiro/SolteiroNatureOff.png",
-    "imagens": [
-      "/Cambel/CamaSolteiro/medidasSolteiro.png",
-      "/Cambel/CamaSolteiro/SolteiroBranca.png",
-      "/Cambel/CamaSolteiro/SolteiroInformaçoes.png",
-      "/Cambel/CamaSolteiro/SolteiroNatureOff.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/Cambel/CamaSolteiro/SolteiroBranca.png"
+        ]
+      },
+      {
+        "cor": "Naturalle Off White",
+        "imagens": [
+          "/Cambel/CamaSolteiro/SolteiroNatureOff.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/Cambel/CamaSolteiro/medidasSolteiro.png",
       "/Cambel/CamaSolteiro/SolteiroBranca.png",
@@ -110,11 +148,21 @@
     "informacoes": "Cama com baú, gaveta e cama auxiliar embutida\r\nIdeal para colchão de 88 × 188 cm (não incluso)\r\nCama auxiliar (altura 22 cm): ideal para colchão de 88 × 188 × 12 cm (não incluso)\r\nPeso: 41,5 kg (auxiliar 16,4 kg)",
     "linkReferencia": "https://incasamoveis.com.br/cambel?srsltid=AfmBOoqiezoq-E-OWW6DiLV_u6MRgBSUQFUzMVmy0n-jcuagBENV0aX2\r\nhttps://www.opcaomoveis.com.br/produtos/cama-sofia-casal-138x188-branco-cambel-vj?srsltid=AfmBOoqMX0gx99cvgTGQMtH36l8ZCW66emco6g5CfhId-ehNtxsMn-xJ\r\nhttps://www.madeiramadeira.com.br/cama-de-solteiro-com-auxiliar-isa-nature-de-mdf-com-duas-gavetas-bau-e-nichos-371040268.html?origem=pla-371040268&utm_source=google&utm_medium=cpc&utm_content=camas-5081&utm_term=&utm_id=18022911328&gad_source=1&gad_campaignid=18021492945&gbraid=0AAAAADr4g_Elv66L022gUFpjC3e7MqgIB&gclid=Cj0KCQjwrs7RBhDuARIsAIVfBD0cW6TiQwLMfnz43LEk5k_5YtYOyukVfDhcehYAcXSTlaZiqisSZZgaAlfcEALw_wcB",
     "capa": "/Cambel/CamaSolteiroBibox/branca.png",
-    "imagens": [
-      "/Cambel/CamaSolteiroBibox/branca.png",
-      "/Cambel/CamaSolteiroBibox/nature.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/Cambel/CamaSolteiroBibox/branca.png"
+        ]
+      },
+      {
+        "cor": "Naturalle",
+        "imagens": [
+          "/Cambel/CamaSolteiroBibox/nature.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/Cambel/CamaSolteiroBibox/branca.png",
       "/Cambel/CamaSolteiroBibox/nature.png"
@@ -203,13 +251,27 @@
     "informacoes": "1 gaveta\r\nNichos abertos com ganchos para xícaras\r\nPés palito",
     "linkReferencia": "https://lukaliam.com.br/",
     "capa": "/Lukaliam/CantinhoDoCafé/jequitiba.png",
-    "imagens": [
-      "/Lukaliam/CantinhoDoCafé/jequitiba.png",
-      "/Lukaliam/CantinhoDoCafé/Lukaliam-Cantinho-do-Cafe-Menta-e-Tauri-Ripado-Ambiente-scaled.jpg",
-      "/Lukaliam/CantinhoDoCafé/medidas.png",
-      "/Lukaliam/CantinhoDoCafé/offWhite.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Jequitiba",
+        "imagens": [
+          "/Lukaliam/CantinhoDoCafé/jequitiba.png"
+        ]
+      },
+      {
+        "cor": "Menta Tauri",
+        "imagens": [
+          "/Lukaliam/CantinhoDoCafé/Lukaliam-Cantinho-do-Cafe-Menta-e-Tauri-Ripado-Ambiente-scaled.jpg"
+        ]
+      },
+      {
+        "cor": "Off White",
+        "imagens": [
+          "/Lukaliam/CantinhoDoCafé/offWhite.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/Lukaliam/CantinhoDoCafé/jequitiba.png",
       "/Lukaliam/CantinhoDoCafé/Lukaliam-Cantinho-do-Cafe-Menta-e-Tauri-Ripado-Ambiente-scaled.jpg",
@@ -253,13 +315,28 @@
     "informacoes": null,
     "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
     "capa": "/SantosAndira/Comodas/fit/Comoda_Fit_jequitiba.jpg",
-    "imagens": [
-      "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Branca.jpg",
-      "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_JequitibaOff_Amb.jpg",
-      "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Jequitiba_FI_Aberto.jpg",
-      "/SantosAndira/Comodas/fit/Comoda_Fit_jequitiba.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Branca.jpg"
+        ]
+      },
+      {
+        "cor": "Jequitiba Off White",
+        "imagens": [
+          "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_JequitibaOff_Amb.jpg"
+        ]
+      },
+      {
+        "cor": "Jequitiba",
+        "imagens": [
+          "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Jequitiba_FI_Aberto.jpg",
+          "/SantosAndira/Comodas/fit/Comoda_Fit_jequitiba.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_Branca.jpg",
       "/SantosAndira/Comodas/fit/Comoda_Fit_1.4_JequitibaOff_Amb.jpg",
@@ -282,12 +359,27 @@
     "informacoes": "4 gavetas",
     "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
     "capa": "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaGrafite_Amb_site.jpg",
-    "imagens": [
-      "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaAreia_FI_site.jpg",
-      "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaGrafite_Amb_site.jpg",
-      "/SantosAndira/Comodas/ivai/Comoda_Ivai_Jatoba_FI_site.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Jatoba Areia",
+        "imagens": [
+          "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaAreia_FI_site.jpg"
+        ]
+      },
+      {
+        "cor": "Jatoba Grafite",
+        "imagens": [
+          "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaGrafite_Amb_site.jpg"
+        ]
+      },
+      {
+        "cor": "Jatoba",
+        "imagens": [
+          "/SantosAndira/Comodas/ivai/Comoda_Ivai_Jatoba_FI_site.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaAreia_FI_site.jpg",
       "/SantosAndira/Comodas/ivai/Comoda_Ivai_JatobaGrafite_Amb_site.jpg",
@@ -309,14 +401,28 @@
     "informacoes": "2 portas e 4 gavetas",
     "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
     "capa": "/SantosAndira/Comodas/pinhais/310444-Comoda_Pinhais24_Jatoba-scaled.jpg",
-    "imagens": [
-      "/SantosAndira/Comodas/pinhais/310443-Comoda_Pinhais24_JatobaAreia-scaled.jpg",
-      "/SantosAndira/Comodas/pinhais/310444-Comoda_Pinhais24_Jatoba-scaled.jpg",
-      "/SantosAndira/Comodas/pinhais/310448-Comoda_Pinhais24_JatobaGrafite-scaled.jpg",
-      "/SantosAndira/Comodas/pinhais/aberta.jpg",
-      "/SantosAndira/Comodas/pinhais/medidas.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Jatoba Areia",
+        "imagens": [
+          "/SantosAndira/Comodas/pinhais/310443-Comoda_Pinhais24_JatobaAreia-scaled.jpg"
+        ]
+      },
+      {
+        "cor": "Jatoba",
+        "imagens": [
+          "/SantosAndira/Comodas/pinhais/310444-Comoda_Pinhais24_Jatoba-scaled.jpg"
+        ]
+      },
+      {
+        "cor": "Jatoba Grafite",
+        "imagens": [
+          "/SantosAndira/Comodas/pinhais/310448-Comoda_Pinhais24_JatobaGrafite-scaled.jpg",
+          "/SantosAndira/Comodas/pinhais/aberta.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/SantosAndira/Comodas/pinhais/310443-Comoda_Pinhais24_JatobaAreia-scaled.jpg",
       "/SantosAndira/Comodas/pinhais/310444-Comoda_Pinhais24_Jatoba-scaled.jpg",
@@ -382,12 +488,27 @@
     "informacoes": "Portas de correr",
     "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
     "capa": "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_Jequitiba_Amb.jpg",
-    "imagens": [
-      "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_BRanco_Amb.jpg",
-      "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_JequitibaOff_Amb.jpg",
-      "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_Jequitiba_Amb.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_BRanco_Amb.jpg"
+        ]
+      },
+      {
+        "cor": "Jequitiba Off White",
+        "imagens": [
+          "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_JequitibaOff_Amb.jpg"
+        ]
+      },
+      {
+        "cor": "Jequitiba",
+        "imagens": [
+          "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_Jequitiba_Amb.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_BRanco_Amb.jpg",
       "/SantosAndira/GR/fitPortaDeCorrer/GR_Fit_2PtsCorrer_JequitibaOff_Amb.jpg",
@@ -409,13 +530,28 @@
     "informacoes": null,
     "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
     "capa": "/SantosAndira/GR/frança/grFrançaJequitibaOff.png",
-    "imagens": [
-      "/SantosAndira/GR/frança/grFrançaBranco.jpg",
-      "/SantosAndira/GR/frança/grFrançaJequitiba.png",
-      "/SantosAndira/GR/frança/grFrançaJequitibaOff.png",
-      "/SantosAndira/GR/frança/GR_Franca_BR_aberto.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/SantosAndira/GR/frança/grFrançaBranco.jpg",
+          "/SantosAndira/GR/frança/GR_Franca_BR_aberto.jpg"
+        ]
+      },
+      {
+        "cor": "Jequitiba",
+        "imagens": [
+          "/SantosAndira/GR/frança/grFrançaJequitiba.png"
+        ]
+      },
+      {
+        "cor": "Jequitiba Off White",
+        "imagens": [
+          "/SantosAndira/GR/frança/grFrançaJequitibaOff.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/SantosAndira/GR/frança/grFrançaBranco.jpg",
       "/SantosAndira/GR/frança/grFrançaJequitiba.png",
@@ -438,13 +574,28 @@
     "informacoes": null,
     "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
     "capa": "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba.jpg",
-    "imagens": [
-      "/SantosAndira/GR/master/163243-GR_MasterVip84New_JatobaAreia-1.jpg",
-      "/SantosAndira/GR/master/163248-GR_MasterVip84New_JatobaGrafite-1.jpg",
-      "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba.jpg",
-      "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba_Interno.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Jatoba Areia",
+        "imagens": [
+          "/SantosAndira/GR/master/163243-GR_MasterVip84New_JatobaAreia-1.jpg"
+        ]
+      },
+      {
+        "cor": "Jatoba Grafite",
+        "imagens": [
+          "/SantosAndira/GR/master/163248-GR_MasterVip84New_JatobaGrafite-1.jpg"
+        ]
+      },
+      {
+        "cor": "Jatoba",
+        "imagens": [
+          "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba.jpg",
+          "/SantosAndira/GR/master/GR_MasterVip84New_Jatoba_Interno.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/SantosAndira/GR/master/163243-GR_MasterVip84New_JatobaAreia-1.jpg",
       "/SantosAndira/GR/master/163248-GR_MasterVip84New_JatobaGrafite-1.jpg",
@@ -467,13 +618,28 @@
     "informacoes": null,
     "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
     "capa": "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_Ambiente_site.jpg",
-    "imagens": [
-      "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaAreia_Ambiente_site.jpg",
-      "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaGrafite_Ambiente_site.jpg",
-      "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_aberto_site.jpg",
-      "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_Ambiente_site.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Jatoba Areia",
+        "imagens": [
+          "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaAreia_Ambiente_site.jpg"
+        ]
+      },
+      {
+        "cor": "Jatoba Grafite",
+        "imagens": [
+          "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaGrafite_Ambiente_site.jpg"
+        ]
+      },
+      {
+        "cor": "Jatoba",
+        "imagens": [
+          "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_aberto_site.jpg",
+          "/SantosAndira/GR/paranavai/GR_Paranavai_Jatoba_Ambiente_site.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaAreia_Ambiente_site.jpg",
       "/SantosAndira/GR/paranavai/GR_Paranavai_JatobaGrafite_Ambiente_site.jpg",
@@ -494,11 +660,21 @@
     "informacoes": null,
     "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
     "capa": "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_Jatoba_Ambiente-SITE.jpg",
-    "imagens": [
-      "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_JatobaAreia_Ambiente-SITE.jpg",
-      "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_Jatoba_Ambiente-SITE.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Jatoba Areia",
+        "imagens": [
+          "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_JatobaAreia_Ambiente-SITE.jpg"
+        ]
+      },
+      {
+        "cor": "Jatoba",
+        "imagens": [
+          "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_Jatoba_Ambiente-SITE.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_JatobaAreia_Ambiente-SITE.jpg",
       "/SantosAndira/mesaDeCabeceira/MesaCabeceira_Bari_Jatoba_Ambiente-SITE.jpg"
@@ -517,13 +693,28 @@
     "informacoes": null,
     "linkReferencia": "https://www.santosandira.com.br/?gad_source=1&gad_campaignid=23497261425&gbraid=0AAAAACUqAR48G5PvU0kyNpOyrimoDd2Xq&gclid=Cj0KCQjwi8nRBhDhARIsAHZf_pbLfRsDnUKCjDwI6_3SE2LuzhO70I7a3qNm_DM00As6EXeZX_aelysaAvFvEALw_wcB",
     "capa": "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_Amb.jpg",
-    "imagens": [
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_BR_FI_Frontal-Amb.jpg",
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_JequitibaOff_Amb.jpg",
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_Amb.jpg",
-      "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_FI_Aberto.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/SantosAndira/multiuso/Multiuso_Fit_2Pts_BR_FI_Frontal-Amb.jpg"
+        ]
+      },
+      {
+        "cor": "Jequitiba Off White",
+        "imagens": [
+          "/SantosAndira/multiuso/Multiuso_Fit_2Pts_JequitibaOff_Amb.jpg"
+        ]
+      },
+      {
+        "cor": "Jequitiba",
+        "imagens": [
+          "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_Amb.jpg",
+          "/SantosAndira/multiuso/Multiuso_Fit_2Pts_Jequitiba_FI_Aberto.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/SantosAndira/multiuso/Multiuso_Fit_2Pts_BR_FI_Frontal-Amb.jpg",
       "/SantosAndira/multiuso/Multiuso_Fit_2Pts_JequitibaOff_Amb.jpg",
@@ -544,13 +735,27 @@
     "informacoes": "Portas: 4\r\nPés palito",
     "linkReferencia": "https://www.vieromoveis.com.br/\r\nhttps://www.lojasedmil.com.br/poltrona-decorativa-linho-flower-viero-mel-e-caqui/p?srsltid=AfmBOoom25P5orf8O8giLd3TmxRW4znKQO63tTZO9rlXS4tsXFVAAf78\r\nhttps://www.opcaomoveis.com.br/produtos/poltrona-glamour-linho-bronze-viero?srsltid=AfmBOooG8MlIdq6jvG5BE9pV06kJATHANmuwHI9xiWfXL5Rv_7GnlHgq",
     "capa": "/Viero/buffet/mel.png",
-    "imagens": [
-      "/Viero/buffet/imbuia-off.png",
-      "/Viero/buffet/imbuia.png",
-      "/Viero/buffet/MEDIDAS.png",
-      "/Viero/buffet/mel.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Imbuia Off White",
+        "imagens": [
+          "/Viero/buffet/imbuia-off.png"
+        ]
+      },
+      {
+        "cor": "Imbuia",
+        "imagens": [
+          "/Viero/buffet/imbuia.png"
+        ]
+      },
+      {
+        "cor": "Mel",
+        "imagens": [
+          "/Viero/buffet/mel.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/Viero/buffet/imbuia-off.png",
       "/Viero/buffet/imbuia.png",
@@ -573,11 +778,21 @@
     "informacoes": "Assento e encosto em espuma D20; braços em espuma D12\r\nPercintas elásticas\r\nAltura do encosto: 56 cm\r\nPés curvos em MDF de 25 mm\r\n1 lugar\r\nMontagem simples (aprox. 15 min)",
     "linkReferencia": "https://www.vieromoveis.com.br/\r\nhttps://www.lojasedmil.com.br/poltrona-decorativa-linho-flower-viero-mel-e-caqui/p?srsltid=AfmBOoom25P5orf8O8giLd3TmxRW4znKQO63tTZO9rlXS4tsXFVAAf78\r\nhttps://www.opcaomoveis.com.br/produtos/poltrona-glamour-linho-bronze-viero?srsltid=AfmBOooG8MlIdq6jvG5BE9pV06kJATHANmuwHI9xiWfXL5Rv_7GnlHgq",
     "capa": "/Viero/poltrona/flower/linhoInox.png",
-    "imagens": [
-      "/Viero/poltrona/flower/linhoBronze.jpg",
-      "/Viero/poltrona/flower/linhoInox.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Linho Bronze",
+        "imagens": [
+          "/Viero/poltrona/flower/linhoBronze.jpg"
+        ]
+      },
+      {
+        "cor": "Linho Inox",
+        "imagens": [
+          "/Viero/poltrona/flower/linhoInox.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/Viero/poltrona/flower/linhoBronze.jpg",
       "/Viero/poltrona/flower/linhoInox.png"
@@ -2472,12 +2687,21 @@
     "informacoes": "Portas de vidro e porta em ripado real\r\nBase de 25 mm\r\nPrateleira de vidro\r\nNicho garrafeiro\r\nPés de madeira maciça\r\nIluminação LED com botão liga/desliga",
     "linkReferencia": "https://www.moveisbechara.com.br/",
     "capa": "/bechara/cristaleira/Elba/naturalle.png",
-    "imagens": [
-      "/bechara/cristaleira/Elba/medidas.png",
-      "/bechara/cristaleira/Elba/naturalle.png",
-      "/bechara/cristaleira/Elba/offNaturale.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Naturalle",
+        "imagens": [
+          "/bechara/cristaleira/Elba/naturalle.png"
+        ]
+      },
+      {
+        "cor": "Off White Naturalle",
+        "imagens": [
+          "/bechara/cristaleira/Elba/offNaturale.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/bechara/cristaleira/Elba/medidas.png",
       "/bechara/cristaleira/Elba/naturalle.png",
@@ -2626,12 +2850,21 @@
     "informacoes": "Estrutura em MDP de 15 mm; tampo e base em MDP de 25 mm\r\nPortas de correr com aplique decorativo usinado a laser\r\n5 rodízios (frontais cromados, dois com trava)\r\nComporta TV de até 52\"",
     "linkReferencia": "https://www.moveisbechara.com.br/",
     "capa": "/bechara/rack/topazio/CINAMOMO-OFF-RIPADO.png",
-    "imagens": [
-      "/bechara/rack/topazio/CINAMOMO-OFF-RIPADO.png",
-      "/bechara/rack/topazio/medidas.png",
-      "/bechara/rack/topazio/NATURALLE-OFF-RIPADO.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Cinamomo Off White",
+        "imagens": [
+          "/bechara/rack/topazio/CINAMOMO-OFF-RIPADO.png"
+        ]
+      },
+      {
+        "cor": "Naturalle Off White",
+        "imagens": [
+          "/bechara/rack/topazio/NATURALLE-OFF-RIPADO.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/bechara/rack/topazio/CINAMOMO-OFF-RIPADO.png",
       "/bechara/rack/topazio/medidas.png",
@@ -3018,12 +3251,21 @@
     "informacoes": null,
     "linkReferencia": "https://indekesmoveis.com.br/",
     "capa": "/indekes/balcãoCooktop/freijoOff.png",
-    "imagens": [
-      "/indekes/balcãoCooktop/branco.png",
-      "/indekes/balcãoCooktop/freijoOff.png",
-      "/indekes/balcãoCooktop/medidas.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/indekes/balcãoCooktop/branco.png"
+        ]
+      },
+      {
+        "cor": "Freijo Off White",
+        "imagens": [
+          "/indekes/balcãoCooktop/freijoOff.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/indekes/balcãoCooktop/branco.png",
       "/indekes/balcãoCooktop/freijoOff.png",
@@ -3142,12 +3384,22 @@
     "informacoes": "7 portas e 1 gaveta",
     "linkReferencia": "https://indekesmoveis.com.br/",
     "capa": "/indekes/kitDeCozinha/KitBraga/armrio_de_cozinha_160mts_braga_freij_chumbo_ind_2_20260408090218_3617db739b1b.webp",
-    "imagens": [
-      "/indekes/kitDeCozinha/KitBraga/armrio_de_cozinha_160mts_braga_freij_chumbo_ind_2_20260408090218_3617db739b1b.webp",
-      "/indekes/kitDeCozinha/KitBraga/braga_freijo_offwhite.png",
-      "/indekes/kitDeCozinha/KitBraga/FI-KIT-BRAGA-160-FREIJO_CHUMBO-ABERTO-RGB.webp"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Freijo Chumbo",
+        "imagens": [
+          "/indekes/kitDeCozinha/KitBraga/armrio_de_cozinha_160mts_braga_freij_chumbo_ind_2_20260408090218_3617db739b1b.webp",
+          "/indekes/kitDeCozinha/KitBraga/FI-KIT-BRAGA-160-FREIJO_CHUMBO-ABERTO-RGB.webp"
+        ]
+      },
+      {
+        "cor": "Freijo Off White",
+        "imagens": [
+          "/indekes/kitDeCozinha/KitBraga/braga_freijo_offwhite.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/indekes/kitDeCozinha/KitBraga/armrio_de_cozinha_160mts_braga_freij_chumbo_ind_2_20260408090218_3617db739b1b.webp",
       "/indekes/kitDeCozinha/KitBraga/braga_freijo_offwhite.png",
@@ -3169,12 +3421,22 @@
     "informacoes": "8 portas e 3 gavetas",
     "linkReferencia": "https://indekesmoveis.com.br/",
     "capa": "/indekes/kitDeCozinha/kitPorto/KIT-PORTO-219-FREIJO_CHUMBO-1X1-RGB.webp",
-    "imagens": [
-      "/indekes/kitDeCozinha/kitPorto/FI-KIT-PORTO-219-FREIJO_OFFWHITE-ABERTO-RGB.webp",
-      "/indekes/kitDeCozinha/kitPorto/KIT-PORTO-219-FREIJO_CHUMBO-1X1-RGB.webp",
-      "/indekes/kitDeCozinha/kitPorto/KIT-PORTO-219-FREIJO_OFFWHITE-1X1-RGB.webp"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Freijo Off White",
+        "imagens": [
+          "/indekes/kitDeCozinha/kitPorto/FI-KIT-PORTO-219-FREIJO_OFFWHITE-ABERTO-RGB.webp",
+          "/indekes/kitDeCozinha/kitPorto/KIT-PORTO-219-FREIJO_OFFWHITE-1X1-RGB.webp"
+        ]
+      },
+      {
+        "cor": "Freijo Chumbo",
+        "imagens": [
+          "/indekes/kitDeCozinha/kitPorto/KIT-PORTO-219-FREIJO_CHUMBO-1X1-RGB.webp"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/indekes/kitDeCozinha/kitPorto/FI-KIT-PORTO-219-FREIJO_OFFWHITE-ABERTO-RGB.webp",
       "/indekes/kitDeCozinha/kitPorto/KIT-PORTO-219-FREIJO_CHUMBO-1X1-RGB.webp",
@@ -3196,12 +3458,22 @@
     "informacoes": "5 portas e 1 gaveta",
     "linkReferencia": "https://indekesmoveis.com.br/",
     "capa": "/indekes/kitDeCozinha/kitSintra/chumbo.png",
-    "imagens": [
-      "/indekes/kitDeCozinha/kitSintra/aberto.webp",
-      "/indekes/kitDeCozinha/kitSintra/chumbo.png",
-      "/indekes/kitDeCozinha/kitSintra/offwhite.webp"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Chumbo",
+        "imagens": [
+          "/indekes/kitDeCozinha/kitSintra/chumbo.png",
+          "/indekes/kitDeCozinha/kitSintra/aberto.webp"
+        ]
+      },
+      {
+        "cor": "Off White",
+        "imagens": [
+          "/indekes/kitDeCozinha/kitSintra/offwhite.webp"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/indekes/kitDeCozinha/kitSintra/aberto.webp",
       "/indekes/kitDeCozinha/kitSintra/chumbo.png",
@@ -3397,12 +3669,22 @@
     "informacoes": null,
     "linkReferencia": "https://kitsparana.com/",
     "capa": "/kitsParana/kitDeCozinha/KitLiv/KIT_LIV_1.20 KITS PARANA_FREIJO_soft.png",
-    "imagens": [
-      "/kitsParana/kitDeCozinha/KitLiv/aberto.jpg",
-      "/kitsParana/kitDeCozinha/KitLiv/KIT_LIV_1.20 KITS PARANA_FREIJOCARAMELO.png",
-      "/kitsParana/kitDeCozinha/KitLiv/KIT_LIV_1.20 KITS PARANA_FREIJO_soft.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Freijo Caramelo",
+        "imagens": [
+          "/kitsParana/kitDeCozinha/KitLiv/KIT_LIV_1.20 KITS PARANA_FREIJOCARAMELO.png",
+          "/kitsParana/kitDeCozinha/KitLiv/aberto.jpg"
+        ]
+      },
+      {
+        "cor": "Freijo Soft",
+        "imagens": [
+          "/kitsParana/kitDeCozinha/KitLiv/KIT_LIV_1.20 KITS PARANA_FREIJO_soft.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/kitsParana/kitDeCozinha/KitLiv/aberto.jpg",
       "/kitsParana/kitDeCozinha/KitLiv/KIT_LIV_1.20 KITS PARANA_FREIJOCARAMELO.png",
@@ -3424,12 +3706,22 @@
     "informacoes": null,
     "linkReferencia": "https://kitsparana.com/",
     "capa": "/kitsParana/kitDeCozinha/kitNature/3048 9031 -  Cozinha Nature - Freijo e Soft - Ambiente.png",
-    "imagens": [
-      "/kitsParana/kitDeCozinha/kitNature/3048 9031 -  Cozinha Nature - Freijo e Soft - Ambiente.png",
-      "/kitsParana/kitDeCozinha/kitNature/aberto.png",
-      "/kitsParana/kitDeCozinha/kitNature/KIT COZINHA NATURE 1,94 KITS PARANA freijo caramelo.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Naturalle Freijo",
+        "imagens": [
+          "/kitsParana/kitDeCozinha/kitNature/3048 9031 -  Cozinha Nature - Freijo e Soft - Ambiente.png",
+          "/kitsParana/kitDeCozinha/kitNature/aberto.png"
+        ]
+      },
+      {
+        "cor": "Naturalle Freijo Caramelo",
+        "imagens": [
+          "/kitsParana/kitDeCozinha/kitNature/KIT COZINHA NATURE 1,94 KITS PARANA freijo caramelo.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/kitsParana/kitDeCozinha/kitNature/3048 9031 -  Cozinha Nature - Freijo e Soft - Ambiente.png",
       "/kitsParana/kitDeCozinha/kitNature/aberto.png",
@@ -3451,12 +3743,22 @@
     "informacoes": null,
     "linkReferencia": "https://kitsparana.com/",
     "capa": "/kitsParana/kitDeCozinha/kitZen/KIT ZEN 0,90 KITS PARANA_freijo_caramelo.png",
-    "imagens": [
-      "/kitsParana/kitDeCozinha/kitZen/aberto.jpg",
-      "/kitsParana/kitDeCozinha/kitZen/KIT ZEN 0,90 KITS PARANA_freijo_caramelo.png",
-      "/kitsParana/kitDeCozinha/kitZen/KIT ZEN 0,90 KITS PARANA_freijo_soft.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Freijo Caramelo",
+        "imagens": [
+          "/kitsParana/kitDeCozinha/kitZen/KIT ZEN 0,90 KITS PARANA_freijo_caramelo.png",
+          "/kitsParana/kitDeCozinha/kitZen/aberto.jpg"
+        ]
+      },
+      {
+        "cor": "Freijo",
+        "imagens": [
+          "/kitsParana/kitDeCozinha/kitZen/KIT ZEN 0,90 KITS PARANA_freijo_soft.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/kitsParana/kitDeCozinha/kitZen/aberto.jpg",
       "/kitsParana/kitDeCozinha/kitZen/KIT ZEN 0,90 KITS PARANA_freijo_caramelo.png",
@@ -3536,21 +3838,36 @@
     "informacoes": "5 gavetas",
     "linkReferencia": null,
     "capa": "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro.jpg",
-    "imagens": [
-      "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro - off.jpg",
-      "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro - off.png",
-      "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro.jpg",
-      "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro.png",
-      "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - Ipe.jpg",
-      "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - Ipe.png",
-      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro - off.jpg",
-      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro - off.png",
-      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro.jpg",
-      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro.png",
-      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - ipe.jpg",
-      "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - ipe.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Cedro Off White",
+        "imagens": [
+          "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro - off.jpg",
+          "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro - off.png",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro - off.jpg",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro - off.png"
+        ]
+      },
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro.jpg",
+          "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro.png",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro.jpg",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - cedro.png"
+        ]
+      },
+      {
+        "cor": "Ipe",
+        "imagens": [
+          "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - Ipe.jpg",
+          "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - Ipe.png",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - ipe.jpg",
+          "/lanza/comoda/Cômoda Carrara/FI/FI Frontal Cômoda Carrara - ipe.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro - off.jpg",
       "/lanza/comoda/Cômoda Carrara/Cômoda Carrara - cedro - off.png",
@@ -3581,25 +3898,45 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Cedro.jpg",
-    "imagens": [
-      "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - branca.jpg",
-      "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Branco.jpg",
-      "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Cedro.jpg",
-      "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Cedro_Off White.jpg",
-      "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Ipe.jpg",
-      "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Cedro.jpg",
-      "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Cedro_Off White.jpg",
-      "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Ipe.jpg",
-      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Branco.jpg",
-      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Branco.png",
-      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro.jpg",
-      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro.png",
-      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro_OffWhite.jpg",
-      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro_OffWhite.png",
-      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Ipe.jpg",
-      "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Ipe.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - branca.jpg",
+          "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Branco.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Branco.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Branco.png"
+        ]
+      },
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Cedro.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Cedro.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Cedro Off White",
+        "imagens": [
+          "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Cedro_Off White.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Cedro_Off White.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro_OffWhite.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Cedro_OffWhite.png"
+        ]
+      },
+      {
+        "cor": "Ipe",
+        "imagens": [
+          "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Ipe.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI Cômoda Ibiza - Ipe.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Ipe.jpg",
+          "/lanza/comoda/Cômoda Ibiza/FI/FI Interna - Cômoda Ibiza - Ipe.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - branca.jpg",
       "/lanza/comoda/Cômoda Ibiza/Cômoda Ibiza - Branco.jpg",
@@ -3634,25 +3971,45 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro.jpg",
-    "imagens": [
-      "/lanza/comoda/Cômoda Messina/Comoda Messina Branco.png",
-      "/lanza/comoda/Cômoda Messina/Cômoda Messina - Branco.jpg",
-      "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro.jpg",
-      "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro.png",
-      "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro_OffWhite.jpg",
-      "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro_OffWhite.png",
-      "/lanza/comoda/Cômoda Messina/Cômods Messina - Ipe.jpg",
-      "/lanza/comoda/Cômoda Messina/Cômods Messina - Ipe.png",
-      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Branco.jpg",
-      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Branco.png",
-      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro.jpg",
-      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro.png",
-      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro_OffWhite.jpg",
-      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro_OffWhite.png",
-      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Ipe.jpg",
-      "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Ipe.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/lanza/comoda/Cômoda Messina/Comoda Messina Branco.png",
+          "/lanza/comoda/Cômoda Messina/Cômoda Messina - Branco.jpg",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Branco.jpg",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Branco.png"
+        ]
+      },
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro.jpg",
+          "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro.png",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro.jpg",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Cedro Off White",
+        "imagens": [
+          "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro_OffWhite.jpg",
+          "/lanza/comoda/Cômoda Messina/Cômoda Messina - Cedro_OffWhite.png",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro_OffWhite.jpg",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Cedro_OffWhite.png"
+        ]
+      },
+      {
+        "cor": "Ipe",
+        "imagens": [
+          "/lanza/comoda/Cômoda Messina/Cômods Messina - Ipe.jpg",
+          "/lanza/comoda/Cômoda Messina/Cômods Messina - Ipe.png",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Ipe.jpg",
+          "/lanza/comoda/Cômoda Messina/FI/FI Interna - Cômoda Messina - Ipe.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/comoda/Cômoda Messina/Comoda Messina Branco.png",
       "/lanza/comoda/Cômoda Messina/Cômoda Messina - Branco.jpg",
@@ -3687,29 +4044,59 @@
     "informacoes": "8 gavetas",
     "linkReferencia": null,
     "capa": "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro.jpg",
-    "imagens": [
-      "/lanza/comoda/Cômoda Paris/Comoda Paris - Branco.jpg",
-      "/lanza/comoda/Cômoda Paris/Comoda Paris - Branco.png",
-      "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro.jpg",
-      "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro.png",
-      "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro_OffWhite - certo.jpg",
-      "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro_OffWhite.png",
-      "/lanza/comoda/Cômoda Paris/Cômoda Paris - Ipe.jpg",
-      "/lanza/comoda/Cômoda Paris/Cômoda Paris - Ipe.png",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Branco.jpg",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Branco.png",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro.jpg",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro.png",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro_OffWhite.jpg",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro_OffWhite.png",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Ipe.jpg",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Ipe.png",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce.jpg",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce.png",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce_OffWhite.jpg",
-      "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce_OffWhite.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/lanza/comoda/Cômoda Paris/Comoda Paris - Branco.jpg",
+          "/lanza/comoda/Cômoda Paris/Comoda Paris - Branco.png",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Branco.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Branco.png"
+        ]
+      },
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro.jpg",
+          "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro.png",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Cedro Off White",
+        "imagens": [
+          "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro_OffWhite - certo.jpg",
+          "/lanza/comoda/Cômoda Paris/Cômoda Paris - Cedro_OffWhite.png",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro_OffWhite.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Cedro_OffWhite.png"
+        ]
+      },
+      {
+        "cor": "Ipe",
+        "imagens": [
+          "/lanza/comoda/Cômoda Paris/Cômoda Paris - Ipe.jpg",
+          "/lanza/comoda/Cômoda Paris/Cômoda Paris - Ipe.png",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Ipe.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Ipe.png"
+        ]
+      },
+      {
+        "cor": "Noce",
+        "imagens": [
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce.png"
+        ]
+      },
+      {
+        "cor": "Noce Off White",
+        "imagens": [
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce_OffWhite.jpg",
+          "/lanza/comoda/Cômoda Paris/FI/FI Interna - Cômoda Paris - Noce_OffWhite.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/comoda/Cômoda Paris/Comoda Paris - Branco.jpg",
       "/lanza/comoda/Cômoda Paris/Comoda Paris - Branco.png",
@@ -3748,25 +4135,40 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Ipe.jpg",
-    "imagens": [
-      "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro.jpg",
-      "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro.png",
-      "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro_OffWhite.jpg",
-      "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro_OffWhite.png",
-      "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Ipe.jpg",
-      "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Ipe.png",
-      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro.jpg",
-      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro.png",
-      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro_OffWhite.jpg",
-      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro_OffWhite.png",
-      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Ipe.jpg",
-      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Ipe.png",
-      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interna - Roupeiro Duba - Ipe.jpg",
-      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interna - Roupeiro Duba - Ipe.png",
-      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interno - Roupeiro Duba - Cedro.jpg",
-      "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interno - Roupeiro Duba - Cedro.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro.png",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro.png",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interno - Roupeiro Duba - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interno - Roupeiro Duba - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Cedro Off White",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro_OffWhite.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro_OffWhite.png",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro_OffWhite.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Cedro_OffWhite.png"
+        ]
+      },
+      {
+        "cor": "Ipe",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Ipe.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Ipe.png",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Ipe.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Frontal - Roupeiro Duba - Ipe.png",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interna - Roupeiro Duba - Ipe.jpg",
+          "/lanza/guarda roupa/Roupeiro Dubai/FI/FI Interna - Roupeiro Duba - Ipe.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro.jpg",
       "/lanza/guarda roupa/Roupeiro Dubai/Roupeiro Dubai - Cedro.png",
@@ -3801,17 +4203,27 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Ipe.jpg",
-    "imagens": [
-      "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Cedro.jpg",
-      "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Cedro.png",
-      "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Ipe.jpg",
-      "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Ipe.png",
-      "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Cedro.jpg",
-      "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Cedro.png",
-      "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Ipe.jpg",
-      "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Ipe.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Cedro.png",
+          "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Ipe",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Ipe.jpg",
+          "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Ipe.png",
+          "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Ipe.jpg",
+          "/lanza/guarda roupa/Roupeiro Genova/FI/FI interna - Roupeiro Genova - Ipe.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Cedro.jpg",
       "/lanza/guarda roupa/Roupeiro Genova/Roupeiro Gênova - Cedro.png",
@@ -3838,19 +4250,34 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro.jpg",
-    "imagens": [
-      "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Branco.jpg",
-      "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Branco.png",
-      "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro.jpg",
-      "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro.png",
-      "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro_OffWhite.jpg",
-      "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro_OffWhite.png",
-      "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Branco.jpg",
-      "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Branco.png",
-      "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Cedro.jpg",
-      "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Cedro.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Branco.jpg",
+          "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Branco.png",
+          "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Branco.jpg",
+          "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Branco.png"
+        ]
+      },
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro.png",
+          "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Lion/FI/FI Interna - Roupeiro Lion - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Cedro Off White",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro_OffWhite.jpg",
+          "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Cedro_OffWhite.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Branco.jpg",
       "/lanza/guarda roupa/Roupeiro Lion/Roupeiro Lion - Branco.png",
@@ -3879,19 +4306,34 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro.jpg",
-    "imagens": [
-      "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Branco.jpg",
-      "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Branco.png",
-      "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro.jpg",
-      "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro.png",
-      "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro_OffWhite.jpg",
-      "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro_OffWhite.png",
-      "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Branco.jpg",
-      "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Branco.png",
-      "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Cedro.jpg",
-      "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Cedro.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Branco.jpg",
+          "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Branco.png",
+          "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Branco.jpg",
+          "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Branco.png"
+        ]
+      },
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro.png",
+          "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Padua/FI/FI Interna - Roupeiro Pádua - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Cedro Off White",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro_OffWhite.jpg",
+          "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Cedro_OffWhite.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Branco.jpg",
       "/lanza/guarda roupa/Roupeiro Padua/Roupeiro Pádua - Branco.png",
@@ -3920,17 +4362,27 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Ipe.jpg",
-    "imagens": [
-      "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Cedro.jpg",
-      "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Cedro.png",
-      "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Ipe.jpg",
-      "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Ipe.png",
-      "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Cedro.jpg",
-      "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Cedro.png",
-      "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Ipe.jpg",
-      "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Ipe.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Cedro.png",
+          "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Cedro.jpg",
+          "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Ipe",
+        "imagens": [
+          "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Ipe.jpg",
+          "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Ipe.png",
+          "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Ipe.jpg",
+          "/lanza/guarda roupa/Roupeiro Veneto/FI/FI Interna - Roupeiro Veneto - Ipe.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Cedro.jpg",
       "/lanza/guarda roupa/Roupeiro Veneto/Roupeiro Veneto com Espelho - Cedro.png",
@@ -3957,25 +4409,45 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Ipe.jpg",
-    "imagens": [
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Branco.jpg",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Branco.png",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro.jpg",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro.png",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro_Off White.jpg",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro_Off White.png",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Ipe.jpg",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa de Cabeceira Roma - Ipe.png",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Branco.jpg",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Branco.png",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro.jpg",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro.png",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro_OffWhite.jpg",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro_OffWhite.png",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Ipe.jpg",
-      "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Ipe.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Branco.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Branco.png",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Branco.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Branco.png"
+        ]
+      },
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro.png",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Cedro Off White",
+        "imagens": [
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro_Off White.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Cedro_Off White.png",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro_OffWhite.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Cedro_OffWhite.png"
+        ]
+      },
+      {
+        "cor": "Ipe",
+        "imagens": [
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Ipe.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa de Cabeceira Roma - Ipe.png",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Ipe.jpg",
+          "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/FI/FI Frontal - Mesa de Cabeceira Roma - Ipe.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Branco.jpg",
       "/lanza/mesa de cabeceira/Mesa de Cabeceira Roma/Mesa Cabeceira Roma - Branco.png",
@@ -4010,15 +4482,30 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Cedro.jpg",
-    "imagens": [
-      "/lanza/mesa de computador/Mesa Potenza Plus/Escrivaninha Potenza - Branco.jpg",
-      "/lanza/mesa de computador/Mesa Potenza Plus/Escrivaninha Potenza - Branco.png",
-      "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Cedro.jpg",
-      "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Cedro.png",
-      "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Ipe.jpg",
-      "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Ipe.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/lanza/mesa de computador/Mesa Potenza Plus/Escrivaninha Potenza - Branco.jpg",
+          "/lanza/mesa de computador/Mesa Potenza Plus/Escrivaninha Potenza - Branco.png"
+        ]
+      },
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Cedro.jpg",
+          "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Ipe",
+        "imagens": [
+          "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Ipe.jpg",
+          "/lanza/mesa de computador/Mesa Potenza Plus/Mesa Potenza Plus - Ipe.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/mesa de computador/Mesa Potenza Plus/Escrivaninha Potenza - Branco.jpg",
       "/lanza/mesa de computador/Mesa Potenza Plus/Escrivaninha Potenza - Branco.png",
@@ -4043,21 +4530,41 @@
     "informacoes": null,
     "linkReferencia": null,
     "capa": "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.jpg",
-    "imagens": [
-      "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Branco.jpg",
-      "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Branco.png",
-      "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro.jpg",
-      "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro.png",
-      "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro_OffWhite.jpg",
-      "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro_OffWhite.png",
-      "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.jpg",
-      "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.png",
-      "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Cedro.jpg",
-      "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Cedro.png",
-      "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Ipe.jpg",
-      "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Ipe.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Branco.jpg",
+          "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Branco.png"
+        ]
+      },
+      {
+        "cor": "Cedro",
+        "imagens": [
+          "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro.jpg",
+          "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro.png",
+          "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Cedro.jpg",
+          "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Cedro.png"
+        ]
+      },
+      {
+        "cor": "Cedro Off White",
+        "imagens": [
+          "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro_OffWhite.jpg",
+          "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Cedro_OffWhite.png"
+        ]
+      },
+      {
+        "cor": "Ipe",
+        "imagens": [
+          "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.jpg",
+          "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Ipe.png",
+          "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Ipe.jpg",
+          "/lanza/multiuso/Multiuso Torino/FI/FI Interna - Multiuso Torino - Ipe.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Branco.jpg",
       "/lanza/multiuso/Multiuso Torino/Multiuso Torino - Branco.png",
@@ -4086,11 +4593,21 @@
     "informacoes": "Giratória (360°)",
     "linkReferencia": "https://arthurmoveis.com.br/produto/sapateira-esthela-giratoria/",
     "capa": "/lopas/SAPATEIRA ESTELA GIRATORIA CVDO/branco.png",
-    "imagens": [
-      "/lopas/SAPATEIRA ESTELA GIRATORIA CVDO/amendoa.png",
-      "/lopas/SAPATEIRA ESTELA GIRATORIA CVDO/branco.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Amendoa",
+        "imagens": [
+          "/lopas/SAPATEIRA ESTELA GIRATORIA CVDO/amendoa.png"
+        ]
+      },
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/lopas/SAPATEIRA ESTELA GIRATORIA CVDO/branco.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/lopas/SAPATEIRA ESTELA GIRATORIA CVDO/amendoa.png",
       "/lopas/SAPATEIRA ESTELA GIRATORIA CVDO/branco.png"
@@ -4109,11 +4626,21 @@
     "informacoes": null,
     "linkReferencia": "https://www.lucianecozinhas.com.br/",
     "capa": "/luciane/guarda roupa modulado/dormitorio-veneza04-cinza.jpg",
-    "imagens": [
-      "/luciane/guarda roupa modulado/dormitorio-veneza01-arenas.jpg",
-      "/luciane/guarda roupa modulado/dormitorio-veneza04-cinza.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Arenas",
+        "imagens": [
+          "/luciane/guarda roupa modulado/dormitorio-veneza01-arenas.jpg"
+        ]
+      },
+      {
+        "cor": "Cinza",
+        "imagens": [
+          "/luciane/guarda roupa modulado/dormitorio-veneza04-cinza.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/luciane/guarda roupa modulado/dormitorio-veneza01-arenas.jpg",
       "/luciane/guarda roupa modulado/dormitorio-veneza04-cinza.jpg"
@@ -4292,12 +4819,22 @@
     "informacoes": "Com espelho\r\nPeso: 149,15 kg",
     "linkReferencia": "https://moval.com.vc/",
     "capa": "/moval/gr/diplomata/Moval-GR-Diplomata-Freijo-e-Cinza-Sem-Espelho-Com-Frisos-Ambiente-E-Commerce-Copia-Copia.jpg",
-    "imagens": [
-      "/moval/gr/diplomata/aberto.jpg",
-      "/moval/gr/diplomata/Moval-GR-Diplomata-Freijo-e-Cinza-Sem-Espelho-Com-Frisos-Ambiente-E-Commerce-Copia-Copia.jpg",
-      "/moval/gr/diplomata/Moval-GR-Diplomata-Freijo-e-Off-White-Sem-Espelho-Com-Frisos-Ambiente-E-Commerce.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Freijo Cinza",
+        "imagens": [
+          "/moval/gr/diplomata/Moval-GR-Diplomata-Freijo-e-Cinza-Sem-Espelho-Com-Frisos-Ambiente-E-Commerce-Copia-Copia.jpg",
+          "/moval/gr/diplomata/aberto.jpg"
+        ]
+      },
+      {
+        "cor": "Freijo Off White",
+        "imagens": [
+          "/moval/gr/diplomata/Moval-GR-Diplomata-Freijo-e-Off-White-Sem-Espelho-Com-Frisos-Ambiente-E-Commerce.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/moval/gr/diplomata/aberto.jpg",
       "/moval/gr/diplomata/Moval-GR-Diplomata-Freijo-e-Cinza-Sem-Espelho-Com-Frisos-Ambiente-E-Commerce-Copia-Copia.jpg",
@@ -4365,13 +4902,33 @@
     "informacoes": null,
     "linkReferencia": "https://www.moveismundial.com.br/",
     "capa": "/mundial/cadeira juliana/cinza.png",
-    "imagens": [
-      "/mundial/cadeira juliana/bege.webp",
-      "/mundial/cadeira juliana/cinza.png",
-      "/mundial/cadeira juliana/marrom.png",
-      "/mundial/cadeira juliana/preto.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Bege",
+        "imagens": [
+          "/mundial/cadeira juliana/bege.webp"
+        ]
+      },
+      {
+        "cor": "Cinza",
+        "imagens": [
+          "/mundial/cadeira juliana/cinza.png"
+        ]
+      },
+      {
+        "cor": "Marrom",
+        "imagens": [
+          "/mundial/cadeira juliana/marrom.png"
+        ]
+      },
+      {
+        "cor": "Preto",
+        "imagens": [
+          "/mundial/cadeira juliana/preto.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/mundial/cadeira juliana/bege.webp",
       "/mundial/cadeira juliana/cinza.png",
@@ -4605,12 +5162,21 @@
     "informacoes": "Portas: 4",
     "linkReferencia": "https://www.saimysmoveis.com.br/buscar?q=cordoba\r\nhttps://incasamoveis.com.br/buffet-gold-3-portas-perola-com-mel-primus-23171-i?srsltid=AfmBOor930RKusLh6hIbS4ZlX1UHfFCZgnGmDvVsbfapQXx7hbpc2qbE\r\nhttps://incasamoveis.com.br/buffet-gold-3-portas-perola-com-mel-primus-23171-i?srsltid=AfmBOop27XaR28N3m8BDFwCgfGqwn7xQtDexWAN_EBXVLV6TriBghoRM",
     "capa": "/primus/buffet/real/real 4 portas perola-mel.png",
-    "imagens": [
-      "/primus/buffet/real/medidas.jpg",
-      "/primus/buffet/real/real 4 portas perola-mel.png",
-      "/primus/buffet/real/real 4 portas preto-mel.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Perola Mel",
+        "imagens": [
+          "/primus/buffet/real/real 4 portas perola-mel.png"
+        ]
+      },
+      {
+        "cor": "Preto Mel",
+        "imagens": [
+          "/primus/buffet/real/real 4 portas preto-mel.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/primus/buffet/real/medidas.jpg",
       "/primus/buffet/real/real 4 portas perola-mel.png",
@@ -4705,11 +5271,21 @@
     "informacoes": "Peso: 21 kg",
     "linkReferencia": "https://quartadivisaomoveis.com.br/",
     "capa": "/quartaDivisão/fruteira/natasha/teka_onix.png",
-    "imagens": [
-      "/quartaDivisão/fruteira/natasha/NATASHA-FRUTEIRA-BRANCO-1200x1200-1.jpg",
-      "/quartaDivisão/fruteira/natasha/teka_onix.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/quartaDivisão/fruteira/natasha/NATASHA-FRUTEIRA-BRANCO-1200x1200-1.jpg"
+        ]
+      },
+      {
+        "cor": "Teka Onix",
+        "imagens": [
+          "/quartaDivisão/fruteira/natasha/teka_onix.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/quartaDivisão/fruteira/natasha/NATASHA-FRUTEIRA-BRANCO-1200x1200-1.jpg",
       "/quartaDivisão/fruteira/natasha/teka_onix.png"
@@ -4730,11 +5306,21 @@
     "informacoes": "Peso: 12 kg",
     "linkReferencia": "https://quartadivisaomoveis.com.br/",
     "capa": "/quartaDivisão/fruteira/talita/teka_onix.png",
-    "imagens": [
-      "/quartaDivisão/fruteira/talita/TALITA-FRUTEIRA-BRanco-PTO-2016-.jpg",
-      "/quartaDivisão/fruteira/talita/teka_onix.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco Preto",
+        "imagens": [
+          "/quartaDivisão/fruteira/talita/TALITA-FRUTEIRA-BRanco-PTO-2016-.jpg"
+        ]
+      },
+      {
+        "cor": "Teka Onix",
+        "imagens": [
+          "/quartaDivisão/fruteira/talita/teka_onix.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/quartaDivisão/fruteira/talita/TALITA-FRUTEIRA-BRanco-PTO-2016-.jpg",
       "/quartaDivisão/fruteira/talita/teka_onix.png"
@@ -4755,12 +5341,22 @@
     "informacoes": "Peso: 28 kg",
     "linkReferencia": "https://quartadivisaomoveis.com.br/",
     "capa": "/quartaDivisão/sapateira/safira/SAFIRA-4PTAS-2018-BRANCO.jpg",
-    "imagens": [
-      "/quartaDivisão/sapateira/safira/SAFIRA-4-BASCULANTES-ABERTA-BRANCO.jpg",
-      "/quartaDivisão/sapateira/safira/SAFIRA-4-BASCULANTES-TEKA-ABERTO-1200x1200-1.jpg",
-      "/quartaDivisão/sapateira/safira/SAFIRA-4PTAS-2018-BRANCO.jpg"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/quartaDivisão/sapateira/safira/SAFIRA-4-BASCULANTES-ABERTA-BRANCO.jpg",
+          "/quartaDivisão/sapateira/safira/SAFIRA-4PTAS-2018-BRANCO.jpg"
+        ]
+      },
+      {
+        "cor": "Teka",
+        "imagens": [
+          "/quartaDivisão/sapateira/safira/SAFIRA-4-BASCULANTES-TEKA-ABERTO-1200x1200-1.jpg"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/quartaDivisão/sapateira/safira/SAFIRA-4-BASCULANTES-ABERTA-BRANCO.jpg",
       "/quartaDivisão/sapateira/safira/SAFIRA-4-BASCULANTES-TEKA-ABERTO-1200x1200-1.jpg",
@@ -4810,11 +5406,21 @@
     "informacoes": "Retrátil e reclinável",
     "linkReferencia": "https://www.moveislabell.com.br/sala-de-estar/sofas/retratil/sofa-dallas-retratil-e-reclinavel-2-50-metros-fernandes-estofados-cor-veludo-bege",
     "capa": "/sofa/retratil/mexico/cinza.png",
-    "imagens": [
-      "/sofa/retratil/mexico/cinza.png",
-      "/sofa/retratil/mexico/marrom.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Cinza",
+        "imagens": [
+          "/sofa/retratil/mexico/cinza.png"
+        ]
+      },
+      {
+        "cor": "Marrom",
+        "imagens": [
+          "/sofa/retratil/mexico/marrom.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/sofa/retratil/mexico/cinza.png",
       "/sofa/retratil/mexico/marrom.png"
@@ -4836,12 +5442,27 @@
     "informacoes": "Retrátil e reclinável",
     "linkReferencia": null,
     "capa": "/sofa/retratil/zara/afrodite/bege.png",
-    "imagens": [
-      "/sofa/retratil/zara/afrodite/bege.png",
-      "/sofa/retratil/zara/afrodite/cinza.png",
-      "/sofa/retratil/zara/afrodite/marrom.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Bege",
+        "imagens": [
+          "/sofa/retratil/zara/afrodite/bege.png"
+        ]
+      },
+      {
+        "cor": "Cinza",
+        "imagens": [
+          "/sofa/retratil/zara/afrodite/cinza.png"
+        ]
+      },
+      {
+        "cor": "Marrom",
+        "imagens": [
+          "/sofa/retratil/zara/afrodite/marrom.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/sofa/retratil/zara/afrodite/bege.png",
       "/sofa/retratil/zara/afrodite/cinza.png",
@@ -4863,11 +5484,21 @@
     "informacoes": "Sofá-cama",
     "linkReferencia": "https://bonanmoveis.com.br/product/bankgkok/",
     "capa": "/sofa/sofaCama/bonan/cinza.png",
-    "imagens": [
-      "/sofa/sofaCama/bonan/cinza.png",
-      "/sofa/sofaCama/bonan/marrom.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Cinza",
+        "imagens": [
+          "/sofa/sofaCama/bonan/cinza.png"
+        ]
+      },
+      {
+        "cor": "Marrom",
+        "imagens": [
+          "/sofa/sofaCama/bonan/marrom.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/sofa/sofaCama/bonan/cinza.png",
       "/sofa/sofaCama/bonan/marrom.png"
@@ -5005,11 +5636,21 @@
     "informacoes": null,
     "linkReferencia": "https://www.valdemoveis.com.br/",
     "capa": "/valdemoveis/livreitoMultiuso/branco.png",
-    "imagens": [
-      "/valdemoveis/livreitoMultiuso/branco.png",
-      "/valdemoveis/livreitoMultiuso/cinamomo.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Branco",
+        "imagens": [
+          "/valdemoveis/livreitoMultiuso/branco.png"
+        ]
+      },
+      {
+        "cor": "Cinamomo",
+        "imagens": [
+          "/valdemoveis/livreitoMultiuso/cinamomo.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/valdemoveis/livreitoMultiuso/branco.png",
       "/valdemoveis/livreitoMultiuso/cinamomo.png"
@@ -5312,11 +5953,21 @@
     "informacoes": "Estrutura em madeira de eucalipto 100% tratada e reflorestada\r\nPeso: 44 kg (3 lugares) / 36 kg (2 lugares)",
     "linkReferencia": "https://paropas.com.br/produto/classic",
     "capa": "/paropas/sofa2e3Lugares/cinza.png",
-    "imagens": [
-      "/paropas/sofa2e3Lugares/cinza.png",
-      "/paropas/sofa2e3Lugares/marrom.png"
+    "imagens": [],
+    "variacoes": [
+      {
+        "cor": "Cinza",
+        "imagens": [
+          "/paropas/sofa2e3Lugares/cinza.png"
+        ]
+      },
+      {
+        "cor": "Marrom",
+        "imagens": [
+          "/paropas/sofa2e3Lugares/marrom.png"
+        ]
+      }
     ],
-    "variacoes": [],
     "todasImagens": [
       "/paropas/sofa2e3Lugares/cinza.png",
       "/paropas/sofa2e3Lugares/marrom.png"
