@@ -2,7 +2,7 @@
 
 import type { Variacao } from '@/lib/tipos';
 import type { GrupoCor } from '@/lib/catalogo-utils';
-import { resolverSwatch, rotuloNivel1, rotuloVariacao } from '@/lib/catalogo-utils';
+import { resolverSwatch, rotuloNivel1, temCorConfiavel, rotuloVariacao } from '@/lib/catalogo-utils';
 
 interface Props {
   variacoes: Variacao[];
@@ -108,10 +108,15 @@ export default function VariacaoSelector({
 }: Props) {
   const gruposComCor = grupos.filter((g) => g.cor !== null);
   const rotulo = rotuloNivel1(variacoes);
+  // Cor real aparece mesmo com 1 opção só (Buffet Gold só vem em Gold) — sem
+  // escolha pra fazer, mas informativo. Mesmo guard do rotuloSelecao (fonte
+  // única do atalho do topo): só confia na cor única quando o dicionário
+  // resolve — senão é mais provável ser nome do produto ("Cozinha Colors").
+  const mostraNivel1 = variacoes.length > 1 || (rotulo === 'Cor' && temCorConfiavel(variacoes));
 
   return (
     <div className="flex flex-col gap-4">
-      {variacoes.length > 1 && (
+      {mostraNivel1 && (
         <div role="group" aria-label={`Escolher ${rotulo.toLowerCase()}`}>
           <p className="text-xs font-mono uppercase tracking-widest text-marca mb-2">
             {rotulo}
@@ -138,7 +143,7 @@ export default function VariacaoSelector({
         </div>
       )}
 
-      {gruposComCor.length > 1 && (
+      {gruposComCor.length >= 1 && (
         <div role="group" aria-label="Escolher cor">
           <p className="text-xs font-mono uppercase tracking-widest text-marca mb-2">
             Cor

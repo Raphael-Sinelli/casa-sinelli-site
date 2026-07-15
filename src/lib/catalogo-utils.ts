@@ -93,6 +93,20 @@ export function rotuloNivel1(variacoes: Variacao[]): 'Cor' | 'Tamanho' | 'Modelo
 }
 
 /**
+ * Cor real existe mesmo com 1 opção só ("Buffet Gold" só vem em Gold) — nesse
+ * caso mostra informativo, sem interação de escolha. A exceção é quando o
+ * rótulo cai em 'Cor' só por ser o valor-padrão de rotuloNivel1 (não bateu
+ * tamanho nem linha) e o dicionário não reconhece a palavra: aí é mais provável
+ * ser o nome do próprio produto/linha ("Cozinha Colors", "Sofá Courino
+ * Premium") do que uma cor sem catalogar. Sem 2º sinal (nem dicionário, nem
+ * mais de 1 opção pra comparar), fica de fora — não adivinha.
+ */
+export function temCorConfiavel(variacoes: Variacao[]): boolean {
+  if (variacoes.length > 1) return true; // 2+ opções: escolha real, mostra mesmo hachurado
+  return resolverSwatch(variacoes[0]?.cor ?? '').tipo !== 'desconhecida';
+}
+
+/**
  * O que o bloco de seleção mostra para esta variação ativa, ou null quando ele
  * não renderiza nada. Fonte única: o VariacaoSelector decide o que desenhar por
  * aqui e o mini-sumário da PDP decide o atalho por aqui — antes eram duas
@@ -100,18 +114,18 @@ export function rotuloNivel1(variacoes: Variacao[]): 'Cor' | 'Tamanho' | 'Modelo
  * chip de tamanho, ou num tamanho que só tem uma cor.
  *
  * Depende da variação ativa, então só o cliente sabe responder: o mesmo sofá
- * mostra "Cores" em 2,30 m (5 cores) e "Tamanho" em 2,50 m (1 cor).
+ * mostra "Cores" em 2,30 m (5 cores) e "Tamanho" em 2,50 m (1 cor) — e agora
+ * também em 2,50 m quando essa cor única é confiável (ex.: Manuela).
  */
 export function rotuloSelecao(
   variacoes: Variacao[],
   grupos: GrupoCor[]
 ): 'Cores' | 'Tamanho' | 'Modelo' | null {
-  const temNivel1 = variacoes.length > 1;
-  const temCorNivel2 = grupos.filter((g) => g.cor !== null).length > 1;
+  if (variacoes.length === 0) return null;
+  if (grupos.some((g) => g.cor !== null)) return 'Cores'; // 1+ cor real no 2º nível
   const rotulo = rotuloNivel1(variacoes);
-  if (temCorNivel2) return 'Cores'; // swatches de cor no 2º nível
-  if (!temNivel1) return null; // 1 variação só: o 1º nível não renderiza
-  return rotulo === 'Cor' ? 'Cores' : rotulo; // chips do 1º nível
+  if (rotulo === 'Cor') return temCorConfiavel(variacoes) ? 'Cores' : null;
+  return variacoes.length > 1 ? rotulo : null; // Tamanho/Modelo só quando há escolha
 }
 
 // "2,10M" -> "2,10 m" | "2,70" -> "2,70 m" | "JatobaAreia" -> "Jatoba Areia"
