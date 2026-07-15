@@ -2,7 +2,7 @@
 
 import type { Variacao } from '@/lib/tipos';
 import type { GrupoCor } from '@/lib/catalogo-utils';
-import { ehTamanho, resolverSwatch, rotuloVariacao } from '@/lib/catalogo-utils';
+import { ehLinha, ehTamanho, resolverSwatch, rotuloVariacao } from '@/lib/catalogo-utils';
 
 interface Props {
   variacoes: Variacao[];
@@ -46,6 +46,15 @@ const FALLBACK_STYLE: React.CSSProperties = {
   opacity: 0.55,
 };
 
+// Faixas diagonais iguais, uma por acabamento ("Naturalle Freijo Caramelo" = 3).
+function gradienteMulti(cores: string[]): string {
+  const passo = 100 / cores.length;
+  const paradas = cores
+    .map((c, i) => `${c} ${i * passo}%, ${c} ${(i + 1) * passo}%`)
+    .join(', ');
+  return `linear-gradient(135deg, ${paradas})`;
+}
+
 function CorSwatch({
   cor,
   ativo,
@@ -59,8 +68,8 @@ function CorSwatch({
   const estiloFill: React.CSSProperties =
     swatch.tipo === 'solido'
       ? { backgroundColor: swatch.cor }
-      : swatch.tipo === 'duo'
-        ? { background: `linear-gradient(135deg, ${swatch.cores[0]} 50%, ${swatch.cores[1]} 50%)` }
+      : swatch.tipo === 'multi'
+        ? { background: gradienteMulti(swatch.cores) }
         : FALLBACK_STYLE;
 
   return (
@@ -98,8 +107,12 @@ export default function VariacaoSelector({
   onGrupo,
 }: Props) {
   const gruposComCor = grupos.filter((g) => g.cor !== null);
-  const rotuloNivel1 =
-    variacoes.length > 0 && ehTamanho(variacoes[0].cor) ? 'Tamanho' : 'Cor';
+  const primeira = variacoes[0]?.cor ?? '';
+  const rotuloNivel1 = ehTamanho(primeira)
+    ? 'Tamanho'
+    : ehLinha(primeira)
+      ? 'Modelo'
+      : 'Cor';
 
   return (
     <div className="flex flex-col gap-4">
