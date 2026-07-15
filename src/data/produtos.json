@@ -5321,5 +5321,115 @@
       "/paropas/sofa2e3Lugares/cinza.png",
       "/paropas/sofa2e3Lugares/marrom.png"
     ]
+  },
+  {
+    "id": "130",
+    "nome": "Cabeceira Regulável Suíça",
+    "nomePasta": "suiça",
+    "marca": "RV",
+    "categoria": "Cabeceira",
+    "caminho": "/RV/Cabeceira/Suiça",
+    "subpastas": [],
+    "medidas": "Altura: 125 cm\r\nLargura: 230 - 250 - 280 - 290 cm\r\nProfundidade: 35 cm",
+    "descricao": "A Cabeceira Regulável Suíça da RV Móveis combina design moderno com detalhe ripado e traz duas mesas de cabeceira integradas. É regulável e adaptável para box de 1,38 m, 1,58 m e 1,93 m, com 4 gavetas de corrediças telescópicas para manter tudo organizado. Estrutura em MDP/MDF com estofamento em MDF, espuma e tecido, oferecendo conforto e durabilidade.",
+    "informacoes": null,
+    "linkReferencia": null,
+    "capa": "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-rv-moveis.jpg",
+    "imagens": [
+      "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-rv-moveis.jpg",
+      "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-grafite-rv-moveis.jpg",
+      "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-off-white-rv-moveis.jpg"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-rv-moveis.jpg",
+      "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-grafite-rv-moveis.jpg",
+      "/RV/Cabeceira/Suiça/cabeceira-siria-cinamomo-off-white-rv-moveis.jpg"
+    ]
+  },
+  {
+    "id": "131",
+    "nome": "Cômoda Grécia",
+    "nomePasta": "grecia",
+    "marca": "RV",
+    "categoria": "Cômoda",
+    "caminho": "/RV/Comoda/Grecia",
+    "subpastas": [],
+    "medidas": "Altura: 97 cm\r\nLargura: 120 cm\r\nProfundidade: 45 cm",
+    "descricao": "A Cômoda Grécia da RV Móveis traz design clean e funcional, com 4 gavetas espaçosas (1 com tranca e chave) e 1 porta com 2 prateleiras internas. Detalhe ripado na montagem, puxadores em MDF e 6 pés em PVC. Fabricada em MDF/MDP, com tampo e base em MDF de 18 mm, é versátil para quarto de casal ou solteiro.",
+    "informacoes": null,
+    "linkReferencia": null,
+    "capa": "/RV/Comoda/Grecia/comoda-grecia-branco-rv-moveis.jpg",
+    "imagens": [
+      "/RV/Comoda/Grecia/comoda-grecia-branco-rv-moveis.jpg",
+      "/RV/Comoda/Grecia/comoda-grecia-cinamomo-rv-moveis.jpg",
+      "/RV/Comoda/Grecia/comoda-grecia-cinamomo-grafite-rv-moveis.jpg",
+      "/RV/Comoda/Grecia/comoda-grecia-cinamomo-off-white-rv-moveis.jpg"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/RV/Comoda/Grecia/comoda-grecia-branco-rv-moveis.jpg",
+      "/RV/Comoda/Grecia/comoda-grecia-cinamomo-rv-moveis.jpg",
+      "/RV/Comoda/Grecia/comoda-grecia-cinamomo-grafite-rv-moveis.jpg",
+      "/RV/Comoda/Grecia/comoda-grecia-cinamomo-off-white-rv-moveis.jpg"
+    ]
+  },
+  {
+    "id": "132",
+    "nome": "Roupeiro Bélgica",
+    "nomePasta": "belgica",
+    "marca": "RV",
+    "categoria": "Guarda-Roupa",
+    "caminho": "/RV/Guarda Roupa/Belgica",
+    "subpastas": [],
+    "medidas": "Altura: 235 cm\r\nLargura: 271 cm\r\nProfundidade: 58 cm",
+    "descricao": "O Roupeiro Bélgica da RV Móveis é sofisticado e espaçoso, com iluminação LED interna de cor quente, 6 portas de abrir (2 em vidro Reflecta) e dobradiças Slow Motion. Por dentro: 5 cabideiros em alumínio, 8 nichos, 3 maleiros, 1 prateleira e 4 gavetas internas (1 organizadora). Estrutura em MDP/MDF com moldura de 25 mm e 10 pés.",
+    "informacoes": null,
+    "linkReferencia": null,
+    "capa": "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-branco.jpg",
+    "imagens": [
+      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-branco.jpg",
+      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo.jpg",
+      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo-grafite.jpg",
+      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo-off-white.jpg",
+      "/RV/Guarda Roupa/Belgica/interna.png"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-branco.jpg",
+      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo.jpg",
+      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo-grafite.jpg",
+      "/RV/Guarda Roupa/Belgica/roupeiro-belgica-rv-moveis-cinamomo-off-white.jpg",
+      "/RV/Guarda Roupa/Belgica/interna.png"
+    ]
+  },
+  {
+    "id": "133",
+    "nome": "Roupeiro Dubai 2P",
+    "nomePasta": "dubai",
+    "marca": "RV",
+    "categoria": "Multiuso",
+    "caminho": "/RV/Multiuso/Dubai",
+    "subpastas": [],
+    "medidas": "Altura: 225 cm\r\nLargura: 85,4 cm\r\nProfundidade: 46,2 cm",
+    "descricao": "O Roupeiro Dubai 2P da RV Móveis é compacto e prático, ideal para quartos pequenos. Com 2 portas com dobradiças metálicas, 5 prateleiras internas e dupla opção de montagem, além de 1 gaveta com corrediça telescópica para itens de uso frequente. Puxadores em MDF e 4 pés garantem acabamento discreto e estabilidade.",
+    "informacoes": null,
+    "linkReferencia": null,
+    "capa": "/RV/Multiuso/Dubai/roupeiro-dubai-branco-rv-moveis-1.jpg",
+    "imagens": [
+      "/RV/Multiuso/Dubai/roupeiro-dubai-branco-rv-moveis-1.jpg",
+      "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-rv-moveis-1.jpg",
+      "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-grafite-rv-moveis-1.jpg",
+      "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-off-white-rv-moveis-1.jpg",
+      "/RV/Multiuso/Dubai/roupeiro-dubai-produto-interno-rv-moveis-1.jpg"
+    ],
+    "variacoes": [],
+    "todasImagens": [
+      "/RV/Multiuso/Dubai/roupeiro-dubai-branco-rv-moveis-1.jpg",
+      "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-rv-moveis-1.jpg",
+      "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-grafite-rv-moveis-1.jpg",
+      "/RV/Multiuso/Dubai/roupeiro-dubai-cinamomo-off-white-rv-moveis-1.jpg",
+      "/RV/Multiuso/Dubai/roupeiro-dubai-produto-interno-rv-moveis-1.jpg"
+    ]
   }
 ]
