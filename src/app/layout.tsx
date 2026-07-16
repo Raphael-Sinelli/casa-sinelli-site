@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Newsreader, Albert_Sans, Spline_Sans_Mono } from 'next/font/google';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
@@ -78,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <WhatsAppButton />
         <MotionProvider />
+        <Analytics />
       </body>
     </html>
   );
