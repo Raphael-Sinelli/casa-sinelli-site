@@ -44,5 +44,8 @@ next-env.d.ts
 # playwright mcp debug output
 .playwright-mcp/
 
+# output bruto do script de upload Cloudinary (redundante com src/data/cloudinary-map.json)
+scripts/mapa-cloudinary*.json
+
 # screenshots de QA das auditorias (trabalho local, nao versionar)
 qa/
