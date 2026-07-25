@@ -7,7 +7,15 @@ Site institucional / e-commerce da **Casa Sinelli**, loja de móveis e colchões
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/deployed_on-Vercel-black?logo=vercel)](https://vercel.com/)
 
-🔗 **Produção:** [casasinelli.com.br](https://casasinelli.com.br)
+🔗 **Produção:** [www.casasinelli.com.br](https://www.casasinelli.com.br)
+
+<p>
+  <img src="docs/screenshots/hero.jpg" alt="Home do site — hero com CTA de WhatsApp e catálogo" width="49%" />
+  <img src="docs/screenshots/catalogo.jpg" alt="Página de catálogo com filtro por categoria" width="49%" />
+</p>
+<p>
+  <img src="docs/screenshots/seletor-cor.jpg" alt="Página de produto com seletor de tamanho e cor" width="100%" />
+</p>
 
 ## Stack
 
