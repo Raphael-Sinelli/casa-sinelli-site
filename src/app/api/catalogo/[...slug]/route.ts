@@ -2,7 +2,7 @@ import { type NextRequest } from 'next/server';
 import { readFile } from 'fs/promises';
 import path from 'path';
 
-const CATALOGO_ROOT = 'C:\\Imagens\\Catalogo';
+const CATALOGO_ROOT = process.env.CATALOGO_LOCAL_PATH ?? '';
 
 const MIME: Record<string, string> = {
   jpg: 'image/jpeg',
