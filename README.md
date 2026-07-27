@@ -106,20 +106,20 @@ O fluxo da aplicação foi projetado para reduzir a quantidade de interações e
 
 ------------------------------------------------------------------------
 
-# Stack
+## Stack
 
-  ```Tecnologia         Utilização
-  ------------------ -----------------------------
-  Next.js 16         Framework
-  React 19           Interface
-  TypeScript         Linguagem
-  Tailwind CSS 4     Estilização
-  GSAP               Animações
-  Cloudinary         CDN e otimização de imagens
-  Lucide React       Ícones
-  Vercel Analytics   Analytics
-  Playwright         Testes end-to-end
-```
+| Tecnologia | Utilização |
+|------------|------------|
+| Next.js 16 | Framework React |
+| React 19 | Interface |
+| TypeScript | Linguagem |
+| Tailwind CSS 4 | Estilização |
+| GSAP | Animações |
+| Cloudinary | CDN e otimização de imagens |
+| Lucide React | Ícones |
+| Vercel Analytics | Analytics |
+| Playwright | Testes End-to-End |
+
 ------------------------------------------------------------------------
 
 ## Arquitetura
