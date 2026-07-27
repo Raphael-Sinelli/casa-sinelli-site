@@ -108,7 +108,7 @@ O fluxo da aplicação foi projetado para reduzir a quantidade de interações e
 
 # Stack
 
-  Tecnologia         Utilização
+  ```Tecnologia         Utilização
   ------------------ -----------------------------
   Next.js 16         Framework
   React 19           Interface
@@ -119,7 +119,7 @@ O fluxo da aplicação foi projetado para reduzir a quantidade de interações e
   Lucide React       Ícones
   Vercel Analytics   Analytics
   Playwright         Testes end-to-end
-
+```
 ------------------------------------------------------------------------
 
 ## Arquitetura
