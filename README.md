@@ -22,7 +22,7 @@ https://www.casasinelli.com.br/
 
 <p align="center">
   <img src="./docs/screenshots/catalogo.png" width="48%" />
-  <img src="./docs/screenshots/produtos-em-destaque.png" width="48%" />
+  <img src="./docs/screenshots/produtos-destaque.png" width="48%" />
 </p>
 
 <p align="center">
@@ -42,7 +42,11 @@ https://www.casasinelli.com.br/
 - Cloudinary
 - Vercel Analytics
 - Playwright
-- 
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
+![React](https://img.shields.io/badge/React-19-61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38BDF8)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-black)
 ------------------------------------------------------------------------
 
 ## Objetivos
@@ -52,12 +56,6 @@ https://www.casasinelli.com.br/
 - Facilitar o contato via WhatsApp.
 - Melhorar a experiência em dispositivos móveis.
 - Utilizar tecnologias modernas do ecossistema React.
-
-![Next.js](https://img.shields.io/badge/Next.js-16-black)
-![React](https://img.shields.io/badge/React-19-61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38BDF8)
-![Vercel](https://img.shields.io/badge/Deploy-Vercel-black)
 
 ------------------------------------------------------------------------
 
