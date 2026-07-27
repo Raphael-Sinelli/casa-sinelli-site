@@ -42,6 +42,7 @@ https://www.casasinelli.com.br/
 - Cloudinary
 - Vercel Analytics
 - Playwright
+
 ![Next.js](https://img.shields.io/badge/Next.js-16-black)
 ![React](https://img.shields.io/badge/React-19-61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)
