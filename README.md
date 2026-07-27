@@ -1,15 +1,49 @@
 # Casa Sinelli
 <p align="center">
-  <img
-    src="./docs/screenshots/casa-sinelli-demo-curto.gif"
-    alt="Demonstração do Website Casa Sinelli"
-    width="100%"
-  />
+  <img src="./docs/screenshots/casa-sinelli-demo-curto.gif" alt="Demonstração do Website Casa Sinelli" />
 </p>
 
 > Aplicação web desenvolvida para a Casa Sinelli, uma loja de móveis e colchões de Ribeirão Pires (SP), construída com Next.js 16 e React 19 para oferecer um catálogo moderno, responsivo e otimizado para SEO, proporcionando uma navegação fluida e contato direto com a loja via WhatsApp.
 
 O projeto segue uma organização baseada em funcionalidades, separando rotas, componentes reutilizáveis, dados e utilitários.
+
+------------------------------------------------------------------------
+
+# Demonstração
+
+**Produção**
+
+https://www.casasinelli.com.br/
+
+> Acesse a aplicação publicada para visualizar o catálogo completo e a experiência de navegação desenvolvida para a Casa Sinelli.
+
+------------------------------------------------------------------------
+## Screenshots
+
+<p align="center">
+  <img src="./docs/screenshots/catalogo.png" width="48%" />
+  <img src="./docs/screenshots/produtos-em-destaque.png" width="48%" />
+</p>
+
+<p align="center">
+  <img src="./docs/screenshots/localizacao.png" width="48%" />
+  <img src="./docs/screenshots/footer.png" width="48%" />
+</p>
+
+------------------------------------------------------------------------
+
+## Tecnologias
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- GSAP
+- Cloudinary
+- Vercel Analytics
+- Playwright
+- 
+------------------------------------------------------------------------
 
 ## Objetivos
 
@@ -37,41 +71,6 @@ O projeto segue uma organização baseada em funcionalidades, separando rotas, c
 - Otimização de imagens com Cloudinary
 - Interface responsiva
 - SEO com Metadata API
-
-------------------------------------------------------------------------
-
-## Tecnologias
-
-- Next.js 16
-- React 19
-- TypeScript
-- Tailwind CSS 4
-- GSAP
-- Cloudinary
-- Vercel Analytics
-- Playwright
-
-------------------------------------------------------------------------
-
-# Demonstração
-
-**Produção**
-
-https://www.casasinelli.com.br/
-
-> Acesse a aplicação publicada para visualizar o catálogo completo e a experiência de navegação desenvolvida para a Casa Sinelli.
-
-------------------------------------------------------------------------
-
-## Screenshots
-
-| Catálogo | Produtos em destaque |
-|----------|----------------------|
-| ![](./docs/screenshots/catalogo.png) | ![](./docs/screenshots/produtos%20em%20destaque.png) |
-
-| Localização | Rodapé |
-|-------------|---------|
-| ![](./docs/screenshots/localização.png) | ![](./docs/screenshots/footer.png) |
 
 ------------------------------------------------------------------------
 
