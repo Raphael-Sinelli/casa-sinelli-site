@@ -1,76 +1,317 @@
 # Casa Sinelli
-
-Site institucional / e-commerce da **Casa Sinelli**, loja de móveis e colchões em Ribeirão Pires-SP.
-
-[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
-[![Vercel](https://img.shields.io/badge/deployed_on-Vercel-black?logo=vercel)](https://vercel.com/)
-
-🔗 **Produção:** [www.casasinelli.com.br](https://www.casasinelli.com.br)
-
-<p>
-  <img src="docs/screenshots/hero.jpg" alt="Home do site — hero com CTA de WhatsApp e catálogo" width="49%" />
-  <img src="docs/screenshots/catalogo.jpg" alt="Página de catálogo com filtro por categoria" width="49%" />
-</p>
-<p>
-  <img src="docs/screenshots/seletor-cor.jpg" alt="Página de produto com seletor de tamanho e cor" width="100%" />
+<p align="center">
+  <img
+    src="./docs/screenshots/casa-sinelli-demo-curto.gif"
+    alt="Demonstração do Website Casa Sinelli"
+    width="100%"
+  />
 </p>
 
-## Stack
+> Aplicação web desenvolvida para a Casa Sinelli, uma loja de móveis e colchões de Ribeirão Pires (SP), construída com Next.js 16 e React 19 para oferecer um catálogo moderno, responsivo e otimizado para SEO, proporcionando uma navegação fluida e contato direto com a loja via WhatsApp.
 
-- **Framework:** Next.js 16 (App Router, Turbopack)
-- **Linguagem:** TypeScript
-- **Estilo:** Tailwind CSS 4
-- **Motion:** GSAP
-- **Imagens:** Cloudinary (CDN + otimização de formato/qualidade na borda)
-- **Ícones:** lucide-react
-- **Analytics:** Vercel Analytics
-- **Lint:** ESLint 9
-- **Testes end-to-end:** Playwright
+O projeto segue uma organização baseada em funcionalidades, separando rotas, componentes reutilizáveis, dados e utilitários.
 
-## Features principais
+## Objetivos
 
-- **Catálogo de produtos com variação de cor** — seletor de swatches derivado da estrutura de pastas/imagens do produto, sem dado manual duplicado.
-- **CDN de imagens via Cloudinary** — mapa de URLs pré-resolvido no servidor, com fallback para disco local em desenvolvimento.
-- **Performance:** DTO de catálogo reduz o HTML enviado ao cliente de ~1 MB para ~32 KB gzip.
-- **Motion com GSAP** — hero, cards, menu e CTA de WhatsApp animados, respeitando `prefers-reduced-motion`.
-- **Acessibilidade** — zero violações no axe-core.
-- **Conversão via WhatsApp** — CTA direto de cada produto para `wa.me`, sem formulário intermediário.
+- Modernizar a presença digital da Casa Sinelli.
+- Centralizar o catálogo de produtos.
+- Facilitar o contato via WhatsApp.
+- Melhorar a experiência em dispositivos móveis.
+- Utilizar tecnologias modernas do ecossistema React.
 
-## Como rodar localmente
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
+![React](https://img.shields.io/badge/React-19-61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38BDF8)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-black)
 
-```bash
-git clone <url-do-repo>
+------------------------------------------------------------------------
+
+## Diferenciais
+
+- Catálogo organizado por categorias
+- Página individual para produtos
+- Seleção de variações de cores
+- Integração direta com WhatsApp
+- Arquitetura baseada em componentes
+- Otimização de imagens com Cloudinary
+- Interface responsiva
+- SEO com Metadata API
+
+------------------------------------------------------------------------
+
+## Tecnologias
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- GSAP
+- Cloudinary
+- Vercel Analytics
+- Playwright
+
+------------------------------------------------------------------------
+
+# Demonstração
+
+**Produção**
+
+https://www.casasinelli.com.br/
+
+> Acesse a aplicação publicada para visualizar o catálogo completo e a experiência de navegação desenvolvida para a Casa Sinelli.
+
+------------------------------------------------------------------------
+
+## Screenshots
+
+| Catálogo | Produtos em destaque |
+|----------|----------------------|
+| ![](./docs/screenshots/catalogo.png) | ![](./docs/screenshots/produtos%20em%20destaque.png) |
+
+| Localização | Rodapé |
+|-------------|---------|
+| ![](./docs/screenshots/localização.png) | ![](./docs/screenshots/footer.png) |
+
+------------------------------------------------------------------------
+
+# Sobre o projeto
+
+O Casa Sinelli Website foi desenvolvido para apresentar o catálogo de
+produtos da loja de forma moderna, rápida e responsiva.
+
+O fluxo da aplicação foi projetado para reduzir a quantidade de interações entre a descoberta de um produto e o contato com a equipe comercial.
+
+------------------------------------------------------------------------
+## Destaques
+
+- Arquitetura utilizando Next.js App Router.
+- Catálogo organizado por categorias.
+- Integração direta com WhatsApp.
+- Otimização de imagens via Cloudinary.
+- Interface responsiva.
+- Motion Design utilizando GSAP.
+- SEO utilizando Metadata API.
+
+------------------------------------------------------------------------
+
+# Funcionalidades
+
+-   Catálogo organizado por categorias
+-   Página individual de produtos
+-   Variações de produto
+-   Integração direta com WhatsApp
+-   Layout responsivo
+-   Animações utilizando GSAP
+-   Otimização de imagens
+-   SEO utilizando Metadata API do Next.js
+
+------------------------------------------------------------------------
+
+# Stack
+
+  Tecnologia         Utilização
+  ------------------ -----------------------------
+  Next.js 16         Framework
+  React 19           Interface
+  TypeScript         Linguagem
+  Tailwind CSS 4     Estilização
+  GSAP               Animações
+  Cloudinary         CDN e otimização de imagens
+  Lucide React       Ícones
+  Vercel Analytics   Analytics
+  Playwright         Testes end-to-end
+
+------------------------------------------------------------------------
+
+## Arquitetura
+
+```mermaid
+flowchart LR
+
+User([Usuário])
+
+App["Next.js 16<br/>App Router"]
+
+Components["Componentes"]
+
+Catalog["Catálogo"]
+
+Cloudinary["Cloudinary"]
+
+Motion["GSAP"]
+
+SEO["Metadata API"]
+
+WhatsApp["WhatsApp"]
+
+User --> App
+
+App --> Components
+App --> Catalog
+App --> Cloudinary
+App --> Motion
+App --> SEO
+
+Catalog --> WhatsApp
+```
+
+------------------------------------------------------------------------
+
+# Performance
+
+O projeto utiliza recursos nativos do Next.js para otimizar o carregamento das páginas, combinando renderização moderna, componentização reutilizável, otimização de imagens e carregamento eficiente de recursos.
+
+### Otimizações implementadas
+
+- App Router
+- Componentização reutilizável
+- Cloudinary
+- Metadata API
+- Vercel Analytics
+- Lazy Loading
+- Otimização de imagens
+
+------------------------------------------------------------------------
+
+## Experiência do usuário
+
+```text
+Página Inicial
+      │
+      ▼
+Categorias
+      │
+      ▼
+Produto
+      │
+      ▼
+Consultar preço
+      │
+      ▼
+WhatsApp
+```
+------------------------------------------------------------------------
+
+# SEO
+
+O projeto utiliza a Metadata API do Next.js para definir informações importantes de indexação em cada página, contribuindo para melhor visibilidade em mecanismos de busca.
+
+- Title
+- Description
+- Keywords
+
+------------------------------------------------------------------------
+
+## Aprendizados
+
+Durante o desenvolvimento foram aprofundados conhecimentos em:
+
+- Next.js App Router
+- Componentização
+- TypeScript
+- GSAP
+- Cloudinary
+- Responsividade
+- SEO
+
+------------------------------------------------------------------------
+
+## Design
+
+O layout foi desenvolvido priorizando simplicidade, legibilidade e conversão.
+
+A identidade visual utiliza tons neutros, tipografia serifada para títulos e elementos modernos para chamadas de ação, buscando transmitir sofisticação e confiabilidade.
+
+------------------------------------------------------------------------
+
+# Estrutura do Projeto
+
+``` text
+src
+├── app            # Rotas (App Router)
+├── components     # Componentes reutilizáveis
+├── data           # Dados do catálogo
+├── hooks          # Hooks customizados
+├── lib            # Utilitários
+├── public         # Arquivos estáticos
+
+docs               # Documentação e imagens do README
+scripts            # Scripts auxiliares
+```
+
+------------------------------------------------------------------------
+
+# Como executar
+
+``` bash
+git clone https://github.com/Raphael-Sinelli/casa-sinelli-site
+
 cd casa-sinelli-site
+
 npm install
-cp .env.example .env.local   # preencha com suas próprias credenciais Cloudinary
+
 npm run dev
 ```
 
-Abra [http://localhost:3000](http://localhost:3000).
+------------------------------------------------------------------------
 
-### Outros scripts
+# Scripts
 
-```bash
-npm run build           # build de produção
-npm run start            # roda o build de produção
-npm run lint              # lint do projeto
-npm run gerar-produtos    # gera os dados de produtos usados pelo catálogo
-```
+  Comando                  Descrição
+  ------------------------ ----------------------------------------
+  npm run dev              Inicia o ambiente de desenvolvimento
+  npm run build            Gera a build de produção
+  npm run start            Executa a aplicação em produção
+  npm run lint             Verifica o código
+  npm run gerar-produtos   Gera os dados utilizados pelo catálogo
 
-## Estrutura de pastas
+------------------------------------------------------------------------
 
-```
-src/
-  app/            # rotas (App Router)
-  components/     # componentes de UI
-  lib/            # utilitários, tipos, motion, resolução de imagens
-  data/           # dados do catálogo (JSON) e mapa Cloudinary
-scripts/          # scripts de build de dados e upload de imagens
-public/           # assets estáticos
-```
+# Documentação
 
-## Licença
+O projeto possui documentação complementar:
 
-Uso proprietário — veja [LICENSE](./LICENSE). Este repositório é público apenas como referência de portfólio.
+-   README.md
+-   docs/
+-   CLAUDE.md
+-   AGENTS.md
+
+------------------------------------------------------------------------
+
+# Licença
+
+Este projeto utiliza uma licença proprietária. Consulte o arquivo LICENSE para mais informações.
+
+------------------------------------------------------------------------
+
+## Status
+
+🟢 Em produção
+
+Website publicado e utilizado como site institucional da Casa Sinelli.
+
+------------------------------------------------------------------------
+
+## Arquivos de Configuração
+
+O projeto utiliza arquivos de configuração para padronizar o ambiente de desenvolvimento e build.
+
+- next.config.ts
+- tsconfig.json
+- eslint.config.*
+- package.json
+
+------------------------------------------------------------------------
+
+## Autor
+
+Raphael Sinelli
+
+Tecnólogo em Análise e Desenvolvimento de Sistemas — FIAP
+
+- GitHub: <https://github.com/Raphael-Sinelli>
+- Website: <https://www.casasinelli.com.br>
+- E-mail: raphaelsinelli@gmail.com
+
+
