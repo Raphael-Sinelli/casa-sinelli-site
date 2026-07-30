@@ -9,7 +9,7 @@ O projeto segue uma organização baseada em funcionalidades, separando rotas, c
 
 ------------------------------------------------------------------------
 
-# Demonstração
+## Demonstração
 
 **Produção**
 
@@ -73,7 +73,7 @@ https://www.casasinelli.com.br/
 
 ------------------------------------------------------------------------
 
-# Sobre o projeto
+## Sobre o projeto
 
 O Casa Sinelli Website foi desenvolvido para apresentar o catálogo de
 produtos da loja de forma moderna, rápida e responsiva.
@@ -93,7 +93,7 @@ O fluxo da aplicação foi projetado para reduzir a quantidade de interações e
 
 ------------------------------------------------------------------------
 
-# Funcionalidades
+## Funcionalidades
 
 -   Catálogo organizado por categorias
 -   Página individual de produtos
@@ -156,7 +156,7 @@ Catalog --> WhatsApp
 
 ------------------------------------------------------------------------
 
-# Performance
+## Performance
 
 O projeto utiliza recursos nativos do Next.js para otimizar o carregamento das páginas, combinando renderização moderna, componentização reutilizável, otimização de imagens e carregamento eficiente de recursos.
 
@@ -191,7 +191,7 @@ WhatsApp
 ```
 ------------------------------------------------------------------------
 
-# SEO
+## SEO
 
 O projeto utiliza a Metadata API do Next.js para definir informações importantes de indexação em cada página, contribuindo para melhor visibilidade em mecanismos de busca.
 
@@ -223,7 +223,7 @@ A identidade visual utiliza tons neutros, tipografia serifada para títulos e el
 
 ------------------------------------------------------------------------
 
-# Estrutura do Projeto
+## Estrutura do Projeto
 
 ``` text
 src
@@ -240,7 +240,7 @@ scripts            # Scripts auxiliares
 
 ------------------------------------------------------------------------
 
-# Como executar
+## Como executar
 
 ``` bash
 git clone https://github.com/Raphael-Sinelli/casa-sinelli-site
@@ -254,7 +254,7 @@ npm run dev
 
 ------------------------------------------------------------------------
 
-# Scripts
+## Scripts
 
   Comando                  Descrição
   ------------------------ ----------------------------------------
@@ -266,7 +266,7 @@ npm run dev
 
 ------------------------------------------------------------------------
 
-# Documentação
+## Documentação
 
 O projeto possui documentação complementar:
 
@@ -277,7 +277,7 @@ O projeto possui documentação complementar:
 
 ------------------------------------------------------------------------
 
-# Licença
+## Licença
 
 Este projeto utiliza uma licença proprietária. Consulte o arquivo LICENSE para mais informações.
 
@@ -309,6 +309,7 @@ Raphael Sinelli
 Tecnólogo em Análise e Desenvolvimento de Sistemas — FIAP
 
 - GitHub: <https://github.com/Raphael-Sinelli>
+- LinkedIn: <https://www.linkedin.com/in/raphael-sinelli/>
 - Website: <https://www.casasinelli.com.br>
 - E-mail: raphaelsinelli@gmail.com
 
