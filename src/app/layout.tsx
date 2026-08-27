@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from 'next';
 import { Newsreader, Albert_Sans, Spline_Sans_Mono } from 'next/font/google';
 import './globals.css';
-import { Analytics } from '@vercel/analytics/next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import CookieConsent from '@/components/CookieConsent';
+import AnalyticsConsent from '@/components/AnalyticsConsent';
 import MotionProvider from '@/lib/motion/MotionProvider';
 import { todasCategorias } from '@/lib/catalogo-server';
 
@@ -79,7 +80,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <WhatsAppButton />
         <MotionProvider />
-        <Analytics />
+        <AnalyticsConsent />
+        <CookieConsent />
       </body>
     </html>
   );

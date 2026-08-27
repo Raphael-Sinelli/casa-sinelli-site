@@ -30,7 +30,8 @@ export default function WhatsAppButton() {
     <aside
       aria-label="Atalho de contato"
       aria-hidden={!visivel}
-      className={`fixed bottom-[max(1.5rem,env(safe-area-inset-bottom))] right-[max(1.5rem,env(safe-area-inset-right))] z-50 transition-[opacity,transform] duration-[var(--dur-short)] motion-reduce:transition-none ${
+      style={{ bottom: 'calc(max(1.5rem, env(safe-area-inset-bottom)) + var(--cookie-banner-h, 0px))' }}
+      className={`fixed right-[max(1.5rem,env(safe-area-inset-right))] z-50 transition-[opacity,transform,bottom] duration-[var(--dur-short)] motion-reduce:transition-none ${
         visivel ? 'opacity-100 translate-y-0 fab-assentar' : 'opacity-0 translate-y-3 pointer-events-none'
       }`}
     >

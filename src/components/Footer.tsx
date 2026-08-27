@@ -142,7 +142,16 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-cru/12 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-cru/65">
-          <p>© {new Date().getFullYear()} Casa Sinelli — Móveis &amp; Colchões. Todos os direitos reservados.</p>
+          <p>
+            © {new Date().getFullYear()} Casa Sinelli — Móveis &amp; Colchões. Todos os direitos reservados.
+            {' '}·{' '}
+            <Link
+              href="/politica-de-privacidade"
+              className="hover:text-cru underline underline-offset-4 decoration-cru/30 transition-colors"
+            >
+              Política de Privacidade
+            </Link>
+          </p>
           <p>Ribeirão Pires · Mauá · Santo André · São Bernardo e região</p>
         </div>
       </div>
